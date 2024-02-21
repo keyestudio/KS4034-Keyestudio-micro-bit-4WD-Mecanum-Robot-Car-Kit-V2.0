@@ -231,10 +231,6 @@ Download link：<https://fs.keyestudio.com/KS4034-4035>
 
 Once downloaded and unzipped, a file named KS4034(KS4035) Keyestudi icro bit 4WD Mecanum Robot Car Kit V2.0 will lie in sight.
 
-Open it , as shown in the figure below:
-
-![](media/a29de15a808596dc1d9a3f6af6d47b3f.png)
-
 7.6.Import test code
 
 We provide hexadecimal code files (project files) for each project. Th ile contains all the contents of the project and can be importe irectly, and you can manually drag the code blocks to complete th rogram.
