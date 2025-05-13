@@ -1,11 +1,3 @@
-# Obtain Resources (**Important**) 
-
-**Download (<span style="color: rgb(255, 76, 65);">Important</span>)**：
-
-[Important Resources](./Important Resources.7z)
-
-**Special reminder:** After downloading Important Resources file, extract it. The folder includes Python Code and Makecode Code, microPython Libraries, Microbit driver, the initialization code for the Servo Angle, Android APP, etc.
-
 
 # Pay special attention
 
@@ -103,19 +95,26 @@ In order to provide you with better experience, corresponding documents about in
 |23|![](./media/5da761be5dad1e7db6f2678b0f4e862d.png)|M1.4 Nickle-plated Nut|6|
 |24|![Img](./media/img-20250509190134.png)|M1.4*10MM Round Head Screw|6|
 |25|![](./media/335d7d0ee813ed00d255e9649f3e8183.png)|M2.5*14MM Round Head Screw|4|
-|26|![](./media/10ccf14d80feba64bba0c1eacd02b09d.png)|Remote Control（KS4034/KS4035 use without battery,KS4034F KS4035F with battery）|1|
+|26|![](./media/10ccf14d80feba64bba0c1eacd02b09d.png)|Remote Control|1|
 |27|![](./media/0d40fd9ec44b9fff212e1b187320191f.png)|Plastic String 3*100MM|5|
 |28|![](./media/9107198c5130673828df2ba02b959100.png)|USB Cable|1|
-|29|![](./media/f1f102df27b7918a9bbe82386d931a1a.png)|HX-2.54 2P DuPont Wire100mm|1|
+|29|![](./media/f1f102df27b7918a9bbe82386d931a1a.png)|HX2.54 2P DuPont Wire100mm|1|
 |30|![](./media/57b2087fae01831c3e029310f982e9be.png)|XH2.54 5P DuPont Wire100mm|1|
-|31|![](./media/2081ec2a5049ac1ea712c8f9f65f0a28.png)|HX-2.54 4P DuPont Wire 50mm|1|
-|32|![](./media/0df03d82a42eda21aa0466e31c1f525f.png)|HX2.54mm-4P to 2.54 F-F DuPont Wire 150mm|1|
+|31|![](./media/2081ec2a5049ac1ea712c8f9f65f0a28.png)|HX2.54 4P DuPont Wire 50mm|1|
+|32|![](./media/0df03d82a42eda21aa0466e31c1f525f.png)|HX2.54 4P to 2.54 F-F DuPont Wire 150mm|1|
 |33|![](./media/ac9ccd0f36676f6376c1936352e48ccc.png)|XH2.54 3P DuPont Wire 50mm|2|
 |34|![](./media/ff48a0eec179d7670c54261f74c2675e.png)|3*40MM Screwdriver|1|
 |35|![](./media/c75c0d3b32b71d9187405ae26853fc01.png)|TT Coupling|4|
 |36|![](./media/6c2669925dad18d332942dc6d7ea97f0.png)|M1.2*5MM Round Head Self-tapping Screw|6|
 
 
+# Obtain Resources (**Important**) 
+
+**Download (<span style="color: rgb(255, 76, 65);">Important</span>)**：
+
+[Important-Resources](./Important-Resources.7z)
+
+**Special reminder:** After downloading Important Resources file, extract it. The folder includes Python Code and Makecode Code, microPython Libraries, Microbit driver, the initialization code for the Servo Angle, Android APP, etc.
 
 # Preparations
 

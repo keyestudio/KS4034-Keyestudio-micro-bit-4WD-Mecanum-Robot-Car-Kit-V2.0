@@ -1,15 +1,3 @@
-Obtain Resources (**Important**)
-================================
-
-**Download (Important)**\ ：
-
-[Important Resources](./Important Resources.7z)
-
-**Special reminder:** After downloading Important Resources file,
-extract it. The folder includes Python Code and Makecode Code,
-microPython Libraries, Microbit driver, the initialization code for the
-Servo Angle, Android APP, etc.
-
 Pay special attention
 =====================
 
@@ -162,12 +150,24 @@ Product Kit list
 29 |image29| HX2.54 2P DuPont Wire100mm                  1
 30 |image30| XH2.54 5P DuPont Wire100mm                  1
 31 |image31| HX2.54 4P DuPont Wire 50mm                  1
-32 |image32| HX2.54mm 4P to 2.54 F-F DuPont Wire 150mm   1
+32 |image32| HX2.54 4P to 2.54 F-F DuPont Wire 150mm     1
 33 |image33| XH2.54 3P DuPont Wire 50mm                  2
 34 |image34| 3*40MM Screwdriver                          1
 35 |image35| TT Coupling                                 4
 36 |image36| M1.2*5MM Round Head Self-tapping Screw      6
 == ========= =========================================== ===
+
+Obtain Resources (**Important**)
+================================
+
+**Download (Important)**\ ：
+
+:download:`Important-Resources <./Important-Resources.7z>`
+
+**Special reminder:** After downloading Important Resources file,
+extract it. The folder includes Python Code and Makecode Code,
+microPython Libraries, Microbit driver, the initialization code for the
+Servo Angle, Android APP, etc.
 
 Preparations
 ============
