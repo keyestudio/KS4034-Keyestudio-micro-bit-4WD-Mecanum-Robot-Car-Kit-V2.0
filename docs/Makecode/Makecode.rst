@@ -272,10 +272,9 @@ Click the “\ **Explorer**\ ” on the left side:
 
 |image34|
 
-You can find these added files in the list;
-
-Click the dustbin icon beside the file to delete the MecanumRobotV2 file
-and tap the refresh icon to update it.
+You can find these added files in the list; Click the dustbin icon
+beside the file to delete the MecanumRobotV2 file and tap the refresh
+icon to update it.
 
 |image35|
 
@@ -339,11 +338,11 @@ Download CoolTerm program: https://freeware.the-meiers.org/
 After downloading, we need to install CoolTerm program file, and we take
 PC Window system as an example.
 
-1) Choose “\ **win**\ ” to download the zip file of CoolTerm
-
-2) Unzip the file and open it. (also suitable for Mac and Linux system)
+1) Choose “\ **win**\ ” to download the zip file of CoolTerm.
 
 |image43|
+
+2) Unzip the file and open it. (also suitable for Mac and Linux system)
 
 |image44|
 
@@ -477,9 +476,7 @@ A. Attach the micro:bit main board to your computer via the USB cable
 
 B. Open the Web version of Makecode.
 
-3. **Test Code**
-
-**Test Code1：**
+3. **Test Code1**
 
 |image68|
 
@@ -487,17 +484,19 @@ Select“JavaScript”to switch into JavaScript language code:
 
 |image69|
 
-**Test Code 2：**
+4. **Test Result1**
 
-|image70|
+Upload code 1 and power the board , we will see the icon\ |image70|
 
-Select“JavaScript”to switch into JavaScript language code:
+5. **Test Code 2：**
 
 |image71|
 
-4. **Test Result**
+Select“JavaScript”to switch into JavaScript language code:
 
-Upload code 1 and power the board , we will see the icon\ |image72|
+|image72|
+
+6. **Test Result**
 
 Upload code 2 and plug micro:bit in power, Micro: bit starts showing
 number 1, 2, 3, 4, and 5, then cyclically
@@ -1238,7 +1237,7 @@ Click“JavaScript”to view the corresponding JavaScript code:
 
 |image183|
 
-5. **Test Result2**
+6. **Test Result2**
 
 Download code 2 to micro:bit board, 2 RGB lights will flash for 1 second
 and then stop flashing for 1 second, cyclically.
@@ -1398,7 +1397,7 @@ More details:
 
 |image198|
 
-Click“JavaScript" to view the corresponding JavaScript code: ：
+Click“JavaScript" to view the corresponding JavaScript code:
 
 |image199|
 
@@ -1460,7 +1459,7 @@ HR8833 Motor driver circuit
 
 |image205|
 
-Click“JavaScript" to view the corresponding JavaScript code: ：
+Click“JavaScript" to view the corresponding JavaScript code:
 
 |image206|
 
@@ -1473,7 +1472,7 @@ car goes forward for 2s and stops for 2s.
 
 |image207|
 
-Click“JavaScript" to view the corresponding JavaScript code: ：
+Click“JavaScript" to view the corresponding JavaScript code:
 
 |image208|
 
@@ -1543,7 +1542,7 @@ module is off, and then the sensitivity is adjusted.
 
 |image210|
 
-Click“JavaScript" to view the corresponding JavaScript code: ：
+Click“JavaScript" to view the corresponding JavaScript code:
 
 |image211|
 
@@ -1720,7 +1719,7 @@ duration \*340m/s*0.5. 
 
 |image226|
 
-Click“JavaScriptto view the corresponding JavaScript code: ：
+Click“JavaScriptto view the corresponding JavaScript code:
 
 |image227|
 
@@ -1780,7 +1779,7 @@ the ultrasonic sensor to control the motion of smart car.
 
 |image233|
 
-Click“JavaScript”to view the corresponding JavaScript code: ：
+Click“JavaScript”to view the corresponding JavaScript code:
 
 |image234|
 
@@ -1829,7 +1828,7 @@ motion status of car.
 
 |image238|
 
-Click“JavaScript”to view the corresponding JavaScript code: ：
+Click“JavaScript”to view the corresponding JavaScript code:
 
 |image239|
 
@@ -2109,7 +2108,7 @@ a. Open App Store;
 
 |image268|
 
-b. Search mecanum_robot and click“\ |image269|\ ”to download the
+b. Search **mecanum_robot** and click“\ |image269|\ ”to download the
 Bluetooth App of mecanum_robot;
 
 c. After downloading the APP, click "OPEN" or click the application
@@ -2128,9 +2127,9 @@ code
 
 |image270|
 
-or enter the http://8.210.52.206/mecanum_robot.apk to download. After
-the identification is successful, click "go to website" to enter the
-download mecanum_robot.apk page , click "Download" to download the
+or enter the link：\ http://8.210.52.206/mecanum_robot.apk to download.
+After the identification is successful, click "go to website" to enter
+the download mecanum_robot.apk page , click "Download" to download the
 mecanum_robot application.
 
 b. Click“Allow allow”to enter Installation Diagram; click“install”to
@@ -2322,9 +2321,9 @@ Please check whether the Mecanum Robot Car_V2.py library file i mported
 .. |image67| image:: ./media/8c3f540a07aab97e1608ba8770837f7b.png
 .. |image68| image:: ./media/d44a44c5708aa9ea67a70220d3afde02.png
 .. |image69| image:: ./media/2456980fec90ec5086f078165471889f.png
-.. |image70| image:: ./media/20fed03d66e92ef565333d6f060b1267.png
-.. |image71| image:: ./media/4c537c2e073066441fb23219619ecf09.png
-.. |image72| image:: ./media/d4e278da768e447ed344d581e671f57a.png
+.. |image70| image:: ./media/d4e278da768e447ed344d581e671f57a.png
+.. |image71| image:: ./media/20fed03d66e92ef565333d6f060b1267.png
+.. |image72| image:: ./media/4c537c2e073066441fb23219619ecf09.png
 .. |image73| image:: ./media/d4e278da768e447ed344d581e671f57a.png
 .. |image74| image:: ./media/66b31365d42274ef94ce9a3fcea1cd6c.png
 .. |image75| image:: ./media/39fe4029acb5fb675d875c58e382d148.png
@@ -2453,7 +2452,7 @@ Please check whether the Mecanum Robot Car_V2.py library file i mported
 .. |image198| image:: ./media/087e18229bba5f7a01520f80f8c8187c.png
 .. |image199| image:: ./media/2354311fc81b6b5dc9819544be60e356.png
 .. |image200| image:: ./media/02a16adfdabb92d6de1796019e909b44.png
-.. |image201| image:: ./media/5b67b46bfb1c9d8b6bdeca1b98aa6bbf.jpg
+.. |image201| image:: ./media/img-20250516084704.png
 .. |image202| image:: ./media/4919ce3b3fa299f13aa33348165ed728.png
 .. |image203| image:: ./media/59c34b6eeef8ad7eb0ad8304426c207e.png
 .. |image204| image:: ./media/8874ded0289da7d5d5a0141cc7b88769.png
@@ -2469,7 +2468,7 @@ Please check whether the Mecanum Robot Car_V2.py library file i mported
 .. |image214| image:: ./media/9876cc606f056e134e32756e1a3b6b5d.png
 .. |image215| image:: ./media/ddb290f42e5a4d96ad676222991000f1.png
 .. |image216| image:: ./media/0141051aca98f66393c28ee23d34d734.png
-.. |image217| image:: ./media/d7b67de2bc904ba303a88a268dfac339.jpg
+.. |image217| image:: ./media/img-20250516090043.png
 .. |image218| image:: ./media/img-20250512134536.png
 .. |image219| image:: ./media/img-20250512135417.png
 .. |image220| image:: ./media/4b1041553ed0d547c117292490fa6dfd.png
@@ -2483,12 +2482,12 @@ Please check whether the Mecanum Robot Car_V2.py library file i mported
 .. |image228| image:: ./media/2cd74c16ab3623f6752d3f5e59deea2e.png
 .. |image229| image:: ./media/422adea3e04563f038f7f28cd40efb2d.png
 .. |image230| image:: ./media/69b0699826728a3ac629f8869b2c644b.png
-.. |image231| image:: ./media/a9f6a779aba5cc124d3ac8789ff87458.jpg
+.. |image231| image:: ./media/img-20250516090226.png
 .. |image232| image:: ./media/img-20250512135516.png
 .. |image233| image:: ./media/05a4740bad5faf67199577dc79e502ac.png
 .. |image234| image:: ./media/c8f86a24196a5bd7569ad419207e71e4.png
 .. |image235| image:: ./media/13baf1d67d2b0e5fefe9a31c6120b185.png
-.. |image236| image:: ./media/6dcfae5b12fd196e2e2c567d8d159814.jpg
+.. |image236| image:: ./media/img-20250516090254.png
 .. |image237| image:: ./media/img-20250512135602.png
 .. |image238| image:: ./media/03b95531c329ada277242c0ce8c16b5a.png
 .. |image239| image:: ./media/a93c824520e7139f7419817a8d05d5e2.png
@@ -2502,7 +2501,7 @@ Please check whether the Mecanum Robot Car_V2.py library file i mported
 .. |image247| image:: ./media/img-20250512140159.png
 .. |image248| image:: ./media/bd951869f7f822f8420d6174122c9a35.jpg
 .. |image249| image:: ./media/db524e7e2d5a77652948837ed70a1310.jpg
-.. |image250| image:: ./media/058af4ba6b305a06d628d68d32788062.jpg
+.. |image250| image:: ./media/img-20250516090317.png
 .. |image251| image:: ./media/img-20250512140241.png
 .. |image252| image:: ./media/22d06d7487b51c0dfdd0ca30c7f4945e.png
 .. |image253| image:: ./media/e68b6275a1026ed95ca88502e5bc4c49.png
@@ -2531,7 +2530,7 @@ Please check whether the Mecanum Robot Car_V2.py library file i mported
 .. |image276| image:: ./media/4a23b1970c9f012293aef3327a90cf7c.png
 .. |image277| image:: ./media/0ed4a53ef14fbfe047929d07d5433fcb.png
 .. |image278| image:: ./media/05c3d32b07c8e1393eacd805b4de77c7.jpg
-.. |image279| image:: ./media/b9de6fb2ea158ce9fd59513a9e8c4833.jpg
+.. |image279| image:: ./media/img-20250516090336.png
 .. |image280| image:: ./media/4e30836054aa5b5a983cb70b3baa62b0.png
 .. |image281| image:: ./media/aee56e76bad3421a20cea6018ccd5e2c.png
 .. |image282| image:: ./media/d9d0b14680f4131194595baaee971699.png

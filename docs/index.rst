@@ -4,8 +4,10 @@ Pay special attention
 1. This product contains small parts. Do not swallow.
 
 2. Do not allow children under 3 years of age to play with or near this
-product. .  3. Do not allow children who lack safety capabilities to use
-this product without parental supervision. 
+product. .
+
+3. Do not allow children who lack safety capabilities to use this
+product without parental supervision. 
 
 4. Do not use this product or its components near any AC power sockets
 or other circuits to avoid the risk of electric shock. 
@@ -23,7 +25,7 @@ or low temperature and high humidity. 
 operating the product. 
 
 10. It is normal that parts of the product may become hot when used in
-certain circuit designs.  Improper handling may result in overheating. 
+certain circuit designs. Improper handling may result in overheating. 
 
 11. Failure to use the product in accordance with specifications may
 damage the product.
@@ -33,17 +35,13 @@ Product Introduction
 
 |image1|
 
-Have you wondered to learn programming or have your own programmin obot?
-Nowadays, programming has developed to a lower age group, and i ill be a
-trend for everyone thanks to the spread of simple graphica rogramming
-platforms, from Have you wondered to learn programming or have your own
-programming robot? Nowadays, programming has developed to a lower age
-group, and it will be a trend for everyone thanks to the spread of
-simple graphical programming platforms, from micro:bit to Arduino and
-Raspberry Pi. Maybe you haven't heard of them before. However, with the
-help of this product and tutorial, you can easily install a
-multi-functional programming car and experience the fun of being a
-maker.
+Have you wondered to learn programming or have your own programming
+robot? Nowadays, programming has developed to a lower age group, and it
+will be a trend for everyone thanks to the spread of simple graphical
+programming platforms, from micro:bit to Arduino and Raspberry Pi. Maybe
+you haven't heard of them before. However, with the help of this product
+and tutorial, you can easily install a multi-functional programming car
+and experience the fun of being a maker.
 
 Micro:bit is a highly integrated microcontroller with powerful functions
 and small size. It is very suitable to be applied in STEAM education for
@@ -94,7 +92,7 @@ about installation and test code are also provided.
 Product Parameters
 ==================
 
-- Connector port input: DC 6V---9V
+- Connector port input: DC 7V--9V
 
 - Operating voltage of driver board system: 5V
 
@@ -110,52 +108,62 @@ Product Parameters
 
 - Environmental protection attributes: ROHS
 
-**Note:** The working voltage of micro:bit is 3.3V, and the driver shiel
-ntegrates a 3.3V/5V communication conversion circuit.
+**Note:** The working voltage of micro:bit is 3.3V, and the driver
+shield integrates a 3.3V/5V communication conversion circuit.
 
 Product Kit list
 ================
 
-== ========= =========================================== ===
-#  Picture   Name                                        QTY
-== ========= =========================================== ===
-1  |image2|  Acrylic Board T=3mm                         1
-2  |image3|  Acrylic Board with Lego Holes T=3mm         1
-3  |image4|  Motor Plate                                 4
-4  |image5|  Motor                                       4
-5  |image6|  23\ *15*\ 5MM Fixing Board                  4
-6  |image7|  Servo                                       1
-7  |image8|  Mecanum Wheels (A direction)                2
-8  |image9|  Mecanum Wheels (B direction)                2
-9  |image10| keyestudio Micro：bit Expansion Board       1
-10 |image11| micro:bit V2.0 Mainboard（KS4034、KS4034F） 1
-11 |image12| Keyestudio Mecanum Car Lower Plate          1
-12 |image13| M3*20MM Dual-pass Copper Pillar             4
-13 |image14| 4265c Lego Part                             4
-14 |image15| 43093 Lego Part                             4
-15 |image16| Acrylic Gasket                              1
-16 |image17| M3*6MM Flat Head Screw                      10
-17 |image18| HC-SR04 Ultrasonic Sensor                   1
-18 |image19| M3*8MM Flat Head Screw                      10
-19 |image20| M3 Nickle-plated Nut                        10
-20 |Img|     M3*30MM Round Head Screw                    9
-21 |image21| M2 Nickle-plated Nut                        3
-22 |image22| M2*8MM Round Head Screw                     3
-23 |image23| M1.4 Nickle-plated Nut                      6
-24 |image24| M1.4*10MM Round Head Screw                  6
-25 |image25| M2.5*14MM Round Head Screw                  4
-26 |image26| Remote Control                              1
-27 |image27| Plastic String 3*100MM                      5
-28 |image28| USB Cable                                   1
-29 |image29| HX2.54 2P DuPont Wire100mm                  1
-30 |image30| XH2.54 5P DuPont Wire100mm                  1
-31 |image31| HX2.54 4P DuPont Wire 50mm                  1
-32 |image32| HX2.54 4P to 2.54 F-F DuPont Wire 150mm     1
-33 |image33| XH2.54 3P DuPont Wire 50mm                  2
-34 |image34| 3*40MM Screwdriver                          1
-35 |image35| TT Coupling                                 4
-36 |image36| M1.2*5MM Round Head Self-tapping Screw      6
-== ========= =========================================== ===
+Please check the list to ensure that all parts are intact. If you find
+missing ones, please contact our sales staff immediately.
+
+== ========= ======================================= ===
+#  Picture   Name                                    QTY
+== ========= ======================================= ===
+1  |image2|  Acrylic Board T=3mm                     1
+2  |image3|  Acrylic Board with Lego Holes T=3mm     1
+3  |image4|  Motor Plate                             4
+4  |image5|  Motor                                   4
+5  |image6|  23\ *15*\ 5MM Fixing Board              4
+6  |image7|  Servo                                   1
+7  |image8|  Mecanum Wheels (A direction)            2
+8  |image9|  Mecanum Wheels (B direction)            2
+9  |image10| keyestudio Micro：bit Expansion Board   1
+10 |image11| micro:bit V2.0 Mainboard                1
+11 |image12| Keyestudio Mecanum Car Lower Plate      1
+12 |image13| M3*20MM Dual-pass Copper Pillar         4
+13 |image14| 4265c Lego Part                         4
+14 |image15| 43093 Lego Part                         4
+15 |image16| Acrylic Gasket                          1
+16 |image17| M3*6MM Flat Head Screw                  10
+17 |image18| HC-SR04 Ultrasonic Sensor               1
+18 |image19| M3*8MM Flat Head Screw                  10
+19 |image20| M3 Nickle-plated Nut                    10
+20 |Img|     M3*30MM Round Head Screw                9
+21 |image21| M2 Nickle-plated Nut                    3
+22 |image22| M2*8MM Round Head Screw                 3
+23 |image23| M1.4 Nickle-plated Nut                  6
+24 |image24| M1.4*10MM Round Head Screw              6
+25 |image25| M2.5*14MM Round Head Screw              4
+26 |image26| Remote Control                          1
+27 |image27| Plastic String 3*100MM                  5
+28 |image28| USB Cable                               1
+29 |image29| HX2.54 2P DuPont Wire100mm              1
+30 |image30| XH2.54 5P DuPont Wire100mm              1
+31 |image31| HX2.54 4P DuPont Wire 50mm              1
+32 |image32| HX2.54 4P to 2.54 F-F DuPont Wire 150mm 1
+33 |image33| XH2.54 3P DuPont Wire 50mm              2
+34 |image34| 3*40MM Screwdriver                      1
+35 |image35| TT Coupling                             4
+36 |image36| M1.2*5MM Round Head Self-tapping Screw  6
+== ========= ======================================= ===
+
+⚠️ **Special Reminder:** Remote Control(KS4034F/KS4035F with batteries;
+KS4034/KS4035 without batteries, Battery type: CR2025(provided by
+yourself))
+
+⚠️ **Special Reminder:** micro:bit V2.0 Mainboard(KS4034/KS4034F with;
+KS4035/KS4035F without)
 
 Obtain Resources (**Important**)
 ================================
@@ -379,7 +387,7 @@ to charge the 18650 lithium battery.
 The Installation of Keyestudio 4WD Mecanum Robot Car V2.0
 ---------------------------------------------------------
 
-Part 1
+Step 1
 ~~~~~~
 
 **Components Needed:**
@@ -394,7 +402,7 @@ Part 1
 
 |image49|
 
-Part 2
+Step 2
 ~~~~~~
 
 **Components Needed:**
@@ -409,7 +417,7 @@ Part 2
 
 |image52|
 
-Part 3
+Step 3
 ~~~~~~
 
 **Components Needed:**
@@ -424,7 +432,7 @@ Part 3
 
 |image55|
 
-Part 4
+Step 4
 ~~~~~~
 
 （adjust the angle of the servo first）
@@ -511,7 +519,7 @@ Installation Diagram: (mind the installation direction)
 
 |image61|
 
-Part 5
+Step 5
 ~~~~~~
 
 **Components Needed:**
@@ -526,7 +534,7 @@ Part 5
 
 |image64|
 
-Part 6
+Step 6
 ~~~~~~
 
 **Components Needed:**
@@ -541,7 +549,7 @@ Part 6
 
 |image67|
 
-Part 7
+Step 7
 ~~~~~~
 
 **Components Needed:**
@@ -556,7 +564,7 @@ Part 7
 
 |image70|
 
-Part 8
+Step 8
 ~~~~~~
 
 **Components Needed:**
@@ -572,7 +580,7 @@ of the mecanum wheel)
 
 |image73|
 
-Part 9
+Step 9
 ~~~~~~
 
 **Components Needed:**
@@ -587,7 +595,7 @@ Part 9
 
 |image76|
 
-Part 10
+Step 10
 ~~~~~~~
 
 **Components Needed:**
