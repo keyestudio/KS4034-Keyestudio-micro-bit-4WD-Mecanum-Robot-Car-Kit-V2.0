@@ -11,6 +11,7 @@ class Mecanum_Car_Driver_V2(object):
         self.set_all_pwm(0)
         self.left_led(0)
         self.right_led(0)
+        self.lastEchoDuration = 0
         #sleep(5)
 
     def set_pwm(self, channel, value):
