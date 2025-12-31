@@ -16,8 +16,8 @@
 ## Resource Download
 
 To help you quickly obtain related codes, libraries, and other support files for this product, please click the links below to download:
-- [Makecode Code and library downloads]([](../Makecode/Code.7z))
-- [Python Code and library downloads]([](../Python/Python Code.7z))
+- [Makecode Code and library downloads](../Makecode/Code.7z)
+- [Python Code and library downloads](../Python/Python Code.7z)
 
 ## Product Introduction
 
@@ -156,7 +156,7 @@ For more information,please resort to following links:
 | PWM（not frequently used） | P5、P6、P7、P8、P9、P11、P12、P13、P14、P15、P16、P19、P20                                         |
 | Occupied                   | P3(LED Col3)，P4(LED Col1)，P5(Button A)，P6(LED Col4)，P7(LED Col2)，P10(LED Col5)，P11(Button B) |
 
-Please browse the official website for mor etails：[https://tech.microbit.org/hardware/edgeconnector/](https://tech.microbit.org/hardware/edgeconnector/)
+Please browse the official website for more details：[https://tech.microbit.org/hardware/edgeconnector/](https://tech.microbit.org/hardware/edgeconnector/)
 
 [https://microbit.org/guide/hardware/pins/](https://microbit.org/guide/hardware/pins/)
 
