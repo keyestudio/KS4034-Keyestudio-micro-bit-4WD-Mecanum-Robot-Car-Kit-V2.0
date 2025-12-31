@@ -17,7 +17,7 @@
 
 To help you quickly obtain related codes, libraries, and other support files for this product, please click the links below to download:
 - [Makecode Code and library downloads](../Makecode/Code.7z)
-- [Python Code and library downloads](../Python/Python Code.7z)
+- [Python Code and library downloads](../Python/PythonCode.7z)
 
 ## Product Introduction
 
