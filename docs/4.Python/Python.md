@@ -1,6 +1,6 @@
 # Python Tutorial
 
-![](./media/microbit-car.jpg)
+![](./media/Python_e468339f.jpg)
 
 ## Resource Download
 
@@ -26,9 +26,9 @@ Link for BBC microbit MicroPyth：[BBC micro:bit MicroPython ](https://microbit-
 
 1\.  Web version: [https://python.microbit.org/v/1.1](https://python.microbit.org/v/1.1)
 
-![](./media/Python-web.png)
+![](./media/Python_693f76f5.png)
 
-2\.  The other one is the offline compiler too-----Mu ![](./media/Mu.png)
+2\.  The other one is the offline compiler too-----Mu ![](./media/Python_153c77ed.png)
 
 Official Website of Mu：[https://codewith.mu/](https://codewith.mu/)
 
@@ -40,21 +40,21 @@ Mu, a Python code editor, is suitable for starters. It doesn’t support 32-bit 
 
 Click“This PC”and right- click to select Properties to check the version of your computer.
 
-![](./media/Mu-1.png)
+![](./media/Python_3a58be54.png)
 
 Check the system type of your computer.
 
-![](./media/Mu-2.png)
+![](./media/Python_e774ae15.png)
 
 Enter the link of MU: [https://codewith.mu/en/download](https://codewith.mu/en/download) to download the corresponding version of Mu.
 
-![](./media/Mu-3.png)
+![](./media/Python_ceb4cfa6.png)
 
 2\.  **Run Setup**
 
 Open the file below
 
-![](./media/Mu-4.png)
+![](./media/Python_8bcfe24c.png)
 
 Mac OSX：[https://codewith.mu/en/howto/1.1/install_macos](https://codewith.mu/en/howto/1.1/install_macos).
 
@@ -64,33 +64,33 @@ Linux：[https://codewith.mu/en/howto/1.2/install_linux](https://codewith.mu/en/
 
 You will view the page pop-up, then click “More info”.
 
-![](./media/Mu-5.png)
+![](./media/Python_877beb7b.png)
 
 Then click“Run anyway”.
 
-![](./media/Mu-6.png)
+![](./media/Python_c87475e5.png)
 
 3\. License Agreement
 
 Click “Install”.
 
-![](./media/Mu-7.png)
+![](./media/Python_33f42b66.png)
 
-![](./media/Mu-8.png)
+![](./media/Python_f5c6698f.png)
 
 After installed , click “finish”.
 
-![](./media/Mu-9.png)
+![](./media/Python_c6ec7436.png)
 
 4\. Start Mu
 
 Next, find it according to the following picture
 
-![](./media/Mu-10.png)
+![](./media/Python_c4adbdd1.png)
 
 Its main interface is shown as below:
 
-![](./media/Mu-11.png)
+![](./media/Python_3697c0c7.png)
 
 ### Using Modes & Menu Bar
 
@@ -98,7 +98,7 @@ Set  “<span style="color: rgb(255, 76, 65);">**Mode**</span>” to BBC micro:b
 
 On the menu, click “**Mode**” to set it to “**BBC micro：bit**”. The micro:bit mode understands how to interact with and connect to a micro:bit.
 
-![](./media/Mu-12.png)
+![](./media/Python_18512c7e.png)
 
 Click to [Start with Mu](https://codewith.mu/en/tutorials/1.1/start). 
 
@@ -108,7 +108,7 @@ Click to [Start with Mu](https://codewith.mu/en/tutorials/1.1/start).
 
 Connect the board to computer via USB cable. Open the Mu and click “Flash” to upload the .py code (empty code) to the board.
 
-![Img](./media/microbit.png)
+![Img](./media/Python_611b2c4e.png)
 
 In this tutorial, "keyes_mecanum_Car_V2.py" library file are used. Therefore, import the "keyes_mecanum_Car_V2.py" library file into the micro:bit. This file contains the control method of the Micro:bit 4WD Mecanum Robot Car V2.0.
 
@@ -124,35 +124,35 @@ For example, on the windows system, suppose your system is installed on the C dr
 
 Open the “**mu_code**”folder.
 
-![](./media/Mu-13.png)
+![](./media/Python_d271a924.png)
 
 **Method Two:**
 
 Search for the “mu_code” folder on the Disk(C:).
 
-![Img](./media/Mu-14.png)
+![Img](./media/Python_03ff037e.png)
 
-![Img](./media/Mu-15.png)
+![Img](./media/Python_54199d45.png)
 
 Open “mu_code”.
 
-![Img](./media/Mu-16.png)
+![Img](./media/Python_4841ca3f.png)
 
 The path of the data folder where the “keyes_mecanum_Car.py”library file we provide are located is as follows:
 
-![Img](./media/Mu-17.png)
+![Img](./media/Python_7adb2b68.png)
 
 Copy“keyes_mecanum_Car.py”library file to the folder“mu_code”。When the copy is done, as shown below:
 
-![](./media/Mu-18.png)
+![](./media/Python_d753d652.png)
 
 First open the Mu software and connect the micro:bit to your computer then click the "Files" button, and drag the "keyes_mecanum_Car.py" library file to the micro:bit.
 
-![](./media/Mu-19.png)
+![](./media/Python_aeaae2b7.png)
 
 After a few seconds, the import is complete and you can see it in the box on the left.
 
-![](./media/Mu-20.png)
+![](./media/Python_2be967ca.png)
 
 ## Projects
 
@@ -160,7 +160,7 @@ After a few seconds, the import is complete and you can see it in the box on the
 
 ### Project 1：Heart Beat
 
-![](./media/microbit1.png)
+![](./media/Python_b855274f.png)
 
 1\.  **Description**
 
@@ -176,19 +176,19 @@ B. Open the offline version of Mu.
 
 Open the Mu software, tap“Load”, select““microbit-Heartbeat\.py“ file and click“open”:
 
-![](./media/Mu-21.png)
+![](./media/Python_1ec17d44.png)
 
-![](./media/Mu-22.png)
+![](./media/Python_4bda2b61.png)
 
 There is another way to import code. Open the Mu software and drag file”microbit-Heartbeat\.py”into it.
 
-![](./media/Mu-23.png)
+![](./media/Python_c5b7322b.png)
 
 You can also input code in the edit window yourself.
 
 (**Note: All English words and symbols must be written in English.**)
 
-![](./media/code1.png)
+![](./media/Python_80af4cb3.png)
 
 ```python
 from microbit import *
@@ -293,33 +293,33 @@ Image.CLOCK4, Image.CLOCK3, Image.CLOCK2,Image.CLOCK1
 
 Connect the micro:bit board to computer via an USB cable, click“Flash”to  download code to the board.
 
-![](./media/microbit2.png)
+![](./media/Python_93e18731.png)
 
 
-![](./media/microbit4.png)
+![](./media/Python_48e78948.png)
 
 
-![](./media/code1-1.png)
+![](./media/Python_cc33f1a9.png)
 
 The code, even it is wrong, can be downloaded to the micro:bit board successfully, but can not work on micro:bit board.
 
 Click“Flash”to download code to micro:bit. 
 
-![](./media/code1-2.png)
+![](./media/Python_8982d0b0.png)
 
 Click“REPL”and press the reset button on micro:bit, the error information will be displayed on the REPL window, as shown below: 
 
-![](./media/code1-3.png)
+![](./media/Python_0c2abf18.png)
 
 Click“REPL”again to turn off the REPL mode, then you could refresh new code. 
 
 To make sure the correct code, you only need to tap“Check”. The errors will be shown on the window.
 
-![](./media/code1-4.png)
+![](./media/Python_b994c0d3.png)
 
 Modify the code according to the prompt and click“Check”.
 
-![](./media/code1-5.png)
+![](./media/Python_bc5cbed3.png)
 
  Please log in the website for more tutorials：[https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
 
@@ -327,13 +327,13 @@ Modify the code according to the prompt and click“Check”.
 
 Click “<span style="color: rgb(255, 76, 65);">**Flash**</span>” to load the code to the micro:bit board.
 
-![Img](./media/code1-6.png)
+![Img](./media/Python_ed83ac25.png)
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
-The LED dot matrix shows the pattern “❤”and then “![](./media/heart1.png)”alternatively.
+The LED dot matrix shows the pattern “❤”and then “![](./media/Python_04fdfc90.png)”alternatively.
 
 5\.  **Code Explanation**
 
@@ -342,18 +342,18 @@ The LED dot matrix shows the pattern “❤”and then “![](./media/heart1.png
 |while True:|This is a permanent loop that makes micro:bit execute the code i his loop forever.|
 |display.show(Image.HEART)|micro：bit shows “❤”|
 |sleep(500)|Delay in 500ms|
-|display.show(Image.HEART_SMALL)|The LED dot matrix displays“![](./media/heart1.png)”|
+|display.show(Image.HEART_SMALL)|The LED dot matrix displays“![](./media/Python_04fdfc90.png)”|
 
 
 ### Project 2：Light A Single LED
 
-![](./media/microbit1.png)
+![](./media/Python_b855274f.png)
 
 1\.  **Description**
 
 The LED dot matrix consists of 25 Diodes arranged in a 5 by 5 square and placed at the intersection of row lines (X) and column lines (Y). We can control one of the 25 LEDs by setting coordinate points. For example, the first LED sits in the first line is (0,0）and the third LED positioned in the first line is (2,0）and others likewise.
 
-![](./media/a0.png)
+![](./media/Python_094d5908.png)
 
 2\.  **Preparation**
 
@@ -367,7 +367,7 @@ Enter the Mu software and open the“Single LED display\.py.”file to import co
 
 (**Note: All English words and symbols must be written in English**)
 
-![](./media/code2.png)
+![](./media/Python_9545233e.png)
 
 ```python
 from microbit import *
@@ -390,23 +390,23 @@ while True:
 
 Click“Check”to examine error in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code2-1.png)
+![](./media/Python_d205be08.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to micro:bit board.
 
-![](./media/code2-2.png)
+![](./media/Python_86dd6eea.png)
 
 4\.  **Test Result**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The LED in (1,0) will be on and off for 0.5s and the one in (3,4) will be on and off for 0.5s and repeat this sequence.
 
 5\.  **Code Explanation**
 
-![Img](./media/Code-Explanation1.png)
+![Img](./media/Python_c79b7922.png)
 
 6\.  **Reference**
 
@@ -416,7 +416,7 @@ For more details about delay, please refer to the link: [https://microbit-microp
 
 ### Project 3：5*5 LED Dot Matrix
 
-![](./media/microbit1.png)
+![](./media/Python_b855274f.png)
 
 1\.  **Description**
 
@@ -437,7 +437,7 @@ You could open“5×5 LED Dot Matrix-1\.py”file to import the code. You can al
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code3.png)
+![](./media/Python_00f15f0a.png)
 
 ```python
 from microbit import *
@@ -449,19 +449,19 @@ display.show(val)
 
 Click“Check”to examine the error in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code3-1.png)
+![](./media/Python_a1197f5e.png)
 
 If the code is correct, connect micro:bit to computer and click“Flash”to download code to micro:bit board.
 
-![](./media/code3-2.png)
+![](./media/Python_1fd78e31.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
-We will find that the 5*5 dot matrix start to show a downward arrow ![](./media/down.png).
+We will find that the 5*5 dot matrix start to show a downward arrow ![](./media/Python_26c7d8c0.png).
 
 5\.  **Test Code2**
 
@@ -469,7 +469,7 @@ You could open “5×5 LED Dot Matrix-2\.py“ file to import the code. You can 
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code4.png)
+![](./media/Python_dc6eea45.png)
 
 ```python
 from microbit import *
@@ -503,24 +503,24 @@ display.clear()
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code4-1.png)
+![](./media/Python_14bb490a.png)
 
 If the code is correct, connect the micro:bit to the computer and click“Flash”to download code to micro:bit board.
 
-![](./media/code4-2.png)
+![](./media/Python_a05c33d2.png)
 
 6\.  **Test Result2**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
-We will find that the 5*5 dot matrix start to show numbers 1,2,3,4 and 5 and then it alternatively shows a downward arrow word![](./media/down.png),“Hello”, a heart pattern ![](./media/heart.png), arrow pointing at northeast ![](./media/a1.png), then at southeast
-![](./media/a2.png) then at southwest ![](./media/a3.png) and then at northwest ![](./media/a4.png).
+We will find that the 5*5 dot matrix start to show numbers 1,2,3,4 and 5 and then it alternatively shows a downward arrow word![](./media/Python_26c7d8c0.png),“Hello”, a heart pattern ![](./media/Python_9b18b2b8.png), arrow pointing at northeast ![](./media/Python_364f2e35.png), then at southeast
+![](./media/Python_fb3ba009.png) then at southwest ![](./media/Python_7ec21961.png) and then at northwest ![](./media/Python_ced0bb41.png).
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation2.png)
+![Img](./media/Python_ef42956d.png)
 
 
 6.  **Reference**
@@ -533,18 +533,18 @@ More details, please refer to th ink：[https://microbit-micropython.readthedocs
 
 ### Project 4：Programmable Buttons
 
-![](./media/microbit5.png)
+![](./media/Python_06be84fb.png)
 
 1\.  **Description**
 
-![](./media/button.png)
+![](./media/Python_b6d60ae2.png)
 
 Buttons can be used to control circuits. In an integrated circuit with a push button, the circuit is connected when pressing the button and but after release, it will break again. 
 
 Both ends of the button like two mountains. There is a river in between. 
 The internal metal piece connect the two sides to let the current pass, just like building a bridge to connect two mountains.
 
-The internal structure of the button is shown as follows: before pressing the button, 1 ,2 , 3 and 4 are turned on. However, 1, 3 or 1, 4 or 2, 3 or 2 and 4 are disconnected, which is only enabled when the button is pressed. ![](./media/button1.png)
+The internal structure of the button is shown as follows: before pressing the button, 1 ,2 , 3 and 4 are turned on. However, 1, 3 or 1, 4 or 2, 3 or 2 and 4 are disconnected, which is only enabled when the button is pressed. ![](./media/Python_d2a204e6.png)
 
 Micro: Bit main board boasts three push buttons, two are programmable buttons(marked with A and B), and the one on the other side is a reset button. By pressing the two programmable buttons can input three different signals. We can press button A or B alone or press them together and the LED dot matrix shows A,B and AB respectively. Let’s get started. 
 
@@ -560,7 +560,7 @@ Enter Mu software and open the file“Programmable Buttons-1\.py”to import the
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code5.png)
+![](./media/Python_2637f524.png)
 
 ```python
 from microbit import *
@@ -575,17 +575,17 @@ while True:
 ```
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code5-1.png)
+![](./media/Python_a0f284f3.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code5-2.png)
+![](./media/Python_5694d3ce.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The 5*5 LED dot matrix shows “A”if button A is pressed, then“B” if button B is pressed, and “AB” if button A and B are pressed together.
 
@@ -595,9 +595,9 @@ Enter Mu software and open the file“Programmable Buttons-2\.py”to import the
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code6.png)
+![](./media/Python_1a1126f6.png)
 
-![](./media/code6-1.png)
+![](./media/Python_94849305.png)
 
 ```python
 from microbit import *
@@ -641,29 +641,29 @@ while True:
 ```
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code6-2.png)
+![](./media/Python_21771d90.png)
 
-![Img](./media/code6-3.png)
+![Img](./media/Python_8d257384.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code6-4.png)
+![](./media/Python_84ba8cde.png)
 
-![Img](./media/code6-3.png)
+![Img](./media/Python_8d257384.png)
 
 6\.  **Test Result2**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 If the button A is pressed, the LEDs turning red increase while if the button B pressed, the LEDs turning red reduce.
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation4.png)
+![Img](./media/Python_b33858dc.png)
 
-![Img](./media/Code-Explanation4-1.png)
+![Img](./media/Python_32bd1cca.png)
 
 ### Project 5：Temperature Detection
 
@@ -675,7 +675,7 @@ In this project, we will seek to use the sensor to test the temperature in the c
 
 **Note: the temperature sensor of Micro:bit main board is shown below:**
 
-![](./media/microbit7.png)
+![](./media/Python_206c8ec1.png)
 
 2\.  **Preparation**
 
@@ -689,7 +689,7 @@ Enter Mu software and open the file“Temperature Measurement -1\.py “ to impo
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code7.png)
+![](./media/Python_03cbb6e9.png)
 
 ```python
 from microbit import *
@@ -705,21 +705,21 @@ while True:
 
 Click“Check”to examine error in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code7-1.png)
+![](./media/Python_7b437c2d.png)
 
 If the code is correct, connect micro:bit to computer and click“Flash”to download code to micro:bit board.
 
-![](./media/code7-2.png)
+![](./media/Python_193065ab.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. Click“REPL”and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 Then REPL window will show the ambient temperature value, as shown below: (C stands for temperature unit)
 
-![](./media/code7-3.png)
+![](./media/Python_d08386d8.png)
 
 5\.  **Test Code2**
 
@@ -729,7 +729,7 @@ Enter Mu software and open the file“Temperature Measurement -2\.py “ to impo
 
 The temperature value can be set in compliance with the rea emperature.
 
-![](./media/code8.png)
+![](./media/Python_c6456d78.png)
 
 ```python
 from microbit import *
@@ -745,27 +745,27 @@ while True:
 
 Click“Check”to examine error in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code8-1.png)
+![](./media/Python_709d3031.png)
 
 If the code is correct, connect the micro:bit to the computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code8-2.png)
+![](./media/Python_06f7542e.png)
 
 6\.  **Test Result2**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
- When the ambient temperature is less than 35℃, the 5*5 LED dot matrix shows ![](./media/heart3.png). When the temperature is equivalent to or greater than 35℃, the pattern ![](./media/heart4.png) appears.
+ When the ambient temperature is less than 35℃, the 5*5 LED dot matrix shows ![](./media/Python_034dc0d5.png). When the temperature is equivalent to or greater than 35℃, the pattern ![](./media/Python_ebfaeac9.png) appears.
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation5.png)
+![Img](./media/Python_d7cdc397.png)
 
 ### Project 6：Geomagnetic Sensor
 
-![](./media/microbit8.png)
+![](./media/Python_26d107ae.png)
 
 1\.  **Description**
 
@@ -789,7 +789,7 @@ Enter Mu software and open the file“Magnetic sensor -1\.py“ to import code. 
 
 (**Note: All words and symbols must be written in English**.)
 
-![](./media/code9.png)
+![](./media/Python_1366c5ed.png)
 
 ```python
 from microbit import *
@@ -803,23 +803,23 @@ while True:
 ```
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code9-1.png)
+![](./media/Python_5bfe40c4.png)
 
 If the code is correct, connect micro:bit to the computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code9-2.png)
+![](./media/Python_695d8f29.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
  The LED dot matrix shows “TILT TO FILL SCREEN”. Pressing the button A, the board asks us to calibrate the compass. Then enter the calibration page. Rotate the board until all 25 red LEDs are on, as shown below.
 
-![](./media/microbit9.jpg)
+![](./media/Python_c8fd6670.jpg)
 
-After that, a smile pattern ![](./media/happy.png) appears, which implies the calibration is done. When the calibration process is completed, pressing the button A will make the magnetometer reading display directly on the screen. And the direction north, east, south and west correspond to 0°, 90°, 180° and 270° respectively.
+After that, a smile pattern ![](./media/Python_a3b91e3e.png) appears, which implies the calibration is done. When the calibration process is completed, pressing the button A will make the magnetometer reading display directly on the screen. And the direction north, east, south and west correspond to 0°, 90°, 180° and 270° respectively.
 
 5\.  **Test Code2**
 
@@ -827,13 +827,13 @@ For the below picture, the arrow will work to point to the upper right when the 
 
 Then add other statements to make a set of complete code.
 
-![](./media/ab.png)
+![](./media/Python_d1a4e9f6.png)
 
 Enter Mu software and open the file“Magnetic sensor -2\.py“ to import the code. You can also input code in the editing window yourself.
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code10.png)
+![](./media/Python_5b0d8e26.png)
 
 ```python
 from microbit import *
@@ -862,27 +862,27 @@ while True:
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code10-1.png)
+![](./media/Python_42389bcf.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code10-2.png)
+![](./media/Python_bedc607a.png)
 
 6\.  **Test Result**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 After calibration, rotate the micro:bit board, then the LED dot matrix displays the direction signs. 
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation6.png)
+![Img](./media/Python_76f66bb0.png)
 
 ### Project 7：Accelerometer
 
-![](./media/microbit8.png)
+![](./media/Python_26d107ae.png)
 
 1\.  **Description**
 
@@ -904,7 +904,7 @@ Enter Mu software and open the file“Three-axis acceleration sensor -1\.py“ t
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code11.png)
+![](./media/Python_f20f5b58.png)
 
 ```python
 from microbit import *
@@ -932,41 +932,41 @@ while True:
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code11-1.png)
+![](./media/Python_07e4b578.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code11-2.png)
+![](./media/Python_eb56750b.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 When we shake the micro: bit main board，no matter at any direction, the LED dot matrix displays the digit “1”. 
 
 When it is kept upright（make its logo above the LED dot matrix）, the number 2 appears.
 
-![](./media/ba1.jpg)
+![](./media/Python_b91421df.jpg)
 
 When it is kept upside down( make its logo below the LED dot matrix) , it shows as below.
 
-![](./media/ba2.jpg)
+![](./media/Python_69e81587.jpg)
 
 When it is placed still on the desk, showing its front side, the number 4 appears.
 
-![](./media/ba3.jpg)
+![](./media/Python_9e08cb69.jpg)
 
 When it is placed still on the desk, showing its back side, the number 5 exhibits.
 
 When the board is tilted to the left , the LED dot matrix shows the number 6, as shown below:
 
-![](./media/ba4.jpg)
+![](./media/Python_81fa2ce1.jpg)
 
 When the board is tilted to the right , the LED dot matrix displays the number 7, as shown below：
 
-![](./media/ba5.jpg)
+![](./media/Python_fc13912b.jpg)
 
 When the board is knocked to the floor, this process can be considered as a free fall and the LED dot matrix shows the number 8. (Please note that this test is not recommended for it may damage the main board.)
 
@@ -978,7 +978,7 @@ Enter Mu software and open the file“Three-axis acceleration sensor -2\.py“ t
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code12.png)
+![](./media/Python_0f7ccf57.png)
 
 ```python
 from microbit import *
@@ -997,35 +997,35 @@ while True:
 ```
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code12-1.png)
+![](./media/Python_0ed2221e.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code12-2.png)
+![](./media/Python_35c4c76b.png)
 
 6\.  **Test Result2**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. Click“REPL”and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 Then REPL window will show the value of the acceleration on X axis, Y axis and Z axis are shown below:
 
-![](./media/code12-3.png)
+![](./media/Python_940cfcf7.png)
 
 After referring to the MMA8653FC data manual and the hardware schematic diagram of the micro: bit main board, the accelerometer coordinate of the micro: bit is shown in the figure below:
 
-![](./media/ba6.png)
+![](./media/Python_ebd0d44d.png)
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation8.png)
+![Img](./media/Python_d533d72c.png)
 
-![Img](./media/Code-Explanation8-1.png)
+![Img](./media/Python_89d95342.png)
 
 ### Project 8：Light Detection
 
-![](./media/microbit1.png)
+![](./media/Python_b855274f.png)
 
 1\.  **Description**
 
@@ -1043,7 +1043,7 @@ Enter Mu software and open the file“Detect Light Intensity by Microbit\.py”t
 
 (**Note: All English words and symbols must be written in English.**)
 
-![](./media/code13.png)
+![](./media/Python_b4f06503.png)
 
 ```python
 from microbit import *
@@ -1058,31 +1058,31 @@ while True:
 ```
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code13-1.png)
+![](./media/Python_b41eeb0f.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
 
-![](./media/code13-2.png)
+![](./media/Python_7baa2190.png)
 
 4\.  **Test Result**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. Click“REPL”and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 Then REPL window will show the light intensity value, as shown below.
 
 When the LED dot matrix is covered by hand, the light intensity showed is approximately 0; when the LED dot matrix is exposed to light, the light intensity displayed gets stronger with the light.
 
-![](./media/code13-3.png)
+![](./media/Python_778d89d6.png)
 
 5\.  **Code Explanation**
 
-![Img](./media/Code-Explanation9.png)
+![Img](./media/Python_dcdc4536.png)
 
 ### Project 9：Speaker
 
-![](./media/microbit9.png)
+![](./media/Python_ac515b9a.png)
 
 1\.  **Description**
 
@@ -1100,7 +1100,7 @@ Enter Mu software and open the file“Speaker\.py”to import code. You can also
 
 (**Note: All words and symbols must be written in English**.)
 
-![](./media/code14.png)
+![](./media/Python_eec7f643.png)
 
 ```python
 from microbit import *
@@ -1122,27 +1122,27 @@ while True:
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code14-1.png)
+![](./media/Python_f8852abf.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code14-2.png)
+![](./media/Python_3fd94e43.png)
 
 4\.  **Test Result**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
  The speaker utters sound and the LED dot matrix shows the logo of music.
 
 5\.  **Code Explanation**
 
-![Img](./media/Code-Explanation10.png)
+![Img](./media/Python_18c047bd.png)
 
 ### Project 10: Touch-sensitive Logo
 
-![](./media/microbit10.png)
+![](./media/Python_64469585.png)
 
 1\.  **Description**
 
@@ -1162,7 +1162,7 @@ Enter Mu software and open the file“Touch-sensitive Logo\.py”to import code.
 
 (**Note: All English words and symbols must be written in English**.)
 
-![](./media/code15.png)
+![](./media/Python_0c54cbe5.png)
 
 ```python
 from microbit import *
@@ -1212,17 +1212,17 @@ H\. If the stopwatch has been started and"running" is true, it only need to ensu
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown.
 
-![](./media/code15-1.png)
+![](./media/Python_1766a28c.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
 
-![](./media/code15-2.png)
+![](./media/Python_a3d6e994.png)
 
 4\.  **Test Result**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 Press button A to start the stopwatch. When timing, the beating heart pattern will be displayed on the LED dot matrix screen. Press button B to stop it and you can start and stop it at any time. 
 
@@ -1230,9 +1230,9 @@ It will keep recording time, just like a real stopwatch. Press the golden logo i
 
 ### Project 11: Microphone
 
-![](./media/microbit11.png)
+![](./media/Python_3073a8af.png)
 
-![](./media/microbit11-1.png)
+![](./media/Python_7f074115.png)
 
 1\.  **Description**
 
@@ -1252,7 +1252,7 @@ Enter Mu software and open the file“Microphone-1\.py”to import the code. You
 
 (**Note: All words and symbols must be written in English**.)
 
-![](./media/code16.png)
+![](./media/Python_19b38832.png)
 
 ```python
 from microbit import *
@@ -1267,17 +1267,17 @@ while True:
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code16-1.png)
+![](./media/Python_36a669c7.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
 
-![](./media/code16-2.png)
+![](./media/Python_0515bf32.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The LED dot matrix displays the pattern “❤”when you clap and the pattern ![](./media/04fdfc9060943954e7938bb1a741d626.png) when it is quiet around.
 
@@ -1287,7 +1287,7 @@ Enter Mu software and open the file“Microphone-2\.py”to import the code. You
 
 (**Note: All words and symbols must be written in English.**)
 
-![](./media/code17.png)
+![](./media/Python_f0e5a346.png)
 
 ```python
 from microbit import *
@@ -1313,23 +1313,23 @@ while True:
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code17-1.png)
+![](./media/Python_d0c79871.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
 
-![](./media/code17-2.png)
+![](./media/Python_d828b9ee.png)
 
 6\.  **Test Result2**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
  When the button A is pressed, the LED dot matrix displays the value of the biggest volume( **please note that the biggest volume can be reset via the Reset button on the other side of the board** ). When clapping, the louder the tested sound, the brighter the 25 LEDs on the LED dot matrix screen.
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation11.png)
+![Img](./media/Python_980f62b3.png)
 
 ### Project 12: Control Speaker
 
@@ -1339,7 +1339,7 @@ In the previous projects, we have learned about the touch-sensitive logo and the
 
 2\.  **Components Needed**
 
-|![](./media/microbit0.png)|![](./media/usb.jpg)|
+|![](./media/Python_021507bd.png)|![](./media/Python_84cdea05.jpg)|
 |-|-|
 |Micro:bit main board \*1|USB cable\*1|
 
@@ -1348,7 +1348,7 @@ In the previous projects, we have learned about the touch-sensitive logo and the
 
 Attach the Micro:bit main board to your computer via the USB cable.
 
-![](./media/microbit.png)
+![](./media/Python_611b2c4e.png)
 
 4\.  **Test Code**
 
@@ -1356,7 +1356,7 @@ Enter Mu software and open the file“Touch the Logo to control the speaker\.py�
 
 (**Note: All words and symbols must be written in English**.)
 
-![](./media/code18.png)
+![](./media/Python_600c8fa6.png)
 
 ```python
 from microbit import *
@@ -1373,23 +1373,23 @@ while True:
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code18-1.png)
+![](./media/Python_dcc17127.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code18-2.png)
+![](./media/Python_be3d4ee9.png)
 
 5\.  **Test Result**
 
 After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The speaker plays the song “*Happy Birthday to You*” when the logo is touched.
 
 6\.  **Code Explanation**
 
-![Img](./media/Code-Explanation12.png)
+![Img](./media/Python_852be78f.png)
 
 #### Bluetooth Wireless Communication
 
@@ -1405,7 +1405,7 @@ The former projects are the introduction of sensors and modules. The further les
 
 ### Project 13: Seven-Color LED
 
-![](./media/Seven-Color-LED.png)
+![](./media/Python_804e502b.png)
 
 1\.  **Description**
 
@@ -1429,7 +1429,7 @@ Enter Mu software and open the file“Colorful lights\.py”to import code. You 
 
 (**Note: All words and symbols must be written in English**.)
 
-![](./media/code19.png)
+![](./media/Python_010a8a12.png)
 
 ```python
 from microbit import *
@@ -1450,17 +1450,17 @@ while True:
 
 After the library file is imported successfully, you also need to click the "Check" button to check the code. If a cursor or an underline appears on a certain line, then errors appear in the program.
 
-![](./media/code19-1.png)
+![](./media/Python_ce67f468.png)
 
 However, during this process, the following prompt will appear even if there is no error in the code. These prompts are just warnings not the code error prompts. 
 
-![](./media/code19-2.png)
+![](./media/Python_863bb61b.png)
 
-![](./media/code19-3.png)
+![](./media/Python_ccfbfa56.png)
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code19-4.png)
+![](./media/Python_39512a13.png)
 
 If errors appear after clicking the "Flash" button, please confirm whether you have imported the provided "keyes_mecanum_Car_V2.py" library file.
 
@@ -1470,23 +1470,23 @@ If errors appear after clicking the "Flash" button, please confirm whether you h
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The seven-color LED will flash in 3s and then stop in 3s and repeat this pattern.
 
 5\. **Code Explanation**
 
-![Img](./media/Code-Explanation13.png)
+![Img](./media/Python_a4a670c0.png)
 
 ### Project 14: 4 WS2812 RGB LEDs
 
-![](./media/WS2812-RGB.png)
+![](./media/Python_eecf79fe.png)
 
 1\.  **Description**
 
 The driver shield cooperates 4 pcs WS2812 RGB LEDs, compatible with micro:bit board and controlled by P7. In this lesson, we will make the RGB LEDs display different colors by P7. In this lesson, 3 sets of test code are provided to make the 4 WS2812 RGB LEDs display different effects.
 
-![Img](./media/WS2812-RGB-1.png)
+![Img](./media/Python_0be70eda.png)
 
 2\.  **Preparation**
 
@@ -1508,7 +1508,7 @@ Enter Mu software and open the file“4 WS2812 RGB LEDs-1\.py”to import code\ 
 
 Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
 
-![](./media/code20.png)
+![](./media/Python_5b5266e2.png)
 
 ```python
 from microbit import *
@@ -1554,13 +1554,13 @@ while True:
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code20-1.png)
+![](./media/Python_56a9ab63.png)
 
 4\.  **Test Result1**
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The 4 WS2812RGB LEDs light up a different color a time cyclically.
 
@@ -1574,7 +1574,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code22.png)
+![](./media/Python_8cb1dd7c.png)
 
 ```python
 from microbit import *
@@ -1632,7 +1632,7 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The WS2812RGB LEDs display like a flow light.
 
@@ -1646,7 +1646,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code23.png)
+![](./media/Python_b248f1c5.png)
 
 ```python
 from microbit import *
@@ -1671,17 +1671,17 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 Every WS2812RGB light shows random color one by one.
 
 5\.  **Code Explanation**
 
-![Img](./media/Code-Explanation14.png)
+![Img](./media/Python_d1e3977b.png)
 
 ### Project 15：Servo
 
-![](./media/servo.png)
+![](./media/Python_c4b5e57b.png)
 
 1\.  **Description**
 
@@ -1693,13 +1693,13 @@ Servo motor is a position control rotary actuator, which mainly consists of hou
 
 For the servo used in this project, the brown wire is the ground, the red one is the positive wire, and the orange one is the signal wire.
 
-![](./media/servo1.png)
+![](./media/Python_69be9581.png)
 
 2\.  **Information of the Servo**
 
 The rotation angle of servo motor is controlled by regulating the duty cycle of PWM (Pulse-Width Modulation) signal. The standard cycle of PWM signal is 20ms (50Hz). Theoretically, the width is distributed between 1ms-2ms, but in fact, it's between 0.5ms-2.5ms. The width corresponds to the rotation angle from 0° to 180°. But note that for different brand motor, the same signal may have different rotation angle. 
 
-![](./media/servo2.png)
+![](./media/Python_0982cb7b.png)
 
 After measurement, the pulse range of the servo is 0.65ms~2.5ms. For a 180 degree servo, the corresponding control relationship is as follow:
 
@@ -1759,7 +1759,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code24.png)
+![](./media/Python_eecf365e.png)
 
 ```python
 from microbit import *
@@ -1812,13 +1812,13 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The LED dot matrix shows a smiley pattern and the servo rotates in the pattern 0°~45°~90°~135°~180°~0°.
 
 ### Project 16：Motor
 
-![](./media/motor.png)
+![](./media/Python_32655f47.png)
 
 1\.  **Description**
 
@@ -1830,19 +1830,19 @@ Micro:bit motor driver shield comes with a STC8G and HR8833 chip. In order to sa
 
 **Details about chips:**
 
-![](./media/motor1.jpg)
+![](./media/Python_d7132b53.jpg)
 
 Front
 
-![](./media/motor3.png)
+![](./media/Python_4919ce3b.png)
 
 Back
 
-![](./media/motor4.png)
+![](./media/Python_fbfa17f7.png)
 
 STC8G1K08 Chip circuit
 
-![](./media/motor5.png)
+![](./media/Python_47cdde6b.png)
 
 HR8833 Motor driver circuit
 
@@ -1870,7 +1870,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code25.png)
+![](./media/Python_71476377.png)
 
 ```python
 from microbit import *
@@ -1913,7 +1913,7 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 Then the car will go forward for 1s, back for 1s, turn left for 1s, right for 1s, turn anticlockwise for 1s, clockwise for 1 and stop 1s. Matrix also displays the patterns.
 
@@ -1929,7 +1929,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code26.png)
+![](./media/Python_96230faf.png)
 
 ```python
 from microbit import button_a, button_b, display, Image, sleep
@@ -2027,21 +2027,21 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
  When the button A and B are firstly pressed, micro:bit will show “L”, the route of the car is“L”. When they are pressed again,“口”is shown on micro:bit, and route of the car is“口”. The car will repeat this pattern.
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation15.png)
+![Img](./media/Python_70b4e70f.png)
 
-![Img](./media/Code-Explanation15-1.png)
+![Img](./media/Python_e3250a8a.png)
 
 ### Project 17：Line Tracking Sensor
 
 #### Project 17.1：Detect Line Tracking Sensor
 
-![](./media/Line-Tracking.png)
+![](./media/Python_ea7f6c8c.png)
 
 1\. **Description**
 
@@ -2083,7 +2083,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code27.png)
+![](./media/Python_2c7b1c21.png)
 
 ```python
 from microbit import *
@@ -2107,22 +2107,22 @@ while True:
 
 After downloading the code to the board successfully and don’t plug off the USB cable. Click“REPL”and then press the reset button.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The readings detected by the left TCRT5000 IR tube will be displayed on monitor.
 
 When the left TCRT5000 IR tube detects the white object, 0 will be shown and the left indicator will be on; when there is only black object detected, 1 will be displayed and the indicator will be off, as shown below:
 
-![](./media/code27-1.png)
+![](./media/Python_6a25b450.png)
 
 6\.  **Code Explanation**
 
-![Img](./media/Code-Explanation17.png)
+![Img](./media/Python_5dad345e.png)
 
 
 #### Project 17.2：Tracking Smart Car
 
-![](./media/Tracking-Car.jpg)
+![](./media/Python_f0b62e0f.jpg)
 
 1\. Description
 
@@ -2134,7 +2134,7 @@ The micro:bit board will analyze the signals and control the smart car to show t
 
 The smart car will make different moves according to the value received by the 3-channel line tracking sensor.
 
-![Img](./media/ba11.png)
+![Img](./media/Python_e672c637.png)
 
 3\.  **Preparation**
 
@@ -2152,7 +2152,7 @@ The smart car will make different moves according to the value received by the 3
 
 4\.  **Flow Chart**
 
-![Img](./media/Flow-Chart1.png)
+![Img](./media/Python_47856ed2.png)
 
 5\.  **Test Code**
 
@@ -2166,7 +2166,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code28.png)
+![](./media/Python_bd395cbe.png)
 
 ```python
 from microbit import *
@@ -2218,7 +2218,7 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The line tacking car goes forward along the black line .
 
@@ -2229,9 +2229,9 @@ The line tacking car goes forward along the black line .
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation18-1.png)
+![Img](./media/Python_b16f9d7b.png)
 
-![Img](./media/Code-Explanation18-2.png)
+![Img](./media/Python_35f35a4c.png)
 
 ### Project 18：Ultrasonic Sensor
 
@@ -2239,13 +2239,13 @@ The line tacking car goes forward along the black line .
 
 1\. **Description**
 
-![](./media/Ultrasonic.jpg)
+![](./media/Python_9810ae67.jpg)
 
 The ultrasonic sensor uses sonar to determine distance to an object like bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes complete with ultrasonic transmitter and receiver modules.
 
 The ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications. 
 
-![](./media/Ultrasonic1.png)
+![](./media/Python_0180b169.png)
 
 The ultrasonic module will emit the ultrasonic waves after trigger signals. When the ultrasonic waves encounter the object and are reflected back, the module outputs an echo signal, so it can determine the distance of object from the time difference between trigger signal (TRIG)and echo signal(ECHO). 
 
@@ -2253,11 +2253,11 @@ As the picture shows, it is like two eyes. One is transmitting end, the other is
 
 According to the above wiring diagram, the integrated port of the ultrasonic sensor module is connected to the 5V G P15 P16 port on the micro:bit motor driver base plate. The Trig (T) pin is controlled by P15 of the micro:bit and the pin of Echo (E) the P16.
 
-![](./media/Ultrasonic2.jpg)
+![](./media/Python_19b45a23.jpg)
 
 2\. **Working Principle**
 
-![](./media/Ultrasonic3.png)
+![](./media/Python_8ff02741.png)
 
 (1)Pull down TRIG then trigger high level signals with least 10us;
 
@@ -2309,7 +2309,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code29.png)
+![](./media/Python_5a29bde9.png)
 
 ```python
 from microbit import *
@@ -2337,21 +2337,21 @@ while True:
 
 After downloading the code to the board successfully and don’t plug off the USB cable. Click“REPL”and then press the reset button.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The distance value of obstacle will be displayed, as shown below.
 
 When the distance is less than 10cm, the passive buzzer of smart will emit sound.
 
-![](./media/code29-1.png)
+![](./media/Python_4dc8054e.png)
 
 7\.  **Code Explanation**
 
-![Img](./media/Code-Explanation18.png)
+![Img](./media/Python_ebde06e9.png)
 
 #### Project 18.2：Ultrasonic Avoidance
 
-![](./media/Avoidance.jpg)
+![](./media/Python_aee41f6f.jpg)
 
 1\. **Description**
 
@@ -2373,7 +2373,7 @@ Its principle is to detect the distance between the car and obstacle via the ult
 
 3\.  **Flow Chart**
 
-![Img](./media/Flow-Chart2.png)
+![Img](./media/Python_a4efee72.png)
 
 4\.  **Test Code**
 
@@ -2387,7 +2387,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code30.png)
+![](./media/Python_38f3510c.png)
 
 ```python
 from microbit import *
@@ -2471,19 +2471,19 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 When the obstacle distance is greater than 20cm, the car goes forward ; on the contrary, the smart car turns left.
 
 6\.  **Code Explanation**
 
-![Img](./media/Code-Explanation19.png)
+![Img](./media/Python_9e28cce7.png)
 
-![Img](./media/Code-Explanation19-1.png)
+![Img](./media/Python_c33a22a8.png)
 
 #### Project 18.3：Ultrasonic Following
 
-![](./media/Following.jpg)
+![](./media/Python_28806167.jpg)
 
 1\. **Description**
 
@@ -2505,7 +2505,7 @@ The ultrasonic sensor detects the obstacle distance and control the motion statu
 
 2\.  **Flow Chart**
 
-![Img](./media/Flow-Chart3.png)
+![Img](./media/Python_53a30906.png)
 
 3\.  **Test Code**
 
@@ -2519,7 +2519,7 @@ Click“Check”to examine errors in the code. The program proves wrong if under
 
 If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
 
-![](./media/code31.png)
+![](./media/Python_f586f3f7.png)
 
 ```python
 from microbit import *
@@ -2592,7 +2592,7 @@ while True:
 
 After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
 
-![Img](./media/microbit-button.png)
+![Img](./media/Python_bb3e1312.png)
 
 The smart car could follow the obstacle to move and 4 WS2812 RGB lights will display different colors.
 
@@ -2600,9 +2600,9 @@ The smart car could follow the obstacle to move and 4 WS2812 RGB lights will dis
 
 5\.  **Code Explanation**
 
-![Img](./media/Code-Explanation20.png)
+![Img](./media/Python_930a04fa.png)
 
-![Img](./media/Code-Explanation20-1.png)
+![Img](./media/Python_26371a4d.png)
 
 
 ## Resources

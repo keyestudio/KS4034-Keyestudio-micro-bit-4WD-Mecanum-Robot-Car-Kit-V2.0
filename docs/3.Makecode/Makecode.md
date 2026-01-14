@@ -1,10 +1,12 @@
 # Makecode Tutorial
 
-![](./media/car1.jpg)
+![](./media/Makecode_290e8cf7.jpg)
+
+
 
 ## Resource Download
 
-To help you quickly obtain related codes, libraries, and other support files for this product, please click the links below to download:
+<span style="background:#FF0000;">To help you quickly obtain related codes, libraries, and other support files for this product, please click the links below to download:</span>
 
 - [Makecode Code and library downloads](./Code.7z)
 
@@ -14,23 +16,23 @@ Step 1: connect the Micro: Bit main board V2 with your computer
 
 Firstly, link the Micro: Bit main board V2 with your computer via the USB cable. 
 
-![](./media/image-20250903152629814-1764036560155-2.png)
+![](./media/Makecode_a21e48b4.png)
 
 Step 2： if the red LED on the back of the board is on, that means the board is powered. Then Micro: Bit main board V2 will appear on your computer as a driver named 'MICROBIT'. Please note that it is not an ordinary USB disk as shown below.
 
-![](./media/image-20250903153355910-1764036560154-1.png)
+![](./media/Makecode_cbfceb10.png)
 
 Step 3: write programs
 
 https://makecode.microbit.org/
 
-![](./media/Microbit-1764036560155-5.gif)
+![](./media/Makecode_fcdafc4a.gif)
 
 Congratulations on completing your first code! You should now see the 5x5 LED dot matrix displaying various patterns.
 
 Next, I will demonstrate downloading the written code to the computer and uploading it using a different method.
 
-![](./media/MicrobitD-1764036560155-4.gif)
+![](./media/Makecode_cb45d185.gif)
 
 ## 2. CoolTerm Installation
 
@@ -62,11 +64,11 @@ Linux:
 
 (3) Unzip file and open it. (also suitable for Mac and Linux system)
 
-![](./media/Animation1-1764036560155-3.gif)
+![](./media/Makecode_00ec3601.gif)
 
 The functions of each button on the Toolbar are listed below:
 
-![](./media/1-1764036560155-7.png)
+![](./media/Makecode_4056f116.png)
 
 | Command    | Description                                      |
 | ---------- | ------------------------------------------------ |
@@ -84,7 +86,7 @@ After installation is complete, we will use this tool in our subsequent lessons.
 
 ## Project 1: Heartbeat
 
-![](./media/2356ba4c94ae3584430f119173f91469925077124a6252fd80568bc2c68f8d83-1764036560155-6.jpg)
+![](./media/Makecode_56018947.jpg)
 
 [Click to download the code for this lesson](./Code/Heartbeat.hex)
 
@@ -102,11 +104,11 @@ Micro USB cable
 
 Attach the Micro:bit main board V2 to your computer via the Micro USB cable and begin editing.
 
-![](./media/2-1764036560155-8.gif)
+![](./media/Makecode_46b15e27.gif)
 
 Complete Program :
 
-![](./media/Heartbeat-1764036560155-9.png)
+![](./media/Makecode_d862ba0e.png)
 
 Note: the "on start" means that the code in this block only executes once, while "forever" implies that the code runs cyclically.
 
@@ -114,11 +116,11 @@ Note: the "on start" means that the code in this block only executes once, while
 
 After uploading the code, you will see a heartbeat effect appear on the Microbit board.
 
-![](./media/Heartbeat1-1764036560155-11.gif)
+![](./media/Makecode_e64df1f5.gif)
 
 ## Project 2: Light A Single LED
 
-![](./media/7748e3bd6d35ef4017ffbc6997e70ef85cacc3eb5ec7195dac6a776c6fdfb033-1764036560155-10.jpg)
+![](./media/Makecode_2423afc6.jpg)
 
 [Click to download the code for this lesson](./Code/Light-A-Single-LED.hex)
 
@@ -126,7 +128,7 @@ After uploading the code, you will see a heartbeat effect appear on the Microbit
 
 (1)Project Description:The LED dot matrix consists of 25 LEDs arranged in a 5 by 5 square. In order to locate these LEDs quickly, as the figure shown below, we can regarded this matrix as a coordinate system and create two aces by marking those in rows from 0 to 4 from top to bottom, and the ones in columns from 0 to 4 from the left to the right. Therefore, the LED sat in the second of the first line is (1,0) and the LED positioned in the fifth of the fourth column is (3,4) and others likewise.
 
-![](./media/image-20250904102610952-1764036560155-12.png)
+![](./media/Makecode_4ab9ecab.png)
 
 ### (2)Components Needed:
 
@@ -138,21 +140,21 @@ Micro:bit main board V2
 
 Attach the Micro:bit main board V2 to your computer via the Micro USB cable and begin editing.
 
-![](./media/3-1764036560155-13.gif)
+![](./media/Makecode_1bbd8a3b.gif)
 
 Complete Program :
 
-![](./media/4-1764036560155-20.png)
+![](./media/Makecode_da248db5.png)
 
 ### (4)Test Results
 
 After uploading the code, you will observe the Microbit board display the following effect: (1,0) lights up for 0.5 seconds before turning off, followed by (3,4) lighting up for 0.5 seconds before turning off, repeating in a loop.
 
-![](./media/5-1764036560155-14.gif)
+![](./media/Makecode_301232e3.gif)
 
 ## Project 3: LED Dot Matrix
 
-![](./media/a693bf0fdb1627198fb157c88f41383e9bc0b93b8763ab6af4b833ba1439abbe-1764036560155-15.jpg)
+![](./media/Makecode_5353bbf0.jpg)
 
 [Click to download the code 1 for this lesson](./Code/LED-Dot-Matrix.hex)
 
@@ -176,37 +178,37 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor.
 
-![](./media/6-1764036560155-16.gif)
+![](./media/Makecode_3e840449.gif)
 
 Complete Program :
 
-![](./media/77-1764036560155-17.png)
+![](./media/Makecode_62ac18b6.png)
 
 ### (4) Test Results 1:
 
 Upload code 1 and power the board, we will see the icon.
 
-![7](./media/8-1764036560155-18.gif)
+![7](./media/Makecode_fb015046.gif)
 
 ### (5) Test Code 2:
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor.
 
-![](./media/9-1764036560155-19.gif)
+![](./media/Makecode_38615007.gif)
 
 Complete Program :
 
-![](./media/image-20250910093151810-1764036560155-21.png)
+![](./media/Makecode_957cb537.png)
 
 ### (6)Test Results 2 :
 
 After uploading the code to the Microbit, you can see the 5x5 dot matrix display cycling through the patterns and text specified in the code.（Note: the "on start" means that the code in this block only executes once, while "forever" implies that the code runs cyclically.）
 
-![](./media/10-1764036560155-22.gif)
+![](./media/Makecode_3e5aa1cd.gif)
 
 ## Project 4: Programmable Buttons
 
-![](./media/689b7e239b7e07a8a4bf8e4cb4a6d2dc0724b36b69c7e45ecebbedd51e9d7e67-1764036560155-24.jpg)
+![](./media/Makecode_b339baac.jpg)
 
 [Click to download the code 1 for this lesson](./Code/Programmable-Buttons.hex)
 
@@ -226,37 +228,37 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/11-1764036560155-25.gif)
+![](./media/Makecode_c776e309.gif)
 
 Complete Code:
 
-![](./media/image-20250910095454263-1764036560155-23.png)
+![](./media/Makecode_054985a9.png)
 
 ### (4)Test Results 1 :
 
 After uploading test code 1 to micro:bit main board V2 , the 5*5 LED dot matrix shows A if button A is pressed, B if button B pressed, and AB if button A and B pressed together.
 
-![](./media/12.gif)
+![](./media/Makecode_b48c79ad.gif)
 
 ### (5) Test Code 2 :
 
-![](./media/13-1764036560155-26.gif)
+![](./media/Makecode_751dfce0.gif)
 
 
 
 Complete Program :
 
-![](./media/image-20250910104143540-1764036560155-27.png)
+![](./media/Makecode_5cdecff7.png)
 
 ### (6)Test Results 2:
 
 After uploading test code 2 to micro:bit main board V2, when pressing the button A the LEDs turning red increase while when pressing the button B the LEDs turning red reduce.
 
-![](./media/14.gif)
+![](./media/Makecode_248724b3.gif)
 
 ## Project 5: Temperature Detection
 
-![](./media/c279cdbc53aa0f036fdcda2c4f2b0811feb324dfc18b4079f5c2afefe29d5eaf-1764036560155-30.jpg)
+![](./media/Makecode_22c6434f.jpg)
 
 [Click to download the code 1 for this lesson](./Code/Temperature-Detection.hex)
 
@@ -274,33 +276,33 @@ Micro USB cable
 
 ### (3)Test Code 1 :
 
-![](./media/15-1764036560155-28.gif)
+![](./media/Makecode_e6674fe9.gif)
 
 ### (4)Test Results 1:
 
 After uploading test code 1 to micro:bit main board V2, powering the main board via the USB cable, and clicking "Show console Device", the data of temperature shows in the serial monitor page as shown below.
 
-![](./media/16-1764036560155-31.gif)
+![](./media/Makecode_898eded8.gif)
 
 If you're running Windows 7 or 8 instead of Windows 10, via
 
 Google Chrome won't be able to match devices. You'll need to use the CoolTerm serial monitor software to read data.You could open CoolTerm software, click Options, select SerialPort, set COM port and put baud rate to 115200 (after testing, the baud rate of USB SerialPort communication on Micro: Bit main board V2 is 115200), click OK, and Connect. The CoolTerm serial monitor shows the change of temperature in the current environment, as shown in the figures below :
 
-![](./media/Animation2-1764036560155-29.gif)
+![](./media/Makecode_268159a1.gif)
 
 ### (5)Test Code 2 :
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/17-1764036560155-33.gif)
+![](./media/Makecode_4057bdd7.gif)
 
 Complete Program :
 
-![](./media/image-20250910112243497-1764036560155-32.png)
+![](./media/Makecode_ec457959.png)
 
 ### (6)Test Results 2:
 
-After uploading the code 2, when the ambient temperature is  less than 35℃, the 5*5 LED dot matrix shows ![](./media/image-20250905140357642-1764036560155-34.png). When the temperature is equivalent to or greater than 35℃, the pattern ![](./media/image-20250905140444458-1764036560155-37.png)appears.
+After uploading the code 2, when the ambient temperature is  less than 35℃, the 5*5 LED dot matrix shows ![](./media/Makecode_350d26c6.png). When the temperature is equivalent to or greater than 35℃, the pattern ![](./media/Makecode_ef8d7c88.png)appears.
 
 ## Project 6: Geomagnetic Sensor
 
@@ -322,25 +324,25 @@ Micro:bit main board V2
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor.
 
-![](./media/18-1764036560155-35.gif)
+![](./media/Makecode_5805c7de.gif)
 
 Complete Program :
 
-![](./media/image-20250910113624112-1764036560155-39.png)
+![](./media/Makecode_5a958132.png)
 
 ### (4)Test Results 1 :
 
 After uploading test code to micro:bit main board V2 and powering the board via the USB cable, and pressing the button A, the board asks us to calibrate compass and the LED dot matrix shows "TILT TO FILL SCREEN". Then enter the calibration page. Rotate the board until all 25 LEDs are on red as shown below.
 
-![](./media/1a8cbfb52c88d287fc1bbd567ea0c7d1a49038af1b6d94d96bb75a411cfac576-1764036560155-36.jpg)
+![](./media/Makecode_b0a4ebf1.jpg)
 
 calibrate compass:
 
-![](./media/19.gif)
+![](./media/Makecode_05a88e21.gif)
 
-After that, a smile pattern ![](./media/image-20250905140551074-1764036560155-38.png)appears, which implies the calibration is done. When the calibration process is completed, pressing the button A will make the magnetometer reading display directly on the screen. And the direction north, east, south and west correspond to 0°, 90°, 180° and 270° respectively.
+After that, a smile pattern ![](./media/Makecode_74a69436.png)appears, which implies the calibration is done. When the calibration process is completed, pressing the button A will make the magnetometer reading display directly on the screen. And the direction north, east, south and west correspond to 0°, 90°, 180° and 270° respectively.
 
-![](./media/20-1764036560155-42.gif)
+![](./media/Makecode_23b07bfb.gif)
 
 ### (5) Test Code 2:
 
@@ -348,21 +350,21 @@ This module can keep reading data to determine direction, so does point to the c
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/21-1764036560155-40.gif)
+![](./media/Makecode_db8b2d7e.gif)
 
 Complete Program :
 
-![](./media/image-20250911133851330-1764036560155-41.png)
+![](./media/Makecode_ef823069.png)
 
 ### (6) Test Results 2
 
 Upload code 2. After calibration, tilt micro:bit board, and the LED dot matrix displays the direction signs.
 
-![](./media/22-1764036560155-46.gif)
+![](./media/Makecode_d8944d5f.gif)
 
 ## Project 7: Accelerometer
 
-![](./media/1cb21f5abd6e06cd7081d135128579f0ef6870d66a6b9fdf92496a2263d51a24-1764036560155-43.jpg)
+![](./media/Makecode_66670811.jpg)
 
 [Click to download the code 1 for this lesson](./Code/Accelerometer.hex)
 
@@ -384,41 +386,41 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/23-1764036560155-44.gif)
+![](./media/Makecode_2cd48603.gif)
 
 Complete Program :
 
-![](./media/image-20250911135905779-1764036560155-50.png)
+![](./media/Makecode_ba28162b.png)
 
 ### (4)Test Results 1:
 
 After uploading Test Code 1 to the micro:bit V2 board, changing the board's orientation will cause the 5x5 dot matrix to display different numbers.
 
-![](./media/24-1764036560155-48.gif)
+![](./media/Makecode_2e6708e6.gif)
 
 if we shake the Micro: Bit main board V2. no matter at any direction, the LED dot matrix displays the digit "1".
 
 When it is kept upright ( make its logo above the LED dot matrix), the number 2 shows.
 
-![](./media/7b4f4d9814baf3cae97287c65207a0a0fa990ded2fdf55bdb80f5b0f820c60cc-1764036560155-45.jpg)
+![](./media/Makecode_67247ae1.jpg)
 
 When it is kept upside down( make its logo below the LED dot matrix), it shows as below.
 
-![](./media/bf71e66addeccd7ca2259b9b528700bfa4a96dbf253aaed4421c7b2138a7473d-1764036560155-47.jpg)
+![](./media/Makecode_1668a9d0.jpg)
 
 When it is placed still on the desk, showing its front side, the number 4 appears.
 
-![](./media/c97cbe743d2d2cdc403b5010bf3b16faa3b76086642399f7da00cf8c6bac3584-1764036560155-52.jpg)
+![](./media/Makecode_0dd33fa1.jpg)
 
 When it is placed still on the desk, showing its back side, the number 5 exhibits.
 
 When the board is tilted to the left, the LED dot matrix shows the number 6 as shown below.
 
-![](./media/30099649e3d210eeb8bcb37957598674e74f569818ed17e8b30230d7de3ca42b-1764036560155-49.jpg)
+![](./media/Makecode_ce2b3501.jpg)
 
 When the board is tilted to the right, the LED dot matrix displays the number 7 as shown below
 
-![](./media/b066419352c3c59679a76544378b7307337665b40e30d14126eb685bf9672c1f-1764036560155-57.jpg)
+![](./media/Makecode_d098ff98.jpg)
 
 When the board is knocked to the floor, this process can be considered as a free fall and the LED dot matrix shows the number 8. (please note that this test is not recommended for it may damage the main board.)
 
@@ -426,11 +428,11 @@ Attention: if you'd like to try this function, you can also set the acceleration
 
 ### (5)Test Code 2 :
 
-![](./media/25-1764036560155-51.gif)
+![](./media/Makecode_99083bf6.gif)
 
 Complete Program :
 
-![](./media/image-20250911143619630-1764036560155-54.png)
+![](./media/Makecode_42654b0e.png)
 
 ### (6) Test Results 2
 
@@ -438,19 +440,19 @@ Upload test code to micro:bit main board V2, power the main board via the USB ca
 
 The following interface shows the decomposition value of acceleration in X axis, Y axis and Z axis respectively, as well as acceleration synthesis (acceleration synthesis of gravity and other external forces).
 
-![](./media/26-1764036560155-53.gif)
+![](./media/Makecode_c17f5477.gif)
 
 After referring to the MMA8653FC data manual and the hardware schematic diagram of the Micro: Bit main board V2, the accelerometer coordinate of the Micro: Bit V2 motherboard are shown in the figure below:
 
-![](./media/07c7f1e7969e58a1f484c41c787b94c1268cd8a256f4e8ef6f97cb7ef4f6bd3f-1764036560155-56.jpg)
+![](./media/Makecode_79d90885.jpg)
 
 If you're running Windows 7 or 8 instead of Windows 10, via Google Chrome won't be able to match devices. You'll need to use the CoolTerm serial monitor software to read data.You could open CoolTerm software, click Options, select SerialPort, set COM port and put baud rate to 115200 (after testing, the baud rate of USB SerialPort communication on Micro: Bit main board V2 is 115200), click OK, and Connect. The CoolTerm serial monitor shows the data of X axis, Y axis and Z axis, as shown in the figures below:
 
-![](./media/Animation6-1764036560155-55.gif)
+![](./media/Makecode_2a63fc72.gif)
 
 ## Project 8: Light Detection
 
-![](./media/13d9c260f69d61349c16e8fac95b7130075c08136a8606d2ea5d088bf7ad0a13-1764036560156-61.jpg)
+![](./media/Makecode_14063ef9.jpg)
 
 [Click to download the code for this lesson](./Code/Light-Detection.hex)
 
@@ -468,11 +470,11 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/27-1764036560155-58.gif)
+![](./media/Makecode_38ffa3b8.gif)
 
 Complete Program :
 
-![](./media/image-20250911152049091-1764036560155-59.png)
+![](./media/Makecode_5b9a2acf.png)
 
 ### (4)Test Results:
 
@@ -480,17 +482,17 @@ Upload the test code to micro:bit main board V2, power the board via the USB cab
 
 When the LED dot matrix is covered by hand, the light intensity showed is approximately 0; when the LED dot matrix is exposed to light, the light intensity displayed gets stronger with the light as shown below.
 
-![](./media/28-1764036560156-63.gif)
+![](./media/Makecode_11dd3c0b.gif)
 
 If you're running Windows 7 or 8 instead of Windows 10, via Google Chrome won't be able to match devices. You'll need to use the CoolTerm serial monitor software to read data.
 
 You could open CoolTerm software, click Options, select SerialPort, set COM port and put baud rate to 115200 (after testing, the baud rate of USB SerialPort communication on Micro: Bit main board V2 is 115200), click OK, and Connect. The CoolTerm serial monitor shows the value of light intensity, as shown in the figures below :
 
-![](./media/Animation5-1764036560156-60.gif)
+![](./media/Makecode_3c6eae52.gif)
 
 ## Project 9: Speaker
 
-![](./media/e08dd451289c9ff2a732e808f80595ca4a3ccbc339d27818157912ae9229e0f9-1764036560156-64.jpg)
+![](./media/Makecode_a4828463.jpg)
 
 [Click to download the code for this lesson](./Code/Speaker.hex)
 
@@ -508,21 +510,21 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor, 
 
-![](./media/29-1764036560156-62.gif)
+![](./media/Makecode_6f271fce.gif)
 
 Complete Program :
 
-![](./media/image-20250911175254769-1764036560156-66.png)
+![](./media/Makecode_8f4c2e63.png)
 
 ### (4)Test Results:
 
 After uploading the test code to micro:bit main board V2 and powering the board via the USB cable, the speaker utters sound and the LED dot matrix shows the logo of music.
 
-![](./media/30-1764036560156-65.gif)
+![](./media/Makecode_73f47c8f.gif)
 
 ## Project 10: Touch-sensitive Logo
 
-![](./media/df7f211e9ad34bde973f72646fd16f0685ec25421a11aa4b7c0a5f306698d544-1764036560156-69.jpg)
+![](./media/Makecode_445a7708.jpg)
 
 [Click to download the code for this lesson](./Code/Touch-sensitive-Logo.hex)
 
@@ -542,21 +544,21 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/31-1764036560156-68.gif)
+![](./media/Makecode_54cc5b8a.gif)
 
 Complete Program :
 
-![](./media/image-20250912094108039-1764036560156-67.png)
+![](./media/Makecode_2ba9bf7d.png)
 
 ### (4)Test Results:
 
 After uploading the code, touching the logo with your hand will display a heart shape on the dot matrix. Releasing your touch will reveal a number, with longer contact times displaying larger numbers.
 
-![](./media/32-1764036560156-70.gif)
+![](./media/Makecode_46b832c8.gif)
 
 ## Project 11: Microphone
 
-![](./media/3c397f3ca2a8045d397ebba2d5252d6814516443ae43fc9d039a9b75d8357866-1764036560156-71.jpg)
+![](./media/Makecode_d2f14bdc.jpg)
 
 [Click to download the code 1 for this lesson](./Code/Microphone.hex)
 
@@ -576,37 +578,37 @@ Micro USB cable
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/33-1764036560156-73.gif)
+![](./media/Makecode_7c037c9b.gif)
 
 Complete Program :
 
-![](./media/image-20250912095411405-1764036560156-75.png)
+![](./media/Makecode_1ea97896.png)
 
 ### (4)Test Results 1:
 
 After uploading the code, display a large heart icon when ambient sound is detected, and a small heart icon when the surroundings are quiet (Note: Sounds too faint to detect will not trigger the response).
 
-![](./media/35-1764036560156-74.gif)
+![](./media/Makecode_facbbb50.gif)
 
 ### (5)Test Code 2:
 
 Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
 
-![](./media/36-1764036560156-72.gif)
+![](./media/Makecode_68e37f22.gif)
 
 Complete Program :
 
-![](./media/image-20250912105611120-1764036560156-76.png)
+![](./media/Makecode_9851e889.png)
 
 ### (6)Test Results 2:
 
-![](./media/37.gif)
+![](./media/Makecode_0b914334.gif)
 
 After uploading the code, the dot matrix pulses in sync with sound changes. Pressing the “A” key displays the numerical value of the current sound.
 
 ## Project 12: Bluetooth Wireless Communication
 
-![](./media/a3c30945c6505259c61d60561c2d386c585af52178719c4c3a6bc38fd776aa9c-1764036560156-77.jpg)
+![](./media/Makecode_041ff91a.jpg)
 
 ### (1)Project Description:
 
@@ -630,11 +632,11 @@ An Apple device (a phone or an iPad) or an Android device;
 
 For Android
 
-![](./media/android-1764036560156-82.gif)
+![](./media/Makecode_0cf9abf0.gif)
 
 For ios
 
-![](./media/ios-1764036560156-78.gif)
+![](./media/Makecode_5937459b.gif)
 
 (4)Test Code :
 
@@ -642,29 +644,29 @@ Next, we'll use our phones to write code and connect via Bluetooth (Note: The pr
 
 1、Open the software and connect to Bluetooth.
 
-![](./media/38-1764036560156-79.gif)
+![](./media/Makecode_dcb2416a.gif)
 
 2、Press Microbit's button A, button B, and the reset button on the back in sequence. The main board will then display an icon.
 
-![](./media/39-1764036560156-80.gif)
+![](./media/Makecode_6985c2b1.gif)
 
 3、Enter the pattern displayed in step two into the phone interface.
 
-![](./media/40-1764036560156-84.gif)
+![](./media/Makecode_9095fb35.gif)
 
 Write code and upload
 
 1、Enter the code programming interface and write a code.
 
-![](./media/41-1764036560156-81.gif)
+![](./media/Makecode_b7c8c1ca.gif)
 
 2、Press button A, button B, and the reset button in sequence. (Note: This procedure must be repeated each time code is uploaded via the app.)
 
- ![](./media/42-1764036560156-83.gif)
+ ![](./media/Makecode_86ab2b39.gif)
 
 3、After confirming that the Microbit icon matches the one displayed on your phone, simply click “Next.”
 
-![](./media/43-1764036560156-85.gif)
+![](./media/Makecode_f3c17f45.gif)
 
 Finally, you can see the Microbit board displaying the pattern from the code.
 
@@ -675,7 +677,7 @@ Here, we have completed the process of uploading code to the phone. It is import
 
 ## Project 13：Seven-Color LED
 
-![](./media/e28.png)
+![](./media/Makecode_804e502b.png)
 
 1\.  **Description**
 
@@ -697,11 +699,11 @@ This module consists of a commonly used LED with 7colors but in white appearance
 
 Make the RGB light flash 7 lights alternatively.
 
-![](./media/code20.png)
+![](./media/Makecode_ce9a9550.png)
 
 Click“JavaScript”to view the corresponding JavaScript code: 
 
-![](./media/code20-1.png)
+![](./media/Makecode_1b7f9af6.png)
 
 4\.  **Test Result1**
 
@@ -709,11 +711,11 @@ Download code 1 to micro:bit board and dial POWER switch to ON end, 2 RGB lights
 
 5\.  **Test Code2**
 
-![](./media/ode21.png)
+![](./media/Makecode_bdce981c.png)
 
 Click“JavaScript”to view the corresponding JavaScript code: 
 
-![](./media/code21-1.png)
+![](./media/Makecode_66e64829.png)
 
 6\.  **Test Result2**
 
@@ -722,7 +724,7 @@ Download code 2 to micro:bit board, 2 RGB lights will flash for 1 second and the
 
 ## Project 14：4 WS2812 RGB LEDs
 
-![](./media/e29.png)
+![](./media/Makecode_eecf79fe.png)
 
 1\.  **Description**
 
@@ -742,11 +744,11 @@ The driver shield cooperates 4 pcs WS2812 RGB LEDs, compatible with micro:bit bo
 
 3\.  **Test Code1**
 
-![](./media/code22.png)
+![](./media/Makecode_d3ad748c.png)
 
 Click“JavaScript" to switch into the corresponding JavaScript code:
 
-![](./media/code22-1.png)
+![](./media/Makecode_ce3ad2e9.png)
 
 4\.  **Test Result1**
 
@@ -754,17 +756,17 @@ Download code 1 to micro：bit, and dial POWER to ON end. All four WS2812RGB LED
 
 5\.  **Test Code2**
 
-![](./media/code23.png)
+![](./media/Makecode_38c4d1eb.png)
 
-![](./media/ode23-1.png)
+![](./media/Makecode_fd64aca3.png)
 
-![](./media/code23-2.png)
+![](./media/Makecode_f06b9905.png)
 
 Click“JavaScript" to switch into the corresponding JavaScript code:
 
-![](./media/code23-3.png)
+![](./media/Makecode_06ef2111.png)
 
-![](./media/code23-4.png)
+![](./media/Makecode_cc2c2fb3.png)
 
 6\.  **Test Result2**
 
@@ -772,11 +774,11 @@ Download code 2 to micro：bit, WS2812RGB LEDs display like flow light.
 
 7\.  **Test Code3**
 
-![](./media/code24.png)
+![](./media/Makecode_d3e5aa0a.png)
 
 Click“JavaScript”to switch into the corresponding JavaScript code:
 
-![](./media/code24-1.png)
+![](./media/Makecode_212ce3c8.png)
 
 8\.  **Test Result3**
 
@@ -784,7 +786,7 @@ Download code 3 to micro：bit, every WS2812RGB light shows random color one by 
 
 ## Project 15：Servo
 
-![](./media/servo.png)
+![](./media/Makecode_215da878.png)
 
 1\.  **Description**
 
@@ -796,17 +798,17 @@ However, if the micro:bit main board is used to control the servo angle, we only
 
 Servo motor is a position control rotary actuator. It mainly consists of housing, circuit board, core-less motor, gear and position sensor. Its working principle is that the servo receives the signal sent by MCU or receiver, and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtains the voltage difference output.
 
-![](./media/servo-1.png)
+![](./media/Makecode_87b41036.png)
 
 For the servo used in this project, the brown wire is the ground, the red one is the positive wire, and the orange one is the signal wire.
 
 The rotation angle of servo motor is controlled by regulating the duty cycle of PWM (Pulse-Width Modulation) signal. The standard cycle of PWM signal is 20ms (50Hz). Theoretically, the width is distributed between 1ms-2ms, but in fact, it's between 0.5ms-2.5ms. The width corresponds to the rotation angle from 0° to 180°. But note that for different brand motor, the same signal may have different rotation angle. 
 
-![](./media/servo-2.png)
+![](./media/Makecode_49467dfa.png)
 
 More details:
 
-![](./media/servo-3.png)
+![](./media/Makecode_b167d550.png)
 
 3\.  **Parameters**
 
@@ -841,11 +843,11 @@ More details:
 
 5\.  **Test Code**
 
-![](./media/code25.png)
+![](./media/Makecode_087e1822.png)
 
 Click“JavaScript" to view the corresponding JavaScript code: 
 
-![](./media/code25-1.png)
+![](./media/Makecode_2354311f.png)
 
 6.  **Test Result**
 
@@ -853,7 +855,7 @@ After uploading the test code and dial POWER switch to ON end, the servo rotates
 
 ## Project 16：Motor
 
-![](./media/motor.png)
+![](./media/Makecode_77f3b857.png)
 
 1\.  **Description**
 
@@ -863,19 +865,19 @@ Gear motor is the integration of gearmotor and motor, which is applied widely in
 
 Micro:bit motor driver shield comes with a DRV8833 chip. In order to save the IO port resource, we control the rotation direction and speed of 4 DC gear motors with the DRV8833 chip.
 
-![Img](./media/motor1.png)
+![Img](./media/Makecode_4c9781dc.png)
 
 Front
 
-![](./media/motor2.png)
+![](./media/Makecode_4919ce3b.png)
 
 Back
 
-![](./media/motor3.png)
+![](./media/Makecode_59c34b6e.png)
 
 STC8G1K08 Chip circuit
 
-![](./media/motor4.png)
+![](./media/Makecode_8874ded0.png)
 
 HR8833 Motor driver circuit
 
@@ -893,11 +895,11 @@ HR8833 Motor driver circuit
 
 3\.  **Test Code1**
 
-![](./media/code26.png)
+![](./media/Makecode_3a759dd8.png)
 
 Click“JavaScript" to view the corresponding JavaScript code: 
 
-![](./media/code26-1.png)
+![](./media/Makecode_242ba6ca.png)
 
 4\.  **Test Result1**
 
@@ -905,13 +907,13 @@ Download code 1 to micro:bit board, dial POWER switch to ON end. Smart car goes 
 
 5\.  **Test Code2**
 
-![](./media/code27.png)
+![](./media/Makecode_a3a9d39a.png)
 
-![Img](./media/code27-1.png)
+![Img](./media/Makecode_4eb6b574.png)
 
 Click“JavaScript" to view the corresponding JavaScript code: 
 
-![](./media/code27-2.png)
+![](./media/Makecode_ee70b846.png)
 
 6\.  **Test Result2**
 
@@ -921,7 +923,7 @@ Download code 2 to micro:bit board, the car goes forward for 2s, turns back for 
 
 ### Project 17.1：Detect Line Tracking Sensor
 
-![](./media/Line-Tracking.png)
+![](./media/Makecode_ea7f6c8c.png)
 
 1\. **Description**
 
@@ -951,11 +953,11 @@ After putting a white paper on the bottom of the 4WD Mecanum Robot Car, we will 
 
 4\.  **Test Code**
 
-![](./media/code28.png)
+![](./media/Makecode_3683d83f.png)
 
 Click“JavaScript" to view the corresponding JavaScript code: 
 
-![](./media/code28-1.png)
+![](./media/Makecode_4b440616.png)
 
 5\.  **Test Result**
 
@@ -963,21 +965,21 @@ Download code to micro:bit board, dial POWER switch to ON end.
 
 Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate. Click“OK”and“Connect”.
 
-![](./media/d0.png)
+![](./media/Makecode_ea164439.png)
 
-![](./media/d1.png)
+![](./media/Makecode_b3a18bca.png)
 
-![](./media/d2.png)
+![](./media/Makecode_f78128c1.png)
 
-![](./media/d3.png)
+![](./media/Makecode_13238e98.png)
 
 The CoolTerm serial monitor displays the digital signals read by the line tracking sensors.
 
-![](./media/d7.png)
+![](./media/Makecode_0141051a.png)
 
 ### Project 17.2：Tracking Smart Car
 
-![Img](./media/Tracking-Car.png)
+![Img](./media/Makecode_547634e4.png)
 
 1\. **Description**
 
@@ -989,7 +991,7 @@ The micro:bit board will analyze the signals and control the smart car to show t
 
 The smart car will make different moves according to the value received by the 3-channel line tracking sensor.
 
-![Img](./media/aaa1.png)
+![Img](./media/Makecode_bbccdb34.png)
 
 3\. **Preparation**
 
@@ -1007,25 +1009,25 @@ The smart car will make different moves according to the value received by the 3
 
 4\.**Flow Chart**
 
-![Img](./media/Flow-Chart1.png)
+![Img](./media/Makecode_70f1fd80.png)
 
 
 5\.  **Test Code**
 
-![](./media/code29.png)
+![](./media/Makecode_4b104155.png)
 
-![Img](./media/code29-1.png)
+![Img](./media/Makecode_d36220cf.png)
 
-![Img](./media/code29-2.png)
+![Img](./media/Makecode_4fff0a27.png)
 
-![Img](./media/code29-3.png)
+![Img](./media/Makecode_ca91a31f.png)
 
 
 Click“JavaScript”to view the corresponding JavaScript code:
 
-![](./media/code29-4.png)
+![](./media/Makecode_f5caa06a.png)
 
-![](./media/code29-5.png)
+![](./media/Makecode_8f5f07ec.png)
 
 5\. **Test Result**
 
@@ -1045,7 +1047,7 @@ The ultrasonic sensor uses sonar to determine distance to an object like bats do
 
 The ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications.
 
-![](./media/Ultrasonic1.png)
+![](./media/Makecode_0180b169.png)
 
 The ultrasonic module will emit the ultrasonic waves after trigger signals. When the ultrasonic waves encounter the object and are reflected back, the module outputs an echo signal, so it can determine the distance of object from the time difference between trigger signal (TRIG)and echo signal(ECHO).
 
@@ -1053,11 +1055,11 @@ As the picture shows, it is like two eyes. One is transmitting end, the other is
 
 According to the above wiring diagram, the integrated port of the ultrasonic sensor module is connected to the 5V G P15 P16 port on the micro:bit motor driver base plate. The Trig (T) pin is controlled by P15 of the micro:bit and the pin of Echo (E) the P16.
 
-![](./media/Ultrasonic2.png)
+![](./media/Makecode_1174e0ec.png)
 
 2\. **Working Principle**
 
-![](./media/Ultrasonic3.png)
+![](./media/Makecode_8ff02741.png)
 
 (1)Pull down TRIG then trigger high level signals with least 10us;
 
@@ -1100,31 +1102,31 @@ According to the above wiring diagram, the integrated port of the ultrasonic sen
 
 5\. **Test Code**
 
-![](./media/code30.png)
+![](./media/Makecode_497760b1.png)
 
 Click“JavaScriptto view the corresponding JavaScript code: 
 
-![](./media/code30-1.png)
+![](./media/Makecode_387f3243.png)
 
 6\.  **Test Result**
 
 Download code to micro:bit, keep USB cable connected, dial POWER switch to ON end. The distance value will be displayed on monitor.
 
-![](./media/abc.png)
+![](./media/Makecode_2cd74c16.png)
 
 The monitor shows the distance between the obstacle and ultrasonic sensor(as shown below).
 
-![](./media/c8.png)
+![](./media/Makecode_422adea3.png)
 
 Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate(the baud rate of USB serial communication of Micro:bit is 115200 through the test). Click “OK” and “Connect”.
 
 CoolTerm serial monitor displays the distance value as follows:
 
-![](./media/d10.png)
+![](./media/Makecode_69b06998.png)
 
 ### Project 18.2：Ultrasonic Avoidance
 
-![Img](./media/Avoidance.png)
+![Img](./media/Makecode_13139b46.png)
 
 1\. **Description**
 
@@ -1146,19 +1148,19 @@ Its principle is to detect the distance between the car and obstacle via the ult
 
 3\.  **Flow Chart**
 
-![Img](./media/Flow-Chart2.png)
+![Img](./media/Makecode_e2adae4b.png)
 
 4\.  **Test Code**
 
-![](./media/code31-1.png)
+![](./media/Makecode_05a4740b.png)
 
-![Img](./media/code31-2.png)
+![Img](./media/Makecode_d7879887.png)
 
 Click“JavaScript”to view the corresponding JavaScript code: 
 
-![](./media/code31-3.png)
+![](./media/Makecode_c8f86a24.png)
 
-![](./media/code31-4.png)
+![](./media/Makecode_13baf1d6.png)
 
 5\.  **Test Result**
 
@@ -1167,7 +1169,7 @@ on the contrary, smart car turns left.
 
 ### Project 18.3：Ultrasonic Following
 
-![Img](./media/Following.png)
+![Img](./media/Makecode_d17a7889.png)
 
 1\. **Description**
 
@@ -1189,15 +1191,15 @@ The ultrasonic sensor detects the obstacle distance and control the motion statu
 
 3\. **Flow Chart**
 
-![Img](./media/Flow-Chart3.png)
+![Img](./media/Makecode_f5026aed.png)
 
 4\. **Test Code**
 
-![](./media/code32.png)
+![](./media/Makecode_03b95531.png)
 
 Click“JavaScript”to view the corresponding JavaScript code: 
 
-![](./media/code32-1.png)
+![](./media/Makecode_a93c8245.png)
 
 5\. **Test Result**
 
@@ -1207,13 +1209,13 @@ Download code to micro:bit, dial POWER switch to ON end on shield, smart car cou
 
 ### Project 19.1：Decode IR Remote Control
 
-![](./media/IR-Control.png)
+![](./media/Makecode_3a3e9860.png)
 
 1\. **Description**
 
 There is no doubt that infrared remote control is ubiquitous in daily life. It is used to control various household appliances, such as TVs, stereos, video recorders and satellite signal receivers. Infrared remote control is composed of infrared transmitting and infrared receiving systems, that is, an infrared remote control, an infrared receiving module and a single-chip microcomputer capable of decoding.
 
-![](./media/IR-Control1.png)
+![](./media/Makecode_9980b41f.png)
 
 The 38K infrared carrier signal emitted by remote controller is encoded by the encoding chip in the remote controller. It is composed of a section of pilot code, user code, user inverse code, data code, and data inverse code. The time interval of the pulse is used to distinguish whether it is a 0 or 1 signal and the encoding is made up of these 0, 1 signals.
 
@@ -1254,11 +1256,11 @@ According to the picture above, the integrated port of the infrared receiver is 
 
 4\. **Test Code**
 
-![](./media/code33.png)
+![](./media/Makecode_2e20f731.png)
 
 Click“JavaScript" to switch into the corresponding JavaScript code:
 
-![](./media/code33-1.png)
+![](./media/Makecode_87e18859.png)
 
 **Code explanation:** If the buttons are not pressed, the serial monitor constantly shows 0; when pressed, the corresponding key values are displayed.
 
@@ -1272,27 +1274,27 @@ Open the cellphone camera , make IR remote control point at camera and press but
 
 5\. **Test Result**
 
-Download code to micro: bit board and don’t plug off USB cable Click![](./media/c0.png)
+Download code to micro: bit board and don’t plug off USB cable Click![](./media/Makecode_e0580d78.png)
 
-![](./media/c1.png)
+![](./media/Makecode_0d3198e0.png)
 
 Make IR remote control point at IR receiver and press the button, the serial monitor will display the corresponding key values, as shown below：
 
-![](./media/c10.png)
+![](./media/Makecode_c7a33a4c.png)
 
 Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate. Click“OK”and“Connect”.
 
 CoolTerm serial monitor shows the key value as follows:
 
-![Img](./media/d11.png)
+![Img](./media/Makecode_155c857a.png)
 
 The key value is displayed as for your reference:
 
-![](./media/key-value.jpg)
+![](./media/Makecode_1fc0d9bb.jpg)
 
 ### Project 19.2：IR Remote Control 
 
-![Img](./media/IR-Control-car.png)
+![Img](./media/Makecode_643cb701.png)
 
 1\. **Description**
 
@@ -1314,17 +1316,17 @@ In this project, we combine IR remote control with car shield to make an IR remo
 
 3\. **Flow Chart**
 
-![Img](./media/Flow-Chart4.png)
+![Img](./media/Makecode_e5f416e3.png)
 
 4\. **Test Code**
 
-![](./media/code34.png)
+![](./media/Makecode_22d06d74.png)
 
 Click“JavaScript" to switch into the corresponding JavaScript code:
 
-![](./media/code34-1.png)
+![](./media/Makecode_e68b6275.png)
 
-![](./media/code34-2.png)
+![](./media/Makecode_94de6552.png)
 
 5\. **Test Result**
 
@@ -1332,7 +1334,7 @@ Download code to micro:bit board, and dial POWER to ON end.
 
 Make IR remote control point at micro:bit and press the button to control smart car to move.
 
-![](./media/button-up.png)button makes smart car move forward，![](./media/button-left.png)stands for turning left，![](./media/button-right.png)implies rightward turning, ![](./media/button-down.png)indicates moving backward，![](./media/button-ok.png) stops car.
+![](./media/Makecode_d55474f3.png)button makes smart car move forward，![](./media/Makecode_5c8a6549.png)stands for turning left，![](./media/Makecode_41116032.png)implies rightward turning, ![](./media/Makecode_369433f6.png)indicates moving backward，![](./media/Makecode_a8ef4b17.png) stops car.
 
 **Note:** The distance between IR remote control and IR receiving head of smart car are supposed less than 5m during the test.
 
@@ -1340,7 +1342,7 @@ Make IR remote control point at micro:bit and press the button to control smart 
 
 ### Project 20.1：Read Bluetooth Data
 
-![](./media/microbit13.png)
+![](./media/Makecode_55b2424d.png)
 
 1\. **Description**
 
@@ -1364,31 +1366,31 @@ The connection of the Bluetooth on the board with these two Apps is similar. In 
 
 **If you choose to drag the code manually, you need to add the Bluetooth extension library first. Click the gear icon (Settings) in the upper right corner, then click on Extensions to go to the library file selection screen, and then click on the "Bluetooth" extension library (if it doesn't exist, search Bluetooth to find it), as shown below:** 
 
-![](./media/Bluetooth-1.png)
+![](./media/Makecode_4e308360.png)
 
 As the Bluetooth and extension radio can’t work together, therefore, their extension libraries are not compatible.
 
 Therefore, remove extension(s) and add Bluetooth please if you see the following prompt box pop up.
 
-![](./media/Bluetooth-2.png)
+![](./media/Makecode_aee56e76.png)
 
 3\. **Test Code**
 
-![](./media/code36.png)
+![](./media/Makecode_ac5ffe1a.png)
 
 Click“JavaScript”to view the corresponding JavaScript code:
 
-![](./media/code36-1.png)
+![](./media/Makecode_24191138.png)
 
 4\. **Test Result**
 
 If you drag blocks step by step, you need to set as follows after finishing test code.
 
-![](./media/cba.png)
+![](./media/Makecode_01b256e5.png)
 
-![](./media/cba1.png)
+![](./media/Makecode_982334c8.png)
 
-![](./media/cba2.png)
+![](./media/Makecode_09767d5e.png)
 
 However, you could skip this step if you directly import test code.
 
@@ -1398,9 +1400,9 @@ After setting, download code to micro:bit board, don’t plug off the USB cable.
 
 a\. Open App Store;
 
-![](./media/e4.png)
+![](./media/Makecode_27924fdb.png)
 
-b\. Search **mecanum_robot** and click“![](./media/e5.png)”to download the Bluetooth App of mecanum_robot;
+b\. Search **mecanum_robot** and click“![](./media/Makecode_962a57f9.png)”to download the Bluetooth App of mecanum_robot;
 
 c\. After downloading the APP, click "OPEN" or click the application mecanum_robot on the phone/iPad desktop to open the APP. A dialog box appears on the APP interface, and click "OK" in the dialog box.
 
@@ -1410,39 +1412,39 @@ d\. First turn on the Bluetooth of the mobile phone/iPad, and then click the con
 
 a\. Use the scanning function in the browser to scan and identify the QR code 
 
-![](./media/QR-code.png)
+![](./media/Makecode_d9acbfab.png)
 
 or enter the link：[http://8.210.52.206/mecanum_robot.apk](http://8.210.52.206/mecanum_robot.apk) to download. After the identification is successful, click "go to website" to enter the download mecanum_robot.apk page , click "Download" to download the mecanum_robot application.
 
 b\. Click“Allow allow”to enter Installation Diagram; click“install”to install the App.
 
-![](./media/app1.png)
+![](./media/Makecode_638d0a4a.png)
 
 c\. Click "Open" or click the application mecanum_robot on the mobile phone desktop to open the APP, and a dialog box appears. In the dialog box, click "Allow" to turn on the Bluetooth of the mobile phone. You can also turn on the phone's Bluetooth before opening the APP.
 
-![](./media/app2.png)
+![](./media/Makecode_c818fd71.png)
 
-![](./media/app3.png)
+![](./media/Makecode_0c35f0dc.png)
 
-d\. Click ![](./media/app4.png) on the upper right corner to search for Bluetooth and click“connect”; a few seconds later, the Bluetooth is paired.
+d\. Click ![](./media/Makecode_d3f566b9.png) on the upper right corner to search for Bluetooth and click“connect”; a few seconds later, the Bluetooth is paired.
 
-![](./media/app5.png)
+![](./media/Makecode_3d21cf87.png)
 
-![](./media/app6.png)
+![](./media/Makecode_4a23b197.png)
 
 Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate. Click“OK”and“Connect”.
 
 Point at micro:bit board and press the icons on APP, the corresponding characters are shown on CoolTerm monitor.
 
-![](./media/d12.png)
+![](./media/Makecode_0ed4a53e.png)
 
 Through the test, we get the functions of every icon, as shown below:
 
-![](./media/app7.jpg)
+![](./media/Makecode_05c3d32b.jpg)
 
 ### Project 20.2：Multi-purpose Smart Car
 
-![Img](./media/app-Car.png)
+![Img](./media/Makecode_ce6ec959.png)
 
 1\. **Description**
 
@@ -1462,33 +1464,33 @@ In this lesson, we will control the smart car to perform multipurpose functions.
 
 **Steps：** Click the gear icon (Settings) in the upper right corner, then click on Extensions to go to the library file selection screen, and then click on the "Bluetooth" extension library (if it doesn't exist, search Bluetooth to find it), as shown below: 
 
-![](./media/Bluetooth-1.png)
+![](./media/Makecode_4e308360.png)
 
 As the Bluetooth and extension radio can’t work together, therefore, their extension libraries are not compatible.
 
 Therefore, remove extension(s) and add Bluetooth please if you see the following prompt box pop up.
 
-![](./media/Bluetooth-2.png)
+![](./media/Makecode_aee56e76.png)
 
 3\. **Test Code**
 
 Since the code is quite long, it won't be displayed here. You can directly go to the following path to find the corresponding code.
 
-![Img](./media/code37.png)
+![Img](./media/Makecode_836c42ce.png)
 
 Click“JavaScript" to view the corresponding JavaScript code: ：
 
-![](./media/code37-1.png)
+![](./media/Makecode_a73529d6.png)
 
 4\. **Test Result**
 
 This experiment combines the previous projects to make the car to perform actions via Bluetooth.
 
-Enter Makecode online editor→Projecting Settings→![](./media/abcd.png), enable “No Pairing....”(you could skip this step if you import test code directly)
+Enter Makecode online editor→Projecting Settings→![](./media/Makecode_bef5b734.png), enable “No Pairing....”(you could skip this step if you import test code directly)
 
 Download code to micro:bit board, dial POWER to ON end, and connect the Bluetooth, then you can control the car via the Bluetooth App of mecanum_robot.
 
-**Note:** ![](./media/abcd1.jpg)is used to adjust the speed, and ![](./media/abcd2.jpg) can only be dragged.
+**Note:** ![](./media/Makecode_81da4f47.jpg)is used to adjust the speed, and ![](./media/Makecode_adc3be60.jpg) can only be dragged.
 
 
 ## Common Problems

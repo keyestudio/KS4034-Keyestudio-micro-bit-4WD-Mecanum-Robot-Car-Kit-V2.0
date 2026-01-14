@@ -1,6 +1,7 @@
-
+# KS4034 Keyestudio micro bit 4WD Mecanum Robot Car Kit V2.0
 
 ## Pay special attention
+
 1\. This product contains small parts. Do not swallow.
 2\. Do not allow children under 3 years of age to play with or near this product. .
 3\. Do not allow children who lack safety capabilities to use this product without parental supervision. 
@@ -21,7 +22,7 @@ To help you quickly obtain related codes, libraries, and other support files for
 
 ## Product Introduction
 
-![](./media/A1.jpg)
+![](./media/Introduction_3c983f62.jpg)
 
 Have you wondered to learn programming or have your own programming robot? Nowadays, programming has developed to a lower age group, and it will be a trend for everyone thanks to the spread of simple graphical programming platforms, from micro:bit to Arduino and Raspberry Pi. Maybe you haven't heard of them before. However, with the help of this product and tutorial, you can easily install a multi-functional programming car and experience the fun of being a maker.
 
@@ -67,42 +68,43 @@ Please check the list to ensure that all parts are intact. If you find missing o
 
 |#|Picture|Name|QTY|
 |-|-|-|-|
-|1|![](./media/Acrylic-1.png)|Acrylic Board T=3mm|1|
-|2|![](./media/Acrylic-2.png)|Acrylic Board with Lego Holes T=3mm|1|
-|3|![](./media/Motor-Plate-1.png)|Motor Plate|4|
-|4|![](./media/Motor.jpg)|Motor|4|
-|5|![](./media/Fixing-Board.png)|23*15*5MM Fixing Board|4|
-|6|![](./media/Servo.png)|Servo|1|
-|7|![](./media/Wheels-A.png)|Mecanum Wheels (A direction)|2|
-|8|![](./media/Wheels-B.png)|Mecanum Wheels (B direction)|2|
-|9|![](./media/Expansion-Board.png)|keyestudio Micro：bit Expansion Board|1|
-|10|![](./media/Mainboard.png)|micro:bit V2.0 Mainboard|1|
-|11|![](./mediaCar-Plate.png)|Keyestudio Mecanum Car Lower Plate|1|
-|12|![](./media/Copper-Pillar.png)|M3*20MM Dual-pass Copper Pillar|4|
-|13|![](./media/Lego-Part1.png)|4265c Lego Part|4|
-|14|![](./media/Lego-Part2.png)|43093 Lego Part|4|
-|15|![](./media/Acrylic-Gasket.png)|Acrylic Gasket|1|
-|16|![](./media/M3-6MM.png)|M3*6MM Flat Head Screw|10|
-|17|![](./media/Ultrasonic.png)|HC-SR04 Ultrasonic Sensor|1|
-|18|![](./media/M3-8MM.png)|M3*8MM Flat Head Screw|10|
-|19|![](./media/M3.png)|M3 Nickle-plated Nut|10|
-|20|![Img](./media/M3-30MM.png)|M3*30MM Round Head Screw|9|
-|21|![](./media/M2.png)|M2 Nickle-plated Nut|3|
-|22|![](./media/M2-8MM.png)|M2*8MM Round Head Screw|3|
-|23|![Img](./media/M1.4.png)|M1.4 Nickle-plated Nut|6|
-|24|![Img](./media/M1.4-10MM.png)|M1.4*10MM Round Head Screw|6|
-|25|![](./media/M2.5-14MM.png)|M2.5*14MM Round Head Screw|4|
-|26|![](./media/Remote-Control.png)|Remote Control |1|
-|27|![](./media/Plastic.png)|Plastic String 3*100MM|5|
-|28|![](./media/USB-Cable.png)|USB Cable|1|
-|29|![](./media/2P.png)|HX2.54 2P DuPont Wire100mm|1|
-|30|![](./media/5P.png)|XH2.54 5P DuPont Wire100mm|1|
-|31|![](./media/4P.png)|HX2.54 4P DuPont Wire 50mm|1|
-|32|![](./media/4P-1.png)|HX2.54 4P to 2.54 F-F DuPont Wire 150mm|1|
-|33|![](./media/3P.png)|XH2.54 3P DuPont Wire 50mm|2|
-|34|![](./media/Screwdriver.png)|3*40MM Screwdriver|1|
-|35|![](./media/TT-Coupling.png)|TT Coupling|4|
-|36|![](./media/M1.2-5MM.png)|M1.2*5MM Round Head Self-tapping Screw|6|
+|1|![](./media/Introduction_fc2adf20.png)|Acrylic Board T=3mm|1|
+|2|![](./media/Introduction_5081c44d.png)|Acrylic Board with Lego Holes T=3mm|1|
+|3|![](./media/Introduction_bd2cb460.png)|Motor Plate|4|
+|4|![](./media/Introduction_4ddeed2d.jpg)|Motor|4|
+|5|![](./media/Introduction_e7f45e5f.png)|23*15*5MM Fixing Board|4|
+|6|![](./media/Introduction_ebb998be.png)|Servo|1|
+|7|![](./media/Introduction_6344036a.png)|Mecanum Wheels (A direction)|2|
+|8|![](./media/Introduction_059e68e0.png)|Mecanum Wheels (B direction)|2|
+|9|![](./media/Introduction_45f5d4b1.png)|keyestudio Micro：bit Expansion Board|1|
+|10|![](./media/Introduction_81f28dd3.png)|micro:bit V2.0 Mainboard|1|
+|11|![image-20260114095148878](./media/Introduction_20809f5e.png)|Keyestudio Mecanum Car Lower Plate|1|
+|12|![](./media/Introduction_21c85ffa.png)|M3*20MM Dual-pass Copper Pillar|4|
+|13|![](./media/Introduction_01e80ab2.png)|4265c Lego Part|4|
+|14|![](./media/Introduction_e59351c0.png)|43093 Lego Part|4|
+|15|![](./media/Introduction_2a003db7.png)|Acrylic Gasket|1|
+|16|![](./media/Introduction_961d1e90.png)|M3*6MM Flat Head Screw|10|
+|17|![](./media/Introduction_4f281b93.png)|HC-SR04 Ultrasonic Sensor|1|
+|18|![](./media/Introduction_75fe38d6.png)|M3*8MM Flat Head Screw|10|
+|19|![](./media/Introduction_dfd1e33e.png)|M3 Nickle-plated Nut|10|
+|20|![Img](./media/Introduction_3e83f81e.png)|M3*30MM Round Head Screw|9|
+|21|![](./media/Introduction_3d017f21.png)|M2 Nickle-plated Nut|3|
+|22|![](./media/Introduction_de369f07.png)|M2*8MM Round Head Screw|3|
+|23|![Img](./media/Introduction_94e15c05.png)|M1.4 Nickle-plated Nut|6|
+|24|![Img](./media/Introduction_9e368115.png)|M1.4*10MM Round Head Screw|6|
+|25|![](./media/Introduction_ff05ab91.png)|M2.5*14MM Round Head Screw|4|
+|26|![](./media/Introduction_25b8b893.png)|Remote Control |1|
+|27|![](./media/Introduction_1fa795e2.png)|Plastic String 3*100MM|5|
+|28|![](./media/Introduction_40897f80.png)|USB Cable|1|
+|29|![](./media/Introduction_a065d257.png)|HX2.54 2P DuPont Wire100mm|1|
+|30|![](./media/Introduction_5e3d2202.png)|XH2.54 5P DuPont Wire100mm|1|
+|31|![](./media/Introduction_3a767467.png)|HX2.54 4P DuPont Wire 50mm|1|
+|32|![](./media/Introduction_d43939ca.png)|HX2.54 4P to 2.54 F-F DuPont Wire 150mm|1|
+|33|![](./media/Introduction_25aab86f.png)|XH2.54 3P DuPont Wire 50mm|2|
+|34|![](./media/Introduction_86bba76b.png)|3*40MM Screwdriver|1|
+|35|![](./media/Introduction_853ba36c.png)|TT Coupling|4|
+|36|![](./media/Introduction_a45a89e3.png)|M1.2*5MM Round Head Self-tapping Screw|6|
+|37|![image-20260114094721671](./media/Introduction_805661a3.png)|M2.3*16MM Round-head screws|4|
 
 ⚠️ **Special Reminder:** Remote Control(KS4034F/KS4035F with batteries; KS4034/KS4035 without batteries, Battery type: CR2025(provided by yourself))
 
@@ -128,7 +130,7 @@ The board is widely used in programming video games, interactions between light 
 
 **(2) Layout**
 
-![Img](./media/Layout.png)
+![Img](./media/Introduction_5746e59b.png)
 
 For more information,please resort to following links:
 
@@ -142,7 +144,7 @@ For more information,please resort to following links:
 
 **(3) Pin out**
 
-![](./media/Pin-out.png)
+![](./media/Introduction_ce0de295.png)
 
 **Functions:**
 

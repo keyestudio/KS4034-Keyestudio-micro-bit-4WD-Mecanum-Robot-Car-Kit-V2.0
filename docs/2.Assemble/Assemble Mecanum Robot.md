@@ -17,7 +17,7 @@ This car can help you to better learn how to use the Micro:bit and make electron
 
 **Pins：**
 
-![Img](./media/Pins.png)
+![Img](./media/Assemble Mecanum Robot_97b760ef.png)
 
 **Power supply and Battery**
 
@@ -31,43 +31,43 @@ Step 1
 
 **Components Needed:**
 
-![](./media/b1.png)
+![](./media/Assemble Mecanum Robot_f3d856b4.png)
 
 **Installation Diagram:**
 
-![](./media/b2.png)
+![](./media/Assemble Mecanum Robot_3d1dbf07.png)
 
 **Prototype:**
 
-![](./media/b3.png)
+![](./media/Assemble Mecanum Robot_f5d38786.png)
 
 Step 2
 
 **Components Needed:**
 
-![](./media/b4.png)
+![](./media/Assemble Mecanum Robot_a2ee8074.png)
 
 **Installation Diagram:**
 
-![](./media/b5.png)
+![](./media/Assemble Mecanum Robot_6fdf9d4d.png)
 
 **Prototype:**
 
-![](./media/b6.png)
+![](./media/Assemble Mecanum Robot_3fec7c19.png)
 
 Step 3
 
 **Components Needed:**
 
-![](./media/b7.png)
+![](./media/Assemble Mecanum Robot_d4f24cc5.png)
 
 **Installation Diagram:**
 
-![](./media/b8.png)
+![](./media/Assemble Mecanum Robot_e1d7b425.png)
 
 **Prototype:**
 
-![](./media/b9.png)
+![](./media/Assemble Mecanum Robot_cc96b9d6.png)
 
 Step 4
 
@@ -79,11 +79,11 @@ Step 4
 
 ⚠️**Special note:** Before you write the code and upload it, you must Understand the MakeCode IDE and add library files, please go to the the link: [Get Started with makecode](./Code1.7z)
 
-![](./media/b10.png)
+![](./media/Assemble Mecanum Robot_a9ff633c.png)
 
 The MakeCode code above is provided in the materials. Open the adjustment code of the servo and burn it into the microbit motherboard of the 4WD Mecanum Robot Car V2.0, and **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. That's it. The code is at the following position as shown in the figure:
 
-![Img](./media/b11.png)
+![Img](./media/Assemble Mecanum Robot_21db9fa2.png)
 
 **Method 2：Python code**
 
@@ -127,153 +127,153 @@ sleep(1000)
 
 **Components Needed:**
 
-![](./media/b13.png)
+![](./media/Assemble Mecanum Robot_1e3fd9e2.png)
 
 Installation Diagram: (mind the installation direction)
 
-![](./media/b14.png)
+![](./media/Assemble Mecanum Robot_9ca5d2c8.png)
 
 **Prototype:**
 
-![](./media/b15.png)
+![](./media/Assemble Mecanum Robot_9b8bccaa.png)
 
 Step 5
 
 **Components Needed:**
 
-![](./media/b16.png)
+![](./media/Assemble Mecanum Robot_8d138501.png)
 
 **Installation Diagram:**
 
-![](./media/b17.png)
+![](./media/Assemble Mecanum Robot_bda8fbc4.png)
 
 **Prototype:**
 
-![](./media/b18.png)
+![](./media/Assemble Mecanum Robot_9f244272.png)
 
 Step 6
 
 **Components Needed:**
 
-![](./media/b19.png)
+![](./media/Assemble Mecanum Robot_36259594.png)
 
 **Installation Diagram:**
 
-![](./media/b20.png)
+![](./media/Assemble Mecanum Robot_6d3e3ad9.png)
 
 **Prototype:**
 
-![](./media/b21.png)
+![](./media/Assemble Mecanum Robot_3c33f63b.png)
 
 Step 7
 
 **Components Needed:**
 
-![](./media/b22.png)
+![](./media/Assemble Mecanum Robot_817e834e.png)
 
 **Installation Diagram:** (mind the direction of the motor)
 
-![](./media/b23.png)
+![](./media/Assemble Mecanum Robot_09a61aa6.png)
 
 **Prototype:**
 
-![](./media/b24.png)
+![](./media/Assemble Mecanum Robot_8c97de28.png)
 
 Step 8
 
 **Components Needed:**
 
-![](./media/b25.png)
+![](./media/Assemble Mecanum Robot_43bac346.png)
 
 **Installation Diagram:** (Pay attention to the installation direction of the mecanum wheel)
 
-![](./media/b26.png)
+![](./media/Assemble Mecanum Robot_d92dee68.png)
 
 **Prototype:**
 
-![](./media/b27.png)
+![](./media/Assemble Mecanum Robot_64467ed0.png)
 
 Step 9
 
 **Components Needed:**
 
-![](./media/b28.png)
+![](./media/Assemble Mecanum Robot_5c38573f.png)
 
 **Installation Diagram:**
 
-![](./media/b29.png)
+![](./media/Assemble Mecanum Robot_a72469e3.png)
 
 **Prototype:**
 
-![](./media/b30.png)
+![](./media/Assemble Mecanum Robot_243aa35b.png)
 
 Step 10
 
 **Components Needed:**
 
-![](./media/b31.png)
+![](./media/Assemble Mecanum Robot_b60b9f16.png)
 
 **Installation Diagram:**
 
-![](./media/b32.png)
+![](./media/Assemble Mecanum Robot_55f2db60.png)
 
 **Prototype:**
 
-![](./media/b33.png)
+![](./media/Assemble Mecanum Robot_456df8a0.png)
 
 Wiring Diagram
 
 **The wiring of the servo:**
 
-![Img](./media/b34.png)
+![Img](./media/Assemble Mecanum Robot_c82a9395.png)
 
-![](./media/b35.jpg)
+![](./media/Assemble Mecanum Robot_859cd41e.jpg)
 
-![](./media/b36.png)
+![](./media/Assemble Mecanum Robot_b3bcce9d.png)
 
 **The wiring of the ultrasonic sensor:**
 
-![Img](./media/b37.png)
+![Img](./media/Assemble Mecanum Robot_c9f3da75.png)
 
-![](./media/b38.jpg)
+![](./media/Assemble Mecanum Robot_5747ad7c.jpg)
 
-![](./media/b39.png)
+![](./media/Assemble Mecanum Robot_a8f0e176.png)
 
 **The wiring of the IR receiver module:**
 
-![Img](./media/b40.png)
+![Img](./media/Assemble Mecanum Robot_61d53b21.png)
 
-![](./media/b41.png)
+![](./media/Assemble Mecanum Robot_1e081a3a.png)
 
 **The wiring of the RGB:**
 
-![Img](./media/b42.png)
+![Img](./media/Assemble Mecanum Robot_c5b8a804.png)
 
-![](./media/b43.jpg)
+![](./media/Assemble Mecanum Robot_01848b2e.jpg)
 
 **The wiring of controlling the motor and seven-color light :**
 
-![Img](./media/b44.png)
+![Img](./media/Assemble Mecanum Robot_0c4635c5.png)
 
-![](./media/b45.jpg)
+![](./media/Assemble Mecanum Robot_1689f2c9.jpg)
 
 **The wiring of controlling the 3-channel line-tracking sensor:**
 
-![Img](./media/b46.png)
+![Img](./media/Assemble Mecanum Robot_542d1798.png)
 
-![](./media/b47.jpg)
+![](./media/Assemble Mecanum Robot_08eb8d7e.jpg)
 
 **The wiring of the power supply:**
 
-![](./media/b48.jpg)
+![](./media/Assemble Mecanum Robot_cdcec4ba.jpg)
 
 **The corresponding interface of the motor:**
 
-![](./media/b40.jpg)
+![](./media/Assemble Mecanum Robot_ffcceef1.jpg)
 
 **The installation of the battery:**
 
-![](./media/b50.png)
+![](./media/Assemble Mecanum Robot_fe8ce786.png)
 
 
 
