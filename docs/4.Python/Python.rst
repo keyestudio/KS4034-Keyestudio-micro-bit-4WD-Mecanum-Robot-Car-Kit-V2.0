@@ -7,6 +7,9 @@
 
 
 
+.. |image1| image:: ./media/Python_e468339f.jpg
+
+
 .. toctree::
    :maxdepth: 2
 
@@ -22,8 +25,9 @@
    Project_09_Project_9_Speaker
    Project_10_Project_10_Touch-sensitive_Logo
    Project_11_Project_11_Microphone
-   Project_12_Project_12_Bluetooth_Wireless_Communication
-   Project_13_Project_13Seven-Color_LED
+   Project_12_Project_12_Control_Speaker
+   Project_13_Project_13_Seven-Color_LED
+   Project_14_Project_14_4_WS2812_RGB_LEDs
    Project_15_Project_15Servo
    Project_16_Project_16Motor
    Project_17_Project_17Line_Tracking_Sensor
@@ -31,9 +35,6 @@
    99_Resources_and_FAQ
 
 
-
-
-.. |image1| image:: ./media/Python_e468339f.jpg
 
 
 

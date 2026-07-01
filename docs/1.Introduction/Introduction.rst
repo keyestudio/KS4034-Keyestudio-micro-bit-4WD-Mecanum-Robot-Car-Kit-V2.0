@@ -12,7 +12,6 @@
    03_Product_Description
    04_Product_Parameters
    05_Product_Kit_list
-   06_Preparations
    07_BBC_Microbit
 
 

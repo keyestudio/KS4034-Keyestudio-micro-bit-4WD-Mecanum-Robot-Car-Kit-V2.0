@@ -7,6 +7,9 @@
 
 
 
+.. |image1| image:: ./media/Makecode_290e8cf7.jpg
+
+
 .. toctree::
    :maxdepth: 1
 
@@ -27,6 +30,7 @@
    Project_11_Project_11_Microphone
    Project_12_Project_12_Bluetooth_Wireless_Communication
    Project_13_Project_13Seven-Color_LED
+   Project_14_Project_14_4_WS2812_RGB_LEDs
    Project_15_Project_15Servo
    Project_16_Project_16Motor
    Project_17_Project_17Line_Tracking_Sensor
@@ -38,7 +42,6 @@
 
 
 
-.. |image1| image:: ./media/Makecode_290e8cf7.jpg
 
 
 
