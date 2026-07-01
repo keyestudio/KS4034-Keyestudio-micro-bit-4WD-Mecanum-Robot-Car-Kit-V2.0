@@ -3,11 +3,12 @@
 ================
 
 
+.. toctree::
+   :maxdepth: 1
+
 |image1|
 
-
-
-.. |image1| image:: ./media/Makecode_290e8cf7.jpg
+.. |image1| image:: ./media/1.png
 
 
 .. toctree::
