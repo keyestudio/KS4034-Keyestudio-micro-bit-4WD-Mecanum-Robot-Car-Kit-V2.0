@@ -58,7 +58,7 @@ The speaker plays the song “*Happy Birthday to You*” when the logo is touche
 
 ![Img](./media/Python_852be78f.png)
 
-#### Bluetooth Wireless Communication
+**Bluetooth Wireless Communication**
 
 The micro:bit owns a low-consumption Bluetooth module to communicate but with 16k RAM. However, BLE heap stack occupies 12K RAM, thereby there is no enough space to run microPython.
 

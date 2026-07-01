@@ -3,20 +3,21 @@
 ================
 
 
+.. toctree::
+   :maxdepth: 1
+
 |image1|
 
-
-
-.. |image1| image:: ./media/Python_e468339f.jpg
+.. |image1| image:: ./media/1.png
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    00_Getting_Started
    Project_01_Project_1_Heartbeat
    Project_02_Project_2_Light_A_Single_LED
-   Project_03_Project_3_LED_Dot_Matrix
+   Project_03_Project_3_55_LED_Dot_Matrix
    Project_04_Project_4_Programmable_Buttons
    Project_05_Project_5_Temperature_Detection
    Project_06_Project_6_Geomagnetic_Sensor
