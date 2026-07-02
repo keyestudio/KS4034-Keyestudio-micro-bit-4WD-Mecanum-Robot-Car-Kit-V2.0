@@ -1,26 +1,26 @@
-## メカナムロボットを組み立てる
+## Monteer de Mecanum‑robot
 
-これは BBC micro:bit をベースとしたプログラム可能な車両です。モータードライバー、ライン追跡センサー、IR 受信機がベースプレートに統合されており、ベースプレートには超音波センサー、サーボ、2つの7色ライト、および4つの WS2812 RGB ライトも搭載されています。配線は複雑ではなく、他の周辺機器との接続を容易にするレゴジャックが装備されています。豊富なハードウェアリソースにより、より多くの知識とスキルを習得して、より多くの技術的発明を生み出すことができます。
+Het is een programmeerbare auto gebaseerd op de BBC micro:bit. Het integreert een motordriver, een lijnvolgsensor en een IR‑ontvanger in de basisplaat, die ook een ultrasone sensor, een servo, 2 zevenkleurige lampen en 4 WS2812 RGB‑lampen bevat. De bedrading is niet ingewikkeld en het heeft Lego‑aansluitingen om de verbinding met andere randapparaten te vergemakkelijken. Rijke hardwarebronnen stellen u in staat meer kennis en vaardigheden te beheersen om meer technologische uitvindingen te creëren.
 
-## 4WD Mecanum Robot Car V2.0 のセンサーと制御ピン
+## Sensoren en bedieningspennen van de 4WD Mecanum Robot Car V2.0
 
-この車は Micro:bit の使い方をよりよく学ぶのに役立ち、電子に関する知識を身近にします。
+Deze auto kan u helpen beter te leren hoe u de Micro:bit gebruikt en maakt elektronische kennis toegankelijk.
 
-**機能**
+**Functies**
 
 |        |                   |                       |       |                   |                      |             |                  |              |
 | ------ | ----------------- | --------------------- | ----- | ----------------- | -------------------- | ----------- | ---------------- | ------------ |
-| Sensor | 7色ライト          | 減速型 DC モーター      | サーボ | 超音波センサー       | ライントラッキングセンサー | IR 受信機   | WS2812 RGB ライト | 電源スイッチ |
+| Sensor | Zevenkleurige lamp | Vertraagd DC‑motor    | Servo | Ultrasone sensor  | Lijnvolgsensor       | IR‑ontvanger | WS2812 RGB‑lamp  | Aan/uit‑schakelaar |
 | QTY    | 2                 | 4                     | 1     | 1                 | 3                    | 1           | 4                | 1            |
 
-**注: ライントラッキングセンサー、WS2812 RGB ライト、IR 受信機、およびモータードライバーはベースプレートに統合されています。**
+**Opmerking: de lijnvolgsensor, WS2812 RGB‑lampen, IR‑ontvanger en motordriver zijn geïntegreerd in de basisplaat.**
 
-**ピン：**
+**Pinnen:**
 
 ![Img](./media/Assemble_Mecanum_Robot_97b760ef.png)
 
-**電源とバッテリー**
+**Voeding en batterij**
 
-keyestudio 4WD Mecanum Robot Car は 2 本の 18650 バッテリーで駆動します。車両のバッテリーホルダーは、あらゆるタイプの 18650 リチウム電池（充電式）と互換性があります。汎用のバッテリーチャージャーを使用して 18650 リチウム電池を充電できます。
+De keyestudio 4WD Mecanum Robot Car wordt gevoed door twee 18650‑batterijen. De batterijhouder van de auto is compatibel met elk type 18650‑lithiumbatterij (opladerbaar). U kunt een universele batterijlader gebruiken om de 18650‑lithiumbatterij op te laden.
 
-**注：** 本製品には電池は含まれていません。
+**Opmerking:** Dit product bevat geen batterijen.

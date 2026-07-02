@@ -1,24 +1,24 @@
-## プロジェクト12：Bluetooth無線通信
+## Project 12: Bluetooth Draadloze Communicatie
 
 ![](./media/Makecode_041ff91a.jpg)
 
-### (1)プロジェクトの説明:
+### (1)Projectbeschrijving:
 
-注意：このレッスンはアプリを使用してBluetooth経由でコードをアップロードする方法の説明に重点を置いているため、コードは提供していません。アニメーションGIFの手順に従ってください。
+Opmerking: Deze les is gericht op het uitleggen hoe code via Bluetooth met een app geüpload wordt, dus er wordt geen code geleverd. Volg de stappen in de geanimeerde gif.
 
-Micro: Bit main board V2 には nRF52833 プロセッサ（組み込みの BLE (Bluetooth Low Energy) デバイス、Bluetooth 5.1）と Bluetooth 無線通信および 2.4GHz 無線通信用の 2.4GHz アンテナが搭載されています。これにより、ボードはスマートフォンやタブレットなど、さまざまな Bluetooth デバイスと通信することができます。
+De Micro: Bit main board V2 is uitgerust met een nRF52833-processor (met een ingebouwd BLE (Bluetooth Low Energy)-apparaat, Bluetooth 5.1) en een 2,4 GHz-antenne voor Bluetooth-draadloze communicatie en 2,4 GHz-draadloze communicatie. Met hun hulp kan de board communiceren met verschillende Bluetooth-apparaten, inclusief smartphones en tablets.
 
-このプロジェクトでは、主にこのメインボードの Bluetooth 無線通信機能に注目します。Bluetooth に接続することでコードや信号を送信できます。そのために、Apple デバイス（電話または iPad）をボードに接続する必要があります。
+In dit project concentreren we ons voornamelijk op de Bluetooth-draadloze communicatiefunctie van deze main board. Verbonden via Bluetooth kan het code of signalen verzenden. Hiervoor moeten we een Apple-apparaat (een telefoon of een iPad) met de board verbinden.
 
-Android 携帯での無線送信の設定は Apple デバイスの場合と類似しているため、再度説明する必要はありません。
+Aangezien het instellen van Android-telefoons voor draadloze overdracht vergelijkbaar is met dat van Apple-apparaten, hoeft dit niet opnieuw te worden toegelicht.
 
-### (2) 準備
+### (2) Voorbereiding
 
-Micro USB ケーブルを使って Micro:bit main board V2 をコンピュータに接続します。
+Sluit de Micro:bit main board V2 aan op uw computer via de Micro USB-kabel.
 
-Apple デバイス（電話または iPad）または Android デバイス；
+Een Apple-apparaat (een telefoon of een iPad) of een Android-apparaat;
 
-### (3) Micro:bit のインストール:
+### (3) Installeer Micro:bit:
 
 For Android
 
@@ -28,39 +28,39 @@ For ios
 
 ![](./media/Makecode_5937459b.gif)
 
-(4)テストコード：
+(4)Testcode:
 
-次に、携帯電話を使ってコードを書き、Bluetooth 経由で接続します（注：Android と iOS の手順は同じです；このデモでは Android 携帯を使用しています）。
+Vervolgens gebruiken we onze telefoons om code te schrijven en verbinding te maken via Bluetooth (Opmerking: het proces is identiek voor zowel Android- als iOS-apparaten; deze demonstratie gebruikt een Android-telefoon).
 
-1、ソフトウェアを開き、Bluetooth に接続します。
+1、Open de software en verbind met Bluetooth.
 
 ![](./media/Makecode_dcb2416a.gif)
 
-2、Microbit のボタン A、ボタン B、背面のリセットボタンを順に押します。するとメインボードにアイコンが表示されます。
+2、Druk achtereenvolgens op Microbit's knop A, knop B en de resetknop aan de achterkant. De main board zal dan een pictogram weergeven.
 
 ![](./media/Makecode_6985c2b1.gif)
 
-3、ステップ2で表示されたパターンを携帯の画面に入力します。
+3、Voer het patroon in dat in stap twee wordt weergegeven in de telefooninterface.
 
 ![](./media/Makecode_9095fb35.gif)
 
-コードの記述とアップロード
+Code schrijven en uploaden
 
-1、コードのプログラミング画面に入り、コードを書きます。
+1、Ga naar de code-programmeerinterface en schrijf een code.
 
 ![](./media/Makecode_b7c8c1ca.gif)
 
-2、ボタン A、ボタン B、リセットボタンを順に押します。（注：アプリ経由でコードをアップロードするたびにこの手順を繰り返す必要があります。）
+2、Druk achtereenvolgens op knop A, knop B en de resetknop. (Opmerking: deze procedure moet elke keer worden herhaald wanneer code via de app wordt geüpload.)
 
  ![](./media/Makecode_86ab2b39.gif)
 
-3、Microbit のアイコンが携帯に表示されているものと一致していることを確認したら、「Next」をクリックします。
+3、Nadat u hebt bevestigd dat het Microbit-pictogram overeenkomt met het pictogram dat op uw telefoon wordt weergegeven, klikt u eenvoudig op “Next.”
 
 ![](./media/Makecode_f3c17f45.gif)
 
-最後に、Microbit ボードにコードのパターンが表示されるのが確認できます。
+Tot slot ziet u de Microbit-board het patroon uit de code weergeven.
 
-これで、コードを携帯にアップロードする手順は完了です。重要な点は次のとおりです：
+Hiermee hebben we het proces van het uploaden van code naar de telefoon voltooid. Het is belangrijk op te merken:
 
-1. 携帯を Microbit ボードに接続するには、A、B、Reset ボタンを順に押します。点マトリクスディスプレイにパターンが表示されるので、それを携帯に入力してください。
-2. Microbit ボードは USB ケーブルで給電するか、バッテリーパックを通じてボードの電源入力に 3V を供給して給電できます。注意：電圧は 3V を超えてはなりません。超えるとボードが破損します。
+1. Om de telefoon met de Microbit-board te verbinden, drukt u achtereenvolgens op de A-, B- en Reset-knoppen. Het puntmatrixdisplay zal dan een patroon tonen, dat in de telefoon moet worden ingevoerd.
+2. De Microbit-board kan worden gevoed via een USB-kabel of door 3V aan te leggen op de voedingsingang van de board via een batterijpack. Opmerking: de spanning mag niet hoger zijn dan 3V; overschrijding van deze limiet kan de board beschadigen.

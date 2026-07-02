@@ -1,54 +1,54 @@
 ## Resource Download
 
-この製品に関連するコード、ライブラリ、その他サポートファイルを迅速に入手できるよう、以下のリンクをクリックしてダウンロードしてください:
+Om u snel aan de gerelateerde codes, bibliotheken en andere ondersteunende bestanden voor dit product te helpen, klik op de onderstaande links om te downloaden:
 
 - [Python Code and library downloads](./PythonCode.7z)
 
-## Pythonのはじめ方
+## Aan de slag met Python
 
-このチュートリアルはPython言語向けに記載されています。グラフィカルなコードプログラミングを使用したい場合は、マニュアル「Makecode Tutorial」を参照してください。ダウンロードしたリソースのルートディレクトリには「Python tutorial」というフォルダがあり、Micro:bit 4WD Mecanum Robot Car V2.0のすべてのPythonコードが格納されています。Pythonコードファイルは拡張子が ".py" のファイルです。
+Deze handleiding is geschreven voor de programmeertaal Python. Als u grafische codeprogrammering wilt gebruiken, raadpleeg dan de handleiding "Makecode Tutorial". In de hoofdmap van de gedownloade bron bevindt zich een map met de naam "Python tutorial", waarin alle Python-code van de Micro:bit 4WD Mecanum Robot Car V2.0 is opgeslagen. Het Python-codebestand is een bestand dat eindigt op ".py".
 
-### MicroPythonとは？
+### Wat is MicroPython?
 
-Pythonはテキストベースの言語で、教育分野で広く使用されており、データサイエンスや機械学習などの分野でもプロのプログラマーに使用されています。
+Python is een tekstgebaseerde taal die veel wordt gebruikt in het onderwijs en ook door professionele programmeurs wordt gebruikt in vakgebieden zoals data science en machine learning.
 
-Micro: bitはPythonでプログラム可能なマイコンですが、ハードウェアの違いによりmicro: bitがPythonを完全にはサポートできません。MicroPythonはmicro：bit専用で、Python3の効率的な実装です。Python標準ライブラリの一部を含み、micro:bitマイクロコントローラ上で動作するよう最適化されています。
+Micro: bit kan in Python worden geprogrammeerd; omdat het een microcontroller is, verhinderen hardwareverschillen dat de micro: bit Python volledig ondersteunt. MicroPython is speciaal voor micro：bit en is een efficiënte implementatie van de programmeertaal Python3. Het bevat een klein deel van de standaardbibliotheek van Python en is geoptimaliseerd om te draaien op micro:bit-microcontrollers.
 
-BBC micro: bitで使用されているPythonのバージョンはMicroPythonと呼ばれます。MicroPythonはプログラミングをもっと学びたい人に最適で、一連のコードスニペットや各種のプリセットグラフィックス、音楽でプログラミングを助けます。
+De versie van Python die door BBC micro: bit wordt gebruikt heet MicroPython. MicroPython is perfect voor degenen die meer over programmeren willen leren; het helpt je te programmeren met een reeks codefragmenten en verschillende kant-en-klare graphics en muziek.
 
-BBC microbit MicroPyth のリンク：[BBC micro:bit MicroPython ](https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html) 
+Link voor BBC microbit MicroPyth: [BBC micro:bit MicroPython ](https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html) 
 
-**Pythonには2種類のエディタがあります：ウェブ版とオフライン版**
+**Python heeft twee soorten editors: webversie en offline versie**
 
-1\.  ウェブ版： [https://python.microbit.org/v/1.1](https://python.microbit.org/v/1.1)
+1\.  Webversie: [https://python.microbit.org/v/1.1](https://python.microbit.org/v/1.1)
 
 ![](./media/Python_693f76f5.png)
 
-2\.  もう一つはオフラインコンパイラの Mu です ![](./media/Python_153c77ed.png)
+2\.  De andere is ook de offline compiler — Mu ![](./media/Python_153c77ed.png)
 
-Mu公式サイト：[https://codewith.mu/](https://codewith.mu/)
+Officiële website van Mu: [https://codewith.mu/](https://codewith.mu/)
 
 ### Mu
 
-Mu は初心者に適したPythonコードエディタです。32ビット版のWindowsはサポートしていません。
+Mu, een Python-code-editor, is geschikt voor beginners. Het ondersteunt geen 32-bit Windows.
 
-1\.  **Muをダウンロードする**
+1\.  **Mu downloaden**
 
-「This PC」をクリックし、右クリックして「プロパティ」を選択し、コンピュータのバージョンを確認します。
+Klik op “This PC” en klik met de rechtermuisknop op Eigenschappen om de versie van uw computer te controleren.
 
 ![](./media/Python_3a58be54.png)
 
-コンピュータのシステムの種類を確認します。
+Controleer het systeemtype van uw computer.
 
 ![](./media/Python_e774ae15.png)
 
-MUのリンクにアクセスしてください: [https://codewith.mu/en/download](https://codewith.mu/en/download) そして対応するバージョンのMuをダウンロードします。
+Ga naar de MU-link: [https://codewith.mu/en/download](https://codewith.mu/en/download) om de bijbehorende versie van Mu te downloaden.
 
 ![](./media/Python_ceb4cfa6.png)
 
-2\.  **セットアップを実行**
+2\.  **Installatie uitvoeren**
 
-以下のファイルを開きます
+Open het onderstaande bestand
 
 ![](./media/Python_8bcfe24c.png)
 
@@ -58,94 +58,94 @@ Linux: [https://codewith.mu/en/howto/1.2/install_linux](https://codewith.mu/en/h
 
 **Windows 10**
 
-ポップアップが表示されたら「More info」をクリックします。
+Er verschijnt een pop-up; klik vervolgens op “More info”.
 
 ![](./media/Python_877beb7b.png)
 
-次に「Run anyway」をクリックします。
+Klik vervolgens op “Run anyway”.
 
 ![](./media/Python_c87475e5.png)
 
-3\. ライセンス契約
+3\. Licentieovereenkomst
 
-「Install」をクリックします。
+Klik op “Install”.
 
 ![](./media/Python_33f42b66.png)
 
 ![](./media/Python_f5c6698f.png)
 
-インストール後、「finish」をクリックします。
+Na installatie, klik op “finish”.
 
 ![](./media/Python_c6ec7436.png)
 
-4\. Muを起動する
+4\. Mu starten
 
-次に、以下の画像のように探します
+Zoek het vervolgens zoals op de volgende afbeelding
 
 ![](./media/Python_c4adbdd1.png)
 
-メインインターフェースは次のように表示されます：
+De hoofdinterface ziet er als volgt uit:
 
 ![](./media/Python_3697c0c7.png)
 
-### モードとメニューバーの使い方
+### Gebruik van Modus & Menubalk
 
-“<span style="color: rgb(255, 76, 65);">**Mode**</span>” を BBC micro:bit に設定します。
+Stel “<span style="color: rgb(255, 76, 65);">**Mode**</span>” in op BBC micro:bit.
 
-メニューで「**Mode**」をクリックして「**BBC micro：bit**」に設定します。micro:bitモードはmicro:bitとのやり取りや接続方法を理解します。
+Klik in het menu op “**Mode**” om het in te stellen op “**BBC micro：bit**”. De micro:bit-modus weet hoe hij moet communiceren met en verbinden met een micro:bit.
 
 ![](./media/Python_18512c7e.png)
 
-[Start with Mu](https://codewith.mu/en/tutorials/1.1/start) をクリックしてください。
+Klik om te [Start with Mu](https://codewith.mu/en/tutorials/1.1/start).
 
-### MuがライブラリをMicro:bitにインポートする方法
+### Hoe Mu een bibliotheek naar de Micro:bit importeert
 
-<span style="color: rgb(255, 76, 65);">**ライブラリをインポートする前に、.pyコード（空のコードでも可）をmicro:bitボードにアップロードする必要があります。ここでは空のコードを例にします。**</span>
+<span style="color: rgb(255, 76, 65);">**Voordat bibliotheken worden geïmporteerd, moeten we een .py-code (een lege code is ook ok) uploaden naar de micro:bit-board. Hier nemen we een lege code als voorbeeld.**</span>
 
-USBケーブルでボードをコンピュータに接続します。Muを開き、「Flash」をクリックして .py コード（空でも可）をボードにアップロードします。
+Verbind de board via een USB-kabel met de computer. Open Mu en klik op “Flash” om de .py-code (ook leeg) naar het board te uploaden.
 
 ![Img](./media/Python_611b2c4e.png)
 
-このチュートリアルでは "keyes_mecanum_Car_V2.py" ライブラリファイルを使用します。したがって、"keyes_mecanum_Car_V2.py" ライブラリファイルをmicro:bitにインポートしてください。このファイルには Micro:bit 4WD Mecanum Robot Car V2.0 の制御方法が含まれています。
+In dit tutorial wordt het bibliotheekbestand "keyes_mecanum_Car_V2.py" gebruikt. Importeer daarom het bibliotheekbestand "keyes_mecanum_Car_V2.py" naar de micro:bit. Dit bestand bevat de bedieningsmethode van de Micro:bit 4WD Mecanum Robot Car V2.0.
 
-Muがファイルを保存するデフォルトのディレクトリは、ユーザーのディレクトリのルートにある “mu_code” です。
+De standaardmap waar Mu bestanden opslaat is “mu_code” in de hoofdmap van de gebruikersdirectory.
 
-参照リンク: [https://codewith.mu/en/tutorials/1.0/files](https://codewith.mu/en/tutorials/1.0/files)
+Referentielink: [https://codewith.mu/en/tutorials/1.0/files](https://codewith.mu/en/tutorials/1.0/files)
 
-**"mu_code" フォルダを見つける方法：**
+**de methoden om de "mu_code" map te vinden:**
 
-**方法1：**
+**Methode Een:**
 
-例えば、WindowsシステムでシステムがコンピュータのCドライブにインストールされており、ユーザー名が "**Administrator**" の場合、"**mu_code**" ディレクトリのパスは "**C:\Users\Administrator\mu_ code**" です。Linuxシステムでは "mu_code" ディレクトリのパスは "**~/home/mu_code**" です。
+Bijvoorbeeld, op een Windows-systeem, stel dat uw systeem is geïnstalleerd op de C-schijf van de computer en de gebruikersnaam is "**Administrator**", dan is het pad van de "**mu_code**" map "**C:\Users\Administrator\mu_ code**". Op Linux-systemen is het pad van de "**mu_code**" map "**~/home/mu_code**".
 
-「**mu_code**」フォルダを開きます。
+Open de “**mu_code**” map.
 
 ![](./media/Python_d271a924.png)
 
-**方法2：**
+**Methode Twee:**
 
-ディスク (C:) で「mu_code」フォルダを検索します。
+Zoek de “mu_code” map op Schijf (C:).
 
 ![Img](./media/Python_03ff037e.png)
 
 ![Img](./media/Python_54199d45.png)
 
-「mu_code」を開きます。
+Open “mu_code”.
 
 ![Img](./media/Python_4841ca3f.png)
 
-当社が提供するライブラリファイル “keyes_mecanum_Car.py” が保存されているデータフォルダのパスは次のとおりです：
+Het pad van de datafolder waar het door ons geleverde bibliotheekbestand “keyes_mecanum_Car.py” zich bevindt, is als volgt:
 
 ![Img](./media/Python_7adb2b68.png)
 
-“keyes_mecanum_Car.py” ライブラリファイルを “mu_code” フォルダにコピーします。コピーが完了すると、下図のようになります：
+Kopieer het bibliotheekbestand “keyes_mecanum_Car.py” naar de map “mu_code”。Wanneer de kopie is voltooid, ziet het er als volgt uit:
 
 ![](./media/Python_d753d652.png)
 
-まずMuソフトウェアを開き、micro:bitをコンピュータに接続します。次に「Files」ボタンをクリックし、ライブラリファイル "keyes_mecanum_Car.py" をmicro:bitにドラッグします。
+Open eerst de Mu-software en verbind de micro:bit met uw computer, klik vervolgens op de knop "Files" en sleep het bibliotheekbestand "keyes_mecanum_Car.py" naar de micro:bit.
 
 ![](./media/Python_aeaae2b7.png)
 
-数秒後、インポートが完了し、左のボックスに表示されます。
+Na een paar seconden is de import voltooid en kunt u het zien in het vak aan de linkerkant.
 
 ![](./media/Python_2be967ca.png)

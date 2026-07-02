@@ -1,27 +1,27 @@
-### プロジェクト12：スピーカーの制御
+### Project 12: Luidspreker bedienen
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-これまでのプロジェクトでは、タッチ感知ロゴとスピーカーについてそれぞれ学びました。本プロジェクトでは、これら二つのコンポーネントを組み合わせて音楽を再生します。
+In de vorige projecten hebben we respectievelijk het aanrakinggevoelige logo en de luidspreker behandeld. In dit project combineren we deze twee componenten om muziek af te spelen.
 
-2\.  **必要な部品**
+2\.  **Benodigde componenten**
 
 |![](./media/Python_021507bd.png)|![](./media/Python_84cdea05.jpg)|
 |-|-|
 |Micro:bit main board \*1|USB cable\*1|
 
 
-3\.  **配線図**
+3\.  **Bedradingsschema**
 
-Micro:bit main board を USB ケーブルでコンピュータに接続します。
+Sluit het Micro:bit main board met de USB-kabel aan op uw computer.
 
 ![](./media/Python_611b2c4e.png)
 
-4\.  **テストコード**
+4\.  **Testcode**
 
-Mu ソフトウェアを起動し、ファイル “Touch the Logo to control the speaker\.py” を開いてコードをインポートします。編集ウィンドウに直接コードを入力することもできます。
+Start de Mu-software en open het bestand “Touch the Logo to control the speaker\.py” om de code te importeren. U kunt de code ook zelf invoeren in het bewerkingsvenster.
 
-(**注意：すべての単語と記号は英語で記述してください**.)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven**.)
 
 ![](./media/Python_600c8fa6.png)
 
@@ -38,34 +38,34 @@ while True:
         music.play(music.BIRTHDAY)
 ```
 
-“Check” をクリックしてコード内のエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is onjuist als onderstrepingen en cursors worden weergegeven.
 
 ![](./media/Python_dcc17127.png)
 
-コードに問題がなければ、micro:bit をコンピュータに接続し、“Flash” をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, sluit u de micro:bit aan op uw computer en klikt u op “Flash” om de code naar de micro:bit-board te downloaden.
 
 ![](./media/Python_be3d4ee9.png)
 
-5\.  **テスト結果**
+5\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にしてください）**。その後、micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar de board is gedownload, **zet u de voeding aan via de micro USB-kabel of externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-ロゴに触れるとスピーカーから「*Happy Birthday to You*」が再生されます。
+De luidspreker speelt het lied “*Happy Birthday to You*” wanneer het logo wordt aangeraakt.
 
-6\.  **コードの説明**
+6\.  **Code-uitleg**
 
 ![Img](./media/Python_852be78f.png)
 
-**Bluetooth 無線通信**
+**Bluetooth draadloze communicatie**
 
-micro:bit は低消費電力の Bluetooth モジュールを搭載して通信できますが、RAM は 16 KB です。しかし、BLE のヒープ/スタックが 12 KB を占有するため、microPython を実行するための十分な空きがありません。
+De micro:bit heeft een energiezuinig Bluetooth-module voor communicatie, maar beschikt over 16 KB RAM. De BLE-heap/stack neemt echter 12 KB RAM in beslag, waardoor er niet genoeg ruimte is om microPython uit te voeren.
 
-現時点では、microPython は Bluetooth サービスをサポートしていません。
+Op dit moment ondersteunt microPython de Bluetooth-service niet.
 
 [https://microbit-micropython.readthedocs.io/en/latest/ble.html](https://microbit-micropython.readthedocs.io/en/latest/ble.html)
 
-これまでのプロジェクトはセンサーとモジュールの導入です。以降のレッスンは初心者にとってより難易度が上がります。
+De voorgaande projecten zijn een inleiding tot sensoren en modules. De verdere lessen zijn uitdagender voor beginners.
 
-(**注意：micro:bit ボードが焼損しないように、車用拡張ボードに取り付ける前に micro USB ケーブルを抜き、micro:bit motor driver base plate の電源を切り、POWER スイッチを OFF にしてください。同様に、メインボードを車用拡張ボードから取り外す前にも micro USB ケーブルを抜き、micro:bit motor driver base plate の電源を切ってください。**)
+(**Opmerking: Om te voorkomen dat de micro:bit-board beschadigd raakt, haalt u voordat u deze op de car expansion board monteert de micro USB-kabel los en schakelt u de voeding van de micro:bit motor driver base plate uit en zet u de POWER-schakelaar op OFF. Evenzo, voordat u de main board van de car expansion board verwijdert, haalt u de micro USB-kabel los en schakelt u de voeding van de micro:bit motor driver base plate uit.**)

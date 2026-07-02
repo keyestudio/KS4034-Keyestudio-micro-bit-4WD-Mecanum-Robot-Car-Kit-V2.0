@@ -1,134 +1,134 @@
-## プロジェクト 19：IR リモコン
+## Project 19：IR Afstandsbediening
 
-### プロジェクト 19.1：IR リモコンのデコード
+### Project 19.1：IR Afstandsbediening decoderen
 
 ![](./media/Makecode_3a3e9860.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-赤外線リモコンは日常生活で広く使われていることは疑いありません。テレビ、ステレオ、ビデオレコーダー、衛星受信機など、さまざまな家電の制御に使用されます。赤外線リモコンは、赤外線送信システムと赤外線受信システムで構成されます。つまり、赤外線リモコン本体、赤外線受信モジュール、およびデコード可能なマイコン（単一チップマイコン）です。
+Het is onmiskenbaar dat infrarood (IR) afstandsbedieningen alomtegenwoordig zijn in het dagelijks leven. Ze worden gebruikt om verschillende huishoudelijke apparaten te bedienen, zoals televisies, stereo's, videorecorders en satellietontvangers. Een IR-afstandsbediening bestaat uit een IR-zend- en een IR-ontvangstsysteem, dat wil zeggen een afstandsbediening, een IR-ontvangermodule en een microcontroller (single-chip) die kan decoderen.
 
 ![](./media/Makecode_9980b41f.png)
 
-リモコンから出る38Kの赤外線キャリア信号は、リモコン内のエンコードチップによって符号化されています。パイロットコード、ユーザーコード、ユーザー反転コード、データコード、データ反転コードのセクションで構成されています。パルスの時間間隔によって0か1の信号かを区別し、これらの0、1信号で符号化されます。
+Het 38K IR-draaggolfsignaal dat door de afstandsbediening wordt uitgezonden, wordt gecodeerd door de coderingschip in de afstandsbediening. Het bestaat uit een sectie pilotcode, gebruikerscode, omgekeerde gebruikerscode, datacode en omgekeerde datacode. Het tijdsinterval van de puls wordt gebruikt om te onderscheiden of het een 0- of een 1-signaal is en de codering bestaat uit deze 0- en 1-signalen.
 
-同じリモコンのユーザーコードは変わりません。データコードでキーを識別できます。
+De gebruikerscode van dezelfde afstandsbediening blijft ongewijzigd. De datacode kan de toets onderscheiden.
 
-リモコンのボタンが押されると、リモコンは赤外線キャリア信号を送信します。IR受信機が信号を受信すると、プログラムはキャリア信号をデコードしてどのキーが押されたかを判定します。MCUは受信した01信号をデコードし、どのリモコンのキーが押されたかを判断します。
+Wanneer een knop van de afstandsbediening wordt ingedrukt, zendt de afstandsbediening een IR-draaggolfsignaal uit. Wanneer de IR-ontvanger het signaal ontvangt, decodeert het programma het draaggolfsignaal en bepaalt welke toets is ingedrukt. De MCU decodeert het ontvangen 01-signaal en bepaalt daarmee welke toets van de afstandsbediening is ingedrukt.
 
-使用する赤外線受信機は赤外線受信モジュールです。主に赤外線受信ヘッドで構成され、受信・増幅・復調を統合したデバイスです。内部ICが復調を完了しており、赤外線の受信から出力までを実現し、TTL信号と互換性があります。さらに、赤外線リモコンや赤外線データ伝送に適しています。受信機が製造した赤外線受信モジュールは信号線、VCC、GNDの3ピンのみです。
+De infraroodontvanger die we gebruiken is een infraroodontvangermodule. Deze bestaat voornamelijk uit een IR-ontvangstkoppeling en is een apparaat dat ontvangst, versterking en demodulatie integreert. De interne IC heeft de demodulatie voltooid en kan de volledige keten van IR-ontvangst tot uitgang realiseren en is compatibel met TTL-signalen. Daarnaast is het geschikt voor IR-afstandsbediening en IR-gegevensoverdracht. De door de ontvanger vervaardigde IR-ontvangermodule heeft slechts drie pinnen: signaallijn, VCC en GND.
 
-上の画像に従い、赤外線受信機の統合ポートはモータードライバ基板のP9 5V Gポートに接続され、micro:bitのP9によって制御されます。
+Volgens de bovenstaande afbeelding is de geïntegreerde poort van de IR-ontvanger verbonden met de P9 5V G-poort op de motorstuurprint en wordt deze aangestuurd door de P9 van de micro:bit.
 
-2\. **パラメータ:**
+2\. **Parameters:**
 
-- 動作電圧: 3.3-5V（DC）
+- Bedrijfsspanning: 3.3-5V（DC）
 
-- インターフェース: 3PIN
+- Interface: 3PIN
 
-- 出力信号: デジタル信号
+- Uitgangssignaal: digitaal signaal
 
-- 受信角度: 90度
+- Ontvangshoek: 90 graden
 
-- 周波数: 38khz
+- Frequentie: 38khz
 
-- 受信距離: 約5m
+- Ontvangstafstand: ongeveer 5m
 
-3\. **準備**
+3\. **Voorbereiding**
 
-- micro:bitボードを keyestudio   4WD Mecanum Robot Car V2.0 のスロットに差し込む
+- Steek de micro:bit-kaart in de sleuf van de keyestudio   4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをONに切り替える
+- Zet de voedingsschakelaar in de stand ON
 
-- USBケーブルでmicro:bitをパソコンに接続する
+- Verbind de micro:bit via een USB-kabel met uw computer
 
-- MakecodeのWebバージョンを開く
+- Open de webversie van Makecode
 
 
-4\. **テストコード**
+4\. **Testcode**
 
 ![](./media/Makecode_2e20f731.png)
 
-「JavaScript」をクリックして対応するJavaScriptコードに切り替えます：
+Klik op “JavaScript" om over te schakelen naar de bijbehorende JavaScript-code:
 
 ![](./media/Makecode_87e18859.png)
 
-**コードの説明：** ボタンが押されていないときはシリアルモニタに常に0が表示され、押すと対応するキー値が表示されます。
+**Code-uitleg:** Als de knoppen niet worden ingedrukt, toont de seriële monitor continu 0; wanneer ze worden ingedrukt, worden de overeenkomstige toetswaarden weergegeven.
 
-**注意：**
+**Opmerkingen：**
 
-このキットに含まれるリモコンには電池が付属していません。オンラインでの購入を推奨します。（電池の種類：CR2025）。
+De afstandsbediening in deze kit bevat geen batterijen. We raden aan deze online te kopen. (batterijtype: CR2025).
 
-テスト前にIRリモコンが正常か確認してください。確認のための方法を紹介します。
+Zorg ervoor dat de IR-afstandsbediening werkt voordat u test. Hier is een tip om dit te controleren:
 
-携帯のカメラを起動し、IRリモコンをカメラに向けてボタンを押します。カメラに紫色の点滅が見えればリモコンは正常です。
+Open de camera van de telefoon, richt de IR-afstandsbediening op de camera en druk op een knop. Als u een paars knipperlicht op de camerabeelden ziet, werkt de afstandsbediening.
 
-5\. **テスト結果**
+5\. **Testresultaat**
 
-コードをmicro:bitボードにダウンロードし、USBケーブルを抜かないでください。クリック！[](./media/Makecode_e0580d78.png)
+Download de code naar de micro:bit-kaart en verwijder de USB-kabel niet. Klik![](./media/Makecode_e0580d78.png)
 
 ![](./media/Makecode_0d3198e0.png)
 
-IRリモコンをIR受信機に向けてボタンを押すと、シリアルモニタに対応するキー値が表示されます。以下のとおりです：
+Richt de IR-afstandsbediening op de IR-ontvanger en druk op de knop; de seriële monitor toont de overeenkomstige toetswaarden, zoals hieronder weergegeven:
 
 ![](./media/Makecode_c7a33a4c.png)
 
-CoolTermを開き、OptionsをクリックしてSerialPortを選択します。COMポートとボーレート115200を設定します。「OK」と「Connect」をクリックします。
+Open CoolTerm, klik op Options om SerialPort te selecteren. Stel de COM-poort en de baudrate in op 115200. Klik op “OK” en “Connect”.
 
-CoolTermのシリアルモニタは以下のようにキー値を表示します：
+De CoolTerm-seriële monitor geeft de toetswaarde als volgt weer:
 
 ![Img](./media/Makecode_155c857a.png)
 
-キー値は参照のために次のように表示されます：
+De toetswaarde wordt weergegeven ter referentie:
 
 ![](./media/Makecode_1fc0d9bb.jpg)
 
-### プロジェクト 19.2：IR リモコン
+### Project 19.2：IR Afstandsbediening
 
 ![Img](./media/Makecode_643cb701.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-このプロジェクトでは、IRリモコンとカーシールドを組み合わせてIRリモコン式スマートカーを作成します。原理は、IRリモコンからカーシールドのIR受信モジュールにキー信号を送信し、車の動作を制御することです。
+In dit project combineren we de IR-afstandsbediening met het car shield om een IR-bedreven smart car te maken. Het principe is dat de beweging van de auto wordt geregeld door toetsensignalen van de IR-afstandsbediening naar het IR-ontvangermodule van het car shield te sturen.
 
-2\. **準備**
+2\. **Voorbereiding**
 
-- micro:bitボードを keyestudio   4WD Mecanum Robot Car V2.0 のスロットに差し込む
+- Steek de micro:bit-kaart in de sleuf van de keyestudio   4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをONに切り替える
+- Zet de voedingsschakelaar in de stand ON
 
-- USBケーブルでmicro:bitをパソコンに接続する
+- Verbind de micro:bit via een USB-kabel met uw computer
 
-- MakecodeのWebバージョンを開く
+- Open de webversie van Makecode
 
-**注意：** 赤外線センサーと赤外線リモコンは、太陽光のような赤外線ノイズが多い環境では使用しないでください。太陽光には赤外線や紫外線など多くの不可視光が含まれており、強い日光下では正常に動作しないことがあります。
+**Opmerking:** De infraroodsensor en de infraroodafstandsbediening mogen niet worden gebruikt in omgevingen met infraroodinterferentie zoals direct zonlicht, omdat dit veel onzichtbaar licht bevat, zoals infrarood en ultraviolet. In een omgeving met fel zonlicht kunnen ze niet normaal werken.
 
-3\. **フローチャート**
+3\. **Stroomschema**
 
 ![Img](./media/Makecode_e5f416e3.png)
 
-4\. **テストコード**
+4\. **Testcode**
 
 ![](./media/Makecode_22d06d74.png)
 
-「JavaScript」をクリックして対応するJavaScriptコードに切り替えます：
+Klik op “JavaScript" om over te schakelen naar de bijbehorende JavaScript-code:
 
 ![](./media/Makecode_e68b6275.png)
 
 ![](./media/Makecode_94de6552.png)
 
-5\. **テスト結果**
+5\. **Testresultaat**
 
-コードをmicro:bitボードにダウンロードし、POWERをONにします。
+Download de code naar de micro:bit-kaart en zet de POWER-schakelaar op ON.
 
-IRリモコンをmicro:bitに向けてボタンを押して、スマートカーを操作します。
+Richt de IR-afstandsbediening op de micro:bit en druk op de knop om de smart car te bedienen.
 
-![](./media/Makecode_d55474f3.png)ボタンでスマートカーが前進、![](./media/Makecode_5c8a6549.png)は左折、![](./media/Makecode_41116032.png)は右折、![](./media/Makecode_369433f6.png)は後退、![](./media/Makecode_a8ef4b17.png)は停止を示します。
+![](./media/Makecode_d55474f3.png) de knop zorgt dat de smart car vooruit rijdt，![](./media/Makecode_5c8a6549.png) staat voor links afslaan，![](./media/Makecode_41116032.png) betekent rechts afslaan，![](./media/Makecode_369433f6.png) geeft achteruit aan，![](./media/Makecode_a8ef4b17.png) stopt de auto.
 
-**注意：** テスト時、IRリモコンとスマートカーのIR受信ヘッドとの距離は5m未満にしてください。
+**Opmerking:** De afstand tussen de IR-afstandsbediening en de IR-ontvangskop van de smart car moet tijdens de test minder dan 5 m bedragen.
 
 ---

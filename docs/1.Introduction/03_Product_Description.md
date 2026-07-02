@@ -1,7 +1,7 @@
 ## Product Description 
 
-この製品はMicro:bitをベースにしたスマートカーです。超音波追従、ライントラッキング、赤外線制御、Bluetooth制御などの多くの機能を統合しています。音楽を再生するためのパッシブブザー、色を表示する4つのWS2812RGB LED、車の方向指示灯として使用できる7色ライトが2つ搭載されています。本製品は電源に18650リチウム電池を2本使用します。  
+Dit product is een slimme auto gebaseerd op Micro:bit. Het integreert een reeks functies zoals ultrasoon volgen, lijnvolging, infraroodbesturing en Bluetooth-besturing. Er is een passieve zoemer om muziek af te spelen, 4 WS2812RGB-LEDs om verschillende kleuren weer te geven, en 2 zevenkleurige lampen om richtingaanwijzers voor de auto te vormen. Dit product gebruikt twee 18650-lithiumbatterijen voor de voeding.  
 
-電池の取り付けや取り外しの際は、電池の正極および負極を確認し、極性を逆にしないようご注意ください。ちなみに、本製品のモーター速度は調整可能です。
+Bij het installeren en verwijderen van de batterij, let op de plus- en minpolen van de batterij en zorg ervoor dat u deze niet omkeert. Trouwens, de motorsnelheid van dit product is instelbaar.
 
-より良い体験を提供するために、組み立てに関するドキュメントやテスト用コードも併せてご提供しています。
+Om u een betere ervaring te bieden, worden ook bijbehorende documenten over installatie en testcode meegeleverd.

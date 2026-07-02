@@ -1,49 +1,49 @@
-## プロジェクト11：マイク
+## Project 11: Microfoon
 
 ![](./media/Makecode_d2f14bdc.jpg)
 
-[Click to download the code 1 for this lesson](./Code/Microphone.hex)
+[Klik hier om code 1 voor deze les te downloaden](./Code/Microphone.hex)
 
-[Click to download the code 2 for this lesson](./Code/Microphone2.hex)
+[Klik hier om code 2 voor deze les te downloaden](./Code/Microphone2.hex)
 
-### (1)プロジェクトの説明：
+### (1)Projectbeschrijving:
 
-Micro:bit main board V2 にはマイクが搭載されており、周囲の音量を検出できます。手をたたくと、マイクのLEDインジケータが点灯します。音の強さを測定できるため、騒音の尺度を作成したり、音楽に合わせて変化するディスコ風の照明を作ったりできます。マイクはマイクのLEDインジケータの反対側に配置されており、音が通るための穴の近くにあります。基板が音を検出すると、LEDインジケータが点灯します。
+Het Micro:bit main board V2 is uitgerust met een microfoon die het volume van de omgeving kan meten. Wanneer je in je handen klapt, gaat de microfoon-LED-indicator aan. Omdat het de geluidsintensiteit kan meten, kun je een geluidsschaal maken of discoverlichting die met de muziek mee verandert. De microfoon is geplaatst aan de tegenoverliggende zijde van de microfoon-LED-indicator en vlakbij openingen die geluid doorlaten. Wanneer de board geluid detecteert, gaat de LED-indicator aan.
 
-### (2)必要な部品：
+### (2)Benodigde componenten:
 
 Micro:bit main board V2
 
-Micro USBケーブル
+Micro USB-kabel
 
-### (3)テストコード1：
+### (3)Testcode 1:
 
-Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムします。
+Verbind de computer met het micro:bit-bord via een Micro-USB-kabel en programmeer in de MakeCode-editor,
 
 ![](./media/Makecode_7c037c9b.gif)
 
-完成プログラム：
+Volledig programma:
 
 ![](./media/Makecode_1ea97896.png)
 
-### (4)テスト結果1：
+### (4)Testresultaten 1:
 
-コードをアップロードすると、周囲の音が検出されたときに大きなハートアイコンが表示され、周囲が静かなときには小さなハートアイコンが表示されます（注意：検出できないほど小さな音は反応を引き起こしません）。
+Na het uploaden van de code wordt een groot hartpictogram weergegeven wanneer omgevingsgeluid wordt gedetecteerd, en een klein hartpictogram wanneer de omgeving stil is (Opmerking: geluiden die te zwak zijn om te detecteren, zullen de reactie niet activeren).
 
 ![](./media/Makecode_facbbb50.gif)
 
-### (5)テストコード2：
+### (5)Testcode 2:
 
-Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムします。
+Verbind de computer met het micro:bit-bord via een Micro-USB-kabel en programmeer in de MakeCode-editor,
 
 ![](./media/Makecode_68e37f22.gif)
 
-完成プログラム：
+Volledig programma:
 
 ![](./media/Makecode_9851e889.png)
 
-### (6)テスト結果2：
+### (6)Testresultaten 2:
 
 ![](./media/Makecode_0b914334.gif)
 
-コードをアップロードすると、ドットマトリクスが音の変化に同期してパルスします。「A」キーを押すと、現在の音の数値が表示されます。
+Na het uploaden van de code pulst de dotmatrix synchroon met de geluidsveranderingen. Door op de “A”-toets te drukken, wordt de numerieke waarde van het huidige geluid weergegeven.

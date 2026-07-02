@@ -1,26 +1,26 @@
-### プロジェクト 7：Accelerometer
+### Project 7：Accelerometer
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-micro: bit main board V2 には、LSM303AGR 重力加速度センサー（加速度計とも呼ばれる）が内蔵されており、分解能は 8/10/12 ビットです。コード内ではレンジを 1g、2g、4g、8g に設定できます。
+De micro: bit main board V2 heeft een ingebouwde LSM303AGR zwaartekrachtversnellingssensor, ook wel accelerometer genoemd, met een resolutie van 8/10/12 bits. In het codegedeelte kan het bereik worden ingesteld op 1g, 2g, 4g en 8g.
 
-加速度センサーは機械の状態を検出するためによく使用します。
+We gebruiken een accelerometer vaak om de toestand van machines te detecteren.
 
-このプロジェクトでは、加速度センサーを使ってボードの向きを測定する方法を紹介します。その後、加速度センサーが出力する生の三軸データを確認します。
+In dit project leggen we uit hoe de positie van de board met de accelerometer kan worden gemeten. Vervolgens bekijken we de ruwe driedimensionale uitvoer van de accelerometer.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USB ケーブルで micro:bit main board をコンピュータに接続します。
+A. Sluit de micro:bit main board aan op uw computer via de USB-kabel.
 
-B. Mu のオフライン版を開きます。
+B. Open de offline versie van Mu.
 
-3\.  **テストコード1**
+3\.  **Testcode1**
 
-Mu ソフトを起動し、ファイル “Three-axis acceleration sensor -1\.py“ を開いてコードを読み込みます。編集ウィンドウにコードを自分で入力することもできます。
+Start de Mu-software en open het bestand “Three-axis acceleration sensor -1\.py“ om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意: すべての単語および記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_f20f5b58.png)
 
@@ -48,53 +48,53 @@ while True:
         display.show("8")
 ```
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは正しくありません。 
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_07e4b578.png)
 
-コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind dan de micro:bit met uw computer en klik op “Flash” om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_eb56750b.png)
 
-4\.  **テスト結果1**
+4\.  **Testresultaat1**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電する（DIP スイッチを ON にする）**、その後 micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar het board is gedownload, **zet de voeding aan via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-micro: bit main board を振ると、方向に関係なく LED ドットマトリクスに数字「1」が表示されます。
+Wanneer we het micro: bit main board schudden, geeft de LED-dotmatrix ongeacht de richting het cijfer “1” weer.
 
-ボードを立てた状態（ロゴが LED マトリクスの上に来る）では、数字 2 が表示されます。
+Wanneer het rechtop wordt gehouden (met het logo boven de LED-dotmatrix), verschijnt het cijfer 2.
 
 ![](./media/Python_b91421df.jpg)
 
-上下逆さま（ロゴが LED マトリクスの下に来る）に保持すると、下図のように表示されます。
+Wanneer het ondersteboven wordt gehouden (met het logo onder de LED-dotmatrix), wordt het als hieronder weergegeven.
 
 ![](./media/Python_69e81587.jpg)
 
-机の上に静かに置き、表側が上を向いているときは数字 4 が表示されます。
+Wanneer het stil op het bureau ligt met de voorkant omhoog, verschijnt het cijfer 4.
 
 ![](./media/Python_9e08cb69.jpg)
 
-机の上に静かに置き、裏側が上を向いているときは数字 5 が表示されます。
+Wanneer het stil op het bureau ligt met de achterkant omhoog, verschijnt het cijfer 5.
 
-ボードを左に傾けると、LED ドットマトリクスに数字 6 が表示されます（下図参照）。
+Wanneer de board naar links gekanteld is, toont de LED-dotmatrix het cijfer 6, zoals hieronder weergegeven:
 
 ![](./media/Python_81fa2ce1.jpg)
 
-ボードを右に傾けると、LED ドットマトリクスに数字 7 が表示されます（下図参照）：
+Wanneer de board naar rechts gekanteld is, toont de LED-dotmatrix het cijfer 7, zoals hieronder weergegeven：
 
 ![](./media/Python_fc13912b.jpg)
 
-ボードを床に叩きつけると、この動作は自由落下とみなすことができ、LED マトリクスに数字 8 が表示されます。（このテストはメインボードを損傷する可能性があるため推奨しません。）
+Wanneer de board op de grond wordt geslagen, kan dit proces worden beschouwd als vrije val en toont de LED-dotmatrix het cijfer 8. (Let op: deze test wordt niet aanbevolen omdat het de main board kan beschadigen.)
 
-**注意：この機能を試したい場合、加速度を 3g、6g、または 8g に設定することもできます。**
+**Let op: Als u deze functie wilt proberen, kunt u de versnelling ook instellen op 3g, 6g of 8g.**
 
-5\.  **テストコード2**
+5\.  **Testcode2**
 
-Mu ソフトを起動し、ファイル “Three-axis acceleration sensor -2\.py“ を開いてコードを読み込みます。編集ウィンドウにコードを自分で入力することもできます。
+Start de Mu-software en open het bestand “Three-axis acceleration sensor -2\.py“ om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意: すべての単語および記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_0f7ccf57.png)
 
@@ -113,29 +113,29 @@ while True:
 
     sleep(100)
 ```
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは正しくありません。 
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_0ed2221e.png)
 
-コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind dan de micro:bit met uw computer en klik op “Flash” om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_35c4c76b.png)
 
-6\.  **テスト結果2**
+6\.  **Testresultaat2**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電する（DIP スイッチを ON にする）**。 「REPL」をクリックし、micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar het board is gedownload, **zet de voeding aan via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)**. Klik op “REPL” en druk op de resetknop op de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-すると REPL ウィンドウに X 軸、Y 軸、Z 軸の加速度の値が以下のように表示されます：
+Vervolgens toont het REPL-venster de waarden van de versnelling op de X-as, Y-as en Z-as zoals hieronder weergegeven:
 
 ![](./media/Python_940cfcf7.png)
 
-MMA8653FC のデータマニュアルおよび micro: bit main board のハードウェア回路図を参照すると、micro: bit の加速度計座標は下図のようになります：
+Na raadpleging van de MMA8653FC datasheet en het hardware-schema van het micro: bit main board, worden de accelerometercoördinaten van het micro: bit weergegeven in de onderstaande afbeelding:
 
 ![](./media/Python_ebd0d44d.png)
 
-7\.  **コードの説明**
+7\.  **Code-uitleg**
 
 ![Img](./media/Python_d533d72c.png)
 

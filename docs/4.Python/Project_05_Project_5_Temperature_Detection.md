@@ -1,26 +1,26 @@
-### プロジェクト 5：温度検出
+### Project 5：Temperatuurbewaking
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-Micro:bit メインボードには温度センサーが搭載されていませんが、温度検出のために NFR52833 チップに内蔵された温度センサーを使用します。したがって、検出される温度はチップの温度に近く、周囲温度とずれが生じる可能性があります。
+De Micro:bit-hoofdkaart is niet uitgerust met een aparte temperatuursensor, maar gebruikt de ingebouwde temperatuursensor in de NFR52833-chip voor temperatuurdetectie. Daarom is de gemeten temperatuur dichter bij de temperatuur van de chip en kan deze afwijken van de omgevingstemperatuur.
 
-このプロジェクトでは、センサーを使用して現在の環境の温度を測定し、測定結果を表示装置に表示します。その後、センサーで検出した温度範囲を設定して LED ドットマトリクスに異なるパターンを表示させます。
+In dit project gebruiken we de sensor om de temperatuur in de huidige omgeving te meten en de testresultaten op het displayapparaat weer te geven. Vervolgens regelen we de LED-dotmatrix om verschillende patronen te tonen door het door de sensor gedetecteerde temperatuurbereik in te stellen.
 
-**注: Micro:bit メインボードの温度センサーは以下の通りです:**
+**Opmerking: de temperatuursensor van de Micro:bit-hoofdkaart wordt hieronder weergegeven:**
 
 ![](./media/Python_206c8ec1.png)
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
+A. Sluit de micro:bit-hoofdkaart via de USB-kabel aan op uw computer
 
-B. Mu のオフラインバージョンを開きます。
+B. Open de offlineversie van Mu.
 
-3\.  **テストコード1**
+3\.  **Testcode1**
 
-Mu を起動し、ファイル “Temperature Measurement -1\.py “ を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
+Start de Mu-software en open het bestand “Temperature Measurement -1\.py “ om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注: すべての単語と記号は英語で記述する必要があります。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_03cbb6e9.png)
 
@@ -36,31 +36,31 @@ while True:
     sleep(500)
 ```
 
-“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムに誤りがあります。 
+Klik op “Check” om te controleren op fouten in de code. Het programma is fout als onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_7b437c2d.png)
 
-コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind dan de micro:bit met de computer en klik op “Flash” om de code naar het micro:bit-bord te downloaden.
 
 ![](./media/Python_193065ab.png)
 
-4\.  **テスト結果1**
+4\.  **Testresultaat1**
 
-コードが正常にボードに書き込まれたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にしてください）**。“REPL” をクリックし、micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar het bord is gedownload, **schakel de voeding in via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)**. Klik op “REPL” en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-すると REPL ウィンドウに周囲温度の値が表示されます。以下の例を参照してください:（C は温度の単位を表します）
+Het REPL-venster toont vervolgens de waarde van de omgevingstemperatuur, zoals hieronder weergegeven: (C staat voor de temperatuur-eenheid)
 
 ![](./media/Python_d08386d8.png)
 
-5\.  **テストコード2**
+5\.  **Testcode2**
 
-Mu を起動し、ファイル “Temperature Measurement -2\.py “ を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
+Start de Mu-software en open het bestand “Temperature Measurement -2\.py “ om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注: すべての単語と記号は英語で記述する必要があります。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
-温度値は実際の温度に合わせて設定できます。
+De temperatuurwaarde kan worden ingesteld in overeenstemming met de werkelijke temperatuur.
 
 ![](./media/Python_c6456d78.png)
 
@@ -76,23 +76,23 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムに誤りがあります。 
+Klik op “Check” om te controleren op fouten in de code. Het programma is fout als onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_709d3031.png)
 
-コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind dan de micro:bit met de computer en klik op “Flash” om de code naar het micro:bit-bord te downloaden.
 
 ![](./media/Python_06f7542e.png)
 
-6\.  **テスト結果2**
+6\.  **Testresultaat2**
 
-コードが正常にボードに書き込まれたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にしてください）**。その後、micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar het bord is gedownload, **schakel de voeding in via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- 周囲温度が 35℃ 未満のとき、5×5 LED ドットマトリクスは ![](./media/Python_034dc0d5.png) を表示します。温度が 35℃ 以上の場合は、パターン ![](./media/Python_ebfaeac9.png) が表示されます。
+ Wanneer de omgevingstemperatuur lager is dan 35℃, toont de 5×5 LED-dotmatrix ![](./media/Python_034dc0d5.png). Wanneer de temperatuur gelijk aan of hoger dan 35℃ is, verschijnt het patroon ![](./media/Python_ebfaeac9.png).
 
-7\.  **コードの説明**
+7\.  **Code-uitleg**
 
 ![Img](./media/Python_d7cdc397.png)
 

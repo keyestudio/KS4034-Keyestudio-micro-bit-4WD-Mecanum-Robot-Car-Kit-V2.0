@@ -1,31 +1,31 @@
-### プロジェクト4：プログラム可能なボタン
+### Project 4：Programmeerbare knoppen
 
 ![](./media/Python_06be84fb.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
 ![](./media/Python_b6d60ae2.png)
 
-ボタンは回路の制御に使用できます。プッシュボタンを備えた回路では、ボタンを押している間は回路が接続され、放すと再び開放されます。
+Knoppen kunnen worden gebruikt om schakelingen te bedienen. In een schakeling met een drukknop wordt het circuit gesloten wanneer de knop wordt ingedrukt en bij loslaten weer onderbroken.
 
-ボタンの両端は2つの山のようです。間に川があります。  
-内部の金属片が両側をつなぎ、電流を通す、まるで山と山を結ぶ橋を作るようなものです。
+Beide uiteinden van de knop lijken op twee bergen. Er loopt een rivier tussenin.  
+Het interne metalen deel verbindt de twee zijden zodat de stroom kan doorlopen, net zoals een brug die twee bergen verbindt.
 
-ボタンの内部構造は次のように示されます：ボタンを押す前は1、2、3、4がオンになっています。ただし、1と3、または1と4、または2と3、または2と4の組み合わせは切断されており、これらはボタンが押されたときにのみ接続されます。 ![](./media/Python_d2a204e6.png)
+De interne structuur van de knop wordt als volgt weergegeven: vóór het indrukken zijn 1, 2, 3 en 4 ingeschakeld. Echter, 1 en 3 of 1 en 4 of 2 en 3 of 2 en 4 zijn niet verbonden; deze verbindingen worden pas geactiveerd wanneer de knop wordt ingedrukt. ![](./media/Python_d2a204e6.png)
 
-micro:bitメインボードには3つのプッシュボタンがあり、2つはプログラム可能なボタン（AとBで表示）、もう1つはリセットボタンです。プログラム可能な2つのボタンを使うことで3種類の信号を入力できます。AまたはBを単独で押すか、両方を同時に押すと、LEDドットマトリクスはそれぞれA、B、ABを表示します。始めましょう。
+De micro:bit-hoofdplaat heeft drie drukknoppen: twee zijn programmeerbare knoppen (aangeduid met A en B), en die aan de andere kant is een resetknop. Door op de twee programmeerbare knoppen te drukken kunnen drie verschillende signalen worden ingevoerd. We kunnen knop A of B afzonderlijk indrukken of ze samen indrukken; de LED-dotmatrix toont respectievelijk A, B en AB. Laten we beginnen.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USBケーブルでmicro:bitメインボードをコンピュータに接続します。
+A. Sluit de micro:bit-hoofdplaat via de USB-kabel aan op uw computer.
 
-B. オフライン版のMuを開きます。
+B. Open de offlineversie van Mu.
 
-3\.  **テストコード1**
+3\.  **Test Code1**
 
-Muソフトを起動し、ファイル “Programmable Buttons-1\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
+Start de Mu-software en open het bestand “Programmable Buttons-1\.py” om de code te laden. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注：すべての単語と記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_2637f524.png)
 
@@ -40,27 +40,27 @@ while True:
     elif button_b.is_pressed():
         display.show("B")
 ```
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven.
 
 ![](./media/Python_a0f284f3.png)
 
-コードが正しければ、micro:bitをコンピュータに接続して「Flash」をクリックし、コードをmicro:bitボードに書き込みます。
+Als de code correct is, verbindt u de micro:bit met uw computer en klikt u op “Flash” om de code naar de micro:bit-ontwikkelbord te downloaden.
 
 ![](./media/Python_5694d3ce.png)
 
-4\.  **テスト結果1**
+4\.  **Testresultaat1**
 
-コードをボードに正常にダウンロードした後、**micro USBケーブルまたは外部電源で電源を入れてください（DIPスイッチをONにする）**。その後ボードのリセットボタンを押します。
+Nadat de code met succes naar het bord is gedownload, **zet de voeding aan via de micro-USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op het bord.
 
 ![Img](./media/Python_bb3e1312.png)
 
-5×5のLEDドットマトリクスは、ボタンAが押されると「A」を表示し、ボタンBが押されると「B」を表示し、AとBが同時に押されると「AB」を表示します。
+De 5*5 LED-dotmatrix toont “A” als knop A wordt ingedrukt, vervolgens “B” als knop B wordt ingedrukt, en “AB” als A en B samen worden ingedrukt.
 
-5\.  **テストコード2**
+5\.  **Test Code2**
 
-Muソフトを起動し、ファイル “Programmable Buttons-2\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
+Start de Mu-software en open het bestand “Programmable Buttons-2\.py” om de code te laden. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注：すべての単語と記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_1a1126f6.png)
 
@@ -106,27 +106,27 @@ while True:
     if a == 5:
         display.show(val6)
 ```
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven.
 
 ![](./media/Python_21771d90.png)
 
 ![Img](./media/Python_8d257384.png)
 
-コードが正しければ、micro:bitをコンピュータに接続して「Flash」をクリックし、コードをmicro:bitボードに書き込みます。
+Als de code correct is, verbindt u de micro:bit met uw computer en klikt u op “Flash” om de code naar de micro:bit-ontwikkelbord te downloaden.
 
 ![](./media/Python_84ba8cde.png)
 
 ![Img](./media/Python_8d257384.png)
 
-6\.  **テスト結果2**
+6\.  **Testresultaat2**
 
-コードをボードに正常にダウンロードした後、**micro USBケーブルまたは外部電源で電源を入れてください（DIPスイッチをONにする）**。その後ボードのリセットボタンを押します。
+Nadat de code met succes naar het bord is gedownload, **zet de voeding aan via de micro-USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op het bord.
 
 ![Img](./media/Python_bb3e1312.png)
 
-ボタンAを押すと赤く点灯するLEDが増え、ボタンBを押すと赤く点灯するLEDが減ります。
+Als knop A wordt ingedrukt, neemt het aantal rood oplichtende LED's toe; als knop B wordt ingedrukt, neemt het aantal rood oplichtende LED's af.
 
-7\.  **コードの説明**
+7\.  **Uitleg van de code**
 
 ![Img](./media/Python_b33858dc.png)
 

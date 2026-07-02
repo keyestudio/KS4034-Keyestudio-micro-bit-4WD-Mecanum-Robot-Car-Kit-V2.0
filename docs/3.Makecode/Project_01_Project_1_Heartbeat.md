@@ -1,12 +1,12 @@
-## プロジェクト 1: ハートビート
+## Project 1: Hartslag
 
 ![](./media/Makecode_56018947.jpg)
 
-[Click to download the code for this lesson](./Code/Heartbeat.hex)
+[Klik hier om code voor deze les te downloaden](./Code/Heartbeat.hex)
 
 ### (1)Project Description
 
-(1) Project Description このプロジェクトは、Micro:bit main board V2、Micro USB ケーブル、およびコンピュータがあれば簡単に行えます。Micro:bit の LED ドットマトリクスは、まず比較的大きなハート形のパターンを表示し、次に小さなパターンを表示します。このパターンが交互に切り替わる様子は心拍のように見えます。この実験はプログラミング入門として適しています。
+(1) Project Description Dit project is eenvoudig uit te voeren met een Micro:bit main board V2, een Micro USB-kabel en een computer. De LED-dotmatrix van de Micro:bit toont eerst een relatief groot hartvormig patroon en daarna een kleiner patroon. Deze afwisselende wijziging van het patroon lijkt op een hartslag. Dit experiment dient als een starter voor je introductie in de programmeerwereld.
 
 ### (2)Components Needed:
 
@@ -16,7 +16,7 @@ Micro USB cable
 
 ### (3)Test Code:
 
-Micro:bit main board V2 を Micro USB ケーブルでコンピュータに接続し、編集を開始します。
+Sluit de Micro:bit main board V2 via de Micro USB-kabel aan op je computer en begin met bewerken.
 
 ![](./media/Makecode_46b15e27.gif)
 
@@ -24,10 +24,10 @@ Complete Program :
 
 ![](./media/Makecode_d862ba0e.png)
 
-注意："on start" はこのブロック内のコードが一度だけ実行されることを意味し、"forever" はコードが周期的に実行されることを意味します。
+Opmerking: "on start" betekent dat de code in dit blok slechts één keer wordt uitgevoerd, terwijl "forever" impliceert dat de code cyclisch draait.
 
 ### (4)Test Results:
 
-コードをアップロードすると、Micro:bit ボードにハートビートの効果が表示されます。
+Na het uploaden van de code zie je een hartslag-effect op de Micro:bit-board verschijnen.
 
 ![](./media/Makecode_e64df1f5.gif)

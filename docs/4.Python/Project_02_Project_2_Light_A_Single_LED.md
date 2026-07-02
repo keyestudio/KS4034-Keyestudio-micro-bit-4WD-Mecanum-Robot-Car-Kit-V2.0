@@ -1,24 +1,24 @@
-### プロジェクト 2：単一のLEDを点灯する
+### Project 2：Een enkele LED laten oplichten
 
 ![](./media/Python_b855274f.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-LEDドットマトリクスは、5×5の正方形に配置された25個のダイオードで構成され、行線（X）と列線（Y）の交点に配置されています。座標を設定することで25個のLEDのうち1つを制御できます。たとえば、最初の行の最初のLEDは (0,0) に位置し、最初の行の3番目のLEDは (2,0) に位置します。他も同様です。
+De LED-pixelmatrix bestaat uit 25 diodes, gerangschikt in een 5×5 vierkant en geplaatst op de kruising van rijlijnen (X) en kolomlijnen (Y). We kunnen één van de 25 LEDs aansturen door coördinaatpunten in te stellen. Bijvoorbeeld: de eerste LED in de eerste rij bevindt zich op (0,0) en de derde LED in de eerste rij bevindt zich op (2,0), enzovoort.
 
 ![](./media/Python_094d5908.png)
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USBケーブルで micro:bit メインボードをコンピュータに接続します
+A. Sluit de micro:bit hoofdbord aan op uw computer via de USB-kabel
 
-B. Mu のオフライン版を起動します。
+B. Open de offlineversie van Mu.
 
-3\.  **テストコード**
+3\.  **Testcode**
 
-Mu ソフトウェアを開き、ファイル “Single LED display\.py.” を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
+Start de Mu-software en open het bestand “Single LED display\.py.” om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意: すべての英単語と記号は英語で記述してください**)
+(**Opmerking: Alle Engelse woorden en symbolen moeten in het Engels worden geschreven**)
 
 ![](./media/Python_9545233e.png)
 
@@ -41,28 +41,28 @@ while True:
 
 ```
 
-コードのエラーを確認するには “Check” をクリックしてください。下線やカーソルが表示されている場合、プログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven.
 
 ![](./media/Python_d205be08.png)
 
-コードが正しい場合は、micro:bit をコンピュータに接続して “Flash” をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind dan de micro:bit met uw computer en klik op “Flash” om de code naar het micro:bit-bord te downloaden.
 
 ![](./media/Python_86dd6eea.png)
 
-4\.  **テスト結果**
+4\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れて（DIPスイッチを ON にする）**、ボードのリセットボタンを押してください。
+Nadat de code succesvol naar het bord is gedownload, **schakel de voeding in via de micro-USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op het bord.
 
 ![Img](./media/Python_bb3e1312.png)
 
-(1,0) のLEDが0.5秒間点灯・消灯し、(3,4) のLEDが0.5秒間点灯・消灯する動作を繰り返します。
+De LED op (1,0) zal 0,5 s aan- en uitgaan en de LED op (3,4) zal 0,5 s aan- en uitgaan, en deze volgorde zal zich blijven herhalen.
 
-5\.  **コードの説明**
+5\.  **Codeverklaring**
 
 ![Img](./media/Python_c79b7922.png)
 
-6\.  **参照**
+6\.  **Referentie**
 
-sleep(ms) : 遅延時間
+sleep(ms) : wachttijd
 
-遅延の詳細については、次のリンクを参照してください: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
+Voor meer details over de vertraging, zie de link: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

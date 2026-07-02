@@ -1,28 +1,28 @@
-### プロジェクト 6：Geomagnetic Sensor
+### Project 6：Geomagnetic Sensor
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-このプロジェクトでは主に micro:bit の地磁気センサーの使い方を紹介します。磁場の強さを検出することに加えて、方位（方向）を判定するためにも使用でき、これはヘディングおよび姿勢基準系（AHRS）の重要な一部でもあります。
+Dit project introduceert voornamelijk het gebruik van de geomagnetische sensor van de micro:bit. Naast het detecteren van de sterkte van het magnetische veld, kan deze ook worden gebruikt om de richting te bepalen, wat een belangrijk onderdeel is van het heading- en attitude-referentiesysteem (AHRS).
 
-FreescaleMAG3110 三軸磁力計を使用しています。I2C インターフェースで外部と通信し、レンジは ±1000µT、最大データ更新レートは 80Hz です。加速度計と組み合わせることで位置を算出できます。さらに、磁気検出やコンパスブロックにも適用されます。
+Het gebruikt de FreescaleMAG3110 driewasige magnetometer. De I2C-interface communiceert extern, het bereik is ±1000µT en de maximale gegevensverversingssnelheid is 80Hz. In combinatie met een versnellingsmeter kan het de positie berekenen. Daarnaast wordt het toegepast voor magnetische detectie en kompasblokken.
 
-その後、センサーが検出した値を読み取って方位を判定できます。磁気センサーが動作する際は micro:bit 基板のキャリブレーションが必要です。正しいキャリブレーション方法は micro:bit 基板を回転させることです。
+Vervolgens kunnen we de door het apparaat gedetecteerde waarde uitlezen om de oriëntatie te bepalen. De micro:bit-board moet worden gekalibreerd wanneer de magneetsensor werkt. De juiste kalibratiemethode is het draaien van de micro:bit-board.
 
-また、近くにある物体が読み取り値やキャリブレーションの精度に影響を与える場合があります。
+Bovendien kunnen objecten in de buurt de nauwkeurigheid van de metingen en de kalibratie beïnvloeden.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
+A. Sluit de micro:bit hoofdbord met de USB-kabel aan op uw computer
 
-B. Mu のオフライン版を開きます。
+B. Open de offline versie van Mu.
 
-3\.  **テストコード1**
+3\.  **Test Code1**
 
-Mu ソフトを起動し、ファイル “Magnetic sensor -1\.py” を開いてコードを読み込みます。編集ウィンドウにコードを直接入力しても構いません。
+Start de Mu-software en open het bestand “Magnetic sensor -1\.py” om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注：すべての単語と記号は英語で記述してください**。)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven**.)
 
 ![](./media/Python_1366c5ed.png)
 
@@ -36,37 +36,37 @@ while True:
     if button_a.is_pressed():
         display.scroll(compass.heading())
 ```
-コードのエラーを確認するには「Check」をクリックします。下線やカーソルが表示されている場合はプログラムに誤りがあります。 
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_5bfe40c4.png)
 
-コードが正しい場合、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind de micro:bit met de computer en klik op “Flash” om de code naar het micro:bit-bord te downloaden.
 
 ![](./media/Python_695d8f29.png)
 
-4\.  **テスト結果1**
+4\.  **Testresultaat1**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にする）**。そして micro:bit のリセットボタンを押します。
+Nadat de code met succes naar het bord is gedownload, **zet de voeding aan via de micro USB-kabel of externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- LED ドットマトリクスに “TILT TO FILL SCREEN” が表示されます。ボタン A を押すと、ボードがコンパスのキャリブレーションを要求します。キャリブレーション画面に入ります。下図のように 25 個の赤い LED がすべて点灯するまでボードを回転させます。
+ De LED-puntenmatrix toont “TILT TO FILL SCREEN”. Als u op knop A drukt, vraagt het bord om de kompas te kalibreren. Ga vervolgens naar de kalibratiepagina. Draai het bord totdat alle 25 rode LED’s branden, zoals hieronder weergegeven.
 
 ![](./media/Python_c8fd6670.jpg)
 
-その後、スマイルのパターン ![](./media/Python_a3b91e3e.png) が表示され、キャリブレーションが完了したことを示します。キャリブレーションが完了すると、ボタン A を押すことで磁力計の読み値が直接画面に表示されます。北、東、南、西の方向はそれぞれ 0°、90°、180°、270° に対応します。
+Daarna verschijnt een smile-patroon ![](./media/Python_a3b91e3e.png), wat betekent dat de kalibratie is voltooid. Wanneer het kalibratieproces is voltooid, zal het indrukken van knop A de magnetometerlezing rechtstreeks op het scherm tonen. De richtingen noord, oost, zuid en west komen overeen met respectievelijk 0°, 90°, 180° en 270°.
 
-5\.  **テストコード2**
+5\.  **Test Code2**
 
-下の画像では、値が 292.5 ～ 337.5 の範囲にある場合、矢印は右上を指します。コードには 0.5 を入力できないため、使用する値は 293 と 338 です。
+Voor de onderstaande afbeelding zal de pijl naar rechtsboven wijzen wanneer de waarde in het bereik van 292,5 tot 337,5 ligt. Omdat 0,5 niet in de code kan worden ingevoerd, gebruiken we de waarden 293 en 338.
 
-その後、他の文を追加して完全なコードにします。
+Voeg vervolgens andere instructies toe om een volledige code te maken.
 
 ![](./media/Python_d1a4e9f6.png)
 
-Mu ソフトを起動し、ファイル “Magnetic sensor -2\.py” を開いてコードを読み込みます。編集ウィンドウにコードを直接入力しても構いません。
+Start de Mu-software en open het bestand “Magnetic sensor -2\.py” om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注：すべての単語と記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_5b0d8e26.png)
 
@@ -95,23 +95,23 @@ while True:
 
 ```
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。 
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_42389bcf.png)
 
-コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind de micro:bit met uw computer en klik op “Flash” om de code naar het micro:bit-bord te downloaden.
 
 ![](./media/Python_bedc607a.png)
 
-6\.  **テスト結果**
+6\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にする）**。そして micro:bit のリセットボタンを押します。
+Nadat de code met succes naar het bord is gedownload, **zet de voeding aan via de micro USB-kabel of externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-キャリブレーションの後、micro:bit ボードを回転させると、LED ドットマトリクスに方向を示す記号が表示されます。 
+Na de kalibratie draait u het micro:bit-bord, waarna de LED-puntenmatrix de richtingssymbolen weergeeft. 
 
-7\.  **コードの説明**
+7\.  **Code-uitleg**
 
 ![Img](./media/Python_76f66bb0.png)
 

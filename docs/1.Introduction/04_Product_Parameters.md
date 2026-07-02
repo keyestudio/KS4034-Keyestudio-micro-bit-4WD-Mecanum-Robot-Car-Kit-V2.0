@@ -1,19 +1,19 @@
-## 製品パラメータ
+## Productparameters
 
-- コネクタポート入力: DC 7V--9V
+- Aansluitpoort ingang: DC 7V--9V
 
-- ドライバ基板システムの動作電圧: 5V
+- Bedrijfsspanning van het driverboard-systeem: 5V
 
-- 標準動作消費電力: 約2.2W
+- Standaard bedrijfsverbruik: ongeveer 2,2 W
 
-- 最大電力: 12W
+- Maximale vermogen: 12 W
 
-- モーター回転速度: 200RPM
+- Motorsnelheid: 200 RPM
 
-- 動作温度範囲: 0-50℃
+- Werktemperatuurbereik: 0-50℃
 
-- サイズ: 120\*120\*120mm
+- Afmetingen: 120\*120\*120mm
 
-- 環境保護属性: ROHS
+- Milieubeschermingskenmerken: ROHS
 
-**注意:** micro:bit の動作電圧は3.3Vで、ドライバシールドには3.3V/5Vの通信変換回路が内蔵されています。
+**Opmerking:** De bedrijfsspanning van de micro:bit is 3,3 V, en het driver-shield bevat een 3,3V/5V communicatieomzettingscircuit.

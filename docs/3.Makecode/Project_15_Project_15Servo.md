@@ -1,68 +1,68 @@
-## プロジェクト 15：Servo
+## Project 15：Servo
 
 ![](./media/Makecode_215da878.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-DIYのスマートカーでは、障害物を自動で回避する機能が備わっていることが多いです。製作の過程では、超音波モジュールを左右に回転させるためにサーボを使用し、車と障害物との距離を検知して車の回避を制御する必要があります。他のマイコンでサーボの回転を制御する場合、サーボ角度を制御するために一定の周波数とパルス幅を設定する必要があります。
+Bij doe-het-zelf slimme auto's is vaak een automatische obstakelvermijding functie aanwezig. Tijdens het bouwproces moeten we een servo gebruiken om de ultrasone module naar links en rechts te laten draaien en vervolgens de afstand tussen de auto en het obstakel te detecteren, zodat de auto het obstakel kan ontwijken. Als andere microcontrollers worden gebruikt om de servo-rotatie te regelen, moeten bepaalde frequenties en pulsbreedtes worden ingesteld om de servohoek te besturen.
 
-しかし、micro:bit メインボードを使用してサーボ角度を制御する場合、開発環境で制御角度を設定するだけで、対応するパルスが自動的に生成されてサーボの回転が制御されます。本プロジェクトでは、サーボを0°から90°の間で往復させる方法を学びます。
+Als echter het micro:bit-hoofdboard wordt gebruikt om de servohoek te regelen, hoeft u in de ontwikkelomgeving alleen de stuurhoek in te stellen; de overeenkomstige puls wordt dan automatisch ingesteld om de servodraaing te regelen. In dit project leert u hoe u de servo heen en weer tussen 0° en 90° laat draaien.
 
-2\.  **サーボの情報**
+2\.  **Informatie over de servo**
 
-サーボモーターは位置制御用の回転アクチュエータです。主にケース、基板、コアレスモーター、ギア、位置センサーで構成されます。動作原理は、サーボがMCUまたは受信機から送られる信号を受信し、周期20ms、幅1.5msの基準信号を生成し、取得した直流バイアス電圧をポテンショメータの電圧と比較して電圧差を出力することです。
+Een servomotor is een roterende actuator voor positiebesturing. Het bestaat voornamelijk uit behuizing, printplaat, kernloze motor, tandwiel en positieresensor. Het werkingsprincipe is dat de servo het signaal dat door de MCU of ontvanger wordt verzonden ontvangt, een referentiesignaal met een periode van 20 ms en een breedte van 1,5 ms genereert, en vervolgens de verkregen DC-voorspanning vergelijkt met de spanning van de potentiometer en het spanningsverschil als uitgang verkrijgt.
 
 ![](./media/Makecode_87b41036.png)
 
-本プロジェクトで使用するサーボでは、茶色の線がGND、赤が電源プラス、オレンジが信号線です。
+Bij de in dit project gebruikte servo is de bruine draad massa (GND), de rode draad de plus (V+) en de oranje draad de signaaldraad.
 
-サーボモーターの回転角は、PWM（Pulse-Width Modulation）信号のデューティ比を制御することで調整されます。PWM信号の標準周期は20ms（50Hz）です。理論的にはパルス幅は1ms〜2msの範囲ですが、実際には0.5ms〜2.5msの範囲となります。パルス幅は0°から180°までの回転角に対応します。ただし、メーカーが異なれば同じ信号でも回転角が異なる場合がある点に注意してください。
+De rotatiehoek van de servomotor wordt geregeld door het regelen van de dutycycle van het PWM- (Pulse-Width Modulation) signaal. De standaardcyclus van het PWM-signaal is 20 ms (50 Hz). Theoretisch ligt de pulsbreedte tussen 1 ms en 2 ms, maar in de praktijk tussen 0,5 ms en 2,5 ms. De breedte komt overeen met de rotatiehoek van 0° tot 180°. Houd er rekening mee dat bij verschillende merken motoren hetzelfde signaal tot verschillende rotatiehoeken kan leiden.
 
 ![](./media/Makecode_49467dfa.png)
 
-詳しくは：
+Meer details:
 
 ![](./media/Makecode_b167d550.png)
 
-3\.  **パラメータ**
+3\.  **Parameters**
 
-- 動作電圧: DC 4.8V ~ 6V
+- Werkspanning: DC 4.8V ~ 6V
 
-- 動作角度範囲: 約180 °（500 → 2500 μsec時）
+- Werkhoek bereik: ongeveer 180 ° (bij 500 → 2500 μsec)
 
-- パルス幅範囲: 500 → 2500 μsec
+- Pulsbreedtebereik: 500 → 2500 μsec
 
-- 無負荷回転速度: 0.12 ± 0.01 秒 / 60（DC 4.8V） 0.1 ± 0.01 秒 / 60（DC 6V）
+- Onbelast snelheid: 0.12 ± 0.01 s / 60 (DC 4.8V) 0.1 ± 0.01 s / 60 (DC 6V)
 
-- 無負荷電流: 200 ± 20mA（DC 4.8V） 220 ± 20mA（DC 6V）
+- Onbelast stroom: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
 
-- 停止トルク: 1.3 ± 0.01kg·cm（DC 4.8V） 1.5 ± 0.1kg·cm（DC 6V）
+- Houdkoppel (stoptorque): 1.3 ± 0.01kg·cm (DC 4.8V) 1.5 ± 0.1kg·cm (DC 6V)
 
-- 停止電流: ≦ 850mA（DC 4.8V） ≦ 1000mA（DC 6V）
+- Stopstroom: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- 待機電流: 3 ± 1mA（DC 4.8V） 4 ± 1mA（DC 6V）
+- Standby-stroom: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
 
-4\.  **準備**
+4\.  **Voorbereiding**
 
-- micro:bit ボードを keyestudio   4WD Mecanum Robot Car V2.0 のスロットに挿入する
+- Steek de micro:bit kaart in de sleuf van de keyestudio   4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチを ON にする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルで micro:bit をコンピュータに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- Makecode の Web版を開く
+- Open de webversie van Makecode
 
 
-5\.  **テストコード**
+5\.  **Testcode**
 
 ![](./media/Makecode_087e1822.png)
 
-「JavaScript」をクリックして対応する JavaScript コードを表示：
+Klik op "JavaScript" om de bijbehorende JavaScript-code te bekijken:
 
 ![](./media/Makecode_2354311f.png)
 
-6.  **テスト結果**
+6.  **Testresultaat**
 
-テストコードをアップロードし、POWERスイッチをONにすると、サーボが0度から180度まで回転します。
+Na het uploaden van de testcode en het zetten van de POWER-schakelaar op ON, draait de servo van 0 graden naar 180 graden.

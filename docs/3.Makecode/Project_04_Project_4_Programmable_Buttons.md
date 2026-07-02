@@ -1,51 +1,49 @@
-## プロジェクト4：プログラム可能なボタン
+## Project 4: Programmeerbare knoppen
 
 ![](./media/Makecode_b339baac.jpg)
 
-[このレッスンのコード1をダウンロードするにはここをクリック](./Code/Programmable-Buttons.hex)
+[Klik hier om code 1 voor deze les te downloaden](./Code/Programmable-Buttons.hex)
 
-[このレッスンのコード2をダウンロードするにはここをクリック](./Code/Programmable-Buttons2.hex)
+[Klik hier om code 2 voor deze les te downloaden](./Code/Programmable-Buttons2.hex)
 
-### (1)プロジェクトの説明:
+### (1)Projectbeschrijving:
 
-ボタンは回路を制御するために使用できます。ボタンを備えた集積回路では、ボタンを押すと回路が接続され、逆に開放されます。Micro:bit main board V2 には3つのボタンがあり、2つはプログラム可能なボタン（AとBで表示）で、反対側の1つはリセットボタンです。2つのプログラム可能なボタンを押すことで3つの異なる信号を入力できます。ボタンAまたはBを単独で押すか、両方を同時に押すと、LEDドットマトリクスにはそれぞれ A、B、AB が表示されます。始めましょう。
+Knoppen kunnen worden gebruikt om schakelingen te bedienen. In een geïntegreerde schakeling met een knop is de schakeling verbonden wanneer de knop wordt ingedrukt en andersom open. Het Micro:bit main board V2 heeft drie knoppen: twee zijn programmeerbare knoppen (gemarkeerd met A en B) en de knop aan de andere kant is een resetknop. Door de twee programmeerbare knoppen in te drukken kunnen drie verschillende signalen worden ingevoerd. We kunnen knop A of B afzonderlijk indrukken of ze samen indrukken en de LED-dotmatrix toont respectievelijk A, B en AB. Laten we beginnen.
 
-### (2)必要な部品:
+### (2)Benodigde componenten:
 
 Micro:bit main board V2 
 
-Micro USB ケーブル
+Micro USB-kabel
 
-### (3)テストコード1 :
+### (3)Testcode 1 :
 
-Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムします、
+Verbind de computer met de micro:bit-board met een Micro USB-kabel en programmeer in de MakeCode-editor,
 
 ![](./media/Makecode_c776e309.gif)
 
-完成コード:
+Volledige code:
 
 ![](./media/Makecode_054985a9.png)
 
-### (4)テスト結果1 :
+### (4)Testresultaten 1 :
 
-テストコード1を Micro:bit main board V2 にアップロードすると、5*5 LED ドットマトリクスは、ボタンAを押すと A を表示し、ボタンBを押すと B を表示し、ボタンA と B を同時に押すと AB を表示します。
+Nadat testcode 1 is geüpload naar het Micro:bit main board V2, toont de 5*5 LED-dotmatrix A als knop A wordt ingedrukt, B als knop B wordt ingedrukt, en AB als knoppen A en B samen worden ingedrukt.
 
 ![](./media/Makecode_b48c79ad.gif)
 
-### (5) テストコード2 :
+### (5) Testcode 2 :
 
 ![](./media/Makecode_751dfce0.gif)
 
 
 
-完成プログラム :
+Volledig programma :
 
 ![](./media/Makecode_5cdecff7.png)
 
-### (6)テスト結果2:
+### (6)Testresultaten 2:
 
-テストコード2を Micro:bit main board V2 にアップロードすると、ボタンAを押すと赤くなるLEDが増加し、ボタンBを押すと赤くなるLEDが減少します。
+Nadat testcode 2 is geüpload naar het Micro:bit main board V2, neemt bij het indrukken van knop A het aantal rood wordende LED's toe, terwijl bij het indrukken van knop B het aantal rood wordende LED's afneemt.
 
 ![](./media/Makecode_248724b3.gif)
-
----

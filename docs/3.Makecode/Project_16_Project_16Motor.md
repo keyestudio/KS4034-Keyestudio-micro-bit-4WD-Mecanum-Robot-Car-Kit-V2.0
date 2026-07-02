@@ -1,14 +1,14 @@
-## プロジェクト 16：Motor
+## Project 16：Motor
 
 ![](./media/Makecode_77f3b857.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-Keyestudio 4WD Mecanum Robot Car は、一般的なDCモータをベースに開発された4つのDC減速モータ（ギア減速モータとも呼ばれる）を搭載しています。適合するギヤ減速箱を備えており、回転数は低くなりますがトルクは大きくなります。さらに、減速箱の減速比を変えることで、異なる速度とトルクを得ることができます。
+De Keyestudio 4WD Mecanum Robot Car is uitgerust met 4 DC-reductiemotoren, ook wel tandwielreductiemotoren genoemd, die zijn ontwikkeld op basis van gewone DC-motoren. Hij heeft een bijpassende tandwielreductiekast die een lagere snelheid maar een groter koppel levert. Bovendien kunnen verschillende reductieverhoudingen van de kast verschillende snelheden en koppels bieden.
 
-ギアモータはギヤモータとモータの統合であり、鉄鋼・機械産業で広く応用されています。
+Een tandwielmotor is de integratie van tandwielkast en motor, en wordt veel toegepast in de staal- en machinebouwindustrie.
 
-micro:bit用モータドライバシールドにはDRV8833チップが搭載されています。IOポート資源を節約するために、DRV8833チップで4つのDCギアモータの回転方向と速度を制御します。
+Het micro:bit motordriver-shield is voorzien van een DRV8833-chip. Om IO-poortbronnen te besparen, regelen we de draairichting en snelheid van de 4 DC-tandwielmotoren met de DRV8833-chip.
 
 ![Img](./media/Makecode_4c9781dc.png)
 
@@ -26,29 +26,29 @@ STC8G1K08 Chip circuit
 
 HR8833 Motor driver circuit
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Steek de micro:bit-king in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをON側に合わせる
+- Zet de aan/uit-schakelaar op ON
 
-- USBケーブルでmicro:bitをコンピュータに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- MakecodeのWeb版を開く
+- Open de webversie van Makecode
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_3a759dd8.png)
 
-「Click“JavaScript" to view the corresponding JavaScript code:」の表示部分（UIのラベル）については、`JavaScript` の表記はそのままです。対応するJavaScriptコードを表示するには“JavaScript"をクリックしてください。 
+Klik op“JavaScript" om de bijbehorende JavaScript-code te bekijken: 
 
 ![](./media/Makecode_242ba6ca.png)
 
-4\.  **テスト結果1**
+4\.  **Testresultaat1**
 
-コード1をmicro:bitボードにダウンロードし、POWERスイッチをONにします。スマートカーは2秒前進し、2秒停止します。
+Download code 1 naar het micro:bit-board, zet de POWER-schakelaar op ON. De slimme auto rijdt 2s vooruit en stopt 2s.
 
 5\.  **Test Code2**
 
@@ -56,10 +56,10 @@ HR8833 Motor driver circuit
 
 ![Img](./media/Makecode_4eb6b574.png)
 
-「Click“JavaScript" to view the corresponding JavaScript code:」の表示部分については、`JavaScript` の表記はそのままです。対応するJavaScriptコードを表示するには“JavaScript"をクリックしてください。 
+Klik op“JavaScript" om de bijbehorende JavaScript-code te bekijken: 
 
 ![](./media/Makecode_ee70b846.png)
 
-6\.  **テスト結果2**
+6\.  **Testresultaat2**
 
-コード2をmicro:bitボードにダウンロードすると、車は2秒前進し、2秒後退し、2秒左折し、2秒右折し、2秒停止し、このパターンを繰り返します。
+Download code 2 naar het micro:bit-board, de auto rijdt 2s vooruit, rijdt 2s achteruit, draait 2s naar links, draait 2s naar rechts, stopt 2s en herhaalt dit patroon.

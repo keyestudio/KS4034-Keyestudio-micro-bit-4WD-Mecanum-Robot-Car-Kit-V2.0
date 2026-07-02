@@ -1,48 +1,48 @@
-### プロジェクト 17：ライン追跡センサー
+### Project 17：Lijnvolgsensor
 
-#### プロジェクト 17.1：ライン追跡センサーの検出
+#### Project 17.1：Lijnvolgsensor detecteren
 
 ![](./media/Python_ea7f6c8c.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-Keyestudio 4WD Mecanum ロボットカーのモータードライバーボードには、TCRT5000 赤外線素子と3つのポテンショメータを採用した3チャネルのライン追跡センサーが搭載されています。
+De motorbesturingsprint van de Keyestudio 4WD Mecanum Robot Car heeft een 3-kanaals lijnvolgsensor, die TCRT5000 IR-buizen en 3 potentiometers gebruikt.
 
-TCRT5000 は赤外線発光素子と受光素子を内蔵しています。発光素子から放射された赤外線が反射を介して受光素子に届くと、受光素子の抵抗が変化し、それが回路上の電圧変化として一般に表れます。　
+De TCRT5000 IR-buis bevat een IR-zendbuis en een IR-ontvangbuis. Wanneer de infraroodsignalenn van de zendbuis via reflectie door de ontvangbuis worden opgevangen, verandert de weerstand van de ontvangbuis, wat doorgaans wordt weergegeven als een spanningsverandering in het circuit.
 
-受光素子が受ける赤外線の強度によって抵抗は変化し、反射面の色や受光素子との距離に依存します。検出時には、黒がハイレベル（アクティブ）、白がローレベル（非アクティブ）となります。　
+De weerstand varieert afhankelijk van de intensiteit van de infraroodsignalen die door de ontvangbuis worden ontvangen, wat vaak afhangt van de kleur van het reflecterende oppervlak en de afstand tussen dat oppervlak en de ontvangbuis. Bij detectie geldt dat zwart een actief hoog niveau is en wit een actief laag niveau.
 
-2\.  **動作原理**
+2\.  **Werking**
 
-車が白い路面の上を走行すると、車体底部に設置された赤外線発光素子が路面に向けて赤外線を照射し、受光素子が反射光を受信して信号を返します。そのとき出力端はローレベル(0)を出力します。黒い線を検出すると、ハイレベル(1)を出力します。
+Als de auto over een witte ondergrond rijdt, straalt de onder de auto gemonteerde IR-zendbuis infrarood uit om de ondergrond te detecteren en de ontvangbuis ontvangt de teruggekaatste signalen. De uitgang geeft dan een laag niveau (0); wanneer er zwarte lijnen worden gedetecteerd, geeft de uitgang een hoog niveau (1).
 
-4WD Mecanum ロボットカーに統合された3チャネル追跡センサーのコネクタは、micro:bit 拡張ボードの G、5V、P10、P4、P3 の収集ポートに接続されており、micro:bit の P10、P4、P3 によって制御されます。センサーの左側の TCRT5000 赤外線ペアは P3 で制御され、中央は P4、右側は P10 で制御されます。
+De geïntegreerde 3-kanaals volgensor-poort op de 4WD Mecanum Robot Car is verbonden met de aansluitingen G, 5V, P10, P4 en P3 op de micro:bit uitbreidingsplaat, en wordt bestuurd door P10, P4 en P3 van de micro:bit. De linker TCRT5000 IR-paarbuis op de sensor wordt door P3 aangestuurd, de middelste door P4 en de rechter door P10.
 
-4WD Mecanum ロボットカーの底部に白い紙を置き、3路の追跡センサー上のポテンショメータを回します。センサーモジュールのインジケータが点灯したら、車を持ち上げて 4WD Mecanum ロボットカーの両輪を分離させます。白い紙の高さは約1.5cm にし、センサーモジュールのインジケータが消灯したら感度を調整します。
+Plaats een wit papier onder de 4WD Mecanum Robot Car en draai aan de potentiometers van de 3-weg volgensor. Wanneer het indicatielampje op het sensormodule brandt, til dan de auto op zodat de twee wielen van de 4WD Mecanum Robot Car vrij komen. De hoogte (afstand tussen sensor en papier) is ongeveer 1,5 cm; wanneer het indicatielampje op het sensormodule uitgaat, is de gevoeligheid goed afgesteld.
 
-**注意：5×5 ドットマトリクスは P3、P4、P6、P7、P10 を使用するため、ライン追跡センサーを使うときはドットマトリクス機能をオフにする必要があります。**
+**Opmerking: omdat de 5x5 dot-matrix de pinnen P3, P4, P6, P7 en P10 gebruikt, moeten we de dot-matrix functie uitschakelen wanneer we de lijnvolgsensor gebruiken.**
 
-3\.  **準備**
+3\.  **Voorbereiding**
 
-- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに挿入する
+- Steek de micro:bit in de houder van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池をバッテリーホルダに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチを ON にする
+- Zet de aan/uit-schakelaar op ON
 
-- USB ケーブルで micro:bit をコンピュータに接続する
+- Verbind de micro:bit met de computer via een USB-kabel
 
-- Mu のオフライン版を開く
+- Open de offline versie van Mu.
 
-4\.  **テストコード**
+4\.  **Testcode**
 
-Mu を起動し、ファイル “Line tracking detection\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
+Open de Mu-software en open het bestand “Line tracking detection.py” om de code te laden. Je kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-（注：英文や記号はすべて英語で記述してください。）
+(**Opmerking: alle Engelse woorden en symbolen moeten in het Engels geschreven zijn**.)
 
-「Check」をクリックしてコードのエラーを確認します。下線やエラー表示がある場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma bevat fouten als er onderstrepingen en cursors worden weergegeven.
 
-コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind de micro:bit met je computer en klik op “Flash” om de code naar de micro:bit te downloaden.
 
 ![](./media/Python_2c7b1c21.png)
 
@@ -64,68 +64,68 @@ while True:
     sleep(200)
 ```
 
-5\.  **テスト結果**
+5\.  **Testresultaat**
 
-コードをボードに正常に書き込んだ後、USB ケーブルは抜かないでください。「REPL」をクリックしてからリセットボタンを押します。
+Nadat de code succesvol naar het board is gedownload en de USB-kabel is aangesloten, klik je op “REPL” en druk je vervolgens op de resetknop.
 
 ![Img](./media/Python_bb3e1312.png)
 
-左側の TCRT5000 赤外線素子が検出した値がモニタに表示されます。
+De door de linker TCRT5000 IR-buis gedetecteerde waarden worden in de monitor weergegeven.
 
-左側の TCRT5000 が白い物体を検出すると 0 が表示され、左のインジケータが点灯します。黒い物体のみを検出すると 1 が表示され、インジケータは消灯します。以下のように表示されます：
+Wanneer de linker TCRT5000 IR-buis een wit object detecteert, wordt 0 weergegeven en brandt het linker indicatielampje; wanneer er alleen een zwart object wordt gedetecteerd, wordt 1 weergegeven en is het indicatielampje uit, zoals hieronder weergegeven:
 
 ![](./media/Python_6a25b450.png)
 
-6\.  **コードの説明**
+6\.  **Code-uitleg**
 
 ![Img](./media/Python_5dad345e.png)
 
 
-#### プロジェクト 17.2：ライン追跡スマートカー
+#### Project 17.2：Lijnvolgende Smart Car
 
 ![](./media/Python_f0b62e0f.jpg)
 
-1\. 説明
+1\. Beschrijving
 
-このレッスンでは、ライン追跡センサーとモーターを組み合わせてライン追跡スマートカーを作ります。
+In deze les combineren we een lijnvolgsensor met een motor om een lijnvolgende smart car te maken.
 
-micro:bit ボードがセンサーの信号を解析し、スマートカーを制御してライン追跡の動作を行います。
+De micro:bit zal de signalen analyseren en de smart car aansturen om de lijnvolgfunctie uit te voeren.
 
-2\.  **動作原理**
+2\.  **Werking**
 
-3チャネルライン追跡センサーが受け取る値に応じて、スマートカーは異なる動作を行います。
+De smart car voert verschillende bewegingen uit afhankelijk van de waarden die door de 3-kanaals lijnvolgsensor worden ontvangen.
 
 ![Img](./media/Python_e672c637.png)
 
-3\.  **準備**
+3\.  **Voorbereiding**
 
-- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに挿入する
+- Steek de micro:bit in de houder van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池をバッテリーホルダに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチを ON にする
+- Zet de aan/uit-schakelaar op ON
 
-- USB ケーブルで micro:bit をコンピュータに接続する
+- Verbind de micro:bit met de computer via een USB-kabel
 
-- Mu のオフライン版を開く
+- Open de offline versie van Mu.
 
-**警告：** 3路追跡センサーは直射日光のような赤外線の干渉がない環境で使用してください。太陽光には赤外線や紫外線など多数の不可視光が含まれており、強い日光下では 3路追跡センサーは正しく動作しないことがあります。
+**Waarschuwing:** De 3-weg volgensor moet worden gebruikt in een omgeving zonder infraroodinterferentie zoals direct zonlicht. Zonlicht bevat veel onzichtbaar licht, zoals infrarood en ultraviolet. In een omgeving met sterk zonlicht kan de 3-weg volgensor niet goed werken.
 
-4\.  **フローチャート**
+4\.  **Stroomschema**
 
 ![Img](./media/Python_47856ed2.png)
 
-5\.  **テストコード**
+5\.  **Testcode**
 
-Mu を起動し、ファイル “Line tracking car\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
+Open de Mu-software en open het bestand “Line tracking car.py” om de code te laden. Je kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-（注：英文や記号はすべて英語で記述してください。）
+(**Opmerking: alle Engelse woorden en symbolen moeten in het Engels geschreven zijn**.)
 
-「Files」をクリックして “keyes_mecanum_Car.py” ライブラリファイルを micro:bit に取り込みます。
+Klik op “Files” om het bibliotheekbestand “keyes_mecanum_Car.py” naar de micro:bit te importeren.
 
-「Check」をクリックしてコードのエラーを確認します。下線やエラー表示がある場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma bevat fouten als er onderstrepingen en cursors worden weergegeven.
 
-コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, verbind de micro:bit met je computer en klik op “Flash” om de code naar de micro:bit te downloaden.
 
 ![](./media/Python_bd395cbe.png)
 
@@ -175,23 +175,21 @@ while True:
             mecanumCar.Motor_Upper_R(1, 80)
             mecanumCar.Motor_Lower_R(1, 80)
 ```
-6\.  **テスト結果**
 
-コードをボードに正常に書き込んだ後、**外部電源（DIPスイッチを ON に切り替える）** を用意し、micro:bit のリセットボタンを押します。
+6\.  **Testresultaat**
+
+Nadat de code succesvol naar het board is gedownload, zorg voor externe voeding (zet de DIP-schakelaar op ON) en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-ライン追跡カーは黒い線に沿って前進します。
+De lijnvolgende auto rijdt vooruit langs de zwarte lijn.
 
-**注意：** （1）追跡時の黒線の幅は、ライン追跡センサーの幅と同じかそれ以上である必要があります。
+**Opmerkingen:** (1) De breedte van de zwarte lijn moet gelijk aan of groter zijn dan de breedte van de lijnvolgsensor tijdens het volgen.
 
-（2）強い光の下でのテストは避けてください。
+(2) Vermijd het testen van de smart car onder fel licht.
 
-
-7\.  **コードの説明**
+7\.  **Code-uitleg**
 
 ![Img](./media/Python_b16f9d7b.png)
 
 ![Img](./media/Python_35f35a4c.png)
-
----

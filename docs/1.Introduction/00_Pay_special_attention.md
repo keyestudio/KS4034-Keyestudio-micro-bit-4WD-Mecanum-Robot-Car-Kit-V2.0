@@ -1,23 +1,23 @@
-## 特にご注意ください
+## Besteed speciale aandacht
 
-1\. この製品には小さな部品が含まれています。飲み込まないでください。
+1\. Dit product bevat kleine onderdelen. Niet inslikken.
 
-2\. 3歳未満の子供に本製品で遊ばせたり、近くで遊ばせたりしないでください。
+2\. Laat geen kinderen jonger dan 3 jaar met dit product spelen of in de buurt ervan.
 
-3\. 安全に関する十分な能力のない子供に保護者の監督なしで本製品を使用させないでください。 
+3\. Laat kinderen die niet over de benodigde veiligheidsvaardigheden beschikken dit product niet zonder ouderlijk toezicht gebruiken. 
 
-4\. 感電の危険を避けるため、本製品またはその部品を交流（AC）電源ソケットやその他の回路の近くで使用しないでください。 
+4\. Gebruik dit product of de componenten niet in de buurt van wisselstroom (AC) stopcontacten of andere circuits om het risico op een elektrische schok te vermijden. 
 
-5\. 液体や火気の近くで使用しないでください。
+5\. Gebruik niet in de nabijheid van vloeistoffen of vuur.
 
-6\. 導電性のある物質を製品に近づけないでください。
+6\. Houd geleidende materialen weg van het product.
 
-7\. 高温・低温や高湿度などの過酷な条件下で製品を保管または使用しないでください。 
+7\. Bewaar of gebruik het product niet onder extreme omstandigheden, zoals hoge of lage temperaturen en hoge luchtvochtigheid. 
 
-8\. 離れるときや使用しないときは回路の電源を切ってください。
+8\. Schakel het circuit uit wanneer u het gebied verlaat of het product niet gebruikt.
 
-9\. 製品を操作中に可動部や回転部に触れないでください。 
+9\. Raak tijdens het bedienen van het product geen bewegende of roterende delen aan. 
 
-10\. 特定の回路設計で使用した場合、製品の一部が熱くなることがあります。取り扱いが不適切だと過熱することがあります。 
+10\. Het is normaal dat delen van het product warm kunnen worden wanneer het in bepaalde schakelingen wordt gebruikt. Onoordeelkundige behandeling kan leiden tot oververhitting. 
 
-11\. 仕様に従って使用しないと、製品が損傷することがあります。
+11\. Als het product niet volgens de specificaties wordt gebruikt, kan het beschadigd raken.

@@ -1,22 +1,22 @@
-### プロジェクト 9：スピーカー
+### Project 9: Speaker
 
 ![](./media/Python_ac515b9a.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-micro:bit メインボードには内蔵スピーカーがあり、プログラムに音を追加するのが容易になります。*Ode to Joy* のような曲を再生するなど、さまざまな音色を出すようにプログラムすることもできます。
+Het micro:bit-hoofdboard heeft een ingebouwde speaker, waardoor het toevoegen van geluid aan programma's gemakkelijker wordt. Het kan ook geprogrammeerd worden om allerlei tonen te produceren, zoals het spelen van het lied *Ode to Joy*.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
+A. Sluit het micro:bit-hoofdboard met de USB-kabel aan op uw computer
 
-B. オフライン版の Mu を開きます。
+B. Open de offline versie van Mu.
 
-3\.  **テストコード**
+3\.  **Testcode**
 
-Mu ソフトを起動し、ファイル “Speaker\.py” を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
+Start de Mu-software en open het bestand “Speaker\.py” om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意: すべての単語と記号は英語で記述する必要があります**.)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels geschreven zijn**.)
 
 ![](./media/Python_eec7f643.png)
 
@@ -38,23 +38,23 @@ while True:
     sleep(1000)
 ```
 
-“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven.
 
 ![](./media/Python_f8852abf.png)
 
-コードが正しければ、micro:bit をコンピュータに接続して “Flash” をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, sluit u de micro:bit aan op uw computer en klikt u op “Flash” om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_3fd94e43.png)
 
-4\.  **テスト結果**
+4\.  **Testresultaat**
 
-コードがボードに正常にダウンロードされたら、**micro USB ケーブルまたは外部電源で電源を入れる（DIP スイッチを ON にする）**、その後 micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar het board is gedownload, **zet u de voeding aan via de micro USB-kabel of een externe voedingsbron (zet de DIP-schakelaar op ON)** en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- スピーカーから音が鳴り、LED ドットマトリクスに音楽のロゴが表示されます。
+ De speaker geeft geluid en de LED-puntmatrix toont het muzieksymbool.
 
-5\.  **コードの説明**
+5\.  **Codeuitleg**
 
 ![Img](./media/Python_18c047bd.png)
 

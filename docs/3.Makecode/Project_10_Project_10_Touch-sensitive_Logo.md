@@ -1,33 +1,33 @@
-## プロジェクト 10: Touch-sensitive Logo
+## Project 10: Touch-sensitive Logo
 
 ![](./media/Makecode_445a7708.jpg)
 
-[このレッスンのコードをダウンロードする](./Code/Touch-sensitive-Logo.hex)
+[Klik hier om de code voor deze les te downloaden](./Code/Touch-sensitive-Logo.hex)
 
-### (1)プロジェクトの説明：
+### (1)Projectbeschrijving:
 
-Micro:bit main board V2 には金色のタッチセンシティブロゴが搭載されており、入力コンポーネントとして機能し、追加のボタンのように扱うことができます。
+De Micro:bit main board V2 is uitgerust met een gouden, aanrakinggevoelig logo dat kan functioneren als een invoercomponent en als een extra knop kan werken.
 
-これは容量性タッチセンサーを内蔵しており、押された（または触れられた）ときに電界のわずかな変化を検知します。これはスマートフォンやタブレットの画面と同様です。これを押すと、プログラムを起動できます。
+Het bevat een capacitieve aanrakingssensor die bij indrukken (of aanraking) kleine veranderingen in het elektrische veld detecteert, net zoals het scherm van uw telefoon of tablet. Wanneer u erop drukt, kunt u het programma activeren.
 
-### (2)必要な部品：
+### (2)Benodigde componenten:
 
 Micro:bit main board V2
 
-Micro USB ケーブル
+Micro-USB-kabel
 
-### (3)テスト用コード：
+### (3)Testcode:
 
-コンピュータを Micro USB ケーブルで micro:bit ボードに接続し、MakeCode エディターでプログラムします。
+Verbind de computer met de micro:bit-board via een Micro-USB-kabel en programmeer in de MakeCode-editor,
 
 ![](./media/Makecode_54cc5b8a.gif)
 
-完全なプログラム：
+Volledig programma:
 
 ![](./media/Makecode_2ba9bf7d.png)
 
-### (4)テスト結果：
+### (4)Testresultaten:
 
-コードをアップロードした後、手でロゴに触れるとドットマトリクスにハートの形が表示されます。触れた手を放すと数字が表示され、接触時間が長いほど大きな数が表示されます。
+Na het uploaden van de code zal het aanraken van het logo met uw hand een hartvorm op de dotmatrix tonen. Wanneer u loslaat, verschijnt er een nummer; bij langere aanrakingstijden worden grotere nummers weergegeven.
 
 ![](./media/Makecode_46b832c8.gif)

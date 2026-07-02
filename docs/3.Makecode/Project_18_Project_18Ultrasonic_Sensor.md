@@ -1,166 +1,166 @@
-## プロジェクト 18：超音波センサー
+## Project 18：Ultrasone sensor
 
-### プロジェクト 18.1：超音波測距
+### Project 18.1：Ultrasone afstandsmeting
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-超音波センサーはコウモリのようにソナーを利用して物体までの距離を測定します。高精度かつ安定した読み取りが可能な、使いやすい非接触距離検出を提供します。超音波の送信モジュールと受信モジュールが含まれています。
+De ultrasone sensor gebruikt sonar om, net als vleermuizen, de afstand tot een object te bepalen. Hij biedt uitstekende contactloze afstandsdetectie met hoge nauwkeurigheid en stabiele metingen in een gebruiksvriendelijke behuizing. Het bevat zowel ultrasone zender- als ontvangermodules.
 
-超音波センサーは障害物検知や距離測定のアプリケーションをはじめ、さまざまな電子プロジェクトで広く使用されています。
+De ultrasone sensor wordt in een breed scala aan elektronica-projecten gebruikt voor het creëren van toepassingen voor obstakeldetectie en afstandsmeting, evenals voor diverse andere toepassingen.
 
 ![](./media/Makecode_0180b169.png)
 
-超音波モジュールはトリガー信号の後に超音波を発信します。超音波が物体に当たり反射して戻ってくると、モジュールはエコー信号を出力するため、トリガー信号（TRIG）とエコー信号（ECHO）の時間差から物体までの距離を算出できます。
+Het ultrasone module zendt ultrasone golven uit na trigger-signalen. Wanneer de ultrasone golven een object treffen en teruggekaatst worden, geeft het module een echo-signaal uit, zodat de afstand tot het object kan worden bepaald uit het tijdsverschil tussen trigger-signaal (TRIG) en echo-signaal (ECHO).
 
-図のように、左右に並んだ2つの目のような形をしています。片方が送信側、もう片方が受信側です。
+Zoals op de afbeelding te zien is, lijkt het op twee ogen. De ene is de zendzijde, de andere de ontvangzijde.
 
-上の配線図によれば、超音波センサーモジュールの統合ポートは、micro:bit用モータードライバ基板の5V G P15 P16ポートに接続されています。Trig（T）ピンはmicro:bitのP15で制御され、Echo（E）ピンはP16に接続されています。
+Volgens het bovenstaande aansluitdiagram is de geïntegreerde poort van het ultrasone sensormodule verbonden met de 5V G P15 P16-poort op de micro:bit motor driver basisplaat. De Trig (T)-pin wordt aangestuurd door P15 van de micro:bit en de Echo (E)-pin is aangesloten op P16.
 
 ![](./media/Makecode_1174e0ec.png)
 
-2\. **動作原理**
+2\. **Werkingsprincipe**
 
 ![](./media/Makecode_8ff02741.png)
 
-(1) TRIGをLOWに引き、最低10µsのHIGHパルスを発生させる；
+(1) Trek TRIG naar laag en genereer vervolgens een hoog signaal van minimaal 10 µs;
 
-(2) トリガー後、モジュールは自動的に8回の40kHz超音波パルスを送信し、信号の返り（エコー）があるかを検出する；
+(2) Na het triggeren zal het module automatisch acht pulsen van 40 kHz uitzenden en detecteren of er een signaalretour is;
 
-(3) もし信号の返りがあれば、ECHO（E）がHIGHを出力します。そのHIGHの持続時間が超音波の送信から受信までの時間です。テスト距離 = HIGHの持続時間 \*340m/s\*0.5。 
+(3) Als er een signaalretour is, geeft ECHO (E) een hoog niveau uit; de duur van dat hoge niveau is de tijd van zenden tot ontvangen van de ultrasone golven. Dan testafstand = hoog-niveau duur \*340m/s\*0.5. 
 
-3\. **仕様**
+3\. **Parameters**
 
-- 動作電圧: 3-5.5V (DC)
+- Werkspanning: 3-5.5V (DC)
 
-- 動作電流: 15mA
+- Stroomverbruik: 15mA
 
-- 動作周波数: 40 kHz
+- Werkingfrequentie: 40 kHz
 
-- 最大検出距離: 約3m
+- Maximale detectieafstand: ongeveer 3 m
 
-- 最小検出距離: 2-3cm
+- Minimale detectieafstand: 2-3 cm
 
-- 精度: 最大0.2cm
+- Nauwkeurigheid: tot 0,2 cm
 
-- 検出角度: 15度未満
+- Detectiehoek: minder dan 15 graden
 
-- 入力トリガーパルス: 10µs TTLレベル
+- Ingang triggerpuls: 10 µs TTL-niveau
 
-- 出力エコー信号: TTLレベル信号（HIGH）を出力し、距離に比例
+- Uitgang echo signaal: TTL-niveau signaal (hoog), evenredig met de afstand
 
-4\. **準備**
+4\. **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Plaats de micro:bit kaart in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ボックスに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをONにする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルでmicro:bitをコンピューターに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- Web版のMakecodeを開く
+- Open de webversie van Makecode
 
 
-5\. **テストコード**
+5\. **Testcode**
 
 ![](./media/Makecode_497760b1.png)
 
-“JavaScript”をクリックして対応するJavaScriptコードを表示します:
+Klik op “JavaScript” om de bijbehorende JavaScript-code te bekijken:
 
 ![](./media/Makecode_387f3243.png)
 
-6\.  **テスト結果**
+6\.  **Testresultaat**
 
-コードをmicro:bitにダウンロードし、USBケーブルを接続したままPOWERスイッチをONにします。距離の値がモニタに表示されます。
+Download de code naar de micro:bit, houd de USB-kabel aangesloten en zet de POWER-schakelaar op ON. De afstandswaarde wordt op de monitor weergegeven.
 
 ![](./media/Makecode_2cd74c16.png)
 
-モニタには、障害物と超音波センサー間の距離が表示されます（下図参照）。
+De monitor toont de afstand tussen het obstakel en de ultrasone sensor (zoals hieronder weergegeven).
 
 ![](./media/Makecode_422adea3.png)
 
-CoolTermを開き、OptionsをクリックしてSerialPortを選択します。COMポートとボーレートを115200に設定します（テストによりMicro:bitのUSBシリアル通信のボーレートは115200です）。“OK”と“Connect”をクリックします。
+Open CoolTerm, klik op Options om SerialPort te selecteren. Stel de COM-poort en baudrate in op 115200 (de baudrate van de USB-seriële communicatie van de Micro:bit is tijdens de test 115200). Klik op “OK” en “Connect”.
 
-CoolTermのシリアルモニタは以下のように距離値を表示します:
+De CoolTerm seriële monitor toont de afstandswaarde als volgt:
 
 ![](./media/Makecode_69b06998.png)
 
-### プロジェクト 18.2：超音波による回避
+### Project 18.2：Ultrasone uitwijking
 
 ![Img](./media/Makecode_13139b46.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-このプロジェクトでは、超音波センサーと車両を組み合わせて超音波回避車を作ります。
+In dit project integreren we een ultrasone sensor en een auto om een ultrasone uitwijkauto te maken.
 
-その原理は、超音波センサーで車と障害物の距離を検出し、スマートカーの動作を制御することです。
+Het principe is om de afstand tussen de auto en het obstakel te detecteren via de ultrasone sensor om zo de beweging van de slimme auto te regelen.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Plaats de micro:bit kaart in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ボックスに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをONにする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルでmicro:bitをコンピューターに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- Web版のMakecodeを開く
+- Open de webversie van Makecode
 
-3\.  **フローチャート**
+3\.  **Stroomschema**
 
 ![Img](./media/Makecode_e2adae4b.png)
 
-4\.  **テストコード**
+4\.  **Testcode**
 
 ![](./media/Makecode_05a4740b.png)
 
 ![Img](./media/Makecode_d7879887.png)
 
-“JavaScript”をクリックして対応するJavaScriptコードを表示します:
+Klik op “JavaScript” om de bijbehorende JavaScript-code te bekijken:
 
 ![](./media/Makecode_c8f86a24.png)
 
 ![](./media/Makecode_13baf1d6.png)
 
-5\.  **テスト結果**
+5\.  **Testresultaat**
 
-コードをmicro:bitにダウンロードし、本体とPOWERをONにします。障害物との距離が20cmより大きい場合は車が前進します；逆に、スマートカーは左に曲がります。
+Download de code naar de micro:bit, zet het apparaat aan en zet de POWER op ON. Wanneer de afstand tot het obstakel groter is dan 20 cm, rijdt de auto vooruit; anders draait de slimme auto naar links.
 
-### プロジェクト 18.3：超音波追従
+### Project 18.3：Ultrasoon volgen
 
 ![Img](./media/Makecode_d17a7889.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-前回のレッスンでは、ライントラッキングセンサーの基本原理を学びました。次に、超音波センサーを車両と組み合わせて超音波追従車を作成します。
+In de vorige les hebben we het basisprincipe van de lijnvolgsensor geleerd. Vervolgens combineren we de ultrasone sensor met de auto om een ultrasone volgauto te maken.
 
-超音波センサーは障害物との距離を検出し、車の動作状態を制御します。
+De ultrasone sensor detecteert de afstand van het obstakel en bestuurt de bewegingsstatus van de auto.
 
-2\. **準備**
+2\. **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Plaats de micro:bit kaart in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ボックスに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをONにする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルでmicro:bitをコンピューターに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- Web版のMakecodeを開く
+- Open de webversie van Makecode
 
-3\. **フローチャート**
+3\. **Stroomschema**
 
 ![Img](./media/Makecode_f5026aed.png)
 
-4\. **テストコード**
+4\. **Testcode**
 
 ![](./media/Makecode_03b95531.png)
 
-“JavaScript”をクリックして対応するJavaScriptコードを表示します:
+Klik op “JavaScript” om de bijbehorende JavaScript-code te bekijken:
 
 ![](./media/Makecode_a93c8245.png)
 
-5\. **テスト結果**
+5\. **Testresultaat**
 
-コードをmicro:bitにダウンロードし、シールド上のPOWERスイッチをONにすると、スマートカーは障害物を追従して移動できるようになります。
+Download de code naar de micro:bit, zet de POWER-schakelaar op ON op het shield; de slimme auto kan het obstakel volgen en zich verplaatsen.

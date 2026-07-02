@@ -1,78 +1,78 @@
-### プロジェクト 18：超音波センサー
+### Project 18：Ultrasone Sensor
 
-#### プロジェクト 18.1：超音波距離測定
+#### Project 18.1：Ultrasone Afstandsbepaling
 
-1\. **説明**
+1\. **Beschrijving**
 
 ![](./media/Python_9810ae67.jpg)
 
-超音波センサーはコウモリのようにソナーを使って物体までの距離を測定します。高精度で安定した非接触距離検出を、使いやすいパッケージで提供します。送信モジュールと受信モジュールがセットになっています。
+De ultrasone sensor gebruikt sonar om, zoals vleermuizen, de afstand tot een object te bepalen. Hij biedt uitstekende contactloze afstandsdetectie met hoge nauwkeurigheid en stabiele metingen in een gebruiksvriendelijk pakket. De module bevat zowel een ultrasone zender- als ontvangermodule.
 
-超音波センサーは障害物検知や距離測定アプリケーションをはじめ、さまざまな電子工作プロジェクトで広く使われています。
+De ultrasone sensor wordt in veel elektronica-projecten gebruikt voor het maken van obstakeldetectie- en afstandsmeettoepassingen, evenals verschillende andere toepassingen. 
 
 ![](./media/Python_0180b169.png)
 
-超音波モジュールはトリガー信号を受けると超音波を発信します。超音波が物体にぶつかって反射して戻ってくると、モジュールはエコー信号を出力するため、トリガー信号（TRIG）とエコー信号（ECHO）の時間差から物体までの距離を求めることができます。
+De ultrasone module zal de ultrasone golven uitsturen nadat de trigger-signalen zijn gegeven. Wanneer de ultrasone golven het object tegenkomen en teruggekaatst worden, geeft de module een echo-signaal uit, zodat hij de afstand tot het object kan bepalen uit het tijdsverschil tussen het trigger-signaal (TRIG) en het echo-signaal (ECHO).
 
-図のように、左右に二つの目のようになっており、一方が送信側、もう一方が受信側です。
+Zoals de afbeelding toont, is het alsof het twee ogen heeft. De ene is het zendende uiteinde, de andere het ontvangende uiteinde.
 
-上記の配線図に従い、超音波センサーモジュールの統合ポートはmicro:bit用モータードライバベースプレートの5V G P15 P16ポートに接続します。Trig（T）ピンはmicro:bitのP15で制御し、Echo（E）ピンはP16に接続します。
+Volgens het bovenstaande bedrading schema is de geïntegreerde poort van de ultrasone sensormodule verbonden met de 5V G P15 P16-poort op de micro:bit motor driver basisplaat. De Trig (T) pin wordt aangestuurd door P15 van de micro:bit en de Echo (E) pin door P16.
 
 ![](./media/Python_19b45a23.jpg)
 
-2\. **動作原理**
+2\. **Werking**
 
 ![](./media/Python_8ff02741.png)
 
-(1) TRIGをプルダウンした後、少なくとも10μsの高レベル信号でトリガーする；
+(1) Trek TRIG laag en geef daarna een trigger-hoogsignaal van minimaal 10µs;
 
-(2) トリガー後、モジュールは自動的に40kHzの超音波パルスを8回送信し、信号が返ってくるかを検知する；
+(2) Na triggeren stuurt de module automatisch acht pulsen van 40kHz uit en detecteert of er een signaal terugkeert;
 
-(3) 信号が返ってきた場合、ECHO（E）が高レベルを出力している時間が送信から受信までの時間になる。距離 = 高レベル継続時間 * 340 m/s * 0.5。
+(3) Als er een signaal terugkeert: wanneer ECHO (E) een hoge toestand uitstuurt, is de duur van die hoge toestand de tijd van verzending tot ontvangst van de ultrasone golven. Dan testafstand = hoge duur * 340 m/s * 0,5.
 
-3\.  **仕様**
+3\.  **Parameters**
 
-- 動作電圧: 3-5.5V (DC)
+- Werkspanning: 3-5.5V (DC)
 
-- 動作電流: 15mA
+- Werkstroom: 15mA
 
-- 動作周波数: 40kHz
+- Werkfrequentie: 40kHz
 
-- 最大検出距離: 約3m
+- Maximale detectieafstand: ongeveer 3m
 
-- 最小検出距離: 2-3cm
+- Minimale detectieafstand: 2-3cm
 
-- 精度: 最大0.2cm
+- Nauwkeurigheid: tot 0,2cm
 
-- 検出角度: 15度未満
+- Detectiehoek: minder dan 15 graden
 
-- 入力トリガーパルス: 10μs TTLレベル
+- Ingang triggerpuls: 10µs TTL-niveau
 
-- 出力エコー信号: TTLレベル信号（高レベル）、距離に比例
+- Uitgang echo-signaal: TTL-niveau signaal (hoog), proportioneel aan bereik
 
-4\.  **準備**
+4\.  **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Steek de micro:bit in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in het batterijhouder
 
-- 電源スイッチをONにする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルでmicro:bitをコンピュータに接続する
+- Verbind de micro:bit met de computer via een USB-kabel
 
-- Muのオフライン版を起動する
+- Open de offline versie van Mu.
 
-5\.  **テストコード**
+5\.  **Testcode**
 
-Muソフトを開き、ファイル“Ultrasonic Ranging\.py”を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力しても構いません。
+Open Mu-software en open het bestand “Ultrasonic Ranging\.py” om de code te importeren. Je kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Opmerking: alle Engelse woorden en symbolen moeten in het Engels worden geschreven**.)
 
-「Files」をクリックして“keyes_mecanum_Car_V2.py”ライブラリファイルをmicro:bitにインポートします。
+Klik op “Files” om het bibliotheekbestand “keyes_mecanum_Car_V2.py” naar de micro:bit te importeren.
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソル表示がある場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden getoond.
 
-コードが正しければ、micro:bitをコンピュータに接続した状態で「Flash」をクリックしてコードをmicro:bitボードに書き込みます。
+Als de code correct is, verbind de micro:bit met je computer en klik op “Flash” om de code naar de micro:bit te downloaden.
 
 ![](./media/Python_5a29bde9.png)
 
@@ -98,59 +98,59 @@ while True:
 
 ```
 
-6\.  **テスト結果**
+6\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、USBケーブルを抜かないでください。「REPL」をクリックしてからリセットボタンを押します。
+Nadat de code succesvol naar het bord is gedownload en je de USB-kabel niet loskoppelt, klik op “REPL” en druk daarna op de resetknop.
 
 ![Img](./media/Python_bb3e1312.png)
 
-障害物までの距離値が表示されます。下図のように表示されます。
+De afstandswaarde van het obstakel wordt weergegeven, zoals hieronder.
 
-距離が10cm未満になると、スマートカーのパッシブブザーが鳴ります。
+Wanneer de afstand minder is dan 10cm, zal de passieve zoemer van de smart geluid geven.
 
 ![](./media/Python_4dc8054e.png)
 
-7\.  **コード説明**
+7\.  **Code Uitleg**
 
 ![Img](./media/Python_ebde06e9.png)
 
-#### プロジェクト 18.2：超音波回避
+#### Project 18.2：Ultrasone Ontwijking
 
 ![](./media/Python_aee41f6f.jpg)
 
-1\. **説明**
+1\. **Beschrijving**
 
-このプロジェクトでは、超音波センサーを車体に組み込み、超音波回避（障害物回避）車を作成します。
+In dit project integreren we een ultrasone sensor met een auto om een ultrasone ontwijkingsauto te maken.
 
-原理は、超音波センサーで車と障害物との距離を検出し、その距離に応じてスマートカーの動作を制御することです。
+Het principe is om de afstand tussen de auto en een obstakel te detecteren via de ultrasone sensor om zo de beweging van de smart car te sturen.
 
-2\. **準備**
+2\. **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Steek de micro:bit in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in het batterijhouder
 
-- 電源スイッチをONにする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルでmicro:bitをコンピュータに接続する
+- Verbind de micro:bit met de computer via een USB-kabel
 
-- Muのオフライン版を起動する
+- Open de offline versie van Mu.
 
-3\.  **フローチャート**
+3\.  **Stroomschema**
 
 ![Img](./media/Python_a4efee72.png)
 
-4\.  **テストコード**
+4\.  **Testcode**
 
-Muソフトを開き、ファイル“Ultrasonic Avoid Smart Car\.py”を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力しても構いません。
+Open Mu-software en open het bestand “Ultrasonic Avoid Smart Car\.py” om de code te importeren. Je kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Opmerking: alle Engelse woorden en symbolen moeten in het Engels worden geschreven**.)
 
-「Files」をクリックして“keyes_mecanum_Car_V2.py”ライブラリファイルをmicro:bitにインポートします。
+Klik op “Files” om het bibliotheekbestand “keyes_mecanum_Car_V2.py” naar de micro:bit te importeren.
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソル表示がある場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden getoond.
 
-コードが正しければ、micro:bitをコンピュータに接続した状態で「Flash」をクリックしてコードをmicro:bitボードに書き込みます。
+Als de code correct is, verbind de micro:bit met je computer en klik op “Flash” om de code naar de micro:bit te downloaden.
 
 ![](./media/Python_38f3510c.png)
 
@@ -232,57 +232,57 @@ while True:
         mecanumCar.Motor_Lower_R(1, 100)
 ```
 
-5\.  **テスト結果**
+5\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**外部電源を接続する（DIPスイッチをONにする）**、その後micro:bitのリセットボタンを押します。
+Nadat de code succesvol naar het bord is gedownload, **externe voeding inschakelen (zet de DIP-schakelaar op ON)** en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-障害物までの距離が20cmより大きいときは車が前進します；反対に（20cm未満のとき）はスマートカーが左へ曲がります。
+Wanneer de obstakelafstand groter is dan 20cm, rijdt de auto vooruit; anders draait de smart car naar links.
 
-6\.  **コード説明**
+6\.  **Code Uitleg**
 
 ![Img](./media/Python_9e28cce7.png)
 
 ![Img](./media/Python_c33a22a8.png)
 
-#### プロジェクト 18.3：超音波追従
+#### Project 18.3：Ultrasoon Volgen
 
 ![](./media/Python_28806167.jpg)
 
-1\. **説明**
+1\. **Beschrijving**
 
-前のレッスンでライン追跡センサーの基本原理を学びました。次に、超音波センサーを車と組み合わせて超音波追従車を作成します。
+In de vorige les hebben we het basisprincipe van de lijnvolgsensor geleerd. Nu combineren we de ultrasone sensor met de auto om een ultrasoon volgende auto te maken.
 
-超音波センサーが障害物との距離を検知し、その距離に応じて車の動作状態を制御します。
+De ultrasone sensor detecteert de afstand tot een obstakel en bestuurt daarmee de bewegingsstatus van de auto.
 
-2\. **準備**
+2\. **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
+- Steek de micro:bit in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in het batterijhouder
 
-- 電源スイッチをONにする
+- Zet de stroomschakelaar op ON
 
-- USBケーブルでmicro:bitをコンピュータに接続する
+- Verbind de micro:bit met de computer via een USB-kabel
 
-- Muのオフライン版を起動する
+- Open de offline versie van Mu.
 
-2\.  **フローチャート**
+2\.  **Stroomschema**
 
 ![Img](./media/Python_53a30906.png)
 
-3\.  **テストコード**
+3\.  **Testcode**
 
-Muソフトを開き、ファイル“Ultrasonic Follow Smart Car\.py”を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力しても構いません。
+Open Mu-software en open het bestand “Ultrasonic Follow Smart Car\.py” om de code te importeren. Je kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Opmerking: alle Engelse woorden en symbolen moeten in het Engels worden geschreven**.)
 
-「Files」をクリックして“keyes_mecanum_Car_V2.py”ライブラリファイルをmicro:bitにインポートします。
+Klik op “Files” om het bibliotheekbestand “keyes_mecanum_Car_V2.py” naar de micro:bit te importeren.
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソル表示がある場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden getoond.
 
-コードが正しければ、micro:bitをコンピュータに接続した状態で「Flash」をクリックしてコードをmicro:bitボードに書き込みます。
+Als de code correct is, verbind de micro:bit met je computer en klik op “Flash” om de code naar de micro:bit te downloaden.
 
 ![](./media/Python_f586f3f7.png)
 
@@ -353,20 +353,18 @@ while True:
             np.show()
 ```
 
-4\.  **テスト結果**
+4\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**外部電源を接続する（DIPスイッチをONにする）**、その後micro:bitのリセットボタンを押します。
+Nadat de code succesvol naar het bord is gedownload, **externe voeding inschakelen (zet de DIP-schakelaar op ON)**, en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-スマートカーは障害物に追従して移動し、4つのWS2812 RGBライトが異なる色を表示します。
+De smart car kan het obstakel volgen en bewegen en de 4 WS2812 RGB-LEDs zullen verschillende kleuren tonen.
 
-**注意:** 障害物はスマートカーの前方でのみ移動させてください。
+**Opmerking:** het obstakel kan alleen vóór de smart car bewegen.
 
-5\.  **コード説明**
+5\.  **Code Uitleg**
 
 ![Img](./media/Python_930a04fa.png)
 
 ![Img](./media/Python_26371a4d.png)
-
----

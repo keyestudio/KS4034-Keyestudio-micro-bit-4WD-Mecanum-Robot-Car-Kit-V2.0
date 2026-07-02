@@ -1,26 +1,26 @@
-### プロジェクト 15：Servo
+### Project 15：Servo
 
 ![](./media/Python_c4b5e57b.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-DIYスマートカーには通常、自動障害物回避機能が含まれています。作成プロセスでは、超音波モジュールを左右に回転させるためのサーボが必要で、その後、車と障害物との距離を検出して車を障害物から回避させます。
+DIY slimme auto's bevatten meestal een functie voor automatisch obstakels vermijden. Tijdens het zelf bouwen hebben we een servo nodig om de ultrasone module links en rechts te laten draaien en vervolgens de afstand tussen de auto en het obstakel te detecteren, zodat de auto het obstakel kan vermijden.
 
-他のマイコンでサーボの回転を制御する場合は、サーボ角を制御するために一定の周波数とパルス幅を設定する必要があります。しかし micro:bit メインボードを使用してサーボ角を制御する場合、開発環境で制御角を設定するだけで、対応するパルスが自動的に設定されてサーボの回転が制御されます。本プロジェクトでは、サーボを 0° から 90° の間で往復させる方法を学びます。
+Als andere microcontrollers worden gebruikt om de servo te sturen, moeten bepaalde frequentie en pulsbreedte worden ingesteld om de servohoek te regelen. Als het micro:bit-hoofdboard wordt gebruikt om de servohoek te regelen, hoeft u alleen de stuurrichting/hoek in de ontwikkelomgeving in te stellen; het corresponderende puls signaal wordt dan automatisch gegenereerd om de servo te besturen. In dit project leert u hoe u de servo heen en weer laat draaien tussen 0° en 90°.
 
-サーボモーターは位置制御の回転アクチュエータで、主にハウジング、回路基板、コアレスモーター、ギア、位置センサーで構成されます。動作原理は、サーボが MCU または受信機から送られる信号を受け取り、周期 20ms 幅 1.5ms の基準信号を生成し、取得した直流バイアス電圧をポテンショメータの電圧と比較して差分電圧を出力することです。
+Een servomotor is een positionele roterende actuator, die voornamelijk bestaat uit behuizing, printplaat, coreless motor, tandwiel en positietransducer. Het werkingsprincipe is dat de servo het door de MCU of ontvanger verzonden signaal ontvangt, een referentiesignaal met een periode van 20 ms en een breedte van 1,5 ms genereert, en vervolgens de verkregen DC-voorspanning vergelijkt met de spanning van de potentiometer en het spanningsverschil als uitgang levert.
 
-本プロジェクトで使用するサーボでは、茶色がGND、赤がVCC、オレンジが信号線です。
+Voor de in dit project gebruikte servo is de bruine draad aarde (GND), de rode draad is de positieve voeding en de oranje draad is de signaaldraad.
 
 ![](./media/Python_69be9581.png)
 
-2\.  **サーボの情報**
+2\.  **Informatie over de Servo**
 
-サーボモーターの回転角は、PWM（パルス幅変調）信号のデューティ比を調整することで制御されます。PWM信号の標準周期は 20ms（50Hz）です。理論的には幅は 1ms〜2ms の範囲ですが、実際には 0.5ms〜2.5ms の範囲です。幅は 0° から 180° までの回転角に対応します。ただし、ブランドにより同じ信号でも回転角が異なる場合がある点に注意してください。
+De rotatiehoek van een servomotor wordt geregeld door het duty-cycle van een PWM (Pulse-Width Modulation) signaal te reguleren. De standaardcyclus van het PWM-signaal is 20 ms (50 Hz). Theoretisch ligt de pulsbreedte tussen 1 ms en 2 ms, maar in de praktijk is het tussen 0,5 ms en 2,5 ms. De breedte komt overeen met de rotatiehoek van 0° tot 180°. Houd er rekening mee dat hetzelfde signaal bij verschillende merken motoren tot andere rotatiehoeken kan leiden.
 
 ![](./media/Python_0982cb7b.png)
 
-測定の結果、本サーボのパルス範囲は 0.65ms〜2.5ms でした。180度サーボに対する対応関係は以下の通りです。
+Na meting ligt het pulsbereik van de servo tussen 0,65 ms en 2,5 ms. Voor een 180 graden servo is de corresponderende besturingsrelatie als volgt:
 
 
 |Time on High Level|Angle of the Servo|Reference Signal Cycle Time（20ms）|
@@ -30,53 +30,53 @@ DIYスマートカーには通常、自動障害物回避機能が含まれて�
 |2.5ms|180degrees|2.5ms high level+17.5ms low level|
 
 
-3\.  **仕様**
+3\.  **Parameters**
 
-- 動作電圧: DC 4.8V ~ 6V
+- Werks spanning: DC 4.8V ~ 6V
 
-- 動作角度範囲: 約 180 ° (500 → 2500 μsec 時)
+- Werkhoek bereik: ongeveer 180 ° (bij 500 → 2500 μsec)
 
-- 寸法: 22.9\*12.2\*30mm
+- Afmeting: 22.9\*12.2\*30mm
 
-- パルス幅範囲: 500 → 2500 μsec
+- Pulsbreedte bereik: 500 → 2500 μsec
 
-- 無負荷速度: 0.12 ± 0.01 秒 / 60 (DC 4.8V), 0.1 ± 0.01 秒 / 60 (DC 6V)
+- Onbelast snelheid: 0.12 ± 0.01 sec / 60 (DC 4.8V), 0.1 ± 0.01 sec / 60 (DC 6V)
 
-- 無負荷電流: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
+- Onbelast stroom: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
 
-- 停止トルク: 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
+- Houdmoment: 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
 
-- ストール電流: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- Stopstroom: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- 待機電流: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
+- Standby-stroom: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
 
-- 重量: 9±1g (サーボホーン除く)
+- Gewicht: 9±1g (zonder servohorn)
 
-- 動作温度: -30℃~60℃
+- Werkingstemperatuur: -30℃~60℃
 
-**注意: コンピュータの電源を使用しないでください。電流要求が 500mA を超えるとサーボが焼損する恐れがあります。外部バッテリーでの給電を推奨します。**
+**Let op: gebruik geen computer als voeding, want als de stroomvraag groter is dan 500 mA kan de servo doorbranden. Het wordt aanbevolen een externe batterij te gebruiken voor voeding.**
 
-4\.  **準備**
+4\.  **Voorbereiding**
 
-- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
+- Plaats de micro:bit-board in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチを ON にする
+- Zet de voeding schakelaar op ON
 
-- USB ケーブルで micro:bit をコンピュータに接続する
+- Verbind micro:bit met de computer via een USB-kabel
 
-- オフライン版 Mu を起動する。
+- Open de offline versie van Mu.
 
-5\.  **テストコード**
+5\.  **Testcode**
 
-Mu ソフトウェアを開き、ファイル “Servo\.py” を開いてコードを読み込みます。エディタウィンドウに自分でコードを入力することもできます。
+Open de Mu-software en open het bestand “Servo\.py” om de code te laden. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意: すべての英単語および記号は英語で記述してください**.)
+(**Opmerking: alle Engelse woorden en symbolen moeten in het Engels worden geschreven**.)
 
-“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合はプログラムに誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven.
 
-コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, sluit u de micro:bit op uw computer aan en klikt u op “Flash” om de code naar de micro:bit-board te downloaden.
 
 ![](./media/Python_eecf365e.png)
 
@@ -127,12 +127,12 @@ while True:
 
 ```
 
-4\.  **テスト結果**
+4\.  **Testresultaat**
 
-コードをボードに正常に書き込んだ後、**外部電源を投入（DIPスイッチを ON に）**し、micro:bit のリセットボタンを押します。
+Nadat de code met succes naar de board is gedownload, **externe voeding inschakelen (zet de DIP-schakelaar op ON)** en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-LEDドットマトリクスはスマイリーモチーフを表示し、サーボは 0°~45°~90°~135°~180°~0° のパターンで回転します。
+De LED-dotmatrix toont een glimlachend patroon en de servo draait volgens het patroon 0°~45°~90°~135°~180°~0°.
 
 ---

@@ -1,28 +1,28 @@
-### プロジェクト 13: 七色LED
+### Project 13: Zevenkleurige LED
 
 ![](./media/Python_804e502b.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-このモジュールは、一般的に使用される7色のLEDで構成されていますが、見た目は白色です。通常のLEDと同様にハイレベルが入力されると自動的に異なる色を点滅させ、素晴らしい光の効果を作り出すことができます。
+Deze module bestaat uit een veelgebruikte LED met 7 kleuren maar met een witte uitstraling. Het kan automatisch verschillende kleuren knipperen om fantastische lichteffecten te creëren wanneer een hoog niveau wordt ingevoerd, zoals bij een normale LED.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに挿入します
+- Plaats de micro:bit-board in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ホルダーに入れます
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチをONにします
+- Draai de aan/uit-schakelaar naar de ON-stand
 
-- USBケーブルでmicro:bitをコンピュータに接続します
+- Sluit de micro:bit aan op uw computer via een USB-kabel
 
-- Muのオフライン版を開きます。
+- Open de offline versie van Mu.
 
-3\.  **テストコード**
+3\.  **Testcode**
 
-Muソフトウェアを起動し、ファイル“Colorful lights\.py”を開いてコードをインポートします。編集ウィンドウに自分でコードを入力することもできます。
+Open de Mu-software en open het bestand“Colorful lights\.py”om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-（**注意：すべての単語と記号は英語で記述してください**。）
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven**.)
 
 ![](./media/Python_010a8a12.png)
 
@@ -41,34 +41,34 @@ while True:
     sleep(3000)
 ```
 
-**重要なお知らせ：** ライブラリファイル 'keyes_mecanum_Car_V2.py' がまだmicro:bitボードにインポートされていない場合は、まずライブラリファイルをmicro:bitボードにインポートする必要があります。ライブラリのインポート方法は次のリンクをクリックして確認してください： [How to Import Library to Micro:bit](https://docs.keyestudio.com/プロジェクトs/KS4034/en/latest/docs/Python/Python.html#how-mu-import-library-to-micro-bit) 。指示に従わないとコードは実行されません。
+**Belangrijke mededeling:** Als het bibliotheekbestand 'keyes_mecanum_Car_V2.py' nog niet op het micro:bit-board is geïmporteerd, is het essentieel om eerst het bibliotheekbestand op het micro:bit-board te importeren. De methode om de bibliotheek te importeren vindt u door op de volgende link te klikken: [How to Import Library to Micro:bit](https://docs.keyestudio.com/projects/KS4034/en/latest/docs/Python/Python.html#how-mu-import-library-to-micro-bit) en de gegeven instructies te volgen; anders zal de code niet worden uitgevoerd.
 
-ライブラリファイルが正常にインポートされたら、コードをチェックするために「Check」ボタンもクリックする必要があります。特定の行にカーソルや下線が表示される場合、そのプログラムにはエラーがあります。
+Nadat het bibliotheekbestand succesvol is geïmporteerd, moet u ook op de knop "Check" klikken om de code te controleren. Als er een cursor of een onderstreping op een bepaalde regel verschijnt, zijn er fouten in het programma.
 
 ![](./media/Python_ce67f468.png)
 
-ただし、このプロセス中に、コードにエラーがなくても次のようなプロンプトが表示されることがあります。これらのプロンプトは警告であり、コードのエラーメッセージではありません。
+Tijdens dit proces kan echter de volgende melding verschijnen, zelfs als er geen fout in de code is. Deze meldingen zijn slechts waarschuwingen en geen foutmeldingen van de code.
 
 ![](./media/Python_863bb61b.png)
 
 ![](./media/Python_ccfbfa56.png)
 
-コードが正しければ、micro:bitをコンピュータに接続し、「Flash」をクリックしてコードをmicro:bitボードにダウンロードします。
+Als de code correct is, sluit u de micro:bit aan op uw computer en klikt u op“Flash”om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_39512a13.png)
 
-「Flash」ボタンをクリックした後にエラーが表示される場合は、提供されたライブラリファイル "keyes_mecanum_Car_V2.py" をインポートしているか確認してください。
+Als er fouten verschijnen nadat u op de knop "Flash" hebt geklikt, controleer dan of u het meegeleverde bibliotheekbestand "keyes_mecanum_Car_V2.py" hebt geïmporteerd.
 
-**注意：** Micropythonでプログラミングする前に、ライブラリファイル "keyes_mecanum_Car_V2.py" をmicro:bitにインポートする必要があります。別のmicro:bitでプログラムする場合は、ライブラリファイル "keyes_mecanum_Car_V2.py" を新しいmicro:bitに再度インポートする必要があります。
+**Opmerking:** Voordat u met Micropython programmeert, moet u het bibliotheekbestand "keyes_mecanum_Car_V2.py" op de micro:bit importeren. Als u met een andere micro:bit programmeert, moet het bibliotheekbestand "keyes_mecanum_Car_V2.py" opnieuw op de nieuwe micro:bit worden geïmporteerd.
 
-4\. **テスト結果**
+4\. **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**外部電源（DIPスイッチをONにする）**し、micro:bitのリセットボタンを押します。
+Nadat de code succesvol naar het board is gedownload, **externe voeding (zet de DIP-schakelaar op ON)**, en druk op de resetknop op de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-七色LEDは3秒間点滅し、次に3秒間停止し、このパターンを繰り返します。
+De zevenkleurige LED knippert 3s en stopt dan 3s en herhaalt dit patroon.
 
-5\. **コードの説明**
+5\. **Codeuitleg**
 
 ![Img](./media/Python_a4a670c0.png)

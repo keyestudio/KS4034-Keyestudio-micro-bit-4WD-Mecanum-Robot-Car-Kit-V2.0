@@ -1,13 +1,13 @@
-## 製品紹介
+## Productintroductie
 
 ![](./media/Introduction_3c983f62.jpg)
 
-プログラミングを学んだり、自分のプログラム可能なロボットを持ちたいと思ったことはありませんか？近年、プログラミングはより低年齢層にも広がっており、micro:bit や Arduino、Raspberry Pi といったシンプルなグラフィカルプログラミングプラットフォームの普及により、誰にとってもトレンドになりつつあります。これらについてこれまで聞いたことがないかもしれません。しかし、本製品とチュートリアルを利用すれば、多機能なプログラミングカーを簡単に組み立て、メイカーとしての楽しさを体験できます。
+Heb je er wel eens over nagedacht om programmeren te leren of je eigen programmeerbare robot te hebben? Tegenwoordig is programmeren naar een jongere leeftijdsgroep verschoven en het zal een trend voor iedereen worden dankzij de verspreiding van eenvoudige grafische programmeerplatforms, van micro:bit tot Arduino en Raspberry Pi. Misschien heb je er eerder nog niet van gehoord. Met behulp van dit product en de handleiding kun je echter eenvoudig een multifunctionele programmeerauto installeren en het plezier van maker-zijn ervaren.
 
-Micro:bit は高い集積度を持つマイクロコントローラで、機能が豊富で小型です。コードプログラミングとグラフィカルプログラミングの組み合わせによってロボット、ウェアラブルデバイス、電子インタラクティブゲームを作成できるため、STEAM 教育への応用に非常に適しています。
+Micro:bit is een hoog geïntegreerde microcontroller met krachtige functies en een klein formaat. Het is zeer geschikt voor toepassing in STEAM-onderwijs vanwege de mogelijkheden om robots, draagbare apparaten en elektronische interactieve spellen te maken via de combinatie van codeprogrammering en grafische programmering.
 
-この Keyestudio 4WD Mecanum Robot Car V2.0 は micro:bit 専用のスマート DIY カーです。本スマートカーは、拡張機能を備えた車体、モータードライバとセンサーが統合された PCB ベースプレート、4 台の減速 DC モータ、Mecanum ホイール、各種モジュールとセンサー、およびアクリル板で構成されています。したがって、クールな Mecanum ホイール式 4WD スマートカーを自分で簡単に組み立てられ、その後 Microsoft のオンライングラフィカルプログラミングプラットフォーム Make Code を使用して micro:bit コントロールボードをプログラムし、車体を制御できます。制作過程で、創作の楽しさを味わえるだけでなく、実践力を高め、プログラミングスキルも学べます。
+Deze Keyestudio 4WD Mecanum Robot Car V2.0 is een slimme doe-het-zelf auto speciaal voor micro:bit. De slimme auto bestaat uit een carrosserie met uitgebreide functies, een PCB-basisplaat met geïntegreerde motorstuur- en sensorsystemen, 4 vertragende DC-motoren, Mecanum-wielen, diverse modules en sensoren en acrylplaten. Daarom kun je zelf gemakkelijk een coole Mecanum-wiel 4WD-smartcar in elkaar zetten en vervolgens Microsofts online grafische programmeerplatform Make Code gebruiken om de micro:bit-besturingsplaat te programmeren en de auto te besturen. Tijdens dit proces kun je niet alleen het plezier van creëren ervaren, maar ook je praktische vaardigheden verbeteren en programmeervaardigheden leren.
 
-MakeCode for micro:bit は、micro:bit 公式サイトで最も広く使用されているグラフィカルプログラミング環境です。これは Microsoft のオープンソースプロジェクト MakeCode により開発されたグラフィカルプログラミング環境に基づいています。このグラフィカルプログラミングは Python や JavaScript のコード言語に変換することもでき、プログラミング学習の敷居を下げます。同時に、MakeCode によるプログラミングはシミュレーション可能であり、実際の電子部品に対してプログラムを適用することもできます。
+MakeCode for micro:bit is de meest gebruikte grafische programmeeromgeving op de officiële micro:bit-website. Het is gebaseerd op de grafische programmeeromgeving die is ontwikkeld door Microsofts open source-project MakeCode. Deze grafische programmering kan ook worden geconverteerd naar code-talen, Python en JavaScript, waardoor leren programmeren toegankelijker wordt. Tegelijkertijd kan MakeCode-programmering worden gesimuleerd of worden gebruikt om daadwerkelijke elektronische componenten te programmeren.
 
-便宜上、各プロジェクトにはソースコードが提供されており、コードのプログラミング手順およびコードの詳細な説明も含まれています。これにより、より深く理解できることを願っています。
+Voor uw gemak is in elk project de broncode opgenomen, evenals de stappen voor het programmeren van de code en gedetailleerde code-verklaringen. Hopelijk helpt dit u om ze beter te begrijpen.

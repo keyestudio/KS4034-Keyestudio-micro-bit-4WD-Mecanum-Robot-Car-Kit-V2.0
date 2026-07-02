@@ -1,32 +1,32 @@
-### プロジェクト 1：Heart Beat
+### Project 1：Heart Beat
 
 ![](./media/Python_b855274f.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-このプロジェクトは micro:bit 本体ボードと micro USB ケーブルだけで簡単に行えます。この実験は micro:bit のプログラミングの魔法の世界に入るための入門として役立ちます。
+Dit project is eenvoudig uit te voeren met alleen een micro:bit hoofdplaat en een micro USB-kabel. Dit experiment dient als een starter om de magische programmeerwereld van de micro:bit te betreden.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. micro:bit 本体ボードを USB ケーブルでコンピュータに接続します。
+A. Sluit de micro:bit hoofdplaat via de USB-kabel aan op uw computer.
 
-B. Mu のオフライン版を開きます。
+B. Open de offline versie van Mu.
 
-3\.  **テストコード**
+3\.  **Testcode**
 
-Mu ソフトウェアを開き、「Load」をタップして「“microbit-Heartbeat\.py“」ファイルを選択し、「open」をクリックします：
+Open de Mu-software, tik op “Load”, selecteer het bestand ““microbit-Heartbeat\.py“” en klik op “open”:
 
 ![](./media/Python_1ec17d44.png)
 
 ![](./media/Python_4bda2b61.png)
 
-コードを読み込む別の方法もあります。Mu を開き、ファイル「microbit-Heartbeat\.py」をドラッグして取り込みます。
+Er is een andere manier om code te importeren. Open Mu en sleep het bestand „microbit-Heartbeat\.py“ erin.
 
 ![](./media/Python_c5b7322b.png)
 
-編集ウィンドウに直接コードを入力することもできます。
+U kunt ook zelf code invoeren in het bewerkingsvenster.
 
-(**注意: すべての英単語と記号は英語で記述してください。**)
+(**Opmerking: Alle Engelse woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_80af4cb3.png)
 
@@ -39,7 +39,7 @@ while True:
     display.show(Image.HEART_SMALL)
     sleep(500)
 ```
-以下は組み込み画像の一覧です:
+Hieronder staat een lijst van ingebouwde afbeeldingen:
 
 • Image.HEART
 
@@ -131,7 +131,7 @@ Image.CLOCK4, Image.CLOCK3, Image.CLOCK2, Image.CLOCK1
 
 • Image.SNAKE，Image.ALL_CLOCKS，Image.ALL_ARROWS
 
-micro:bit ボードを USB ケーブルでコンピュータに接続し、「Flash」をクリックしてコードをボードにダウンロードします。
+Verbind de micro:bit kaart met de computer via een USB-kabel en klik op “Flash” om de code naar de kaart te downloaden.
 
 ![](./media/Python_93e18731.png)
 
@@ -141,47 +141,47 @@ micro:bit ボードを USB ケーブルでコンピュータに接続し、「Fl
 
 ![](./media/Python_cc33f1a9.png)
 
-コードは、たとえ誤っていても micro:bit ボードに正常にダウンロードできますが、micro:bit 上では動作しないことがあります。
+De code kan, ook al is deze onjuist, succesvol naar de micro:bit kaart gedownload worden, maar zal niet op de micro:bit zelf werken.
 
-「Flash」をクリックしてコードを micro:bit にダウンロードします。
+Klik op “Flash” om de code naar de micro:bit te downloaden.
 
 ![](./media/Python_8982d0b0.png)
 
-「REPL」をクリックし、micro:bit のリセットボタンを押すと、エラー情報が REPL ウィンドウに表示されます。下図のとおりです：
+Klik op “REPL” en druk op de resetknop van de micro:bit; de foutmeldingen worden weergegeven in het REPL-venster, zoals hieronder te zien is:
 
 ![](./media/Python_0c2abf18.png)
 
-もう一度「REPL」をクリックして REPL モードをオフにすると、新しいコードをリフレッシュできます。
+Klik nogmaals op “REPL” om de REPL-modus uit te schakelen, waarna je nieuwe code kunt verversen.
 
-正しいコードか確認するには、「Check」をタップするだけです。エラーがウィンドウに表示されます。
+Om te controleren of de code correct is, hoef je alleen maar op “Check” te tikken. De fouten worden in het venster weergegeven.
 
 ![](./media/Python_b994c0d3.png)
 
-プロンプトに従ってコードを修正し、「Check」をクリックします。
+Wijzig de code volgens de aanwijzingen en klik op “Check”.
 
 ![](./media/Python_bc5cbed3.png)
 
- より多くのチュートリアルはウェブサイトをご覧ください： [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
+ Raadpleeg de website voor meer tutorials: [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
 
-4\.  **テスト結果**
+4\.  **Testresultaat**
 
-“<span style="color: rgb(255, 76, 65);">**Flash**</span>” をクリックしてコードを micro:bit ボードに読み込みます。
+Klik op “<span style="color: rgb(255, 76, 65);">**Flash**</span>” om de code naar de micro:bit kaart te laden.
 
 ![Img](./media/Python_ed83ac25.png)
 
-コードをボードに正常にダウンロードした後、**micro USB ケーブルまたは外部電源で電源を入れる（DIP スイッチを ON にする）**、そしてボードのリセットボタンを押します。
+Nadat de code succesvol naar de kaart is gedownload, **schakel stroom in via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op de kaart.
 
 ![Img](./media/Python_bb3e1312.png)
 
-LED ドットマトリクスは、パターン「❤」と「![](./media/Python_04fdfc90.png)」を交互に表示します。
+De LED-dots matrix toont afwisselend het patroon “❤” en vervolgens “![](./media/Python_04fdfc90.png)”.
 
-5\.  **コードの説明**
+5\.  **Code-uitleg**
 
-|from microbit import*|micro:bit のライブラリファイルをインポートする|
+|from microbit import*|Importeer het bibliotheekbestand van de micro:bit|
 |-|-|
-|while True:|これは常時ループで、micro:bit がこのループ内のコードを永遠に実行し続けます。|
-|display.show(Image.HEART)|micro:bit が「❤」を表示する|
-|sleep(500)|500ms の遅延|
-|display.show(Image.HEART_SMALL)|LED ドットマトリクスが「![](./media/Python_04fdfc90.png)」を表示する|
+|while True:|Dit is een permanente lus die ervoor zorgt dat de micro:bit de code in deze lus voor altijd uitvoert.|
+|display.show(Image.HEART)|micro:bit toont “❤”|
+|sleep(500)|Vertraging van 500 ms|
+|display.show(Image.HEART_SMALL)|De LED-dots matrix toont “![](./media/Python_04fdfc90.png)”|
 
 ---

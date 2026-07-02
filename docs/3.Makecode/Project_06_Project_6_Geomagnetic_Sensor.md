@@ -1,58 +1,58 @@
-## プロジェクト6: 地磁気センサー
+## Project 6: Geomagnetische sensor
 
-[Click to download the code 1 for this lesson](./Code/Geomagnetic-Sensor.hex)
+[Klik hier om code 1 voor deze les te downloaden](./Code/Geomagnetic-Sensor.hex)
 
-[Click to download the code 2 for this lesson](./Code/Geomagnetic-Sensor2.hex)
+[Klik hier om code 2 voor deze les te downloaden](./Code/Geomagnetic-Sensor2.hex)
 
-### (1)プロジェクトの説明:
+### (1)Projectbeschrijving:
 
-(1) プロジェクトの説明: 本プロジェクトは Micro:bit の地磁気センサーの使い方を説明することを目的としています。地磁気の強さを検出できるだけでなく、方位を求めるためのコンパスとしても使用できます。また、姿勢方位基準系（AHRS: Attitude and Heading Reference System）の重要な一部でもあります。Micro:bit main board V2 は LSM303AGR 地磁気センサーを使用しており、磁場のダイナミックレンジは ±50 ガウスです。ボード上では、磁力計モジュールが磁気検出およびコンパスの両方に使用されています。本実験ではまずコンパスを紹介し、その後磁力計の生データを確認します。一般的なコンパスの主な構成要素は磁針であり、地磁気によって回転し、方角を決定するために地磁気北極（地理的な南極の近くにある）を指します。
+(1) Projectbeschrijving: Dit project heeft tot doel het gebruik van de Micro:bit geomagnetische sensor uit te leggen, die niet alleen de sterkte van het geomagnetische veld kan detecteren, maar ook als kompas kan worden gebruikt om richtingen te bepalen. Het is ook een belangrijk onderdeel van het Attitude and Heading Reference System (AHRS). De Micro:bit main board V2 gebruikt de LSM303AGR geomagnetische sensor, en het dynamische bereik van het magnetische veld is ± 50 gauss. Op de plaat wordt de magnetometermodule zowel voor magnetische detectie als als kompas gebruikt. In dit experiment wordt eerst het kompas geïntroduceerd en vervolgens worden de ruwe gegevens van de magnetometer gecontroleerd. Het belangrijkste onderdeel van een gewoon kompas is een magnetische naald, die door het geomagnetische veld kan worden gedraaid en naar de geomagnetische Noordpool wijst (die zich dicht bij de geografische Zuidpool bevindt) om de richting te bepalen.
 
-### (2)必要な部品:
+### (2)Benodigde onderdelen:
 
 Micro:bit main board V2
 
- Micro USB ケーブル
+ Micro-USB-kabel
 
-### (3)テストコード 1 :
+### (3)Testcode 1 :
 
-Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラミングします。
+Verbind de computer met de micro:bit-ploeg via een Micro-USB-kabel en programmeer in de MakeCode-editor.
 
 ![](./media/Makecode_5805c7de.gif)
 
-完成プログラム :
+Volledig programma :
 
 ![](./media/Makecode_5a958132.png)
 
-### (4)テスト結果 1 :
+### (4)Testresultaten 1 :
 
-テストコードを Micro:bit main board V2 に書き込み、USB ケーブルでボードに電源を供給し、ボタン A を押すと、ボードがコンパスの校正を促し、LED ドットマトリクスに "TILT TO FILL SCREEN" が表示されます。すると校正ページに入ります。下図のように 25 個の LED がすべて赤く点灯するまでボードを回転させます。
+Nadat u de testcode naar het Micro:bit main board V2 hebt geüpload en de board van stroom hebt voorzien via de USB-kabel, en op knop A hebt gedrukt, vraagt de board ons om het kompas te kalibreren en toont de LED-puntmatrix "TILT TO FILL SCREEN". Ga dan naar de kalibratiepagina. Draai de board totdat alle 25 LED's rood oplichten zoals hieronder weergegeven.
 
 ![](./media/Makecode_b0a4ebf1.jpg)
 
-コンパスを校正:
+kalibreer kompas:
 
 ![](./media/Makecode_05a88e21.gif)
 
-その後、スマイルのパターン ![](./media/Makecode_74a69436.png)が表示され、校正が完了したことを示します。校正プロセスが完了すると、ボタン A を押すことで磁力計の読み取り値が画面に直接表示されます。北、東、南、西の方向はそれぞれ 0°、90°、180°、270° に対応します。
+Daarna verschijnt een glimlachpatroon ![](./media/Makecode_74a69436.png), wat aangeeft dat de kalibratie is voltooid. Wanneer het kalibratieproces is voltooid, zorgt het indrukken van knop A ervoor dat de magnetometerlezing direct op het scherm wordt weergegeven. En de richtingen noord, oost, zuid en west komen respectievelijk overeen met 0°, 90°, 180° en 270°.
 
 ![](./media/Makecode_23b07bfb.gif)
 
-### (5) テストコード 2:
+### (5) Testcode 2:
 
-このモジュールは方向を決定するために継続的にデータを読み取ることができ、矢印で現在の磁気北極を指します。
+Deze module kan gegevens blijven lezen om de richting te bepalen, en wijst dus met een pijl naar de huidige magnetische noordpool.
 
-Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラミングします、
+Verbind de computer met de micro:bit-ploeg via een Micro-USB-kabel en programmeer in de MakeCode-editor,
 
 ![](./media/Makecode_db8b2d7e.gif)
 
-完成プログラム :
+Volledig programma :
 
 ![](./media/Makecode_ef823069.png)
 
-### (6) テスト結果 2
+### (6) Testresultaten 2
 
-コード2をアップロードします。校正後、micro:bit ボードを傾けると、LED ドットマトリクスに方位表示が表示されます。
+Upload code 2. Na de kalibratie kantelt u de micro:bit-ploeg en toont de LED-puntmatrix de richtingstekens.
 
 ![](./media/Makecode_d8944d5f.gif)
 

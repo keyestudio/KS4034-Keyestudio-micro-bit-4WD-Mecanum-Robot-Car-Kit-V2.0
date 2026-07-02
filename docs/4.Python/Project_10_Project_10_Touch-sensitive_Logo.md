@@ -1,24 +1,24 @@
-### プロジェクト10：タッチ感知ロゴ
+### Project 10: Aanraakgevoelig logo
 
 ![](./media/Python_64469585.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-micro:bit メインボード V2 には金色のタッチ感知ロゴが搭載されており、ボタンのような入力コンポーネントとして動作します。
+De micro:bit hoofdplaat V2 is uitgerust met een gouden aanraakgevoelig logo, dat kan fungeren als een invoercomponent zoals een knop.
 
-これは静電容量方式のタッチセンサを内蔵しており、押された（または触れられた）ときに電界の微小な変化を検出します。スマートフォンやタブレットの画面と同様です。押すとプログラムを起動できます。
+Het bevat een capacitieve aanraking-sensor die kleine veranderingen in het elektrische veld waarneemt wanneer het wordt ingedrukt (of aangeraakt), net als het scherm van uw telefoon of tablet. Wanneer u erop drukt, kan het programma worden geactiveerd.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USB ケーブルで micro:bit メインボードをコンピュータに接続します。
+A. Sluit de micro:bit hoofdplaat aan op uw computer via de USB-kabel.
 
-B. Mu のオフライン版を開きます。
+B. Open de offline versie van Mu.
 
-3\.  **テストコード**
+3\.  **Testcode**
 
-Mu ソフトウェアを起動し、ファイル “Touch-sensitive Logo\.py” を開いてコードをインポートします。編集ウィンドウに手動でコードを入力することもできます。
+Start de Mu-software en open het bestand “Touch-sensitive Logo\.py” om de code te importeren. U kunt de code ook zelf in het bewerkvenster invoeren.
 
-(**注意：すべての英語の単語と記号は英語で記述してください**。)
+(**Opmerking: Alle Engelse woorden en symbolen moeten in het Engels worden geschreven**.)
 
 ![](./media/Python_0c54cbe5.png)
 
@@ -50,40 +50,38 @@ while True:
         display.show(Image.ASLEEP)
 ```
 
-**Micro:bit はどのように動作するのか？**
+**Hoe werkt de Micro:bit?**
 
-A\. 実行時間はミリ秒（ms）で記録されます。
+A\. De looptijd wordt geregistreerd in milliseconden (ms).
 
-B\. ボタン A を押すと、start という名前の変数に現在の実行時間が設定されます。
+B\. Wanneer u knop A indrukt, wordt een variabele met de naam start ingesteld op de huidige looptijd.
 
-C\. ボタン B を押すと、開始時刻が新しい実行時間から差し引かれ、ストップウォッチを開始してから経過した時間が計算されます。この差分が合計時間に加算され、time という変数に保存されます。
+C\. Wanneer u knop B indrukt, wordt de starttijd afgetrokken van de nieuwe looptijd om de verstreken tijd te berekenen sinds u de stopwatch bent gestart. Dit verschil wordt opgeteld bij de totale tijd, die wordt opgeslagen in een variabele met de naam time.
 
-D\. 金色のロゴを押すと、プログラムは合計経過時間を LED 表示に表示します。ミリ秒（千分の一秒）を 1000 で割ることで秒に変換します。整数の結果を得るために整数除算を使用します。
+D\. Als u op het gouden logo drukt, zal het programma de in totaal verstreken tijd op het LED-display weergeven. Het zet tijd om van milliseconden (duizendsten van een seconde) naar seconden door te delen door 1000. Het gebruikt de gehele deling-operator om een geheel getal te geven.
 
-E\. プログラムは running という名前のブール変数でも制御されます。ブール変数は true または false の 2 値のみを取ります。もし "running" が "true" なら、ストップウォッチが動作中であることを意味します。もし "running" が false なら、ストップウォッチは開始されていないか停止していることを意味します。
+E\. Het programma wordt ook geregeld door een Booleaanse variabele met de naam running. Een Booleaanse variabele heeft slechts twee waarden: true of false. Als "running" "true" is, betekent dit dat de stopwatch is gestart. Als "running" false is, betekent dit dat de stopwatch niet is gestart of is gestopt.
 
-F\. "running" が true の場合、LED ドットマトリクスに鼓動するハートのパターンが表示されます。
+F\. Als "running" true is, wordt het kloppende hartpatroon weergegeven op het LED-dotmatrixscherm.
 
-G\. (7) ストップウォッチが停止しており "running" が false の場合、金色のロゴを押すと時間のみが表示されます。
+G\. (7) Als de stopwatch is gestopt en "running" false is, zal het drukken op het gouden logo alleen de tijd weergeven.
 
-H\. ストップウォッチが開始され "running" が true の場合、ボタン B が押されたときに time 変数が変化することを確実にすればよく、コードは誤検出を防ぐこともできます。
+H\. Als de stopwatch is gestart en "running" true is, hoeft alleen te worden gegarandeerd dat de variabele time zal veranderen wanneer knop B wordt ingedrukt, en de code kan ook valse metingen voorkomen.
 
-コードのエラーを確認するには “Check” をクリックしてください。下線やカーソルが表示される場合、プログラムは誤りがあります。
+Klik op “Check” om fouten in de code te controleren. Het programma is foutief als er onderstrepingen en cursors worden weergegeven.
 
 ![](./media/Python_1766a28c.png)
 
-コードが正しければ、micro:bit をコンピュータに接続して “Flash” をクリックし、コードを micro:bit ボードに書き込みます。
+Als de code correct is, sluit de micro:bit aan op uw computer en klik op “Flash” om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_a3d6e994.png)
 
-4\.  **テスト結果**
+4\.  **Testresultaat**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れる（DIP スイッチを ON にする）** か、micro:bit のリセットボタンを押します。
+Nadat de code succesvol naar het board is gedownload, **zet de stroom aan via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop van de micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-ボタン A を押してストップウォッチを開始します。計測中は LED マトリクスに鼓動するハートのパターンが表示されます。ボタン B を押すと停止し、いつでも開始・停止が可能です。
+Druk op knop A om de stopwatch te starten. Tijdens het timen wordt het kloppende hartpatroon weergegeven op de LED-dotmatrix. Druk op knop B om te stoppen; u kunt het op elk moment starten en stoppen.
 
-それは実際のストップウォッチのように時間を記録し続けます。micro:bit 前面の金色ロゴを押すと、測定された時間が秒で表示されます。後部のリセットボタンを押すと時間をゼロにリセットできます。
-
----
+Het blijft tijd registreren, net als een echte stopwatch. Druk op het gouden logo aan de voorkant van de micro:bit om de gemeten tijd in seconden weer te geven. En de tijd kan worden teruggezet naar nul door op de resetknop aan de achterkant te drukken.

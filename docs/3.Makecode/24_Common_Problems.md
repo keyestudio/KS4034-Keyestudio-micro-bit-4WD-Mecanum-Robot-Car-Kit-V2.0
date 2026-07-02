@@ -1,13 +1,13 @@
-## よくある問題
+## Veelvoorkomende problemen
 
-1\.  **車が反応しない**
+1\.  **De auto reageert niet**
 
-バッテリーの残量が十分か確認してください
+Controleer of de batterijen voldoende opgeladen zijn
 
-配線が正しいか確認してください
+Controleer of de bedrading correct is
 
-2\.  **コンピュータがUSBポートを認識しない**
+2\.  **Computers herkennen de USB-poorten niet**
 
-microbit driverがインストールされているか確認してください
+Controleer of de microbit driver is geïnstalleerd
 
-USBケーブルが良好な状態か確認してください
+Controleer of de USB-kabel in goede staat is

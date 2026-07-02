@@ -1,25 +1,25 @@
-### プロジェクト3：5×5 LED ドットマトリクス
+### Project 3：5×5 LED Puntmatrix
 
 ![](./media/Python_b855274f.png)
 
-1\.  **説明**
+1\.  **Beschrijving**
 
-ドットマトリクスは日常生活で非常に一般的で、LED 広告ディスプレイ、エレベーターのフロア表示、バス停の案内などで広く使われています。
-Micro: Bit メインボードの LED ドットマトリクスは 25 個のダイオードを含みます。以前に、位置に基づいて特定の LED を制御することに成功しました。同じ理論に基づき、複数の LED を同時に点灯させてパターン、数字、文字を表示できます。
+Puntmatrices komen veel voor in het dagelijks leven en worden veel toegepast in LED-reclameschermen, liftvloerweergaven, bushalte-aankondigingen enzovoort.
+De LED-puntmatrix van de Micro: Bit-hoofdplaat bevat 25 diodes. Eerder zijn we erin geslaagd om een bepaalde LED te bedienen via zijn positiepunt. Ondersteund door dezelfde theorie kunnen we meerdere LED's tegelijkertijd inschakelen om patronen, cijfers en tekens weer te geven.
 
-さらに、「show icon」をクリックして表示したいパターンを選ぶこともできます。最後に、自分でパターンを設計することも可能です。
+Bovendien kunnen we op “show icon” klikken om het patroon te kiezen dat we willen weergeven. Tot slot kunnen we ook zelf patronen ontwerpen.
 
-2\.  **準備**
+2\.  **Voorbereiding**
 
-A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
+A. Bevestig het micro:bit-hoofdboard aan uw computer via de USB-kabel
 
-B. オフライン版 Mu を開きます。
+B. Open de offline versie van Mu.
 
-3\.  **テストコード1**
+3\.  **Testcode1**
 
-「5×5 LED Dot Matrix-1\.py」ファイルを開いてコードをインポートできます。編集ウィンドウに自分でコードを入力することもできます。
+U kunt het bestand “5×5 LED Dot Matrix-1\.py” openen om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意：すべての単語と記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_00f15f0a.png)
 
@@ -31,27 +31,27 @@ val = Image("00900:""00900:""90909:""09990:""00900")
 display.show(val)
 ```
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムは誤りと判断されます。 
+Klik op “Check” om fouten in de code te controleren. Het programma is fout als er onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_a1197f5e.png)
 
-コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, sluit u de micro:bit aan op de computer en klikt u op “Flash” om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_1fd78e31.png)
 
-4\.  **テスト結果1**
+4\.  **Testresultaat1**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電してください（DIP スイッチを ON にする）**。その後、ボード上のリセットボタンを押します。
+Nadat de code met succes naar het bord is gedownload, **zet u de voeding aan via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op de plaat.
 
 ![Img](./media/Python_bb3e1312.png)
 
-5×5 のドットマトリクスに下向きの矢印が表示されることが確認できます ![](./media/Python_26c7d8c0.png)。
+U zult zien dat de 5×5 puntmatrix een pijl naar beneden begint weer te geven ![](./media/Python_26c7d8c0.png).
 
-5\.  **テストコード2**
+5\.  **Testcode2**
 
-「5×5 LED Dot Matrix-2\.py」ファイルを開いてコードをインポートできます。編集ウィンドウに自分でコードを入力することもできます。
+U kunt het bestand “5×5 LED Dot Matrix-2\.py” openen om de code te importeren. U kunt de code ook zelf in het bewerkingsvenster invoeren.
 
-(**注意：すべての単語と記号は英語で記述してください。**)
+(**Opmerking: Alle woorden en symbolen moeten in het Engels worden geschreven.**)
 
 ![](./media/Python_dc6eea45.png)
 
@@ -85,32 +85,32 @@ sleep(500)
 display.clear()
 ```
 
-「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムは誤りと判断されます。 
+Klik op “Check” om fouten in de code te onderzoeken. Het programma is fout als er onderstrepingen en cursors worden weergegeven. 
 
 ![](./media/Python_14bb490a.png)
 
-コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
+Als de code correct is, sluit u de micro:bit aan op de computer en klikt u op “Flash” om de code naar het micro:bit-board te downloaden.
 
 ![](./media/Python_a05c33d2.png)
 
-6\.  **テスト結果2**
+6\.  **Testresultaat2**
 
-コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電してください（DIP スイッチを ON にする）**。その後、ボード上のリセットボタンを押します。
+Nadat de code met succes naar het bord is gedownload, **zet u de voeding aan via de micro USB-kabel of een externe voeding (zet de DIP-schakelaar op ON)** en druk op de resetknop op de plaat.
 
 ![Img](./media/Python_bb3e1312.png)
 
-5×5 のドットマトリクスが順に数字 1、2、3、4、5 を表示し、その後下向きの矢印 ![](./media/Python_26c7d8c0.png)、"Hello"、ハートのパターン ![](./media/Python_9b18b2b8.png)、北東を指す矢印 ![](./media/Python_364f2e35.png)、次に南東
-![](./media/Python_fb3ba009.png)、次に南西 ![](./media/Python_7ec21961.png)、最後に北西 ![](./media/Python_ced0bb41.png) を交互に表示することが確認できます。
+U zult zien dat de 5×5 puntmatrix de nummers 1, 2, 3, 4 en 5 begint weer te geven en vervolgens afwisselend een pijl naar beneden ![](./media/Python_26c7d8c0.png), “Hello”, een hartpatroon ![](./media/Python_9b18b2b8.png), een pijl die naar het noordoosten wijst ![](./media/Python_364f2e35.png), daarna naar het zuidoosten
+![](./media/Python_fb3ba009.png), daarna naar het zuidwesten ![](./media/Python_7ec21961.png) en tenslotte naar het noordwesten ![](./media/Python_ced0bb41.png) weergeeft.
 
-7\.  **コードの説明**
+7\.  **Code-uitleg**
 
 ![Img](./media/Python_ef42956d.png)
 
 
-6.  **参照**
+6.  **Referentie**
 
 display.scroll() ：
 
-表示がスクロールして値を表示します。もし値が整数（int）や浮動小数点数（float）の場合は、str() を使って文字列に変換します。
+Het display scrolt om de waarden weer te geven; als het een integer of float is, gebruiken we str() om het om te zetten naar tekenreeksen.
 
-詳しくは次のリンクを参照してください: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
+Meer details vindt u via de link: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

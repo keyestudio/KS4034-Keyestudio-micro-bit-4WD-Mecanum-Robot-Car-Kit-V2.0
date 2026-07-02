@@ -1,18 +1,18 @@
-## プロジェクト 3: LEDドットマトリクス
+## Project 3: LED-puntmatrix
 
 ![](./media/Makecode_5353bbf0.jpg)
 
-[Click to download the code 1 for this lesson](./Code/LED-Dot-Matrix.hex)
+[Klik hier om code 1 voor deze les te downloaden](./Code/LED-Dot-Matrix.hex)
 
-[Click to download the code 2 for this lesson](./Code/LED-Dot-Matrix2.hex)
+[Klik hier om code 2 voor deze les te downloaden](./Code/LED-Dot-Matrix2.hex)
 
 ### (1)Project Description:
 
-ドットマトリクスは日常生活で非常に一般的に使われています。LEDの広告表示、エレベーターの階表示、バス停の案内表示など、幅広い用途があります。
+Puntmatrices zijn zeer algemeen in het dagelijks leven. Ze worden veelvuldig toegepast in LED-reclameborden, etage-aanduidingen in liften, aankondigingen bij bushaltes, enzovoort.
 
-Micro:bit main board V2 の LEDドットマトリクスは、5x5 のグリッドで合計25個の LED を備えています。以前、テストコードに位置の値を組み込むことで特定の LED を点灯させることに成功しました。同じ考え方により、複数の LED を同時に点灯させてパターン、数字、文字を表示できます。
+De LED-puntmatrix van de Micro:bit main board V2 bestaat uit 25 LEDs in een raster. Eerder is het ons gelukt om een bepaalde LED te laten oplichten door de positiewaarde in de testcode op te nemen. Op basis van hetzelfde principe kunnen we meerdere LEDs tegelijk inschakelen om patronen, cijfers en tekens weer te geven.
 
-さらに、"show icon" をクリックして表示したいパターンを選ぶこともできます。最後に、自分でパターンをデザインすることも可能です。
+Bovendien kunnen we op "show icon" klikken om het patroon te kiezen dat we willen weergeven. Ten slotte kunnen we ook onze eigen patronen ontwerpen.
 
 ### (2)Components Needed:
 
@@ -22,32 +22,32 @@ Micro USB cable
 
 ### (3)Test Code 1:
 
-マイクロUSBケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラミングします。
+Verbind de computer met de micro:bit-board met een micro-USB-kabel en programmeer in de MakeCode-editor.
 
 ![](./media/Makecode_3e840449.gif)
 
-完成したプログラム :
+Volledig programma :
 
 ![](./media/Makecode_62ac18b6.png)
 
 ### (4) Test Results 1:
 
-コード1をアップロードしてボードに電源を入れると、アイコンが表示されます。
+Upload code 1 en zet het bord aan; we zullen het pictogram zien.
 
 ![7](./media/Makecode_fb015046.gif)
 
 ### (5) Test Code 2:
 
-マイクロUSBケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラミングします。
+Verbind de computer met de micro:bit-board met een micro-USB-kabel en programmeer in de MakeCode-editor.
 
 ![](./media/Makecode_38615007.gif)
 
-完成したプログラム :
+Volledig programma :
 
 ![](./media/Makecode_957cb537.png)
 
 ### (6)Test Results 2 :
 
-コードを Microbit にアップロードすると、5x5 のドットマトリクスがコードで指定したパターンやテキストを順に表示するのが見られます。（注："on start" はこのブロック内のコードが一度だけ実行されることを意味し、"forever" はコードが繰り返し実行されることを意味します。）
+Na het uploaden van de code naar de Microbit ziet u dat de 5x5-puntmatrix de in de code gespecificeerde patronen en tekst cyclisch weergeeft.（Opmerking: "on start" betekent dat de code in dit blok slechts één keer wordt uitgevoerd, terwijl "forever" aangeeft dat de code cyclisch wordt uitgevoerd.）
 
 ![](./media/Makecode_3e5aa1cd.gif)

@@ -1,48 +1,48 @@
-## プロジェクト 17：Line Tracking Sensor
+## Project 17：Line Tracking Sensor
 
-### プロジェクト 17.1：Detect Line Tracking Sensor
+### Project 17.1：Detect Line Tracking Sensor
 
 ![](./media/Makecode_ea7f6c8c.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-Keyestudio 4WD Mecanum Robot Car のモータードライバーボードには、TCRT5000 IRモジュールと3つのポテンショメータを採用した3チャンネルのライン追跡センサーが搭載されています。
+De motorcontroller van de Keyestudio 4WD Mecanum Robot Car wordt geleverd met een 3-kanaals lijnvolgsensor, die gebruikmaakt van TCRT5000 IR-modules en 3 potentiometers.
 
-TCRT5000 IRモジュールは赤外線発光素子と赤外線受光素子を内蔵しています。発光素子から出された赤外線が反射して受光素子に到達すると、受光素子の抵抗が変化し、それが回路上の電圧変化として一般に現れます。  
+De TCRT5000 IR-module bevat een IR-zender en een IR-ontvanger. Wanneer de infraroodsignalen van de zender via reflectie door de ontvanger worden opgevangen, verandert de weerstand van de ontvanger, wat zich doorgaans vertaalt in een spanningsverandering in het circuit.  
 
-受光素子が受ける赤外線の強度に応じて抵抗が変化し、これは反射面の色や反射面と受光素子間の距離に依存します。検出時には黒が高レベル（High）でアクティブ、白が低レベル（Low）でアクティブとなります。 
+De weerstand varieert afhankelijk van de intensiteit van de infraroodsignalen die door de ontvanger worden ontvangen, wat vaak afhankelijk is van de kleur van het reflecterende oppervlak en de afstand tussen dat oppervlak en de ontvanger. Bij detectie is zwart actief op hoog niveau en wit actief op laag niveau. 
 
-2\.  **動作原理**
+2\.  **Werkingsprincipe**
 
-車が白い路面の上を走ると、車体下部に取り付けられたIR発光素子が路面を検出するために赤外線を発し、受光素子が反射光を受け取ります。すると出力端は低レベル（0）を出力し、黒いラインを検出すると高レベル（1）を出力します。
+Als de auto over een witte ondergrond rijdt, zendt de onder de auto geplaatste IR-zender infraroodsignalen om de ondergrond te detecteren en de IR-ontvanger ontvangt en retourneert de signalen. Vervolgens geeft de uitgang een laag niveau (0) af; wanneer hij zwarte lijnen detecteert, geeft hij een hoog niveau (1) af.
 
-4WD Mecanum Robot Car の底面に白い紙を置いた後、3wayトラッキングセンサーのポテンショメータを回します。センサーモジュールのインジケータが点灯したら、車を持ち上げて4WD Mecanum Robot Car の左右の車輪が浮くようにします。白紙とセンサーの距離は約1.5cmです。センサーモジュールのインジケータが消灯したら感度の調整が完了です。
+Na het plaatsen van een wit vel papier onder de 4WD Mecanum Robot Car draaien we de potentiometers van de 3-wegs volgensor. Wanneer het indicatorlampje op het sensormodule brandt, til dan de auto op zodat de twee wielen van de 4WD Mecanum Robot Car vrij draaien. De hoogte van het witte papier is ongeveer 1,5 cm; wanneer het indicatorlampje van het sensormodule uitgaat, is de gevoeligheid ingesteld.
 
-3\.  **準備**
+3\.  **Voorbereiding**
 
-- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
+- Steek de micro:bit-kaart in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ボックスに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチを ON にする
+- Zet de voedingsschakelaar op ON
 
-- USB ケーブルで micro:bit をコンピュータに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- Web版 Makecode を開く
+- Open de webversie van Makecode
 
-4\.  **テストコード**
+4\.  **Testcode**
 
 ![](./media/Makecode_3683d83f.png)
 
-“JavaScript” をクリックして対応する JavaScript コードを表示します: 
+Klik op “JavaScript” om de bijbehorende JavaScript-code te bekijken: 
 
 ![](./media/Makecode_4b440616.png)
 
-5\.  **テスト結果**
+5\.  **Testresultaat**
 
-コードを micro:bit にダウンロードし、POWER スイッチを ON にします。 
+Download de code naar de micro:bit-kaart en zet de POWER-schakelaar op ON. 
 
-CoolTerm を開き、Options をクリックして SerialPort を選択します。COM ポートとボーレートを 115200 に設定します。“OK” と “Connect” をクリックします。
+Open CoolTerm, klik op Options om SerialPort te selecteren. Stel de COM-poort in en de baudrate op 115200. Klik op “OK” en “Connect”.
 
 ![](./media/Makecode_ea164439.png)
 
@@ -52,46 +52,46 @@ CoolTerm を開き、Options をクリックして SerialPort を選択します
 
 ![](./media/Makecode_13238e98.png)
 
-CoolTerm のシリアルモニタには、ライン追跡センサーが読み取ったデジタル信号が表示されます。
+De CoolTerm-seriemonitor toont de digitale signalen die door de lijnvolgsensoren worden gelezen.
 
 ![](./media/Makecode_0141051a.png)
 
-### プロジェクト 17.2：Tracking Smart Car
+### Project 17.2：Tracking Smart Car
 
 ![Img](./media/Makecode_547634e4.png)
 
-1\. **説明**
+1\. **Beschrijving**
 
-このレッスンでは、ライン追跡センサーとモーターを組み合わせてライン追跡スマートカーを作ります。
+In deze les combineren we een lijnvolgsensor met een motor om een lijnvolgend smartcar te maken.
 
-micro:bit ボードが信号を解析し、スマートカーを制御してライン追跡機能を実現します。
+De micro:bit-kaart analyseert de signalen en bestuurt de smartcar om de lijnvolgfunctie te demonstreren.
 
-2\. **動作原理**
+2\. **Werkingsprincipe**
 
-スマートカーは、3チャンネルライン追跡センサーから受け取る値に応じて異なる動作を行います。
+De smartcar zal verschillende bewegingen uitvoeren afhankelijk van de waarden die door de 3-kanaals lijnvolgsensor worden ontvangen.
 
 ![Img](./media/Makecode_bbccdb34.png)
 
-3\. **準備**
+3\. **Voorbereiding**
 
-- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
+- Steek de micro:bit-kaart in de sleuf van de keyestudio 4WD Mecanum Robot Car V2.0
 
-- 電池を電池ボックスに入れる
+- Plaats batterijen in de batterijhouder
 
-- 電源スイッチを ON にする
+- Zet de voedingsschakelaar op ON
 
-- USB ケーブルで micro:bit をコンピュータに接続する
+- Verbind de micro:bit met uw computer via een USB-kabel
 
-- Web版 Makecode を開く
+- Open de webversie van Makecode
 
-**警告:** 3way トラッキングセンサーは、直射日光などの赤外線干渉がない環境で使用してください。太陽光には赤外線や紫外線などの不可視光が多く含まれています。強い日光下では 3way トラッキングセンサーは正常に動作しない可能性があります。
+**Waarschuwing:** De 3-weg volgensor moet worden gebruikt in omgevingen zonder infraroodinterferentie, zoals direct zonlicht. Zonlicht bevat veel onzichtbaar licht, zoals infrarood en ultraviolet. In een omgeving met sterke zonlicht kan de 3-weg volgensor niet correct werken.
 
-4\.**フローチャート**
+4\.**Stroomschema**
 
 ![Img](./media/Makecode_70f1fd80.png)
 
 
-5\.  **テストコード**
+5\.  **Testcode**
 
 ![](./media/Makecode_4b104155.png)
 
@@ -102,16 +102,16 @@ micro:bit ボードが信号を解析し、スマートカーを制御してラ�
 ![Img](./media/Makecode_ca91a31f.png)
 
 
-“JavaScript” をクリックして対応する JavaScript コードを表示します:
+Klik op “JavaScript” om de bijbehorende JavaScript-code te bekijken:
 
 ![](./media/Makecode_f5caa06a.png)
 
 ![](./media/Makecode_8f5f07ec.png)
 
-5\. **テスト結果**
+5\. **Testresultaat**
 
-コードを micro:bit にダウンロードし、POWER を ON にすると、ライン追跡カーは黒いラインに沿って前進します。
+Download de code naar de micro:bit en zet POWER op ON; de lijnvolgende auto rijdt vooruit langs de zwarte lijn.
 
-**注意:** micro:bit カーの背面にあるスイッチを入れてください。黒いラインの幅はライン追跡センサーの幅より広くしてください。
+**Opmerking:** zet de schakelaar aan de achterkant van de micro:bit-auto aan, de breedte van de zwarte lijn moet groter zijn dan de breedte van de lijnvolgsensor.
 
-強い光の下でスマートカーをテストするのは避けてください。
+Vermijd het testen van de smartcar onder fel licht.

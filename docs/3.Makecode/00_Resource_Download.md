@@ -1,7 +1,7 @@
-## リソースのダウンロード
+## Bronnen downloaden
 
-<span style="background:#FF0000;">本製品に関連するコード、ライブラリ、その他のサポートファイルを迅速に入手できるように、以下のリンクをクリックしてダウンロードしてください：</span>
+<span style="background:#FF0000;">Om u te helpen snel gerelateerde codes, bibliotheken en andere ondersteuningsbestanden voor dit product te verkrijgen, klikt u op de onderstaande links om ze te downloaden:</span>
 
-- [Makecode のコードおよびライブラリのダウンロード](./Code.7z)
+- [Makecode-code en bibliotheekdownloads](./Code.7z)
 
 ---
