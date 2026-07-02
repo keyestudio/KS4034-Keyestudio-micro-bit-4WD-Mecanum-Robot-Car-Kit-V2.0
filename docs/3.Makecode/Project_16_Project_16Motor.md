@@ -1,4 +1,4 @@
-## Project 16：Motor
+## Proyecto 16：Motor
 
 ![](./media/Makecode_77f3b857.png)
 
