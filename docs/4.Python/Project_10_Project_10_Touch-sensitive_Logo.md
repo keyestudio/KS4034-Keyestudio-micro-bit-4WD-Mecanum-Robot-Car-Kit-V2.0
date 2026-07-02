@@ -1,24 +1,24 @@
-### Projekt 10: Berührungsempfindliches Logo
+### Proyecto 10: Logo sensible al tacto
 
 ![](./media/Python_64469585.png)
 
-1\.  **Beschreibung**
+1\.  **Descripción**
 
-Das micro:bit Hauptboard V2 ist mit einem goldenen, berührungsempfindlichen Logo ausgestattet, das als Eingangsbauteil wie ein Knopf fungieren kann.
+La placa principal micro:bit V2 está equipada con un logotipo dorado sensible al tacto, que puede actuar como un componente de entrada similar a un botón.
 
-Es enthält einen kapazitiven Berührungssensor, der beim Drücken (oder Berühren) kleine Änderungen im elektrischen Feld wahrnimmt, genau wie bei Ihrem Telefon- oder Tablet-Bildschirm. Wenn Sie es drücken, kann das Programm aktiviert werden.
+Contiene un sensor táctil capacitivo que detecta pequeños cambios en el campo eléctrico cuando se presiona (o toca), igual que la pantalla de tu teléfono o tablet. Cuando lo presionas, el programa puede activarse.
 
-2\.  **Vorbereitung**
+2\.  **Preparación**
 
-A. Verbinden Sie das micro:bit Hauptboard über das USB-Kabel mit Ihrem Computer.
+A. Conecta la placa principal micro:bit a tu ordenador mediante el cable USB.
 
-B. Öffnen Sie die Offline-Version von Mu.
+B. Abre la versión offline de Mu.
 
-3\.  **Testcode**
+3\.  **Código de prueba**
 
-Starten Sie die Mu-Software und öffnen Sie die Datei “Touch-sensitive Logo\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Bearbeitungsfenster eingeben.
+Abre el software Mu y abre el archivo “Touch-sensitive Logo\.py” para importar el código. También puedes introducir el código tú mismo en la ventana de edición.
 
-(**Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben sein**.)
+(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés**.)
 
 ![](./media/Python_0c54cbe5.png)
 
@@ -50,40 +50,40 @@ while True:
         display.show(Image.ASLEEP)
 ```
 
-**Wie funktioniert der Micro:bit?**
+**¿Cómo funciona el Micro:bit?**
 
-A\. Die Laufzeit wird in Millisekunden (ms) aufgezeichnet.
+A\. El tiempo de ejecución se registra en milisegundos (ms).
 
-B\. Wenn Sie Taste A drücken, wird eine Variable namens start auf die aktuelle Laufzeit gesetzt.
+B\. Cuando presionas el botón A, una variable llamada start se establecerá en el tiempo de ejecución actual.
 
-C\. Wenn Sie Taste B drücken, wird die Startzeit von der neuen Laufzeit subtrahiert, um die seit dem Start der Stoppuhr verstrichene Zeit zu berechnen. Diese Differenz wird zur Gesamtzeit addiert, die in einer Variable namens time gespeichert ist.
+C\. Cuando presionas el botón B, el tiempo de inicio se sustrae del nuevo tiempo de ejecución para calcular el tiempo transcurrido desde que comenzaste el cronómetro. Esta diferencia se añade al tiempo total, que se almacena en una variable llamada time.
 
-D\. Wenn Sie das goldene Logo drücken, zeigt das Programm die insgesamt verstrichene Zeit auf der LED-Anzeige an. Es wandelt die Zeit von Millisekunden (Tausendstelsekunden) in Sekunden um, indem es durch 1000 teilt. Es verwendet den Ganzzahl-Operator, um ein ganzzahliges Ergebnis zu liefern.
+D\. Si presionas el logo dorado, el programa mostrará el tiempo total transcurrido en la pantalla LED. Convierte el tiempo de milisegundos (milésimas de segundo) a segundos dividiendo por 1000. Usa el operador de división entera para dar un resultado entero.
 
-E\. Das Programm wird außerdem durch eine boolesche Variable namens running gesteuert. Eine boolesche Variable hat nur zwei Werte: true oder false. Wenn "running" "true" ist, bedeutet das, dass die Stoppuhr gestartet wurde. Wenn "running" false ist, bedeutet das, dass die Stoppuhr nicht gestartet wurde oder gestoppt ist.
+E\. El programa también está controlado por una variable booleana llamada running. Una variable booleana solo tiene dos valores: true o false. Si "running" es "true", significa que el cronómetro se ha iniciado. Si "running" es false, significa que el cronómetro no se ha iniciado o se ha detenido.
 
-F\. Wenn "running" true ist, wird auf der LED-Matrix das Herzschlag-Muster angezeigt.
+F\. Si "running" es true, el patrón de corazón latiendo se mostrará en la pantalla de matriz de LED.
 
-G\. (7) Wenn die Stoppuhr gestoppt ist und "running" false ist, zeigt das Drücken des goldenen Logos nur die Zeit an.
+G\. (7) Si el cronómetro se ha detenido y "running" es false, cuando presiones el logo dorado, solo mostrará el tiempo.
 
-H\. Wenn die Stoppuhr gestartet wurde und "running" true ist, muss nur sichergestellt werden, dass sich die Variable time ändert, wenn Taste B gedrückt wird, und der Code kann auch Fehleingaben verhindern.
+H\. Si el cronómetro se ha iniciado y "running" es true, solo es necesario asegurarse de que la variable time cambie cuando se presione el botón B, y el código también puede prevenir lecturas falsas.
 
-Klicken Sie auf “Check”, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
+Haz clic en “Check” para examinar errores en el código. El programa es incorrecto si se muestran subrayados y cursores.
 
 ![](./media/Python_1766a28c.png)
 
-Wenn der Code korrekt ist, verbinden Sie den micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
+Si el código es correcto, conecta el micro:bit a tu ordenador y haz clic en “Flash” para descargar el código en la placa micro:bit.
 
 ![](./media/Python_a3d6e994.png)
 
-4\.  **Testergebnis**
+4\.  **Resultado de la prueba**
 
-Nachdem der Code erfolgreich auf das Board geladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
+Después de descargar el código en la placa correctamente, **alimentar mediante el cable micro USB o una fuente de alimentación externa (coloca el interruptor DIP en ON)** y presiona el botón de reinicio del micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Drücken Sie Taste A, um die Stoppuhr zu starten. Während des Timings wird das Herzschlag-Muster auf der LED-Matrix angezeigt. Drücken Sie Taste B, um sie zu stoppen; Sie können sie jederzeit starten und stoppen.
+Pulsa el botón A para iniciar el cronómetro. Durante la medición, el patrón de corazón latiendo se mostrará en la matriz de LED. Pulsa el botón B para detenerlo; puedes iniciarlo y detenerlo en cualquier momento.
 
-Sie protokolliert die Zeit weiter, genau wie eine echte Stoppuhr. Drücken Sie das goldene Logo an der Vorderseite des micro:bit, um die gemessene Zeit in Sekunden anzuzeigen. Die Zeit kann durch Drücken der Reset-Taste auf der Rückseite auf Null zurückgesetzt werden.
+Seguirá registrando el tiempo, igual que un cronómetro real. Pulsa el logo dorado en la parte frontal del micro:bit para mostrar el tiempo medido en segundos. Y el tiempo puede restablecerse a cero pulsando el botón de reinicio en la parte posterior.
 
 ---

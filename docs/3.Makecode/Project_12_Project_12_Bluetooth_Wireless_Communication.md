@@ -1,66 +1,66 @@
-## Projekt 12: Bluetooth-Drahtloskommunikation
+## Proyecto 12: Comunicación inalámbrica Bluetooth
 
 ![](./media/Makecode_041ff91a.jpg)
 
-### (1)Projektbeschreibung:
+### (1)Descripción del proyecto:
 
-Hinweis: Diese Lektion erklärt, wie Code über Bluetooth mithilfe einer App hochgeladen wird. Daher wird kein Code bereitgestellt. Bitte folgen Sie den Schritten in der animierten GIF-Datei.
+Nota: Esta lección se centra en explicar cómo subir código vía Bluetooth usando una app, por lo que no se proporciona código. Por favor, siga los pasos en el gif animado.
 
-Das Micro: Bit main board V2 verfügt über einen nRF52833-Prozessor (mit einem integrierten BLE (Bluetooth Low Energy)-Modul, Bluetooth 5.1) und eine 2,4‑GHz-Antenne für Bluetooth- und 2,4‑GHz-Drahtloskommunikation. Dadurch kann die Platine mit einer Vielzahl von Bluetooth-Geräten kommunizieren, einschließlich Smartphones und Tablets.
+La placa principal Micro: Bit main board V2 viene con un procesador nRF52833 (con un dispositivo BLE (Bluetooth Low Energy) integrado, Bluetooth 5.1) y una antena de 2,4 GHz para la comunicación inalámbrica Bluetooth y la comunicación inalámbrica de 2,4 GHz. Con su ayuda, la placa puede comunicarse con una variedad de dispositivos Bluetooth, incluidos teléfonos inteligentes y tabletas.
 
-In diesem Projekt konzentrieren wir uns hauptsächlich auf die Bluetooth-Drahtloskommunikationsfunktion dieses Mainboards. Über Bluetooth kann es Code oder Signale übertragen. Dazu sollten wir ein Apple-Gerät (ein iPhone oder ein iPad) mit der Platine verbinden.
+En este proyecto nos centramos principalmente en la función de comunicación inalámbrica Bluetooth de esta placa principal. Conectada por Bluetooth, puede transmitir código o señales. Para ello, debemos conectar un dispositivo Apple (un iPhone o un iPad) a la placa.
 
-Da die Einrichtung von Android-Telefonen zur drahtlosen Übertragung der von Apple-Geräten ähnelt, ist keine zusätzliche Darstellung erforderlich.
+Dado que la configuración de los teléfonos Android para lograr la transmisión inalámbrica es similar a la de los dispositivos Apple, no es necesario ilustrarla de nuevo.
 
-### (2) Vorbereitung
+### (2) Preparación
 
-Verbinden Sie das Micro:bit main board V2 über das Micro-USB-Kabel mit Ihrem Computer.
+Conexión del Micro:bit main board V2 a su ordenador mediante el cable Micro USB.
 
-Ein Apple-Gerät (ein Telefon oder ein iPad) oder ein Android-Gerät;
+Un dispositivo Apple (un teléfono o un iPad) o un dispositivo Android;
 
-### (3) Installieren von Micro:bit:
+### (3) Instalar Micro:bit:
 
-Für Android
+Para Android
 
 ![](./media/Makecode_0cf9abf0.gif)
 
-Für ios
+Para ios
 
 ![](./media/Makecode_5937459b.gif)
 
-(4)Testcode:
+(4)Código de prueba:
 
-Als Nächstes verwenden wir unsere Telefone, um Code zu schreiben und eine Verbindung über Bluetooth herzustellen (Hinweis: Der Vorgang ist für Android- und iOS-Geräte identisch; in dieser Demonstration wird ein Android-Telefon verwendet).
+A continuación, usaremos nuestros teléfonos para escribir código y conectarnos vía Bluetooth (Nota: el proceso es idéntico para dispositivos Android e iOS; esta demostración usa un teléfono Android).
 
-1、Öffnen Sie die Software und verbinden Sie sich mit Bluetooth.
+1、Abra el software y conéctese a Bluetooth.
 
 ![](./media/Makecode_dcb2416a.gif)
 
-2、Drücken Sie nacheinander die Taste A, die Taste B und die Reset-Taste auf der Rückseite des Microbit. Die Hauptplatine zeigt dann ein Symbol an.
+2、Presione en secuencia el botón A del Microbit, el botón B y el botón de reinicio en la parte posterior. La placa principal mostrará entonces un icono.
 
 ![](./media/Makecode_6985c2b1.gif)
 
-3、Geben Sie das in Schritt zwei angezeigte Muster in die Telefonoberfläche ein.
+3、Introduzca el patrón que se muestra en el paso dos en la interfaz del teléfono.
 
 ![](./media/Makecode_9095fb35.gif)
 
-Code schreiben und hochladen
+Escribir código y subir
 
-1、Öffnen Sie die Programmieroberfläche und schreiben Sie einen Code.
+1、Acceda a la interfaz de programación de código y escriba un código.
 
 ![](./media/Makecode_b7c8c1ca.gif)
 
-2、Drücken Sie nacheinander die Taste A, die Taste B und die Reset-Taste. (Hinweis: Dieser Vorgang muss jedes Mal wiederholt werden, wenn Code über die App hochgeladen wird.)
+2、Presione en secuencia el botón A, el botón B y el botón de reinicio. (Nota: este procedimiento debe repetirse cada vez que se sube código mediante la app.)
 
  ![](./media/Makecode_86ab2b39.gif)
 
-3、Nachdem Sie bestätigt haben, dass das Microbit-Symbol mit dem auf Ihrem Telefon dargestellten übereinstimmt, klicken Sie einfach auf „Next“.
+3、Después de confirmar que el icono Microbit coincide con el que se muestra en su teléfono, simplemente haga clic en “Next”.
 
 ![](./media/Makecode_f3c17f45.gif)
 
-Schließlich können Sie sehen, dass die Microbit-Platine das im Code definierte Muster anzeigt.
+Finalmente, podrá ver la placa Microbit mostrando el patrón del código.
 
-Hiermit haben wir den Vorgang zum Hochladen von Code auf das Telefon abgeschlossen. Wichtige Hinweise:
+Aquí hemos completado el proceso de subir código al teléfono. Es importante tener en cuenta:
 
-1. Um das Telefon mit der Microbit-Platine zu verbinden, drücken Sie nacheinander die Tasten A, B und Reset. Die Punktmatrixanzeige zeigt dann ein Muster an, das in das Telefon eingegeben werden muss.
-2. Die Microbit-Platine kann über ein USB-Kabel mit Strom versorgt werden oder indem 3V über ein Batteriepack an den Stromanschluss der Platine gelegt werden. Hinweis: Die Spannung darf 3V nicht überschreiten, da eine Überschreitung die Platine beschädigen kann.
+1. Para conectar el teléfono a la placa Microbit, presione en secuencia los botones A, B y Reset. La pantalla de matriz de puntos mostrará entonces un patrón, que debe introducirse en el teléfono.
+2. La placa Microbit puede alimentarse mediante un cable USB o suministrando 3V a la entrada de alimentación de la placa mediante un paquete de baterías. Nota: el voltaje no debe exceder los 3V, ya que superarlo dañará la placa.

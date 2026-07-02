@@ -1,66 +1,66 @@
-## Die Installation des Keyestudio 4WD Mecanum Robot Car V2.0
+## La instalación del Keyestudio 4WD Mecanum Robot Car V2.0
 
-### Schritt 1
+### Paso 1
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_f3d856b4.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_3d1dbf07.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_f5d38786.png)
 
-### Schritt 2
+### Paso 2
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_a2ee8074.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_6fdf9d4d.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_3fec7c19.png)
 
-### Schritt 3
+### Paso 3
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_d4f24cc5.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_e1d7b425.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_cc96b9d6.png)
 
-### Schritt 4
+### Paso 4
 
-（stellen Sie zuerst den Winkel des Servos ein）
+（ajuste primero el ángulo del servo）
 
-**Stellen Sie den Winkel des Servos auf 90 Grad ein.**
+**Ajuste el ángulo del servo a 90 grados.**
 
-**Methode 1: MakeCode-Code**
+**Método 1: código MakeCode**
 
-⚠️**Besondere Anmerkung:** Bevor Sie den Code schreiben und hochladen, müssen Sie die MakeCode-IDE verstehen und Bibliotheksdateien hinzufügen. Bitte gehen Sie zu folgendem Link: [Get Started with makecode](./Code1.7z)
+⚠️**Nota especial:** Antes de escribir el código y cargarlo, debe comprender el IDE MakeCode y añadir archivos de biblioteca. Por favor visite el enlace: [Get Started with makecode](./Code1.7z)
 
 ![](./media/Assemble_Mecanum_Robot_a9ff633c.png)
 
-Der obige MakeCode-Code liegt im Material bei. Öffnen Sie den Einstellungs-Code für den Servo und schreiben Sie ihn auf das microbit-Motherboard des 4WD Mecanum Robot Car V2.0, und **schalten Sie die Stromversorgung über ein micro-USB-Kabel oder eine externe Stromversorgung ein (drehen Sie den DIP switch auf ON)**. Das war's. Der Code befindet sich an der im Bild gezeigten Position:
+El código MakeCode anterior se proporciona en los materiales. Abra el código de ajuste del servo y grábelo en la placa microbit del 4WD Mecanum Robot Car V2.0, y **enciéndalo mediante cable micro USB o fuente de alimentación externa (ponga el DIP switch en ON)**. Eso es todo. El código está en la posición indicada en la figura:
 
 ![Img](./media/Assemble_Mecanum_Robot_21db9fa2.png)
 
-**Methode 2：Python-Code**
+**Método 2：código Python**
 
-⚠️**Besondere Anmerkung:** Bevor Sie den Code schreiben und hochladen, müssen Sie die Mu IDE installieren und Bibliotheksdateien hinzufügen. Bitte gehen Sie zu folgendem Link: [Get Started with Python](./Code2.7z)
+⚠️**Nota especial:** Antes de escribir el código y cargarlo, debe instalar Mu IDE y añadir archivos de biblioteca. Por favor visite el enlace: [Get Started with Python](./Code2.7z)
 
 ```Python
 # import microbit related libraries
@@ -98,105 +98,105 @@ Servo(pin14).write_angle(90)
 sleep(1000)
 ```
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_1e3fd9e2.png)
 
-Installationsdiagramm: (achten Sie auf die Einbaurichtung)
+Diagrama de instalación: (preste atención a la dirección de instalación)
 
 ![](./media/Assemble_Mecanum_Robot_9ca5d2c8.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_9b8bccaa.png)
 
-### Schritt 5
+### Paso 5
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_8d138501.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_bda8fbc4.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_9f244272.png)
 
-### Schritt 6
+### Paso 6
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_36259594.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_6d3e3ad9.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_3c33f63b.png)
 
-### Schritt 7
+### Paso 7
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_817e834e.png)
 
-**Installationsdiagramm:** (achten Sie auf die Richtung des Motors)
+**Diagrama de instalación:** (preste atención a la dirección del motor)
 
 ![](./media/Assemble_Mecanum_Robot_09a61aa6.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_8c97de28.png)
 
-### Schritt 8
+### Paso 8
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_43bac346.png)
 
-**Installationsdiagramm:** (achten Sie auf die Einbaurichtung des Mecanum-Rads)
+**Diagrama de instalación:** (preste atención a la dirección de instalación de la rueda mecanum)
 
 ![](./media/Assemble_Mecanum_Robot_d92dee68.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_64467ed0.png)
 
-### Schritt 9
+### Paso 9
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_5c38573f.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_a72469e3.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_243aa35b.png)
 
-### Schritt 10
+### Paso 10
 
-**Benötigte Komponenten:**
+**Componentes necesarios:**
 
 ![](./media/Assemble_Mecanum_Robot_b60b9f16.png)
 
-**Installationsdiagramm:**
+**Diagrama de instalación:**
 
 ![](./media/Assemble_Mecanum_Robot_55f2db60.png)
 
-**Prototyp:**
+**Prototipo:**
 
 ![](./media/Assemble_Mecanum_Robot_456df8a0.png)
 
-### Schaltplan
+### Diagrama de cableado
 
-**Die Verkabelung des Servos:**
+**El cableado del servo:**
 
 ![Img](./media/Assemble_Mecanum_Robot_c82a9395.png)
 
@@ -204,7 +204,7 @@ Installationsdiagramm: (achten Sie auf die Einbaurichtung)
 
 ![](./media/Assemble_Mecanum_Robot_b3bcce9d.png)
 
-**Die Verkabelung des Ultraschallsensors:**
+**El cableado del sensor ultrasónico:**
 
 ![Img](./media/Assemble_Mecanum_Robot_c9f3da75.png)
 
@@ -212,38 +212,38 @@ Installationsdiagramm: (achten Sie auf die Einbaurichtung)
 
 ![](./media/Assemble_Mecanum_Robot_a8f0e176.png)
 
-**Die Verkabelung des IR-Empfängermoduls:**
+**El cableado del módulo receptor IR:**
 
 ![Img](./media/Assemble_Mecanum_Robot_61d53b21.png)
 
 ![](./media/Assemble_Mecanum_Robot_1e081a3a.png)
 
-**Die Verkabelung der RGB-LED:**
+**El cableado del RGB:**
 
 ![Img](./media/Assemble_Mecanum_Robot_c5b8a804.png)
 
 ![](./media/Assemble_Mecanum_Robot_01848b2e.jpg)
 
-**Die Verkabelung zur Steuerung des Motors und der Sieben-Farben-Leuchte:**
+**El cableado para controlar el motor y la luz de siete colores:**
 
 ![Img](./media/Assemble_Mecanum_Robot_0c4635c5.png)
 
 ![](./media/Assemble_Mecanum_Robot_1689f2c9.jpg)
 
-**Die Verkabelung zur Steuerung des 3-Kanal Linienverfolgungssensors:**
+**El cableado para controlar el sensor de seguimiento de línea de 3 canales:**
 
 ![Img](./media/Assemble_Mecanum_Robot_542d1798.png)
 
 ![](./media/Assemble_Mecanum_Robot_08eb8d7e.jpg)
 
-**Die Verkabelung der Stromversorgung:**
+**El cableado de la alimentación:**
 
 ![](./media/Assemble_Mecanum_Robot_cdcec4ba.jpg)
 
-**Die entsprechende Motor-Schnittstelle:**
+**La interfaz correspondiente del motor:**
 
 ![](./media/Assemble_Mecanum_Robot_ffcceef1.jpg)
 
-**Die Installation der Batterie:**
+**La instalación de la batería:**
 
 ![](./media/Assemble_Mecanum_Robot_fe8ce786.png)

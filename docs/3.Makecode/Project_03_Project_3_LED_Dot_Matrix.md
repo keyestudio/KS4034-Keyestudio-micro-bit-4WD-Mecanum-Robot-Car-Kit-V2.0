@@ -1,18 +1,18 @@
-## Project 3: LED-Punktmatrix
+## Proyecto 3: Matriz de puntos LED
 
 ![](./media/Makecode_5353bbf0.jpg)
 
-[Klicken Sie hier, um den Code 1 für diese Lektion herunterzuladen](./Code/LED-Dot-Matrix.hex)
+[Haga clic para descargar el código 1 de esta lección](./Code/LED-Dot-Matrix.hex)
 
-[Klicken Sie hier, um den Code 2 für diese Lektion herunterzuladen](./Code/LED-Dot-Matrix2.hex)
+[Haga clic para descargar el código 2 de esta lección](./Code/LED-Dot-Matrix2.hex)
 
-### (1)Project Description:
+### (1)Proyecto Description:
 
-Punktmatrizen sind im Alltag weit verbreitet. Sie finden vielfältige Anwendungen in LED-Werbetafeln, Etagenanzeigen in Aufzügen, Fahrplananzeigen an Bushaltestellen und ähnlichen Bereichen.
+Las matrices de puntos son muy comunes en la vida diaria. Tienen amplias aplicaciones en pantallas publicitarias LED, indicadores de planta de ascensores, anuncios en paradas de autobús, etc.
 
-Die LED-Punktmatrix des Micro:bit main board V2 besteht aus 25 LEDs in einem Raster. Zuvor ist es uns gelungen, eine bestimmte LED durch Einfügen ihres Positionswertes in den Testcode zu steuern. Auf der gleichen Grundlage können wir viele LEDs gleichzeitig einschalten, um Muster, Ziffern und Zeichen darzustellen.
+La matriz de puntos LED del Micro:bit main board V2 contiene 25 LED en una cuadrícula. Anteriormente, hemos logrado controlar una LED en particular integrando su valor de posición en el código de prueba. Con la misma lógica, podemos encender muchas LED al mismo tiempo para mostrar patrones, dígitos y caracteres.
 
-Außerdem können wir durch Anklicken von "show icon" das gewünschte Anzeigemuster auswählen. Schließlich können wir auch eigene Muster entwerfen.
+Además, también podemos hacer clic en "show icon" para elegir el patrón que queremos mostrar. Por último, podemos diseñar nuestros propios patrones.
 
 ### (2)Components Needed:
 
@@ -22,32 +22,32 @@ Micro USB cable
 
 ### (3)Test Code 1:
 
-Verbinden Sie den Computer mit dem Micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor.
+Conecte el ordenador con la placa micro:bit mediante un cable micro USB y programe en el editor MakeCode.
 
 ![](./media/Makecode_3e840449.gif)
 
-Vollständiges Programm :
+Programa completo :
 
 ![](./media/Makecode_62ac18b6.png)
 
 ### (4) Test Results 1:
 
-Laden Sie Code 1 hoch und schalten Sie das Board ein, dann sehen Sie das Symbol.
+Suba el código 1 y alimente la placa; veremos el icono.
 
 ![7](./media/Makecode_fb015046.gif)
 
 ### (5) Test Code 2:
 
-Verbinden Sie den Computer mit dem Micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor.
+Conecte el ordenador con la placa micro:bit mediante un cable micro USB y programe en el editor MakeCode.
 
 ![](./media/Makecode_38615007.gif)
 
-Vollständiges Programm :
+Programa completo :
 
 ![](./media/Makecode_957cb537.png)
 
 ### (6)Test Results 2 :
 
-Nach dem Hochladen des Codes auf den Microbit sehen Sie, wie die 5x5-Punktmatrix die im Code angegebenen Muster und Texte zyklisch anzeigt.（Hinweis: "on start" bedeutet, dass der Code in diesem Block nur einmal ausgeführt wird, während "forever" anzeigt, dass der Code zyklisch ausgeführt wird.）
+Después de subir el código al Microbit, puede ver la pantalla de matriz 5x5 recorriendo los patrones y el texto especificados en el código.（Nota: "on start" significa que el código en este bloque solo se ejecuta una vez, mientras que "forever" implica que el código se ejecuta de forma cíclica.）
 
 ![](./media/Makecode_3e5aa1cd.gif)

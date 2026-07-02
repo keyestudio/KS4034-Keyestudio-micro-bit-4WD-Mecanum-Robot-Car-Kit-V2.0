@@ -1,48 +1,48 @@
-## Project 17：Line Tracking Sensor
+## Proyecto 17：Line Tracking Sensor
 
-### Project 17.1：Detect Line Tracking Sensor
+### Proyecto 17.1：Detect Line Tracking Sensor
 
 ![](./media/Makecode_ea7f6c8c.png)
 
-1\. **Beschreibung**
+1\. **Descripción**
 
-Die Motorsteuerplatine des Keyestudio 4WD Mecanum Robot Car ist mit einem 3-Kanal-Linienverfolgungssensor ausgestattet, der TCRT5000-IR-Module und 3 Potentiometer verwendet.
+La placa controladora del Keyestudio 4WD Mecanum Robot Car viene con un sensor de seguimiento de línea de 3 canales, que emplea módulos IR TCRT5000 y 3 potenciómetros.
 
-Das TCRT5000-IR-Modul enthält eine IR-Sende- und eine IR-Empfängerröhre. Wenn die von der Senderröhre ausgesendeten Infrarotsignale nach Reflexion von der Empfangsröhre empfangen werden, ändert sich der Widerstand der Empfangsröhre, was sich gewöhnlich in einer Spannungsänderung in der Schaltung widerspiegelt.  
+El módulo IR TCRT5000 contiene un emisor IR y un receptor IR. Cuando las señales infrarrojas del emisor son recibidas por el receptor tras la reflexión, la resistencia del receptor cambia, lo que generalmente se refleja en un cambio de tensión en el circuito.  
 
-Der Widerstand variiert in Abhängigkeit von der Intensität der von der Empfangsröhre empfangenen Infrarotsignale, was oft von der Farbe der reflektierenden Oberfläche und dem Abstand zwischen der reflektierenden Oberfläche und der Empfangsröhre abhängt. Bei der Erkennung gilt Schwarz als aktiver hoher Pegel (High) und Weiß als niedriger Pegel (Low).
+La resistencia varía según la intensidad de las señales infrarrojas recibidas por el receptor, lo que suele depender del color de la superficie reflectante y de la distancia entre la superficie reflectante y el receptor. En el momento de la detección, el negro es nivel alto activo y el blanco es nivel bajo activo. 
 
-2\.  **Funktionsprinzip**
+2\.  **Principio de funcionamiento**
 
-Fährt das Fahrzeug über eine weiße Strecke, sendet die unter dem Fahrzeug angebrachte IR-Senderröhre Infrarotsignale zur Streckenerkennung und die Empfangsröhre empfängt die Signale zurück. Dann gibt der Ausgang einen niedrigen Pegel (0) aus; wenn schwarze Linien erkannt werden, gibt er einen hohen Pegel (1) aus.
+Cuando el coche circula sobre una pista blanca, el tubo emisor IR instalado bajo el coche emite señales infrarrojas para detectar la pista y el tubo receptor recibe las señales y las devuelve. Entonces la salida proporciona nivel bajo (0); cuando detecta líneas negras, proporciona nivel alto (1).
 
-Nachdem Sie ein weißes Blatt Papier unter das 4WD Mecanum Robot Car gelegt haben, drehen Sie die Potentiometer am 3-Wege-Tracking-Sensor. Leuchtet die Kontroll-LED am Sensormodul, heben Sie das Fahrzeug an, sodass sich die beiden Räder des 4WD Mecanum Robot Car frei drehen können. Der Abstand des weißen Papiers beträgt etwa 1,5 cm. Erlischt die Kontroll-LED am Sensormodul, ist die Empfindlichkeit eingestellt.
+Después de colocar un papel blanco en la parte inferior del 4WD Mecanum Robot Car, giraremos los potenciómetros del sensor de seguimiento de 3 vías. Cuando la luz indicadora del módulo del sensor esté encendida, levante el coche para que las dos ruedas del 4WD Mecanum Robot Car queden separadas y puedan girar libremente. La altura del papel blanco es de aproximadamente 1,5 cm; cuando la luz indicadora del módulo del sensor se apaga, la sensibilidad está ajustada.
 
-3\.  **Vorbereitung**
+3\.  **Preparación**
 
-- Stecken Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0
+- Inserte la placa micro:bit en la ranura del keyestudio 4WD Mecanum Robot Car V2.0
 
-- Legen Sie Batterien in den Batteriehalter ein
+- Coloque las pilas en el portapilas
 
-- Schalten Sie den Netzschalter auf ON
+- Gire el interruptor de alimentación a ON
 
-- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
+- Conecte el micro:bit a su ordenador mediante un cable USB
 
-- Öffnen Sie die Webversion von Makecode
+- Abra la versión Web de Makecode
 
-4\.  **Testcode**
+4\.  **Código de prueba**
 
 ![](./media/Makecode_3683d83f.png)
 
-Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzusehen: 
+Haga clic en “JavaScript” para ver el código JavaScript correspondiente: 
 
 ![](./media/Makecode_4b440616.png)
 
-5\.  **Testergebnis**
+5\.  **Resultado de la prueba**
 
-Laden Sie den Code auf das micro:bit-Board und stellen Sie den POWER-Schalter auf ON.
+Descargue el código en la placa micro:bit y ponga el interruptor POWER en ON. 
 
-Öffnen Sie CoolTerm, klicken Sie auf Options und wählen Sie SerialPort. Stellen Sie COM-Port und Baudrate auf 115200 ein. Klicken Sie auf “OK” und “Connect”.
+Abra CoolTerm, haga clic en Options para seleccionar SerialPort. Establezca el puerto COM y la velocidad en baudios a 115200. Haga clic en “OK” y “Connect”.
 
 ![](./media/Makecode_ea164439.png)
 
@@ -52,46 +52,46 @@ Laden Sie den Code auf das micro:bit-Board und stellen Sie den POWER-Schalter au
 
 ![](./media/Makecode_13238e98.png)
 
-Der CoolTerm-Seriellmonitor zeigt die digitalen Signale an, die von den Linienverfolgungssensoren gelesen werden.
+El monitor serie de CoolTerm muestra las señales digitales leídas por los sensores de seguimiento de línea.
 
 ![](./media/Makecode_0141051a.png)
 
-### Project 17.2：Tracking Smart Car
+### Proyecto 17.2：Tracking Smart Car
 
 ![Img](./media/Makecode_547634e4.png)
 
-1\. **Beschreibung**
+1\. **Descripción**
 
-In dieser Lektion kombinieren wir einen Linienverfolgungssensor mit einem Motor, um ein Linienverfolgungs-Smartcar zu erstellen.
+En esta lección combinaremos un sensor de seguimiento de línea con un motor para construir un coche inteligente de seguimiento de línea.
 
-Das micro:bit-Board wertet die Signale aus und steuert das Smartcar, um die Linienverfolgungsfunktion zu demonstrieren.
+La placa micro:bit analizará las señales y controlará el coche inteligente para mostrar la función de seguimiento de línea.
 
-2\. **Funktionsprinzip**
+2\. **Principio de funcionamiento**
 
-Das Smartcar führt je nach den von dem 3-Kanal-Linienverfolgungssensor empfangenen Werten unterschiedliche Bewegungen aus.
+El coche inteligente ejecutará movimientos diferentes según los valores recibidos por el sensor de seguimiento de línea de 3 canales.
 
 ![Img](./media/Makecode_bbccdb34.png)
 
-3\. **Vorbereitung**
+3\. **Preparación**
 
-- Stecken Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0
+- Inserte la placa micro:bit en la ranura del keyestudio 4WD Mecanum Robot Car V2.0
 
-- Legen Sie Batterien in den Batteriehalter ein
+- Coloque las pilas en el portapilas
 
-- Schalten Sie den Netzschalter auf ON
+- Gire el interruptor de alimentación a ON
 
-- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
+- Conecte el micro:bit a su ordenador mediante un cable USB
 
-- Öffnen Sie die Webversion von Makecode
+- Abra la versión Web de Makecode
 
-**Warnung:** Der 3-Wege-Tracking-Sensor sollte in Umgebungen ohne Infrarotstörungen wie direkte Sonneneinstrahlung verwendet werden. Sonnenlicht enthält viel unsichtbares Licht, z. B. Infrarot und Ultraviolett. In Umgebungen mit starker Sonneneinstrahlung kann der 3-Wege-Tracking-Sensor nicht ordnungsgemäß arbeiten.
+**Advertencia:** El sensor de seguimiento de 3 vías debe usarse en entornos sin interferencias infrarrojas, como la luz solar. La luz solar contiene mucha luz invisible, como infrarrojo y ultravioleta. En un entorno con luz solar intensa, el sensor de 3 vías no podrá funcionar correctamente.
 
-4\.**Flussdiagramm**
+4\.**Diagrama de flujo**
 
 ![Img](./media/Makecode_70f1fd80.png)
 
 
-5\.  **Testcode**
+5\.  **Código de prueba**
 
 ![](./media/Makecode_4b104155.png)
 
@@ -102,16 +102,16 @@ Das Smartcar führt je nach den von dem 3-Kanal-Linienverfolgungssensor empfange
 ![Img](./media/Makecode_ca91a31f.png)
 
 
-Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
+Haga clic en “JavaScript” para ver el código JavaScript correspondiente:
 
 ![](./media/Makecode_f5caa06a.png)
 
 ![](./media/Makecode_8f5f07ec.png)
 
-5\. **Testergebnis**
+5\. **Resultado de la prueba**
 
-Laden Sie den Code auf das micro:bit und stellen Sie den POWER-Schalter auf ON; das Linienverfolgungsfahrzeug fährt entlang der schwarzen Linie vorwärts.
+Descargue el código en el micro:bit y ponga POWER en ON; el coche seguidor de línea avanza siguiendo la línea negra.
 
-**Hinweis:** Schalten Sie den Schalter an der Rückseite des micro:bit-Fahrzeugs ein. Die Breite der schwarzen Linie sollte größer sein als die Breite des Linienverfolgungssensors.
+**Nota:** encienda el interruptor en la parte posterior del coche micro:bit; el ancho de la línea negra debe ser mayor que el ancho del sensor de seguimiento de línea.
 
-Vermeiden Sie Tests des Smartcars bei starkem Licht.
+Evite probar el coche inteligente bajo luz intensa.

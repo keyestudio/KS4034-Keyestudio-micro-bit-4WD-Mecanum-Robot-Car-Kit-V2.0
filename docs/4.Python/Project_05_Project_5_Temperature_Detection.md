@@ -1,26 +1,26 @@
-### Projekt 5：Temperaturerkennung
+### Proyecto 5：Detección de temperatura
 
-1\.  **Beschreibung**
+1\.  **Descripción**
 
-Das Micro:bit-Hauptboard ist nicht mit einem eigenen Temperatursensor ausgestattet, sondern verwendet den integrierten Temperatursensor im NFR52833-Chip zur Temperaturmessung. Daher entspricht die gemessene Temperatur eher der Temperatur des Chips und kann von der Umgebungstemperatur abweichen.
+La placa principal Micro:bit no está equipada con un sensor de temperatura, sino que utiliza el sensor de temperatura integrado en el chip NFR52833 para la detección de temperatura. Por lo tanto, la temperatura detectada está más próxima a la temperatura del chip y puede diferir de la temperatura ambiente.
 
-In diesem Projekt verwenden wir den Sensor, um die Temperatur in der aktuellen Umgebung zu messen und die Messergebnisse auf dem Displaygerät anzuzeigen. Anschließend steuern wir die LED-Punktmatrix, sodass durch Festlegen eines Temperaturbereichs unterschiedliche Muster angezeigt werden.
+En este proyecto, utilizaremos el sensor para medir la temperatura en el entorno actual y mostrar los resultados de la medición en el dispositivo de visualización. A continuación, controlaremos la matriz de LED para mostrar diferentes patrones estableciendo el rango de temperatura detectado por el sensor.
 
-**Hinweis: Der Temperatursensor des Micro:bit-Hauptboards ist unten dargestellt:**
+**Nota: el sensor de temperatura de la placa principal Micro:bit se muestra a continuación:**
 
 ![](./media/Python_206c8ec1.png)
 
-2\.  **Vorbereitung**
+2\.  **Preparación**
 
-A. Verbinden Sie das Micro:bit-Hauptboard über das USB-Kabel mit Ihrem Computer
+A. Conecte la placa principal micro:bit a su ordenador mediante el cable USB
 
-B. Öffnen Sie die Offline-Version von Mu.
+B. Abra la versión offline de Mu.
 
-3\.  **Testcode1**
+3\.  **Código de prueba1**
 
-Starten Sie die Mu-Software und öffnen Sie die Datei “Temperature Measurement -1\.py “, um den Code zu importieren. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
+Abra el software Mu e importe el archivo “Temperature Measurement -1\.py “. También puede introducir el código usted mismo en la ventana de edición.
 
-(**Hinweis: Alle Wörter und Symbole müssen in englischer Sprache geschrieben werden.**)
+(**Nota: Todas las palabras y símbolos deben escribirse en inglés.**)
 
 ![](./media/Python_03cbb6e9.png)
 
@@ -36,31 +36,31 @@ while True:
     sleep(500)
 ```
 
-Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
+Haga clic en “Check” para comprobar si hay errores en el código. El programa es incorrecto si aparecen subrayados y cursores. 
 
 ![](./media/Python_7b437c2d.png)
 
-Wenn der Code korrekt ist, verbinden Sie das micro:bit mit dem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
+Si el código es correcto, conecte el micro:bit al ordenador y haga clic en “Flash” para descargar el código en la placa micro:bit.
 
 ![](./media/Python_193065ab.png)
 
-4\.  **Testergebnis1**
+4\.  **Resultado de la prueba1**
 
-Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)**. Klicken Sie auf “REPL” und drücken Sie die Reset-Taste am micro:bit.
+Después de descargar el código a la placa correctamente, **alimente mediante el cable micro USB o una fuente de alimentación externa (ponga el interruptor DIP en ON)**. Haga clic en “REPL” y pulse el botón de reinicio en el micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Im REPL-Fenster wird dann der Umgebungswert der Temperatur angezeigt, wie unten gezeigt: (C steht für Temperatureinheit)
+A continuación, la ventana REPL mostrará el valor de la temperatura ambiente, como se muestra a continuación: (C representa la unidad de temperatura)
 
 ![](./media/Python_d08386d8.png)
 
-5\.  **Testcode2**
+5\.  **Código de prueba2**
 
-Starten Sie die Mu-Software und öffnen Sie die Datei “Temperature Measurement -2\.py “, um den Code zu importieren. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
+Abra el software Mu e importe el archivo “Temperature Measurement -2\.py “. También puede introducir el código usted mismo en la ventana de edición.
 
-(**Hinweis: Alle Wörter und Symbole müssen in englischer Sprache geschrieben werden.**)
+(**Nota: Todas las palabras y símbolos deben escribirse en inglés.**)
 
-Der Temperaturwert kann entsprechend der tatsächlichen Temperatur eingestellt werden.
+El valor de la temperatura se puede ajustar de acuerdo con la temperatura real.
 
 ![](./media/Python_c6456d78.png)
 
@@ -76,23 +76,23 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
+Haga clic en “Check” para comprobar si hay errores en el código. El programa es incorrecto si aparecen subrayados y cursores. 
 
 ![](./media/Python_709d3031.png)
 
-Wenn der Code korrekt ist, verbinden Sie das micro:bit mit dem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
+Si el código es correcto, conecte el micro:bit al ordenador y haga clic en “Flash” para descargar el código en la placa micro:bit.
 
 ![](./media/Python_06f7542e.png)
 
-6\.  **Testergebnis2**
+6\.  **Resultado de la prueba2**
 
-Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
+Después de descargar el código a la placa correctamente, **alimente mediante el cable micro USB o una fuente de alimentación externa (ponga el interruptor DIP en ON)** y pulse el botón de reinicio en el micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Wenn die Umgebungstemperatur unter 35℃ liegt, zeigt die 5×5-LED-Punktmatrix ![](./media/Python_034dc0d5.png) an. Wenn die Temperatur gleich oder größer als 35℃ ist, erscheint das Muster ![](./media/Python_ebfaeac9.png).
+ Cuando la temperatura ambiente es inferior a 35℃, la matriz de LED 5×5 muestra ![](./media/Python_034dc0d5.png). Cuando la temperatura es igual o superior a 35℃, aparece el patrón ![](./media/Python_ebfaeac9.png).
 
-7\.  **Code-Erklärung**
+7\.  **Explicación del código**
 
 ![Img](./media/Python_d7cdc397.png)
 

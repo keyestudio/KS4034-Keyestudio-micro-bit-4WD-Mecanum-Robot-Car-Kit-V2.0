@@ -1,6 +1,6 @@
-Ressourcen-Download
+## Descarga de recursos
 
-Um Ihnen zu helfen, die zugehörigen Codes, Bibliotheken und andere Support-Dateien für dieses Produkt schnell zu erhalten, klicken Sie bitte auf die folgenden Links, um sie herunterzuladen:
+<span style="background:#CC0000;">Para ayudarle a obtener rápidamente los códigos relacionados, las bibliotecas y otros archivos de soporte para este producto, haga clic en los enlaces siguientes para descargarlos:</span>
 
-- [MakeCode-Code und Bibliotheken herunterladen](./Code.7z)
-- [Python-Code und Bibliotheken herunterladen](./PythonCode.7z)
+- [Descarga del código y bibliotecas de MakeCode](./Code.7z)
+- [Descarga del código y bibliotecas de Python](./PythonCode.7z)

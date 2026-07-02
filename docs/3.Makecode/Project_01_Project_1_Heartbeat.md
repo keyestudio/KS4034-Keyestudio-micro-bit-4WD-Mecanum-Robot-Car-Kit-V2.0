@@ -1,12 +1,12 @@
-## Projekt 1: Herzschlag
+## Proyecto 1: Latido del corazón
 
 ![](./media/Makecode_56018947.jpg)
 
-[Klicken Sie hier, um den Code für diese Lektion herunterzuladen](./Code/Heartbeat.hex)
+[Haga clic para descargar el código de esta lección](./Code/Heartbeat.hex)
 
-### (1)Project Description
+### (1)Proyecto Description
 
-(1) Project Description Dieses Projekt lässt sich leicht mit einer Micro:bit main board V2, einem Micro USB-Kabel und einem Computer durchführen. Die LED-Punktmatrix des Micro:bit zeigt zunächst ein relativ großes herzförmiges Muster und dann ein kleineres. Dieser abwechselnde Wechsel des Musters ähnelt einem Herzschlag. Dieses Experiment dient als Einstieg in die Programmierwelt.
+(1) Proyecto Description Este proyecto es fácil de realizar con una Micro:bit main board V2, un cable Micro USB y un ordenador. La matriz de puntos LED del Micro:bit mostrará primero un patrón en forma de corazón relativamente grande y luego uno más pequeño. Este cambio alterno del patrón se asemeja a un latido del corazón. Este experimento sirve como iniciación al mundo de la programación.
 
 ### (2)Components Needed:
 
@@ -16,7 +16,7 @@ Micro USB cable
 
 ### (3)Test Code:
 
-Schließen Sie die Micro:bit main board V2 über das Micro USB-Kabel an Ihren Computer an und beginnen Sie mit der Bearbeitung.
+Conecte la Micro:bit main board V2 a su ordenador mediante el cable Micro USB y comience a editar.
 
 ![](./media/Makecode_46b15e27.gif)
 
@@ -24,10 +24,10 @@ Complete Program :
 
 ![](./media/Makecode_d862ba0e.png)
 
-Hinweis: "on start" bedeutet, dass der Code in diesem Block nur einmal ausgeführt wird, während "forever" besagt, dass der Code zyklisch ausgeführt wird.
+Nota: "on start" significa que el código en este bloque solo se ejecuta una vez, mientras que "forever" implica que el código se ejecuta de forma cíclica.
 
 ### (4)Test Results:
 
-Nach dem Hochladen des Codes sehen Sie auf der Micro:bit-Platine einen Herzschlag-Effekt erscheinen.
+Después de subir el código, verá un efecto de latido aparecer en la placa Micro:bit.
 
 ![](./media/Makecode_e64df1f5.gif)

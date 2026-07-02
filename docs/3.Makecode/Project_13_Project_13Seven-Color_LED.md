@@ -1,45 +1,45 @@
-## Project 13：Seven-Color LED
+## Proyecto 13：Seven-Color LED
 
 ![](./media/Makecode_804e502b.png)
 
-1\.  **Beschreibung**
+1\.  **Descripción**
 
-Dieses Modul besteht aus einer häufig verwendeten LED mit 7 Farben, erscheint jedoch äußerlich weiß. Wenn ein High-Pegel wie bei einer normalen LED angelegt wird, kann sie automatisch verschiedene Farben blinken lassen, um fantastische Lichteffekte zu erzeugen.
+Este módulo consta de un LED de uso común con 7 colores pero con apariencia blanca. Puede parpadear automáticamente en diferentes colores para crear efectos de luz fantásticos cuando se aplica un nivel alto como con un LED normal.
 
-2\.  **Vorbereitung**
+2\.  **Preparación**
 
-- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio   4WD Mecanum Robot Car V2.0 ein
+- Inserte la placa micro:bit en la ranura del keyestudio   4WD Mecanum Robot Car V2.0
 
-- Legen Sie die Batterien in den Batteriehalter ein
+- Coloque las pilas en el portapilas
 
-- Drehen Sie den POWER-Schalter in die ON-Position
+- Gire el interruptor POWER a la posición ON
 
-- Verbinden Sie das micro:bit per USB-Kabel mit Ihrem Computer
+- Conecte el micro:bit a su ordenador mediante un cable USB
 
-- Öffnen Sie die Web-Version von Makecode.
+- Abra la versión web de Makecode.
 
 3\.  **Test Code1**
 
-Lassen Sie die RGB-Leuchte abwechselnd 7 Farben blinken.
+Haga que la luz RGB parpadee alternativamente en las 7 luces.
 
 ![](./media/Makecode_ce9a9550.png)
 
-Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen: 
+Haga clic en “JavaScript” para ver el código JavaScript correspondiente: 
 
 ![](./media/Makecode_1b7f9af6.png)
 
-4\.  **Testergebnis 1**
+4\.  **Resultado del test 1**
 
-Laden Sie Code 1 auf das micro:bit-Board und stellen Sie den POWER-Schalter auf ON. Die 2 RGB-Leuchten des Smart Cars geben zyklisch die Farben Rot, Grün, Blau, Indigo, Dunkelrot, Gelb und Weiß aus.
+Descargue el código 1 en la placa micro:bit y ponga el interruptor POWER en ON; las 2 luces RGB del smart car emiten cíclicamente los colores rojo, verde, azul, índigo, rojo oscuro, amarillo y blanco.
 
 5\.  **Test Code2**
 
 ![](./media/Makecode_bdce981c.png)
 
-Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen: 
+Haga clic en “JavaScript” para ver el código JavaScript correspondiente: 
 
 ![](./media/Makecode_66e64829.png)
 
-6\.  **Testergebnis 2**
+6\.  **Resultado del test 2**
 
-Laden Sie Code 2 auf das micro:bit-Board. Die 2 RGB-Leuchten blinken 1 Sekunde lang und hören dann 1 Sekunde lang auf zu blinken, wiederholt im Zyklus.
+Descargue el código 2 en la placa micro:bit; las 2 luces RGB parpadearán durante 1 segundo y luego dejarán de parpadear durante 1 segundo, de forma cíclica.

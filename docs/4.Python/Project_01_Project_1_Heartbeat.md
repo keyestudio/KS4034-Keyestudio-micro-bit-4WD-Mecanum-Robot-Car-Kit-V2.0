@@ -2,31 +2,31 @@
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Beschreibung**
+1\.  **Descripción**
 
-Dieses Projekt lässt sich ausschließlich mit einem micro:bit Hauptboard und einem micro USB-Kabel leicht durchführen. Dieses Experiment dient als Einstieg, um in die faszinierende Programmierwelt des micro:bit einzutreten.
+Este proyecto es fácil de realizar únicamente con una placa micro:bit y un cable micro USB. Este experimento sirve como introducción para que entres en el mágico mundo de la programación del micro:bit.
 
-2\.  **Vorbereitung**
+2\.  **Preparación**
 
-A. Schließen Sie das micro:bit Hauptboard über das USB-Kabel an Ihren Computer an.
+A. Conecta la placa micro:bit a tu ordenador mediante el cable USB.
 
-B. Öffnen Sie die Offline-Version von Mu.
+B. Abre la versión offline de Mu.
 
-3\.  **Testcode**
+3\.  **Código de prueba**
 
-Öffnen Sie die Mu-Software, tippen Sie „Load“, wählen Sie die Datei „“microbit-Heartbeat\.py“ und klicken Sie auf „open“:
+Abre el software Mu, pulsa “Load”, selecciona el archivo ““microbit-Heartbeat\.py“” y haz clic en “open”:
 
 ![](./media/Python_1ec17d44.png)
 
 ![](./media/Python_4bda2b61.png)
 
-Es gibt eine andere Möglichkeit, Code zu importieren. Öffnen Sie die Mu-Software und ziehen Sie die Datei „microbit-Heartbeat\.py“ hinein.
+Hay otra forma de importar código. Abre Mu y arrastra el archivo “microbit-Heartbeat\.py” dentro.
 
 ![](./media/Python_c5b7322b.png)
 
-Sie können den Code auch direkt im Bearbeitungsfenster eingeben.
+También puedes introducir el código directamente en la ventana de edición.
 
-(**Hinweis: Alle englischen Wörter und Symbole müssen auf Englisch geschrieben sein.**)
+(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés.**)
 
 ![](./media/Python_80af4cb3.png)
 
@@ -39,7 +39,7 @@ while True:
     display.show(Image.HEART_SMALL)
     sleep(500)
 ```
-Nachfolgend eine Liste der eingebauten Bilder:
+A continuación se muestra una lista de imágenes integradas:
 
 • Image.HEART
 
@@ -131,7 +131,7 @@ Image.CLOCK4, Image.CLOCK3, Image.CLOCK2, Image.CLOCK1
 
 • Image.SNAKE，Image.ALL_CLOCKS，Image.ALL_ARROWS
 
-Verbinden Sie das micro:bit Board mit dem Computer über ein USB-Kabel und klicken Sie auf „Flash“, um den Code auf das Board herunterzuladen.
+Conecta la placa micro:bit al ordenador mediante un cable USB y haz clic en “Flash” para descargar el código en la placa.
 
 ![](./media/Python_93e18731.png)
 
@@ -141,47 +141,47 @@ Verbinden Sie das micro:bit Board mit dem Computer über ein USB-Kabel und klick
 
 ![](./media/Python_cc33f1a9.png)
 
-Der Code kann, selbst wenn er fehlerhaft ist, erfolgreich auf das micro:bit Board heruntergeladen werden, jedoch nicht auf dem micro:bit ausgeführt werden.
+El código, aunque esté mal, puede descargarse correctamente en la placa micro:bit, pero no funcionará en el micro:bit.
 
-Klicken Sie auf „Flash“, um den Code auf das micro:bit zu laden.
+Haz clic en “Flash” para descargar el código al micro:bit.
 
 ![](./media/Python_8982d0b0.png)
 
-Klicken Sie auf „REPL“ und drücken Sie die Reset-Taste auf dem micro:bit; die Fehlermeldungen werden im REPL-Fenster angezeigt, wie unten dargestellt:
+Haz clic en “REPL” y pulsa el botón de reinicio en el micro:bit; la información de error se mostrará en la ventana REPL, como se muestra a continuación:
 
 ![](./media/Python_0c2abf18.png)
 
-Klicken Sie erneut auf „REPL“, um den REPL-Modus zu beenden, dann können Sie neuen Code aktualisieren.
+Haz clic de nuevo en “REPL” para desactivar el modo REPL, entonces podrás actualizar el código nuevo.
 
-Um sicherzustellen, dass der Code korrekt ist, tippen Sie einfach auf „Check“. Die Fehler werden im Fenster angezeigt.
+Para asegurarte de que el código es correcto, solo necesitas tocar “Check”. Los errores se mostrarán en la ventana.
 
 ![](./media/Python_b994c0d3.png)
 
-Ändern Sie den Code entsprechend den Hinweisen und klicken Sie auf „Check“.
+Modifica el código de acuerdo con las indicaciones y haz clic en “Check”.
 
 ![](./media/Python_bc5cbed3.png)
 
- Bitte besuchen Sie die Website für weitere Tutorials: [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
+ Por favor, visita el sitio web para más tutoriales: [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
 
-4\.  **Testergebnis**
+4\.  **Resultado de la prueba**
 
-Klicken Sie auf “<span style="color: rgb(255, 76, 65);">**Flash**</span>”, um den Code auf das micro:bit Board zu laden.
+Haz clic en “<span style="color: rgb(255, 76, 65);">**Flash**</span>” para cargar el código en la placa micro:bit.
 
 ![Img](./media/Python_ed83ac25.png)
 
-Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das micro USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste auf dem Board.
+Después de descargar correctamente el código en la placa, **enciende la alimentación mediante el cable micro USB o una fuente de alimentación externa (mueve el interruptor DIP a ON)**, y pulsa el botón de reinicio en la placa.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Die LED-Punktmatrix zeigt abwechselnd das Muster „❤“ und dann „![](./media/Python_04fdfc90.png)“.
+La matriz de puntos LED muestra alternativamente el patrón “❤” y luego “![](./media/Python_04fdfc90.png)”.
 
-5\.  **Code-Erklärung**
+5\.  **Explicación del código**
 
-|from microbit import*|Importieren der Bibliothek des micro:bit|
+|from microbit import*|Importa el archivo de la librería del micro:bit|
 |-|-|
-|while True:|Dies ist eine Endlosschleife, die den micro:bit dazu bringt, den Code in dieser Schleife dauerhaft auszuführen.|
-|display.show(Image.HEART)|micro:bit zeigt „❤“ an|
-|sleep(500)|Verzögerung von 500 ms|
-|display.show(Image.HEART_SMALL)|Die LED-Punktmatrix zeigt „![](./media/Python_04fdfc90.png)“ an|
+|while True:|Este es un bucle permanente que hace que el micro:bit ejecute el código en este bucle para siempre.|
+|display.show(Image.HEART)|micro:bit muestra “❤”|
+|sleep(500)|Retardo de 500 ms|
+|display.show(Image.HEART_SMALL)|La matriz LED muestra “![](./media/Python_04fdfc90.png)”|
 
 ---

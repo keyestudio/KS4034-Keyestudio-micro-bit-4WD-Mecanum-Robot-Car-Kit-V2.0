@@ -1,44 +1,48 @@
-### Projekt 17：Linienverfolgungs-Sensor
+### Proyecto 17：Line Tracking Sensor
 
-#### Projekt 17.1：Erkennung des Linienverfolgungssensors
+#### Proyecto 17.1：Detect Line Tracking Sensor
 
 ![](./media/Python_ea7f6c8c.png)
 
-1\. **Beschreibung**
+1\. **Descripción**
 
-Das Motortreiber-Board des Keyestudio 4WD Mecanum Robot Car verfügt über einen 3-Kanal-Linienverfolgungssensor, der TCRT5000-IR-Bauelemente und 3 Potentiometer verwendet.
+La placa controladora de motor del Keyestudio 4WD Mecanum Robot Car incluye un sensor de seguimiento de línea de 3 canales, que utiliza tubos IR TCRT5000 y 3 potenciómetros.
 
-Das TCRT5000-IR-Bauelement enthält eine IR-Sendediode und eine IR-Empfängerdiode. Wenn die von der Sendediode ausgesandten Infrarot-Signale über Reflexion von der empfangenden Diode detektiert werden, ändert sich der Widerstand der Empfangsdiode, was sich üblicherweise in einer Spannungsänderung im Schaltkreis widerspiegelt.
+El tubo IR TCRT5000 contiene un emisor IR y un receptor IR. Cuando las señales infrarrojas del emisor son recibidas por el receptor mediante reflexión, la resistencia del receptor cambia, lo cual generalmente se refleja en el cambio de voltaje en el circuito.
 
-Der Widerstand variiert abhängig von der Intensität der von der Empfangsdiode empfangenen Infrarot-Signale, was häufig von der Farbe der reflektierenden Fläche und dem Abstand zwischen reflektierender Fläche und Empfangsdiode abhängt. Bei der Erkennung gilt: Schwarz ist auf High-Pegel aktiv, Weiß ist auf Low-Pegel aktiv.
+La resistencia varía dependiendo de la intensidad de las señales infrarrojas recibidas por el receptor, lo cual suele depender del color de la superficie reflectante y de la distancia entre la superficie reflectante y el receptor. En la detección, el negro es activo en nivel alto y el blanco es activo en nivel bajo.
 
-2\.  **Funktionsprinzip**
+2\. **Principio de funcionamiento**
 
-Fährt das Fahrzeug über eine weiße Fahrbahn, sendet die unter dem Fahrzeug angebrachte IR-Sendediode Infrarot-Signale aus, die von der Empfangsdiode reflektiert und zurückgegeben werden. Dann gibt der Ausgang Low-Pegel (0) aus; beim Erkennen schwarzer Linien wird High-Pegel (1) ausgegeben.
+Cuando el coche se desplaza sobre una superficie blanca, el tubo emisor IR instalado bajo el coche emite señales infrarrojas para detectar la carretera y el receptor recibirá las señales enviando respuesta. Entonces la salida ofrece nivel bajo (0); cuando detecta líneas negras, emite nivel alto (1).
 
-Der integrierte 3-Kanal-Tracking-Sensor-Anschluss auf dem 4WD Mecanum Robot Car ist mit den Anschlüssen G, 5V, P10, P4 und P3 auf dem micro:bit-Erweiterungsboard verbunden und wird vom micro:bit über P10, P4 und P3 gesteuert. Das linke TCRT5000-Infrarotpaar auf dem Sensor wird von P3 gesteuert, das mittlere von P4 und das rechte von P10.
+El puerto integrado del sensor de seguimiento de 3 canales en el 4WD Mecanum Robot Car está conectado al puerto de recolección de G, 5V, P10, P4 y P3 en la placa de expansión micro:bit, y es controlado por P10, P4 y P3 del micro:bit. El par IR TCRT5000 izquierdo en el sensor es controlado por P3, el central por P4 y el derecho por P10.
 
-Nachdem Sie ein weißes Blatt Papier unter das 4WD Mecanum Robot Car gelegt haben, drehen Sie die Potentiometer des 3-Kanal-Tracking-Sensors. Leuchtet die Kontroll-LED auf dem Sensormodul, heben Sie das Fahrzeug an, sodass die beiden Räder des 4WD Mecanum Robot Car vom Untergrund abheben. Der Abstand zwischen Papier und Sensor sollte etwa 1,5 cm betragen. Erlischt die Kontroll-LED des Sensormoduls, ist die Empfindlichkeit passend eingestellt.
+Colocando un papel blanco bajo el 4WD Mecanum Robot Car, giraremos los potenciómetros en el sensor de 3 vías. Cuando la luz indicadora en el módulo del sensor esté encendida, levante el coche para separar las dos ruedas del 4WD Mecanum Robot Car. La altura del papel blanco debe ser de aproximadamente 1.5 cm; cuando la luz indicadora en el módulo del sensor se apague, se ha ajustado la sensibilidad.
 
-**Beachten Sie, dass die 5x5-Punktmatrix die Pins P3, P4, P6, P7, P10 verwendet — die Punktmatrixfunktion muss daher deaktiviert werden, wenn der Linienverfolgungssensor verwendet wird.**
+**Tenga en cuenta que como la matriz de puntos 5*5 usa P3 P4 P6 P7 P10, debemos desactivar la función de la matriz de puntos cuando usemos el sensor de seguimiento de línea.**
 
-3\.  **Vorbereitung**
+3\. **Preparación**
 
-- Stecken Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0
-- Legen Sie Batterien in den Batteriehalter ein
-- Schalten Sie den Powerschalter auf ON
-- Verbinden Sie das micro:bit per USB-Kabel mit dem Computer
-- Öffnen Sie die Offline-Version von Mu.
+- Inserte la placa micro:bit en la ranura del Keyestudio 4WD Mecanum Robot Car V2.0
 
-4\.  **Testcode**
+- Coloque las pilas en el portapilas
 
-Öffnen Sie die Mu-Software und laden Sie die Datei “Line tracking detection\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Bearbeitungsfenster eingeben.
+- Gire el interruptor de alimentación a la posición ON
 
-(**Hinweis: Alle englischen Wörter und Symbole müssen auf Englisch geschrieben sein**.)
+- Conecte el micro:bit al ordenador mediante un cable USB
 
-Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Sind Unterstreichungen oder Cursor sichtbar, ist das Programm fehlerhaft.
+- Abra la versión offline de Mu.
 
-Ist der Code korrekt, verbinden Sie das micro:bit mit Ihrem Computer und klicken auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
+4\. **Código de prueba**
+
+Abra el software Mu y abra el archivo “Line tracking detection\.py” para importar el código. También puede introducir el código en la ventana de edición usted mismo.
+
+(**Nota: Todas las palabras y símbolos en inglés deben estar escritos en inglés**.)
+
+Haga clic en “Check” para comprobar errores en el código. El programa estará mal si aparecen subrayados o cursores.
+
+Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
 
 ![](./media/Python_2c7b1c21.png)
 
@@ -60,64 +64,68 @@ while True:
     sleep(200)
 ```
 
-5\.  **Testergebnis**
+5\. **Resultado de la prueba**
 
-Nachdem der Code erfolgreich auf das Board geladen wurde und das USB-Kabel nicht getrennt wurde: Klicken Sie auf “REPL” und drücken Sie dann die Reset-Taste.
+Tras descargar el código en la placa correctamente y sin desconectar el cable USB, haga clic en “REPL” y luego presione el botón de reset.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Die vom linken TCRT5000-IR-Sensor erfassten Werte werden im Monitor angezeigt.
+Las lecturas detectadas por el tubo IR TCRT5000 izquierdo se mostrarán en el monitor.
 
-Wenn der linke TCRT5000-IR-Sensor ein weißes Objekt erkennt, wird 0 angezeigt und die linke Kontroll-LED leuchtet; wenn nur ein schwarzes Objekt erkannt wird, wird 1 angezeigt und die LED ist aus, wie unten gezeigt:
+Cuando el tubo IR TCRT5000 izquierdo detecta un objeto blanco, se mostrará 0 y el indicador izquierdo estará encendido; cuando sólo detecta objeto negro, se mostrará 1 y el indicador estará apagado, como se muestra a continuación:
 
 ![](./media/Python_6a25b450.png)
 
-6\.  **Code-Erklärung**
+6\. **Explicación del código**
 
 ![Img](./media/Python_5dad345e.png)
 
 
-#### Projekt 17.2：Linienverfolgungs-Smartcar
+#### Proyecto 17.2：Tracking Smart Car
 
 ![](./media/Python_f0b62e0f.jpg)
 
-1\. Beschreibung
+1\. Descripción
 
-In dieser Lektion kombinieren wir einen Linienverfolgungssensor mit einem Motor, um ein Linienverfolgungs-Smartcar zu bauen.
+En esta lección combinaremos un sensor de seguimiento de línea con un motor para crear un coche inteligente que siga líneas.
 
-Das micro:bit-Board wertet die Signale aus und steuert das Smartcar, sodass die Linienverfolgungsfunktion ausgeführt wird.
+La placa micro:bit analizará las señales y controlará el coche inteligente para mostrar la función de seguimiento de línea.
 
-2\.  **Funktionsprinzip**
+2\. **Principio de funcionamiento**
 
-Das Smartcar führt je nach den Werten des 3-Kanal-Linienverfolgungssensors unterschiedliche Bewegungen aus.
+El coche inteligente realizará diferentes movimientos según los valores recibidos por el sensor de seguimiento de línea de 3 canales.
 
 ![Img](./media/Python_e672c637.png)
 
-3\.  **Vorbereitung**
+3\. **Preparación**
 
-- Stecken Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0
-- Legen Sie Batterien in den Batteriehalter ein
-- Schalten Sie den Powerschalter auf ON
-- Verbinden Sie das micro:bit per USB-Kabel mit dem Computer
-- Öffnen Sie die Offline-Version von Mu.
+- Inserte la placa micro:bit en la ranura del Keyestudio 4WD Mecanum Robot Car V2.0
 
-**Warnung:** Der 3-Kanal-Tracking-Sensor sollte in einer Umgebung ohne IR-Störungen wie direkte Sonneneinstrahlung verwendet werden. Sonnenlicht enthält viel unsichtbares Licht, z. B. Infrarot und Ultraviolett. In einer Umgebung mit starker Sonneneinstrahlung kann der 3-Kanal-Tracking-Sensor nicht richtig arbeiten.
+- Coloque las pilas en el portapilas
 
-4\.  **Ablaufdiagramm**
+- Gire el interruptor de alimentación a la posición ON
+
+- Conecte el micro:bit al ordenador mediante un cable USB
+
+- Abra la versión offline de Mu.
+
+**Advertencia:** El sensor de 3 vías debe utilizarse en un entorno sin interferencias infrarrojas como la luz solar. La luz solar contiene mucha luz invisible, como infrarrojos y ultravioleta. En un entorno con luz solar intensa, el sensor de 3 vías no funcionará correctamente.
+
+4\. **Diagrama de flujo**
 
 ![Img](./media/Python_47856ed2.png)
 
-5\.  **Testcode**
+5\. **Código de prueba**
 
-Öffnen Sie die Mu-Software und laden Sie die Datei “Line tracking car\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Bearbeitungsfenster eingeben.
+Abra el software Mu y abra el archivo “Line tracking car\.py” para importar el código. También puede introducir el código en la ventana de edición usted mismo.
 
-(**Hinweis: Alle englischen Wörter und Symbole müssen auf Englisch geschrieben sein**.)
+(**Nota: Todas las palabras y símbolos en inglés deben estar escritos en inglés**.)
 
-Klicken Sie auf “Files”, um die Bibliotheksdatei “keyes_mecanum_Car.py” auf das micro:bit zu importieren.
+Haga clic en “Files” para importar el archivo de librería “keyes_mecanum_Car.py” al micro:bit.
 
-Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Sind Unterstreichungen oder Cursor sichtbar, ist das Programm fehlerhaft.
+Haga clic en “Check” para comprobar errores en el código. El programa estará mal si aparecen subrayados o cursores.
 
-Ist der Code korrekt, verbinden Sie das micro:bit mit Ihrem Computer und klicken auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
+Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
 
 ![](./media/Python_bd395cbe.png)
 
@@ -168,22 +176,20 @@ while True:
             mecanumCar.Motor_Lower_R(1, 80)
 ```
 
-6\.  **Testergebnis**
+6\. **Resultado de la prueba**
 
-Nachdem der Code erfolgreich auf das Board geladen wurde: Externe Stromversorgung sicherstellen (DIP-Schalter auf ON stellen) und die Reset-Taste auf dem micro:bit drücken.
+Tras descargar el código en la placa correctamente, **alimenta con fuente externa (mueva el interruptor DIP a ON)**, y presione el botón de reset del micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Das Linienverfolgungsfahrzeug fährt entlang der schwarzen Linie vorwärts.
+El coche seguidor de línea avanza siguiendo la línea negra.
 
-**Hinweis:** (1) Die Breite der schwarzen Linie sollte beim Tracking gleich oder größer als die Breite des Linienverfolgungssensors sein.
+**Nota:** (1) El ancho de la línea negra debe ser igual o mayor que el ancho del sensor de seguimiento de línea durante el seguimiento.
 
-(2) Vermeiden Sie Tests des Smartcars bei starker Beleuchtung.
+(2) Evite probar el coche inteligente bajo luz intensa.
 
-7\.  **Code-Erklärung**
+7\. **Explicación del código**
 
 ![Img](./media/Python_b16f9d7b.png)
 
 ![Img](./media/Python_35f35a4c.png)
-
----

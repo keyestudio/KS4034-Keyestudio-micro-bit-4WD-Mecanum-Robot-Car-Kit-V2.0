@@ -1,87 +1,87 @@
-## Project 7: Accelerometer
+## Proyecto 7: Accelerometer
 
 ![](./media/Makecode_66670811.jpg)
 
-[Klicken Sie hier, um den Code 1 für diese Lektion herunterzuladen](./Code/Accelerometer.hex)
+[Haga clic para descargar el código 1 de esta lección](./Code/Accelerometer.hex)
 
-[Klicken Sie hier, um den Code 2 für diese Lektion herunterzuladen](./Code/Accelerometer2.hex)
+[Haga clic para descargar el código 2 de esta lección](./Code/Accelerometer2.hex)
 
-### (1)Projektbeschreibung:
+### (1)Descripción del proyecto:
 
-Das Micro: Bit main board V2 verfügt über einen integrierten LSM303AGR-Schwerkraft-Beschleunigungssensor, auch Beschleunigungssensor (Accelerometer) genannt, mit einer Auflösung von 8/10/12 Bit. Im Codeabschnitt kann der Messbereich auf 1g, 2g, 4g und 8g eingestellt werden.
+La Micro: Bit main board V2 tiene un sensor de aceleración gravitatoria integrado LSM303AGR, también conocido como acelerómetro, con una resolución de 8/10/12 bits. En la sección de código se puede establecer el rango en 1g, 2g, 4g y 8g.
 
-Beschleunigungssensoren werden häufig zur Erfassung des Zustands von Maschinen eingesetzt. In diesem Projekt zeigen wir, wie die Lage der Platine mit dem Beschleunigungssensor gemessen werden kann. Anschließend betrachten wir die von dem Beschleunigungssensor ausgegebenen rohen Dreiachsendaten.
+A menudo utilizamos acelerómetros para detectar el estado de las máquinas. En este proyecto, introduciremos cómo medir la posición de la placa con el acelerómetro y, a continuación, veremos los datos originales de tres ejes que proporciona el acelerómetro.
 
-### (2)Benötigte Komponenten:
+### (2)Componentes necesarios:
 
 Micro:bit main board V2
 
-Micro-USB-Kabel
+Cable Micro USB
 
-### (3)Testcode 1:
+### (3)Código de prueba 1:
 
-Verbinden Sie den Computer über ein Micro-USB-Kabel mit dem micro:bit-Board und programmieren Sie im MakeCode-Editor,
+Conecte el ordenador a la placa micro:bit mediante un cable Micro USB y programe en el editor MakeCode,
 
 ![](./media/Makecode_2cd48603.gif)
 
-Vollständiges Programm:
+Programa completo:
 
 ![](./media/Makecode_ba28162b.png)
 
-### (4)Testergebnisse 1:
+### (4)Resultados de la prueba 1:
 
-Nachdem Testcode 1 auf das micro:bit V2 hochgeladen wurde, führt eine Änderung der Orientierung der Platine dazu, dass die 5x5-Punktmatrix unterschiedliche Zahlen anzeigt.
+Después de cargar el Código de Prueba 1 en la placa micro:bit V2, cambiar la orientación de la placa hará que la matriz de puntos 5x5 muestre diferentes números.
 
 ![](./media/Makecode_2e6708e6.gif)
 
-Wenn wir das Micro: Bit main board V2 schütteln – unabhängig von der Richtung – zeigt die LED-Punktmatrix die Ziffer "1" an.
+Si agitamos la Micro: Bit main board V2, sin importar la dirección, la matriz de LED muestra el dígito "1".
 
-Wenn es aufrecht gehalten wird (das Logo über der LED-Punktmatrix), wird die Zahl 2 angezeigt.
+Cuando se mantiene en posición vertical (con su logotipo sobre la matriz de LED), aparece el número 2.
 
 ![](./media/Makecode_67247ae1.jpg)
 
-Wenn es umgedreht gehalten wird (das Logo unter der LED-Punktmatrix), erscheint wie unten gezeigt.
+Cuando se mantiene boca abajo (con su logotipo debajo de la matriz de LED), se muestra como abajo.
 
 ![](./media/Makecode_1668a9d0.jpg)
 
-Wenn es ruhig auf dem Schreibtisch liegt und die Vorderseite zeigt, erscheint die Zahl 4.
+Cuando se coloca quieta en el escritorio con el lado delantero hacia arriba, aparece el número 4.
 
 ![](./media/Makecode_0dd33fa1.jpg)
 
-Wenn es ruhig auf dem Schreibtisch liegt und die Rückseite zeigt, erscheint die Zahl 5.
+Cuando se coloca quieta en el escritorio con el lado trasero hacia arriba, aparece el número 5.
 
-Wenn die Platine nach links geneigt wird, zeigt die LED-Punktmatrix die Zahl 6, wie unten gezeigt.
+Cuando la placa se inclina hacia la izquierda, la matriz de LED muestra el número 6 como se muestra a continuación.
 
 ![](./media/Makecode_ce2b3501.jpg)
 
-Wenn die Platine nach rechts geneigt wird, zeigt die LED-Punktmatrix die Zahl 7, wie unten gezeigt.
+Cuando la placa se inclina hacia la derecha, la matriz de LED muestra el número 7 como se muestra a continuación.
 
 ![](./media/Makecode_d098ff98.jpg)
 
-Wenn die Platine auf den Boden geschlagen wird, kann dieser Vorgang als freier Fall betrachtet werden und die LED-Punktmatrix zeigt die Zahl 8. (Bitte beachten Sie, dass dieser Test nicht empfohlen wird, da er die Hauptplatine beschädigen kann.)
+Cuando la placa se golpea contra el suelo, este proceso puede considerarse una caída libre y la matriz de LED muestra el número 8. (tenga en cuenta que esta prueba no se recomienda porque puede dañar la placa principal.)
 
-Achtung: Wenn Sie diese Funktion ausprobieren möchten, können Sie die Beschleunigung auch auf 3g, 6g oder 8g einstellen. Dennoch empfehlen wir dies nicht.
+Atención: si desea probar esta función, también puede configurar la aceleración en 3g, 6g u 8g. Aun así, no lo recomendamos.
 
-### (5)Testcode 2:
+### (5)Código de prueba 2:
 
 ![](./media/Makecode_99083bf6.gif)
 
-Vollständiges Programm:
+Programa completo:
 
 ![](./media/Makecode_42654b0e.png)
 
-### (6) Testergebnisse 2
+### (6) Resultados de la prueba 2
 
-Laden Sie den Testcode auf das micro:bit main board V2 hoch, versorgen Sie die Hauptplatine über das USB-Kabel mit Strom und klicken Sie auf "Show console Device".
+Cargue el código de prueba en la Micro: Bit main board V2, alimente la placa principal a través del cable USB y haga clic en "Show console Device".
 
-Die folgende Oberfläche zeigt die Zerlegungswerte der Beschleunigung in X-, Y- und Z-Achse sowie die Beschleunigungssynthese (Zusammensetzung aus Schwerkraft und anderen externen Kräften).
+La interfaz siguiente muestra los valores de descomposición de la aceleración en los ejes X, Y y Z respectivamente, así como la síntesis de la aceleración (combinación de la gravedad y otras fuerzas externas).
 
 ![](./media/Makecode_c17f5477.gif)
 
-Nach Rückgriff auf das Datenblatt des MMA8653FC und das Hardware-Schema des Micro: Bit main board V2 sind die Beschleunigungskoordinaten der Micro: Bit V2 Hauptplatine in der folgenden Abbildung dargestellt:
+Tras consultar el manual de datos del MMA8653FC y el diagrama esquemático de hardware de la Micro: Bit main board V2, las coordenadas del acelerómetro de la placa base Micro: Bit V2 se muestran en la figura siguiente:
 
 ![](./media/Makecode_79d90885.jpg)
 
-Wenn Sie Windows 7 oder 8 anstelle von Windows 10 verwenden, kann Google Chrome die Geräte nicht erkennen. Sie müssen die CoolTerm-Seriellenmonitor-Software verwenden, um die Daten auszulesen. Öffnen Sie die CoolTerm-Software, klicken Sie auf Options, wählen Sie SerialPort, stellen Sie den COM-Port ein und setzen Sie die Baudrate auf 115200 (nach Tests beträgt die Baudrate der USB-SerialPort-Kommunikation auf dem Micro: Bit main board V2 115200), klicken Sie auf OK und Connect. Der CoolTerm-Serielle Monitor zeigt die Daten der X-, Y- und Z-Achse an, wie in den folgenden Abbildungen dargestellt:
+Si está usando Windows 7 u 8 en lugar de Windows 10, Google Chrome no podrá emparejar los dispositivos. Deberá usar el software de monitor serie CoolTerm para leer los datos. Puede abrir CoolTerm, hacer clic en Options, seleccionar SerialPort, configurar el puerto COM y ajustar la velocidad en baudios a 115200 (tras las pruebas, la velocidad en baudios de la comunicación USB SerialPort en Micro: Bit main board V2 es 115200), hacer clic en OK y Connect. El monitor serie CoolTerm muestra los datos de los ejes X, Y y Z, como se muestra en las figuras siguientes:
 
 ![](./media/Makecode_2a63fc72.gif)

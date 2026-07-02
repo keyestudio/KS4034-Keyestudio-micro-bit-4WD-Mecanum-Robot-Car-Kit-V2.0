@@ -1,24 +1,24 @@
-### Projekt 2：Eine einzelne LED zum Leuchten bringen
+### Proyecto 2：Encender un solo LED
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Beschreibung**
+1\.  **Descripción**
 
-Die LED-Punktmatrix besteht aus 25 Dioden, die in einem 5 × 5-Quadrat angeordnet und an den Kreuzungspunkten der Zeilenleitungen (X) und Spaltenleitungen (Y) platziert sind. Wir können eine der 25 LEDs durch Festlegen von Koordinaten ansteuern. Zum Beispiel befindet sich die erste LED in der ersten Zeile bei (0,0) und die dritte LED in der ersten Zeile bei (2,0) und so weiter.
+La matriz de puntos LED consta de 25 diodos dispuestos en un cuadrado de 5 por 5 y colocados en la intersección de las líneas de fila (X) y las líneas de columna (Y). Podemos controlar uno de los 25 LEDs estableciendo puntos de coordenadas. Por ejemplo, el primer LED en la primera fila está en (0,0) y el tercer LED posicionado en la primera fila está en (2,0) y así sucesivamente.
 
 ![](./media/Python_094d5908.png)
 
-2\.  **Vorbereitung**
+2\.  **Preparación**
 
-A. Schließen Sie das micro:bit-Hauptboard mit dem USB-Kabel an Ihren Computer an.
+A. Conecte la placa principal micro:bit a su ordenador mediante el cable USB
 
-B. Öffnen Sie die Offline-Version von Mu.
+B. Abra la versión offline de Mu.
 
-3\.  **Testcode**
+3\.  **Código de prueba**
 
-Starten Sie die Mu-Software und öffnen Sie die Datei “Single LED display\.py.”, um den Code zu importieren. Sie können den Code auch selbst im Editorfenster eingeben.
+Abra el software Mu y abra el archivo “Single LED display\.py.” para importar el código. También puede introducir el código en la ventana de edición usted mismo.
 
-(**Hinweis: Alle englischen Wörter und Symbole müssen auf Englisch geschrieben werden**)
+(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés**)
 
 ![](./media/Python_9545233e.png)
 
@@ -41,28 +41,28 @@ while True:
 
 ```
 
-Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
+Haga clic en “Check” para examinar errores en el código. El programa se considera erróneo si aparecen subrayados y cursores.
 
 ![](./media/Python_d205be08.png)
 
-Ist der Code korrekt, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
+Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
 
 ![](./media/Python_86dd6eea.png)
 
-4\.  **Testergebnis**
+4\.  **Resultado de la prueba**
 
-Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das micro-USB-Kabel oder eine externe Stromversorgung ein (schalten Sie den DIP-Schalter auf ON)** und drücken Sie die Reset-Taste auf dem Board.
+Después de descargar el código en la placa correctamente, **alimente mediante el cable micro USB o una fuente de alimentación externa (mueva el interruptor DIP a ON)** y presione el botón de reinicio en la placa.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Die LED an (1,0) wird 0,5 s an- und ausgeschaltet, dann die LED an (3,4) ebenfalls 0,5 s an- und ausgeschaltet und dieses Sequenz wiederholt sich.
+El LED en (1,0) se encenderá y apagará durante 0,5 s y el de (3,4) se encenderá y apagará durante 0,5 s, repitiendo esta secuencia.
 
-5\.  **Code-Erklärung**
+5\.  **Explicación del código**
 
 ![Img](./media/Python_c79b7922.png)
 
-6\.  **Referenz**
+6\.  **Referencia**
 
-sleep(ms) : Verzögerungszeit
+sleep(ms) : tiempo de retardo
 
-Für weitere Details zur Verzögerung siehe den Link: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
+Para más detalles sobre la demora, consulte el enlace: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

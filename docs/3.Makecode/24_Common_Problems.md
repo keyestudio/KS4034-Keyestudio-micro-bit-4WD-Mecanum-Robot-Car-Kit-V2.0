@@ -1,13 +1,13 @@
-## Häufige Probleme
+## Problemas comunes
 
-1\.  **Das Auto reagiert nicht**
+1\.  **El coche no reacciona**
 
-Bitte prüfen Sie, ob die Batterien ausreichend geladen sind
+Compruebe si las baterías tienen suficiente carga
 
-Bitte prüfen Sie, ob die Verkabelung korrekt ist
+Compruebe si el cableado es correcto
 
-2\.  **Computer erkennen die USB-Anschlüsse nicht**
+2\.  **Los ordenadores no reconocen los puertos USB**
 
-Bitte stellen Sie sicher, dass der microbit driver installiert ist
+Asegúrese de que el microbit driver esté instalado
 
-Bitte prüfen Sie, ob das USB-Kabel in gutem Zustand ist
+Compruebe si el cable USB está en buen estado

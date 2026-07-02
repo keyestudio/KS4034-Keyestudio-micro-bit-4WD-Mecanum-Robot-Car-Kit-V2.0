@@ -1,68 +1,68 @@
-## Projekt 15：Servo
+## Proyecto 15：Servo
 
 ![](./media/Makecode_215da878.png)
 
-1\.  **Beschreibung**
+1\.  **Descripción**
 
-Bei DIY-Smartcars ist häufig eine automatische Hindernisvermeidung integriert. Im DIY-Prozess wird ein Servomotor verwendet, um das Ultraschallmodul nach links und rechts zu drehen und so den Abstand zwischen dem Fahrzeug und einem Hindernis zu messen, damit das Fahrzeug dem Hindernis ausweichen kann. Wenn andere Mikrocontroller zur Steuerung der Servodrehung verwendet werden, müssen bestimmte Frequenzen und Pulsbreiten eingestellt werden, um den Servowinkel zu steuern.
+En los coches inteligentes DIY, a menudo se incluye la función de evitación automática de obstáculos. En el proceso de construcción necesitamos usar un servo para controlar que el módulo ultrasónico gire hacia la izquierda y la derecha, y así detectar la distancia entre el coche y el obstáculo, de modo que se pueda controlar el coche para evitarlo. Si se utilizan otros microcontroladores para controlar la rotación del servo, es necesario establecer una cierta frecuencia y una determinada anchura de pulso para controlar el ángulo del servo.
 
-Wird jedoch das micro:bit-Hauptboard zur Steuerung des Servowinkels verwendet, muss im Entwicklungsumgebung nur der Steuerwinkel eingestellt werden; das entsprechende Steuersignal (Puls) wird dann automatisch erzeugt, um die Servodrehung zu steuern. In diesem Projekt lernen Sie, wie der Servo zwischen 0° und 90° hin und her gesteuert wird.
+Sin embargo, si se utiliza la placa principal micro:bit para controlar el ángulo del servo, solo es necesario establecer el ángulo de control en el entorno de desarrollo; el pulso correspondiente se generará automáticamente para controlar la rotación del servo. En este proyecto aprenderás a controlar el servo para que gire hacia adelante y hacia atrás entre 0° y 90°.
 
-2\.  **Informationen zum Servo**
+2\.  **Información del Servo**
 
-Ein Servomotor ist ein drehbarer Aktuator zur Positionsregelung. Er besteht hauptsächlich aus Gehäuse, Leiterplatte, kernlosem Motor, Getriebe und Positionssensor. Das Funktionsprinzip besteht darin, dass der Servo das vom MCU oder Empfänger gesendete Signal empfängt, ein Referenzsignal mit einer Periode von 20 ms und einer Breite von 1,5 ms erzeugt, dann die erhaltene Gleichspannungs-Vorspannung mit der Spannung des Potentiometers vergleicht und die Spannungsdifferenz als Ausgang liefert.
+El servomotor es un actuador rotativo de control de posición. Se compone principalmente de carcasa, placa de circuito, motor sin núcleo, engranajes y sensor de posición. Su principio de funcionamiento es que el servo recibe la señal enviada por el MCU o el receptor, genera una señal de referencia con un periodo de 20 ms y una anchura de 1.5 ms, luego compara la tensión de polarización continua obtenida con la tensión del potenciómetro y obtiene la diferencia de tensión como salida.
 
 ![](./media/Makecode_87b41036.png)
 
-Bei dem in diesem Projekt verwendeten Servo ist das braune Kabel Masse, das rote Kabel die Stromversorgung (V+) und das orangefarbene Kabel das Signalsignal.
+Para el servo usado en este proyecto, el cable marrón es la masa, el rojo es el positivo y el naranja es el cable de señal.
 
-Der Drehwinkel des Servomotors wird durch Regelung des Tastverhältnisses des PWM- (Pulse-Width Modulation) Signals gesteuert. Der Standardzyklus des PWM-Signals beträgt 20 ms (50 Hz). Theoretisch liegt die Pulsbreite zwischen 1 ms und 2 ms, in der Praxis jedoch zwischen 0,5 ms und 2,5 ms. Die Pulsbreite entspricht dem Drehwinkel von 0° bis 180°. Beachten Sie jedoch, dass bei Motoren verschiedener Hersteller dasselbe Signal zu unterschiedlichen Drehwinkeln führen kann.
+El ángulo de rotación del servomotor se controla regulando el ciclo de trabajo de la señal PWM (Pulse-Width Modulation). El ciclo estándar de la señal PWM es de 20 ms (50 Hz). Teóricamente la anchura se distribuye entre 1 ms y 2 ms, pero en la práctica está entre 0.5 ms y 2.5 ms. La anchura corresponde al ángulo de rotación de 0° a 180°. Tenga en cuenta que para motores de marcas diferentes, la misma señal puede producir ángulos de rotación distintos.
 
 ![](./media/Makecode_49467dfa.png)
 
-Mehr Details:
+Más detalles:
 
 ![](./media/Makecode_b167d550.png)
 
-3\.  **Parameter**
+3\.  **Parámetros**
 
-- Arbeitsspannung: DC 4.8V ~ 6V
+- Tensión de trabajo: DC 4.8V ~ 6V
 
-- Einstellbarer Winkelbereich: ca. 180 ° (bei 500 → 2500 μsec)
+- Rango de ángulo operativo: alrededor de 180 ° (a 500 → 2500 μsec)
 
-- Pulsbreitenbereich: 500 → 2500 μsec
+- Rango de anchura de pulso: 500 → 2500 μsec
 
-- Leerlaufdrehzahl: 0.12 ± 0.01 s / 60 (DC 4.8V) 0.1 ± 0.01 s / 60 (DC 6V)
+- Velocidad sin carga: 0.12 ± 0.01 s / 60 (DC 4.8V) 0.1 ± 0.01 s / 60 (DC 6V)
 
-- Leerlaufstrom: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
+- Corriente sin carga: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
 
-- Haltemoment (Stoppmoment): 1.3 ± 0.01kg·cm (DC 4.8V) 1.5 ± 0.1kg·cm (DC 6V)
+- Par de detención: 1.3 ± 0.01kg·cm (DC 4.8V) 1.5 ± 0.1kg·cm (DC 6V)
 
-- Stoppstrom: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- Corriente de parada: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- Bereitschaftsstrom: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
+- Corriente en espera: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
 
-4\.  **Vorbereitung**
+4\.  **Preparación**
 
-- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio   4WD Mecanum Robot Car V2.0 ein
+- Inserte la placa micro:bit en la ranura del keyestudio   4WD Mecanum Robot Car V2.0
 
-- Legen Sie Batterien in den Batteriehalter ein
+- Coloque las pilas en el portapilas
 
-- Schalten Sie den Powerschalter auf die ON-Stellung
+- Ponga el interruptor de alimentación en la posición ON
 
-- Verbinden Sie das micro:bit per USB-Kabel mit Ihrem Computer
+- Conecte la micro:bit a su ordenador mediante un cable USB
 
-- Öffnen Sie die Web-Version von Makecode
+- Abra la versión Web de Makecode
 
 
-5\.  **Testcode**
+5\.  **Código de prueba**
 
 ![](./media/Makecode_087e1822.png)
 
-Klicken Sie auf "JavaScript", um den entsprechenden JavaScript-Code anzuzeigen:
+Haga clic en "JavaScript" para ver el código JavaScript correspondiente:
 
 ![](./media/Makecode_2354311f.png)
 
-6.  **Testergebnis**
+6.  **Resultado de la prueba**
 
-Nach dem Hochladen des Testcodes und Einschalten des POWER-Schalters dreht sich der Servo von 0 Grad bis 180 Grad.
+Tras cargar el código de prueba y colocar el interruptor POWER en ON, el servo gira de 0 grados a 180 grados.

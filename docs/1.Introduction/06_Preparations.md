@@ -1,1 +1,1 @@
-## Vorbereitungen
+## Preparativos

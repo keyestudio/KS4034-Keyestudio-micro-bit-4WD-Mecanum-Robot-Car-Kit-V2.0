@@ -1,7 +1,7 @@
-## Ressourcen-Download
+## Descarga de recursos
 
-<span style="background:#FF0000;">Um Ihnen zu helfen, schnell die zugehörigen Codes, Bibliotheken und andere Support-Dateien für dieses Produkt zu erhalten, klicken Sie bitte auf die folgenden Links, um sie herunterzuladen:</span>
+<span style="background:#FF0000;">Para ayudarle a obtener rápidamente los códigos, bibliotecas y otros archivos de soporte relacionados con este producto, haga clic en los siguientes enlaces para descargarlos:</span>
 
-- [Makecode-Code- und Bibliotheks-Downloads](./Code.7z)
+- [Descargas de código y bibliotecas de Makecode](./Code.7z)
 
 ---

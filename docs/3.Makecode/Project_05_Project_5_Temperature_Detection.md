@@ -1,47 +1,47 @@
-## Projekt 5: Temperaturerkennung
+## Proyecto 5: Detección de temperatura
 
 ![](./media/Makecode_22c6434f.jpg)
 
-[Klicken Sie hier, um den Code 1 für diese Lektion herunterzuladen](./Code/Temperature-Detection.hex)
+[Haga clic para descargar el código 1 de esta lección](./Code/Temperature-Detection.hex)
 
-[Klicken Sie hier, um den Code 2 für diese Lektion herunterzuladen](./Code/Temperature-Detection2.hex)
+[Haga clic para descargar el código 2 de esta lección](./Code/Temperature-Detection2.hex)
 
-### (1)Projektbeschreibung:
+### (1)Descripción del proyecto:
 
-Die Micro:bit main board V2 ist nicht mit einem eigenen Temperatursensor ausgestattet, sondern verwendet den im NFR52833-Chip integrierten Temperatursensor zur Temperaturmessung. Daher entspricht die gemessene Temperatur eher der Temperatur des Chips und kann vom Umgebungstemperaturwert abweichen.
+La Micro:bit main board V2 no está equipada con un sensor de temperatura dedicado, sino que utiliza el sensor de temperatura integrado en el chip NFR52833 para la detección. Por lo tanto, la temperatura detectada está más cercana a la del chip y puede diferir de la temperatura ambiente.
 
-### (2)Benötigte Komponenten:
+### (2)Componentes necesarios:
 
 Micro:bit main board V2
 
-Micro-USB-Kabel
+Cable Micro USB
 
-### (3)Testcode 1 :
+### (3)Código de prueba 1 :
 
 ![](./media/Makecode_e6674fe9.gif)
 
-### (4)Testergebnisse 1:
+### (4)Resultados de la prueba 1:
 
-Nachdem Sie Testcode 1 auf das Micro:bit main board V2 hochgeladen, das Board über das USB-Kabel mit Strom versorgt und auf "Show console Device" geklickt haben, werden die Temperaturdaten auf der seriellen Monitorseite wie unten angezeigt.
+Tras subir el código de prueba 1 a la Micro:bit main board V2, alimentar la placa mediante el cable USB y hacer clic en "Show console Device", los datos de temperatura se muestran en la página del monitor serie como se indica a continuación.
 
 ![](./media/Makecode_898eded8.gif)
 
-Wenn Sie Windows 7 oder 8 statt Windows 10 verwenden, kann Google Chrome die Geräte nicht erkennen. Sie müssen die CoolTerm-Software als seriellen Monitor verwenden, um die Daten zu lesen. Öffnen Sie die CoolTerm-Software, klicken Sie auf Options, wählen Sie SerialPort, legen Sie den COM-Port fest und stellen Sie die Baudrate auf 115200 ein (nach Tests ist die Baudrate der USB-SerialPort-Kommunikation auf dem Micro:bit main board V2 115200), klicken Sie OK und dann Connect. Der CoolTerm-Seriellmonitor zeigt die Temperaturänderungen in der aktuellen Umgebung, wie in den folgenden Abbildungen dargestellt:
+Si está utilizando Windows 7 u 8 en lugar de Windows 10, Google Chrome no podrá emparejar los dispositivos. Deberá usar el software de monitor serie CoolTerm para leer los datos. Abra CoolTerm, haga clic en Options, seleccione SerialPort, ajuste el puerto COM y establezca la velocidad en baudios a 115200 (tras las pruebas, la velocidad en baudios de la comunicación USB SerialPort en la Micro:bit main board V2 es 115200), haga clic en OK y luego en Connect. El monitor serie CoolTerm muestra el cambio de temperatura en el entorno actual, como se muestra en las siguientes imágenes:
 
 ![](./media/Makecode_268159a1.gif)
 
-### (5)Testcode 2 :
+### (5)Código de prueba 2 :
 
-Verbinden Sie den Computer mit dem Micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor,
+Enlace el ordenador con la placa micro:bit mediante un cable Micro USB y programe en el editor MakeCode,
 
 ![](./media/Makecode_4057bdd7.gif)
 
-Vollständiges Programm :
+Programa completo :
 
 ![](./media/Makecode_ec457959.png)
 
-### (6)Testergebnisse 2:
+### (6)Resultados de la prueba 2:
 
-Nach dem Hochladen von Code 2 zeigt die 5x5 LED-Punktmatrix ![](./media/Makecode_350d26c6.png), wenn die Umgebungstemperatur weniger als 35℃ beträgt. Wenn die Temperatur gleich oder größer als 35℃ ist, erscheint das Muster ![](./media/Makecode_ef8d7c88.png).
+Después de subir el código 2, cuando la temperatura ambiente es inferior a 35℃, la matriz de puntos LED 5x5 muestra ![](./media/Makecode_350d26c6.png). Cuando la temperatura es igual o superior a 35℃ aparece el patrón ![](./media/Makecode_ef8d7c88.png).
 
 ---

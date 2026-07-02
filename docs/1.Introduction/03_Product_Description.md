@@ -1,7 +1,7 @@
 ## Product Description 
 
-Dieses Produkt ist ein intelligentes Auto basierend auf Micro:bit. Es integriert eine Vielzahl von Funktionen wie Ultraschall-Folgen, Linienverfolgung, Infrarotsteuerung sowie Bluetooth-Steuerung. Es verfügt über einen passiven Summer zum Abspielen von Musik, 4 WS2812RGB-LEDs zur Anzeige verschiedener Farben und 2 siebenfarbige Leuchten als Blinker für das Fahrzeug. Dieses Produkt verwendet zwei 18650-Lithiumbatterien als Stromversorgung.  
+Este producto es un coche inteligente basado en Micro:bit. Integra una serie de funciones como seguimiento por ultrasonidos, seguimiento de línea, control por infrarrojos así como control por Bluetooth. Cuenta con un zumbador pasivo para reproducir música, 4 LED WS2812RGB para mostrar diferentes colores y 2 luces de siete colores para hacer las luces direccionales del coche. Este producto utiliza dos baterías de litio 18650 para la alimentación.  
 
-Beim Einbau und Entfernen der Batterie achten Sie bitte auf die Plus- und Minuspolung der Batterie und stellen Sie sicher, dass Sie diese nicht verwechseln. Übrigens ist die Motordrehzahl dieses Produkts einstellbar.
+Al instalar y desmontar la batería, preste atención a los polos positivo y negativo de la batería y asegúrese de no invertirlos. Por cierto, la velocidad del motor de este producto es ajustable.
 
-Um Ihnen eine bessere Erfahrung zu bieten, sind entsprechende Dokumente zur Installation und Beispiel-Testcodes ebenfalls beigefügt.
+Con el fin de ofrecerle una mejor experiencia, también se proporcionan documentos correspondientes sobre la instalación y el código de prueba.
