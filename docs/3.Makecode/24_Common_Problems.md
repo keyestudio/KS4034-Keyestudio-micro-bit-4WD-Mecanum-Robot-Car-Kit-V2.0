@@ -1,13 +1,13 @@
-## Problèmes courants
+## Problemi comuni
 
-1\.  **La voiture ne réagit pas**
+1\.  **L'auto non reagisce**
 
-Veuillez vérifier si les batteries sont suffisamment chargées
+Controllare se le batterie sono sufficientemente cariche
 
-Veuillez vérifier si le câblage est correct
+Controllare se il cablaggio è corretto
 
-2\.  **Les ordinateurs ne reconnaissent pas les ports USB**
+2\.  **I computer non riescono a riconoscere le porte USB**
 
-Veuillez vérifier que le microbit driver est installé
+Verificare che il microbit driver sia installato
 
-Veuillez vérifier si le câble USB est en bon état
+Controllare se il cavo USB è in buone condizioni

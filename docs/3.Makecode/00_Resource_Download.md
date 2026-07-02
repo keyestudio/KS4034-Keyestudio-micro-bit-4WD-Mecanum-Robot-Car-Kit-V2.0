@@ -1,7 +1,7 @@
-## Téléchargement des ressources
+## Download delle risorse
 
-<span style="background:#FF0000;">Pour vous aider à obtenir rapidement les codes, bibliothèques et autres fichiers d'assistance liés à ce produit, veuillez cliquer sur les liens ci-dessous pour les télécharger :</span>
+<span style="background:#FF0000;">Per aiutarti a ottenere rapidamente i codici, le librerie e altri file di supporto relativi a questo prodotto, fai clic sui collegamenti seguenti per scaricarli:</span>
 
-- [Téléchargements du code Makecode et des bibliothèques](./Code.7z)
+- [Download del codice Makecode e delle librerie](./Code.7z)
 
 ---

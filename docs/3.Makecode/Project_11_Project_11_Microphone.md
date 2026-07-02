@@ -1,49 +1,49 @@
-## Projet 11 : Microphone
+## Progetto 11: Microfono
 
 ![](./media/Makecode_d2f14bdc.jpg)
 
-[Cliquez pour télécharger le code 1 de cette leçon](./Code/Microphone.hex)
+[Click to download the code 1 for this lesson](./Code/Microphone.hex)
 
-[Cliquez pour télécharger le code 2 de cette leçon](./Code/Microphone2.hex)
+[Click to download the code 2 for this lesson](./Code/Microphone2.hex)
 
-### (1)Description du projet :
+### (1)Descrizione del progetto:
 
-La carte principale Micro:bit main board V2 est équipée d’un microphone qui peut mesurer le volume de l’environnement ambiant. Lorsque vous applaudissez, le voyant LED du microphone s’allume. Comme il peut mesurer l’intensité du son, vous pouvez réaliser une échelle de bruit ou un éclairage disco qui change avec la musique. Le microphone est placé en face du voyant LED du microphone et à proximité d’orifices qui laissent passer le son. Lorsque la carte détecte un son, le témoin LED s’allume.
+La scheda principale Micro:bit main board V2 è dotata di un microfono che può misurare il volume dell’ambiente circostante. Quando battete le mani, il LED indicatore del microfono si accende. Poiché può misurare l’intensità del suono, è possibile realizzare una scala del rumore o un’illuminazione da disco che cambia con la musica. Il microfono è posizionato sul lato opposto rispetto al LED indicatore del microfono e vicino a dei fori che lasciano passare il suono. Quando la scheda rileva un suono, il LED indicatore si accende.
 
-### (2)Composants nécessaires :
+### (2)Componenti necessari:
 
 Micro:bit main board V2
 
-Câble Micro USB
+Cavo Micro USB
 
-### (3)Code de test 1 :
+### (3)Codice di test 1:
 
-Reliez l’ordinateur à la carte micro:bit avec un câble micro USB et programmez dans l’éditeur MakeCode,
+Collegate il computer alla scheda micro:bit con un cavo Micro USB e programmate nell’editor MakeCode,
 
 ![](./media/Makecode_7c037c9b.gif)
 
-Programme complet :
+Programma completo:
 
 ![](./media/Makecode_1ea97896.png)
 
-### (4)Résultats du test 1 :
+### (4)Risultati del test 1:
 
-Après avoir chargé le code, un grand icône de cœur s’affiche lorsque du son ambiant est détecté, et un petit icône de cœur lorsque l’environnement est calme (Remarque : les sons trop faibles pour être détectés ne déclencheront pas la réponse).
+Dopo aver caricato il codice, viene visualizzata un’icona grande a forma di cuore quando viene rilevato il suono ambientale, e un’icona a forma di cuore più piccola quando l’ambiente è silenzioso (Nota: suoni troppo deboli per essere rilevati non attiveranno la risposta).
 
 ![](./media/Makecode_facbbb50.gif)
 
-### (5)Code de test 2 :
+### (5)Codice di test 2:
 
-Reliez l’ordinateur à la carte micro:bit avec un câble micro USB et programmez dans l’éditeur MakeCode,
+Collegate il computer alla scheda micro:bit con un cavo Micro USB e programmate nell’editor MakeCode,
 
 ![](./media/Makecode_68e37f22.gif)
 
-Programme complet :
+Programma completo:
 
 ![](./media/Makecode_9851e889.png)
 
-### (6)Résultats du test 2 :
+### (6)Risultati del test 2:
 
 ![](./media/Makecode_0b914334.gif)
 
-Après le téléchargement du code, la matrice de points pulse en synchronisation avec les variations sonores. L’appui sur la touche « A » affiche la valeur numérique du son actuel.
+Dopo aver caricato il codice, la matrice di punti pulsa in sincronia con le variazioni del suono. Premendo il tasto “A” viene visualizzato il valore numerico del suono corrente.

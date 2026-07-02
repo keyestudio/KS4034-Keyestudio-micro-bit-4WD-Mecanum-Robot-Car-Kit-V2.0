@@ -1,40 +1,40 @@
-## Projet 8 : Détection de la lumière
+## Progetto 8: Rilevamento della luce
 
 ![](./media/Makecode_14063ef9.jpg)
 
-[Cliquez pour télécharger le code de cette leçon](./Code/Light-Detection.hex)
+[Fai clic per scaricare il codice per questa lezione](./Code/Light-Detection.hex)
 
-### (1) Description du projet :
+### (1) Descrizione del progetto:
 
-Dans ce projet, nous nous concentrons sur la fonction de détection de la lumière du Micro: Bit main board V2. Cela est réalisé par la matrice de LED, car la carte principale n'est pas équipée d'une photorésistance.
+In questo progetto ci concentriamo sulla funzione di rilevamento della luce del Micro: Bit main board V2. Questo è ottenuto tramite la matrice di LED poiché la scheda principale non è dotata di un fotoresistore.
 
-### (2) Composants nécessaires :
+### (2) Componenti necessari:
 
 Micro:bit main board V2
 
-Câble Micro USB
+Cavo Micro USB
 
-### (3) Code de test :
+### (3) Codice di test:
 
-Reliez l'ordinateur à la carte micro:bit via le câble Micro USB et programmez dans l'éditeur MakeCode,
+Collegare il computer alla scheda micro:bit tramite cavo Micro USB e programmare nell'editor MakeCode,
 
 ![](./media/Makecode_38ffa3b8.gif)
 
-Programme complet :
+Programma completo :
 
 ![](./media/Makecode_5b9a2acf.png)
 
-### (4) Résultats du test :
+### (4) Risultati del test:
 
-Téléversez le code de test sur le micro:bit main board V2, alimentez la carte via le câble USB et cliquez sur "Show console Device".
+Caricare il codice di test sul micro:bit main board V2, alimentare la scheda tramite il cavo USB e fare clic su "Show console Device".
 
-Lorsque la matrice de points LED est couverte par la main, l'intensité lumineuse affichée est d'environ 0 ; lorsque la matrice de points LED est exposée à la lumière, l'intensité lumineuse affichée augmente avec la luminosité, comme montré ci-dessous.
+Quando la matrice di punti LED è coperta con la mano, l'intensità luminosa visualizzata è circa 0; quando la matrice di punti LED è esposta alla luce, l'intensità luminosa mostrata aumenta con la luce come mostrato sotto.
 
 ![](./media/Makecode_11dd3c0b.gif)
 
-Si vous utilisez Windows 7 ou 8 au lieu de Windows 10, Google Chrome ne pourra pas reconnaître les appareils. Vous devrez utiliser le logiciel de moniteur série CoolTerm pour lire les données.
+Se si utilizza Windows 7 o 8 anziché Windows 10, Google Chrome non riuscirà ad associare i dispositivi. È necessario utilizzare il software di monitor seriale CoolTerm per leggere i dati.
 
-Vous pouvez ouvrir le logiciel CoolTerm, cliquer sur Options, sélectionner SerialPort, définir le COM port et régler la baud rate sur 115200 (après test, la baud rate de la communication USB SerialPort sur le Micro: Bit main board V2 est 115200), cliquer sur OK, puis sur Connect. Le moniteur série CoolTerm affiche la valeur de l'intensité lumineuse, comme illustré ci-dessous :
+È possibile aprire il software CoolTerm, fare clic su Options, selezionare SerialPort, impostare il COM port e impostare la baud rate su 115200 (dopo i test, la baud rate della comunicazione USB SerialPort sul Micro: Bit main board V2 è 115200), fare clic su OK e Connect. Il monitor seriale CoolTerm mostra il valore dell'intensità luminosa, come mostrato nelle figure seguenti :
 
 ![](./media/Makecode_3c6eae52.gif)
 

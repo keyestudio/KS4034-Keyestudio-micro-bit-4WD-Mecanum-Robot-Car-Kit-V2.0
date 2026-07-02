@@ -1,33 +1,33 @@
-## Projet 10: Touch-sensitive Logo
+## Progetto 10: Touch-sensitive Logo
 
 ![](./media/Makecode_445a7708.jpg)
 
-[Cliquez ici pour télécharger le code de cette leçon](./Code/Touch-sensitive-Logo.hex)
+[Fai clic per scaricare il codice per questa lezione](./Code/Touch-sensitive-Logo.hex)
 
-### (1)Description du projet :
+### (1)Descrizione del progetto:
 
-La carte principale Micro:bit main board V2 est équipée d'un logo doré sensible au toucher, qui peut fonctionner comme un composant d'entrée et agir comme un bouton supplémentaire.
+La scheda principale Micro:bit main board V2 è dotata di un logo dorato sensibile al tocco, che può fungere da componente di input e funzionare come un pulsante aggiuntivo.
 
-Il contient un capteur tactile capacitif qui détecte de petits changements du champ électrique lorsqu'il est pressé (ou touché), tout comme l'écran de votre téléphone ou de votre tablette. Lorsque vous le pressez, vous pouvez activer le programme.
+Contiene un sensore tattile capacitivo che rileva piccole variazioni del campo elettrico quando viene premuto (o toccato), proprio come lo schermo del tuo telefono o tablet. Quando lo premi, puoi attivare il programma.
 
-### (2)Composants nécessaires :
+### (2)Componenti necessari:
 
 Micro:bit main board V2
 
-Câble Micro USB
+Cavo Micro USB
 
-### (3)Code de test :
+### (3)Codice di prova:
 
-Reliez l'ordinateur à la carte micro:bit avec un câble Micro USB et programmez dans l'éditeur MakeCode,
+Collega il computer alla scheda micro:bit tramite cavo Micro USB e programma nell'editor MakeCode,
 
 ![](./media/Makecode_54cc5b8a.gif)
 
-Programme complet :
+Programma completo:
 
 ![](./media/Makecode_2ba9bf7d.png)
 
-### (4)Résultats du test :
+### (4)Risultati del test:
 
-Après le téléchargement du code, toucher le logo avec votre main affichera une forme de cœur sur la matrice de points. En relâchant la touche, un numéro apparaît ; un contact plus long affiche des nombres plus grands.
+Dopo aver caricato il codice, toccando il logo con la mano verrà visualizzata una forma a cuore sulla matrice di punti. Rilasciando il tocco apparirà un numero; contatti più lunghi mostreranno numeri più grandi.
 
 ![](./media/Makecode_46b832c8.gif)

@@ -1,48 +1,48 @@
-## Projet 17：Line Tracking Sensor
+## Progetto 17：Line Tracking Sensor
 
-### Projet 17.1：Detect Line Tracking Sensor
+### Progetto 17.1：Detect Line Tracking Sensor
 
 ![](./media/Makecode_ea7f6c8c.png)
 
-1\. **Description**
+1\. **Descrizione**
 
-La carte pilote du Keyestudio 4WD Mecanum Robot Car est fournie avec un capteur de suivi de ligne 3 canaux, qui utilise des modules IR TCRT5000 et 3 potentiomètres.
+La scheda driver del motore del Keyestudio 4WD Mecanum Robot Car è fornita con un sensore di tracciamento linea a 3 canali, che utilizza moduli IR TCRT5000 e 3 potenziometri.
 
-Le module IR TCRT5000 contient un émetteur IR et un récepteur IR. Lorsque les signaux infrarouges de l’émetteur sont reçus par le récepteur après réflexion, la résistance du récepteur change, ce qui se traduit généralement par une variation de tension dans le circuit.  
+Il modulo IR TCRT5000 contiene un emettitore IR e un ricevitore IR. Quando i segnali infrarossi dell’emettitore vengono ricevuti dal ricevitore tramite riflessione, la resistenza del ricevitore cambia, il che si riflette generalmente in una variazione di tensione nel circuito.  
 
-La résistance varie en fonction de l’intensité des signaux infrarouges reçus par le récepteur, ce qui dépend souvent de la couleur de la surface réfléchissante et de la distance entre la surface réfléchissante et le récepteur. Lors de la détection, le noir correspond à un niveau haut actif et le blanc à un niveau bas actif. 
+La resistenza varia in funzione dell’intensità dei segnali infrarossi ricevuti dal ricevitore, che dipende spesso dal colore della superficie riflettente e dalla distanza tra la superficie riflettente e il ricevitore. Durante la rilevazione, il nero è attivo ad alto livello e il bianco è attivo a basso livello. 
 
-2\.  **Working Principle**
+2\.  **Principio di funzionamento**
 
-Lorsque la voiture roule au-dessus d’une route blanche, la diode IR installée sous la voiture émet des signaux infrarouges pour détecter la route et la diode réceptrice reçoit et renvoie les signaux. Ensuite la sortie fournit un niveau bas (0) ; lorsqu’elle détecte des lignes noires, elle fournit un niveau haut (1).
+Quando l’auto percorre una strada bianca, il tubo emettitore IR installato sotto l’auto emette segnali infrarossi per rilevare la strada e il tubo ricevitore riceve i segnali e li rimanda. Quindi l’uscita fornisce un livello basso (0); quando rileva linee nere, fornisce un livello alto (1).
 
-Après avoir placé une feuille blanche sous le 4WD Mecanum Robot Car, nous tournerons les potentiomètres du capteur de suivi 3 voies. Lorsque la LED d’indication du module capteur s’allume, soulevez la voiture de façon à ce que les deux roues du 4WD Mecanum Robot Car puissent tourner librement. La hauteur entre le papier blanc et le capteur est d’environ 1,5 cm ; lorsque la LED du module capteur s’éteint, la sensibilité est correctement réglée.
+Dopo aver posizionato un foglio bianco sotto il 4WD Mecanum Robot Car, ruoteremo i potenziometri sul sensore di tracciamento a 3 vie. Quando il LED di indicazione sul modulo sensore è acceso, sollevare l’auto in modo che le due ruote del 4WD Mecanum Robot Car siano libere di girare. L’altezza del foglio bianco è di circa 1,5 cm; quando il LED del modulo sensore si spegne, la sensibilità è correttamente regolata.
 
-3\.  **Preparation**
+3\.  **Preparazione**
 
-- Insérez la carte micro:bit dans la fente du keyestudio 4WD Mecanum Robot Car V2.0
+- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
 
-- Placez des piles dans le porte-piles
+- Inserire le batterie nel portabatterie
 
-- Positionnez l’interrupteur d’alimentation sur ON
+- Impostare l’interruttore di alimentazione su ON
 
-- Connectez le micro:bit à votre ordinateur via un câble USB
+- Collegare il micro:bit al computer tramite un cavo USB
 
-- Ouvrez la version Web de Makecode
+- Aprire la versione Web di Makecode
 
-4\.  **Test Code**
+4\.  **Codice di test**
 
 ![](./media/Makecode_3683d83f.png)
 
-Cliquez sur “JavaScript” pour voir le code JavaScript correspondant : 
+Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript: 
 
 ![](./media/Makecode_4b440616.png)
 
-5\.  **Test Result**
+5\.  **Risultato del test**
 
-Téléversez le code sur la carte micro:bit, positionnez l’interrupteur POWER sur ON. 
+Caricare il codice sulla scheda micro:bit e impostare l’interruttore POWER su ON. 
 
-Ouvrez CoolTerm, cliquez sur Options et sélectionnez SerialPort. Définissez le port COM et le débit sur 115200. Cliquez sur “OK” puis “Connect”.
+Aprire CoolTerm, fare clic su Options per selezionare SerialPort. Impostare la porta COM e il baud rate a 115200. Fare clic su “OK” e “Connect”.
 
 ![](./media/Makecode_ea164439.png)
 
@@ -52,46 +52,46 @@ Ouvrez CoolTerm, cliquez sur Options et sélectionnez SerialPort. Définissez le
 
 ![](./media/Makecode_13238e98.png)
 
-Le moniteur série CoolTerm affiche les signaux numériques lus par les capteurs de suivi de ligne.
+Il monitor seriale di CoolTerm mostra i segnali digitali letti dai sensori di tracciamento linea.
 
 ![](./media/Makecode_0141051a.png)
 
-### Projet 17.2：Tracking Smart Car
+### Progetto 17.2：Tracking Smart Car
 
 ![Img](./media/Makecode_547634e4.png)
 
-1\. **Description**
+1\. **Descrizione**
 
-Dans cette leçon, nous combinerons un capteur de suivi de ligne avec un moteur pour réaliser une voiture intelligente de suivi de ligne.
+In questa lezione combineremo un sensore di tracciamento linea con un motore per realizzare un'auto intelligente per il tracciamento della linea.
 
-La carte micro:bit analysera les signaux et contrôlera la voiture intelligente pour démontrer la fonction de suivi de ligne.
+La scheda micro:bit analizzerà i segnali e controllerà l’auto intelligente per mostrare la funzione di tracciamento della linea.
 
-2\. **Working Principle**
+2\. **Principio di funzionamento**
 
-La voiture intelligente effectuera différents mouvements en fonction des valeurs reçues par le capteur de suivi de ligne 3 canaux.
+L’auto intelligente eseguirà movimenti differenti a seconda dei valori ricevuti dal sensore di tracciamento linea a 3 canali.
 
 ![Img](./media/Makecode_bbccdb34.png)
 
-3\. **Preparation**
+3\. **Preparazione**
 
-- Insérez la carte micro:bit dans la fente du keyestudio 4WD Mecanum Robot Car V2.0
+- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
 
-- Placez des piles dans le porte-piles
+- Inserire le batterie nel portabatterie
 
-- Positionnez l’interrupteur d’alimentation sur ON
+- Impostare l’interruttore di alimentazione su ON
 
-- Connectez le micro:bit à votre ordinateur via un câble USB
+- Collegare il micro:bit al computer tramite un cavo USB
 
-- Ouvrez la version Web de Makecode
+- Aprire la versione Web di Makecode
 
-**Warning:** Le capteur de suivi 3 voies doit être utilisé dans des environnements sans interférence infrarouge tels que la lumière directe du soleil. La lumière du soleil contient beaucoup de lumière invisible, comme l’infrarouge et l’ultraviolet. Dans un environnement très ensoleillé, le capteur 3 voies ne fonctionnera pas correctement.
+**Attenzione:** Il sensore di tracciamento a 3 vie deve essere utilizzato in ambienti senza interferenze infrarosse come la luce solare diretta. La luce solare contiene molta luce invisibile, come infrarossi e ultravioletti. In un ambiente con forte luce solare, il sensore a 3 vie potrebbe non funzionare correttamente.
 
-4\.**Flow Chart**
+4\.**Diagramma di flusso**
 
 ![Img](./media/Makecode_70f1fd80.png)
 
 
-5\.  **Test Code**
+5\.  **Codice di test**
 
 ![](./media/Makecode_4b104155.png)
 
@@ -102,16 +102,16 @@ La voiture intelligente effectuera différents mouvements en fonction des valeur
 ![Img](./media/Makecode_ca91a31f.png)
 
 
-Cliquez sur “JavaScript” pour voir le code JavaScript correspondant :
+Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript:
 
 ![](./media/Makecode_f5caa06a.png)
 
 ![](./media/Makecode_8f5f07ec.png)
 
-5\. **Test Result**
+5\. **Risultato del test**
 
-Téléversez le code sur le micro:bit et positionnez l’interrupteur POWER sur ON, la voiture de suivi suit la ligne noire vers l’avant.
+Caricare il codice sul micro:bit e impostare il POWER su ON; l’auto di tracciamento seguirà la linea nera andando avanti.
 
-**Note :** activez l’interrupteur à l’arrière de la voiture micro:bit ; la largeur de la ligne noire doit être supérieure à la largeur du capteur de suivi de ligne.
+**Nota:** accendere l’interruttore sul retro dell’auto micro:bit; la larghezza della linea nera dovrebbe essere maggiore della larghezza del sensore di tracciamento linea.
 
-Évitez de tester la voiture intelligente sous un fort éclairage.
+Evitare di testare l’auto intelligente sotto luce intensa.

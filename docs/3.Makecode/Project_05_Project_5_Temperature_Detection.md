@@ -1,47 +1,47 @@
-## Projet 5 : Détection de la température
+## Progetto 5: Rilevamento della temperatura
 
 ![](./media/Makecode_22c6434f.jpg)
 
-[Cliquez pour télécharger le code 1 de cette leçon](./Code/Temperature-Detection.hex)
+[Clicca per scaricare il codice 1 per questa lezione](./Code/Temperature-Detection.hex)
 
-[Cliquez pour télécharger le code 2 de cette leçon](./Code/Temperature-Detection2.hex)
+[Clicca per scaricare il codice 2 per questa lezione](./Code/Temperature-Detection2.hex)
 
-### (1)Description du projet :
+### (1)Descrizione del progetto:
 
-La carte principale Micro:bit main board V2 n'est pas équipée d'un capteur de température, mais utilise le capteur de température intégré au circuit NFR52833 pour la détection. Par conséquent, la température détectée est plus proche de la température du circuit et peut différer de la température ambiante.
+La Micro:bit main board V2 non è dotata di un sensore di temperatura dedicato, ma utilizza il sensore di temperatura integrato nel chip NFR52833 per la rilevazione. Pertanto, la temperatura rilevata è più vicina alla temperatura del chip e potrebbe discostarsi dalla temperatura ambiente.
 
-### (2)Composants nécessaires :
+### (2)Componenti necessari:
 
 Micro:bit main board V2
 
-Câble Micro USB
+Cavo Micro USB
 
-### (3)Code de test 1 :
+### (3)Codice di test 1 :
 
 ![](./media/Makecode_e6674fe9.gif)
 
-### (4)Résultats du test 1 :
+### (4)Risultati del test 1:
 
-Après avoir téléversé le code de test 1 sur le Micro:bit main board V2, alimenté la carte via le câble USB et cliqué sur "Show console Device", les données de température s'affichent dans le moniteur série comme illustré ci-dessous.
+Dopo aver caricato il codice di test 1 sulla Micro:bit main board V2, alimentato la scheda tramite il cavo USB e fatto clic su "Show console Device", i dati della temperatura vengono visualizzati nella pagina del monitor seriale come mostrato di seguito.
 
 ![](./media/Makecode_898eded8.gif)
 
-Si vous utilisez Windows 7 ou 8 au lieu de Windows 10, Google Chrome ne pourra pas appairer les périphériques. Vous devrez utiliser le logiciel de moniteur série CoolTerm pour lire les données. Ouvrez CoolTerm, cliquez sur Options, sélectionnez SerialPort, choisissez le port COM et réglez le débit en bauds sur 115200 (après essais, le débit en bauds de la communication USB SerialPort sur le Micro:bit main board V2 est 115200), cliquez sur OK, puis Connect. Le moniteur série CoolTerm affiche la variation de la température dans l'environnement courant, comme montré dans les images ci-dessous :
+Se si utilizza Windows 7 o 8 invece di Windows 10, Google Chrome non sarà in grado di rilevare i dispositivi. È necessario utilizzare il software CoolTerm come monitor seriale per leggere i dati. Avviare CoolTerm, cliccare su Options, selezionare SerialPort, impostare la porta COM e impostare la velocità in baud su 115200 (dai test, la velocità di comunicazione USB SerialPort sulla Micro:bit main board V2 è 115200), cliccare OK e poi Connect. Il monitor seriale CoolTerm mostra la variazione della temperatura nell'ambiente corrente, come nelle figure seguenti:
 
 ![](./media/Makecode_268159a1.gif)
 
-### (5)Code de test 2 :
+### (5)Codice di test 2 :
 
-Reliez l'ordinateur à la carte micro:bit par un câble Micro USB et programmez dans l'éditeur MakeCode,
+Collegare il computer alla scheda micro:bit tramite cavo Micro USB e programmare nell'editor MakeCode,
 
 ![](./media/Makecode_4057bdd7.gif)
 
-Programme complet :
+Programma completo :
 
 ![](./media/Makecode_ec457959.png)
 
-### (6)Résultats du test 2 :
+### (6)Risultati del test 2:
 
-Après le téléchargement du code 2, lorsque la température ambiante est inférieure à 35℃, la matrice LED 5x5 affiche ![](./media/Makecode_350d26c6.png). Lorsque la température est égale ou supérieure à 35℃, le motif ![](./media/Makecode_ef8d7c88.png) apparaît.
+Dopo aver caricato il codice 2, quando la temperatura ambiente è inferiore a 35℃, la matrice di LED 5x5 mostra ![](./media/Makecode_350d26c6.png). Quando la temperatura è pari o superiore a 35℃ compare il motivo ![](./media/Makecode_ef8d7c88.png).
 
 ---

@@ -1,14 +1,14 @@
-## Projet 16：Motor
+## Progetto 16：Motor
 
 ![](./media/Makecode_77f3b857.png)
 
-1\.  **Description**
+1\.  **Descrizione**
 
-La Keyestudio 4WD Mecanum Robot Car est équipée de 4 moteurs à courant continu à réduction (également appelés moteurs à engrenages), développés à partir d'un moteur CC ordinaire. Il possède une boîte de réduction assortie qui fournit une vitesse plus faible mais un couple plus élevé. De plus, différents rapports de réduction de la boîte peuvent fournir différentes vitesses et couples.
+La Keyestudio 4WD Mecanum Robot Car è dotata di 4 motori DC a riduzione, detti anche motori con riduttore, sviluppati a partire da un motore DC ordinario. È provvista di una scatola di riduzione abbinata che fornisce una velocità inferiore ma una coppia maggiore. Inoltre, rapporti di riduzione diversi della scatola possono fornire velocità e coppie differenti.
 
-Le moteur à engrenages est l'intégration d'un motoréducteur et d'un moteur, largement utilisé dans l'industrie sidérurgique et mécanique.
+Il motore con riduttore è l'integrazione di motoriduttore e motore, ampiamente applicato nell'industria siderurgica e meccanica.
 
-Le shield pilote moteur pour micro:bit est équipé d'une puce DRV8833. Afin d'économiser les broches IO, nous contrôlons la direction de rotation et la vitesse des 4 moteurs DC à engrenages avec la puce DRV8833.
+Lo shield driver per motore micro:bit è dotato di un chip DRV8833. Per risparmiare risorse delle porte IO, controlliamo la direzione di rotazione e la velocità dei 4 motori DC con riduttore tramite il chip DRV8833.
 
 ![Img](./media/Makecode_4c9781dc.png)
 
@@ -26,29 +26,29 @@ STC8G1K08 Chip circuit
 
 HR8833 Motor driver circuit
 
-2\.  **Préparation**
+2\.  **Preparazione**
 
-- Insérez la carte micro:bit dans la fente du keyestudio 4WD Mecanum Robot Car V2.0
+- Inserire la scheda micro:bit nello slot della keyestudio 4WD Mecanum Robot Car V2.0
 
-- Placez les piles dans le support de piles
+- Inserire le batterie nel portabatterie
 
-- Positionnez l'interrupteur d'alimentation sur ON
+- Portare l'interruttore di alimentazione su ON
 
-- Connectez le micro:bit à votre ordinateur via un câble USB
+- Collegare il micro:bit al computer tramite un cavo USB
 
-- Ouvrez la version Web de Makecode
+- Aprire la versione Web di Makecode
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_3a759dd8.png)
 
-Cliquez sur“JavaScript" pour afficher le code JavaScript correspondant : 
+Cliccare su“JavaScript" per visualizzare il codice JavaScript corrispondente: 
 
 ![](./media/Makecode_242ba6ca.png)
 
-4\.  **Résultat du test1**
+4\.  **Risultato del test1**
 
-Téléchargez le code 1 sur la carte micro:bit, positionnez l'interrupteur POWER sur ON. La voiture intelligente avance pendant 2s puis s'arrête pendant 2s.
+Scaricare il codice 1 sulla scheda micro:bit, portare l'interruttore POWER su ON. L'auto intelligente procede in avanti per 2s e si ferma per 2s.
 
 5\.  **Test Code2**
 
@@ -56,10 +56,10 @@ Téléchargez le code 1 sur la carte micro:bit, positionnez l'interrupteur POWER
 
 ![Img](./media/Makecode_4eb6b574.png)
 
-Cliquez sur“JavaScript" pour afficher le code JavaScript correspondant : 
+Cliccare su“JavaScript" per visualizzare il codice JavaScript corrispondente: 
 
 ![](./media/Makecode_ee70b846.png)
 
-6\.  **Résultat du test2**
+6\.  **Risultato del test2**
 
-Téléchargez le code 2 sur la carte micro:bit, la voiture avance pendant 2s, recule pendant 2s, tourne à gauche pendant 2s, tourne à droite pendant 2s, s'arrête pendant 2s et répète ce cycle.
+Scaricare il codice 2 sulla scheda micro:bit: l'auto procede in avanti per 2s, retrocede per 2s, svolta a sinistra per 2s, svolta a destra per 2s, si ferma per 2s e ripete questo schema.

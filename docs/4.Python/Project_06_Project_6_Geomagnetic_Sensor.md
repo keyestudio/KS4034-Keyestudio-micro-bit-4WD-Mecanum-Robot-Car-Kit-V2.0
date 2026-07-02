@@ -1,28 +1,28 @@
-### Projet 6：Geomagnetic Sensor
+### Progetto 6：Geomagnetic Sensor
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **Description**
+1\.  **Descrizione**
 
-Ce projet présente principalement l’utilisation du capteur géomagnétique du micro:bit. En plus de détecter l’intensité du champ magnétique, il peut également servir à déterminer la direction, ce qui constitue une partie importante du système de référence d’orientation (AHRS).
+Questo progetto introduce principalmente l’uso del sensore geomagnetico del micro:bit. Oltre a rilevare l’intensità del campo magnetico, può anche essere usato per determinare la direzione, che è una parte importante del sistema di riferimento di rotta e assetto (AHRS).
 
-Il utilise le magnétomètre triaxial FreescaleMAG3110. Son interface I2C communique avec l’extérieur, la plage est ±1000µT et la fréquence maximale de mise à jour des données est de 80Hz. Combiné avec un accéléromètre, il peut calculer la position. De plus, il est utilisé pour la détection magnétique et les blocs boussole.
+Utilizza il magnetometro triassiale FreescaleMAG3110. La sua interfaccia I2C comunica con l’esterno, l’intervallo è ±1000µT e la velocità massima di aggiornamento dei dati è 80Hz. In combinazione con un accelerometro, può calcolare la posizione. Inoltre è applicato al rilevamento magnetico e ai blocchi bussola.
 
-Ensuite, nous pouvons lire la valeur détectée par celui-ci pour déterminer la position. Il est nécessaire d’étalonner (calibrer) la carte micro:bit lorsque le capteur magnétique fonctionne. La méthode correcte de calibration consiste à faire tourner la carte micro:bit.
+Possiamo poi leggere il valore rilevato per determinare l’orientamento. È necessario calibrare la scheda micro:bit quando il sensore magnetico è in funzione. Il metodo di calibrazione corretto è ruotare la scheda micro:bit.
 
-De plus, les objets à proximité peuvent affecter la précision des relevés et de la calibration.
+Inoltre, gli oggetti nelle vicinanze possono influenzare la precisione delle letture e della calibrazione.
 
-2\.  **Préparation**
+2\.  **Preparazione**
 
-A. Connectez la carte principale micro:bit à votre ordinateur via le câble USB
+A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
 
-B. Ouvrez la version hors ligne de Mu.
+B. Aprire la versione offline di Mu.
 
 3\.  **Test Code1**
 
-Lancez le logiciel Mu et ouvrez le fichier “Magnetic sensor -1\.py” pour importer le code. Vous pouvez aussi saisir le code directement dans la fenêtre d’édition.
+Avviare il software Mu e aprire il file “Magnetic sensor -1\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais**.)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
 
 ![](./media/Python_1366c5ed.png)
 
@@ -36,37 +36,37 @@ while True:
     if button_a.is_pressed():
         display.scroll(compass.heading())
 ```
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés. 
+Fare clic su “Check” per esaminare gli errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
 
 ![](./media/Python_5bfe40c4.png)
 
-Si le code est correct, connectez le micro:bit à l’ordinateur et cliquez sur “Flash” pour transférer le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_695d8f29.png)
 
-4\.  **Résultat du test1**
+4\.  **Risultato del test1**
 
-Après avoir téléchargé le code sur la carte avec succès, **mettez sous tension via le câble micro USB ou une alimentation externe (positionnez l’interrupteur DIP sur ON)**, puis appuyez sur le bouton Reset du micro:bit.
+Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l’interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- La matrice de LED affiche “TILT TO FILL SCREEN”. En appuyant sur le bouton A, la carte demande de calibrer la boussole. Ensuite, entrez dans la page de calibration. Faites tourner la carte jusqu’à ce que les 25 LED rouges soient allumées, comme montré ci‑dessous.
+ La matrice di LED mostra “TILT TO FILL SCREEN”. Premendo il pulsante A, la scheda richiede di calibrare la bussola. Quindi si accede alla pagina di calibrazione. Ruotare la scheda finché tutti i 25 LED rossi sono accesi, come mostrato di seguito.
 
 ![](./media/Python_c8fd6670.jpg)
 
-Après cela, un motif sourire ![](./media/Python_a3b91e3e.png) apparaît, ce qui implique que la calibration est terminée. Lorsque le processus de calibration est terminé, l’appui sur le bouton A affichera directement la lecture du magnétomètre sur l’écran. Les directions nord, est, sud et ouest correspondent respectivement à 0°, 90°, 180° et 270°.
+Dopo ciò appare un motivo a sorriso ![](./media/Python_a3b91e3e.png), che implica che la calibrazione è completata. Quando il processo di calibrazione è terminato, premendo il pulsante A la lettura del magnetometro verrà mostrata direttamente sullo schermo. Le direzioni nord, est, sud e ovest corrispondono rispettivamente a 0°, 90°, 180° e 270°.
 
 5\.  **Test Code2**
 
-Pour l’image ci‑dessous, la flèche pointera vers le haut à droite lorsque la valeur est comprise entre 292,5 et 337,5. Comme 0,5 ne peut pas être entré dans le code, les valeurs que nous utilisons sont 293 et 338.
+Per l’immagine sottostante, la freccia punterà in alto a destra quando il valore è compreso tra 292,5 e 337,5. Poiché 0,5 non può essere inserito nel codice, i valori che utilizziamo sono 293 e 338.
 
-Ajoutez ensuite d’autres instructions pour constituer un code complet.
+Aggiungere poi altre istruzioni per creare un codice completo.
 
 ![](./media/Python_d1a4e9f6.png)
 
-Lancez le logiciel Mu et ouvrez le fichier “Magnetic sensor -2\.py” pour importer le code. Vous pouvez aussi saisir le code directement dans la fenêtre d’édition.
+Avviare il software Mu e aprire il file “Magnetic sensor -2\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
 
 ![](./media/Python_5b0d8e26.png)
 
@@ -95,23 +95,23 @@ while True:
 
 ```
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés. 
+Fare clic su “Check” per esaminare gli errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
 
 ![](./media/Python_42389bcf.png)
 
-Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour transférer le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_bedc607a.png)
 
-6\.  **Résultat du test**
+6\.  **Risultato del test**
 
-Après avoir téléchargé le code sur la carte avec succès, **mettez sous tension via le câble micro USB ou une alimentation externe (positionnez l’interrupteur DIP sur ON)**, puis appuyez sur le bouton Reset du micro:bit.
+Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l’interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Après la calibration, faites tourner la carte micro:bit, puis la matrice de LED affiche les indicateurs de direction. 
+Dopo la calibrazione, ruotare la scheda micro:bit, quindi la matrice di LED visualizza i simboli di direzione. 
 
-7\.  **Explication du code**
+7\.  **Spiegazione del codice**
 
 ![Img](./media/Python_76f66bb0.png)
 

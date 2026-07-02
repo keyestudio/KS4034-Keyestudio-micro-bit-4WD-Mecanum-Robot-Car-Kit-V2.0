@@ -1,68 +1,68 @@
-## Projet 15：Servo
+## Progetto 15：Servo
 
 ![](./media/Makecode_215da878.png)
 
-1\.  **Description**
+1\.  **Descrizione**
 
-Pour les voitures intelligentes DIY, il y a souvent une fonction d'évitement automatique des obstacles. Dans le processus DIY, nous devons utiliser un servomoteur pour faire tourner le module ultrasonique à gauche et à droite, puis détecter la distance entre la voiture et l'obstacle afin de contrôler la voiture pour éviter l'obstacle. Si d'autres microcontrôleurs sont utilisés pour contrôler la rotation du servo, il faut régler une certaine fréquence et une certaine largeur d'impulsion pour contrôler l'angle du servo.
+Per le auto smart fai-da-te, è spesso presente la funzione di evitamento automatico degli ostacoli. Nel processo di realizzazione dobbiamo usare un servo per controllare il modulo ad ultrasuoni affinché ruoti a sinistra e a destra, quindi rilevare la distanza tra l'auto e l'ostacolo, in modo da controllare l'auto per evitare l'ostacolo. Se si utilizzano altri microcontrollori per controllare la rotazione del servo, è necessario impostare una certa frequenza e una certa larghezza di impulso per controllare l'angolo del servo.
 
-Cependant, si la carte principale micro:bit est utilisée pour contrôler l'angle du servo, il suffit de définir l'angle de contrôle dans l'environnement de développement ; l'impulsion correspondante sera automatiquement générée pour contrôler la rotation du servo. Dans ce projet, vous apprendrez à contrôler le servo pour qu'il oscille entre 0° et 90°.
+Tuttavia, se si utilizza la scheda principale micro:bit per controllare l'angolo del servo, è sufficiente impostare l'angolo di controllo nell'ambiente di sviluppo; l'impulso corrispondente viene impostato automaticamente per controllare la rotazione del servo. In questo progetto imparerai come controllare il servo per farlo oscillare tra 0° e 90°.
 
-2\.  **Informations sur le servo**
+2\.  **Informazioni sul Servo**
 
-Un servomoteur est un actionneur rotatif de contrôle de position. Il se compose principalement d'un boîtier, d'une carte électronique, d'un moteur sans noyau, d'engrenages et d'un capteur de position. Son principe de fonctionnement est que le servo reçoit le signal envoyé par le MCU ou le récepteur, produit un signal de référence avec une période de 20 ms et une largeur de 1,5 ms, puis compare la tension de décalage continue acquise à la tension du potentiomètre et obtient la différence de tension en sortie.
+Un servomotore è un attuatore rotante per il controllo della posizione. È costituito principalmente da involucro, circuito stampato, motore senza nucleo, ingranaggi e sensore di posizione. Il suo principio di funzionamento è che il servo riceve il segnale inviato dal MCU o dal ricevitore, produce un segnale di riferimento con periodo di 20 ms e larghezza di 1,5 ms, quindi confronta la tensione di polarizzazione continua acquisita con la tensione del potenziometro e ottiene la differenza di tensione in uscita.
 
 ![](./media/Makecode_87b41036.png)
 
-Pour le servo utilisé dans ce projet, le fil marron est la masse, le fil rouge est l'alimentation positive et le fil orange est le fil de signal.
+Per il servo utilizzato in questo progetto, il filo marrone è la massa, quello rosso è il positivo e quello arancione è il filo del segnale.
 
-L'angle de rotation du servomoteur est contrôlé en régulant le rapport cyclique du signal PWM (Pulse-Width Modulation). Le cycle standard du signal PWM est de 20 ms (50 Hz). Théoriquement, la largeur est répartie entre 1 ms et 2 ms, mais en pratique elle se situe entre 0,5 ms et 2,5 ms. La largeur correspond à l'angle de rotation de 0° à 180°. Notez cependant que pour des moteurs de marques différentes, le même signal peut produire des angles de rotation différents.
+L'angolo di rotazione del servomotore è controllato regolando il ciclo di lavoro del segnale PWM (Pulse-Width Modulation). Il ciclo standard del segnale PWM è di 20 ms (50 Hz). Teoricamente la larghezza è compresa tra 1 ms e 2 ms, ma in pratica è tra 0,5 ms e 2,5 ms. La larghezza corrisponde all'angolo di rotazione da 0° a 180°. Nota che per motori di marche diverse lo stesso segnale può produrre angoli di rotazione differenti.
 
 ![](./media/Makecode_49467dfa.png)
 
-Plus de détails :
+Ulteriori dettagli:
 
 ![](./media/Makecode_b167d550.png)
 
-3\.  **Paramètres**
+3\.  **Parametri**
 
-- Tension de fonctionnement : DC 4.8V ~ 6V
+- Tensione di funzionamento: DC 4.8V ~ 6V
 
-- Plage d'angle de fonctionnement : environ 180 ° (à 500 → 2500 μsec)
+- Intervallo di angolo operativo: circa 180 ° (a 500 → 2500 μsec)
 
-- Plage de largeur d'impulsion : 500 → 2500 μsec
+- Intervallo di larghezza d'impulso: 500 → 2500 μsec
 
-- Vitesse à vide : 0.12 ± 0.01 s / 60 (DC 4.8V) 0.1 ± 0.01 s / 60 (DC 6V)
+- Velocità a vuoto: 0.12 ± 0.01 s / 60 (DC 4.8V) 0.1 ± 0.01 s / 60 (DC 6V)
 
-- Courant à vide : 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
+- Corrente a vuoto: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
 
-- Couple de maintien : 1.3 ± 0.01kg·cm (DC 4.8V) 1.5 ± 0.1kg·cm (DC 6V)
+- Coppia di arresto: 1.3 ± 0.01kg·cm (DC 4.8V) 1.5 ± 0.1kg·cm (DC 6V)
 
-- Courant d'arrêt : ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- Corrente di arresto: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- Courant de veille : 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
+- Corrente in standby: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
 
-4\.  **Préparation**
+4\.  **Preparazione**
 
-- Insérez la carte micro:bit dans l'emplacement du keyestudio   4WD Mecanum Robot Car V2.0
+- Inserire la scheda micro:bit nello slot del keyestudio   4WD Mecanum Robot Car V2.0
 
-- Placez les piles dans le porte-piles
+- Inserire le batterie nel portabatterie
 
-- Positionnez l'interrupteur d'alimentation sur ON
+- Portare l'interruttore di alimentazione sulla posizione ON
 
-- Connectez la micro:bit à votre ordinateur via un câble USB
+- Collegare la micro:bit al computer tramite cavo USB
 
-- Ouvrez la version Web de Makecode
+- Aprire la versione Web di Makecode
 
 
-5\.  **Code de test**
+5\.  **Codice di test**
 
 ![](./media/Makecode_087e1822.png)
 
-Cliquez sur "JavaScript" pour voir le code JavaScript correspondant :
+Cliccare su "JavaScript" per visualizzare il corrispondente codice JavaScript:
 
 ![](./media/Makecode_2354311f.png)
 
-6.  **Résultat du test**
+6.  **Risultato del test**
 
-Après avoir téléversé le code de test et positionné l'interrupteur POWER sur ON, le servo tourne de 0 degré à 180 degrés.
+Dopo aver caricato il codice di test e portato l'interruttore POWER su ON, il servo ruota da 0 gradi a 180 gradi.

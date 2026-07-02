@@ -1,31 +1,31 @@
-## Projet 9: Speaker
+## Progetto 9: Speaker
 
 ![](./media/Makecode_a4828463.jpg)
 
-[Cliquer pour télécharger le code de cette leçon](./Code/Speaker.hex)
+[Clicca per scaricare il codice per questa lezione](./Code/Speaker.hex)
 
-### (1)Projet Description:
+### (1)Progetto Description:
 
-La carte principale Micro: Bit main board V2 est équipée d'un haut-parleur intégré, ce qui facilite l'ajout de sons aux programmes. Nous pouvons programmer le haut-parleur pour émettre toutes sortes de tonalités, par exemple jouer la chanson *Ode to Joy*.
+La scheda principale Micro: Bit main board V2 è dotata di un altoparlante integrato, il che rende più semplice aggiungere suoni ai programmi. Possiamo programmare l'altoparlante per riprodurre ogni tipo di tono, ad esempio il brano *Ode to Joy*.
 
 ### (2)Components Needed:
 
 Micro:bit main board V2 
 
-Câble Micro USB
+Cavo Micro USB
 
 ### (3)Test Code :
 
-Reliez l'ordinateur à la carte micro:bit à l'aide du câble Micro USB, puis programmez dans l'éditeur MakeCode,
+Collegare il computer alla scheda micro:bit mediante il cavo Micro USB e programmare nell'editor MakeCode,
 
 ![](./media/Makecode_6f271fce.gif)
 
-Programme complet :
+Programma completo:
 
 ![](./media/Makecode_8f4c2e63.png)
 
 ### (4)Test Results:
 
-Après avoir téléchargé le code de test sur le micro:bit main board V2 et alimenté la carte via le câble USB, le haut-parleur émet un son et la matrice de LED affiche une icône musicale.
+Dopo aver caricato il codice di test sul micro:bit main board V2 e alimentato la scheda tramite il cavo USB, l'altoparlante emette suono e la matrice LED a punti mostra l'icona della musica.
 
 ![](./media/Makecode_73f47c8f.gif)

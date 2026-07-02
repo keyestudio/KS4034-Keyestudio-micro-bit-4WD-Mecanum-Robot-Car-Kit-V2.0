@@ -1,25 +1,25 @@
-### Projet 3：Matrice de points LED 5×5
+### Progetto 3：Matrice LED 5×5
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Description**
+1\.  **Descrizione**
 
-La matrice de points est très courante dans la vie quotidienne et trouve de larges applications dans les écrans publicitaires LED, l'affichage d'étage des ascenseurs, les annonces d'arrêt de bus, etc.
-La matrice de LED de la carte principale Micro: Bit contient 25 diodes. Auparavant, nous avons réussi à contrôler une LED particulière via son point de position. Sur la même théorie, nous pouvons allumer plusieurs LED en même temps pour afficher des motifs, des chiffres et des caractères.
+La matrice a punti è molto comune nella vita quotidiana e trova ampia applicazione in schermi pubblicitari LED, display dei piani degli ascensori, annunci alle fermate degli autobus e così via.
+La matrice LED della scheda principale Micro: Bit contiene 25 diodi. In precedenza siamo riusciti a controllare un determinato LED tramite la sua posizione. Basandoci sulla stessa teoria, possiamo accendere più LED contemporaneamente per mostrare motivi, cifre e caratteri.
 
-De plus, nous pouvons cliquer sur “show icon” pour choisir le motif que nous souhaitons afficher. Enfin, nous pouvons également concevoir nos propres motifs.
+Inoltre, possiamo cliccare su “show icon” per scegliere il motivo che vogliamo visualizzare. Infine, possiamo anche progettare i nostri pattern.
 
-2\.  **Préparation**
+2\.  **Preparazione**
 
-A. Connectez la carte principale micro:bit à votre ordinateur via le câble USB
+A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
 
-B. Ouvrez la version hors ligne de Mu.
+B. Aprire la versione offline di Mu.
 
-3\.  **Code de test1**
+3\.  **Codice di test1**
 
-Vous pouvez ouvrir le fichier “5×5 LED Dot Matrix-1\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
+È possibile aprire il file “5×5 LED Dot Matrix-1\.py” per importare il codice. È inoltre possibile inserire il codice direttamente nella finestra di modifica.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
 
 ![](./media/Python_00f15f0a.png)
 
@@ -31,27 +31,27 @@ val = Image("00900:""00900:""90909:""09990:""00900")
 display.show(val)
 ```
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est considéré comme erroné si des soulignements et des curseurs sont affichés. 
+Fare clic su “Check” per controllare gli errori nel codice. Il programma risulta errato se vengono mostrati sottolineature e cursori. 
 
 ![](./media/Python_a1197f5e.png)
 
-Si le code est correct, connectez le micro:bit à l'ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_1fd78e31.png)
 
-4\.  **Résultat du test1**
+4\.  **Risultato del test1**
 
-Après le téléchargement réussi du code sur la carte, **alimentez via le câble micro USB ou une alimentation externe (placez l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation de la carte.
+Dopo aver scaricato con successo il codice sulla scheda, **alimentare tramite il cavo micro USB o un'alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sulla scheda.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Vous verrez que la matrice 5×5 commence à afficher une flèche vers le bas ![](./media/Python_26c7d8c0.png).
+Vedremo che la matrice 5×5 inizia a mostrare una freccia verso il basso ![](./media/Python_26c7d8c0.png).
 
-5\.  **Code de test2**
+5\.  **Codice di test2**
 
-Vous pouvez ouvrir le fichier “5×5 LED Dot Matrix-2\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
+È possibile aprire il file “5×5 LED Dot Matrix-2\.py” per importare il codice. È inoltre possibile inserire il codice direttamente nella finestra di modifica.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
 
 ![](./media/Python_dc6eea45.png)
 
@@ -85,32 +85,32 @@ sleep(500)
 display.clear()
 ```
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est considéré comme erroné si des soulignements et des curseurs sont affichés. 
+Fare clic su “Check” per controllare eventuali errori nel codice. Il programma risulta errato se vengono mostrati sottolineature e cursori. 
 
 ![](./media/Python_14bb490a.png)
 
-Si le code est correct, connectez le micro:bit à l'ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_a05c33d2.png)
 
-6\.  **Résultat du test2**
+6\.  **Risultato del test2**
 
-Après le téléchargement réussi du code sur la carte, **alimentez via le câble micro USB ou une alimentation externe (placez l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation de la carte.
+Dopo aver scaricato con successo il codice sulla scheda, **alimentare tramite il cavo micro USB o un'alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sulla scheda.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Vous constaterez que la matrice 5×5 commence à afficher les chiffres 1, 2, 3, 4 et 5, puis affiche alternativement une flèche vers le bas ![](./media/Python_26c7d8c0.png), “Hello”, un motif de cœur ![](./media/Python_9b18b2b8.png), une flèche vers le nord-est ![](./media/Python_364f2e35.png), puis vers le sud-est
-![](./media/Python_fb3ba009.png), puis vers le sud-ouest ![](./media/Python_7ec21961.png) et enfin vers le nord-ouest ![](./media/Python_ced0bb41.png).
+Vedremo che la matrice 5×5 inizia a mostrare i numeri 1, 2, 3, 4 e 5 e quindi mostra alternativamente una freccia verso il basso ![](./media/Python_26c7d8c0.png), “Hello”, un motivo a forma di cuore ![](./media/Python_9b18b2b8.png), una freccia verso nord-est ![](./media/Python_364f2e35.png), poi verso sud-est
+![](./media/Python_fb3ba009.png), poi verso sud-ovest ![](./media/Python_7ec21961.png) e infine verso nord-ovest ![](./media/Python_ced0bb41.png).
 
-7\.  **Explication du code**
+7\.  **Spiegazione del codice**
 
 ![Img](./media/Python_ef42956d.png)
 
 
-6.  **Référence**
+6.  **Riferimento**
 
 display.scroll() ：
 
-L'affichage défile pour montrer les valeurs ; si c'est un entier ou un flottant, nous utilisons str() pour le convertir en chaîne de caractères.
+Il display scorre per mostrare i valori; se si tratta di un intero o di un float, useremo str() per convertirlo in stringhe di caratteri.
 
-Pour plus de détails, veuillez vous référer au lien : [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
+Per maggiori dettagli, fare riferimento al link: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

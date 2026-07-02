@@ -1,50 +1,50 @@
-## Projet 4 : Boutons programmables
+## Progetto 4: Pulsanti programmabili
 
 ![](./media/Makecode_b339baac.jpg)
 
-[Cliquez ici pour télécharger le code 1 de cette leçon](./Code/Programmable-Buttons.hex)
+[Fai clic per scaricare il codice 1 per questa lezione](./Code/Programmable-Buttons.hex)
 
-[Cliquez ici pour télécharger le code 2 de cette leçon](./Code/Programmable-Buttons2.hex)
+[Fai clic per scaricare il codice 2 per questa lezione](./Code/Programmable-Buttons2.hex)
 
-### (1)Description du projet :
+### (1)Descrizione del progetto:
 
-Les boutons peuvent être utilisés pour contrôler des circuits. Dans un circuit intégré avec un bouton, le circuit se connecte lorsque le bouton est pressé et il est ouvert dans l'autre sens. La carte principale Micro:bit main board V2 possède trois boutons : deux sont des boutons programmables (marqués A et B), et celui de l'autre côté est un bouton de réinitialisation. En appuyant sur les deux boutons programmables, on peut entrer trois signaux différents. Nous pouvons appuyer sur le bouton A ou B seul, ou les presser ensemble, et la matrice de LEDs affiche respectivement A, B et AB. Allons-y.
+I pulsanti possono essere usati per controllare circuiti. In un circuito integrato con un pulsante, il circuito è collegato quando si preme il pulsante e aperto viceversa. La scheda principale Micro:bit main board V2 dispone di tre pulsanti: due sono pulsanti programmabili (contrassegnati con A e B) e quello sull'altro lato è un pulsante di reset. Premendo i due pulsanti programmabili è possibile fornire tre segnali diversi. Possiamo premere il pulsante A o B singolarmente oppure entrambi insieme e la matrice di LED mostra rispettivamente A, B e AB. Iniziamo.
 
-### (2)Composants nécessaires :
+### (2)Componenti necessari:
 
 Micro:bit main board V2 
 
-Câble Micro USB
+Cavo Micro USB
 
-### (3)Code de test 1 :
+### (3)Codice di test 1 :
 
-Reliez l'ordinateur à la carte micro:bit avec le câble micro USB, et programmez dans l'éditeur MakeCode,
+Collega il computer alla scheda micro:bit tramite il cavo Micro USB e programma nell'editor MakeCode,
 
 ![](./media/Makecode_c776e309.gif)
 
-Code complet :
+Codice completo:
 
 ![](./media/Makecode_054985a9.png)
 
-### (4)Résultats du test 1 :
+### (4)Risultati del test 1 :
 
-Après avoir téléversé le code de test 1 sur le Micro:bit main board V2, la matrice de points LED 5*5 affiche A si le bouton A est pressé, B si le bouton B est pressé, et AB si les boutons A et B sont pressés ensemble.
+Dopo aver caricato il codice di test 1 su Micro:bit main board V2, la matrice di punti LED 5*5 mostra A se viene premuto il pulsante A, B se viene premuto il pulsante B e AB se i pulsanti A e B vengono premuti insieme.
 
 ![](./media/Makecode_b48c79ad.gif)
 
-### (5) Code de test 2 :
+### (5) Codice di test 2 :
 
 ![](./media/Makecode_751dfce0.gif)
 
 
 
-Programme complet :
+Programma completo :
 
 ![](./media/Makecode_5cdecff7.png)
 
-### (6)Résultats du test 2 :
+### (6)Risultati del test 2:
 
-Après avoir téléversé le code de test 2 sur le Micro:bit main board V2, lorsque l'on appuie sur le bouton A, le nombre de LED devenant rouges augmente, tandis que lorsque l'on appuie sur le bouton B, le nombre de LED devenant rouges diminue.
+Dopo aver caricato il codice di test 2 su Micro:bit main board V2, quando si preme il pulsante A il numero di LED che diventano rossi aumenta, mentre quando si preme il pulsante B il numero di LED che diventano rossi diminuisce.
 
 ![](./media/Makecode_248724b3.gif)
 

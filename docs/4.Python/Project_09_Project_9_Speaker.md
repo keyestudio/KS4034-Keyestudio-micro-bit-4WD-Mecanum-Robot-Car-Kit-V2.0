@@ -1,22 +1,22 @@
-### Projet 9 : Haut-parleur
+### Progetto 9: Altoparlante
 
 ![](./media/Python_ac515b9a.png)
 
-1\.  **Description**
+1\.  **Descrizione**
 
-La carte principale micro:bit possède un haut-parleur intégré, ce qui facilite l'ajout de son aux programmes. Elle peut également être programmée pour produire toutes sortes de tonalités, comme jouer la chanson *Ode to Joy*.
+La scheda principale micro:bit dispone di un altoparlante integrato, il che rende più semplice aggiungere suoni ai programmi. Può anche essere programmata per produrre ogni tipo di tono, ad esempio suonare il brano *Ode to Joy*.
 
-2\.  **Préparation**
+2\.  **Preparazione**
 
-A. Connectez la carte principale micro:bit à votre ordinateur via le câble USB
+A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
 
-B. Ouvrez la version hors ligne de Mu.
+B. Aprire la versione offline di Mu.
 
-3\.  **Code de test**
+3\.  **Codice di test**
 
-Ouvrez le logiciel Mu et ouvrez le fichier “Speaker\.py” pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
+Aprire il software Mu e aprire il file “Speaker\.py” per importare il codice. È inoltre possibile inserire il codice direttamente nella finestra di modifica.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais**.)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
 
 ![](./media/Python_eec7f643.png)
 
@@ -38,23 +38,23 @@ while True:
     sleep(1000)
 ```
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés.
+Fare clic su “Check” per esaminare gli errori nel codice. Il programma è considerato errato se vengono mostrati sottolineature e cursori.
 
 ![](./media/Python_f8852abf.png)
 
-Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_3fd94e43.png)
 
-4\.  **Résultat du test**
+4\.  **Risultato del test**
 
-Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (mettez l'interrupteur DIP sur ON)**, puis appuyez sur le bouton de réinitialisation du micro:bit.
+Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- Le haut-parleur émet un son et la matrice de LED affiche le symbole de la musique.
+ L'altoparlante emette un suono e la matrice a punti LED mostra il simbolo della musica.
 
-5\.  **Explication du code**
+5\.  **Spiegazione del codice**
 
 ![Img](./media/Python_18c047bd.png)
 

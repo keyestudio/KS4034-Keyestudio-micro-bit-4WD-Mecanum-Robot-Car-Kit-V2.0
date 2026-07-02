@@ -1,26 +1,26 @@
-### Projet 11 : Microphone
+### Progetto 11: Microfono
 
 ![](./media/Python_3073a8af.png)
 
 ![](./media/Python_7f074115.png)
 
-1\.  **Description**
+1\.  **Descrizione**
 
-La carte principale Micro: Bit possède un microphone intégré, qui peut mesurer le volume de l'environnement ambiant. Lorsque vous applaudissez, le témoin LED du microphone s'allume. De plus, il peut mesurer l'intensité du son, vous permettant ainsi de créer une échelle de bruit ou un éclairage de type discothèque changeant au rythme de la musique.
+La scheda principale Micro: Bit ha un microfono integrato, che può rilevare il volume dell'ambiente circostante. Quando batte le mani, si accende l'indicatore LED del microfono. Inoltre, può misurare l'intensità del suono, permettendoti di creare una scala di rumore o luci da discoteca che cambiano con la musica.
 
-Le microphone est placé du côté opposé au témoin LED du microphone et à proximité d'ouvertures laissant passer le son. Lorsque la carte détecte un son, le témoin LED s'allume.
+Il microfono è posto sul lato opposto rispetto all'indicatore LED del microfono e vicino a fori che lasciano passare il suono. Quando la scheda rileva il suono, l'indicatore LED si accende.
 
-2\.  **Préparation**
+2\.  **Preparazione**
 
-A. Branchez la carte principale micro:bit à votre ordinateur via le câble USB
+A. Collega la scheda principale micro:bit al computer tramite il cavo USB
 
-B. Ouvrez la version hors ligne de Mu.
+B. Apri la versione offline di Mu.
 
-3\.  **Code de test1**
+3\.  **Codice di test1**
 
-Ouvrez le logiciel Mu et ouvrez le fichier “Microphone-1\.py” pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
+Apri il software Mu e apri il file “Microphone-1\.py” per importare il codice. Puoi anche inserire il codice nella finestra di modifica manualmente.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais**.)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
 
 ![](./media/Python_19b38832.png)
 
@@ -35,27 +35,27 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés. 
+Clicca su “Check” per verificare errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
 
 ![](./media/Python_36a669c7.png)
 
-Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collega il micro:bit al computer e clicca su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_0515bf32.png)
 
-4\.  **Résultat du test1**
+4\.  **Risultato del test1**
 
-Après avoir téléchargé le code avec succès sur la carte, **alimentez via le câble micro USB ou une alimentation externe (positionnez l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
+Dopo aver scaricato con successo il codice sulla scheda, **accendi l'alimentazione tramite cavo micro USB o alimentazione esterna (impostare l'interruttore DIP su ON)** e premi il pulsante di reset sul micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matrice de LED affiche le motif “❤” lorsque vous applaudissez et le motif ![](./media/04fdfc9060943954e7938bb1a741d626.png) lorsqu'il fait silence autour.
+La matrice a punti LED mostra il motivo “❤” quando batte le mani e il motivo ![](./media/04fdfc9060943954e7938bb1a741d626.png) quando l'ambiente è silenzioso.
 
-5\.  **Code de test2**
+5\.  **Codice di test2**
 
-Ouvrez le logiciel Mu et ouvrez le fichier “Microphone-2\.py” pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
+Apri il software Mu e apri il file “Microphone-2\.py” per importare il codice. Puoi anche inserire il codice nella finestra di modifica manualmente.
 
-(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
+(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
 
 ![](./media/Python_f0e5a346.png)
 
@@ -81,22 +81,22 @@ while True:
             maxSound = soundLevel
 ```
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés. 
+Clicca su “Check” per verificare errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
 
 ![](./media/Python_d0c79871.png)
 
-Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collega il micro:bit al computer e clicca su “Flash” per scaricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_d828b9ee.png)
 
-6\.  **Résultat du test2**
+6\.  **Risultato del test2**
 
-Après avoir téléchargé le code avec succès sur la carte, **alimentez via le câble micro USB ou une alimentation externe (positionnez l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
+Dopo aver scaricato con successo il codice sulla scheda, **accendi l'alimentazione tramite cavo micro USB o alimentazione esterna (impostare l'interruttore DIP su ON)** e premi il pulsante di reset sul micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Lorsque le bouton A est enfoncé, la matrice de LED affiche la valeur du volume maximal ( **veuillez noter que le volume maximal peut être réinitialisé via le bouton Reset de l'autre côté de la carte** ). Lors d'un applaudissement, plus le son testé est fort, plus les 25 LED de l'écran matriciel s'illuminent.
+Quando viene premuto il pulsante A, la matrice a punti LED mostra il valore del volume massimo ( **nota che il volume massimo può essere azzerato tramite il pulsante Reset sull'altro lato della scheda** ). Quando si applaude, più il suono testato è forte, più luminose appaiono le 25 LED della matrice.
 
-7\.  **Explication du code**
+7\.  **Spiegazione del codice**
 
 ![Img](./media/Python_980f62b3.png)

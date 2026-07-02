@@ -1,48 +1,48 @@
-### Projet 17：Capteur de suivi de ligne
+### Progetto 17: Sensore di tracciamento della linea
 
-#### Projet 17.1：Détecter le capteur de suivi de ligne
+#### Progetto 17.1: Rilevamento del sensore di tracciamento della linea
 
 ![](./media/Python_ea7f6c8c.png)
 
-1\. **Description**
+1\. **Descrizione**
 
-La carte driver de moteurs du Keyestudio 4WD Mecanum Robot Car est fournie avec un capteur de suivi de ligne 3 canaux, qui utilise des tubes IR TCRT5000 et 3 potentiomètres.
+La scheda driver dei motori del Keyestudio 4WD Mecanum Robot Car è dotata di un sensore di tracciamento della linea a 3 canali, che utilizza tubi IR TCRT5000 e 3 potenziometri.
 
-Le tube IR TCRT5000 contient un émetteur IR et un récepteur IR. Lorsque les signaux infrarouges de l’émetteur sont reçus par le récepteur via réflexion, la résistance du récepteur change, ce qui se traduit généralement par une variation de tension sur le circuit.
+Il tubo IR TCRT5000 contiene un emettitore IR e un ricevitore IR. Quando i segnali infrarossi emessi vengono riflessi e ricevuti dal tubo ricevente, la resistenza del ricevitore cambierà, il che si riflette generalmente nella variazione di tensione sul circuito.
 
-La résistance varie en fonction de l’intensité des signaux infrarouges reçus par le récepteur, ce qui dépend souvent de la couleur de la surface réfléchissante et de la distance entre la surface réfléchissante et le récepteur. Lors de la détection, le noir correspond à actif niveau haut et le blanc à actif niveau bas.
+La resistenza varia a seconda dell'intensità dei segnali infrarossi ricevuti dal ricevitore, che dipende spesso dal colore della superficie riflettente e dalla distanza tra la superficie riflettente e il ricevitore. Durante il rilevamento, il nero è attivo ad alto livello e il bianco è attivo a basso livello.
 
-2\. **Principe de fonctionnement**
+2\.  **Principio di funzionamento**
 
-Lorsque la voiture roule sur une route blanche, le tube émetteur IR installé sous la voiture émet des signaux infrarouges pour détecter la route et le récepteur recevra les signaux renvoyés. Ensuite la sortie fournit un niveau bas (0) ; lorsqu’il détecte une ligne noire, il fournit un niveau haut (1).
+Quando l'auto passa sopra una strada bianca, il tubo emettitore IR installato sotto l'auto emette segnali infrarossi per rilevare la strada e il tubo ricevente riceve i segnali inviando la risposta. Quindi l'uscita fornisce livello basso (0); quando rileva linee nere, fornisce livello alto (1).
 
-Le port intégré du capteur de suivi 3 canaux sur le 4WD Mecanum Robot Car est connecté au port de collecte G, 5V, P10, P4 et P3 sur la carte d’extension micro:bit, et est contrôlé par P10, P4 et P3 du micro:bit. La paire infrarouge TCRT5000 gauche sur le capteur est contrôlée par P3, la centrale par P4 et la droite par P10.
+La porta integrata del sensore di tracciamento a 3 canali sulla 4WD Mecanum Robot Car è collegata alle porte di raccolta G, 5V, P10, P4 e P3 sulla scheda di espansione micro:bit, e viene controllata da P10, P4 e P3 del micro:bit. La coppia IR TCRT5000 sinistra sul sensore è controllata da P3, quella centrale da P4 e quella destra da P10.
 
-Après avoir placé un papier blanc sous le 4WD Mecanum Robot Car, nous ferons tourner les potentiomètres sur le capteur de suivi 3 voies. Lorsque la LED témoin sur le module capteur est allumée, soulevez la voiture pour séparer les deux roues du 4WD Mecanum Robot Car. La hauteur du papier blanc est d’environ 1,5 cm ; quand la LED témoin sur le module capteur est éteinte, ajustez alors la sensibilité.
+Dopo aver posto un foglio bianco sul fondo della 4WD Mecanum Robot Car, ruoteremo i potenziometri sul sensore di tracciamento a 3 vie. Quando la spia sul modulo sensore è accesa, sollevare l'auto in modo che le due ruote del 4WD Mecanum Robot Car siano sollevate. L'altezza del foglio bianco è di circa 1,5 cm; quando la spia sul modulo sensore si spegne, regolare la sensibilità.
 
-**Remarque que puisque la matrice de points 5*5 utilise les broches P3 P4 P6 P7 P10, nous devons désactiver la fonction de la matrice de points lorsque nous utilisons le capteur de suivi de ligne.**
+**Nota che poiché la matrice a punti 5*5 usa le porte P3P4P6P7P10, dobbiamo disattivare la funzione della matrice a punti quando si usa il sensore di tracciamento della linea.**
 
-3\. **Préparation**
+3\.  **Preparazione**
 
-- Insérer la carte micro:bit dans l’emplacement du keyestudio 4WD Mecanum Robot Car V2.0
+- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
 
-- Placer des piles dans le porte-piles
+- Inserire le batterie nel vano porta batterie
 
-- Mettre l’interrupteur d’alimentation sur ON
+- Portare l'interruttore di alimentazione su ON
 
-- Connecter le micro:bit à l’ordinateur via un câble USB
+- Collegare il micro:bit al computer tramite un cavo USB
 
-- Ouvrir la version hors-ligne de Mu.
+- Aprire la versione offline di Mu.
 
-4\. **Code de test**
+4\.  **Codice di prova**
 
-Entrez dans le logiciel Mu et ouvrez le fichier “Line tracking detection\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d’édition.
+Aprire il software Mu e aprire il file “Line tracking detection\.py” per importare il codice. È anche possibile inserire il codice nella finestra di modifica manualmente.
 
-(**Remarque : Tous les mots et symboles anglais doivent être écrits en anglais**.)
+(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés.
+Fare clic su “Check” per verificare errori nel codice. Il programma presenterà errori se vengono mostrati sottolineature e cursori.
 
-Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per caricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_2c7b1c21.png)
 
@@ -64,68 +64,68 @@ while True:
     sleep(200)
 ```
 
-5\. **Résultat du test**
+5\.  **Risultato del test**
 
-Après avoir téléchargé le code sur la carte avec succès et sans débrancher le câble USB, cliquez sur “REPL” puis appuyez sur le bouton reset.
+Dopo aver caricato correttamente il codice sulla scheda e senza scollegare il cavo USB, fare clic su “REPL” e poi premere il pulsante di reset.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Les relevés détectés par le tube IR TCRT5000 gauche s’afficheront sur le moniteur.
+Le letture rilevate dal tubo IR TCRT5000 sinistro verranno visualizzate nel monitor.
 
-Quand le tube IR TCRT5000 gauche détecte un objet blanc, 0 s’affiche et le témoin gauche est allumé ; lorsqu’il ne détecte qu’un objet noir, 1 s’affiche et le témoin est éteint, comme montré ci-dessous :
+Quando il tubo IR TCRT5000 sinistro rileva un oggetto bianco, verrà mostrato 0 e il relativo indicatore sarà acceso; quando viene rilevato solo un oggetto nero, verrà visualizzato 1 e l'indicatore sarà spento, come mostrato di seguito:
 
 ![](./media/Python_6a25b450.png)
 
-6\. **Explication du code**
+6\.  **Spiegazione del codice**
 
 ![Img](./media/Python_5dad345e.png)
 
 
-#### Projet 17.2：Voiture intelligente suiveuse
+#### Progetto 17.2: Auto intelligente con tracciamento
 
 ![](./media/Python_f0b62e0f.jpg)
 
-1\. Description
+1\. Descrizione
 
-Dans cette leçon nous allons combiner un capteur de suivi de ligne avec un moteur pour fabriquer une voiture intelligente suiveuse de ligne.
+In questa lezione combineremo un sensore di tracciamento della linea con i motori per realizzare un'auto intelligente che segua una linea.
 
-La carte micro:bit analysera les signaux et contrôlera la voiture intelligente pour réaliser la fonction de suivi de ligne.
+La scheda micro:bit analizzerà i segnali e controllerà l'auto per implementare la funzione di tracciamento della linea.
 
-2\. **Principe de fonctionnement**
+2\.  **Principio di funzionamento**
 
-La voiture intelligente effectuera des mouvements différents selon les valeurs reçues par le capteur de suivi de ligne 3 canaux.
+L'auto eseguirà movimenti differenti in base ai valori ricevuti dal sensore di tracciamento della linea a 3 canali.
 
 ![Img](./media/Python_e672c637.png)
 
-3\. **Préparation**
+3\.  **Preparazione**
 
-- Insérer la carte micro:bit dans l’emplacement du keyestudio 4WD Mecanum Robot Car V2.0
+- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
 
-- Placer des piles dans le porte-piles
+- Inserire le batterie nel vano porta batterie
 
-- Mettre l’interrupteur d’alimentation sur ON
+- Portare l'interruttore di alimentazione su ON
 
-- Connecter le micro:bit à l’ordinateur via un câble USB
+- Collegare il micro:bit al computer tramite un cavo USB
 
-- Ouvrir la version hors-ligne de Mu.
+- Aprire la versione offline di Mu.
 
-**Attention :** Le capteur de suivi 3 voies doit être utilisé dans un environnement sans interférences infrarouges telles que la lumière du soleil. La lumière du soleil contient beaucoup de lumière invisible, comme l’infrarouge et l’ultraviolet. Dans un environnement fortement ensoleillé, le capteur 3 voies ne peut pas fonctionner correctement.
+**Avvertenza:** Il sensore di tracciamento a 3 vie dovrebbe essere usato in un ambiente privo di interferenze infrarosse come la luce solare. La luce solare contiene molta luce invisibile, come infrarossi e ultravioletti. In un ambiente con forte luce solare il sensore a 3 vie potrebbe non funzionare correttamente.
 
-4\. **Diagramme de flux**
+4\.  **Diagramma di flusso**
 
 ![Img](./media/Python_47856ed2.png)
 
-5\. **Code de test**
+5\.  **Codice di prova**
 
-Entrez dans le logiciel Mu et ouvrez le fichier “Line tracking car\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d’édition.
+Aprire il software Mu e aprire il file “Line tracking car\.py” per importare il codice. È anche possibile inserire il codice nella finestra di modifica manualmente.
 
-(**Remarque : Tous les mots et symboles anglais doivent être écrits en anglais**.)
+(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
 
-Cliquez sur “Files” pour importer le fichier de bibliothèque “keyes_mecanum_Car.py” dans le micro:bit.
+Fare clic su “Files” per importare il file libreria “keyes_mecanum_Car.py” nella micro:bit.
 
-Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés.
+Fare clic su “Check” per verificare errori nel codice. Il programma presenterà errori se vengono mostrati sottolineature e cursori.
 
-Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
+Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per caricare il codice sulla scheda micro:bit.
 
 ![](./media/Python_bd395cbe.png)
 
@@ -175,19 +175,20 @@ while True:
             mecanumCar.Motor_Upper_R(1, 80)
             mecanumCar.Motor_Lower_R(1, 80)
 ```
-6\. **Résultat du test**
+6\.  **Risultato del test**
 
-Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (mettre l’interrupteur DIP sur ON)**, et appuyez sur le bouton reset du micro:bit.
+Dopo aver caricato correttamente il codice sulla scheda, fornire alimentazione esterna (**portare l'interruttore DIP su ON**) e premere il pulsante di reset sul micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-La voiture suiveuse suit la ligne noire vers l’avant.
+L'auto di tracciamento si muove in avanti seguendo la linea nera.
 
-**Remarque :** (1) La largeur de la ligne noire devrait être égale ou supérieure à la largeur du capteur de suivi de ligne lors du suivi.
+**Nota:** （1）La larghezza della linea nera dovrebbe essere uguale o maggiore della larghezza del sensore di tracciamento della linea durante il tracciamento.
 
-(2) Évitez de tester la voiture intelligente sous une forte luminosité.
+（2）Evitare di testare l'auto intelligente sotto luce intensa.
 
-7\. **Explication du code**
+
+7\.  **Spiegazione del codice**
 
 ![Img](./media/Python_b16f9d7b.png)
 

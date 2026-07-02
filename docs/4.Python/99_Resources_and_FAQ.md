@@ -1,4 +1,4 @@
-## Ressources
+## Risorse
 
 1\. BBC microbit MicroPython：[https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html](https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html)
 
@@ -6,20 +6,20 @@
 
 3\. math library：[https://docs.openmv.io/library/math.html](https://docs.openmv.io/library/math.html)
 
-## Problèmes courants
+## Problemi comuni
 
-1\.  **La voiture ne réagit pas**
+1\.  **L'auto non risponde**
 
-Veuillez vérifier si les piles sont suffisamment chargées
+Controllare che le batterie siano sufficienti
 
-Veuillez vérifier si les câblages sont corrects
+Controllare che i cablaggi siano corretti
 
-2\.  **L'ordinateur ne reconnaît pas les ports USB**
+2\.  **Il computer non riconosce le porte USB**
 
-Veuillez vous assurer que le pilote microbit est installé
+Assicurarsi che il driver microbit sia installato
 
-Veuillez vérifier si le câble USB est en bon état.
+Controllare che il cavo USB sia in buone condizioni.
 
-3\.  **Le code ne peut pas être gravé et la matrice de points affiche des symboles**
+3\.  **Il codice non si carica e la matrice di punti mostra simboli**
 
-Veuillez vérifier si le fichier de bibliothèque keyes_mecanum_Car_V2.py est importé
+Verificare che il file della libreria keyes_mecanum_Car_V2.py sia importato
