@@ -2,25 +2,25 @@
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The micro: bit main board V2 has a built-in LSM303AGR gravity acceleration sensor, also known as accelerometer, with a resolution of 8/10/12 bits. The code section sets the range to 1g, 2g, 4g, and 8g.
+Das micro: bit main board V2 verfügt über einen integrierten LSM303AGR-Gravitationsbeschleunigungssensor, auch Beschleunigungssensor (Accelerometer) genannt, mit einer Auflösung von 8/10/12 Bit. Im Codeabschnitt kann der Bereich auf 1g, 2g, 4g und 8g eingestellt werden.
 
-We often use an accelerometer to detect the status of machines.
+Wir verwenden Beschleunigungssensoren häufig, um den Zustand von Geräten zu erkennen.
 
-In this project, we will work to introduce how to measure the position of the board with the accelerometer. And then have a look at the original three-axis data output by the accelerometer.
+In diesem Projekt zeigen wir, wie die Lage des Boards mit dem Beschleunigungssensor gemessen wird. Anschließend betrachten wir die rohen Dreiachsenausgaben des Beschleunigungssensors.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Verbinden Sie das micro:bit main board per USB-Kabel mit Ihrem Computer.
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code1**
+3\.  **Testcode1**
 
-Enter Mu software and open the file“Three-axis acceleration sensor -1\.py“ to import the code. You can also input the code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Three-axis acceleration sensor -1\.py“, um den Code zu importieren. Sie können den Code auch selbst im Editor eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Zeichen müssen in Englisch geschrieben werden.**)
 
 ![](./media/Python_f20f5b58.png)
 
@@ -48,53 +48,53 @@ while True:
         display.show("8")
 ```
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_07e4b578.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_eb56750b.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis1**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-When we shake the micro: bit main board，no matter at any direction, the LED dot matrix displays the digit “1”. 
+Wenn wir das micro: bit main board schütteln, zeigt die LED-Matrix unabhängig von der Richtung die Ziffer “1” an.
 
-When it is kept upright（make its logo above the LED dot matrix）, the number 2 appears.
+Wenn es aufrecht gehalten wird (das Logo oberhalb der LED-Matrix), erscheint die Zahl 2.
 
 ![](./media/Python_b91421df.jpg)
 
-When it is kept upside down( make its logo below the LED dot matrix) , it shows as below.
+Wenn es umgedreht gehalten wird (das Logo unterhalb der LED-Matrix), wird wie unten gezeigt angezeigt.
 
 ![](./media/Python_69e81587.jpg)
 
-When it is placed still on the desk, showing its front side, the number 4 appears.
+Wenn es ruhig auf dem Tisch liegt und die Vorderseite zeigt, erscheint die Zahl 4.
 
 ![](./media/Python_9e08cb69.jpg)
 
-When it is placed still on the desk, showing its back side, the number 5 exhibits.
+Wenn es ruhig auf dem Tisch liegt und die Rückseite zeigt, erscheint die Zahl 5.
 
-When the board is tilted to the left , the LED dot matrix shows the number 6, as shown below:
+Wenn das Board nach links geneigt wird, zeigt die LED-Matrix die Zahl 6, wie unten dargestellt:
 
 ![](./media/Python_81fa2ce1.jpg)
 
-When the board is tilted to the right , the LED dot matrix displays the number 7, as shown below：
+Wenn das Board nach rechts geneigt wird, zeigt die LED-Matrix die Zahl 7, wie unten dargestellt：
 
 ![](./media/Python_fc13912b.jpg)
 
-When the board is knocked to the floor, this process can be considered as a free fall and the LED dot matrix shows the number 8. (Please note that this test is not recommended for it may damage the main board.)
+Wenn das Board auf den Boden geschlagen wird, kann dieser Vorgang als freier Fall betrachtet werden und die LED-Matrix zeigt die Zahl 8. (Bitte beachten Sie, dass dieser Test nicht empfohlen wird, da das Mainboard beschädigt werden kann.)
 
-**Attention: If you’d like to try this function, you can also set the acceleration to 3g, 6g or 8g.**
+**Achtung: Wenn Sie diese Funktion ausprobieren möchten, können Sie die Beschleunigung auch auf 3g, 6g oder 8g einstellen.**
 
-5\.  **Test Code2**
+5\.  **Testcode2**
 
-Enter Mu software and open the file“Three-axis acceleration sensor -2\.py“ to import the code. You can also input the code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Three-axis acceleration sensor -2\.py“, um den Code zu importieren. Sie können den Code auch selbst im Editor eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Zeichen müssen in Englisch geschrieben werden.**)
 
 ![](./media/Python_0f7ccf57.png)
 
@@ -113,30 +113,32 @@ while True:
 
     sleep(100)
 ```
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_0ed2221e.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_35c4c76b.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis2**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. Click“REPL”and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)**. Klicken Sie auf “REPL” und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Then REPL window will show the value of the acceleration on X axis, Y axis and Z axis are shown below:
+Dann zeigt das REPL-Fenster die Werte der Beschleunigung entlang der X-Achse, Y-Achse und Z-Achse, wie unten dargestellt:
 
 ![](./media/Python_940cfcf7.png)
 
-After referring to the MMA8653FC data manual and the hardware schematic diagram of the micro: bit main board, the accelerometer coordinate of the micro: bit is shown in the figure below:
+Nach Bezugnahme auf das Datenhandbuch des MMA8653FC und das Hardware-Schaltbild des micro: bit main board sind die Beschleunigungskoordinaten des micro: bit in der folgenden Abbildung dargestellt:
 
 ![](./media/Python_ebd0d44d.png)
 
-7\.  **Code Explanation**
+7\.  **Codeerklärung**
 
 ![Img](./media/Python_d533d72c.png)
 
 ![Img](./media/Python_89d95342.png)
+
+---

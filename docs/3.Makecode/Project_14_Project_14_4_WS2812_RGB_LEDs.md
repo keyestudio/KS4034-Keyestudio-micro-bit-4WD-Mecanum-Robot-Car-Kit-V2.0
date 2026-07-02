@@ -1,34 +1,34 @@
-## Project 14：4 WS2812 RGB LEDs
+## Projekt 14：4 WS2812 RGB LEDs
 
 ![](./media/Makecode_eecf79fe.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The driver shield cooperates 4 pcs WS2812 RGB LEDs, compatible with micro:bit board and controlled by P7. In this lesson, we will make the RGB LEDs display different colors by P7. In this lesson, 3 sets of test code are provided to make the 4 WS2812 RGB LEDs display different effects.
+Das Treiber-Shield steuert 4 WS2812 RGB-LEDs, ist mit dem micro:bit-Board kompatibel und wird über P7 angesteuert. In dieser Lektion lassen wir die RGB-LEDs über P7 verschiedene Farben anzeigen. Für diese Lektion werden 3 Testprogramme bereitgestellt, mit denen die 4 WS2812 RGB-LEDs unterschiedliche Effekte zeigen.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio   4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriehalter ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf die ON-Position
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit per USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode.
+- Öffnen Sie die Web-Version von Makecode.
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_d3ad748c.png)
 
-Click“JavaScript" to switch into the corresponding JavaScript code:
+Klicken Sie auf „JavaScript“, um zum entsprechenden JavaScript-Code zu wechseln:
 
 ![](./media/Makecode_ce3ad2e9.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis 1**
 
-Download code 1 to micro：bit, and dial POWER to ON end. All four WS2812RGB LEDs light up a different color a time cyclically.
+Laden Sie Code 1 auf das micro:bit und schalten Sie POWER auf ON. Alle vier WS2812RGB-LEDs leuchten nacheinander zyklisch in unterschiedlichen Farben.
 
 5\.  **Test Code2**
 
@@ -38,25 +38,24 @@ Download code 1 to micro：bit, and dial POWER to ON end. All four WS2812RGB LED
 
 ![](./media/Makecode_f06b9905.png)
 
-Click“JavaScript" to switch into the corresponding JavaScript code:
+Klicken Sie auf „JavaScript“, um zum entsprechenden JavaScript-Code zu wechseln:
 
 ![](./media/Makecode_06ef2111.png)
 
 ![](./media/Makecode_cc2c2fb3.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis 2**
 
-Download code 2 to micro：bit, WS2812RGB LEDs display like flow light.
+Laden Sie Code 2 auf das micro:bit. Die WS2812RGB-LEDs zeigen einen Lauflichteffekt.
 
 7\.  **Test Code3**
 
 ![](./media/Makecode_d3e5aa0a.png)
 
-Click“JavaScript”to switch into the corresponding JavaScript code:
+Klicken Sie auf „JavaScript“, um zum entsprechenden JavaScript-Code zu wechseln:
 
 ![](./media/Makecode_212ce3c8.png)
 
-8\.  **Test Result3**
+8\.  **Testergebnis 3**
 
-Download code 3 to micro：bit, every WS2812RGB light shows random color one by one.
-
+Laden Sie Code 3 auf das micro:bit. Jede WS2812RGB-LED zeigt nacheinander eine zufällige Farbe.

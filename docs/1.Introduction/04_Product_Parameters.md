@@ -1,19 +1,19 @@
-## Product Parameters
+## Produktparameter
 
-- Connector port input: DC 7V--9V
+- Anschlussport-Eingang: DC 7V--9V
 
-- Operating voltage of driver board system: 5V
+- Betriebsspannung des Treiberboard-Systems: 5V
 
-- Standard operating power consumption: about 2.2W
+- Standard-Betriebsleistungsaufnahme: ca. 2,2 W
 
-- Maximum power: 12W
+- Maximale Leistung: 12 W
 
-- Motor speed: 200RPM
+- Motordrehzahl: 200 RPM
 
-- Working temperature range: 0-50℃
+- Arbeits-Temperaturbereich: 0-50℃
 
-- Size: 120\*120\*120mm
+- Abmessungen: 120\*120\*120mm
 
-- Environmental protection attributes: ROHS
+- Umweltschutzmerkmale: ROHS
 
-**Note:** The working voltage of micro:bit is 3.3V, and the driver shield integrates a 3.3V/5V communication conversion circuit.
+**Hinweis:** Die Betriebsspannung des micro:bit beträgt 3,3 V, und das Treiber-Shield integriert eine 3,3V/5V-Kommunikationsumwandlungsschaltung.

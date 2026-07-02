@@ -1,22 +1,22 @@
-### Project 8：Light Detection
+### Projekt 8：Lichtdetektion
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-In this project, we will focus on the light detection function of the Micro: Bit main board. It is achieved by the LED dot matrix since the main board is not equipped with a photoresistor.
+In diesem Projekt konzentrieren wir uns auf die Lichtdetektionsfunktion des micro:bit main board. Diese wird über die LED dot matrix realisiert, da das main board nicht mit einem Fotowiderstand ausgestattet ist.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Verbinden Sie das micro:bit main board über das USB-Kabel mit Ihrem Computer.
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code**
+3\.  **Testcode**
 
-Enter Mu software and open the file“Detect Light Intensity by Microbit\.py”to import the code. You can also input code in the edit window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Detect Light Intensity by Microbit\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Editorfenster eingeben.
 
-(**Note: All English words and symbols must be written in English.**)
+(**Hinweis: Alle englischen Wörter und Symbole müssen in englischer Sprache geschrieben sein.**)
 
 ![](./media/Python_b4f06503.png)
 
@@ -31,26 +31,28 @@ while True:
 
     sleep(100)
 ```
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um Fehler im Code zu überprüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
 
 ![](./media/Python_b41eeb0f.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit board zu übertragen.
 
 ![](./media/Python_7baa2190.png)
 
-4\.  **Test Result**
+4\.  **Testergebnis**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. Click“REPL”and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (turn the DIP switch to ON)**. Klicken Sie auf “REPL” und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Then REPL window will show the light intensity value, as shown below.
+Im REPL-Fenster wird dann der Wert der Lichtintensität angezeigt, wie unten zu sehen.
 
-When the LED dot matrix is covered by hand, the light intensity showed is approximately 0; when the LED dot matrix is exposed to light, the light intensity displayed gets stronger with the light.
+Wenn die LED dot matrix mit der Hand abgedeckt wird, zeigt die Lichtintensität etwa 0 an; wenn die LED dot matrix dem Licht ausgesetzt ist, wird der angezeigte Lichtintensitätswert mit zunehmendem Licht stärker.
 
 ![](./media/Python_778d89d6.png)
 
-5\.  **Code Explanation**
+5\.  **Code-Erklärung**
 
 ![Img](./media/Python_dcdc4536.png)
+
+---

@@ -1,68 +1,66 @@
-## Project 12: Bluetooth Wireless Communication
+## Projekt 12: Bluetooth-Drahtloskommunikation
 
 ![](./media/Makecode_041ff91a.jpg)
 
-### (1)Project Description:
+### (1)Projektbeschreibung:
 
-Note: This lesson focuses on explaining how to upload code via Bluetooth using an app, so no code is provided. Please follow the steps in the animated gif.
+Hinweis: Diese Lektion erklärt, wie Code über Bluetooth mithilfe einer App hochgeladen wird. Daher wird kein Code bereitgestellt. Bitte folgen Sie den Schritten in der animierten GIF-Datei.
 
-The Micro: Bit main board V2 comes with a nRF52833 processor (with a built- in BLE(Bluetooth Low Energy) device Bluetooth 5.1 ) and a 2.4GHz antenna for Bluetooth wireless communication and 2.4GHz wireless communication. With the help of them, the board is able to communicate with a variety of Bluetooth devices, including smart phones and tablets.
+Das Micro: Bit main board V2 verfügt über einen nRF52833-Prozessor (mit einem integrierten BLE (Bluetooth Low Energy)-Modul, Bluetooth 5.1) und eine 2,4‑GHz-Antenne für Bluetooth- und 2,4‑GHz-Drahtloskommunikation. Dadurch kann die Platine mit einer Vielzahl von Bluetooth-Geräten kommunizieren, einschließlich Smartphones und Tablets.
 
-In this project, we mainly concentrate on the Bluetooth wireless communication function of this main board. Linked with Bluetooth, it can transmit code or signals. To this end, we should connect an Apple device (a phone or an iPad) to the board.
+In diesem Projekt konzentrieren wir uns hauptsächlich auf die Bluetooth-Drahtloskommunikationsfunktion dieses Mainboards. Über Bluetooth kann es Code oder Signale übertragen. Dazu sollten wir ein Apple-Gerät (ein iPhone oder ein iPad) mit der Platine verbinden.
 
-Since setting up Android phones to achieve wireless
+Da die Einrichtung von Android-Telefonen zur drahtlosen Übertragung der von Apple-Geräten ähnelt, ist keine zusätzliche Darstellung erforderlich.
 
-transmission is similar to that of Apple devices, no need to illustrate again.
+### (2) Vorbereitung
 
-### (2) Preparation
+Verbinden Sie das Micro:bit main board V2 über das Micro-USB-Kabel mit Ihrem Computer.
 
-Attachment of Micro:bit main board V2 to your computer via the Micro USB cable.
+Ein Apple-Gerät (ein Telefon oder ein iPad) oder ein Android-Gerät;
 
-An Apple device (a phone or an iPad) or an Android device;
+### (3) Installieren von Micro:bit:
 
-### (3) Install Micro:bit:
-
-For Android
+Für Android
 
 ![](./media/Makecode_0cf9abf0.gif)
 
-For ios
+Für ios
 
 ![](./media/Makecode_5937459b.gif)
 
-(4)Test Code :
+(4)Testcode:
 
-Next, we'll use our phones to write code and connect via Bluetooth (Note: The process is identical for both Android and iOS devices; this demonstration uses an Android phone).
+Als Nächstes verwenden wir unsere Telefone, um Code zu schreiben und eine Verbindung über Bluetooth herzustellen (Hinweis: Der Vorgang ist für Android- und iOS-Geräte identisch; in dieser Demonstration wird ein Android-Telefon verwendet).
 
-1、Open the software and connect to Bluetooth.
+1、Öffnen Sie die Software und verbinden Sie sich mit Bluetooth.
 
 ![](./media/Makecode_dcb2416a.gif)
 
-2、Press Microbit's button A, button B, and the reset button on the back in sequence. The main board will then display an icon.
+2、Drücken Sie nacheinander die Taste A, die Taste B und die Reset-Taste auf der Rückseite des Microbit. Die Hauptplatine zeigt dann ein Symbol an.
 
 ![](./media/Makecode_6985c2b1.gif)
 
-3、Enter the pattern displayed in step two into the phone interface.
+3、Geben Sie das in Schritt zwei angezeigte Muster in die Telefonoberfläche ein.
 
 ![](./media/Makecode_9095fb35.gif)
 
-Write code and upload
+Code schreiben und hochladen
 
-1、Enter the code programming interface and write a code.
+1、Öffnen Sie die Programmieroberfläche und schreiben Sie einen Code.
 
 ![](./media/Makecode_b7c8c1ca.gif)
 
-2、Press button A, button B, and the reset button in sequence. (Note: This procedure must be repeated each time code is uploaded via the app.)
+2、Drücken Sie nacheinander die Taste A, die Taste B und die Reset-Taste. (Hinweis: Dieser Vorgang muss jedes Mal wiederholt werden, wenn Code über die App hochgeladen wird.)
 
  ![](./media/Makecode_86ab2b39.gif)
 
-3、After confirming that the Microbit icon matches the one displayed on your phone, simply click “Next.”
+3、Nachdem Sie bestätigt haben, dass das Microbit-Symbol mit dem auf Ihrem Telefon dargestellten übereinstimmt, klicken Sie einfach auf „Next“.
 
 ![](./media/Makecode_f3c17f45.gif)
 
-Finally, you can see the Microbit board displaying the pattern from the code.
+Schließlich können Sie sehen, dass die Microbit-Platine das im Code definierte Muster anzeigt.
 
-Here, we have completed the process of uploading code to the phone. It is important to note:
+Hiermit haben wir den Vorgang zum Hochladen von Code auf das Telefon abgeschlossen. Wichtige Hinweise:
 
-1. To connect the phone to the Microbit board, press the A, B, and Reset buttons in sequence. The dot matrix display will then show a pattern, which should be entered into the phone.
-2. The Microbit board can be powered via a USB cable or by supplying 3V to the board's power input through a battery pack. Note: The voltage must not exceed 3V, as exceeding this limit will damage the board.
+1. Um das Telefon mit der Microbit-Platine zu verbinden, drücken Sie nacheinander die Tasten A, B und Reset. Die Punktmatrixanzeige zeigt dann ein Muster an, das in das Telefon eingegeben werden muss.
+2. Die Microbit-Platine kann über ein USB-Kabel mit Strom versorgt werden oder indem 3V über ein Batteriepack an den Stromanschluss der Platine gelegt werden. Hinweis: Die Spannung darf 3V nicht überschreiten, da eine Überschreitung die Platine beschädigen kann.

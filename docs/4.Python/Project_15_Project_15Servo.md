@@ -2,25 +2,25 @@
 
 ![](./media/Python_c4b5e57b.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The DIY smart cars usually contain the function of automatic obstacle avoidance. In the DIY process, we need a servo to control the ultrasonic module to rotate left and right, and then detect the distance between the car and the obstacle, so as to control the car to avoid the obstacle. 
+Bei DIY-Smartcars ist üblicherweise eine Funktion zur automatischen Hindernisvermeidung enthalten. Im DIY-Prozess benötigen wir einen Servo, um das Ultraschallmodul nach links und rechts zu drehen und dann die Entfernung zwischen Auto und Hindernis zu messen, um das Auto zur Vermeidung des Hindernisses zu steuern.
 
-If other microcontrollers are used to control the rotation of the servo, we need to set a certain frequency and width of pulse to control the servo angle. But if the micro:bit main board is used to control the servo angle, we only need to set the control angle in the development environment where the corresponding pulse will be automatically set to control the servo rotation. In this project, you will learn how to control the servo to rotate back and forth between 0° and 90°. 
+Wenn andere Mikrocontroller zur Steuerung der Servodrehung verwendet werden, muss eine bestimmte Frequenz und Pulsbreite eingestellt werden, um den Servowinkel zu steuern. Wird jedoch das micro:bit-Hauptboard zur Steuerung des Servowinkels verwendet, muss im Entwicklungsumfeld nur der Steuerwinkel eingestellt werden; das entsprechende Puls-Signal wird dann automatisch erzeugt, um die Servodrehung zu steuern. In diesem Projekt lernen Sie, wie man den Servo zwischen 0° und 90° hin- und herrotieren lässt.
 
-Servo motor is a position control rotary actuator, which mainly consists of housing, circuit board, core-less motor, gear and position sensor. Its working principle is that the servo receives the signal sent by MCU or receiver, and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtains the voltage difference output.
+Ein Servomotor ist ein positionsgesteuerter Drehaktuator, der hauptsächlich aus Gehäuse, Leiterplatte, kernlosem Motor, Getriebe und Positionssensor besteht. Sein Arbeitsprinzip besteht darin, dass der Servo das vom MCU oder Empfänger gesendete Signal empfängt, ein Referenzsignal mit einer Periode von 20 ms und einer Pulsbreite von 1,5 ms erzeugt, dann die gewonnene Gleichspannungs-Vorspannung mit der Spannung des Potentiometers vergleicht und die Spannungsdifferenz als Ausgang liefert.
 
-For the servo used in this project, the brown wire is the ground, the red one is the positive wire, and the orange one is the signal wire.
+Bei dem in diesem Projekt verwendeten Servo ist das braune Kabel Masse, das rote ist Plus und das orange Kabel ist das Signalkabel.
 
 ![](./media/Python_69be9581.png)
 
-2\.  **Information of the Servo**
+2\.  **Informationen zum Servo**
 
-The rotation angle of servo motor is controlled by regulating the duty cycle of PWM (Pulse-Width Modulation) signal. The standard cycle of PWM signal is 20ms (50Hz). Theoretically, the width is distributed between 1ms-2ms, but in fact, it's between 0.5ms-2.5ms. The width corresponds to the rotation angle from 0° to 180°. But note that for different brand motor, the same signal may have different rotation angle. 
+Der Drehwinkel des Servomotors wird durch Regulierung des Tastverhältnisses des PWM-(Pulse-Width-Modulation)-Signals gesteuert. Der Standardzyklus des PWM-Signals beträgt 20 ms (50 Hz). Theoretisch verteilt sich die Pulsbreite zwischen 1 ms und 2 ms, in der Praxis liegt sie jedoch zwischen 0,5 ms und 2,5 ms. Die Pulsbreite entspricht einem Drehwinkel von 0° bis 180°. Beachten Sie jedoch, dass bei verschiedenen Marken der gleiche Signalwert unterschiedliche Drehwinkel bewirken kann.
 
 ![](./media/Python_0982cb7b.png)
 
-After measurement, the pulse range of the servo is 0.65ms~2.5ms. For a 180 degree servo, the corresponding control relationship is as follow:
+Nach Messung liegt der Pulsbereich des Servos bei 0,65 ms bis 2,5 ms. Für einen 180-Grad-Servo ist die entsprechende Steuerbeziehung wie folgt:
 
 
 |Time on High Level|Angle of the Servo|Reference Signal Cycle Time（20ms）|
@@ -30,53 +30,53 @@ After measurement, the pulse range of the servo is 0.65ms~2.5ms. For a 180 degre
 |2.5ms|180degrees|2.5ms high level+17.5ms low level|
 
 
-3\.  **Parameters**
+3\.  **Parameter**
 
-- Working voltage: DC 4.8V ~ 6V
+- Betriebsspannung: DC 4.8V ~ 6V
 
-- Operating angle range: about 180 ° (at 500 → 2500 μsec)
+- Betriebswinkelbereich: ca. 180 ° (bei 500 → 2500 μsec)
 
-- Dimension: 22.9\*12.2\*30mm
+- Abmessungen: 22.9\*12.2\*30mm
 
-- Pulse width range: 500 → 2500 μsec
+- Pulsweitenbereich: 500 → 2500 μsec
 
-- No-load speed: 0.12 ± 0.01 sec / 60 (DC 4.8V), 0.1 ± 0.01 sec / 60 (DC 6V)
+- Leerlaufdrehzahl: 0.12 ± 0.01 s / 60 (DC 4.8V), 0.1 ± 0.01 s / 60 (DC 6V)
 
-- No-load current: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
+- Leerlaufstrom: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
 
-- Stopping torque: 1.3 ± 0.01kg · cm (DC 4.8V) ,1.5 ± 0.1kg · cm (DC 6V)
+- Haltemoment: 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
 
-- Stop current: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- Stillstandsstrom: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- Standby current: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
+- Ruhestrom: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
 
-- Weight: 9±1g (without servo horn)
+- Gewicht: 9±1g (ohne Servoarm)
 
-- Working temperature: -30℃~60℃
+- Arbeitstemperatur: -30℃~60℃
 
-**It should be noted that do not use a computer for power supply, because if the current demand is greater than 500mA, the servo may be burned out. It is recommended to use an external battery for power supply.**
+**Hinweis: Verwenden Sie nicht die Stromversorgung eines Computers, da der Servo beschädigt werden kann, wenn die Stromaufnahme größer als 500 mA ist. Es wird empfohlen, eine externe Batterie zur Stromversorgung zu verwenden.**
 
-4\.  **Preparation**
+4\.  **Vorbereitung**
 
-- Insert micro:bit board into the slot of keyestudio 4WD Mecanum Robot CarV2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriehalter ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf ON
 
-- Connect micro:bit to computer via an USB cable
+- Verbinden Sie das micro:bit per USB-Kabel mit dem Computer
 
-- Open the offline version of Mu.
+- Öffnen Sie die Offline-Version von Mu.
 
-5\.  **Test Code**
+5\.  **Testcode**
 
-Enter Mu software and open the file“Servo\.py”to import code. You can also input code in the edit window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Servo\.py”, um den Code zu laden. Sie können den Code auch selbst im Editor-Fenster eingeben.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Hinweis: Alle englischen Wörter und Symbole müssen auf Englisch geschrieben sein**.)
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen oder Cursor angezeigt werden.
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_eecf365e.png)
 
@@ -127,10 +127,12 @@ while True:
 
 ```
 
-4\.  **Test Result**
+4\.  **Testergebnis**
 
-After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **externe Stromversorgung einschalten (DIP-Schalter auf ON)** und den Reset-Knopf am micro:bit drücken.
 
 ![Img](./media/Python_bb3e1312.png)
 
-The LED dot matrix shows a smiley pattern and the servo rotates in the pattern 0°~45°~90°~135°~180°~0°.
+Die LED-Matrix zeigt ein Smiley-Muster an und der Servo dreht sich im Muster 0°~45°~90°~135°~180°~0°.
+
+---

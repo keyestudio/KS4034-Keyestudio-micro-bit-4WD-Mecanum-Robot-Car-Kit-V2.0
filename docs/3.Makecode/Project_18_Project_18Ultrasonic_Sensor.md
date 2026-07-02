@@ -1,167 +1,166 @@
-## Project 18：Ultrasonic Sensor
+## Project 18：Ultraschallsensor
 
-### Project 18.1：Ultrasonic Ranging
+### Project 18.1：Ultraschall-Entfernungsmessung
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The ultrasonic sensor uses sonar to determine distance to an object like bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes complete with ultrasonic transmitter and receiver modules.
+Der Ultraschallsensor verwendet Sonar, um wie Fledermäuse die Entfernung zu einem Objekt zu bestimmen. Er bietet eine hervorragende berührungslose Abstandserkennung mit hoher Genauigkeit und stabilen Messwerten in einem leicht zu handhabenden Modul. Das Modul enthält sowohl den Ultraschall-Sender als auch den Empfänger.
 
-The ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications.
+Der Ultraschallsensor wird in einer Vielzahl von Elektronikprojekten zur Hinderniserkennung, Entfernungsbestimmung und für weitere Anwendungen eingesetzt.
 
 ![](./media/Makecode_0180b169.png)
 
-The ultrasonic module will emit the ultrasonic waves after trigger signals. When the ultrasonic waves encounter the object and are reflected back, the module outputs an echo signal, so it can determine the distance of object from the time difference between trigger signal (TRIG)and echo signal(ECHO).
+Das Ultraschallmodul sendet Ultraschallwellen nach einem Trigger-Signal aus. Trifft das Ultraschallsignal auf ein Objekt und wird reflektiert, so gibt das Modul ein Echo-Signal aus. Aus der Zeitdifferenz zwischen Trigger-Signal (TRIG) und Echo-Signal (ECHO) kann die Entfernung zum Objekt berechnet werden.
 
-As the picture shows, it is like two eyes. One is transmitting end, the other is receiving end.
+Wie im Bild zu sehen ist, ähnelt es zwei Augen. Eines ist der Sender, das andere der Empfänger.
 
-According to the above wiring diagram, the integrated port of the ultrasonic sensor module is connected to the 5V G P15 P16 port on the micro:bit motor driver base plate. The Trig (T) pin is controlled by P15 of the micro:bit and the pin of Echo (E) the P16.
+Laut dem obigen Anschlussdiagramm ist der integrierte Anschluss des Ultraschallmoduls mit dem 5V G P15 P16-Anschluss auf der micro:bit Motorsteuerungsplatine verbunden. Der Trig (T)-Pin wird von P15 des micro:bit gesteuert und der Echo (E)-Pin an P16 angeschlossen.
 
 ![](./media/Makecode_1174e0ec.png)
 
-2\. **Working Principle**
+2\. **Funktionsprinzip**
 
 ![](./media/Makecode_8ff02741.png)
 
-(1)Pull down TRIG then trigger high level signals with least 10us;
+(1) TRIG auf LOW ziehen, dann einen HIGH-Impuls mit mindestens 10µs auslösen;
 
-(2)After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return;
+(2) Nach dem Trigger sendet das Modul automatisch acht 40 kHz Ultraschallimpulse und prüft, ob ein Echo zurückkehrt;
 
-(3)If there is a signal return, when ECHO (E) outputs a high level, then the duration of the high level is the time from transmission to reception of the ultrasonic waves. Then test distance = high level duration \*340m/s\*0.5. 
+(3) Wenn ein Echo zurückkommt, gibt ECHO (E) ein HIGH aus. Die Dauer dieses HIGH ist die Zeit vom Senden bis zum Empfang der Ultraschallwellen. Dann Testdistanz = HIGH-Dauer \*340m/s\*0.5. 
 
-3\. **Parameters**
+3\. **Parameter**
 
-- Working voltage: 3-5.5V (DC)
+- Betriebsspannung: 3-5.5V (DC)
 
-- Working current: 15mA
+- Betriebsstrom: 15mA
 
-- Working frequency: 40khz
+- Arbeitsfrequenz: 40 kHz
 
-- Maximum detection distance: about 3m
+- Maximale Erkennungsdistanz: etwa 3 m
 
-- Minimum detection distance: 2-3cm
+- Minimale Erkennungsdistanz: 2-3 cm
 
-- Precision: up to 0.2cm
+- Genauigkeit: bis zu 0,2 cm
 
-- Sensing angle: less than 15 degrees
+- Erfassungswinkel: weniger als 15 Grad
 
-- Input trigger pulse: 10us TTL level
+- Eingangstriggerimpuls: 10µs TTL-Pegel
 
-- Output echo signal: output TTL level signal (high), proportional to  range
+- Ausgangs-Echo-Signal: TTL-Pegelausgang (HIGH), proportional zur Entfernung
 
-4\. **Preparation**
+4\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio 4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den POWER-Schalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
 
-5\. **Test Code**
+5\. **Test-Code**
 
 ![](./media/Makecode_497760b1.png)
 
-Click“JavaScriptto view the corresponding JavaScript code: 
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
 
 ![](./media/Makecode_387f3243.png)
 
-6\.  **Test Result**
+6\.  **Testergebnis**
 
-Download code to micro:bit, keep USB cable connected, dial POWER switch to ON end. The distance value will be displayed on monitor.
+Laden Sie den Code auf das micro:bit, lassen Sie das USB-Kabel angeschlossen und schalten Sie den POWER-Schalter ein. Der Entfernungswert wird auf dem Monitor angezeigt.
 
 ![](./media/Makecode_2cd74c16.png)
 
-The monitor shows the distance between the obstacle and ultrasonic sensor(as shown below).
+Der Monitor zeigt die Entfernung zwischen dem Hindernis und dem Ultraschallsensor (siehe unten).
 
 ![](./media/Makecode_422adea3.png)
 
-Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate(the baud rate of USB serial communication of Micro:bit is 115200 through the test). Click “OK” and “Connect”.
+Öffnen Sie CoolTerm, klicken Sie auf Options, um SerialPort auszuwählen. Stellen Sie den COM-Port und die Baudrate auf 115200 ein (die Baudrate der USB-Seriellkommunikation des micro:bit beträgt im Test 115200). Klicken Sie auf “OK” und “Connect”.
 
-CoolTerm serial monitor displays the distance value as follows:
+Der CoolTerm-Seriellmonitor zeigt den Entfernungswert wie folgt an:
 
 ![](./media/Makecode_69b06998.png)
 
-### Project 18.2：Ultrasonic Avoidance
+### Project 18.2：Ultraschall-Ausweichverhalten
 
 ![Img](./media/Makecode_13139b46.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-In this project, we will integrate an ultrasonic sensor and a car to make an ultrasonic avoidance car.
+In diesem Projekt integrieren wir einen Ultraschallsensor und ein Fahrzeug, um ein Ultraschall-Ausweichfahrzeug zu bauen.
 
-Its principle is to detect the distance between the car and obstacle via the ultrasonic sensor to control the motion of smart car.
+Das Prinzip besteht darin, die Entfernung zwischen Fahrzeug und Hindernis über den Ultraschallsensor zu erfassen und dadurch die Bewegung des Fahrzeugs zu steuern.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den POWER-Schalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
-3\.  **Flow Chart**
+3\.  **Flussdiagramm**
 
 ![Img](./media/Makecode_e2adae4b.png)
 
-4\.  **Test Code**
+4\.  **Test-Code**
 
 ![](./media/Makecode_05a4740b.png)
 
 ![Img](./media/Makecode_d7879887.png)
 
-Click“JavaScript”to view the corresponding JavaScript code: 
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
 
 ![](./media/Makecode_c8f86a24.png)
 
 ![](./media/Makecode_13baf1d6.png)
 
-5\.  **Test Result**
+5\.  **Testergebnis**
 
-Download code to micro:bit, dial to ON end, and dial POWER to ON end. When the obstacle distance is greater than 20cm, the car goes forward ;
-on the contrary, smart car turns left.
+Laden Sie den Code auf das micro:bit, schalten Sie das Gerät und den POWER-Schalter ein. Wenn der Hindernisabstand größer als 20 cm ist, fährt das Fahrzeug vorwärts; andernfalls dreht das Fahrzeug nach links.
 
-### Project 18.3：Ultrasonic Following
+### Project 18.3：Ultraschall-Folgefunktion
 
 ![Img](./media/Makecode_d17a7889.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-In previous lesson, we’ve learned the basic principle of line tracking sensor. Next, we will combine the ultrasonic sensor with the car to make an ultrasonic following car.
+Im vorherigen Kapitel haben wir das Grundprinzip des Linienverfolgungssensors kennengelernt. Nun kombinieren wir den Ultraschallsensor mit dem Fahrzeug, um ein Ultraschall-Folgefahrzeug zu bauen.
 
-The ultrasonic sensor detects the obstacle distance and control the motion status of car.
+Der Ultraschallsensor ermittelt die Hindernisentfernung und steuert den Fahrzustand des Fahrzeugs.
 
-2\. **Preparation**
+2\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den POWER-Schalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
-3\. **Flow Chart**
+3\. **Flussdiagramm**
 
 ![Img](./media/Makecode_f5026aed.png)
 
-4\. **Test Code**
+4\. **Test-Code**
 
 ![](./media/Makecode_03b95531.png)
 
-Click“JavaScript”to view the corresponding JavaScript code: 
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
 
 ![](./media/Makecode_a93c8245.png)
 
-5\. **Test Result**
+5\. **Testergebnis**
 
-Download code to micro:bit, dial POWER switch to ON end on shield, smart car could follow the obstacle to move.
+Laden Sie den Code auf das micro:bit, schalten Sie den POWER-Schalter auf ON auf dem Shield, das Fahrzeug kann dem Hindernis folgen und sich bewegen.

@@ -2,32 +2,32 @@
 
 ![](./media/Makecode_445a7708.jpg)
 
-[Click to download the code for this lesson](./Code/Touch-sensitive-Logo.hex)
+[Klicken Sie hier, um den Code für diese Lektion herunterzuladen](./Code/Touch-sensitive-Logo.hex)
 
-### (1)Project Description:
+### (1)Projektbeschreibung:
 
-The Micro: Bit main board V2 is equipped with a golden touch- sensitive logo, which can act as an input component and function like an extra button.
+Das Micro:bit main board V2 ist mit einem goldenen, berührungssensitiven Logo ausgestattet, das als Eingabekomponente fungieren und wie ein zusätzlicher Knopf arbeiten kann.
 
-It contains a capacitive touch sensor that senses small changes in the electric field when pressed (or touched), just like your phone or tablet screen do.When you press it , you can activate the program.
+Es enthält einen kapazitiven Berührungssensor, der bei Druck (oder Berührung) kleine Veränderungen im elektrischen Feld erkennt, ähnlich wie der Bildschirm Ihres Telefons oder Tablets. Wenn Sie darauf drücken, können Sie das Programm aktivieren.
 
-### (2)Components Needed:
+### (2)Benötigte Komponenten:
 
-Micro:bit main board V2 
+Micro:bit main board V2
 
-Micro USB cable
+Micro-USB-Kabel
 
-### (3)Test Code :
+### (3)Test-Code :
 
-Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
+Verbinden Sie den Computer mit dem Micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor,
 
 ![](./media/Makecode_54cc5b8a.gif)
 
-Complete Program :
+Vollständiges Programm:
 
 ![](./media/Makecode_2ba9bf7d.png)
 
-### (4)Test Results:
+### (4)Testergebnisse:
 
-After uploading the code, touching the logo with your hand will display a heart shape on the dot matrix. Releasing your touch will reveal a number, with longer contact times displaying larger numbers.
+Nach dem Hochladen des Codes zeigt das Berühren des Logos mit Ihrer Hand ein Herzmuster auf der LED-Matrix an. Wenn Sie die Berührung lösen, wird eine Zahl angezeigt; bei längerer Berührung erscheinen größere Zahlen.
 
 ![](./media/Makecode_46b832c8.gif)

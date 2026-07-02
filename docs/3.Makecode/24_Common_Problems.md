@@ -1,13 +1,13 @@
-## Common Problems
+## Häufige Probleme
 
-1\.  **The car has no reaction**
+1\.  **Das Auto reagiert nicht**
 
-Please check whether the batteries are sufficient
+Bitte prüfen Sie, ob die Batterien ausreichend geladen sind
 
-Please check whether the wirings are correct
+Bitte prüfen Sie, ob die Verkabelung korrekt ist
 
-2\.  **Computers can't recognize the USB ports**
+2\.  **Computer erkennen die USB-Anschlüsse nicht**
 
-Please ensure whether the microbit driver is installed
+Bitte stellen Sie sicher, dass der microbit driver installiert ist
 
-Please check whether the USB wire is in good condition.
+Bitte prüfen Sie, ob das USB-Kabel in gutem Zustand ist

@@ -1,49 +1,51 @@
-## Project 4: Programmable Buttons
+## Projekt 4: Programmierbare Tasten
 
 ![](./media/Makecode_b339baac.jpg)
 
-[Click to download the code 1 for this lesson](./Code/Programmable-Buttons.hex)
+[Klicken Sie hier, um den Code 1 für diese Lektion herunterzuladen](./Code/Programmable-Buttons.hex)
 
-[Click to download the code 2 for this lesson](./Code/Programmable-Buttons2.hex)
+[Klicken Sie hier, um den Code 2 für diese Lektion herunterzuladen](./Code/Programmable-Buttons2.hex)
 
-### (1)Project Description:
+### (1)Projektbeschreibung:
 
-Buttons can be used to control circuits. In an integrated circuit with a button, the circuit is connected when pressing the button and it is open the other way around. Micro: Bit main board V2 boasts three buttons, two are programmable buttons(marked with A and B), and the one on the other side is a reset button. By pressing the two programmable buttons can input three different signals. We can press button A or B alone or press them together and the LED dot matrix shows A,B and AB respectively. Let's get started.
+Tasten können zur Steuerung von Schaltkreisen verwendet werden. In einem integrierten Schaltkreis mit einer Taste ist der Stromkreis beim Drücken der Taste verbunden und in umgekehrter Richtung offen. Das Micro:bit main board V2 verfügt über drei Tasten: zwei sind programmierbare Tasten (mit A und B gekennzeichnet) und die auf der anderen Seite ist eine Reset-Taste. Durch Drücken der beiden programmierbaren Tasten können drei verschiedene Signale eingegeben werden. Wir können Taste A oder B einzeln drücken oder beide zusammen, und die LED-Punktmatrix zeigt entsprechend A, B und AB an. Los geht's.
 
-### (2)Components Needed:
+### (2)Benötigte Komponenten:
 
 Micro:bit main board V2 
 
-Micro USB cable
+Micro-USB-Kabel
 
-### (3)Test Code 1 :
+### (3)Testcode 1 :
 
-Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
+Verbinden Sie den Computer mit dem Micro:bit-Board über das Micro-USB-Kabel und programmieren Sie im MakeCode-Editor,
 
 ![](./media/Makecode_c776e309.gif)
 
-Complete Code:
+Vollständiger Code:
 
 ![](./media/Makecode_054985a9.png)
 
-### (4)Test Results 1 :
+### (4)Testergebnisse 1 :
 
-After uploading test code 1 to micro:bit main board V2 , the 5*5 LED dot matrix shows A if button A is pressed, B if button B pressed, and AB if button A and B pressed together.
+Nachdem Sie Testcode 1 auf das Micro:bit main board V2 hochgeladen haben, zeigt die 5*5 LED-Punktmatrix A an, wenn Taste A gedrückt wird, B, wenn Taste B gedrückt wird, und AB, wenn die Tasten A und B zusammen gedrückt werden.
 
 ![](./media/Makecode_b48c79ad.gif)
 
-### (5) Test Code 2 :
+### (5) Testcode 2 :
 
 ![](./media/Makecode_751dfce0.gif)
 
 
 
-Complete Program :
+Vollständiges Programm :
 
 ![](./media/Makecode_5cdecff7.png)
 
-### (6)Test Results 2:
+### (6)Testergebnisse 2:
 
-After uploading test code 2 to micro:bit main board V2, when pressing the button A the LEDs turning red increase while when pressing the button B the LEDs turning red reduce.
+Nachdem Sie Testcode 2 auf das Micro:bit main board V2 hochgeladen haben, erhöhen sich beim Drücken der Taste A die rot leuchtenden LEDs, während sie sich beim Drücken der Taste B verringern.
 
 ![](./media/Makecode_248724b3.gif)
+
+---

@@ -1,25 +1,25 @@
-### Project 3：5*5 LED Dot Matrix
+### Projekt 3：5*5 LED-Punktmatrix
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-Dot matrix is very commonplace in daily life, which has found wide applications in LED advertisement screens, elevator floor display, bus stop announcement and so on.
-The LED dot matrix of Micro: Bit main board contains 25 Diodes. Previously, we have succeeded in controlling a certain LED via its position point. Supported by the same theory, we can turn on many LEDs at the same time to showcase patterns, digits and characters. 
+Punktmatrizen sind im Alltag sehr verbreitet und finden breite Anwendung in LED-Werbetafeln, Etagenanzeigen von Aufzügen, Haltestellenanzeigen usw.
+Die LED-Punktmatrix des Micro:bit-Hauptboards besteht aus 25 Dioden. Zuvor ist es uns gelungen, eine einzelne LED über ihren Positionspunkt zu steuern. Auf derselben Theorie basierend können wir mehrere LEDs gleichzeitig einschalten, um Muster, Ziffern und Zeichen darzustellen.
 
-What’s more, we can also click”show icon“ to choose the pattern we like to display. Last but not the least, we can design patterns by ourselves as well.
+Außerdem können wir auf „show icon“ klicken, um ein gewünschtes Muster auszuwählen. Schließlich können wir auch eigene Muster entwerfen.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Verbinden Sie das micro:bit-Hauptboard mithilfe des USB-Kabels mit Ihrem Computer
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code1**
+3\.  **Testcode1**
 
-You could open“5×5 LED Dot Matrix-1\.py”file to import the code. You can also input code in the editing window yourself.
+Sie können die Datei „5×5 LED Dot Matrix-1\.py“ öffnen, um den Code zu importieren. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Symbole müssen auf Englisch geschrieben werden.**)
 
 ![](./media/Python_00f15f0a.png)
 
@@ -31,27 +31,27 @@ val = Image("00900:""00900:""90909:""09990:""00900")
 display.show(val)
 ```
 
-Click“Check”to examine the error in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf „Check“, um Fehler im Code zu überprüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_a1197f5e.png)
 
-If the code is correct, connect micro:bit to computer and click“Flash”to download code to micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie den micro:bit mit dem Computer und klicken Sie auf „Flash“, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_1fd78e31.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis1**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste auf dem Board.
 
 ![Img](./media/Python_bb3e1312.png)
 
-We will find that the 5*5 dot matrix start to show a downward arrow ![](./media/Python_26c7d8c0.png).
+Sie werden sehen, dass die 5×5-Punktmatrix einen nach unten zeigenden Pfeil anzeigt ![](./media/Python_26c7d8c0.png).
 
-5\.  **Test Code2**
+5\.  **Testcode2**
 
-You could open “5×5 LED Dot Matrix-2\.py“ file to import the code. You can also input code in the editing window yourself.
+Sie können die Datei „5×5 LED Dot Matrix-2\.py“ öffnen, um den Code zu importieren. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Symbole müssen auf Englisch geschrieben werden.**)
 
 ![](./media/Python_dc6eea45.png)
 
@@ -85,33 +85,32 @@ sleep(500)
 display.clear()
 ```
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf „Check“, um Fehler im Code zu überprüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_14bb490a.png)
 
-If the code is correct, connect the micro:bit to the computer and click“Flash”to download code to micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie den micro:bit mit dem Computer und klicken Sie auf „Flash“, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_a05c33d2.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis2**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste auf dem Board.
 
 ![Img](./media/Python_bb3e1312.png)
 
-We will find that the 5*5 dot matrix start to show numbers 1,2,3,4 and 5 and then it alternatively shows a downward arrow word![](./media/Python_26c7d8c0.png),“Hello”, a heart pattern ![](./media/Python_9b18b2b8.png), arrow pointing at northeast ![](./media/Python_364f2e35.png), then at southeast
-![](./media/Python_fb3ba009.png) then at southwest ![](./media/Python_7ec21961.png) and then at northwest ![](./media/Python_ced0bb41.png).
+Sie werden feststellen, dass die 5×5-Punktmatrix nacheinander die Zahlen 1, 2, 3, 4 und 5 anzeigt und anschließend abwechselnd einen nach unten zeigenden Pfeil ![](./media/Python_26c7d8c0.png), „Hello“, ein Herzmuster ![](./media/Python_9b18b2b8.png), einen nach Nordosten zeigenden Pfeil ![](./media/Python_364f2e35.png), dann nach Südosten
+![](./media/Python_fb3ba009.png), dann nach Südwesten ![](./media/Python_7ec21961.png) und schließlich nach Nordwesten ![](./media/Python_ced0bb41.png) an.
 
-7\.  **Code Explanation**
+7\.  **Code-Erklärung**
 
 ![Img](./media/Python_ef42956d.png)
 
 
-6.  **Reference**
+6.  **Referenz**
 
 display.scroll() ：
 
-The display scrolls to show the values, if it is integer or float, we will use str（）to transfer it into character strings.
+Die Anzeige scrollt, um die Werte anzuzeigen. Wenn es sich um einen Integer oder Float handelt, verwenden wir str(), um ihn in Zeichenketten umzuwandeln.
 
-More details, please refer to th ink：[https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
-
+Weitere Details finden Sie unter: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

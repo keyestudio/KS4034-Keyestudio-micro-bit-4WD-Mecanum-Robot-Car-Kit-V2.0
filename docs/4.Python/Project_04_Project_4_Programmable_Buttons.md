@@ -1,31 +1,31 @@
-### Project 4：Programmable Buttons
+### Projekt 4：Programmierbare Tasten
 
 ![](./media/Python_06be84fb.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
 ![](./media/Python_b6d60ae2.png)
 
-Buttons can be used to control circuits. In an integrated circuit with a push button, the circuit is connected when pressing the button and but after release, it will break again. 
+Tasten können verwendet werden, um Schaltkreise zu steuern. In einem Bauteil mit einem Drucktaster wird der Stromkreis beim Drücken geschlossen und nach dem Loslassen wieder geöffnet.
 
-Both ends of the button like two mountains. There is a river in between. 
-The internal metal piece connect the two sides to let the current pass, just like building a bridge to connect two mountains.
+Beide Enden der Taste sind wie zwei Berge. Dazwischen verläuft ein Fluss. 
+Das interne Metallstück verbindet die beiden Seiten, sodass der Strom fließen kann, ähnlich wie eine Brücke, die zwei Berge verbindet.
 
-The internal structure of the button is shown as follows: before pressing the button, 1 ,2 , 3 and 4 are turned on. However, 1, 3 or 1, 4 or 2, 3 or 2 and 4 are disconnected, which is only enabled when the button is pressed. ![](./media/Python_d2a204e6.png)
+Der interne Aufbau des Tasters ist wie folgt dargestellt: Vor dem Drücken sind 1, 2, 3 und 4 eingeschaltet. Allerdings sind 1 und 3 oder 1 und 4 oder 2 und 3 oder 2 und 4 getrennt; diese Verbindungen werden erst aktiviert, wenn der Taster gedrückt wird. ![](./media/Python_d2a204e6.png)
 
-Micro: Bit main board boasts three push buttons, two are programmable buttons(marked with A and B), and the one on the other side is a reset button. By pressing the two programmable buttons can input three different signals. We can press button A or B alone or press them together and the LED dot matrix shows A,B and AB respectively. Let’s get started. 
+Das micro:bit-Hauptboard verfügt über drei Drucktaster: Zwei sind programmierbare Tasten (mit A und B gekennzeichnet) und die auf der anderen Seite ist eine Reset-Taste. Durch Drücken der beiden programmierbaren Tasten können drei verschiedene Signale eingegeben werden. Man kann Taste A oder B einzeln drücken oder beide zusammen; die LED-Punktmatrix zeigt dann entsprechend A, B bzw. AB an. Legen wir los.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Schließen Sie das micro:bit-Hauptboard über das USB-Kabel an Ihren Computer an.
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
 3\.  **Test Code1**
 
-Enter Mu software and open the file“Programmable Buttons-1\.py”to import the code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Programmable Buttons-1\.py”, um den Code zu laden. Sie können den Code auch selbst im Editor eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Symbole müssen in Englisch verfasst sein.**)
 
 ![](./media/Python_2637f524.png)
 
@@ -40,27 +40,27 @@ while True:
     elif button_b.is_pressed():
         display.show("B")
 ```
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf „Check“, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen oder Cursor angezeigt werden.
 
 ![](./media/Python_a0f284f3.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf „Flash“, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_5694d3ce.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis1**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromversorgung ein (stellen Sie den DIP-Schalter auf ON)** und drücken Sie die Reset-Taste auf dem Board.
 
 ![Img](./media/Python_bb3e1312.png)
 
-The 5*5 LED dot matrix shows “A”if button A is pressed, then“B” if button B is pressed, and “AB” if button A and B are pressed together.
+Die 5*5-LED-Punktmatrix zeigt „A“, wenn Taste A gedrückt wird, dann „B“, wenn Taste B gedrückt wird, und „AB“, wenn A und B gleichzeitig gedrückt werden.
 
 5\.  **Test Code2**
 
-Enter Mu software and open the file“Programmable Buttons-2\.py”to import the code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Programmable Buttons-2\.py”, um den Code zu laden. Sie können den Code auch selbst im Editor eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Symbole müssen in Englisch verfasst sein.**)
 
 ![](./media/Python_1a1126f6.png)
 
@@ -106,28 +106,30 @@ while True:
     if a == 5:
         display.show(val6)
 ```
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf „Check“, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen oder Cursor angezeigt werden.
 
 ![](./media/Python_21771d90.png)
 
 ![Img](./media/Python_8d257384.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf „Flash“, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_84ba8cde.png)
 
 ![Img](./media/Python_8d257384.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis2**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromversorgung ein (stellen Sie den DIP-Schalter auf ON)** und drücken Sie die Reset-Taste auf dem Board.
 
 ![Img](./media/Python_bb3e1312.png)
 
-If the button A is pressed, the LEDs turning red increase while if the button B pressed, the LEDs turning red reduce.
+Wenn Taste A gedrückt wird, erhöhen sich die rot leuchtenden LEDs; wenn Taste B gedrückt wird, verringern sich die rot leuchtenden LEDs.
 
-7\.  **Code Explanation**
+7\.  **Code-Erklärung**
 
 ![Img](./media/Python_b33858dc.png)
 
 ![Img](./media/Python_32bd1cca.png)
+
+---

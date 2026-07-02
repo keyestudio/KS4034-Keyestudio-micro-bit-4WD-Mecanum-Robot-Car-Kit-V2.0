@@ -1,7 +1,7 @@
 ## Product Description 
 
-This product is a smart car based on Micro:bit. It integrates a host of functions such as ultrasonic following, line tracking, infrared control as well as Bluetooth control. There is a passive buzzer to play music, 4 WS2812RGB LEDs to display different colors, 2 seven-color lights to make direction lights for the car. This product uses two 18650 lithium batteries for power supply.  
+Dieses Produkt ist ein intelligentes Auto basierend auf Micro:bit. Es integriert eine Vielzahl von Funktionen wie Ultraschall-Folgen, Linienverfolgung, Infrarotsteuerung sowie Bluetooth-Steuerung. Es verfügt über einen passiven Summer zum Abspielen von Musik, 4 WS2812RGB-LEDs zur Anzeige verschiedener Farben und 2 siebenfarbige Leuchten als Blinker für das Fahrzeug. Dieses Produkt verwendet zwei 18650-Lithiumbatterien als Stromversorgung.  
 
-When installing and disassembling the battery, please pay attention to the positive and negative poles of the battery, and be sure not to reverse them. By the way, the motor speed of this product is adjustable.
+Beim Einbau und Entfernen der Batterie achten Sie bitte auf die Plus- und Minuspolung der Batterie und stellen Sie sicher, dass Sie diese nicht verwechseln. Übrigens ist die Motordrehzahl dieses Produkts einstellbar.
 
-In order to provide you with better experience, corresponding documents about installation and test code are also provided.
+Um Ihnen eine bessere Erfahrung zu bieten, sind entsprechende Dokumente zur Installation und Beispiel-Testcodes ebenfalls beigefügt.

@@ -1,26 +1,26 @@
-### Project 11: Microphone
+### Projekt 11: Mikrofon
 
 ![](./media/Python_3073a8af.png)
 
 ![](./media/Python_7f074115.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The Micro: Bit main board has a built-in microphone, which can test the volume of ambient environment. When you clap, the microphone LED indicator turns on. Furthermore, it can measure the intensity of sound, thereby you can make a noise scale or disco lighting changing with music. 
+Die Micro: Bit-Hauptplatine verfügt über ein eingebautes Mikrofon, mit dem die Umgebungslautstärke gemessen werden kann. Wenn Sie klatschen, leuchtet die Mikrofon-LED-Anzeige auf. Darüber hinaus kann es die Lautstärke messen, sodass Sie eine Lärmskala oder eine Discobeleuchtung erstellen können, die sich zur Musik ändert.
 
-The microphone is placed on the opposite side of the microphone LED indicator and in proximity with holes that lets sound pass. When the board detects the sound, the LED indicator lights up.
+Das Mikrofon befindet sich auf der gegenüberliegenden Seite der Mikrofon-LED-Anzeige und in der Nähe von Öffnungen, durch die der Schall gelangen kann. Wenn die Platine den Ton erkennt, leuchtet die LED-Anzeige auf.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Schließen Sie die micro:bit-Hauptplatine mit dem USB-Kabel an Ihren Computer an.
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code1**
+3\.  **Testcode1**
 
-Enter Mu software and open the file“Microphone-1\.py”to import the code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Microphone-1\.py”, um den Code zu laden. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
 
-(**Note: All words and symbols must be written in English**.)
+(**Hinweis: Alle Wörter und Zeichen müssen auf Englisch geschrieben sein**.)
 
 ![](./media/Python_19b38832.png)
 
@@ -35,27 +35,27 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf „Check“, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_36a669c7.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie den micro:bit mit Ihrem Computer und klicken Sie auf „Flash“, um den Code auf die micro:bit-Platine herunterzuladen.
 
 ![](./media/Python_0515bf32.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis1**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf die Platine heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-The LED dot matrix displays the pattern “❤”when you clap and the pattern ![](./media/04fdfc9060943954e7938bb1a741d626.png) when it is quiet around.
+Die LED-Punktmatrix zeigt das Muster „❤“, wenn Sie klatschen, und das Muster ![](./media/04fdfc9060943954e7938bb1a741d626.png), wenn es ruhig ist.
 
-5\.  **Test Code2**
+5\.  **Testcode2**
 
-Enter Mu software and open the file“Microphone-2\.py”to import the code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Microphone-2\.py”, um den Code zu laden. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Zeichen müssen auf Englisch geschrieben sein.**)
 
 ![](./media/Python_f0e5a346.png)
 
@@ -81,22 +81,22 @@ while True:
             maxSound = soundLevel
 ```
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf „Check“, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_d0c79871.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie den micro:bit mit Ihrem Computer und klicken Sie auf „Flash“, um den Code auf die micro:bit-Platine herunterzuladen.
 
 ![](./media/Python_d828b9ee.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis2**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf die Platine heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- When the button A is pressed, the LED dot matrix displays the value of the biggest volume( **please note that the biggest volume can be reset via the Reset button on the other side of the board** ). When clapping, the louder the tested sound, the brighter the 25 LEDs on the LED dot matrix screen.
+Wenn die Taste A gedrückt wird, zeigt die LED-Punktmatrix den Wert der größten Lautstärke an ( **bitte beachten Sie, dass die größte Lautstärke über die Reset-Taste auf der anderen Seite der Platine zurückgesetzt werden kann** ). Beim Klatschen gilt: Je lauter der gemessene Ton, desto heller leuchten die 25 LEDs der LED-Punktmatrix.
 
-7\.  **Code Explanation**
+7\.  **Code-Erklärung**
 
 ![Img](./media/Python_980f62b3.png)

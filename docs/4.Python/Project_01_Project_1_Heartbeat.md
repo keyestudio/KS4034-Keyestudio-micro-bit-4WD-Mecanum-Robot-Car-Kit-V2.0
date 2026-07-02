@@ -2,31 +2,31 @@
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-This project is easy to conduct solely with a micro:bit main board and  icro USB cable. This experiment serves as a starter for your to entr o the magical programming world of the micro:bit.
+Dieses Projekt lässt sich ausschließlich mit einem micro:bit Hauptboard und einem micro USB-Kabel leicht durchführen. Dieses Experiment dient als Einstieg, um in die faszinierende Programmierwelt des micro:bit einzutreten.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Schließen Sie das micro:bit Hauptboard über das USB-Kabel an Ihren Computer an.
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code**
+3\.  **Testcode**
 
-Open the Mu software, tap“Load”, select““microbit-Heartbeat\.py“ file and click“open”:
+Öffnen Sie die Mu-Software, tippen Sie „Load“, wählen Sie die Datei „“microbit-Heartbeat\.py“ und klicken Sie auf „open“:
 
 ![](./media/Python_1ec17d44.png)
 
 ![](./media/Python_4bda2b61.png)
 
-There is another way to import code. Open the Mu software and drag file”microbit-Heartbeat\.py”into it.
+Es gibt eine andere Möglichkeit, Code zu importieren. Öffnen Sie die Mu-Software und ziehen Sie die Datei „microbit-Heartbeat\.py“ hinein.
 
 ![](./media/Python_c5b7322b.png)
 
-You can also input code in the edit window yourself.
+Sie können den Code auch direkt im Bearbeitungsfenster eingeben.
 
-(**Note: All English words and symbols must be written in English.**)
+(**Hinweis: Alle englischen Wörter und Symbole müssen auf Englisch geschrieben sein.**)
 
 ![](./media/Python_80af4cb3.png)
 
@@ -39,7 +39,7 @@ while True:
     display.show(Image.HEART_SMALL)
     sleep(500)
 ```
-The following are a list of built-in images:
+Nachfolgend eine Liste der eingebauten Bilder:
 
 • Image.HEART
 
@@ -67,13 +67,13 @@ The following are a list of built-in images:
 
 • Image.YES
 
-• Image\.NO
+• Image.NO
 
-• Image.CLOCK12, Image.CLOCK11, Image.CLOCK10, Image.CLOCK9 mage.CLOCK8, Image.CLOCK7, Image.CLOCK6, Image.CLOCK5,
+• Image.CLOCK12, Image.CLOCK11, Image.CLOCK10, Image.CLOCK9, Image.CLOCK8, Image.CLOCK7, Image.CLOCK6, Image.CLOCK5,
 
-Image.CLOCK4, Image.CLOCK3, Image.CLOCK2,Image.CLOCK1
+Image.CLOCK4, Image.CLOCK3, Image.CLOCK2, Image.CLOCK1
 
-• Image.ARROW_N, Image.ARROW_NE, Image.ARROW_E, Image.ARROW_SE mage.ARROW_S, Image.ARROW_SW, Image.ARROW_W, Image.ARROW_NW
+• Image.ARROW_N, Image.ARROW_NE, Image.ARROW_E, Image.ARROW_SE, Image.ARROW_S, Image.ARROW_SW, Image.ARROW_W, Image.ARROW_NW
 
 • Image.TRIANGLE
 
@@ -131,7 +131,7 @@ Image.CLOCK4, Image.CLOCK3, Image.CLOCK2,Image.CLOCK1
 
 • Image.SNAKE，Image.ALL_CLOCKS，Image.ALL_ARROWS
 
-Connect the micro:bit board to computer via an USB cable, click“Flash”to  download code to the board.
+Verbinden Sie das micro:bit Board mit dem Computer über ein USB-Kabel und klicken Sie auf „Flash“, um den Code auf das Board herunterzuladen.
 
 ![](./media/Python_93e18731.png)
 
@@ -141,45 +141,47 @@ Connect the micro:bit board to computer via an USB cable, click“Flash”to  do
 
 ![](./media/Python_cc33f1a9.png)
 
-The code, even it is wrong, can be downloaded to the micro:bit board successfully, but can not work on micro:bit board.
+Der Code kann, selbst wenn er fehlerhaft ist, erfolgreich auf das micro:bit Board heruntergeladen werden, jedoch nicht auf dem micro:bit ausgeführt werden.
 
-Click“Flash”to download code to micro:bit. 
+Klicken Sie auf „Flash“, um den Code auf das micro:bit zu laden.
 
 ![](./media/Python_8982d0b0.png)
 
-Click“REPL”and press the reset button on micro:bit, the error information will be displayed on the REPL window, as shown below: 
+Klicken Sie auf „REPL“ und drücken Sie die Reset-Taste auf dem micro:bit; die Fehlermeldungen werden im REPL-Fenster angezeigt, wie unten dargestellt:
 
 ![](./media/Python_0c2abf18.png)
 
-Click“REPL”again to turn off the REPL mode, then you could refresh new code. 
+Klicken Sie erneut auf „REPL“, um den REPL-Modus zu beenden, dann können Sie neuen Code aktualisieren.
 
-To make sure the correct code, you only need to tap“Check”. The errors will be shown on the window.
+Um sicherzustellen, dass der Code korrekt ist, tippen Sie einfach auf „Check“. Die Fehler werden im Fenster angezeigt.
 
 ![](./media/Python_b994c0d3.png)
 
-Modify the code according to the prompt and click“Check”.
+Ändern Sie den Code entsprechend den Hinweisen und klicken Sie auf „Check“.
 
 ![](./media/Python_bc5cbed3.png)
 
- Please log in the website for more tutorials：[https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
+ Bitte besuchen Sie die Website für weitere Tutorials: [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
 
-4\.  **Test Result**
+4\.  **Testergebnis**
 
-Click “<span style="color: rgb(255, 76, 65);">**Flash**</span>” to load the code to the micro:bit board.
+Klicken Sie auf “<span style="color: rgb(255, 76, 65);">**Flash**</span>”, um den Code auf das micro:bit Board zu laden.
 
 ![Img](./media/Python_ed83ac25.png)
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on the board.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das micro USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste auf dem Board.
 
 ![Img](./media/Python_bb3e1312.png)
 
-The LED dot matrix shows the pattern “❤”and then “![](./media/Python_04fdfc90.png)”alternatively.
+Die LED-Punktmatrix zeigt abwechselnd das Muster „❤“ und dann „![](./media/Python_04fdfc90.png)“.
 
-5\.  **Code Explanation**
+5\.  **Code-Erklärung**
 
-|from microbit import*|Import the library file of micro：bit|
+|from microbit import*|Importieren der Bibliothek des micro:bit|
 |-|-|
-|while True:|This is a permanent loop that makes micro:bit execute the code i his loop forever.|
-|display.show(Image.HEART)|micro：bit shows “❤”|
-|sleep(500)|Delay in 500ms|
-|display.show(Image.HEART_SMALL)|The LED dot matrix displays“![](./media/Python_04fdfc90.png)”|
+|while True:|Dies ist eine Endlosschleife, die den micro:bit dazu bringt, den Code in dieser Schleife dauerhaft auszuführen.|
+|display.show(Image.HEART)|micro:bit zeigt „❤“ an|
+|sleep(500)|Verzögerung von 500 ms|
+|display.show(Image.HEART_SMALL)|Die LED-Punktmatrix zeigt „![](./media/Python_04fdfc90.png)“ an|
+
+---

@@ -1,57 +1,59 @@
-## Project 6: Geomagnetic Sensor
+## Projekt 6: Geomagnetischer Sensor
 
-[Click to download the code 1 for this lesson](./Code/Geomagnetic-Sensor.hex)
+[Klicken Sie hier, um den Code 1 für diese Lektion herunterzuladen](./Code/Geomagnetic-Sensor.hex)
 
-[Click to download the code 2 for this lesson](./Code/Geomagnetic-Sensor2.hex)
+[Klicken Sie hier, um den Code 2 für diese Lektion herunterzuladen](./Code/Geomagnetic-Sensor2.hex)
 
-### (1)Project Description:
+### (1)Projektbeschreibung:
 
-(1) Project Description:This project aims to explain the use of the Micro: bit geomagnetic sensor, which can not only detect the strength of the geomagnetic field, but also be used as a compass to find bearings. It is also an important part of the Attitude and Heading Reference System (AHRS). Micro: Bit main board V2 uses LSM303AGR geomagnetic sensor, and the dynamic range of magnetic field is ± 50 gauss. In the board, the magnetometer module is used in both magnetic detection and compass. In this experiment, the compass will be introduced first, and then the original data of the magnetometer will be checked. The main component of a common compass is a magnetic needle, which can be rotated by the geomagnetic field and point toward the geomagnetic North Pole (which is near the geographic South Pole) to determine direction.
+(1) Projektbeschreibung: Dieses Projekt erklärt die Verwendung des Micro:bit-Geomagnetfeldsensors, der nicht nur die Stärke des geomagnetischen Feldes erkennen, sondern auch als Kompass zur Ermittlung von Richtungen verwendet werden kann. Er ist außerdem ein wichtiger Bestandteil des Attitude and Heading Reference System (AHRS). Das Micro:bit main board V2 verwendet den LSM303AGR-Geomagnetfeldsensor, und der Dynamikbereich des Magnetfeldes beträgt ± 50 Gauss. Auf dem Board wird das Magnetometer-Modul sowohl zur Magnetfeldmessung als auch als Kompass eingesetzt. In diesem Experiment wird zunächst der Kompass vorgestellt und anschließend die Rohdaten des Magnetometers überprüft. Die Hauptkomponente eines herkömmlichen Kompasses ist eine Magnetnadel, die vom geomagnetischen Feld gedreht werden kann und zur Bestimmung der Richtung zum geomagnetischen Nordpol (der in der Nähe des geografischen Südpols liegt) zeigt.
 
-### (2)Components Needed:
+### (2)Benötigte Komponenten:
 
 Micro:bit main board V2
 
- Micro USB cable
+ Micro USB-Kabel
 
-### (3)Test Code 1 :
+### (3)Testcode 1 :
 
-Link computer with micro:bit board by micro USB cable, and program in MakeCode editor.
+Verbinden Sie den Computer mit dem Micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor.
 
 ![](./media/Makecode_5805c7de.gif)
 
-Complete Program :
+Vollständiges Programm :
 
 ![](./media/Makecode_5a958132.png)
 
-### (4)Test Results 1 :
+### (4)Testergebnisse 1 :
 
-After uploading test code to micro:bit main board V2 and powering the board via the USB cable, and pressing the button A, the board asks us to calibrate compass and the LED dot matrix shows "TILT TO FILL SCREEN". Then enter the calibration page. Rotate the board until all 25 LEDs are on red as shown below.
+Nachdem der Testcode auf das Micro:bit main board V2 hochgeladen und das Board über das USB-Kabel mit Strom versorgt wurde, und nach dem Drücken der Taste A fordert das Board zur Kalibrierung des Kompasses auf und die LED-Punktmatrix zeigt "TILT TO FILL SCREEN" an. Dann gelangt man zur Kalibrierungsseite. Drehen Sie das Board, bis alle 25 LEDs wie unten gezeigt rot leuchten.
 
 ![](./media/Makecode_b0a4ebf1.jpg)
 
-calibrate compass:
+Kompass kalibrieren:
 
 ![](./media/Makecode_05a88e21.gif)
 
-After that, a smile pattern ![](./media/Makecode_74a69436.png)appears, which implies the calibration is done. When the calibration process is completed, pressing the button A will make the magnetometer reading display directly on the screen. And the direction north, east, south and west correspond to 0°, 90°, 180° and 270° respectively.
+Danach erscheint ein Smiley-Muster ![](./media/Makecode_74a69436.png), was darauf hinweist, dass die Kalibrierung abgeschlossen ist. Wenn der Kalibrierungsprozess abgeschlossen ist, zeigt ein Druck auf die Taste A die Magnetometer-Messwerte direkt auf dem Bildschirm an. Und die Richtungen Norden, Osten, Süden und Westen entsprechen jeweils 0°, 90°, 180° und 270°.
 
 ![](./media/Makecode_23b07bfb.gif)
 
-### (5) Test Code 2:
+### (5) Testcode 2:
 
-This module can keep reading data to determine direction, so does point to the current magnetic North Pole by arrow.
+Dieses Modul kann weiterhin Daten lesen, um die Richtung zu bestimmen, und zeigt daher mit einem Pfeil auf den aktuellen magnetischen Nordpol.
 
-Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
+Verbinden Sie den Computer mit dem Micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor,
 
 ![](./media/Makecode_db8b2d7e.gif)
 
-Complete Program :
+Vollständiges Programm :
 
 ![](./media/Makecode_ef823069.png)
 
-### (6) Test Results 2
+### (6) Testergebnisse 2
 
-Upload code 2. After calibration, tilt micro:bit board, and the LED dot matrix displays the direction signs.
+Laden Sie Code 2 hoch. Nach der Kalibrierung neigen Sie das Micro:bit-Board, und die LED-Punktmatrix zeigt die Richtungssymbole an.
 
 ![](./media/Makecode_d8944d5f.gif)
+
+---

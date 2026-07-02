@@ -1,49 +1,49 @@
-## Project 11: Microphone
+## Projekt 11: Mikrofon
 
 ![](./media/Makecode_d2f14bdc.jpg)
 
-[Click to download the code 1 for this lesson](./Code/Microphone.hex)
+[Klicken Sie hier, um den Code 1 für diese Lektion herunterzuladen](./Code/Microphone.hex)
 
-[Click to download the code 2 for this lesson](./Code/Microphone2.hex)
+[Klicken Sie hier, um den Code 2 für diese Lektion herunterzuladen](./Code/Microphone2.hex)
 
-### (1)Project Description:
+### (1)Projektbeschreibung:
 
-The Micro: Bit main board V2 is built with a microphone which can test the volume of ambient environment. When you clap, the microphone LED indicator turns on. Since it can measure the intensity of sound, you can make a noise scale or disco lighting changing with music. The microphone is placed on the opposite side of the microphone LED indicator and in proximity with holes that lets sound pass. When the board detects sound, the LED indicator lights up.
+Das Micro:bit main board V2 ist mit einem Mikrofon ausgestattet, das die Lautstärke der Umgebung messen kann. Wenn Sie in die Hände klatschen, leuchtet die Mikrofon-LED-Anzeige auf. Da es die Schallintensität messen kann, können Sie eine Lärmskala erstellen oder eine Disco-Beleuchtung erzeugen, die sich mit der Musik verändert. Das Mikrofon befindet sich gegenüber der Mikrofon-LED-Anzeige und in Nähe von Öffnungen, die den Schall durchlassen. Wenn das Board Schall erkennt, leuchtet die LED-Anzeige auf.
 
-### (2) Components Needed:
+### (2)Benötigte Komponenten:
 
-Micro:bit main board V2 
+Micro:bit main board V2
 
-Micro USB cable 
+Micro USB-Kabel
 
-### (3) Test Code 1:
+### (3)Testcode 1:
 
-Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
+Verbinden Sie den Computer mit dem micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor,
 
 ![](./media/Makecode_7c037c9b.gif)
 
-Complete Program :
+Vollständiges Programm:
 
 ![](./media/Makecode_1ea97896.png)
 
-### (4)Test Results 1:
+### (4)Testergebnisse 1:
 
-After uploading the code, display a large heart icon when ambient sound is detected, and a small heart icon when the surroundings are quiet (Note: Sounds too faint to detect will not trigger the response).
+Nach dem Hochladen des Codes wird bei erkannter Umgebungslautstärke ein großes Herzsymbol angezeigt und bei Ruhe der Umgebung ein kleines Herzsymbol (Hinweis: Zu leise Geräusche werden die Reaktion nicht auslösen).
 
 ![](./media/Makecode_facbbb50.gif)
 
-### (5)Test Code 2:
+### (5)Testcode 2:
 
-Link computer with micro:bit board by micro USB cable, and program in MakeCode editor,
+Verbinden Sie den Computer mit dem micro:bit-Board über ein Micro-USB-Kabel und programmieren Sie im MakeCode-Editor,
 
 ![](./media/Makecode_68e37f22.gif)
 
-Complete Program :
+Vollständiges Programm:
 
 ![](./media/Makecode_9851e889.png)
 
-### (6)Test Results 2:
+### (6)Testergebnisse 2:
 
 ![](./media/Makecode_0b914334.gif)
 
-After uploading the code, the dot matrix pulses in sync with sound changes. Pressing the “A” key displays the numerical value of the current sound.
+Nach dem Hochladen des Codes pulsiert die Punktmatrix synchron zu den Schalländerungen. Das Drücken der Taste „A“ zeigt den numerischen Wert des aktuellen Schalls an.

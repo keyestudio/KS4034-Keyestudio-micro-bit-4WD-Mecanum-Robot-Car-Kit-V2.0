@@ -2,32 +2,32 @@
 
 ![](./media/Makecode_2423afc6.jpg)
 
-[Click to download the code for this lesson](./Code/Light-A-Single-LED.hex)
+[Klicken Sie hier, um den Code für diese Lektion herunterzuladen](./Code/Light-A-Single-LED.hex)
 
-### (1)Project Description:
+### (1)Projektbeschreibung:
 
-(1)Project Description:The LED dot matrix consists of 25 LEDs arranged in a 5 by 5 square. In order to locate these LEDs quickly, as the figure shown below, we can regarded this matrix as a coordinate system and create two aces by marking those in rows from 0 to 4 from top to bottom, and the ones in columns from 0 to 4 from the left to the right. Therefore, the LED sat in the second of the first line is (1,0) and the LED positioned in the fifth of the fourth column is (3,4) and others likewise.
+(1)Projektbeschreibung: Die LED-Punktmatrix besteht aus 25 LEDs, angeordnet in einem 5 × 5-Quadrat. Um die LEDs schnell zu lokalisieren, können wir diese Matrix, wie in der untenstehenden Abbildung gezeigt, als Koordinatensystem betrachten und zwei Achsen erstellen, indem wir die Zeilen von 0 bis 4 von oben nach unten und die Spalten von 0 bis 4 von links nach rechts nummerieren. Daher befindet sich die LED in der zweiten Position der ersten Zeile bei (1,0) und die LED in der fünften Position der vierten Spalte bei (3,4), ebenso für die anderen.
 
 ![](./media/Makecode_4ab9ecab.png)
 
-### (2)Components Needed:
+### (2)Benötigte Komponenten:
 
-Micro:bit main board V2 
+Micro:bit main board V2
 
- Micro USB cable
+Micro USB-Kabel
 
-### (3)Test Code:
+### (3)Testcode:
 
-Attach the Micro:bit main board V2 to your computer via the Micro USB cable and begin editing.
+Schließen Sie das Micro:bit main board V2 mit dem Micro USB-Kabel an Ihren Computer an und beginnen Sie mit dem Bearbeiten.
 
 ![](./media/Makecode_1bbd8a3b.gif)
 
-Complete Program :
+Vollständiges Programm:
 
 ![](./media/Makecode_da248db5.png)
 
-### (4)Test Results
+### (4)Testergebnisse
 
-After uploading the code, you will observe the Microbit board display the following effect: (1,0) lights up for 0.5 seconds before turning off, followed by (3,4) lighting up for 0.5 seconds before turning off, repeating in a loop.
+Nachdem Sie den Code hochgeladen haben, zeigt das Micro:bit-Board folgende Anzeige: (1,0) leuchtet 0,5 Sekunden lang auf und erlischt dann, gefolgt von (3,4), das ebenfalls 0,5 Sekunden lang leuchtet und dann erlischt. Dieser Ablauf wiederholt sich in einer Schleife.
 
 ![](./media/Makecode_301232e3.gif)

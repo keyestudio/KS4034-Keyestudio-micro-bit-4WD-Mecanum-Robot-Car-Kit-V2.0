@@ -1,12 +1,12 @@
-## Project 1: Heartbeat
+## Projekt 1: Herzschlag
 
 ![](./media/Makecode_56018947.jpg)
 
-[Click to download the code for this lesson](./Code/Heartbeat.hex)
+[Klicken Sie hier, um den Code für diese Lektion herunterzuladen](./Code/Heartbeat.hex)
 
 ### (1)Project Description
 
-(1) Project DescriptionThis project is easy to conduct with a micro:bit V2 main board, a Micro USB cable and a computer. The micro:bit LED dot matrix will display a relatively big heart-shaped pattern and then a smaller one. This alternative change of this pattern is like heart beating. This experiment serves as a starter for your entry to the programming world.
+(1) Project Description Dieses Projekt lässt sich leicht mit einer Micro:bit main board V2, einem Micro USB-Kabel und einem Computer durchführen. Die LED-Punktmatrix des Micro:bit zeigt zunächst ein relativ großes herzförmiges Muster und dann ein kleineres. Dieser abwechselnde Wechsel des Musters ähnelt einem Herzschlag. Dieses Experiment dient als Einstieg in die Programmierwelt.
 
 ### (2)Components Needed:
 
@@ -16,7 +16,7 @@ Micro USB cable
 
 ### (3)Test Code:
 
-Attach the Micro:bit main board V2 to your computer via the Micro USB cable and begin editing.
+Schließen Sie die Micro:bit main board V2 über das Micro USB-Kabel an Ihren Computer an und beginnen Sie mit der Bearbeitung.
 
 ![](./media/Makecode_46b15e27.gif)
 
@@ -24,10 +24,10 @@ Complete Program :
 
 ![](./media/Makecode_d862ba0e.png)
 
-Note: the "on start" means that the code in this block only executes once, while "forever" implies that the code runs cyclically.
+Hinweis: "on start" bedeutet, dass der Code in diesem Block nur einmal ausgeführt wird, während "forever" besagt, dass der Code zyklisch ausgeführt wird.
 
 ### (4)Test Results:
 
-After uploading the code, you will see a heartbeat effect appear on the Microbit board.
+Nach dem Hochladen des Codes sehen Sie auf der Micro:bit-Platine einen Herzschlag-Effekt erscheinen.
 
 ![](./media/Makecode_e64df1f5.gif)

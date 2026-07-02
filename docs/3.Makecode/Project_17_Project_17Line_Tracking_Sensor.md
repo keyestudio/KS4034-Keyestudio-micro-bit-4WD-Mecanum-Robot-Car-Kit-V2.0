@@ -4,45 +4,45 @@
 
 ![](./media/Makecode_ea7f6c8c.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-The motor driver board of the Keyestudio 4WD Mecanum Robot Car comes with a 3-channel line tracking sensor, which adopts TCRT5000 IR tubes and 3 potentiometers.
+Die Motorsteuerplatine des Keyestudio 4WD Mecanum Robot Car ist mit einem 3-Kanal-Linienverfolgungssensor ausgestattet, der TCRT5000-IR-Module und 3 Potentiometer verwendet.
 
-The TCRT5000 IR tube contains an IR emitting tube and an IR receiving tube. When the infrared signals of the emitting tube is received by the receiving tube through reflection, the resistance of the receiving tube will change, which is generally reflected in the voltage change on the circuit.  
+Das TCRT5000-IR-Modul enthält eine IR-Sende- und eine IR-Empfängerröhre. Wenn die von der Senderröhre ausgesendeten Infrarotsignale nach Reflexion von der Empfangsröhre empfangen werden, ändert sich der Widerstand der Empfangsröhre, was sich gewöhnlich in einer Spannungsänderung in der Schaltung widerspiegelt.  
 
-The resistance varies depending on the intensity of the infrared signals received by the receiving tube, which is often in the color of the reflecting surface and the distance of the reflecting surface receiving tube.  At the time of detection, black is high level active and white is low level active. 
+Der Widerstand variiert in Abhängigkeit von der Intensität der von der Empfangsröhre empfangenen Infrarotsignale, was oft von der Farbe der reflektierenden Oberfläche und dem Abstand zwischen der reflektierenden Oberfläche und der Empfangsröhre abhängt. Bei der Erkennung gilt Schwarz als aktiver hoher Pegel (High) und Weiß als niedriger Pegel (Low).
 
-2\.  **Working Principle**
+2\.  **Funktionsprinzip**
 
-When the car runs above a white road, the IR emitting tube installed under the car emits infrared signals to detect the road and the receiving tube will receive signals sending back. Then the output end outputs low level(0); when it detects black lines, it outputs high level(1).
+Fährt das Fahrzeug über eine weiße Strecke, sendet die unter dem Fahrzeug angebrachte IR-Senderröhre Infrarotsignale zur Streckenerkennung und die Empfangsröhre empfängt die Signale zurück. Dann gibt der Ausgang einen niedrigen Pegel (0) aus; wenn schwarze Linien erkannt werden, gibt er einen hohen Pegel (1) aus.
 
-After putting a white paper on the bottom of the 4WD Mecanum Robot Car, we will rotate the potentiometers on the 3-way tracking sensor. When the indicator light on the sensor module is on, pick up the car to make the two wheels on the 4WD Mecanum Robot Car separate. The height of the white paper is about 1.5cm, when the indicator light on the sensor module is off, and then the sensitivity is adjusted.
+Nachdem Sie ein weißes Blatt Papier unter das 4WD Mecanum Robot Car gelegt haben, drehen Sie die Potentiometer am 3-Wege-Tracking-Sensor. Leuchtet die Kontroll-LED am Sensormodul, heben Sie das Fahrzeug an, sodass sich die beiden Räder des 4WD Mecanum Robot Car frei drehen können. Der Abstand des weißen Papiers beträgt etwa 1,5 cm. Erlischt die Kontroll-LED am Sensormodul, ist die Empfindlichkeit eingestellt.
 
-3\.  **Preparation**
+3\.  **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Stecken Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0
 
-- Place batteries into battery holder
+- Legen Sie Batterien in den Batteriehalter ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Webversion von Makecode
 
-4\.  **Test Code**
+4\.  **Testcode**
 
 ![](./media/Makecode_3683d83f.png)
 
-Click“JavaScript" to view the corresponding JavaScript code: 
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzusehen: 
 
 ![](./media/Makecode_4b440616.png)
 
-5\.  **Test Result**
+5\.  **Testergebnis**
 
-Download code to micro:bit board, dial POWER switch to ON end. 
+Laden Sie den Code auf das micro:bit-Board und stellen Sie den POWER-Schalter auf ON.
 
-Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate. Click“OK”and“Connect”.
+Öffnen Sie CoolTerm, klicken Sie auf Options und wählen Sie SerialPort. Stellen Sie COM-Port und Baudrate auf 115200 ein. Klicken Sie auf “OK” und “Connect”.
 
 ![](./media/Makecode_ea164439.png)
 
@@ -52,7 +52,7 @@ Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud 
 
 ![](./media/Makecode_13238e98.png)
 
-The CoolTerm serial monitor displays the digital signals read by the line tracking sensors.
+Der CoolTerm-Seriellmonitor zeigt die digitalen Signale an, die von den Linienverfolgungssensoren gelesen werden.
 
 ![](./media/Makecode_0141051a.png)
 
@@ -60,38 +60,38 @@ The CoolTerm serial monitor displays the digital signals read by the line tracki
 
 ![Img](./media/Makecode_547634e4.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-In this lesson we will combine a line tracking sensor with a motor to make a line tracking smart car.
+In dieser Lektion kombinieren wir einen Linienverfolgungssensor mit einem Motor, um ein Linienverfolgungs-Smartcar zu erstellen.
 
-The micro:bit board will analyze the signals and control the smart car to show the line tracking function.
+Das micro:bit-Board wertet die Signale aus und steuert das Smartcar, um die Linienverfolgungsfunktion zu demonstrieren.
 
-2\. **Working Principle**
+2\. **Funktionsprinzip**
 
-The smart car will make different moves according to the value received by the 3-channel line tracking sensor.
+Das Smartcar führt je nach den von dem 3-Kanal-Linienverfolgungssensor empfangenen Werten unterschiedliche Bewegungen aus.
 
 ![Img](./media/Makecode_bbccdb34.png)
 
-3\. **Preparation**
+3\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio 4WD Mecanum Robot Car V2.0
+- Stecken Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0
 
-- Place batteries into battery holder
+- Legen Sie Batterien in den Batteriehalter ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Webversion von Makecode
 
-**Warning:** The 3-way tracking sensor should be used in environments without infrared interference such as sunlight. Sunlight contains a lot of invisible light, such as infrared and ultraviolet. In an environment with strong sunlight, the 3-way tracking sensor cannot work properly.
+**Warnung:** Der 3-Wege-Tracking-Sensor sollte in Umgebungen ohne Infrarotstörungen wie direkte Sonneneinstrahlung verwendet werden. Sonnenlicht enthält viel unsichtbares Licht, z. B. Infrarot und Ultraviolett. In Umgebungen mit starker Sonneneinstrahlung kann der 3-Wege-Tracking-Sensor nicht ordnungsgemäß arbeiten.
 
-4\.**Flow Chart**
+4\.**Flussdiagramm**
 
 ![Img](./media/Makecode_70f1fd80.png)
 
 
-5\.  **Test Code**
+5\.  **Testcode**
 
 ![](./media/Makecode_4b104155.png)
 
@@ -102,16 +102,16 @@ The smart car will make different moves according to the value received by the 3
 ![Img](./media/Makecode_ca91a31f.png)
 
 
-Click“JavaScript”to view the corresponding JavaScript code:
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
 
 ![](./media/Makecode_f5caa06a.png)
 
 ![](./media/Makecode_8f5f07ec.png)
 
-5\. **Test Result**
+5\. **Testergebnis**
 
-Download code to micro:bit and dial POWER to ON end, line tacking car goes forward along black line .
+Laden Sie den Code auf das micro:bit und stellen Sie den POWER-Schalter auf ON; das Linienverfolgungsfahrzeug fährt entlang der schwarzen Linie vorwärts.
 
-**Note:** turn on the switch at the back of micro:bit car, the width of black line should be larger than the width of line tracking sensor.
+**Hinweis:** Schalten Sie den Schalter an der Rückseite des micro:bit-Fahrzeugs ein. Die Breite der schwarzen Linie sollte größer sein als die Breite des Linienverfolgungssensors.
 
-Avoid to test smart car under the strong light.
+Vermeiden Sie Tests des Smartcars bei starkem Licht.

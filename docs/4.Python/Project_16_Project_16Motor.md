@@ -1,56 +1,56 @@
-### Project 16：Motor
+### Projekt 16：Motor
 
 ![](./media/Python_32655f47.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The Keyestudio 4WD Mecanum Robot Car is equipped with 4 DC reduction motors, also called gear reduction motor, which is developed on the ordinary DC motor. It has a matching gear reduction box which provides a lower speed but a larger torque. Furthermore, different reduction ratios of the box can provide different speeds and torques.
+Das Keyestudio 4WD Mecanum Robot Car ist mit 4 DC‑Untersetzungsgetriebemotoren (auch Getriebemotor genannt) ausgestattet, die auf gewöhnlichen DC‑Motoren basieren. Sie verfügen über ein passendes Untersetzungsgetriebe, das eine geringere Drehzahl, aber ein höheres Drehmoment liefert. Verschiedene Übersetzungsverhältnisse des Getriebes ermöglichen unterschiedliche Geschwindigkeiten und Drehmomente.
 
-Gear motor is the integration of gearmotor and motor, which is applied widely in steel and machine industry
+Der Getriebemotor ist die Kombination aus Getriebe und Motor und wird häufig in der Stahl‑ und Maschinenbauindustrie eingesetzt.
 
-Micro:bit motor driver shield comes with a STC8G and HR8833 chip. In order to save the IO port resource, we control the rotation direction and speed of 4 DC gear motors with the HR8833 chip.
+Das micro:bit Motor Driver Shield verwendet einen STC8G‑ und einen HR8833‑Chip. Um IO‑Port‑Ressourcen zu sparen, steuern wir die Drehrichtung und Geschwindigkeit der 4 DC‑Getriebemotoren mit dem HR8833‑Chip.
 
-**Details about chips:**
+**Details zu den Chips:**
 
 ![](./media/Python_d7132b53.jpg)
 
-Front
+Vorderseite
 
 ![](./media/Python_4919ce3b.png)
 
-Back
+Rückseite
 
 ![](./media/Python_fbfa17f7.png)
 
-STC8G1K08 Chip circuit
+Schaltplan des STC8G1K08‑Chips
 
 ![](./media/Python_47cdde6b.png)
 
-HR8833 Motor driver circuit
+Schaltplan des HR8833‑Motor­treibers
 
-2\. **Preparation**
+2\. **Vorbereitung**
 
-- Insert micro:bit board into the slot of keyestudio 4WD Mecanum Robot CarV2.0
+- Stecken Sie das micro:bit‑Board in den Steckplatz des Keyestudio 4WD Mecanum Robot Car V2.0
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriehalter ein
 
-- Dial power switch to ON end
+- Stellen Sie den Netzschalter auf die ON‑Position
 
-- Connect micro:bit to the computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB‑Kabel mit dem Computer
 
-- Open the offline version of Mu.
+- Öffnen Sie die Offline‑Version von Mu.
 
 3\. **Test Code1**
 
-Enter Mu software and open the file“microbit-Motor Driving-1\.py”to import code. You can also input code in the edit window yourself.
+Öffnen Sie die Mu‑Software und laden Sie die Datei “microbit-Motor Driving-1\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Editor‑Fenster eingeben.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben werden**.)
 
-Click“Files”to import“keyes_mecanum_Car.py”library file to micro:bit . 
+Klicken Sie “Files”, um die Bibliotheksdatei “keyes_mecanum_Car.py” auf das micro:bit zu importieren. 
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie “Check”, um den Code auf Fehler zu überprüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie “Flash”, um den Code auf das micro:bit‑Board zu laden.
 
 ![](./media/Python_71476377.png)
 
@@ -91,25 +91,25 @@ while True:
     sleep(1000)
 ```
 
-4\. **Test Result1**
+4\. **Testergebnis1**
 
-After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, **externe Stromversorgung (DIP‑Schalter auf ON)**, und drücken Sie den Reset‑Knopf am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Then the car will go forward for 1s, back for 1s, turn left for 1s, right for 1s, turn anticlockwise for 1s, clockwise for 1 and stop 1s. Matrix also displays the patterns.
+Dann fährt das Auto 1 s vorwärts, 1 s rückwärts, 1 s nach links, 1 s nach rechts, 1 s gegen den Uhrzeigersinn, 1 s im Uhrzeigersinn und hält 1 s an. Die Matrix zeigt ebenfalls die Muster an.
 
 5\. **Test Code2**
 
-Enter Mu software and open the file“microbit-Motor Driving-2\.py”to import code. You can also input code in the edit window yourself.
+Öffnen Sie die Mu‑Software und laden Sie die Datei “microbit-Motor Driving-2\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Editor‑Fenster eingeben.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben werden**.)
 
-Click“Files”to import“keyes_mecanum_Car.py“library file to micro:bit. 
+Klicken Sie “Files”, um die Bibliotheksdatei “keyes_mecanum_Car.py“ auf das micro:bit zu importieren. 
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie “Check”, um den Code auf Fehler zu überprüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie “Flash”, um den Code auf das micro:bit‑Board zu laden.
 
 ![](./media/Python_96230faf.png)
 
@@ -205,15 +205,15 @@ while True:
             run_O()
 ```
 
-6\. **Test Result2**
+6\. **Testergebnis2**
 
-After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, **externe Stromversorgung (DIP‑Schalter auf ON)**, und drücken Sie den Reset‑Knopf am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- When the button A and B are firstly pressed, micro:bit will show “L”, the route of the car is“L”. When they are pressed again,“口”is shown on micro:bit, and route of the car is“口”. The car will repeat this pattern.
+Wenn die Tasten A und B zunächst gedrückt werden, zeigt das micro:bit ein „L“ an; die Fahrroute des Autos ist „L“. Wenn sie erneut gedrückt werden, wird auf dem micro:bit „口“ angezeigt und die Fahrroute des Autos ist „口“. Das Auto wiederholt dieses Muster.
 
-7\.  **Code Explanation**
+7\.  **Code‑Erklärung**
 
 ![Img](./media/Python_70b4e70f.png)
 

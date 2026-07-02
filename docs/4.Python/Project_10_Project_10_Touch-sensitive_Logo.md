@@ -1,24 +1,24 @@
-### Project 10: Touch-sensitive Logo
+### Projekt 10: Berührungsempfindliches Logo
 
 ![](./media/Python_64469585.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The Micro: Bit main board V2 is equipped with a golden touch-sensitive logo, which can act as an input component like an button.
+Das micro:bit Hauptboard V2 ist mit einem goldenen, berührungsempfindlichen Logo ausgestattet, das als Eingangsbauteil wie ein Knopf fungieren kann.
 
-It contains a capacitive touch sensor that senses small changes in the electric field when pressed (or touched), just like your phone or tablet screen. When you press it , the program can be activated.
+Es enthält einen kapazitiven Berührungssensor, der beim Drücken (oder Berühren) kleine Änderungen im elektrischen Feld wahrnimmt, genau wie bei Ihrem Telefon- oder Tablet-Bildschirm. Wenn Sie es drücken, kann das Programm aktiviert werden.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Verbinden Sie das micro:bit Hauptboard über das USB-Kabel mit Ihrem Computer.
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code**
+3\.  **Testcode**
 
-Enter Mu software and open the file“Touch-sensitive Logo\.py”to import code.You can also input code in the edit window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Touch-sensitive Logo\.py”, um den Code zu importieren. Sie können den Code auch selbst in das Bearbeitungsfenster eingeben.
 
-(**Note: All English words and symbols must be written in English**.)
+(**Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben sein**.)
 
 ![](./media/Python_0c54cbe5.png)
 
@@ -50,38 +50,40 @@ while True:
         display.show(Image.ASLEEP)
 ```
 
-**How Micro:bit works?**
+**Wie funktioniert der Micro:bit?**
 
-A\. The runtime is recorded in milliseconds(ms) .
+A\. Die Laufzeit wird in Millisekunden (ms) aufgezeichnet.
 
-B\. When you press button A, a variable named start will be set to the current running time.
+B\. Wenn Sie Taste A drücken, wird eine Variable namens start auf die aktuelle Laufzeit gesetzt.
 
-C\. When you press button B, the start time will be subtracted from the new running time to calculate the passed time since you started the stopwatch. This difference is added to the total time, which is stored in a variable named time.
+C\. Wenn Sie Taste B drücken, wird die Startzeit von der neuen Laufzeit subtrahiert, um die seit dem Start der Stoppuhr verstrichene Zeit zu berechnen. Diese Differenz wird zur Gesamtzeit addiert, die in einer Variable namens time gespeichert ist.
 
-D\. If you press the golden logo, the program will display the total elapsed time on the LED display. It converts time from milliseconds (thousandths of a second) to seconds by dividing by 1000. It uses the integer division operator to give an integer (integer) result.
+D\. Wenn Sie das goldene Logo drücken, zeigt das Programm die insgesamt verstrichene Zeit auf der LED-Anzeige an. Es wandelt die Zeit von Millisekunden (Tausendstelsekunden) in Sekunden um, indem es durch 1000 teilt. Es verwendet den Ganzzahl-Operator, um ein ganzzahliges Ergebnis zu liefern.
 
-E\. The program is also controlled by a Boolean variable named running. Boolean variable only has two values: true or false. If "running" is "true", it means that the stopwatch has started. If "running" is false, it means that the stopwatch has not started or has stopped.
+E\. Das Programm wird außerdem durch eine boolesche Variable namens running gesteuert. Eine boolesche Variable hat nur zwei Werte: true oder false. Wenn "running" "true" ist, bedeutet das, dass die Stoppuhr gestartet wurde. Wenn "running" false ist, bedeutet das, dass die Stoppuhr nicht gestartet wurde oder gestoppt ist.
 
-F\. If "running" is true, the beating heart pattern will be displayed on the LED dot matrix screen.
+F\. Wenn "running" true ist, wird auf der LED-Matrix das Herzschlag-Muster angezeigt.
 
-G\. (7) If the stopwatch has stopped and the "running" is false, when you press the golden logo, it will only display the time.
+G\. (7) Wenn die Stoppuhr gestoppt ist und "running" false ist, zeigt das Drücken des goldenen Logos nur die Zeit an.
 
-H\. If the stopwatch has been started and"running" is true, it only need to ensure that the time variable will change when button B is pressed, and the code can also prevent false readings.
+H\. Wenn die Stoppuhr gestartet wurde und "running" true ist, muss nur sichergestellt werden, dass sich die Variable time ändert, wenn Taste B gedrückt wird, und der Code kann auch Fehleingaben verhindern.
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown.
+Klicken Sie auf “Check”, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
 
 ![](./media/Python_1766a28c.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie den micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu übertragen.
 
 ![](./media/Python_a3d6e994.png)
 
-4\.  **Test Result**
+4\.  **Testergebnis**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Press button A to start the stopwatch. When timing, the beating heart pattern will be displayed on the LED dot matrix screen. Press button B to stop it and you can start and stop it at any time. 
+Drücken Sie Taste A, um die Stoppuhr zu starten. Während des Timings wird das Herzschlag-Muster auf der LED-Matrix angezeigt. Drücken Sie Taste B, um sie zu stoppen; Sie können sie jederzeit starten und stoppen.
 
-It will keep recording time, just like a real stopwatch. Press the golden logo in the front of the micro:bit to display the measured time in seconds. And the time can be reset to zero by pressing the reset button on the back of it.
+Sie protokolliert die Zeit weiter, genau wie eine echte Stoppuhr. Drücken Sie das goldene Logo an der Vorderseite des micro:bit, um die gemessene Zeit in Sekunden anzuzeigen. Die Zeit kann durch Drücken der Reset-Taste auf der Rückseite auf Null zurückgesetzt werden.
+
+---

@@ -4,47 +4,47 @@
 
 ![](./media/Makecode_55b2424d.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-Micro:bit main board comes with a built-in Bluetooth which can be used to communicate with it. And the Micro:bit can also be controlled by Bluetooth or transmit signals back to smartphone or computer via it. This Bluetooth can communicate with the Bluetooth equipped in other devices or with Bluetooth App to control other equipment.
+Das micro:bit Hauptboard verfügt über ein integriertes Bluetooth, mit dem kommuniziert werden kann. Der Micro:bit kann per Bluetooth gesteuert werden oder Signale an ein Smartphone oder einen Computer zurücksenden. Dieses Bluetooth kann mit den in anderen Geräten vorhandenen Bluetooth-Modulen oder mit einer Bluetooth-App kommunizieren, um andere Geräte zu steuern.
 
-It is compatible with both Android system ans IOS system. And we have designed two Bluetooth Apps for both systems.
+Es ist sowohl mit Android als auch mit iOS kompatibel. Wir haben für beide Systeme je eine Bluetooth-App entwickelt.
 
-The connection of the Bluetooth on the board with these two Apps is similar. In this lesson, we will introduce the functions of all keys and patterns on the Apps and control the smart car via Bluetooth App.
+Die Verbindung des Board-Bluetooth mit diesen beiden Apps ist ähnlich. In dieser Lektion stellen wir die Funktionen aller Tasten und Muster in den Apps vor und steuern das Smart Car über die Bluetooth-App.
 
-2\. **Preparation**
+2\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit mit Ihrem Computer über ein USB-Kabel
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
-**If you choose to drag the code manually, you need to add the Bluetooth extension library first. Click the gear icon (Settings) in the upper right corner, then click on Extensions to go to the library file selection screen, and then click on the "Bluetooth" extension library (if it doesn't exist, search Bluetooth to find it), as shown below:** 
+**Wenn Sie den Code manuell per Drag & Drop erstellen möchten, müssen Sie zuerst die Bluetooth-Erweiterungsbibliothek hinzufügen. Klicken Sie auf das Zahnrad-Symbol (Settings) oben rechts, dann auf Extensions, um zum Auswahldialog der Bibliotheken zu gelangen, und klicken Sie dann auf die Erweiterungsbibliothek "Bluetooth" (falls sie nicht vorhanden ist, suchen Sie nach Bluetooth), wie unten gezeigt:** 
 
 ![](./media/Makecode_4e308360.png)
 
-As the Bluetooth and extension radio can’t work together, therefore, their extension libraries are not compatible.
+Da Bluetooth und die Erweiterung radio nicht gleichzeitig arbeiten können, sind ihre Erweiterungsbibliotheken nicht kompatibel.
 
-Therefore, remove extension(s) and add Bluetooth please if you see the following prompt box pop up.
+Bitte entfernen Sie daher andere Erweiterungen und fügen Sie Bluetooth hinzu, falls das folgende Hinweisfenster erscheint.
 
 ![](./media/Makecode_aee56e76.png)
 
-3\. **Test Code**
+3\. **Testcode**
 
 ![](./media/Makecode_ac5ffe1a.png)
 
-Click“JavaScript”to view the corresponding JavaScript code:
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
 
 ![](./media/Makecode_24191138.png)
 
-4\. **Test Result**
+4\. **Testergebnis**
 
-If you drag blocks step by step, you need to set as follows after finishing test code.
+Wenn Sie die Blöcke schrittweise ziehen, müssen Sie nach Abschluss des Testcodes die folgenden Einstellungen vornehmen.
 
 ![](./media/Makecode_01b256e5.png)
 
@@ -52,53 +52,53 @@ If you drag blocks step by step, you need to set as follows after finishing test
 
 ![](./media/Makecode_09767d5e.png)
 
-However, you could skip this step if you directly import test code.
+Sie können diesen Schritt jedoch überspringen, wenn Sie den Testcode direkt importieren.
 
-After setting, download code to micro:bit board, don’t plug off the USB cable.Next to download App.
+Nach den Einstellungen laden Sie den Code auf das micro:bit-Board herunter, ziehen Sie das USB-Kabel nicht ab. Als Nächstes die App herunterladen.
 
-**For IOS System:**
+**Für iOS-System:**
 
-a\. Open App Store;
+a\. Öffnen Sie den App Store;
 
 ![](./media/Makecode_27924fdb.png)
 
-b\. Search **mecanum_robot** and click“![](./media/Makecode_962a57f9.png)”to download the Bluetooth App of mecanum_robot;
+b\. Suchen Sie nach **mecanum_robot** und klicken Sie auf “![](./media/Makecode_962a57f9.png)”, um die Bluetooth-App mecanum_robot herunterzuladen;
 
-c\. After downloading the APP, click "OPEN" or click the application mecanum_robot on the phone/iPad desktop to open the APP. A dialog box appears on the APP interface, and click "OK" in the dialog box.
+c\. Nach dem Herunterladen der APP klicken Sie auf "OPEN" oder tippen Sie auf das App-Symbol mecanum_robot auf dem Telefon-/iPad-Desktop, um die APP zu öffnen. Auf der APP-Oberfläche erscheint ein Dialogfenster; klicken Sie im Dialog auf "OK".
 
-d\. First turn on the Bluetooth of the mobile phone/iPad, and then click the connect button (control) in the upper left corner of the APP interface to perform a Bluetooth search. In the search results, click "BCC micro:bit". After a few seconds, the Bluetooth is connected.
+d\. Schalten Sie zuerst das Bluetooth Ihres Mobiltelefons/iPads ein und klicken Sie dann auf die Verbindungstaste (control) oben links in der APP-Oberfläche, um eine Bluetooth-Suche durchzuführen. Klicken Sie in den Suchergebnissen auf "BCC micro:bit". Nach einigen Sekunden ist die Bluetooth-Verbindung hergestellt.
 
-**For Android System:**
+**Für Android-System:**
 
-a\. Use the scanning function in the browser to scan and identify the QR code 
+a\. Verwenden Sie die Scan-Funktion im Browser, um den QR-Code zu scannen und zu identifizieren
 
 ![](./media/Makecode_d9acbfab.png)
 
-or enter the link：[http://8.210.52.206/mecanum_robot.apk](http://8.210.52.206/mecanum_robot.apk) to download. After the identification is successful, click "go to website" to enter the download mecanum_robot.apk page , click "Download" to download the mecanum_robot application.
+oder rufen Sie den Link auf: [http://8.210.52.206/mecanum_robot.apk](http://8.210.52.206/mecanum_robot.apk) zum Herunterladen. Nach erfolgreicher Identifikation klicken Sie auf "go to website", um zur Download-Seite mecanum_robot.apk zu gelangen, und klicken Sie auf "Download", um die Anwendung mecanum_robot herunterzuladen.
 
-b\. Click“Allow allow”to enter Installation Diagram; click“install”to install the App.
+b\. Klicken Sie auf “Allow allow”, um zur Installationsansicht zu gelangen; klicken Sie auf “install”, um die App zu installieren.
 
 ![](./media/Makecode_638d0a4a.png)
 
-c\. Click "Open" or click the application mecanum_robot on the mobile phone desktop to open the APP, and a dialog box appears. In the dialog box, click "Allow" to turn on the Bluetooth of the mobile phone. You can also turn on the phone's Bluetooth before opening the APP.
+c\. Klicken Sie auf "Open" oder tippen Sie auf das App-Symbol mecanum_robot auf dem Startbildschirm des Handys, um die APP zu öffnen. Es erscheint ein Dialogfenster. Klicken Sie im Dialogfenster auf "Allow", um das Bluetooth des Telefons zu aktivieren. Sie können das Bluetooth auch vor dem Öffnen der APP einschalten.
 
 ![](./media/Makecode_c818fd71.png)
 
 ![](./media/Makecode_0c35f0dc.png)
 
-d\. Click ![](./media/Makecode_d3f566b9.png) on the upper right corner to search for Bluetooth and click“connect”; a few seconds later, the Bluetooth is paired.
+d\. Klicken Sie auf ![](./media/Makecode_d3f566b9.png) oben rechts, um nach Bluetooth zu suchen, und klicken Sie auf “connect”; nach einigen Sekunden ist die Bluetooth-Kopplung abgeschlossen.
 
 ![](./media/Makecode_3d21cf87.png)
 
 ![](./media/Makecode_4a23b197.png)
 
-Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate. Click“OK”and“Connect”.
+Öffnen Sie CoolTerm, klicken Sie auf Options und wählen Sie SerialPort. Stellen Sie den COM-Port und die Baudrate 115200 ein. Klicken Sie auf “OK” und “Connect”.
 
-Point at micro:bit board and press the icons on APP, the corresponding characters are shown on CoolTerm monitor.
+Richten Sie das micro:bit-Board aus und drücken Sie die Symbole in der APP; die entsprechenden Zeichen werden im CoolTerm-Monitor angezeigt.
 
 ![](./media/Makecode_0ed4a53e.png)
 
-Through the test, we get the functions of every icon, as shown below:
+Durch den Test erhalten wir die Funktionen jeder Taste, wie unten gezeigt:
 
 ![](./media/Makecode_05c3d32b.jpg)
 
@@ -106,48 +106,48 @@ Through the test, we get the functions of every icon, as shown below:
 
 ![Img](./media/Makecode_ce6ec959.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-In this lesson, we will control the smart car to perform multipurpose functions.
+In dieser Lektion steuern wir das Smart Car, damit es vielseitige Funktionen ausführt.
 
-2\. **Preparation**
+2\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio 4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in das Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit mit Ihrem Computer über ein USB-Kabel
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
-**Steps：** Click the gear icon (Settings) in the upper right corner, then click on Extensions to go to the library file selection screen, and then click on the "Bluetooth" extension library (if it doesn't exist, search Bluetooth to find it), as shown below: 
+**Schritte：** Klicken Sie auf das Zahnrad-Symbol (Settings) oben rechts, dann auf Extensions, um zum Auswahldialog der Bibliotheken zu gelangen, und klicken Sie dann auf die Erweiterungsbibliothek "Bluetooth" (falls sie nicht vorhanden ist, suchen Sie nach Bluetooth), wie unten gezeigt: 
 
 ![](./media/Makecode_4e308360.png)
 
-As the Bluetooth and extension radio can’t work together, therefore, their extension libraries are not compatible.
+Da Bluetooth und die Erweiterung radio nicht gleichzeitig arbeiten können, sind ihre Erweiterungsbibliotheken nicht kompatibel.
 
-Therefore, remove extension(s) and add Bluetooth please if you see the following prompt box pop up.
+Bitte entfernen Sie daher andere Erweiterungen und fügen Sie Bluetooth hinzu, falls das folgende Hinweisfenster erscheint.
 
 ![](./media/Makecode_aee56e76.png)
 
-3\. **Test Code**
+3\. **Testcode**
 
-Since the code is quite long, it won't be displayed here. You can directly go to the following path to find the corresponding code.
+Da der Code recht umfangreich ist, wird er hier nicht angezeigt. Sie können direkt zum folgenden Pfad gehen, um den entsprechenden Code zu finden.
 
 ![Img](./media/Makecode_836c42ce.png)
 
-Click“JavaScript" to view the corresponding JavaScript code: ：
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen:
 
 ![](./media/Makecode_a73529d6.png)
 
-4\. **Test Result**
+4\. **Testergebnis**
 
-This experiment combines the previous projects to make the car to perform actions via Bluetooth.
+Dieses Experiment kombiniert die vorherigen Projekte, sodass das Auto Aktionen per Bluetooth ausführt.
 
-Enter Makecode online editor→Projecting Settings→![](./media/Makecode_bef5b734.png), enable “No Pairing....”(you could skip this step if you import test code directly)
+Öffnen Sie den Makecode Online-Editor → Projecting Settings → ![](./media/Makecode_bef5b734.png), aktivieren Sie “No Pairing....” (diesen Schritt können Sie überspringen, wenn Sie den Testcode direkt importieren)
 
-Download code to micro:bit board, dial POWER to ON end, and connect the Bluetooth, then you can control the car via the Bluetooth App of mecanum_robot.
+Laden Sie den Code auf das micro:bit-Board, schalten Sie POWER auf ON und verbinden Sie das Bluetooth. Dann können Sie das Auto über die Bluetooth-App mecanum_robot steuern.
 
-**Note:** ![](./media/Makecode_81da4f47.jpg)is used to adjust the speed, and ![](./media/Makecode_adc3be60.jpg) can only be dragged.
+**Hinweis:** ![](./media/Makecode_81da4f47.jpg) dient zur Einstellung der Geschwindigkeit, und ![](./media/Makecode_adc3be60.jpg) kann nur gezogen werden.

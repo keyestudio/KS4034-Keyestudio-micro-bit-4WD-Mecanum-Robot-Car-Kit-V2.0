@@ -2,44 +2,44 @@
 
 ![](./media/Makecode_804e502b.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-This module consists of a commonly used LED with 7colors but in white appearance. It can automatically flash different colors to create fantastic light effects when high level is input like a normal LED.
+Dieses Modul besteht aus einer häufig verwendeten LED mit 7 Farben, erscheint jedoch äußerlich weiß. Wenn ein High-Pegel wie bei einer normalen LED angelegt wird, kann sie automatisch verschiedene Farben blinken lassen, um fantastische Lichteffekte zu erzeugen.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio   4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie die Batterien in den Batteriehalter ein
 
-- Dial power switch to ON end
+- Drehen Sie den POWER-Schalter in die ON-Position
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit per USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode.
+- Öffnen Sie die Web-Version von Makecode.
 
 3\.  **Test Code1**
 
-Make the RGB light flash 7 lights alternatively.
+Lassen Sie die RGB-Leuchte abwechselnd 7 Farben blinken.
 
 ![](./media/Makecode_ce9a9550.png)
 
-Click“JavaScript”to view the corresponding JavaScript code: 
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen: 
 
 ![](./media/Makecode_1b7f9af6.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis 1**
 
-Download code 1 to micro:bit board and dial POWER switch to ON end, 2 RGB lights of smart car emit red, green, blue, indigo, dark red, yellow and white color cyclically.
+Laden Sie Code 1 auf das micro:bit-Board und stellen Sie den POWER-Schalter auf ON. Die 2 RGB-Leuchten des Smart Cars geben zyklisch die Farben Rot, Grün, Blau, Indigo, Dunkelrot, Gelb und Weiß aus.
 
 5\.  **Test Code2**
 
 ![](./media/Makecode_bdce981c.png)
 
-Click“JavaScript”to view the corresponding JavaScript code: 
+Klicken Sie auf “JavaScript”, um den entsprechenden JavaScript-Code anzuzeigen: 
 
 ![](./media/Makecode_66e64829.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis 2**
 
-Download code 2 to micro:bit board, 2 RGB lights will flash for 1 second and then stop flashing for 1 second, cyclically.
+Laden Sie Code 2 auf das micro:bit-Board. Die 2 RGB-Leuchten blinken 1 Sekunde lang und hören dann 1 Sekunde lang auf zu blinken, wiederholt im Zyklus.

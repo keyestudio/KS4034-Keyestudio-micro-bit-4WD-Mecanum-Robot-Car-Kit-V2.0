@@ -1,23 +1,23 @@
-## Pay special attention
+## Besondere Hinweise
 
-1\. This product contains small parts. Do not swallow.
+1\. Dieses Produkt enthält Kleinteile. Nicht verschlucken.
 
-2\. Do not allow children under 3 years of age to play with or near this product.
+2\. Lassen Sie Kinder unter 3 Jahren nicht mit diesem Produkt spielen oder sich in dessen Nähe aufhalten.
 
-3\. Do not allow children who lack safety capabilities to use this product without parental supervision. 
+3\. Lassen Sie Kinder, denen die nötigen Sicherheitsfähigkeiten fehlen, dieses Produkt nicht ohne elterliche Aufsicht verwenden. 
 
-4\. Do not use this product or its components near any AC power sockets or other circuits to avoid the risk of electric shock. 
+4\. Verwenden Sie dieses Produkt oder seine Komponenten nicht in der Nähe von Wechselstromsteckdosen oder anderen Schaltungen, um das Risiko eines elektrischen Schlags zu vermeiden. 
 
-5\. Do not use in the vicinity of liquid or fire.
+5\. Nicht in der Nähe von Flüssigkeiten oder offenem Feuer verwenden.
 
-6\. Keep conductive material refrain from the product.
+6\. Halten Sie leitfähige Materialien vom Produkt fern.
 
-7\. Do not store or use the product under extreme conditions such as high or low temperature and high humidity. 
+7\. Lagern oder verwenden Sie das Produkt nicht unter extremen Bedingungen wie hohen oder niedrigen Temperaturen sowie hoher Luftfeuchtigkeit. 
 
-8\. Please turn off the circuit when leaving or not using the product.
+8\. Bitte schalten Sie die Schaltung aus, wenn Sie den Bereich verlassen oder das Produkt nicht verwenden.
 
-9\. Do not touch any moving or rotating parts of the product when operating the product. 
+9\. Berühren Sie keine beweglichen oder rotierenden Teile des Produkts während des Betriebs. 
 
-10\. It is normal that parts of the product may become hot when used in certain circuit designs. Improper handling may result in overheating. 
+10\. Es ist normal, dass Teile des Produkts bei bestimmten Schaltungsdesigns heiß werden können. Unsachgemäße Handhabung kann zu Überhitzung führen. 
 
-11\. Failure to use the product in accordance with specifications may damage the product.
+11\. Die Nichtbeachtung der Spezifikationen kann das Produkt beschädigen.

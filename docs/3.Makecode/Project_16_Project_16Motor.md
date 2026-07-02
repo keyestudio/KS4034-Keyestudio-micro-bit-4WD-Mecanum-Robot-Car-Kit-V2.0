@@ -2,13 +2,13 @@
 
 ![](./media/Makecode_77f3b857.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The Keyestudio 4WD Mecanum Robot Car is equipped with 4 DC reduction motors, also called gear reduction motor, which is developed on the ordinary DC motor. It has a matching gear reduction box which provides a lower speed but a larger torque. Furthermore, different reduction ratios of the box can provide different speeds and torques.
+Das Keyestudio 4WD Mecanum Robot Car ist mit 4 DC-Reduktionsmotoren (auch als Getriebemotor bezeichnet) ausgestattet, die auf gewöhnlichen DC-Motoren basieren. Es verfügt über ein passendes Getriebegehäuse, das eine geringere Drehzahl, aber ein höheres Drehmoment liefert. Unterschiedliche Übersetzungsverhältnisse des Getriebes können zudem verschiedene Drehzahlen und Drehmomente bereitstellen.
 
-Gear motor is the integration of gearmotor and motor, which is applied widely in steel and machine industry
+Ein Getriebemotor ist die Integration von Getriebe und Motor und wird in der Stahl- und Maschinenbaubranche weit verbreitet angewendet.
 
-Micro:bit motor driver shield comes with a DRV8833 chip. In order to save the IO port resource, we control the rotation direction and speed of 4 DC gear motors with the DRV8833 chip.
+Das micro:bit Motor-Treiber-Shield ist mit einem DRV8833-Chip bestückt. Um IO-Port-Ressourcen zu sparen, steuern wir die Drehrichtung und Geschwindigkeit der 4 DC-Getriebemotoren mit dem DRV8833-Chip.
 
 ![Img](./media/Makecode_4c9781dc.png)
 
@@ -26,29 +26,29 @@ STC8G1K08 Chip circuit
 
 HR8833 Motor driver circuit
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio 4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Slot des keyestudio 4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie Batterien in den Batteriefachhalter ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter auf die ON-Position
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Webversion von Makecode
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_3a759dd8.png)
 
-Click“JavaScript" to view the corresponding JavaScript code: 
+Klicken Sie auf“JavaScript", um den entsprechenden JavaScript-Code anzuzeigen: 
 
 ![](./media/Makecode_242ba6ca.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis1**
 
-Download code 1 to micro:bit board, dial POWER switch to ON end. Smart car goes forward for 2s and stops for 2s.
+Laden Sie Code 1 auf das micro:bit-Board, schalten Sie den POWER-Schalter auf ON. Das Roboterauto fährt 2s vorwärts und hält 2s an.
 
 5\.  **Test Code2**
 
@@ -56,10 +56,10 @@ Download code 1 to micro:bit board, dial POWER switch to ON end. Smart car goes 
 
 ![Img](./media/Makecode_4eb6b574.png)
 
-Click“JavaScript" to view the corresponding JavaScript code: 
+Klicken Sie auf“JavaScript", um den entsprechenden JavaScript-Code anzuzeigen: 
 
 ![](./media/Makecode_ee70b846.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis2**
 
-Download code 2 to micro:bit board, the car goes forward for 2s, turns back for 2s, turn left for 2s, turn right for 2s and stops for 2s and repeats this pattern.
+Laden Sie Code 2 auf das micro:bit-Board. Das Auto fährt 2s vorwärts, fährt 2s rückwärts, fährt 2s nach links, fährt 2s nach rechts, stoppt 2s und wiederholt dieses Muster.

@@ -1,132 +1,134 @@
-## Project 19：IR Remote Control
+## Project 19：IR-Fernbedienung
 
-### Project 19.1：Decode IR Remote Control
+### Project 19.1：IR-Fernbedienung decodieren
 
 ![](./media/Makecode_3a3e9860.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-There is no doubt that infrared remote control is ubiquitous in daily life. It is used to control various household appliances, such as TVs, stereos, video recorders and satellite signal receivers. Infrared remote control is composed of infrared transmitting and infrared receiving systems, that is, an infrared remote control, an infrared receiving module and a single-chip microcomputer capable of decoding.
+Es besteht kein Zweifel, dass Infrarot-Fernbedienungen im Alltag allgegenwärtig sind. Sie werden zur Steuerung verschiedener Haushaltsgeräte verwendet, z. B. Fernseher, Stereoanlagen, Videorecorder und Satellitenempfänger. Eine Infrarot-Fernbedienung besteht aus einem Infrarot-Sende- und einem Infrarot-Empfangssystem, also einer Fernbedienung, einem Infrarot-Empfangsmodul und einem dekodierfähigen Ein-Chip-Mikrocomputer.
 
 ![](./media/Makecode_9980b41f.png)
 
-The 38K infrared carrier signal emitted by remote controller is encoded by the encoding chip in the remote controller. It is composed of a section of pilot code, user code, user inverse code, data code, and data inverse code. The time interval of the pulse is used to distinguish whether it is a 0 or 1 signal and the encoding is made up of these 0, 1 signals.
+Das 38 kHz-Infrarot-Trägersignal, das von der Fernbedienung ausgesendet wird, wird vom Kodierungschip in der Fernbedienung kodiert. Es besteht aus einem Abschnitt Pilotcode, Benutzercode, invertiertem Benutzercode, Datencode und invertiertem Datencode. Das Zeitintervall des Impulses wird genutzt, um zu unterscheiden, ob es sich um ein 0- oder 1-Signal handelt, und die Kodierung besteht aus diesen 0- und 1-Signalen.
 
-The user code of the same remote control is unchanged. The data code can distinguish the key.
+Der Benutzercode derselben Fernbedienung bleibt unverändert. Der Datencode unterscheidet die Taste.
 
-When the remote control button is pressed, the remote control sends out an infrared carrier signal. When the IR receiver receives the signal, the program will decode the carrier signal and determines which key is pressed. The MCU decodes the received 01 signal, thereby judging what key is pressed by the remote control.
+Wenn eine Taste auf der Fernbedienung gedrückt wird, sendet die Fernbedienung ein Infrarot-Trägersignal aus. Wenn der IR-Empfänger das Signal empfängt, dekodiert das Programm das Trägersignal und bestimmt, welche Taste gedrückt wurde. Der MCU dekodiert das empfangene 01-Signal und legt so fest, welche Taste der Fernbedienung gedrückt wurde.
 
-Infrared receiver we use is an infrared receiver module. Mainly composed of an infrared receiver head, it is a device that integrates reception, amplification, and demodulation. Its internal IC has completed demodulation, and can achieve from infrared reception to output and be compatible with TTL signals. Additionally, it is suitable for infrared remote control and infrared data transmission. The infrared receiving module made by the receiver has only three pins, signal line, VCC and GND.
+Der verwendete Infrarot-Empfänger ist ein Infrarot-Empfangsmodul. Es besteht hauptsächlich aus einem Infrarot-Empfangskopf und ist ein Gerät, das Empfang, Verstärkung und Demodulation integriert. Sein interner IC hat die Demodulation bereits übernommen und kann vom Infrarot-Empfang bis zur Ausgabe arbeiten und ist mit TTL-Signalen kompatibel. Außerdem ist es für Infrarot-Fernbedienungen und Infrarot-Datenübertragung geeignet. Das vom Empfänger gefertigte Infrarot-Empfangsmodul hat nur drei Anschlüsse: Signalleitung, VCC und GND.
 
-According to the picture above, the integrated port of the infrared receiver is connected to the P9 5V G port on the motor driver board and controlled by the the P9 of the micro:bit.
+Wie im obigen Bild gezeigt, ist der integrierte Anschluss des Infrarot-Empfängers mit dem P9 5V G Anschluss auf der Motorsteuerplatine verbunden und wird von P9 des micro:bit gesteuert.
 
-2\. **Parameters:**
+2\. **Parameter:**
 
-- Operating Voltage: 3.3-5V（DC）
+- Betriebsspannung: 3.3-5V（DC）
 
-- Interface: 3PIN
+- Schnittstelle: 3PIN
 
-- Output Signal: Digital signal
+- Ausgangssignal: digitales Signal
 
-- Receiving Angle: 90 degrees
+- Empfangswinkel: 90 Grad
 
-- Frequency: 38khz
+- Frequenz: 38khz
 
-- Receiving Distance: about 5m
+- Empfangsreichweite: etwa 5m
 
-3\. **Preparation**
+3\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio   4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie Batterien in das Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter in die Stellung ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
 
-4\. **Test Code**
+4\. **Testcode**
 
 ![](./media/Makecode_2e20f731.png)
 
-Click“JavaScript" to switch into the corresponding JavaScript code:
+Klicken Sie auf „JavaScript“, um in den entsprechenden JavaScript-Code zu wechseln:
 
 ![](./media/Makecode_87e18859.png)
 
-**Code explanation:** If the buttons are not pressed, the serial monitor constantly shows 0; when pressed, the corresponding key values are displayed.
+**Code-Erklärung:** Wenn keine Tasten gedrückt werden, zeigt der serielle Monitor ständig 0 an; wenn eine Taste gedrückt wird, werden die entsprechenden Tastencodes angezeigt.
 
-**Notes：**
+**Hinweise：**
 
-The remote control in this kit is not inclusive of batteries. We recommend you to purchase them online.(battery type:CR2025).
+Die Fernbedienung in diesem Kit enthält keine Batterien. Wir empfehlen, diese online zu erwerben. (Batterietyp: CR2025).
 
-Make sure IR remote is good before test. There is a tip for you to check it.
+Stellen Sie sicher, dass die IR-Fernbedienung vor dem Test funktioniert. Hier ein Tipp zum Prüfen:
 
-Open the cellphone camera , make IR remote control point at camera and press button. The remote control is good if you see the purple flashing light in the camera.
+Öffnen Sie die Handykamera, richten Sie die IR-Fernbedienung auf die Kamera und drücken Sie eine Taste. Wenn Sie auf dem Kamerabildschirm ein violettes Blinklicht sehen, ist die Fernbedienung in Ordnung.
 
-5\. **Test Result**
+5\. **Testergebnis**
 
-Download code to micro: bit board and don’t plug off USB cable Click![](./media/Makecode_e0580d78.png)
+Laden Sie den Code auf das micro:bit-Board und ziehen Sie das USB-Kabel nicht ab. Klicken Sie![](./media/Makecode_e0580d78.png)
 
 ![](./media/Makecode_0d3198e0.png)
 
-Make IR remote control point at IR receiver and press the button, the serial monitor will display the corresponding key values, as shown below：
+Richten Sie die IR-Fernbedienung auf den IR-Empfänger und drücken Sie eine Taste. Der serielle Monitor zeigt die entsprechenden Tastencodes an, wie unten dargestellt:
 
 ![](./media/Makecode_c7a33a4c.png)
 
-Open CoolTerm, click Options to select SerialPort. Set COM port and 115200 baud rate. Click“OK”and“Connect”.
+Öffnen Sie CoolTerm, klicken Sie auf Options, um SerialPort auszuwählen. Stellen Sie den COM-Port und die Baudrate 115200 ein. Klicken Sie auf „OK“ und „Connect“.
 
-CoolTerm serial monitor shows the key value as follows:
+Der CoolTerm-Seriellmonitor zeigt die Tastencodes wie folgt an:
 
 ![Img](./media/Makecode_155c857a.png)
 
-The key value is displayed as for your reference:
+Der Tastencode wird zur Referenz wie folgt angezeigt:
 
 ![](./media/Makecode_1fc0d9bb.jpg)
 
-### Project 19.2：IR Remote Control 
+### Project 19.2：IR-Fernbedienung
 
 ![Img](./media/Makecode_643cb701.png)
 
-1\. **Description**
+1\. **Beschreibung**
 
-In this project, we combine IR remote control with car shield to make an IR remote smart car. Its principle is to control the motion of car by sending key signals from IR remote control to IR receiving module of car shield.
+In diesem Projekt kombinieren wir die IR-Fernbedienung mit dem Car Shield, um ein per IR gesteuertes Smart Car zu erstellen. Das Prinzip besteht darin, die Bewegung des Fahrzeugs zu steuern, indem Tastenbefehle von der IR-Fernbedienung an das IR-Empfangsmodul des Car Shields gesendet werden.
 
-2\. **Preparation**
+2\. **Vorbereitung**
 
-- Insert the micro:bit board into the slot of keyestudio   4WD Mecanum Robot Car V2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio   4WD Mecanum Robot Car V2.0 ein
 
-- Place batteries into battery holder
+- Legen Sie Batterien in das Batteriefach ein
 
-- Dial power switch to ON end
+- Schalten Sie den Netzschalter in die Stellung ON
 
-- Connect the micro:bit to your computer via an USB cable
+- Verbinden Sie das micro:bit über ein USB-Kabel mit Ihrem Computer
 
-- Open the Web version of Makecode
+- Öffnen Sie die Web-Version von Makecode
 
-**Note:** The infrared sensor and infrared remote control should not be used in environments with infrared interference such as sunlight for it contains a lot of invisible lights, such as infrared and ultraviolet. In an environment with strong sunlight, they cannot work normally.
+**Hinweis:** Der Infrarotsensor und die IR-Fernbedienung sollten nicht in Umgebungen mit Infrarotstörungen wie direktem Sonnenlicht verwendet werden, da dieses viele unsichtbare Lichtanteile wie Infrarot und Ultraviolett enthält. In einer Umgebung mit starkem Sonnenlicht können sie nicht ordnungsgemäß funktionieren.
 
-3\. **Flow Chart**
+3\. **Flussdiagramm**
 
 ![Img](./media/Makecode_e5f416e3.png)
 
-4\. **Test Code**
+4\. **Testcode**
 
 ![](./media/Makecode_22d06d74.png)
 
-Click“JavaScript" to switch into the corresponding JavaScript code:
+Klicken Sie auf „JavaScript“, um in den entsprechenden JavaScript-Code zu wechseln:
 
 ![](./media/Makecode_e68b6275.png)
 
 ![](./media/Makecode_94de6552.png)
 
-5\. **Test Result**
+5\. **Testergebnis**
 
-Download code to micro:bit board, and dial POWER to ON end.
+Laden Sie den Code auf das micro:bit-Board und stellen Sie den POWER-Schalter auf ON.
 
-Make IR remote control point at micro:bit and press the button to control smart car to move.
+Richten Sie die IR-Fernbedienung auf das micro:bit und drücken Sie eine Taste, um das Smart Car zu steuern.
 
-![](./media/Makecode_d55474f3.png)button makes smart car move forward，![](./media/Makecode_5c8a6549.png)stands for turning left，![](./media/Makecode_41116032.png)implies rightward turning, ![](./media/Makecode_369433f6.png)indicates moving backward，![](./media/Makecode_a8ef4b17.png) stops car.
+![](./media/Makecode_d55474f3.png) Die Taste macht das Smart Car vorwärts fahren，![](./media/Makecode_5c8a6549.png) steht für Linksdrehen，![](./media/Makecode_41116032.png) bedeutet Rechtsdrehung，![](./media/Makecode_369433f6.png) zeigt Rückwärtsfahrt an，![](./media/Makecode_a8ef4b17.png) stoppt das Auto.
 
-**Note:** The distance between IR remote control and IR receiving head of smart car are supposed less than 5m during the test.
+**Hinweis:** Der Abstand zwischen der IR-Fernbedienung und der IR-Empfangseinheit des Smart Cars sollte während des Tests weniger als 5 m betragen.
+
+---

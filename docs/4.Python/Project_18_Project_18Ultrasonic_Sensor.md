@@ -1,78 +1,66 @@
-### Project 18：Ultrasonic Sensor
+### Projekt 18：Ultraschallsensor
 
-#### Project 18.1：Ultrasonic Ranging
+#### Projekt 18.1：Ultraschall-Entfernungsmessung
 
-1\. **Description**
+1. **Beschreibung**
 
 ![](./media/Python_9810ae67.jpg)
 
-The ultrasonic sensor uses sonar to determine distance to an object like bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes complete with ultrasonic transmitter and receiver modules.
+Der Ultraschallsensor nutzt Sonar zur Entfernungsbestimmung zu einem Objekt, ähnlich wie Fledermäuse. Er bietet eine hervorragende berührungslose Abstandserkennung mit hoher Genauigkeit und stabilen Messwerten in einem einfach zu verwendenden Modul. Es enthält sowohl Ultraschall-Sender- als auch Empfängermodule.
 
-The ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications. 
+Der Ultraschallsensor wird in einer Vielzahl von Elektronikprojekten eingesetzt, um Hinderniserkennung und Abstandsmessanwendungen sowie verschiedene andere Anwendungen zu realisieren.
 
 ![](./media/Python_0180b169.png)
 
-The ultrasonic module will emit the ultrasonic waves after trigger signals. When the ultrasonic waves encounter the object and are reflected back, the module outputs an echo signal, so it can determine the distance of object from the time difference between trigger signal (TRIG)and echo signal(ECHO). 
+Das Ultraschallmodul sendet Ultraschallwellen nach einem Trigger-Signal aus. Wenn die Ultraschallwellen auf ein Objekt treffen und zurückreflektiert werden, gibt das Modul ein Echo-Signal aus, sodass es den Abstand des Objekts aus der Zeitdifferenz zwischen Trigger-Signal (TRIG) und Echo-Signal (ECHO) bestimmen kann.
 
-As the picture shows, it is like two eyes. One is transmitting end, the other is receiving end.
+Wie auf dem Bild zu sehen ist, ist es wie zwei Augen. Eines ist der Sendeteil, das andere der Empfangsteil.
 
-According to the above wiring diagram, the integrated port of the ultrasonic sensor module is connected to the 5V G P15 P16 port on the micro:bit motor driver base plate. The Trig (T) pin is controlled by P15 of the micro:bit and the pin of Echo (E) the P16.
+Entsprechend dem obigen Anschlussdiagramm ist der integrierte Port des Ultraschallmoduls mit dem 5V G P15 P16 Port auf der micro:bit Motor-Treiber-Platine verbunden. Der Trig (T) Pin wird vom P15 des micro:bit gesteuert und der Echo (E) Pin vom P16.
 
 ![](./media/Python_19b45a23.jpg)
 
-2\. **Working Principle**
+2. **Funktionsprinzip**
 
 ![](./media/Python_8ff02741.png)
 
-(1)Pull down TRIG then trigger high level signals with least 10us;
+(1) TRIG auf Low ziehen und dann mit mindestens 10 µs einen High-Trigger senden;
 
-(2)After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return;
+(2) Nach dem Trigger sendet das Modul automatisch acht 40 kHz Ultraschallimpulse und prüft, ob ein Rücksignal empfangen wird;
 
-(3)If there is a signal return, when ECHO (E) outputs a high level, then the duration of the high level is the time from transmission to reception of the ultrasonic waves. Then test distance = high level duration \*340m/s\*0.5. 
+(3) Wenn ein Rücksignal vorhanden ist, gibt ECHO (E) beim Empfang einen High-Pegel aus; die Dauer des High-Levels entspricht der Zeit von Aussenden bis Empfangen der Ultraschallwellen. Dann Entfernung = High-Pegel-Dauer * 340 m/s * 0,5.
 
-3\.  **Parameters**
+3. **Parameter**
 
-- Working voltage: 3-5.5V (DC)
+- Betriebsspannung: 3-5.5V (DC)
+- Betriebsstrom: 15mA
+- Arbeitsfrequenz: 40kHz
+- Maximale Erkennungsdistanz: ca. 3m
+- Minimale Erkennungsdistanz: 2-3cm
+- Genauigkeit: bis zu 0,2cm
+- Erkennungswinkel: weniger als 15 Grad
+- Eingangs-Trigger-Impuls: 10 µs TTL-Pegel
+- Ausgangs-Echo-Signal: TTL-Pegel (High), proportional zur Reichweite
 
-- Working current: 15mA
+4. **Vorbereitung**
 
-- Working frequency: 40khz
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
+- Legen Sie die Batterien in das Batteriefach ein
+- Schalten Sie den Netzschalter auf die Position ON
+- Verbinden Sie das micro:bit mit dem Computer über ein USB-Kabel
+- Öffnen Sie die Offline-Version von Mu
 
-- Maximum detection distance: about 3m
+5. **Testcode**
 
-- Minimum detection distance: 2-3cm
+Öffnen Sie die Mu-Software und laden Sie die Datei “Ultrasonic Ranging\.py”, um den Code zu importieren. Sie können den Code auch selbst im Editorfenster eingeben.
 
-- Precision: up to 0.2cm
+(Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben werden.)
 
-- Sensing angle: less than 15 degrees
+Klicken Sie auf “Files”, um die Bibliotheksdatei “keyes_mecanum_Car_V2.py” auf das micro:bit zu importieren.
 
-- Input trigger pulse: 10us TTL level
+Klicken Sie auf “Check”, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
 
-- Output echo signal: output TTL level signal (high), proportional t  range
-
-4\.  **Preparation**
-
-- Insert micro:bit board into the slot of keyestudio 4WD Mecanum Robot CarV2.0
-
-- Place batteries into battery holder
-
-- Dial power switch to ON end
-
-- Connect micro:bit to the computer via an USB cable
-
-- Open the offline version of Mu.
-
-5\.  **Test Code**
-
-Enter Mu software and open the file“Ultrasonic Ranging\.py”to import code. You can also input code in the edit window yourself.
-
-(**Note: All English words and symbols must be written in English**.)
-
-Click“Files”to import“keyes_mecanum_Car_V2.py“library file to micro:bit. 
-
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
-
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
 
 ![](./media/Python_5a29bde9.png)
 
@@ -98,59 +86,55 @@ while True:
 
 ```
 
-6\.  **Test Result**
+6. **Testergebnis**
 
-After downloading the code to the board successfully and don’t plug off the USB cable. Click“REPL”and then press the reset button.
+Nachdem der Code erfolgreich auf das Board geladen wurde und das USB-Kabel nicht getrennt ist, klicken Sie auf “REPL” und drücken dann die Reset-Taste.
 
 ![Img](./media/Python_bb3e1312.png)
 
-The distance value of obstacle will be displayed, as shown below.
+Der Entfernungswert des Hindernisses wird angezeigt, wie unten dargestellt.
 
-When the distance is less than 10cm, the passive buzzer of smart will emit sound.
+Ist die Entfernung weniger als 10 cm, ertönt der passive Summer des Smart Cars.
 
 ![](./media/Python_4dc8054e.png)
 
-7\.  **Code Explanation**
+7. **Code-Erklärung**
 
 ![Img](./media/Python_ebde06e9.png)
 
-#### Project 18.2：Ultrasonic Avoidance
+#### Projekt 18.2：Ultraschall-Ausweichfahrt
 
 ![](./media/Python_aee41f6f.jpg)
 
-1\. **Description**
+1. **Beschreibung**
 
-In this project, we will integrate an ultrasonic sensor and a car to make an ultrasonic avoidance car. 
+In diesem Projekt integrieren wir einen Ultraschallsensor in ein Fahrzeug, um ein Ultraschall-Ausweichfahrzeug zu bauen.
 
-Its principle is to detect the distance between the car and obstacle via the ultrasonic sensor to control the motion of smart car.
+Das Prinzip besteht darin, mit dem Ultraschallsensor den Abstand zwischen Fahrzeug und Hindernis zu messen, um die Bewegung des Smart Cars zu steuern.
 
-2\. **Preparation**
+2. **Vorbereitung**
 
-- Insert micro:bit board into the slot of keyestudio 4WD Mecanum Robot CarV2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
+- Legen Sie die Batterien in das Batteriefach ein
+- Schalten Sie den Netzschalter auf die Position ON
+- Verbinden Sie das micro:bit mit dem Computer über ein USB-Kabel
+- Öffnen Sie die Offline-Version von Mu
 
-- Place batteries into battery holder
-
-- Dial power switch to ON end
-
-- Connect micro:bit to the computer via an USB cable
-
-- Open the offline version of Mu.
-
-3\.  **Flow Chart**
+3. **Flussdiagramm**
 
 ![Img](./media/Python_a4efee72.png)
 
-4\.  **Test Code**
+4. **Testcode**
 
-Enter Mu software and open the file“Ultrasonic Avoid Smart Car\.py”to import code. You can also input code in the edit window yourself.
+Öffnen Sie die Mu-Software und laden Sie die Datei “Ultrasonic Avoid Smart Car\.py”, um den Code zu importieren. Sie können den Code auch selbst im Editorfenster eingeben.
 
-(**Note: All English words and symbols must be written in English**.)
+(Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben werden.)
 
-Click“Files”to import“keyes_mecanum_Car_V2.py“library file to micro:bit . 
+Klicken Sie auf “Files”, um die Bibliotheksdatei “keyes_mecanum_Car_V2.py” auf das micro:bit zu importieren.
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
 
 ![](./media/Python_38f3510c.png)
 
@@ -232,57 +216,53 @@ while True:
         mecanumCar.Motor_Lower_R(1, 100)
 ```
 
-5\.  **Test Result**
+5. **Testergebnis**
 
-After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, externe Stromversorgung anschließen (DIP-Schalter auf ON stellen) und die Reset-Taste am micro:bit drücken.
 
 ![Img](./media/Python_bb3e1312.png)
 
-When the obstacle distance is greater than 20cm, the car goes forward ; on the contrary, the smart car turns left.
+Ist der Hindernisabstand größer als 20 cm, fährt das Auto vorwärts; andernfalls dreht das Smart Car nach links.
 
-6\.  **Code Explanation**
+6. **Code-Erklärung**
 
 ![Img](./media/Python_9e28cce7.png)
 
 ![Img](./media/Python_c33a22a8.png)
 
-#### Project 18.3：Ultrasonic Following
+#### Projekt 18.3：Ultraschall-Folgefahrt
 
 ![](./media/Python_28806167.jpg)
 
-1\. **Description**
+1. **Beschreibung**
 
-In previous lesson, we’ve learned the basic principle of line tracking sensor. Next, we will combine the ultrasonic sensor with the car to make an ultrasonic following car.
+In der vorherigen Lektion haben wir das Grundprinzip des Linienfolgesensors kennengelernt. Als Nächstes kombinieren wir den Ultraschallsensor mit dem Fahrzeug, um ein Ultraschall-Folgeauto zu bauen.
 
-The ultrasonic sensor detects the obstacle distance and control the motion status of car.
+Der Ultraschallsensor ermittelt den Hindernisabstand und steuert damit die Bewegungszustände des Fahrzeugs.
 
-2\. **Preparation**
+2. **Vorbereitung**
 
-- Insert micro:bit board into the slot of keyestudio 4WD Mecanum Robot CarV2.0
+- Setzen Sie das micro:bit-Board in den Steckplatz des keyestudio 4WD Mecanum Robot Car V2.0 ein
+- Legen Sie die Batterien in das Batteriefach ein
+- Schalten Sie den Netzschalter auf die Position ON
+- Verbinden Sie das micro:bit mit dem Computer über ein USB-Kabel
+- Öffnen Sie die Offline-Version von Mu
 
-- Place batteries into battery holder
-
-- Dial power switch to ON end
-
-- Connect micro:bit to the computer via an USB cable
-
-- Open the offline version of Mu.
-
-2\.  **Flow Chart**
+2. **Flussdiagramm**
 
 ![Img](./media/Python_53a30906.png)
 
-3\.  **Test Code**
+3. **Testcode**
 
-Enter Mu software and open the file“Ultrasonic Follow Smart Car\.py”to import code. You can also input code in the edit window yourself.
+Öffnen Sie die Mu-Software und laden Sie die Datei “Ultrasonic Follow Smart Car\.py”, um den Code zu importieren. Sie können den Code auch selbst im Editorfenster eingeben.
 
-(**Note: All English words and symbols must be written in English**.)
+(Hinweis: Alle englischen Wörter und Symbole müssen in Englisch geschrieben werden.)
 
-Click“Files”to import“keyes_mecanum_Car_V2.py“library file to micro:bit. 
+Klicken Sie auf “Files”, um die Bibliotheksdatei “keyes_mecanum_Car_V2.py” auf das micro:bit zu importieren.
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um Fehler im Code zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
 
 ![](./media/Python_f586f3f7.png)
 
@@ -353,17 +333,17 @@ while True:
             np.show()
 ```
 
-4\.  **Test Result**
+4. **Testergebnis**
 
-After downloading the code to the board successfully, **external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board geladen wurde, externe Stromversorgung anschließen (DIP-Schalter auf ON stellen) und die Reset-Taste am micro:bit drücken.
 
 ![Img](./media/Python_bb3e1312.png)
 
-The smart car could follow the obstacle to move and 4 WS2812 RGB lights will display different colors.
+Das Smart Car kann dem Hindernis folgen und die 4 WS2812 RGB-LEDs zeigen unterschiedliche Farben an.
 
-**Note:** the obstacle can only move in front of smart car.
+Hinweis: Das Hindernis darf sich nur vor dem Smart Car bewegen.
 
-5\.  **Code Explanation**
+5. **Code-Erklärung**
 
 ![Img](./media/Python_930a04fa.png)
 

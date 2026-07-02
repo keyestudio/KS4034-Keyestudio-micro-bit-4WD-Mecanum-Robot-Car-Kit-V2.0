@@ -1,6 +1,6 @@
-## Resource Download
+Ressourcen-Download
 
-<span style="background:#CC0000;">To help you quickly obtain related codes, libraries, and other support files for this product, please click the links below to download:</span>
+Um Ihnen zu helfen, die zugehörigen Codes, Bibliotheken und andere Support-Dateien für dieses Produkt schnell zu erhalten, klicken Sie bitte auf die folgenden Links, um sie herunterzuladen:
 
-- [MakeCode Code and libraries downloads](./Code.7z)
-- [Python Code and libraries downloads](./PythonCode.7z)
+- [MakeCode-Code und Bibliotheken herunterladen](./Code.7z)
+- [Python-Code und Bibliotheken herunterladen](./PythonCode.7z)

@@ -1,26 +1,26 @@
-### Project 5：Temperature Detection
+### Projekt 5：Temperaturerkennung
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-The Micro:bit main board is not equipped with a temperature sensor, but uses the built-in temperature sensor in NFR52833 chip for temperature detection. Therefore, the detected temperature is more closer to the temperature of the chip, and there maybe deviation from the ambient temperature.
+Das Micro:bit-Hauptboard ist nicht mit einem eigenen Temperatursensor ausgestattet, sondern verwendet den integrierten Temperatursensor im NFR52833-Chip zur Temperaturmessung. Daher entspricht die gemessene Temperatur eher der Temperatur des Chips und kann von der Umgebungstemperatur abweichen.
 
-In this project, we will seek to use the sensor to test the temperature in the current environment, and display the test results in the display data (device). And then control the LED dot matrix to display different patterns by setting the temperature range detected by the sensor.
+In diesem Projekt verwenden wir den Sensor, um die Temperatur in der aktuellen Umgebung zu messen und die Messergebnisse auf dem Displaygerät anzuzeigen. Anschließend steuern wir die LED-Punktmatrix, sodass durch Festlegen eines Temperaturbereichs unterschiedliche Muster angezeigt werden.
 
-**Note: the temperature sensor of Micro:bit main board is shown below:**
+**Hinweis: Der Temperatursensor des Micro:bit-Hauptboards ist unten dargestellt:**
 
 ![](./media/Python_206c8ec1.png)
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Verbinden Sie das Micro:bit-Hauptboard über das USB-Kabel mit Ihrem Computer
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code1**
+3\.  **Testcode1**
 
-Enter Mu software and open the file“Temperature Measurement -1\.py “ to import code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Temperature Measurement -1\.py “, um den Code zu importieren. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Symbole müssen in englischer Sprache geschrieben werden.**)
 
 ![](./media/Python_03cbb6e9.png)
 
@@ -36,31 +36,31 @@ while True:
     sleep(500)
 ```
 
-Click“Check”to examine error in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_7b437c2d.png)
 
-If the code is correct, connect micro:bit to computer and click“Flash”to download code to micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit dem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
 
 ![](./media/Python_193065ab.png)
 
-4\.  **Test Result1**
+4\.  **Testergebnis1**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**. Click“REPL”and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)**. Klicken Sie auf “REPL” und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Then REPL window will show the ambient temperature value, as shown below: (C stands for temperature unit)
+Im REPL-Fenster wird dann der Umgebungswert der Temperatur angezeigt, wie unten gezeigt: (C steht für Temperatureinheit)
 
 ![](./media/Python_d08386d8.png)
 
-5\.  **Test Code2**
+5\.  **Testcode2**
 
-Enter Mu software and open the file“Temperature Measurement -2\.py “ to import code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Temperature Measurement -2\.py “, um den Code zu importieren. Sie können den Code auch selbst im Bearbeitungsfenster eingeben.
 
-(**Note: All words and symbols must be written in English.**)
+(**Hinweis: Alle Wörter und Symbole müssen in englischer Sprache geschrieben werden.**)
 
-The temperature value can be set in compliance with the rea emperature.
+Der Temperaturwert kann entsprechend der tatsächlichen Temperatur eingestellt werden.
 
 ![](./media/Python_c6456d78.png)
 
@@ -76,22 +76,24 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-Click“Check”to examine error in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um den Code auf Fehler zu prüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden. 
 
 ![](./media/Python_709d3031.png)
 
-If the code is correct, connect the micro:bit to the computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit dem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board zu laden.
 
 ![](./media/Python_06f7542e.png)
 
-6\.  **Test Result2**
+6\.  **Testergebnis2**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**, and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromquelle ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- When the ambient temperature is less than 35℃, the 5*5 LED dot matrix shows ![](./media/Python_034dc0d5.png). When the temperature is equivalent to or greater than 35℃, the pattern ![](./media/Python_ebfaeac9.png) appears.
+Wenn die Umgebungstemperatur unter 35℃ liegt, zeigt die 5×5-LED-Punktmatrix ![](./media/Python_034dc0d5.png) an. Wenn die Temperatur gleich oder größer als 35℃ ist, erscheint das Muster ![](./media/Python_ebfaeac9.png).
 
-7\.  **Code Explanation**
+7\.  **Code-Erklärung**
 
 ![Img](./media/Python_d7cdc397.png)
+
+---

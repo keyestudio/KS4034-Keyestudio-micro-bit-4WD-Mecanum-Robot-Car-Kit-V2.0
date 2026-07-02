@@ -1,22 +1,22 @@
-### Project 9：Speaker
+### Projekt 9: Lautsprecher
 
 ![](./media/Python_ac515b9a.png)
 
-1\.  **Description**
+1\.  **Beschreibung**
 
-Micro: Bit main board has an built-in speaker, which makes adding sound to the programs easier. It can also be programmed to produce all kinds of tones, like playing the song *Ode to Joy.*
+Das micro:bit-Hauptboard verfügt über einen eingebauten Lautsprecher, wodurch das Hinzufügen von Ton zu Programmen einfacher wird. Es kann auch so programmiert werden, dass es alle Arten von Tönen erzeugt, z. B. das Spielen des Liedes *Ode to Joy*.
 
-2\.  **Preparation**
+2\.  **Vorbereitung**
 
-A. Attach the micro:bit main board to your computer via the USB cable
+A. Verbinden Sie das micro:bit-Hauptboard über das USB-Kabel mit Ihrem Computer
 
-B. Open the offline version of Mu.
+B. Öffnen Sie die Offline-Version von Mu.
 
-3\.  **Test Code**
+3\.  **Testcode**
 
-Enter Mu software and open the file“Speaker\.py”to import code. You can also input code in the editing window yourself.
+Starten Sie die Mu-Software und öffnen Sie die Datei “Speaker\.py”, um den Code zu importieren. Sie können den Code auch selbst im Editierfenster eingeben.
 
-(**Note: All words and symbols must be written in English**.)
+(**Hinweis: Alle Wörter und Symbole müssen in Englisch geschrieben sein**.)
 
 ![](./media/Python_eec7f643.png)
 
@@ -38,22 +38,24 @@ while True:
     sleep(1000)
 ```
 
-Click“Check”to examine errors in the code. The program proves wrong if underlines and cursors are shown. 
+Klicken Sie auf “Check”, um Fehler im Code zu überprüfen. Das Programm ist fehlerhaft, wenn Unterstreichungen und Cursor angezeigt werden.
 
 ![](./media/Python_f8852abf.png)
 
-If the code is correct, connect the micro:bit to your computer and click“Flash”to download the code to the micro:bit board.
+Wenn der Code korrekt ist, verbinden Sie das micro:bit mit Ihrem Computer und klicken Sie auf “Flash”, um den Code auf das micro:bit-Board herunterzuladen.
 
 ![](./media/Python_3fd94e43.png)
 
-4\.  **Test Result**
+4\.  **Testergebnis**
 
-After downloading the code to the board successfully, **power on via micro USB cable or external power supply(turn the DIP switch to ON)**,and press the reset button on micro:bit.
+Nachdem der Code erfolgreich auf das Board heruntergeladen wurde, **schalten Sie die Stromversorgung über das Micro-USB-Kabel oder eine externe Stromversorgung ein (DIP-Schalter auf ON stellen)** und drücken Sie die Reset-Taste am micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
- The speaker utters sound and the LED dot matrix shows the logo of music.
+ Der Lautsprecher gibt einen Ton von sich und die LED-Punktmatrix zeigt das Musik-Symbol.
 
-5\.  **Code Explanation**
+5\.  **Code-Erklärung**
 
 ![Img](./media/Python_18c047bd.png)
+
+---
