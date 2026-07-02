@@ -1,4 +1,4 @@
-### Project 1：Heart Beat
+### Proyecto 1：Heart Beat
 
 ![](./media/Python_b855274f.png)
 
