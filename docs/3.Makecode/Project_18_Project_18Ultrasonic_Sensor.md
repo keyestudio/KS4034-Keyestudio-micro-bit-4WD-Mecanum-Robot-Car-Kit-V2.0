@@ -1,166 +1,166 @@
-## Progetto 18：Sensore a ultrasuoni
+## プロジェクト 18：超音波センサー
 
-### Progetto 18.1：Rilevamento della distanza ad ultrasuoni
+### プロジェクト 18.1：超音波測距
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Il sensore a ultrasuoni utilizza il sonar per determinare la distanza da un oggetto, come fanno i pipistrelli. Offre un’eccellente rilevazione della distanza senza contatto, con alta precisione e letture stabili in una soluzione facile da usare. Include moduli trasmettitore e ricevitore ultrasonici.
+超音波センサーはコウモリのようにソナーを利用して物体までの距離を測定します。高精度かつ安定した読み取りが可能な、使いやすい非接触距離検出を提供します。超音波の送信モジュールと受信モジュールが含まれています。
 
-Il sensore a ultrasuoni viene impiegato in un’ampia gamma di progetti elettronici per la creazione di applicazioni di rilevamento ostacoli e misura della distanza, oltre a molte altre applicazioni.
+超音波センサーは障害物検知や距離測定のアプリケーションをはじめ、さまざまな電子プロジェクトで広く使用されています。
 
 ![](./media/Makecode_0180b169.png)
 
-Il modulo ultrasonico emetterà onde ultrasoniche dopo il segnale di trigger. Quando le onde ultrasoniche incontrano un oggetto e vengono riflesse, il modulo genera un segnale di eco, permettendo così di determinare la distanza dell’oggetto dal tempo di differenza tra il segnale di trigger (TRIG) e il segnale di eco (ECHO).
+超音波モジュールはトリガー信号の後に超音波を発信します。超音波が物体に当たり反射して戻ってくると、モジュールはエコー信号を出力するため、トリガー信号（TRIG）とエコー信号（ECHO）の時間差から物体までの距離を算出できます。
 
-Come mostra l’immagine, è come due occhi. Uno è l’estremità trasmittente, l’altro è l’estremità ricevente.
+図のように、左右に並んだ2つの目のような形をしています。片方が送信側、もう片方が受信側です。
 
-Secondo lo schema di cablaggio soprastante, la porta integrata del modulo sensore ultrasonico è collegata alla porta 5V G P15 P16 sulla piastra base driver del motore micro:bit. Il pin Trig (T) è controllato da P15 del micro:bit e il pin Echo (E) è collegato a P16.
+上の配線図によれば、超音波センサーモジュールの統合ポートは、micro:bit用モータードライバ基板の5V G P15 P16ポートに接続されています。Trig（T）ピンはmicro:bitのP15で制御され、Echo（E）ピンはP16に接続されています。
 
 ![](./media/Makecode_1174e0ec.png)
 
-2\. **Principio di funzionamento**
+2\. **動作原理**
 
 ![](./media/Makecode_8ff02741.png)
 
-(1) Portare TRIG a livello basso, quindi generare un impulso alto di almeno 10 µs;
+(1) TRIGをLOWに引き、最低10µsのHIGHパルスを発生させる；
 
-(2) Dopo il trigger, il modulo invierà automaticamente otto impulsi ultrasonici a 40 kHz e rileverà se c’è un ritorno del segnale;
+(2) トリガー後、モジュールは自動的に8回の40kHz超音波パルスを送信し、信号の返り（エコー）があるかを検出する；
 
-(3) Se c’è un ritorno del segnale, quando ECHO (E) emette un livello alto, la durata del livello alto corrisponde al tempo dalla trasmissione alla ricezione delle onde ultrasoniche. Quindi distanza di test = durata del livello alto \*340m/s\*0.5. 
+(3) もし信号の返りがあれば、ECHO（E）がHIGHを出力します。そのHIGHの持続時間が超音波の送信から受信までの時間です。テスト距離 = HIGHの持続時間 \*340m/s\*0.5。 
 
-3\. **Parametri**
+3\. **仕様**
 
-- Tensione di esercizio: 3-5.5V (DC)
+- 動作電圧: 3-5.5V (DC)
 
-- Corrente di esercizio: 15mA
+- 動作電流: 15mA
 
-- Frequenza di lavoro: 40 kHz
+- 動作周波数: 40 kHz
 
-- Distanza massima di rilevamento: circa 3 m
+- 最大検出距離: 約3m
 
-- Distanza minima di rilevamento: 2-3 cm
+- 最小検出距離: 2-3cm
 
-- Precisione: fino a 0,2 cm
+- 精度: 最大0.2cm
 
-- Angolo di rilevamento: inferiore a 15 gradi
+- 検出角度: 15度未満
 
-- Impulso di trigger in ingresso: 10 µs livello TTL
+- 入力トリガーパルス: 10µs TTLレベル
 
-- Segnale di eco in uscita: segnale di livello TTL (alto), proporzionale alla distanza
+- 出力エコー信号: TTLレベル信号（HIGH）を出力し、距離に比例
 
-4\. **Preparazione**
+4\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel vano porta batterie
+- 電池を電池ボックスに入れる
 
-- Portare l’interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite cavo USB
+- USBケーブルでmicro:bitをコンピューターに接続する
 
-- Aprire la versione Web di Makecode
+- Web版のMakecodeを開く
 
 
-5\. **Codice di test**
+5\. **テストコード**
 
 ![](./media/Makecode_497760b1.png)
 
-Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript:
+“JavaScript”をクリックして対応するJavaScriptコードを表示します:
 
 ![](./media/Makecode_387f3243.png)
 
-6\.  **Risultato del test**
+6\.  **テスト結果**
 
-Scaricare il codice sul micro:bit, mantenere il cavo USB collegato e posizionare l’interruttore POWER su ON. Il valore della distanza verrà visualizzato sul monitor.
+コードをmicro:bitにダウンロードし、USBケーブルを接続したままPOWERスイッチをONにします。距離の値がモニタに表示されます。
 
 ![](./media/Makecode_2cd74c16.png)
 
-Il monitor mostra la distanza tra l’ostacolo e il sensore a ultrasuoni (come mostrato sotto).
+モニタには、障害物と超音波センサー間の距離が表示されます（下図参照）。
 
 ![](./media/Makecode_422adea3.png)
 
-Aprire CoolTerm, cliccare su Options per selezionare SerialPort. Impostare la porta COM e la velocità di trasmissione a 115200 baud (la velocità della comunicazione seriale USB del Micro:bit è 115200 nel test). Cliccare “OK” e “Connect”.
+CoolTermを開き、OptionsをクリックしてSerialPortを選択します。COMポートとボーレートを115200に設定します（テストによりMicro:bitのUSBシリアル通信のボーレートは115200です）。“OK”と“Connect”をクリックします。
 
-Il monitor seriale di CoolTerm visualizza il valore della distanza come segue:
+CoolTermのシリアルモニタは以下のように距離値を表示します:
 
 ![](./media/Makecode_69b06998.png)
 
-### Progetto 18.2：Evitamento con ultrasuoni
+### プロジェクト 18.2：超音波による回避
 
 ![Img](./media/Makecode_13139b46.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-In questo progetto integreremo un sensore a ultrasuoni e un’auto per realizzare un’auto con comportamento di evitamento basato su ultrasuoni.
+このプロジェクトでは、超音波センサーと車両を組み合わせて超音波回避車を作ります。
 
-Il principio è rilevare la distanza tra l’auto e l’ostacolo tramite il sensore a ultrasuoni per controllare il movimento dell’auto intelligente.
+その原理は、超音波センサーで車と障害物の距離を検出し、スマートカーの動作を制御することです。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel vano porta batterie
+- 電池を電池ボックスに入れる
 
-- Portare l’interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite cavo USB
+- USBケーブルでmicro:bitをコンピューターに接続する
 
-- Aprire la versione Web di Makecode
+- Web版のMakecodeを開く
 
-3\.  **Diagramma di flusso**
+3\.  **フローチャート**
 
 ![Img](./media/Makecode_e2adae4b.png)
 
-4\.  **Codice di test**
+4\.  **テストコード**
 
 ![](./media/Makecode_05a4740b.png)
 
 ![Img](./media/Makecode_d7879887.png)
 
-Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript:
+“JavaScript”をクリックして対応するJavaScriptコードを表示します:
 
 ![](./media/Makecode_c8f86a24.png)
 
 ![](./media/Makecode_13baf1d6.png)
 
-5\.  **Risultato del test**
+5\.  **テスト結果**
 
-Scaricare il codice sul micro:bit, accendere il dispositivo e posizionare l’interruttore POWER su ON. Quando la distanza dall’ostacolo è maggiore di 20 cm, l’auto avanza; altrimenti l’auto intelligente svolta a sinistra.
+コードをmicro:bitにダウンロードし、本体とPOWERをONにします。障害物との距離が20cmより大きい場合は車が前進します；逆に、スマートカーは左に曲がります。
 
-### Progetto 18.3：Seguimento con ultrasuoni
+### プロジェクト 18.3：超音波追従
 
 ![Img](./media/Makecode_d17a7889.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-Nella lezione precedente abbiamo appreso il principio base del sensore di line tracking. Ora combineremo il sensore a ultrasuoni con l’auto per realizzare un’auto follower a ultrasuoni.
+前回のレッスンでは、ライントラッキングセンサーの基本原理を学びました。次に、超音波センサーを車両と組み合わせて超音波追従車を作成します。
 
-Il sensore a ultrasuoni rileva la distanza dall’ostacolo e controlla lo stato di movimento dell’auto.
+超音波センサーは障害物との距離を検出し、車の動作状態を制御します。
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel vano porta batterie
+- 電池を電池ボックスに入れる
 
-- Portare l’interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite cavo USB
+- USBケーブルでmicro:bitをコンピューターに接続する
 
-- Aprire la versione Web di Makecode
+- Web版のMakecodeを開く
 
-3\. **Diagramma di flusso**
+3\. **フローチャート**
 
 ![Img](./media/Makecode_f5026aed.png)
 
-4\. **Codice di test**
+4\. **テストコード**
 
 ![](./media/Makecode_03b95531.png)
 
-Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript:
+“JavaScript”をクリックして対応するJavaScriptコードを表示します:
 
 ![](./media/Makecode_a93c8245.png)
 
-5\. **Risultato del test**
+5\. **テスト結果**
 
-Scaricare il codice sul micro:bit, posizionare l’interruttore POWER su ON sullo shield; l’auto intelligente sarà in grado di seguire l’ostacolo e muoversi.
+コードをmicro:bitにダウンロードし、シールド上のPOWERスイッチをONにすると、スマートカーは障害物を追従して移動できるようになります。

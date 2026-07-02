@@ -1,24 +1,24 @@
-### Progetto 2：Accendere un singolo LED
+### プロジェクト 2：単一のLEDを点灯する
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La matrice di LED è costituita da 25 diodi disposti in un quadrato 5×5 e posizionati all'incrocio delle linee di riga (X) e delle linee di colonna (Y). Possiamo controllare uno dei 25 LED impostando punti di coordinate. Ad esempio, il primo LED nella prima riga è (0,0) e il terzo LED posizionato nella prima riga è (2,0) e così via.
+LEDドットマトリクスは、5×5の正方形に配置された25個のダイオードで構成され、行線（X）と列線（Y）の交点に配置されています。座標を設定することで25個のLEDのうち1つを制御できます。たとえば、最初の行の最初のLEDは (0,0) に位置し、最初の行の3番目のLEDは (2,0) に位置します。他も同様です。
 
 ![](./media/Python_094d5908.png)
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collega la scheda principale micro:bit al tuo computer tramite il cavo USB
+A. USBケーブルで micro:bit メインボードをコンピュータに接続します
 
-B. Apri la versione offline di Mu.
+B. Mu のオフライン版を起動します。
 
-3\.  **Codice di test**
+3\.  **テストコード**
 
-Avvia il software Mu e apri il file “Single LED display\.py.” per importare il codice. Puoi anche inserire il codice nella finestra di modifica autonomamente.
+Mu ソフトウェアを開き、ファイル “Single LED display\.py.” を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**)
+(**注意: すべての英単語と記号は英語で記述してください**)
 
 ![](./media/Python_9545233e.png)
 
@@ -41,28 +41,28 @@ while True:
 
 ```
 
-Clicca su “Check” per verificare eventuali errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori.
+コードのエラーを確認するには “Check” をクリックしてください。下線やカーソルが表示されている場合、プログラムに誤りがあります。
 
 ![](./media/Python_d205be08.png)
 
-Se il codice è corretto, collega il micro:bit al computer e clicca su “Flash” per trasferire il codice sulla scheda micro:bit.
+コードが正しい場合は、micro:bit をコンピュータに接続して “Flash” をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_86dd6eea.png)
 
-4\.  **Risultato del test**
+4\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimenta tramite il cavo micro USB o un'alimentazione esterna (sposta l'interruttore DIP su ON)** e premi il pulsante di reset sulla scheda.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れて（DIPスイッチを ON にする）**、ボードのリセットボタンを押してください。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Il LED in (1,0) si accenderà e spegnerà per 0,5 s, poi quello in (3,4) si accenderà e spegnerà per 0,5 s e questa sequenza si ripeterà.
+(1,0) のLEDが0.5秒間点灯・消灯し、(3,4) のLEDが0.5秒間点灯・消灯する動作を繰り返します。
 
-5\.  **Spiegazione del codice**
+5\.  **コードの説明**
 
 ![Img](./media/Python_c79b7922.png)
 
-6\.  **Riferimento**
+6\.  **参照**
 
-sleep(ms) : tempo di ritardo
+sleep(ms) : 遅延時間
 
-Per maggiori dettagli sul ritardo, fare riferimento al link: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
+遅延の詳細については、次のリンクを参照してください: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

@@ -1,33 +1,33 @@
-## Progetto 2: Light A Single LED
+## プロジェクト 2: Light A Single LED
 
 ![](./media/Makecode_2423afc6.jpg)
 
-[Clicca per scaricare il codice di questa lezione](./Code/Light-A-Single-LED.hex)
+[このレッスンのコードをダウンロードするにはクリックしてください](./Code/Light-A-Single-LED.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明:
 
-(1)Descrizione del progetto: La matrice di punti LED è composta da 25 LED disposti in un quadrato 5 × 5. Per localizzare rapidamente questi LED, come mostrato nella figura sottostante, possiamo considerare questa matrice come un sistema di coordinate e creare due assi numerando le righe da 0 a 4 dall'alto verso il basso e le colonne da 0 a 4 da sinistra a destra. Pertanto, il LED nella seconda posizione della prima riga è (1,0) e il LED posizionato nella quinta della quarta colonna è (3,4), e così via.
+(1)プロジェクトの説明: LEDドットマトリクスは、5×5 の正方形に配置された25個のLEDで構成されています。これらのLEDを素早く特定するために、下図のようにこのマトリクスを座標系と見なし、行を上から下へ0〜4、列を左から右へ0〜4と番号付けして二つの軸を作ります。したがって、1行目の2番目にあるLEDは (1,0) で、4列目の5番目にあるLEDは (3,4) となり、他も同様です。
 
 ![](./media/Makecode_4ab9ecab.png)
 
-### (2)Componenti necessari:
+### (2)必要なコンポーネント:
 
 Micro:bit main board V2
 
-Cavo Micro USB
+Micro USB ケーブル
 
-### (3)Codice di test:
+### (3)テストコード:
 
-Collega il Micro:bit main board V2 al tuo computer tramite il cavo Micro USB e inizia a modificare.
+Micro USB ケーブルで Micro:bit main board V2 をコンピュータに接続し、編集を開始します。
 
 ![](./media/Makecode_1bbd8a3b.gif)
 
-Programma completo:
+完全なプログラム:
 
 ![](./media/Makecode_da248db5.png)
 
-### (4)Risultati del test
+### (4)テスト結果
 
-Dopo aver caricato il codice, osserverai che la scheda Microbit mostra il seguente effetto: (1,0) si accende per 0,5 secondi e poi si spegne, seguito da (3,4) che si accende per 0,5 secondi e poi si spegne, ripetendosi in loop.
+コードをアップロードすると、Microbitボードは次のように表示します: (1,0) が0.5秒点灯して消灯し、続いて (3,4) が0.5秒点灯して消灯する、という動作がループで繰り返されます。
 
 ![](./media/Makecode_301232e3.gif)

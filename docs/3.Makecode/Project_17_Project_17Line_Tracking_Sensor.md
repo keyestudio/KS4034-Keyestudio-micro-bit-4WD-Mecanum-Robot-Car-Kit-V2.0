@@ -1,48 +1,48 @@
-## Progetto 17：Line Tracking Sensor
+## プロジェクト 17：Line Tracking Sensor
 
-### Progetto 17.1：Detect Line Tracking Sensor
+### プロジェクト 17.1：Detect Line Tracking Sensor
 
 ![](./media/Makecode_ea7f6c8c.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-La scheda driver del motore del Keyestudio 4WD Mecanum Robot Car è fornita con un sensore di tracciamento linea a 3 canali, che utilizza moduli IR TCRT5000 e 3 potenziometri.
+Keyestudio 4WD Mecanum Robot Car のモータードライバーボードには、TCRT5000 IRモジュールと3つのポテンショメータを採用した3チャンネルのライン追跡センサーが搭載されています。
 
-Il modulo IR TCRT5000 contiene un emettitore IR e un ricevitore IR. Quando i segnali infrarossi dell’emettitore vengono ricevuti dal ricevitore tramite riflessione, la resistenza del ricevitore cambia, il che si riflette generalmente in una variazione di tensione nel circuito.  
+TCRT5000 IRモジュールは赤外線発光素子と赤外線受光素子を内蔵しています。発光素子から出された赤外線が反射して受光素子に到達すると、受光素子の抵抗が変化し、それが回路上の電圧変化として一般に現れます。  
 
-La resistenza varia in funzione dell’intensità dei segnali infrarossi ricevuti dal ricevitore, che dipende spesso dal colore della superficie riflettente e dalla distanza tra la superficie riflettente e il ricevitore. Durante la rilevazione, il nero è attivo ad alto livello e il bianco è attivo a basso livello. 
+受光素子が受ける赤外線の強度に応じて抵抗が変化し、これは反射面の色や反射面と受光素子間の距離に依存します。検出時には黒が高レベル（High）でアクティブ、白が低レベル（Low）でアクティブとなります。 
 
-2\.  **Principio di funzionamento**
+2\.  **動作原理**
 
-Quando l’auto percorre una strada bianca, il tubo emettitore IR installato sotto l’auto emette segnali infrarossi per rilevare la strada e il tubo ricevitore riceve i segnali e li rimanda. Quindi l’uscita fornisce un livello basso (0); quando rileva linee nere, fornisce un livello alto (1).
+車が白い路面の上を走ると、車体下部に取り付けられたIR発光素子が路面を検出するために赤外線を発し、受光素子が反射光を受け取ります。すると出力端は低レベル（0）を出力し、黒いラインを検出すると高レベル（1）を出力します。
 
-Dopo aver posizionato un foglio bianco sotto il 4WD Mecanum Robot Car, ruoteremo i potenziometri sul sensore di tracciamento a 3 vie. Quando il LED di indicazione sul modulo sensore è acceso, sollevare l’auto in modo che le due ruote del 4WD Mecanum Robot Car siano libere di girare. L’altezza del foglio bianco è di circa 1,5 cm; quando il LED del modulo sensore si spegne, la sensibilità è correttamente regolata.
+4WD Mecanum Robot Car の底面に白い紙を置いた後、3wayトラッキングセンサーのポテンショメータを回します。センサーモジュールのインジケータが点灯したら、車を持ち上げて4WD Mecanum Robot Car の左右の車輪が浮くようにします。白紙とセンサーの距離は約1.5cmです。センサーモジュールのインジケータが消灯したら感度の調整が完了です。
 
-3\.  **Preparazione**
+3\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ボックスに入れる
 
-- Impostare l’interruttore di alimentazione su ON
+- 電源スイッチを ON にする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione Web di Makecode
+- Web版 Makecode を開く
 
-4\.  **Codice di test**
+4\.  **テストコード**
 
 ![](./media/Makecode_3683d83f.png)
 
-Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript: 
+“JavaScript” をクリックして対応する JavaScript コードを表示します: 
 
 ![](./media/Makecode_4b440616.png)
 
-5\.  **Risultato del test**
+5\.  **テスト結果**
 
-Caricare il codice sulla scheda micro:bit e impostare l’interruttore POWER su ON. 
+コードを micro:bit にダウンロードし、POWER スイッチを ON にします。 
 
-Aprire CoolTerm, fare clic su Options per selezionare SerialPort. Impostare la porta COM e il baud rate a 115200. Fare clic su “OK” e “Connect”.
+CoolTerm を開き、Options をクリックして SerialPort を選択します。COM ポートとボーレートを 115200 に設定します。“OK” と “Connect” をクリックします。
 
 ![](./media/Makecode_ea164439.png)
 
@@ -52,46 +52,46 @@ Aprire CoolTerm, fare clic su Options per selezionare SerialPort. Impostare la p
 
 ![](./media/Makecode_13238e98.png)
 
-Il monitor seriale di CoolTerm mostra i segnali digitali letti dai sensori di tracciamento linea.
+CoolTerm のシリアルモニタには、ライン追跡センサーが読み取ったデジタル信号が表示されます。
 
 ![](./media/Makecode_0141051a.png)
 
-### Progetto 17.2：Tracking Smart Car
+### プロジェクト 17.2：Tracking Smart Car
 
 ![Img](./media/Makecode_547634e4.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-In questa lezione combineremo un sensore di tracciamento linea con un motore per realizzare un'auto intelligente per il tracciamento della linea.
+このレッスンでは、ライン追跡センサーとモーターを組み合わせてライン追跡スマートカーを作ります。
 
-La scheda micro:bit analizzerà i segnali e controllerà l’auto intelligente per mostrare la funzione di tracciamento della linea.
+micro:bit ボードが信号を解析し、スマートカーを制御してライン追跡機能を実現します。
 
-2\. **Principio di funzionamento**
+2\. **動作原理**
 
-L’auto intelligente eseguirà movimenti differenti a seconda dei valori ricevuti dal sensore di tracciamento linea a 3 canali.
+スマートカーは、3チャンネルライン追跡センサーから受け取る値に応じて異なる動作を行います。
 
 ![Img](./media/Makecode_bbccdb34.png)
 
-3\. **Preparazione**
+3\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ボックスに入れる
 
-- Impostare l’interruttore di alimentazione su ON
+- 電源スイッチを ON にする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione Web di Makecode
+- Web版 Makecode を開く
 
-**Attenzione:** Il sensore di tracciamento a 3 vie deve essere utilizzato in ambienti senza interferenze infrarosse come la luce solare diretta. La luce solare contiene molta luce invisibile, come infrarossi e ultravioletti. In un ambiente con forte luce solare, il sensore a 3 vie potrebbe non funzionare correttamente.
+**警告:** 3way トラッキングセンサーは、直射日光などの赤外線干渉がない環境で使用してください。太陽光には赤外線や紫外線などの不可視光が多く含まれています。強い日光下では 3way トラッキングセンサーは正常に動作しない可能性があります。
 
-4\.**Diagramma di flusso**
+4\.**フローチャート**
 
 ![Img](./media/Makecode_70f1fd80.png)
 
 
-5\.  **Codice di test**
+5\.  **テストコード**
 
 ![](./media/Makecode_4b104155.png)
 
@@ -102,16 +102,16 @@ L’auto intelligente eseguirà movimenti differenti a seconda dei valori ricevu
 ![Img](./media/Makecode_ca91a31f.png)
 
 
-Fare clic su “JavaScript” per visualizzare il corrispondente codice JavaScript:
+“JavaScript” をクリックして対応する JavaScript コードを表示します:
 
 ![](./media/Makecode_f5caa06a.png)
 
 ![](./media/Makecode_8f5f07ec.png)
 
-5\. **Risultato del test**
+5\. **テスト結果**
 
-Caricare il codice sul micro:bit e impostare il POWER su ON; l’auto di tracciamento seguirà la linea nera andando avanti.
+コードを micro:bit にダウンロードし、POWER を ON にすると、ライン追跡カーは黒いラインに沿って前進します。
 
-**Nota:** accendere l’interruttore sul retro dell’auto micro:bit; la larghezza della linea nera dovrebbe essere maggiore della larghezza del sensore di tracciamento linea.
+**注意:** micro:bit カーの背面にあるスイッチを入れてください。黒いラインの幅はライン追跡センサーの幅より広くしてください。
 
-Evitare di testare l’auto intelligente sotto luce intensa.
+強い光の下でスマートカーをテストするのは避けてください。

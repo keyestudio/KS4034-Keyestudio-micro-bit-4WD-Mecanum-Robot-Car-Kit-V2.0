@@ -1,4 +1,4 @@
-## Progetto 11: Microfono
+## プロジェクト11：マイク
 
 ![](./media/Makecode_d2f14bdc.jpg)
 
@@ -6,44 +6,44 @@
 
 [Click to download the code 2 for this lesson](./Code/Microphone2.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明：
 
-La scheda principale Micro:bit main board V2 è dotata di un microfono che può misurare il volume dell’ambiente circostante. Quando battete le mani, il LED indicatore del microfono si accende. Poiché può misurare l’intensità del suono, è possibile realizzare una scala del rumore o un’illuminazione da disco che cambia con la musica. Il microfono è posizionato sul lato opposto rispetto al LED indicatore del microfono e vicino a dei fori che lasciano passare il suono. Quando la scheda rileva un suono, il LED indicatore si accende.
+Micro:bit main board V2 にはマイクが搭載されており、周囲の音量を検出できます。手をたたくと、マイクのLEDインジケータが点灯します。音の強さを測定できるため、騒音の尺度を作成したり、音楽に合わせて変化するディスコ風の照明を作ったりできます。マイクはマイクのLEDインジケータの反対側に配置されており、音が通るための穴の近くにあります。基板が音を検出すると、LEDインジケータが点灯します。
 
-### (2)Componenti necessari:
+### (2)必要な部品：
 
 Micro:bit main board V2
 
-Cavo Micro USB
+Micro USBケーブル
 
-### (3)Codice di test 1:
+### (3)テストコード1：
 
-Collegate il computer alla scheda micro:bit con un cavo Micro USB e programmate nell’editor MakeCode,
+Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムします。
 
 ![](./media/Makecode_7c037c9b.gif)
 
-Programma completo:
+完成プログラム：
 
 ![](./media/Makecode_1ea97896.png)
 
-### (4)Risultati del test 1:
+### (4)テスト結果1：
 
-Dopo aver caricato il codice, viene visualizzata un’icona grande a forma di cuore quando viene rilevato il suono ambientale, e un’icona a forma di cuore più piccola quando l’ambiente è silenzioso (Nota: suoni troppo deboli per essere rilevati non attiveranno la risposta).
+コードをアップロードすると、周囲の音が検出されたときに大きなハートアイコンが表示され、周囲が静かなときには小さなハートアイコンが表示されます（注意：検出できないほど小さな音は反応を引き起こしません）。
 
 ![](./media/Makecode_facbbb50.gif)
 
-### (5)Codice di test 2:
+### (5)テストコード2：
 
-Collegate il computer alla scheda micro:bit con un cavo Micro USB e programmate nell’editor MakeCode,
+Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムします。
 
 ![](./media/Makecode_68e37f22.gif)
 
-Programma completo:
+完成プログラム：
 
 ![](./media/Makecode_9851e889.png)
 
-### (6)Risultati del test 2:
+### (6)テスト結果2：
 
 ![](./media/Makecode_0b914334.gif)
 
-Dopo aver caricato il codice, la matrice di punti pulsa in sincronia con le variazioni del suono. Premendo il tasto “A” viene visualizzato il valore numerico del suono corrente.
+コードをアップロードすると、ドットマトリクスが音の変化に同期してパルスします。「A」キーを押すと、現在の音の数値が表示されます。

@@ -1,40 +1,40 @@
-## Progetto 8: Rilevamento della luce
+## プロジェクト8: 光検出
 
 ![](./media/Makecode_14063ef9.jpg)
 
-[Fai clic per scaricare il codice per questa lezione](./Code/Light-Detection.hex)
+[Click to download the code for this lesson](./Code/Light-Detection.hex)
 
-### (1) Descrizione del progetto:
+### (1) プロジェクトの説明:
 
-In questo progetto ci concentriamo sulla funzione di rilevamento della luce del Micro: Bit main board V2. Questo è ottenuto tramite la matrice di LED poiché la scheda principale non è dotata di un fotoresistore.
+このプロジェクトでは、Micro: Bit main board V2 の光検出機能に焦点を当てます。メインボードにはフォトレジスタが搭載されていないため、LEDドットマトリクスで実現しています。
 
-### (2) Componenti necessari:
+### (2) 必要な部品:
 
 Micro:bit main board V2
 
-Cavo Micro USB
+Micro USB ケーブル
 
-### (3) Codice di test:
+### (3) テストコード:
 
-Collegare il computer alla scheda micro:bit tramite cavo Micro USB e programmare nell'editor MakeCode,
+Micro USB ケーブルでコンピュータを micro:bit board に接続し、MakeCode エディタでプログラムします、
 
 ![](./media/Makecode_38ffa3b8.gif)
 
-Programma completo :
+完全なプログラム :
 
 ![](./media/Makecode_5b9a2acf.png)
 
-### (4) Risultati del test:
+### (4) テスト結果:
 
-Caricare il codice di test sul micro:bit main board V2, alimentare la scheda tramite il cavo USB e fare clic su "Show console Device".
+テストコードを micro:bit main board V2 にアップロードし、USB ケーブルでボードに電源を供給して "Show console Device" をクリックします。
 
-Quando la matrice di punti LED è coperta con la mano, l'intensità luminosa visualizzata è circa 0; quando la matrice di punti LED è esposta alla luce, l'intensità luminosa mostrata aumenta con la luce come mostrato sotto.
+LEDドットマトリクスを手で覆うと表示される光強度は概ね 0 になります。LEDドットマトリクスが光にさらされると、下図のように光が強くなるにつれて表示される光強度も強くなります。
 
 ![](./media/Makecode_11dd3c0b.gif)
 
-Se si utilizza Windows 7 o 8 anziché Windows 10, Google Chrome non riuscirà ad associare i dispositivi. È necessario utilizzare il software di monitor seriale CoolTerm per leggere i dati.
+Windows 10 ではなく Windows 7 または 8 を使用している場合、Google Chrome 経由ではデバイスを認識できないことがあります。データを読み取るには CoolTerm シリアルモニタソフトを使用する必要があります。
 
-È possibile aprire il software CoolTerm, fare clic su Options, selezionare SerialPort, impostare il COM port e impostare la baud rate su 115200 (dopo i test, la baud rate della comunicazione USB SerialPort sul Micro: Bit main board V2 è 115200), fare clic su OK e Connect. Il monitor seriale CoolTerm mostra il valore dell'intensità luminosa, come mostrato nelle figure seguenti :
+CoolTerm ソフトを開き、Options をクリックし、SerialPort を選択して COM port を設定し、baud rate を 115200 に設定します（テスト結果により、Micro: Bit main board V2 の USB SerialPort 通信の baud rate は 115200 です）。OK をクリックし、Connect をクリックします。CoolTerm シリアルモニタには光強度の値が表示されます。下図参照：
 
 ![](./media/Makecode_3c6eae52.gif)
 

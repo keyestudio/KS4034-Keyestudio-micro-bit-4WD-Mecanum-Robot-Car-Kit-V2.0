@@ -1,87 +1,87 @@
-## Progetto 7: Accelerometer
+## プロジェクト 7: Accelerometer
 
 ![](./media/Makecode_66670811.jpg)
 
-[Fai clic per scaricare il codice 1 per questa lezione](./Code/Accelerometer.hex)
+[Click to download the code 1 for this lesson](./Code/Accelerometer.hex)
 
-[Fai clic per scaricare il codice 2 per questa lezione](./Code/Accelerometer2.hex)
+[Click to download the code 2 for this lesson](./Code/Accelerometer2.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明:
 
-La Micro: Bit main board V2 dispone di un sensore di accelerazione gravitazionale integrato LSM303AGR, noto anche come accelerometro, con risoluzione di 8/10/12 bit. Nella sezione del codice è possibile impostare l'intervallo su 1g, 2g, 4g e 8g.
+Micro: Bit main board V2 には、LSM303AGR の重力加速度センサー（一般に加速度計と呼ばれる）が内蔵されており、分解能は 8/10/12 ビットです。コード内で測定レンジを 1g、2g、4g、8g に設定できます。
 
-Spesso utilizziamo accelerometri per rilevare lo stato delle macchine. In questo progetto introdurremo come misurare la posizione della scheda con l'accelerometro e quindi daremo un'occhiata ai dati tridimensionali grezzi emessi dall'accelerometro.
+加速度計は機械の状態検出によく使用されます。本プロジェクトでは、加速度計を使って基板の姿勢を測定する方法を紹介し、加速度計が出力する元の三軸データを確認します。
 
-### (2)Componenti necessari:
+### (2)必要な部品:
 
 Micro:bit main board V2
 
-Cavo Micro USB
+Micro USB ケーブル
 
-### (3)Codice di test 1:
+### (3)テストコード 1:
 
-Collegare il computer alla scheda micro:bit tramite cavo Micro USB e programmare nell'editor MakeCode,
+パソコンと micro:bit ボードを Micro USB ケーブルで接続し、MakeCode エディタでプログラムします。
 
 ![](./media/Makecode_2cd48603.gif)
 
-Programma completo:
+完全なプログラム:
 
 ![](./media/Makecode_ba28162b.png)
 
-### (4)Risultati del test 1:
+### (4)テスト結果 1:
 
-Dopo aver caricato il Test Code 1 sulla scheda micro:bit V2, modificare l'orientamento della scheda farà sì che la matrice di punti 5x5 visualizzi numeri diversi.
+テストコード 1 を micro:bit V2 ボードにアップロードした後、基板の向きを変えると 5x5 ドットマトリクスに異なる数字が表示されます。
 
 ![](./media/Makecode_2e6708e6.gif)
 
-Se scuotiamo il Micro: Bit main board V2, in qualsiasi direzione, la matrice LED mostra la cifra "1".
+Micro: Bit main board V2 を振ると、どの方向であっても LED ドットマトリクスは数字「1」を表示します。
 
-Quando viene tenuta in posizione verticale (con il logo sopra la matrice LED), viene visualizzato il numero 2.
+基板を直立させ（ロゴが LED ドットマトリクスの上に来るように）保持すると、数字 2 が表示されます。
 
 ![](./media/Makecode_67247ae1.jpg)
 
-Quando viene tenuta a testa in giù (con il logo sotto la matrice LED), si presenta come sotto.
+基板を逆さまに（ロゴが LED ドットマトリクスの下に来るように）保持すると、下図のように表示されます。
 
 ![](./media/Makecode_1668a9d0.jpg)
 
-Quando è posata ferma sulla scrivania con il lato anteriore rivolto verso l'alto, appare il numero 4.
+机の上に静置し、表側が上を向いているときは、数字 4 が表示されます。
 
 ![](./media/Makecode_0dd33fa1.jpg)
 
-Quando è posata ferma sulla scrivania con il lato posteriore rivolto verso l'alto, appare il numero 5.
+机の上に静置し、裏側が上を向いているときは、数字 5 が表示されます。
 
-Quando la scheda è inclinata a sinistra, la matrice LED mostra il numero 6 come mostrato di seguito.
+基板が左に傾くと、LED ドットマトリクスは下図のように数字 6 を表示します。
 
 ![](./media/Makecode_ce2b3501.jpg)
 
-Quando la scheda è inclinata a destra, la matrice LED visualizza il numero 7 come mostrato di seguito.
+基板が右に傾くと、LED ドットマトリクスは下図のように数字 7 を表示します。
 
 ![](./media/Makecode_d098ff98.jpg)
 
-Quando la scheda viene colpita a terra, questo processo può essere considerato una caduta libera e la matrice LED mostra il numero 8. (si prega di notare che questo test non è raccomandato in quanto potrebbe danneggiare la scheda principale.)
+基板を床に落とすと、この過程は自由落下とみなすことができ、LED ドットマトリクスは数字 8 を表示します。（このテストは基板を破損する可能性があるため推奨しません。）
 
-Attenzione: se desiderate provare questa funzione, potete impostare l'accelerazione anche su 3g, 6g o 8g. Tuttavia, non lo consigliamo.
+注意：この機能を試したい場合、加速度を 3g、6g、または 8g に設定することもできます。ただし、当社としては推奨しません。
 
-### (5)Codice di test 2:
+### (5)テストコード 2:
 
 ![](./media/Makecode_99083bf6.gif)
 
-Programma completo:
+完全なプログラム:
 
 ![](./media/Makecode_42654b0e.png)
 
-### (6) Risultati del test 2
+### (6) テスト結果 2
 
-Caricare il codice di test sulla Micro: Bit main board V2, alimentare la scheda principale tramite il cavo USB e fare clic su "Show console Device".
+テストコードを Micro: Bit main board V2 にアップロードし、USB ケーブルで基板の電源を供給してから "Show console Device" をクリックします。
 
-L'interfaccia seguente mostra i valori di decomposizione dell'accelerazione sugli assi X, Y e Z rispettivamente, nonché la sintesi dell'accelerazione (sintesi della gravità e di altre forze esterne).
+以下の画面は、X 軸、Y 軸、Z 軸それぞれの加速度の分解値と、加速度合成（重力およびその他の外力の合成）を示しています。
 
 ![](./media/Makecode_c17f5477.gif)
 
-Facendo riferimento al manuale dati del MMA8653FC e allo schema hardware della Micro: Bit main board V2, le coordinate dell'accelerometro della scheda madre Micro: Bit V2 sono mostrate nella figura seguente:
+MMA8653FC のデータマニュアルおよび Micro: Bit main board V2 のハードウェア回路図を参照すると、Micro: Bit V2 マザーボードの加速度計座標は下図のようになります：
 
 ![](./media/Makecode_79d90885.jpg)
 
-Se state usando Windows 7 o 8 invece di Windows 10, Google Chrome non sarà in grado di abbinare i dispositivi. Dovrete utilizzare il software di monitor seriale CoolTerm per leggere i dati. Potete aprire CoolTerm, fare clic su Options, selezionare SerialPort, impostare la porta COM e impostare la velocità in baud a 115200 (dopo i test, la velocità di comunicazione della porta seriale USB sulla Micro: Bit main board V2 è 115200), fare clic su OK e Connect. Il monitor seriale CoolTerm mostra i dati degli assi X, Y e Z, come mostrato nelle figure seguenti:
+Windows 10 ではなく Windows 7 または 8 を使用している場合、Google Chrome からはデバイスを認識できません。データを読み取るには CoolTerm シリアルモニタソフトを使用する必要があります。CoolTerm を開き、Options をクリックし、SerialPort を選択して COM ポートを設定し、ボーレートを 115200 に設定します（テストにより、Micro: Bit main board V2 の USB シリアルポート通信のボーレートは 115200 です）、OK をクリックして Connect します。CoolTerm シリアルモニタには X 軸、Y 軸、Z 軸のデータが表示されます。下図を参照してください：
 
 ![](./media/Makecode_2a63fc72.gif)

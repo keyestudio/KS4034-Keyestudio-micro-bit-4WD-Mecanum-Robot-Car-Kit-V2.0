@@ -1,45 +1,45 @@
-## Progetto 13：Seven-Color LED
+## プロジェクト 13：Seven-Color LED
 
 ![](./media/Makecode_804e502b.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Questo modulo è composto da un LED comunemente usato a 7 colori ma con aspetto bianco. Quando viene applicato un livello alto come con un normale LED, può lampeggiare automaticamente in colori diversi per creare effetti di luce fantastici.
+このモジュールは、一般的に使用される7色のLEDで構成されていますが、外観は白色です。通常のLEDと同様にHighレベルが入力されると、自動的に異なる色で点滅し、幻想的な光の効果を作り出すことができます。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio   4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio   4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore POWER in posizione ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをコンピュータに接続する
 
-- Aprire la versione Web di Makecode.
+- MakecodeのWeb版を開く。
 
-3\.  **Test Code1**
+3\.  **テストコード1**
 
-Fare in modo che la luce RGB lampeggi alternativamente nelle 7 luci.
+RGBライトを7色交互に点滅させます。
 
 ![](./media/Makecode_ce9a9550.png)
 
-Fare clic su “JavaScript” per visualizzare il codice JavaScript corrispondente: 
+「JavaScript」をクリックして対応するJavaScriptコードを表示します: 
 
 ![](./media/Makecode_1b7f9af6.png)
 
-4\.  **Risultato del test 1**
+4\.  **テスト結果1**
 
-Scaricare il codice 1 sulla scheda micro:bit e portare l'interruttore POWER in posizione ON; le 2 luci RGB dello smart car emettono ciclicamente i colori rosso, verde, blu, indaco, rosso scuro, giallo e bianco.
+コード1をmicro:bitボードにダウンロードし、電源スイッチをONにすると、スマートカーの2つのRGBライトが赤、緑、青、藍、濃い赤、黄、白の色を順に周期的に発光します。
 
-5\.  **Test Code2**
+5\.  **テストコード2**
 
 ![](./media/Makecode_bdce981c.png)
 
-Fare clic su “JavaScript” per visualizzare il codice JavaScript corrispondente: 
+「JavaScript」をクリックして対応するJavaScriptコードを表示します: 
 
 ![](./media/Makecode_66e64829.png)
 
-6\.  **Risultato del test 2**
+6\.  **テスト結果2**
 
-Scaricare il codice 2 sulla scheda micro:bit; le 2 luci RGB lampeggeranno per 1 secondo e poi smetteranno di lampeggiare per 1 secondo, ciclicamente.
+コード2をmicro:bitボードにダウンロードすると、2つのRGBライトが1秒間点滅し、その後1秒間点滅を停止する、という動作を周期的に繰り返します。

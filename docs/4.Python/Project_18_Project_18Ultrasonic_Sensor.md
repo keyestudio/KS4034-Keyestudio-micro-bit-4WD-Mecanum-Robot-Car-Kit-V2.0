@@ -1,78 +1,78 @@
-### Progetto 18：Sensore a ultrasuoni
+### プロジェクト 18：超音波センサー
 
-#### Progetto 18.1：Rilevamento della distanza ad ultrasuoni
+#### プロジェクト 18.1：超音波距離測定
 
-1\. **Descrizione**
+1\. **説明**
 
 ![](./media/Python_9810ae67.jpg)
 
-Il sensore a ultrasuoni usa il sonar per determinare la distanza di un oggetto, come fanno i pipistrelli. Offre un eccellente rilevamento della distanza senza contatto con alta precisione e letture stabili in un pacchetto facile da usare. Include moduli trasmettitore e ricevitore ultrasonico.
+超音波センサーはコウモリのようにソナーを使って物体までの距離を測定します。高精度で安定した非接触距離検出を、使いやすいパッケージで提供します。送信モジュールと受信モジュールがセットになっています。
 
-Il sensore a ultrasuoni viene utilizzato in una vasta gamma di progetti elettronici per creare applicazioni di rilevamento ostacoli e misurazione della distanza, oltre a varie altre applicazioni.
+超音波センサーは障害物検知や距離測定アプリケーションをはじめ、さまざまな電子工作プロジェクトで広く使われています。
 
 ![](./media/Python_0180b169.png)
 
-Il modulo ultrasonico emetterà le onde ultrasoniche dopo il segnale di trigger. Quando le onde ultrasoniche incontrano un oggetto e vengono riflesse, il modulo emette un segnale echo, quindi può determinare la distanza dell'oggetto dal tempo trascorso tra il segnale di trigger (TRIG) e il segnale di echo (ECHO).
+超音波モジュールはトリガー信号を受けると超音波を発信します。超音波が物体にぶつかって反射して戻ってくると、モジュールはエコー信号を出力するため、トリガー信号（TRIG）とエコー信号（ECHO）の時間差から物体までの距離を求めることができます。
 
-Come mostra l'immagine, è come due occhi. Uno è l'estremità di trasmissione, l'altro è l'estremità di ricezione.
+図のように、左右に二つの目のようになっており、一方が送信側、もう一方が受信側です。
 
-Secondo il diagramma di collegamento sopra, la porta integrata del modulo sensore a ultrasuoni è collegata alla porta 5V G P15 P16 sulla basetta driver motore micro:bit. Il pin Trig (T) è controllato da P15 del micro:bit e il pin Echo (E) da P16.
+上記の配線図に従い、超音波センサーモジュールの統合ポートはmicro:bit用モータードライバベースプレートの5V G P15 P16ポートに接続します。Trig（T）ピンはmicro:bitのP15で制御し、Echo（E）ピンはP16に接続します。
 
 ![](./media/Python_19b45a23.jpg)
 
-2\. **Principio di funzionamento**
+2\. **動作原理**
 
 ![](./media/Python_8ff02741.png)
 
-(1) Mettere a livello basso TRIG poi inviare un segnale di trigger a livello alto per almeno 10us;
+(1) TRIGをプルダウンした後、少なくとも10μsの高レベル信号でトリガーする；
 
-(2) Dopo il trigger, il modulo invierà automaticamente otto impulsi ultrasonici a 40KHz e verificherà se c'è un segnale di ritorno;
+(2) トリガー後、モジュールは自動的に40kHzの超音波パルスを8回送信し、信号が返ってくるかを検知する；
 
-(3) Se c'è un segnale di ritorno, quando ECHO (E) passa a livello alto, la durata del livello alto è il tempo dalla trasmissione alla ricezione delle onde ultrasoniche. Quindi distanza misurata = durata del livello alto * 340 m/s * 0.5.
+(3) 信号が返ってきた場合、ECHO（E）が高レベルを出力している時間が送信から受信までの時間になる。距離 = 高レベル継続時間 * 340 m/s * 0.5。
 
-3\.  **Parametri**
+3\.  **仕様**
 
-- Tensione di lavoro: 3-5.5V (DC)
+- 動作電圧: 3-5.5V (DC)
 
-- Corrente di lavoro: 15mA
+- 動作電流: 15mA
 
-- Frequenza di lavoro: 40kHz
+- 動作周波数: 40kHz
 
-- Distanza massima di rilevamento: circa 3m
+- 最大検出距離: 約3m
 
-- Distanza minima di rilevamento: 2-3cm
+- 最小検出距離: 2-3cm
 
-- Precisione: fino a 0.2cm
+- 精度: 最大0.2cm
 
-- Angolo di rilevamento: inferiore a 15 gradi
+- 検出角度: 15度未満
 
-- Impulso di trigger in ingresso: 10us livello TTL
+- 入力トリガーパルス: 10μs TTLレベル
 
-- Segnale echo in uscita: segnale di livello TTL in uscita (alto), proporzionale alla distanza
+- 出力エコー信号: TTLレベル信号（高レベル）、距離に比例
 
-4\.  **Preparazione**
+4\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Muのオフライン版を起動する
 
-5\.  **Codice di prova**
+5\.  **テストコード**
 
-Aprire il software Mu e aprire il file “Ultrasonic Ranging\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Muソフトを開き、ファイル“Ultrasonic Ranging\.py”を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力しても構いません。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+(**Note: All English words and symbols must be written in English**.)
 
-Cliccare “Files” per importare il file di libreria “keyes_mecanum_Car_V2.py” nel micro:bit.
+「Files」をクリックして“keyes_mecanum_Car_V2.py”ライブラリファイルをmicro:bitにインポートします。
 
-Cliccare “Check” per verificare errori nel codice. Il programma è errato se appaiono sottolineature o cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やカーソル表示がある場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e cliccare “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続した状態で「Flash」をクリックしてコードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_5a29bde9.png)
 
@@ -98,59 +98,59 @@ while True:
 
 ```
 
-6\.  **Risultato del test**
+6\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, non scollegare il cavo USB. Cliccare “REPL” e poi premere il pulsante di reset.
+コードをボードに正常にダウンロードしたら、USBケーブルを抜かないでください。「REPL」をクリックしてからリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Il valore della distanza dell'ostacolo verrà visualizzato, come mostrato sotto.
+障害物までの距離値が表示されます。下図のように表示されます。
 
-Quando la distanza è inferiore a 10cm, il buzzer passivo dello smart car emetterà un suono.
+距離が10cm未満になると、スマートカーのパッシブブザーが鳴ります。
 
 ![](./media/Python_4dc8054e.png)
 
-7\.  **Spiegazione del codice**
+7\.  **コード説明**
 
 ![Img](./media/Python_ebde06e9.png)
 
-#### Progetto 18.2：Evitamento Ultrasonico
+#### プロジェクト 18.2：超音波回避
 
 ![](./media/Python_aee41f6f.jpg)
 
-1\. **Descrizione**
+1\. **説明**
 
-In questo progetto integreremo un sensore a ultrasuoni e un'auto per realizzare un'auto ad evitamento ultrasonico.
+このプロジェクトでは、超音波センサーを車体に組み込み、超音波回避（障害物回避）車を作成します。
 
-Il principio è rilevare la distanza tra l'auto e l'ostacolo tramite il sensore a ultrasuoni per controllare il movimento dello smart car.
+原理は、超音波センサーで車と障害物との距離を検出し、その距離に応じてスマートカーの動作を制御することです。
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Muのオフライン版を起動する
 
-3\.  **Diagramma di flusso**
+3\.  **フローチャート**
 
 ![Img](./media/Python_a4efee72.png)
 
-4\.  **Codice di prova**
+4\.  **テストコード**
 
-Aprire il software Mu e aprire il file “Ultrasonic Avoid Smart Car\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Muソフトを開き、ファイル“Ultrasonic Avoid Smart Car\.py”を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力しても構いません。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+(**Note: All English words and symbols must be written in English**.)
 
-Cliccare “Files” per importare il file di libreria “keyes_mecanum_Car_V2.py” nel micro:bit.
+「Files」をクリックして“keyes_mecanum_Car_V2.py”ライブラリファイルをmicro:bitにインポートします。
 
-Cliccare “Check” per verificare errori nel codice. Il programma è errato se appaiono sottolineature o cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やカーソル表示がある場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e cliccare “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続した状態で「Flash」をクリックしてコードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_38f3510c.png)
 
@@ -232,57 +232,57 @@ while True:
         mecanumCar.Motor_Lower_R(1, 100)
 ```
 
-5\.  **Risultato del test**
+5\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentazione esterna (portare l'interruttore DIP su ON)**, e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**外部電源を接続する（DIPスイッチをONにする）**、その後micro:bitのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Quando la distanza dall'ostacolo è maggiore di 20cm, l'auto procede in avanti; al contrario, lo smart car svolta a sinistra.
+障害物までの距離が20cmより大きいときは車が前進します；反対に（20cm未満のとき）はスマートカーが左へ曲がります。
 
-6\.  **Spiegazione del codice**
+6\.  **コード説明**
 
 ![Img](./media/Python_9e28cce7.png)
 
 ![Img](./media/Python_c33a22a8.png)
 
-#### Progetto 18.3：Inseguimento Ultrasonico
+#### プロジェクト 18.3：超音波追従
 
 ![](./media/Python_28806167.jpg)
 
-1\. **Descrizione**
+1\. **説明**
 
-Nella lezione precedente abbiamo imparato il principio base del sensore per il tracciamento della linea. Successivamente, combineremo il sensore a ultrasuoni con l'auto per realizzare un'auto ad inseguimento ultrasonico.
+前のレッスンでライン追跡センサーの基本原理を学びました。次に、超音波センサーを車と組み合わせて超音波追従車を作成します。
 
-Il sensore a ultrasuoni rileva la distanza dall'ostacolo e controlla lo stato di movimento dell'auto.
+超音波センサーが障害物との距離を検知し、その距離に応じて車の動作状態を制御します。
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Muのオフライン版を起動する
 
-2\.  **Diagramma di flusso**
+2\.  **フローチャート**
 
 ![Img](./media/Python_53a30906.png)
 
-3\.  **Codice di prova**
+3\.  **テストコード**
 
-Aprire il software Mu e aprire il file “Ultrasonic Follow Smart Car\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Muソフトを開き、ファイル“Ultrasonic Follow Smart Car\.py”を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力しても構いません。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+(**Note: All English words and symbols must be written in English**.)
 
-Cliccare “Files” per importare il file di libreria “keyes_mecanum_Car_V2.py” nel micro:bit.
+「Files」をクリックして“keyes_mecanum_Car_V2.py”ライブラリファイルをmicro:bitにインポートします。
 
-Cliccare “Check” per verificare errori nel codice. Il programma è errato se appaiono sottolineature o cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やカーソル表示がある場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e cliccare “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続した状態で「Flash」をクリックしてコードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_f586f3f7.png)
 
@@ -353,18 +353,20 @@ while True:
             np.show()
 ```
 
-4\.  **Risultato del test**
+4\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentazione esterna (portare l'interruttore DIP su ON)**, e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**外部電源を接続する（DIPスイッチをONにする）**、その後micro:bitのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Lo smart car potrà seguire l'ostacolo nel movimento e le 4 luci RGB WS2812 mostreranno colori diversi.
+スマートカーは障害物に追従して移動し、4つのWS2812 RGBライトが異なる色を表示します。
 
-**Nota:** l'ostacolo può muoversi solo davanti allo smart car.
+**注意:** 障害物はスマートカーの前方でのみ移動させてください。
 
-5\.  **Spiegazione del codice**
+5\.  **コード説明**
 
 ![Img](./media/Python_930a04fa.png)
 
 ![Img](./media/Python_26371a4d.png)
+
+---

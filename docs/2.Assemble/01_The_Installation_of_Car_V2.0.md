@@ -1,66 +1,66 @@
-## L'installazione del Keyestudio 4WD Mecanum Robot Car V2.0
+## Keyestudio 4WD Mecanum Robot Car V2.0 の組み立て
 
-### Passo 1
+### ステップ 1
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_f3d856b4.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_3d1dbf07.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_f5d38786.png)
 
-### Passo 2
+### ステップ 2
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_a2ee8074.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_6fdf9d4d.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_3fec7c19.png)
 
-### Passo 3
+### ステップ 3
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_d4f24cc5.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_e1d7b425.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_cc96b9d6.png)
 
-### Passo 4
+### ステップ 4
 
-（regolare prima l'angolo del servo）
+（まずサーボの角度を調整してください）
 
-**Regolare l'angolo del servo a 90 gradi.**
+**サーボの角度を90度に設定します。**
 
-**Metodo 1: codice MakeCode**
+**方法1: MakeCode コード**
 
-⚠️**Nota speciale:** Prima di scrivere il codice e caricarlo, è necessario conoscere l'IDE MakeCode e aggiungere i file della libreria. Vai al link: [Get Started with makecode](./Code1.7z)
+⚠️**特記事項：** コードを書いてアップロードする前に、MakeCode IDE を理解し、ライブラリファイルを追加する必要があります。次のリンクにアクセスしてください: [Get Started with makecode](./Code1.7z)
 
 ![](./media/Assemble_Mecanum_Robot_a9ff633c.png)
 
-Il codice MakeCode sopra è fornito nei materiali. Apri il codice di regolazione del servo e scrivilo sulla scheda microbit del 4WD Mecanum Robot Car V2.0, e **alimentalo tramite cavo micro USB o alimentatore esterno (imposta il DIP switch su ON)**. Fatto. Il codice si trova nella posizione mostrata nella figura:
+上記の MakeCode コードは資料に含まれています。サーボの調整用コードを開き、それを 4WD Mecanum Robot Car V2.0 の microbit 本体に書き込み、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP switch を ON にしてください）**。これで完了です。コードは図に示した位置にあります：
 
 ![Img](./media/Assemble_Mecanum_Robot_21db9fa2.png)
 
-**Metodo 2：codice Python**
+**方法2：Python コード**
 
-⚠️**Nota speciale:** Prima di scrivere il codice e caricarlo, è necessario installare Mu IDE e aggiungere i file della libreria. Vai al link: [Get Started with Python](./Code2.7z)
+⚠️**特記事項：** コードを書いてアップロードする前に、Mu IDE をインストールし、ライブラリファイルを追加する必要があります。次のリンクにアクセスしてください: [Get Started with Python](./Code2.7z)
 
 ```Python
 # import microbit related libraries
@@ -98,105 +98,105 @@ Servo(pin14).write_angle(90)
 sleep(1000)
 ```
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_1e3fd9e2.png)
 
-Diagramma di installazione: (prestare attenzione alla direzione di montaggio)
+取り付け図:（取り付け方向に注意）
 
 ![](./media/Assemble_Mecanum_Robot_9ca5d2c8.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_9b8bccaa.png)
 
-### Passo 5
+### ステップ 5
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_8d138501.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_bda8fbc4.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_9f244272.png)
 
-### Passo 6
+### ステップ 6
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_36259594.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_6d3e3ad9.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_3c33f63b.png)
 
-### Passo 7
+### ステップ 7
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_817e834e.png)
 
-**Diagramma di installazione:** (prestare attenzione alla direzione del motore)
+**取り付け図：**（モーターの向きに注意）
 
 ![](./media/Assemble_Mecanum_Robot_09a61aa6.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_8c97de28.png)
 
-### Passo 8
+### ステップ 8
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_43bac346.png)
 
-**Diagramma di installazione:** (prestare attenzione alla direzione di montaggio della ruota mecanum)
+**取り付け図：**（メカナムホイールの取り付け方向に注意）
 
 ![](./media/Assemble_Mecanum_Robot_d92dee68.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_64467ed0.png)
 
-### Passo 9
+### ステップ 9
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_5c38573f.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_a72469e3.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_243aa35b.png)
 
-### Passo 10
+### ステップ 10
 
-**Componenti necessari:**
+**必要な部品:**
 
 ![](./media/Assemble_Mecanum_Robot_b60b9f16.png)
 
-**Diagramma di installazione:**
+**取り付け図:**
 
 ![](./media/Assemble_Mecanum_Robot_55f2db60.png)
 
-**Prototipo:**
+**プロトタイプ:**
 
 ![](./media/Assemble_Mecanum_Robot_456df8a0.png)
 
-### Schema elettrico
+### 配線図
 
-**Il cablaggio del servo:**
+**サーボの配線:**
 
 ![Img](./media/Assemble_Mecanum_Robot_c82a9395.png)
 
@@ -204,7 +204,7 @@ Diagramma di installazione: (prestare attenzione alla direzione di montaggio)
 
 ![](./media/Assemble_Mecanum_Robot_b3bcce9d.png)
 
-**Il cablaggio del sensore ad ultrasuoni:**
+**超音波センサーの配線:**
 
 ![Img](./media/Assemble_Mecanum_Robot_c9f3da75.png)
 
@@ -212,38 +212,38 @@ Diagramma di installazione: (prestare attenzione alla direzione di montaggio)
 
 ![](./media/Assemble_Mecanum_Robot_a8f0e176.png)
 
-**Il cablaggio del modulo ricevitore IR:**
+**IR受信モジュールの配線:**
 
 ![Img](./media/Assemble_Mecanum_Robot_61d53b21.png)
 
 ![](./media/Assemble_Mecanum_Robot_1e081a3a.png)
 
-**Il cablaggio del RGB:**
+**RGB の配線:**
 
 ![Img](./media/Assemble_Mecanum_Robot_c5b8a804.png)
 
 ![](./media/Assemble_Mecanum_Robot_01848b2e.jpg)
 
-**Il cablaggio per il controllo del motore e della luce a sette colori:**
+**モーターと7色ライトを制御する配線:**
 
 ![Img](./media/Assemble_Mecanum_Robot_0c4635c5.png)
 
 ![](./media/Assemble_Mecanum_Robot_1689f2c9.jpg)
 
-**Il cablaggio per il controllo del sensore di tracciamento linea a 3 canali:**
+**3チャンネルライントレースセンサーを制御する配線:**
 
 ![Img](./media/Assemble_Mecanum_Robot_542d1798.png)
 
 ![](./media/Assemble_Mecanum_Robot_08eb8d7e.jpg)
 
-**Il cablaggio dell'alimentazione:**
+**電源の配線:**
 
 ![](./media/Assemble_Mecanum_Robot_cdcec4ba.jpg)
 
-**La corrispondente interfaccia del motore:**
+**モーターの対応インターフェース:**
 
 ![](./media/Assemble_Mecanum_Robot_ffcceef1.jpg)
 
-**L'installazione della batteria:**
+**バッテリーの取り付け:**
 
 ![](./media/Assemble_Mecanum_Robot_fe8ce786.png)

@@ -1,26 +1,26 @@
-### Progetto 11: Microfono
+### プロジェクト11: マイク
 
 ![](./media/Python_3073a8af.png)
 
 ![](./media/Python_7f074115.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La scheda principale Micro: Bit ha un microfono integrato, che può rilevare il volume dell'ambiente circostante. Quando batte le mani, si accende l'indicatore LED del microfono. Inoltre, può misurare l'intensità del suono, permettendoti di creare una scala di rumore o luci da discoteca che cambiano con la musica.
+Micro: Bit メインボードにはマイクが内蔵されており、周囲の音量を測定できます。手を叩くとマイクのLEDインジケーターが点灯します。さらに、音の強さを測定できるため、騒音レベルの表示や音楽に合わせて変化するディスコ風の照明を作ることができます。
 
-Il microfono è posto sul lato opposto rispetto all'indicatore LED del microfono e vicino a fori che lasciano passare il suono. Quando la scheda rileva il suono, l'indicatore LED si accende.
+マイクはマイクのLEDインジケーターとは反対側に配置され、音が通るための穴の近くにあります。ボードが音を検出すると、LEDインジケーターが点灯します。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collega la scheda principale micro:bit al computer tramite il cavo USB
+A. USBケーブルで micro:bit メインボードをコンピュータに接続します
 
-B. Apri la versione offline di Mu.
+B. オフライン版の Mu を開きます。
 
-3\.  **Codice di test1**
+3\.  **テストコード1**
 
-Apri il software Mu e apri il file “Microphone-1\.py” per importare il codice. Puoi anche inserire il codice nella finestra di modifica manualmente.
+Mu ソフトウェアを起動し、ファイル “Microphone-1\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
+(**注意: すべての単語と記号は英語で記述してください**.)
 
 ![](./media/Python_19b38832.png)
 
@@ -35,27 +35,27 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-Clicca su “Check” per verificare errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムに誤りがあります。 
 
 ![](./media/Python_36a669c7.png)
 
-Se il codice è corretto, collega il micro:bit al computer e clicca su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_0515bf32.png)
 
-4\.  **Risultato del test1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato con successo il codice sulla scheda, **accendi l'alimentazione tramite cavo micro USB o alimentazione esterna (impostare l'interruttore DIP su ON)** e premi il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れる（DIPスイッチを ON にする）**、その後 micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matrice a punti LED mostra il motivo “❤” quando batte le mani e il motivo ![](./media/04fdfc9060943954e7938bb1a741d626.png) quando l'ambiente è silenzioso.
+周囲で手を叩くと LED ドットマトリクスは “❤” のパターンを表示し、静かなときはパターン ![](./media/04fdfc9060943954e7938bb1a741d626.png) を表示します。
 
-5\.  **Codice di test2**
+5\.  **テストコード2**
 
-Apri il software Mu e apri il file “Microphone-2\.py” per importare il codice. Puoi anche inserire il codice nella finestra di modifica manualmente.
+Mu ソフトウェアを起動し、ファイル “Microphone-2\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注意: すべての単語と記号は英語で記述してください。**)
 
 ![](./media/Python_f0e5a346.png)
 
@@ -81,22 +81,22 @@ while True:
             maxSound = soundLevel
 ```
 
-Clicca su “Check” per verificare errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムに誤りがあります。 
 
 ![](./media/Python_d0c79871.png)
 
-Se il codice è corretto, collega il micro:bit al computer e clicca su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_d828b9ee.png)
 
-6\.  **Risultato del test2**
+6\.  **テスト結果2**
 
-Dopo aver scaricato con successo il codice sulla scheda, **accendi l'alimentazione tramite cavo micro USB o alimentazione esterna (impostare l'interruttore DIP su ON)** e premi il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れる（DIPスイッチを ON にする）**、その後 micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Quando viene premuto il pulsante A, la matrice a punti LED mostra il valore del volume massimo ( **nota che il volume massimo può essere azzerato tramite il pulsante Reset sull'altro lato della scheda** ). Quando si applaude, più il suono testato è forte, più luminose appaiono le 25 LED della matrice.
+ボタン A を押すと、LED ドットマトリクスに最大音量の値が表示されます（ **最大音量はボードの反対側にあるリセットボタンでリセットできることに注意してください**）。手を叩くと、測定された音が大きいほど、LED ドットマトリクス上の 25 個の LED がより明るく点灯します。
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_980f62b3.png)

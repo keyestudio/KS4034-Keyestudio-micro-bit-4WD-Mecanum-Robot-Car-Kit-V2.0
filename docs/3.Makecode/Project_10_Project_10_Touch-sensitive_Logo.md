@@ -1,33 +1,33 @@
-## Progetto 10: Touch-sensitive Logo
+## プロジェクト 10: Touch-sensitive Logo
 
 ![](./media/Makecode_445a7708.jpg)
 
-[Fai clic per scaricare il codice per questa lezione](./Code/Touch-sensitive-Logo.hex)
+[このレッスンのコードをダウンロードする](./Code/Touch-sensitive-Logo.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明：
 
-La scheda principale Micro:bit main board V2 è dotata di un logo dorato sensibile al tocco, che può fungere da componente di input e funzionare come un pulsante aggiuntivo.
+Micro:bit main board V2 には金色のタッチセンシティブロゴが搭載されており、入力コンポーネントとして機能し、追加のボタンのように扱うことができます。
 
-Contiene un sensore tattile capacitivo che rileva piccole variazioni del campo elettrico quando viene premuto (o toccato), proprio come lo schermo del tuo telefono o tablet. Quando lo premi, puoi attivare il programma.
+これは容量性タッチセンサーを内蔵しており、押された（または触れられた）ときに電界のわずかな変化を検知します。これはスマートフォンやタブレットの画面と同様です。これを押すと、プログラムを起動できます。
 
-### (2)Componenti necessari:
+### (2)必要な部品：
 
 Micro:bit main board V2
 
-Cavo Micro USB
+Micro USB ケーブル
 
-### (3)Codice di prova:
+### (3)テスト用コード：
 
-Collega il computer alla scheda micro:bit tramite cavo Micro USB e programma nell'editor MakeCode,
+コンピュータを Micro USB ケーブルで micro:bit ボードに接続し、MakeCode エディターでプログラムします。
 
 ![](./media/Makecode_54cc5b8a.gif)
 
-Programma completo:
+完全なプログラム：
 
 ![](./media/Makecode_2ba9bf7d.png)
 
-### (4)Risultati del test:
+### (4)テスト結果：
 
-Dopo aver caricato il codice, toccando il logo con la mano verrà visualizzata una forma a cuore sulla matrice di punti. Rilasciando il tocco apparirà un numero; contatti più lunghi mostreranno numeri più grandi.
+コードをアップロードした後、手でロゴに触れるとドットマトリクスにハートの形が表示されます。触れた手を放すと数字が表示され、接触時間が長いほど大きな数が表示されます。
 
 ![](./media/Makecode_46b832c8.gif)

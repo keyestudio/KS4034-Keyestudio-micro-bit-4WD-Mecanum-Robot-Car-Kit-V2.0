@@ -1,12 +1,12 @@
-## Progetto 1: Battito cardiaco
+## プロジェクト 1: ハートビート
 
 ![](./media/Makecode_56018947.jpg)
 
-[Fai clic per scaricare il codice per questa lezione](./Code/Heartbeat.hex)
+[Click to download the code for this lesson](./Code/Heartbeat.hex)
 
-### (1)Progetto Description
+### (1)Project Description
 
-(1) Progetto Description Questo progetto è facile da realizzare con una Micro:bit main board V2, un cavo Micro USB e un computer. La matrice di LED del Micro:bit mostrerà prima un motivo a forma di cuore relativamente grande e poi uno più piccolo. Questa alternanza del motivo somiglia a un battito cardiaco. Questo esperimento serve da introduzione al mondo della programmazione.
+(1) Project Description このプロジェクトは、Micro:bit main board V2、Micro USB ケーブル、およびコンピュータがあれば簡単に行えます。Micro:bit の LED ドットマトリクスは、まず比較的大きなハート形のパターンを表示し、次に小さなパターンを表示します。このパターンが交互に切り替わる様子は心拍のように見えます。この実験はプログラミング入門として適しています。
 
 ### (2)Components Needed:
 
@@ -16,7 +16,7 @@ Micro USB cable
 
 ### (3)Test Code:
 
-Collegare la Micro:bit main board V2 al computer tramite il cavo Micro USB e iniziare la modifica.
+Micro:bit main board V2 を Micro USB ケーブルでコンピュータに接続し、編集を開始します。
 
 ![](./media/Makecode_46b15e27.gif)
 
@@ -24,10 +24,10 @@ Complete Program :
 
 ![](./media/Makecode_d862ba0e.png)
 
-Nota: "on start" significa che il codice in questo blocco viene eseguito una sola volta, mentre "forever" implica che il codice viene eseguito ciclicamente.
+注意："on start" はこのブロック内のコードが一度だけ実行されることを意味し、"forever" はコードが周期的に実行されることを意味します。
 
 ### (4)Test Results:
 
-Dopo aver caricato il codice, vedrai un effetto battito cardiaco apparire sulla scheda Micro:bit.
+コードをアップロードすると、Micro:bit ボードにハートビートの効果が表示されます。
 
 ![](./media/Makecode_e64df1f5.gif)

@@ -1,50 +1,50 @@
-## Progetto 20：Bluetooth Multi-purpose Smart Car
+## プロジェクト 20：Bluetooth Multi-purpose Smart Car
 
-### Progetto 20.1：Read Bluetooth Data
+### プロジェクト 20.1：Read Bluetooth Data
 
 ![](./media/Makecode_55b2424d.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-La scheda principale micro:bit è dotata di Bluetooth integrato che può essere utilizzato per comunicare con essa. Inoltre, il Micro:bit può essere controllato via Bluetooth o trasmettere segnali a smartphone o computer tramite esso. Questo Bluetooth può comunicare con il Bluetooth presente in altri dispositivi o con un'app Bluetooth per controllare altre apparecchiature.
+micro:bit メインボードには組み込みの Bluetooth が搭載されており、これを使って通信できます。micro:bit は Bluetooth によって制御したり、スマートフォンやコンピュータへ信号を送信したりすることもできます。この Bluetooth は他のデバイスに搭載された Bluetooth や Bluetooth アプリと通信して、他の機器を制御できます。
 
-È compatibile sia con Android che con iOS. Abbiamo progettato due app Bluetooth per entrambi i sistemi.
+Android と iOS の両方に対応しています。両システム向けにそれぞれ Bluetooth アプリを用意しています。
 
-La connessione del Bluetooth della scheda con queste due app è simile. In questa lezione introdurremo le funzioni di tutti i tasti e dei modelli nelle app e controlleremo l'auto smart tramite l'app Bluetooth.
+基板上の Bluetooth とこれら 2 つのアプリの接続は似ています。本レッスンではアプリ上のすべてのキーとパターンの機能を紹介し、Bluetooth アプリでスマートカーを制御します。
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel vano batteria
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチを ON に切り替える
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione Web di Makecode
+- Makecode の Web 版を開く
 
-**Se scegli di trascinare il codice manualmente, è necessario aggiungere prima la libreria di estensione Bluetooth. Fare clic sull'icona dell'ingranaggio (Settings) nell'angolo in alto a destra, quindi su Extensions per accedere alla schermata di selezione delle librerie e quindi fare clic sulla libreria di estensione "Bluetooth" (se non esiste, cercare Bluetooth), come mostrato di seguito:** 
+**コードを手作業でドラッグする場合は、まず Bluetooth 拡張ライブラリを追加する必要があります。右上の歯車アイコン (Settings) をクリックし、Extensions をクリックしてライブラリ選択画面に入り、「Bluetooth」拡張ライブラリをクリックしてください（存在しない場合は Bluetooth で検索してください）。下図のようになります：** 
 
 ![](./media/Makecode_4e308360.png)
 
-Poiché Bluetooth e l'estensione radio non possono funzionare insieme, le loro librerie di estensione non sono compatibili.
+Bluetooth と radio 拡張は同時に動作できないため、拡張ライブラリは互換性がありません。
 
-Pertanto, rimuovere le estensioni e aggiungere Bluetooth se viene visualizzata la seguente finestra di avviso.
+そのため、次のようなプロンプトが表示されたら拡張を削除して Bluetooth を追加してください。
 
 ![](./media/Makecode_aee56e76.png)
 
-3\. **Codice di test**
+3\. **テストコード**
 
 ![](./media/Makecode_ac5ffe1a.png)
 
-Fare clic su “JavaScript” per visualizzare il codice JavaScript corrispondente:
+“JavaScript” をクリックして対応する JavaScript コードを表示します：
 
 ![](./media/Makecode_24191138.png)
 
-4\. **Risultato del test**
+4\. **テスト結果**
 
-Se trascinate i blocchi passo dopo passo, è necessario impostare come segue dopo aver completato il codice di test.
+ブロックをステップごとにドラッグする場合は、テストコード完了後に次のように設定する必要があります。
 
 ![](./media/Makecode_01b256e5.png)
 
@@ -52,102 +52,102 @@ Se trascinate i blocchi passo dopo passo, è necessario impostare come segue dop
 
 ![](./media/Makecode_09767d5e.png)
 
-Tuttavia, è possibile saltare questo passaggio se si importa direttamente il codice di test.
+ただし、テストコードを直接インポートした場合はこの手順を省略できます。
 
-Dopo le impostazioni, scaricare il codice sulla scheda micro:bit, non staccare il cavo USB. Successivamente scaricare l'app.
+設定後、コードを micro:bit ボードにダウンロードし、USB ケーブルを外さないでください。次にアプリをダウンロードします。
 
-**Per il sistema iOS:**
+**iOS の場合：**
 
-a\. Aprire l'App Store;
+a\. App Store を開く；
 
 ![](./media/Makecode_27924fdb.png)
 
-b\. Cercare **mecanum_robot** e fare clic su “![](./media/Makecode_962a57f9.png)” per scaricare l'app Bluetooth mecanum_robot;
+b\. **mecanum_robot** を検索し、![](./media/Makecode_962a57f9.png) をクリックして mecanum_robot の Bluetooth アプリをダウンロードする；
 
-c\. Dopo il download dell'APP, fare clic su "OPEN" o toccare l'app mecanum_robot sul desktop del telefono/iPad per aprire l'APP. Apparirà una finestra di dialogo sull'interfaccia dell'APP; fare clic su "OK" nella finestra di dialogo.
+c\. APP をダウンロードしたら「OPEN」をクリックするか、携帯/iPad のデスクトップにある mecanum_robot アプリをクリックして APP を開きます。APP の画面にダイアログが表示されるので、ダイアログで「OK」をクリックします。
 
-d\. Prima attivare il Bluetooth del telefono/iPad, quindi fare clic sul pulsante di connessione (control) in alto a sinistra dell'interfaccia dell'APP per eseguire la ricerca Bluetooth. Nei risultati della ricerca fare clic su "BCC micro:bit". Dopo pochi secondi il Bluetooth sarà connesso.
+d\. まず携帯/iPad の Bluetooth をオンにし、APP 画面左上の接続ボタン（control）をクリックして Bluetooth を検索します。検索結果で "BCC micro:bit" をクリックします。数秒後に Bluetooth が接続されます。
 
-**Per il sistema Android:**
+**Android の場合：**
 
-a\. Usare la funzione di scansione del browser per scansionare e identificare il codice QR
+a\. ブラウザのスキャン機能で QR コードをスキャンして識別します
 
 ![](./media/Makecode_d9acbfab.png)
 
-oppure inserire il link: [http://8.210.52.206/mecanum_robot.apk](http://8.210.52.206/mecanum_robot.apk) per scaricarlo. Dopo l'identificazione, fare clic su "go to website" per entrare nella pagina di download mecanum_robot.apk, fare clic su "Download" per scaricare l'applicazione mecanum_robot.
+またはリンクにアクセス：[http://8.210.52.206/mecanum_robot.apk](http://8.210.52.206/mecanum_robot.apk) からダウンロードします。識別が成功したら「go to website」をクリックして mecanum_robot.apk のダウンロードページに入り、「Download」をクリックして mecanum_robot アプリをダウンロードします。
 
-b\. Fare clic su “Allow allow” per entrare nella schermata di installazione; fare clic su “install” per installare l'app.
+b\. 「Allow allow」をクリックしてインストール画面に進み、「install」をクリックしてアプリをインストールします。
 
 ![](./media/Makecode_638d0a4a.png)
 
-c\. Fare clic su "Open" o toccare l'app mecanum_robot sul desktop del telefono per aprire l'APP; apparirà una finestra di dialogo. Nella finestra di dialogo fare clic su "Allow" per attivare il Bluetooth del telefono. È anche possibile attivare il Bluetooth del telefono prima di aprire l'APP.
+c\. 「Open」をクリックするか、携帯のデスクトップにある mecanum_robot アプリをクリックして APP を開きます。ダイアログが表示されるので、ダイアログ内で「Allow」をクリックして携帯の Bluetooth をオンにします。APP を開く前に携帯の Bluetooth をオンにすることもできます。
 
 ![](./media/Makecode_c818fd71.png)
 
 ![](./media/Makecode_0c35f0dc.png)
 
-d\. Fare clic su ![](./media/Makecode_d3f566b9.png) in alto a destra per cercare il Bluetooth e fare clic su “connect”; dopo alcuni secondi il Bluetooth sarà abbinato.
+d\. 右上の ![](./media/Makecode_d3f566b9.png) をクリックして Bluetooth を検索し、「connect」をクリックします。数秒後に Bluetooth がペアリングされます。
 
 ![](./media/Makecode_3d21cf87.png)
 
 ![](./media/Makecode_4a23b197.png)
 
-Aprire CoolTerm, fare clic su Options per selezionare SerialPort. Impostare la porta COM e la velocità 115200 baud. Fare clic su “OK” e “Connect”.
+CoolTerm を開き、Options をクリックして SerialPort を選択します。COM ポートとボーレート 115200 を設定します。「OK」と「Connect」をクリックします。
 
-Puntare la scheda micro:bit e premere le icone nell'APP; i caratteri corrispondenti vengono visualizzati nel monitor di CoolTerm.
+micro:bit ボードを向け、APP のアイコンを押すと、対応する文字が CoolTerm モニタに表示されます。
 
 ![](./media/Makecode_0ed4a53e.png)
 
-Attraverso il test, otteniamo le funzioni di ogni icona, come mostrato di seguito:
+テストにより、各アイコンの機能が以下のように得られます：
 
 ![](./media/Makecode_05c3d32b.jpg)
 
-### Progetto 20.2：Multi-purpose Smart Car
+### プロジェクト 20.2：Multi-purpose Smart Car
 
 ![Img](./media/Makecode_ce6ec959.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-In questa lezione controlleremo la smart car per eseguire funzioni multiuso.
+このレッスンでは、スマートカーに多用途の機能を実行させる制御を行います。
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel vano batteria
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチを ON に切り替える
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione Web di Makecode
+- Makecode の Web 版を開く
 
-**Passaggi：** Fare clic sull'icona dell'ingranaggio (Settings) in alto a destra, quindi su Extensions per accedere alla schermata di selezione delle librerie e quindi fare clic sulla libreria di estensione "Bluetooth" (se non esiste, cercare Bluetooth), come mostrato di seguito: 
+**手順：** 右上の歯車アイコン (Settings) をクリックし、Extensions をクリックしてライブラリ選択画面に入り、「Bluetooth」拡張ライブラリをクリックしてください（存在しない場合は Bluetooth で検索してください）、下図のようになります： 
 
 ![](./media/Makecode_4e308360.png)
 
-Poiché Bluetooth e l'estensione radio non possono funzionare insieme, le loro librerie di estensione non sono compatibili.
+Bluetooth と radio 拡張は同時に動作できないため、拡張ライブラリは互換性がありません。
 
-Pertanto, rimuovere le estensioni e aggiungere Bluetooth se viene visualizzata la seguente finestra di avviso.
+そのため、次のようなプロンプトが表示されたら拡張を削除して Bluetooth を追加してください。
 
 ![](./media/Makecode_aee56e76.png)
 
-3\. **Codice di test**
+3\. **テストコード**
 
-Poiché il codice è piuttosto lungo, non verrà visualizzato qui. È possibile andare direttamente al percorso seguente per trovare il codice corrispondente.
+コードがかなり長いため、ここには表示しません。対応するコードは以下のパスから直接参照できます。
 
 ![Img](./media/Makecode_836c42ce.png)
 
-Fare clic su “JavaScript” per visualizzare il codice JavaScript corrispondente :
+“JavaScript” をクリックして対応する JavaScript コードを表示します：
 
 ![](./media/Makecode_a73529d6.png)
 
-4\. **Risultato del test**
+4\. **テスト結果**
 
-Questo esperimento combina i progetti precedenti per far eseguire all'auto azioni tramite Bluetooth.
+この実験は前のプロジェクトを組み合わせ、Bluetooth 経由で車を動作させます。
 
-Aprire l'editor online Makecode → Projecting Settings → ![](./media/Makecode_bef5b734.png), abilitare “No Pairing....” (è possibile saltare questo passaggio se si importa direttamente il codice di test)
+Makecode オンラインエディタに入り → プロジェクトing Settings → ![](./media/Makecode_bef5b734.png)、“No Pairing....” を有効にします（テストコードを直接インポートする場合はこの手順を省略できます）
 
-Scaricare il codice sulla scheda micro:bit, portare POWER su ON e connettere il Bluetooth, quindi è possibile controllare l'auto tramite l'app Bluetooth mecanum_robot.
+コードを micro:bit ボードにダウンロードし、POWER を ON にして Bluetooth を接続すると、mecanum_robot の Bluetooth アプリで車を制御できます。
 
-**Nota:** ![](./media/Makecode_81da4f47.jpg) serve per regolare la velocità, e ![](./media/Makecode_adc3be60.jpg) può solo essere trascinato.
+**注意：** ![](./media/Makecode_81da4f47.jpg) は速度を調整するために使用し、![](./media/Makecode_adc3be60.jpg) はドラッグのみ可能です。

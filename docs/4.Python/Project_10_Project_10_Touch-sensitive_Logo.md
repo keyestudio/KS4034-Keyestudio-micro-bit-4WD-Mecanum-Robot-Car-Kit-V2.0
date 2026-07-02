@@ -1,24 +1,24 @@
-### Progetto 10: Logo sensibile al tatto
+### プロジェクト10：タッチ感知ロゴ
 
 ![](./media/Python_64469585.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La scheda principale micro:bit V2 è dotata di un logo dorato sensibile al tocco, che può fungere da componente di input come un pulsante.
+micro:bit メインボード V2 には金色のタッチ感知ロゴが搭載されており、ボタンのような入力コンポーネントとして動作します。
 
-Contiene un sensore capacitivo di tocco che rileva piccole variazioni del campo elettrico quando viene premuto (o toccato), proprio come lo schermo del tuo telefono o tablet. Quando lo premi, il programma può essere attivato.
+これは静電容量方式のタッチセンサを内蔵しており、押された（または触れられた）ときに電界の微小な変化を検出します。スマートフォンやタブレットの画面と同様です。押すとプログラムを起動できます。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collega la scheda principale micro:bit al computer tramite il cavo USB.
+A. USB ケーブルで micro:bit メインボードをコンピュータに接続します。
 
-B. Apri la versione offline di Mu.
+B. Mu のオフライン版を開きます。
 
-3\.  **Codice di test**
+3\.  **テストコード**
 
-Avvia il software Mu e apri il file “Touch-sensitive Logo\.py” per importare il codice. Puoi anche inserire il codice direttamente nella finestra di modifica.
+Mu ソフトウェアを起動し、ファイル “Touch-sensitive Logo\.py” を開いてコードをインポートします。編集ウィンドウに手動でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+(**注意：すべての英語の単語と記号は英語で記述してください**。)
 
 ![](./media/Python_0c54cbe5.png)
 
@@ -50,40 +50,40 @@ while True:
         display.show(Image.ASLEEP)
 ```
 
-**Come funziona il Micro:bit?**
+**Micro:bit はどのように動作するのか？**
 
-A\. Il tempo di esecuzione è registrato in millisecondi (ms).
+A\. 実行時間はミリ秒（ms）で記録されます。
 
-B\. Quando premi il pulsante A, una variabile chiamata start viene impostata sul tempo di esecuzione corrente.
+B\. ボタン A を押すと、start という名前の変数に現在の実行時間が設定されます。
 
-C\. Quando premi il pulsante B, il tempo di start viene sottratto dal nuovo tempo di esecuzione per calcolare il tempo trascorso dall'avvio del cronometro. Questa differenza viene aggiunta al tempo totale, che è memorizzato in una variabile chiamata time.
+C\. ボタン B を押すと、開始時刻が新しい実行時間から差し引かれ、ストップウォッチを開始してから経過した時間が計算されます。この差分が合計時間に加算され、time という変数に保存されます。
 
-D\. Se premi il logo dorato, il programma visualizzerà il tempo totale trascorso sul display LED. Converte il tempo da millisecondi (millesimi di secondo) a secondi dividendo per 1000. Usa l'operatore di divisione intera per restituire un risultato intero.
+D\. 金色のロゴを押すと、プログラムは合計経過時間を LED 表示に表示します。ミリ秒（千分の一秒）を 1000 で割ることで秒に変換します。整数の結果を得るために整数除算を使用します。
 
-E\. Il programma è anche controllato da una variabile booleana chiamata running. Una variabile booleana ha solo due valori: true o false. Se "running" è "true", significa che il cronometro è avviato. Se "running" è false, significa che il cronometro non è avviato o è fermo.
+E\. プログラムは running という名前のブール変数でも制御されます。ブール変数は true または false の 2 値のみを取ります。もし "running" が "true" なら、ストップウォッチが動作中であることを意味します。もし "running" が false なら、ストップウォッチは開始されていないか停止していることを意味します。
 
-F\. Se "running" è true, il motivo del cuore che batte sarà visualizzato sulla matrice di LED.
+F\. "running" が true の場合、LED ドットマトリクスに鼓動するハートのパターンが表示されます。
 
-G\. (7) Se il cronometro è stato fermato e "running" è false, quando premi il logo dorato, verrà mostrato solo il tempo.
+G\. (7) ストップウォッチが停止しており "running" が false の場合、金色のロゴを押すと時間のみが表示されます。
 
-H\. Se il cronometro è stato avviato e "running" è true, è sufficiente assicurarsi che la variabile time cambi quando viene premuto il pulsante B, e il codice può anche prevenire letture errate.
+H\. ストップウォッチが開始され "running" が true の場合、ボタン B が押されたときに time 変数が変化することを確実にすればよく、コードは誤検出を防ぐこともできます。
 
-Clicca su “Check” per controllare gli errori nel codice. Il programma risulta errato se vengono mostrati sottolineature e cursori.
+コードのエラーを確認するには “Check” をクリックしてください。下線やカーソルが表示される場合、プログラムは誤りがあります。
 
 ![](./media/Python_1766a28c.png)
 
-Se il codice è corretto, collega il micro:bit al computer e fai clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して “Flash” をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_a3d6e994.png)
 
-4\.  **Risultato del test**
+4\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimenta tramite il cavo micro USB o un'alimentazione esterna (imposta l'interruttore DIP su ON)** e premi il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れる（DIP スイッチを ON にする）** か、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Premi il pulsante A per avviare il cronometro. Durante la misurazione, il motivo del cuore che batte sarà visualizzato sulla matrice di LED. Premi il pulsante B per fermarlo; puoi avviarlo e fermarlo in qualsiasi momento.
+ボタン A を押してストップウォッチを開始します。計測中は LED マトリクスに鼓動するハートのパターンが表示されます。ボタン B を押すと停止し、いつでも開始・停止が可能です。
 
-Continuerà a registrare il tempo, proprio come un vero cronometro. Premi il logo dorato sulla parte anteriore del micro:bit per visualizzare il tempo misurato in secondi. Il tempo può essere azzerato premendo il pulsante di reset sul retro.
+それは実際のストップウォッチのように時間を記録し続けます。micro:bit 前面の金色ロゴを押すと、測定された時間が秒で表示されます。後部のリセットボタンを押すと時間をゼロにリセットできます。
 
 ---

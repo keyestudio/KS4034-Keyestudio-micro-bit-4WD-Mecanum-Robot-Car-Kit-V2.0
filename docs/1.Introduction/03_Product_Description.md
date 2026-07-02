@@ -1,7 +1,7 @@
 ## Product Description 
 
-Questo prodotto è un'auto intelligente basata su Micro:bit. Integra molte funzioni come il follow tramite ultrasuoni, il tracciamento della linea, il controllo a infrarossi e il controllo Bluetooth. È dotato di un buzzer passivo per riprodurre musica, di 4 LED WS2812RGB per visualizzare diversi colori e di 2 luci a sette colori per fungere da indicatori di direzione dell'auto. Questo prodotto utilizza due batterie agli ioni di litio 18650 per l'alimentazione.  
+この製品はMicro:bitをベースにしたスマートカーです。超音波追従、ライントラッキング、赤外線制御、Bluetooth制御などの多くの機能を統合しています。音楽を再生するためのパッシブブザー、色を表示する4つのWS2812RGB LED、車の方向指示灯として使用できる7色ライトが2つ搭載されています。本製品は電源に18650リチウム電池を2本使用します。  
 
-Durante l'installazione e la rimozione della batteria, prestare attenzione ai poli positivo e negativo della batteria e assicurarsi di non invertirli. A proposito, la velocità del motore di questo prodotto è regolabile.
+電池の取り付けや取り外しの際は、電池の正極および負極を確認し、極性を逆にしないようご注意ください。ちなみに、本製品のモーター速度は調整可能です。
 
-Per offrirti una migliore esperienza, sono forniti anche documenti relativi all'installazione e al codice di test corrispondente.
+より良い体験を提供するために、組み立てに関するドキュメントやテスト用コードも併せてご提供しています。

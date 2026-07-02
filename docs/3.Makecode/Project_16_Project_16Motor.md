@@ -1,14 +1,14 @@
-## Progetto 16：Motor
+## プロジェクト 16：Motor
 
 ![](./media/Makecode_77f3b857.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La Keyestudio 4WD Mecanum Robot Car è dotata di 4 motori DC a riduzione, detti anche motori con riduttore, sviluppati a partire da un motore DC ordinario. È provvista di una scatola di riduzione abbinata che fornisce una velocità inferiore ma una coppia maggiore. Inoltre, rapporti di riduzione diversi della scatola possono fornire velocità e coppie differenti.
+Keyestudio 4WD Mecanum Robot Car は、一般的なDCモータをベースに開発された4つのDC減速モータ（ギア減速モータとも呼ばれる）を搭載しています。適合するギヤ減速箱を備えており、回転数は低くなりますがトルクは大きくなります。さらに、減速箱の減速比を変えることで、異なる速度とトルクを得ることができます。
 
-Il motore con riduttore è l'integrazione di motoriduttore e motore, ampiamente applicato nell'industria siderurgica e meccanica.
+ギアモータはギヤモータとモータの統合であり、鉄鋼・機械産業で広く応用されています。
 
-Lo shield driver per motore micro:bit è dotato di un chip DRV8833. Per risparmiare risorse delle porte IO, controlliamo la direzione di rotazione e la velocità dei 4 motori DC con riduttore tramite il chip DRV8833.
+micro:bit用モータドライバシールドにはDRV8833チップが搭載されています。IOポート資源を節約するために、DRV8833チップで4つのDCギアモータの回転方向と速度を制御します。
 
 ![Img](./media/Makecode_4c9781dc.png)
 
@@ -26,29 +26,29 @@ STC8G1K08 Chip circuit
 
 HR8833 Motor driver circuit
 
-2\.  **Preparazione**
+2\.  **準備**
 
-- Inserire la scheda micro:bit nello slot della keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチをON側に合わせる
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをコンピュータに接続する
 
-- Aprire la versione Web di Makecode
+- MakecodeのWeb版を開く
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_3a759dd8.png)
 
-Cliccare su“JavaScript" per visualizzare il codice JavaScript corrispondente: 
+「Click“JavaScript" to view the corresponding JavaScript code:」の表示部分（UIのラベル）については、`JavaScript` の表記はそのままです。対応するJavaScriptコードを表示するには“JavaScript"をクリックしてください。 
 
 ![](./media/Makecode_242ba6ca.png)
 
-4\.  **Risultato del test1**
+4\.  **テスト結果1**
 
-Scaricare il codice 1 sulla scheda micro:bit, portare l'interruttore POWER su ON. L'auto intelligente procede in avanti per 2s e si ferma per 2s.
+コード1をmicro:bitボードにダウンロードし、POWERスイッチをONにします。スマートカーは2秒前進し、2秒停止します。
 
 5\.  **Test Code2**
 
@@ -56,10 +56,10 @@ Scaricare il codice 1 sulla scheda micro:bit, portare l'interruttore POWER su ON
 
 ![Img](./media/Makecode_4eb6b574.png)
 
-Cliccare su“JavaScript" per visualizzare il codice JavaScript corrispondente: 
+「Click“JavaScript" to view the corresponding JavaScript code:」の表示部分については、`JavaScript` の表記はそのままです。対応するJavaScriptコードを表示するには“JavaScript"をクリックしてください。 
 
 ![](./media/Makecode_ee70b846.png)
 
-6\.  **Risultato del test2**
+6\.  **テスト結果2**
 
-Scaricare il codice 2 sulla scheda micro:bit: l'auto procede in avanti per 2s, retrocede per 2s, svolta a sinistra per 2s, svolta a destra per 2s, si ferma per 2s e ripete questo schema.
+コード2をmicro:bitボードにダウンロードすると、車は2秒前進し、2秒後退し、2秒左折し、2秒右折し、2秒停止し、このパターンを繰り返します。

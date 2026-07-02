@@ -1,7 +1,7 @@
-## Download delle risorse
+## リソースのダウンロード
 
-<span style="background:#FF0000;">Per aiutarti a ottenere rapidamente i codici, le librerie e altri file di supporto relativi a questo prodotto, fai clic sui collegamenti seguenti per scaricarli:</span>
+<span style="background:#FF0000;">本製品に関連するコード、ライブラリ、その他のサポートファイルを迅速に入手できるように、以下のリンクをクリックしてダウンロードしてください：</span>
 
-- [Download del codice Makecode e delle librerie](./Code.7z)
+- [Makecode のコードおよびライブラリのダウンロード](./Code.7z)
 
 ---

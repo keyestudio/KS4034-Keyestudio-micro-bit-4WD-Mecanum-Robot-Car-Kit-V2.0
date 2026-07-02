@@ -1,48 +1,48 @@
-### Progetto 17: Sensore di tracciamento della linea
+### プロジェクト 17：ライン追跡センサー
 
-#### Progetto 17.1: Rilevamento del sensore di tracciamento della linea
+#### プロジェクト 17.1：ライン追跡センサーの検出
 
 ![](./media/Python_ea7f6c8c.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-La scheda driver dei motori del Keyestudio 4WD Mecanum Robot Car è dotata di un sensore di tracciamento della linea a 3 canali, che utilizza tubi IR TCRT5000 e 3 potenziometri.
+Keyestudio 4WD Mecanum ロボットカーのモータードライバーボードには、TCRT5000 赤外線素子と3つのポテンショメータを採用した3チャネルのライン追跡センサーが搭載されています。
 
-Il tubo IR TCRT5000 contiene un emettitore IR e un ricevitore IR. Quando i segnali infrarossi emessi vengono riflessi e ricevuti dal tubo ricevente, la resistenza del ricevitore cambierà, il che si riflette generalmente nella variazione di tensione sul circuito.
+TCRT5000 は赤外線発光素子と受光素子を内蔵しています。発光素子から放射された赤外線が反射を介して受光素子に届くと、受光素子の抵抗が変化し、それが回路上の電圧変化として一般に表れます。　
 
-La resistenza varia a seconda dell'intensità dei segnali infrarossi ricevuti dal ricevitore, che dipende spesso dal colore della superficie riflettente e dalla distanza tra la superficie riflettente e il ricevitore. Durante il rilevamento, il nero è attivo ad alto livello e il bianco è attivo a basso livello.
+受光素子が受ける赤外線の強度によって抵抗は変化し、反射面の色や受光素子との距離に依存します。検出時には、黒がハイレベル（アクティブ）、白がローレベル（非アクティブ）となります。　
 
-2\.  **Principio di funzionamento**
+2\.  **動作原理**
 
-Quando l'auto passa sopra una strada bianca, il tubo emettitore IR installato sotto l'auto emette segnali infrarossi per rilevare la strada e il tubo ricevente riceve i segnali inviando la risposta. Quindi l'uscita fornisce livello basso (0); quando rileva linee nere, fornisce livello alto (1).
+車が白い路面の上を走行すると、車体底部に設置された赤外線発光素子が路面に向けて赤外線を照射し、受光素子が反射光を受信して信号を返します。そのとき出力端はローレベル(0)を出力します。黒い線を検出すると、ハイレベル(1)を出力します。
 
-La porta integrata del sensore di tracciamento a 3 canali sulla 4WD Mecanum Robot Car è collegata alle porte di raccolta G, 5V, P10, P4 e P3 sulla scheda di espansione micro:bit, e viene controllata da P10, P4 e P3 del micro:bit. La coppia IR TCRT5000 sinistra sul sensore è controllata da P3, quella centrale da P4 e quella destra da P10.
+4WD Mecanum ロボットカーに統合された3チャネル追跡センサーのコネクタは、micro:bit 拡張ボードの G、5V、P10、P4、P3 の収集ポートに接続されており、micro:bit の P10、P4、P3 によって制御されます。センサーの左側の TCRT5000 赤外線ペアは P3 で制御され、中央は P4、右側は P10 で制御されます。
 
-Dopo aver posto un foglio bianco sul fondo della 4WD Mecanum Robot Car, ruoteremo i potenziometri sul sensore di tracciamento a 3 vie. Quando la spia sul modulo sensore è accesa, sollevare l'auto in modo che le due ruote del 4WD Mecanum Robot Car siano sollevate. L'altezza del foglio bianco è di circa 1,5 cm; quando la spia sul modulo sensore si spegne, regolare la sensibilità.
+4WD Mecanum ロボットカーの底部に白い紙を置き、3路の追跡センサー上のポテンショメータを回します。センサーモジュールのインジケータが点灯したら、車を持ち上げて 4WD Mecanum ロボットカーの両輪を分離させます。白い紙の高さは約1.5cm にし、センサーモジュールのインジケータが消灯したら感度を調整します。
 
-**Nota che poiché la matrice a punti 5*5 usa le porte P3P4P6P7P10, dobbiamo disattivare la funzione della matrice a punti quando si usa il sensore di tracciamento della linea.**
+**注意：5×5 ドットマトリクスは P3、P4、P6、P7、P10 を使用するため、ライン追跡センサーを使うときはドットマトリクス機能をオフにする必要があります。**
 
-3\.  **Preparazione**
+3\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに挿入する
 
-- Inserire le batterie nel vano porta batterie
+- 電池をバッテリーホルダに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチを ON にする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Mu のオフライン版を開く
 
-4\.  **Codice di prova**
+4\.  **テストコード**
 
-Aprire il software Mu e aprire il file “Line tracking detection\.py” per importare il codice. È anche possibile inserire il codice nella finestra di modifica manualmente.
+Mu を起動し、ファイル “Line tracking detection\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+（注：英文や記号はすべて英語で記述してください。）
 
-Fare clic su “Check” per verificare errori nel codice. Il programma presenterà errori se vengono mostrati sottolineature e cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やエラー表示がある場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per caricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_2c7b1c21.png)
 
@@ -64,68 +64,68 @@ while True:
     sleep(200)
 ```
 
-5\.  **Risultato del test**
+5\.  **テスト結果**
 
-Dopo aver caricato correttamente il codice sulla scheda e senza scollegare il cavo USB, fare clic su “REPL” e poi premere il pulsante di reset.
+コードをボードに正常に書き込んだ後、USB ケーブルは抜かないでください。「REPL」をクリックしてからリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Le letture rilevate dal tubo IR TCRT5000 sinistro verranno visualizzate nel monitor.
+左側の TCRT5000 赤外線素子が検出した値がモニタに表示されます。
 
-Quando il tubo IR TCRT5000 sinistro rileva un oggetto bianco, verrà mostrato 0 e il relativo indicatore sarà acceso; quando viene rilevato solo un oggetto nero, verrà visualizzato 1 e l'indicatore sarà spento, come mostrato di seguito:
+左側の TCRT5000 が白い物体を検出すると 0 が表示され、左のインジケータが点灯します。黒い物体のみを検出すると 1 が表示され、インジケータは消灯します。以下のように表示されます：
 
 ![](./media/Python_6a25b450.png)
 
-6\.  **Spiegazione del codice**
+6\.  **コードの説明**
 
 ![Img](./media/Python_5dad345e.png)
 
 
-#### Progetto 17.2: Auto intelligente con tracciamento
+#### プロジェクト 17.2：ライン追跡スマートカー
 
 ![](./media/Python_f0b62e0f.jpg)
 
-1\. Descrizione
+1\. 説明
 
-In questa lezione combineremo un sensore di tracciamento della linea con i motori per realizzare un'auto intelligente che segua una linea.
+このレッスンでは、ライン追跡センサーとモーターを組み合わせてライン追跡スマートカーを作ります。
 
-La scheda micro:bit analizzerà i segnali e controllerà l'auto per implementare la funzione di tracciamento della linea.
+micro:bit ボードがセンサーの信号を解析し、スマートカーを制御してライン追跡の動作を行います。
 
-2\.  **Principio di funzionamento**
+2\.  **動作原理**
 
-L'auto eseguirà movimenti differenti in base ai valori ricevuti dal sensore di tracciamento della linea a 3 canali.
+3チャネルライン追跡センサーが受け取る値に応じて、スマートカーは異なる動作を行います。
 
 ![Img](./media/Python_e672c637.png)
 
-3\.  **Preparazione**
+3\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに挿入する
 
-- Inserire le batterie nel vano porta batterie
+- 電池をバッテリーホルダに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチを ON にする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Mu のオフライン版を開く
 
-**Avvertenza:** Il sensore di tracciamento a 3 vie dovrebbe essere usato in un ambiente privo di interferenze infrarosse come la luce solare. La luce solare contiene molta luce invisibile, come infrarossi e ultravioletti. In un ambiente con forte luce solare il sensore a 3 vie potrebbe non funzionare correttamente.
+**警告：** 3路追跡センサーは直射日光のような赤外線の干渉がない環境で使用してください。太陽光には赤外線や紫外線など多数の不可視光が含まれており、強い日光下では 3路追跡センサーは正しく動作しないことがあります。
 
-4\.  **Diagramma di flusso**
+4\.  **フローチャート**
 
 ![Img](./media/Python_47856ed2.png)
 
-5\.  **Codice di prova**
+5\.  **テストコード**
 
-Aprire il software Mu e aprire il file “Line tracking car\.py” per importare il codice. È anche possibile inserire il codice nella finestra di modifica manualmente.
+Mu を起動し、ファイル “Line tracking car\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+（注：英文や記号はすべて英語で記述してください。）
 
-Fare clic su “Files” per importare il file libreria “keyes_mecanum_Car.py” nella micro:bit.
+「Files」をクリックして “keyes_mecanum_Car.py” ライブラリファイルを micro:bit に取り込みます。
 
-Fare clic su “Check” per verificare errori nel codice. Il programma presenterà errori se vengono mostrati sottolineature e cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やエラー表示がある場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per caricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_bd395cbe.png)
 
@@ -175,21 +175,23 @@ while True:
             mecanumCar.Motor_Upper_R(1, 80)
             mecanumCar.Motor_Lower_R(1, 80)
 ```
-6\.  **Risultato del test**
+6\.  **テスト結果**
 
-Dopo aver caricato correttamente il codice sulla scheda, fornire alimentazione esterna (**portare l'interruttore DIP su ON**) e premere il pulsante di reset sul micro:bit.
+コードをボードに正常に書き込んだ後、**外部電源（DIPスイッチを ON に切り替える）** を用意し、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-L'auto di tracciamento si muove in avanti seguendo la linea nera.
+ライン追跡カーは黒い線に沿って前進します。
 
-**Nota:** （1）La larghezza della linea nera dovrebbe essere uguale o maggiore della larghezza del sensore di tracciamento della linea durante il tracciamento.
+**注意：** （1）追跡時の黒線の幅は、ライン追跡センサーの幅と同じかそれ以上である必要があります。
 
-（2）Evitare di testare l'auto intelligente sotto luce intensa.
+（2）強い光の下でのテストは避けてください。
 
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_b16f9d7b.png)
 
 ![Img](./media/Python_35f35a4c.png)
+
+---

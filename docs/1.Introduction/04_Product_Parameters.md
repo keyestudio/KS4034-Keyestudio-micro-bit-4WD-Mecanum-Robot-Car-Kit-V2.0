@@ -1,19 +1,19 @@
-## Parametri del prodotto
+## 製品パラメータ
 
-- Ingresso porta connettore: DC 7V--9V
+- コネクタポート入力: DC 7V--9V
 
-- Tensione di funzionamento del sistema della scheda driver: 5V
+- ドライバ基板システムの動作電圧: 5V
 
-- Consumo energetico standard in funzionamento: circa 2,2 W
+- 標準動作消費電力: 約2.2W
 
-- Potenza massima: 12 W
+- 最大電力: 12W
 
-- Velocità del motore: 200 RPM
+- モーター回転速度: 200RPM
 
-- Intervallo di temperatura di esercizio: 0-50℃
+- 動作温度範囲: 0-50℃
 
-- Dimensioni: 120\*120\*120mm
+- サイズ: 120\*120\*120mm
 
-- Attributi di protezione ambientale: ROHS
+- 環境保護属性: ROHS
 
-**Nota:** La tensione di funzionamento del micro:bit è 3,3 V e lo shield driver integra un circuito di conversione di comunicazione 3,3V/5V.
+**注意:** micro:bit の動作電圧は3.3Vで、ドライバシールドには3.3V/5Vの通信変換回路が内蔵されています。

@@ -1,22 +1,22 @@
-### Progetto 8：Rilevamento della luce
+### プロジェクト 8：光検出
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-In questo progetto ci concentreremo sulla funzione di rilevamento della luce della scheda principale Micro: Bit. È ottenuta dalla LED dot matrix poiché la scheda principale non è dotata di una fotoresistenza.
+このプロジェクトでは、micro:bit メインボードの光検出機能に焦点を当てます。メインボードにはフォトレジスタが装備されていないため、LED dot matrix によって実現されます。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegate il micro:bit main board al computer tramite il cavo USB
+A. USB ケーブルで micro:bit main board をコンピュータに接続します
 
-B. Aprite la versione offline di Mu.
+B. Mu のオフライン版を開きます。
 
-3\.  **Codice di prova**
+3\.  **テストコード**
 
-Avviate il software Mu e aprite il file “Detect Light Intensity by Microbit\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Mu ソフトを起動し、ファイル “Detect Light Intensity by Microbit\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese.**)
+(**注: すべての英単語と記号は英語で記述する必要があります。**)
 
 ![](./media/Python_b4f06503.png)
 
@@ -31,27 +31,27 @@ while True:
 
     sleep(100)
 ```
-Cliccate su “Check” per controllare la presenza di errori nel codice. Il programma risulta errato se vengono mostrati sottolineature e cursori.
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは間違っています。
 
 ![](./media/Python_b41eeb0f.png)
 
-Se il codice è corretto, collegate il micro:bit al computer e cliccate su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し、“Flash” をクリックしてコードを micro:bit ボードにダウンロードします。
 
 ![](./media/Python_7baa2190.png)
 
-4\.  **Risultato del test**
+4\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentate tramite il cavo micro USB o un'alimentazione esterna (turn the DIP switch to ON)**. Cliccate su “REPL” e premete il pulsante di reset sul micro:bit.
+コードがボードに正常にダウンロードされたら、**micro USB ケーブルまたは外部電源で電源を入れてください (turn the DIP switch to ON)**。“REPL” をクリックし、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-La finestra REPL mostrerà quindi il valore dell'intensità luminosa, come mostrato di seguito.
+すると REPL ウィンドウに光の強度の値が表示されます。下図のとおりです。
 
-Quando la LED dot matrix è coperta dalla mano, l'intensità luminosa mostrata è approssimativamente 0; quando la LED dot matrix è esposta alla luce, l'intensità luminosa visualizzata aumenta con l'intensità della luce.
+LED dot matrix を手で覆うと、表示される光の強度はほぼ 0 になります。LED dot matrix を光にさらすと、表示される光の強度は光の強さに応じて大きくなります。
 
 ![](./media/Python_778d89d6.png)
 
-5\.  **Spiegazione del codice**
+5\.  **コードの説明**
 
 ![Img](./media/Python_dcdc4536.png)
 

@@ -1,50 +1,50 @@
-## Progetto 4: Pulsanti programmabili
+## プロジェクト4：プログラム可能なボタン
 
 ![](./media/Makecode_b339baac.jpg)
 
-[Fai clic per scaricare il codice 1 per questa lezione](./Code/Programmable-Buttons.hex)
+[このレッスンのコード1をダウンロードするにはここをクリック](./Code/Programmable-Buttons.hex)
 
-[Fai clic per scaricare il codice 2 per questa lezione](./Code/Programmable-Buttons2.hex)
+[このレッスンのコード2をダウンロードするにはここをクリック](./Code/Programmable-Buttons2.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明:
 
-I pulsanti possono essere usati per controllare circuiti. In un circuito integrato con un pulsante, il circuito è collegato quando si preme il pulsante e aperto viceversa. La scheda principale Micro:bit main board V2 dispone di tre pulsanti: due sono pulsanti programmabili (contrassegnati con A e B) e quello sull'altro lato è un pulsante di reset. Premendo i due pulsanti programmabili è possibile fornire tre segnali diversi. Possiamo premere il pulsante A o B singolarmente oppure entrambi insieme e la matrice di LED mostra rispettivamente A, B e AB. Iniziamo.
+ボタンは回路を制御するために使用できます。ボタンを備えた集積回路では、ボタンを押すと回路が接続され、逆に開放されます。Micro:bit main board V2 には3つのボタンがあり、2つはプログラム可能なボタン（AとBで表示）で、反対側の1つはリセットボタンです。2つのプログラム可能なボタンを押すことで3つの異なる信号を入力できます。ボタンAまたはBを単独で押すか、両方を同時に押すと、LEDドットマトリクスにはそれぞれ A、B、AB が表示されます。始めましょう。
 
-### (2)Componenti necessari:
+### (2)必要な部品:
 
 Micro:bit main board V2 
 
-Cavo Micro USB
+Micro USB ケーブル
 
-### (3)Codice di test 1 :
+### (3)テストコード1 :
 
-Collega il computer alla scheda micro:bit tramite il cavo Micro USB e programma nell'editor MakeCode,
+Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムします、
 
 ![](./media/Makecode_c776e309.gif)
 
-Codice completo:
+完成コード:
 
 ![](./media/Makecode_054985a9.png)
 
-### (4)Risultati del test 1 :
+### (4)テスト結果1 :
 
-Dopo aver caricato il codice di test 1 su Micro:bit main board V2, la matrice di punti LED 5*5 mostra A se viene premuto il pulsante A, B se viene premuto il pulsante B e AB se i pulsanti A e B vengono premuti insieme.
+テストコード1を Micro:bit main board V2 にアップロードすると、5*5 LED ドットマトリクスは、ボタンAを押すと A を表示し、ボタンBを押すと B を表示し、ボタンA と B を同時に押すと AB を表示します。
 
 ![](./media/Makecode_b48c79ad.gif)
 
-### (5) Codice di test 2 :
+### (5) テストコード2 :
 
 ![](./media/Makecode_751dfce0.gif)
 
 
 
-Programma completo :
+完成プログラム :
 
 ![](./media/Makecode_5cdecff7.png)
 
-### (6)Risultati del test 2:
+### (6)テスト結果2:
 
-Dopo aver caricato il codice di test 2 su Micro:bit main board V2, quando si preme il pulsante A il numero di LED che diventano rossi aumenta, mentre quando si preme il pulsante B il numero di LED che diventano rossi diminuisce.
+テストコード2を Micro:bit main board V2 にアップロードすると、ボタンAを押すと赤くなるLEDが増加し、ボタンBを押すと赤くなるLEDが減少します。
 
 ![](./media/Makecode_248724b3.gif)
 

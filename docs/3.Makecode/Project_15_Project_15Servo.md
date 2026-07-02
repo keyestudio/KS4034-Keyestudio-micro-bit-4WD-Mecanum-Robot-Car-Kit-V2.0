@@ -1,68 +1,68 @@
-## Progetto 15：Servo
+## プロジェクト 15：Servo
 
 ![](./media/Makecode_215da878.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Per le auto smart fai-da-te, è spesso presente la funzione di evitamento automatico degli ostacoli. Nel processo di realizzazione dobbiamo usare un servo per controllare il modulo ad ultrasuoni affinché ruoti a sinistra e a destra, quindi rilevare la distanza tra l'auto e l'ostacolo, in modo da controllare l'auto per evitare l'ostacolo. Se si utilizzano altri microcontrollori per controllare la rotazione del servo, è necessario impostare una certa frequenza e una certa larghezza di impulso per controllare l'angolo del servo.
+DIYのスマートカーでは、障害物を自動で回避する機能が備わっていることが多いです。製作の過程では、超音波モジュールを左右に回転させるためにサーボを使用し、車と障害物との距離を検知して車の回避を制御する必要があります。他のマイコンでサーボの回転を制御する場合、サーボ角度を制御するために一定の周波数とパルス幅を設定する必要があります。
 
-Tuttavia, se si utilizza la scheda principale micro:bit per controllare l'angolo del servo, è sufficiente impostare l'angolo di controllo nell'ambiente di sviluppo; l'impulso corrispondente viene impostato automaticamente per controllare la rotazione del servo. In questo progetto imparerai come controllare il servo per farlo oscillare tra 0° e 90°.
+しかし、micro:bit メインボードを使用してサーボ角度を制御する場合、開発環境で制御角度を設定するだけで、対応するパルスが自動的に生成されてサーボの回転が制御されます。本プロジェクトでは、サーボを0°から90°の間で往復させる方法を学びます。
 
-2\.  **Informazioni sul Servo**
+2\.  **サーボの情報**
 
-Un servomotore è un attuatore rotante per il controllo della posizione. È costituito principalmente da involucro, circuito stampato, motore senza nucleo, ingranaggi e sensore di posizione. Il suo principio di funzionamento è che il servo riceve il segnale inviato dal MCU o dal ricevitore, produce un segnale di riferimento con periodo di 20 ms e larghezza di 1,5 ms, quindi confronta la tensione di polarizzazione continua acquisita con la tensione del potenziometro e ottiene la differenza di tensione in uscita.
+サーボモーターは位置制御用の回転アクチュエータです。主にケース、基板、コアレスモーター、ギア、位置センサーで構成されます。動作原理は、サーボがMCUまたは受信機から送られる信号を受信し、周期20ms、幅1.5msの基準信号を生成し、取得した直流バイアス電圧をポテンショメータの電圧と比較して電圧差を出力することです。
 
 ![](./media/Makecode_87b41036.png)
 
-Per il servo utilizzato in questo progetto, il filo marrone è la massa, quello rosso è il positivo e quello arancione è il filo del segnale.
+本プロジェクトで使用するサーボでは、茶色の線がGND、赤が電源プラス、オレンジが信号線です。
 
-L'angolo di rotazione del servomotore è controllato regolando il ciclo di lavoro del segnale PWM (Pulse-Width Modulation). Il ciclo standard del segnale PWM è di 20 ms (50 Hz). Teoricamente la larghezza è compresa tra 1 ms e 2 ms, ma in pratica è tra 0,5 ms e 2,5 ms. La larghezza corrisponde all'angolo di rotazione da 0° a 180°. Nota che per motori di marche diverse lo stesso segnale può produrre angoli di rotazione differenti.
+サーボモーターの回転角は、PWM（Pulse-Width Modulation）信号のデューティ比を制御することで調整されます。PWM信号の標準周期は20ms（50Hz）です。理論的にはパルス幅は1ms〜2msの範囲ですが、実際には0.5ms〜2.5msの範囲となります。パルス幅は0°から180°までの回転角に対応します。ただし、メーカーが異なれば同じ信号でも回転角が異なる場合がある点に注意してください。
 
 ![](./media/Makecode_49467dfa.png)
 
-Ulteriori dettagli:
+詳しくは：
 
 ![](./media/Makecode_b167d550.png)
 
-3\.  **Parametri**
+3\.  **パラメータ**
 
-- Tensione di funzionamento: DC 4.8V ~ 6V
+- 動作電圧: DC 4.8V ~ 6V
 
-- Intervallo di angolo operativo: circa 180 ° (a 500 → 2500 μsec)
+- 動作角度範囲: 約180 °（500 → 2500 μsec時）
 
-- Intervallo di larghezza d'impulso: 500 → 2500 μsec
+- パルス幅範囲: 500 → 2500 μsec
 
-- Velocità a vuoto: 0.12 ± 0.01 s / 60 (DC 4.8V) 0.1 ± 0.01 s / 60 (DC 6V)
+- 無負荷回転速度: 0.12 ± 0.01 秒 / 60（DC 4.8V） 0.1 ± 0.01 秒 / 60（DC 6V）
 
-- Corrente a vuoto: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
+- 無負荷電流: 200 ± 20mA（DC 4.8V） 220 ± 20mA（DC 6V）
 
-- Coppia di arresto: 1.3 ± 0.01kg·cm (DC 4.8V) 1.5 ± 0.1kg·cm (DC 6V)
+- 停止トルク: 1.3 ± 0.01kg·cm（DC 4.8V） 1.5 ± 0.1kg·cm（DC 6V）
 
-- Corrente di arresto: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- 停止電流: ≦ 850mA（DC 4.8V） ≦ 1000mA（DC 6V）
 
-- Corrente in standby: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
+- 待機電流: 3 ± 1mA（DC 4.8V） 4 ± 1mA（DC 6V）
 
-4\.  **Preparazione**
+4\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio   4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio   4WD Mecanum Robot Car V2.0 のスロットに挿入する
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione sulla posizione ON
+- 電源スイッチを ON にする
 
-- Collegare la micro:bit al computer tramite cavo USB
+- USBケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione Web di Makecode
+- Makecode の Web版を開く
 
 
-5\.  **Codice di test**
+5\.  **テストコード**
 
 ![](./media/Makecode_087e1822.png)
 
-Cliccare su "JavaScript" per visualizzare il corrispondente codice JavaScript:
+「JavaScript」をクリックして対応する JavaScript コードを表示：
 
 ![](./media/Makecode_2354311f.png)
 
-6.  **Risultato del test**
+6.  **テスト結果**
 
-Dopo aver caricato il codice di test e portato l'interruttore POWER su ON, il servo ruota da 0 gradi a 180 gradi.
+テストコードをアップロードし、POWERスイッチをONにすると、サーボが0度から180度まで回転します。

@@ -1,23 +1,23 @@
-## Prestare particolare attenzione
+## 特にご注意ください
 
-1\. Questo prodotto contiene piccole parti. Non ingerire.
+1\. この製品には小さな部品が含まれています。飲み込まないでください。
 
-2\. Non permettere a bambini di età inferiore a 3 anni di giocare con o nelle vicinanze di questo prodotto.
+2\. 3歳未満の子供に本製品で遊ばせたり、近くで遊ばせたりしないでください。
 
-3\. Non permettere ai bambini privi delle necessarie capacità di sicurezza di utilizzare questo prodotto senza la supervisione dei genitori. 
+3\. 安全に関する十分な能力のない子供に保護者の監督なしで本製品を使用させないでください。 
 
-4\. Non utilizzare questo prodotto o i suoi componenti vicino a prese di corrente AC o ad altri circuiti per evitare il rischio di scosse elettriche. 
+4\. 感電の危険を避けるため、本製品またはその部品を交流（AC）電源ソケットやその他の回路の近くで使用しないでください。 
 
-5\. Non utilizzare in prossimità di liquidi o fiamme.
+5\. 液体や火気の近くで使用しないでください。
 
-6\. Tenere materiali conduttivi lontani dal prodotto.
+6\. 導電性のある物質を製品に近づけないでください。
 
-7\. Non conservare o utilizzare il prodotto in condizioni estreme come temperature molto alte o molto basse e alta umidità. 
+7\. 高温・低温や高湿度などの過酷な条件下で製品を保管または使用しないでください。 
 
-8\. Spegnere il circuito quando si lascia il luogo o quando non si utilizza il prodotto.
+8\. 離れるときや使用しないときは回路の電源を切ってください。
 
-9\. Non toccare parti mobili o rotanti del prodotto durante il funzionamento. 
+9\. 製品を操作中に可動部や回転部に触れないでください。 
 
-10\. È normale che alcune parti del prodotto possano diventare calde se usate in determinati progetti di circuito. Una manipolazione scorretta può causare surriscaldamento. 
+10\. 特定の回路設計で使用した場合、製品の一部が熱くなることがあります。取り扱いが不適切だと過熱することがあります。 
 
-11\. L'uso non conforme alle specifiche può danneggiare il prodotto.
+11\. 仕様に従って使用しないと、製品が損傷することがあります。

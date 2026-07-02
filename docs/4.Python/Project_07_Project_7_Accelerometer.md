@@ -1,26 +1,26 @@
-### Progetto 7：Accelerometer
+### プロジェクト 7：Accelerometer
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La scheda principale micro: bit main board V2 è dotata di un sensore di accelerazione gravitazionale LSM303AGR integrato, noto anche come accelerometro, con risoluzione di 8/10/12 bit. Nella sezione del codice è possibile impostare la portata a 1g, 2g, 4g e 8g.
+micro: bit main board V2 には、LSM303AGR 重力加速度センサー（加速度計とも呼ばれる）が内蔵されており、分解能は 8/10/12 ビットです。コード内ではレンジを 1g、2g、4g、8g に設定できます。
 
-Utilizziamo spesso un accelerometro per rilevare lo stato delle macchine.
+加速度センサーは機械の状態を検出するためによく使用します。
 
-In questo progetto mostreremo come misurare la posizione della scheda con l'accelerometro. Successivamente esamineremo i dati grezzi triassiali forniti dall'accelerometro.
+このプロジェクトでは、加速度センサーを使ってボードの向きを測定する方法を紹介します。その後、加速度センサーが出力する生の三軸データを確認します。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegate la scheda micro:bit main board al computer tramite il cavo USB.
+A. USB ケーブルで micro:bit main board をコンピュータに接続します。
 
-B. Aprite la versione offline di Mu.
+B. Mu のオフライン版を開きます。
 
-3\.  **Codice di test1**
+3\.  **テストコード1**
 
-Avviate il software Mu e aprite il file “Three-axis acceleration sensor -1\.py“ per importare il codice. Potete anche inserire il codice manualmente nella finestra di editing.
+Mu ソフトを起動し、ファイル “Three-axis acceleration sensor -1\.py“ を開いてコードを読み込みます。編集ウィンドウにコードを自分で入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注意: すべての単語および記号は英語で記述してください。**)
 
 ![](./media/Python_f20f5b58.png)
 
@@ -48,53 +48,53 @@ while True:
         display.show("8")
 ```
 
-Cliccate su “Check” per verificare la presenza di errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは正しくありません。 
 
 ![](./media/Python_07e4b578.png)
 
-Se il codice è corretto, collegate il micro:bit al computer e cliccate su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_eb56750b.png)
 
-4\.  **Risultato del test1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentate tramite il cavo micro USB o una fonte di alimentazione esterna (impostare l'interruttore DIP su ON)** e premete il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電する（DIP スイッチを ON にする）**、その後 micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Quando scuotiamo il micro: bit main board, in qualsiasi direzione, la matrice LED visualizza la cifra “1”.
+micro: bit main board を振ると、方向に関係なく LED ドットマトリクスに数字「1」が表示されます。
 
-Quando è mantenuto in verticale (con il logo sopra la matrice LED), appare il numero 2.
+ボードを立てた状態（ロゴが LED マトリクスの上に来る）では、数字 2 が表示されます。
 
 ![](./media/Python_b91421df.jpg)
 
-Quando viene tenuto a testa in giù (con il logo sotto la matrice LED), viene visualizzato come di seguito.
+上下逆さま（ロゴが LED マトリクスの下に来る）に保持すると、下図のように表示されます。
 
 ![](./media/Python_69e81587.jpg)
 
-Quando è posizionato fermo sulla scrivania, con il lato anteriore rivolto verso l'alto, compare il numero 4.
+机の上に静かに置き、表側が上を向いているときは数字 4 が表示されます。
 
 ![](./media/Python_9e08cb69.jpg)
 
-Quando è posizionato fermo sulla scrivania, con il lato posteriore rivolto verso l'alto, compare il numero 5.
+机の上に静かに置き、裏側が上を向いているときは数字 5 が表示されます。
 
-Quando la scheda è inclinata verso sinistra, la matrice LED mostra il numero 6, come mostrato di seguito:
+ボードを左に傾けると、LED ドットマトリクスに数字 6 が表示されます（下図参照）。
 
 ![](./media/Python_81fa2ce1.jpg)
 
-Quando la scheda è inclinata verso destra, la matrice LED visualizza il numero 7, come mostrato di seguito：
+ボードを右に傾けると、LED ドットマトリクスに数字 7 が表示されます（下図参照）：
 
 ![](./media/Python_fc13912b.jpg)
 
-Quando la scheda viene colpita a terra, questo processo può essere considerato come una caduta libera e la matrice LED mostra il numero 8. (Si noti che questo test non è raccomandato perché potrebbe danneggiare la scheda principale.)
+ボードを床に叩きつけると、この動作は自由落下とみなすことができ、LED マトリクスに数字 8 が表示されます。（このテストはメインボードを損傷する可能性があるため推奨しません。）
 
-**Attenzione: Se desiderate provare questa funzione, potete anche impostare l'accelerazione a 3g, 6g o 8g.**
+**注意：この機能を試したい場合、加速度を 3g、6g、または 8g に設定することもできます。**
 
-5\.  **Codice di test2**
+5\.  **テストコード2**
 
-Avviate il software Mu e aprite il file “Three-axis acceleration sensor -2\.py“ per importare il codice. Potete anche inserire il codice manualmente nella finestra di editing.
+Mu ソフトを起動し、ファイル “Three-axis acceleration sensor -2\.py“ を開いてコードを読み込みます。編集ウィンドウにコードを自分で入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注意: すべての単語および記号は英語で記述してください。**)
 
 ![](./media/Python_0f7ccf57.png)
 
@@ -113,29 +113,29 @@ while True:
 
     sleep(100)
 ```
-Cliccate su “Check” per verificare la presenza di errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは正しくありません。 
 
 ![](./media/Python_0ed2221e.png)
 
-Se il codice è corretto, collegate il micro:bit al computer e cliccate su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_35c4c76b.png)
 
-6\.  **Risultato del test2**
+6\.  **テスト結果2**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentate tramite il cavo micro USB o una fonte di alimentazione esterna (impostare l'interruttore DIP su ON)**. Cliccate su “REPL” e premete il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電する（DIP スイッチを ON にする）**。 「REPL」をクリックし、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Quindi la finestra REPL mostrerà i valori dell'accelerazione sugli assi X, Y e Z come mostrato di seguito:
+すると REPL ウィンドウに X 軸、Y 軸、Z 軸の加速度の値が以下のように表示されます：
 
 ![](./media/Python_940cfcf7.png)
 
-Facendo riferimento al manuale dati MMA8653FC e allo schema hardware del micro: bit main board, le coordinate dell'accelerometro del micro: bit sono riportate nella figura seguente:
+MMA8653FC のデータマニュアルおよび micro: bit main board のハードウェア回路図を参照すると、micro: bit の加速度計座標は下図のようになります：
 
 ![](./media/Python_ebd0d44d.png)
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_d533d72c.png)
 

@@ -1,24 +1,24 @@
 ## BBC Micro:bit
 
-### **(1) Che cos'è Micro:bit?**
+### **(1) Micro:bitとは？**
 
-Micro:bit è una piattaforma hardware open source basata sull'architettura ARM, lanciata dalla British Broadcasting Corporation (BBC) insieme ad ARM, Barclays, element14, Microsoft e altre istituzioni. Il dispositivo centrale è un microprocessore Arm Cortex‑M4 a 32 bit con FPU.
+Micro:bitは、British Broadcasting Corporation（BBC）がARM、Barclays、element14、Microsoftなどの機関と共同で立ち上げた、ARMアーキテクチャに基づくオープンソースのハードウェアプラットフォームです。コアにはFPUを備えた32ビットのArm Cortex‑M4を搭載しています。
 
-Ha le dimensioni di una carta di credito ma è molto potente. La scheda principale Micro:bit è dotata di numerosi componenti come una matrice LED 5×5, 2 pulsanti programmabili, un accelerometro, una bussola, un termometro, un logo sensibile al tocco, un microfono MEMS, un modulo Bluetooth a bassa energia e un buzzer, permettendo di riprodurre diversi suoni senza dispositivi esterni.
+クレジットカードほどの大きさですが非常に高性能です。Micro:bitメインボードには、5×5のLEDドットマトリクス、2つのプログラム可能なボタン、加速度センサ、コンパス、温度計、タッチ対応ロゴ、MEMSマイクロフォン、低消費電力のBluetoothモジュール、ブザーなど多くのコンポーネントが搭載されており、外部機器なしで様々な音を出すことができます。
 
-Inoltre, questa scheda supporta una modalità sleep per ridurre il consumo della batteria, attivabile tenendo premuto a lungo il pulsante Reset & Power sul retro.
+さらに、このボードはバッテリー消費を抑えるスリープモードをサポートしており、裏面のReset & Powerボタンを長押しすることで入ることができます。
 
-La scheda di sviluppo Micro:bit è facile da usare ed espandere: il design dei contatti dorati (gold finger) sul lato inferiore consente l'interazione con vari componenti elettronici tramite morsetti a coccodrillo. È in grado di leggere i dati dei sensori, controllare servomotori e luci RGB e ospitare una scheda di espansione per collegare vari sensori.
+Micro:bit開発ボードは使いやすく拡張性も高いです。下部のゴールドフィンガー（edge connector）の設計により、ワニ口クリップなどを使って各種電子部品と接続できます。センサのデータを読み取り、サーボやRGBライトを制御したり、拡張ボードを挿してさまざまなセンサを接続することが可能です。
 
-Inoltre supporta diversi linguaggi e piattaforme di programmazione grafica, è compatibile con quasi tutti i PC e dispositivi mobili e non richiede driver complessi. Dispone di moduli elettronici altamente integrati e di una funzione di monitoraggio della porta seriale per un debug semplice.
+また、複数のプログラミング言語やグラフィカルなプログラミングプラットフォームをサポートしており、ほとんどのPCやモバイル機器と互換性があり、特別なドライバのインストールも不要です。高集積の電子モジュールとシリアルポート監視機能を備え、デバッグも容易です。
 
-La scheda è ampiamente utilizzata nella programmazione di videogiochi, interazioni luce‑suono, controllo di robot, esperimenti scientifici, dispositivi indossabili e in invenzioni creative come robot e strumenti musicali.
+このボードは、ビデオゲームのプログラミング、光と音のインタラクション、ロボット制御、科学実験、ウェアラブル機器、ロボットや楽器などの創造的な発明に広く使われています。
 
-### **(2) Layout**
+### **(2) レイアウト**
 
 ![Img](./media/Introduction_5746e59b.png)
 
-Per maggiori informazioni consultare i seguenti link:
+詳細は次のリンクをご参照ください：
 
 [https://tech.microbit.org/hardware/](https://tech.microbit.org/hardware/)
 
@@ -28,11 +28,11 @@ Per maggiori informazioni consultare i seguenti link:
 
 [https://microbit.org/get-started/user-guide/features-in-depth/](https://microbit.org/get-started/user-guide/features-in-depth/)
 
-### **(3) Pin out**
+### **(3) ピン配置（Pin out）**
 
 ![](./media/Introduction_ce0de295.png)
 
-**Funzioni:**
+**機能：**
 
 |                            |                                                                                                    |
 |----------------------------|----------------------------------------------------------------------------------------------------|
@@ -40,30 +40,30 @@ Per maggiori informazioni consultare i seguenti link:
 | ADC/DAC                    | P0, P1, P2, P3, P4, P10                                                                            |
 | IIC                        | P19 (SCL), P20 (SDA)                                                                               |
 | SPI                        | P13 (SCK), P14 (MISO), P15 (MOSI)                                                                 |
-| PWM (usato frequentemente) | P0, P1, P2, P3, P4, P10                                                                            |
-| PWM (poco usato)           | P5, P6, P7, P8, P9, P11, P12, P13, P14, P15, P16, P19, P20                                         |
-| Occupato                   | P3 (LED Col3), P4 (LED Col1), P5 (Button A), P6 (LED Col4), P7 (LED Col2), P10 (LED Col5), P11 (Button B) |
+| PWM（頻繁に使用）         | P0, P1, P2, P3, P4, P10                                                                            |
+| PWM（あまり使用しない）   | P5, P6, P7, P8, P9, P11, P12, P13, P14, P15, P16, P19, P20                                         |
+| 使用済み                   | P3（LED Col3）, P4（LED Col1）, P5（Button A）, P6（LED Col4）, P7（LED Col2）, P10（LED Col5）, P11（Button B） |
 
-Consultare il sito ufficiale per maggiori dettagli: [https://tech.microbit.org/hardware/edgeconnector/](https://tech.microbit.org/hardware/edgeconnector/)
+詳細は公式サイトをご覧ください： [https://tech.microbit.org/hardware/edgeconnector/](https://tech.microbit.org/hardware/edgeconnector/)
 
 [https://microbit.org/guide/hardware/pins/](https://microbit.org/guide/hardware/pins/)
 
-### **(4) Precauzioni per l'uso della scheda madre Micro:bit:**
+### **(4) Micro:bit メインボード使用時の注意事項：**
 
-a\. Si consiglia di coprire la scheda con una protezione in silicone per evitare cortocircuiti sui suoi delicati componenti elettronici.
+a\. 精密な電子部品を保護するために、シリコン製のプロテクタ（ケース）で覆うことを推奨します。
 
-b\. Le porte IO hanno una capacità di pilotaggio limitata e possono gestire correnti inferiori a 300 mA. Pertanto, non collegare dispositivi ad alto assorbimento, come servomotori MG995 o motori DC, altrimenti possono bruciarsi. Verificare sempre i requisiti di corrente dei dispositivi prima dell'uso; in genere è consigliato utilizzare la scheda insieme a una scheda di espansione Micro:bit.
+b\. IOポートの駆動能力は低く、300mA未満の電流しか扱えません。したがって、MG995サーボやDCモーターなど大電流を必要とする機器を接続しないでください。破損する恐れがあります。機器を使用する前に必ず消費電流を確認し、通常はMicro:bit拡張ボードと併用することを推奨します。
 
-c\. Si raccomanda di alimentare la scheda principale tramite la porta USB o con una batteria da 3V. Le porte IO sono a 3V, quindi non supportano sensori a 5V. Per collegare sensori a 5V è necessario un modulo di espansione Micro:bit.
+c\. メインボードの電源はUSB経由か3Vの電池での給電を推奨します。本ボードのIOポートは3V仕様のため、5Vセンサはサポートしていません。5Vセンサを接続する場合はMicro:bit拡張ボードが必要です。
 
-d\. Quando si utilizzano i pin condivisi con la matrice LED (P3, P4, P6, P7 e P10), se questi pin sono schermati rispetto alla matrice o ai LED, questi possono visualizzare valori casuali e i dati dei sensori collegati potrebbero essere errati.
+d\. LEDドットマトリクスと共有されているピン（P3、P4、P6、P7、P10）を使用する場合、それらのピンをマトリクスやLEDから遮断すると、LEDがランダムに表示されたり、接続されたセンサのデータが誤ったりする可能性があります。
 
-e\. I pin 19 e 20 non possono essere usati come porte IO anche se MakeCode può mostrarlo. Possono essere usati solo per comunicazione I2C.
+e\. ピン19および20は、MakeCode上でIOポートとして表示される場合がありますが、実際にはIOポートとして使用できません。これらはI2C通信専用です。
 
-f\. Alla presa batteria da 3V non devono essere collegate batterie superiori a 3,3V, altrimenti la scheda principale potrebbe danneggiarsi.
+f\. 3Vの電池端子に3.3Vを超える電池を接続するとメインボードが損傷しますので接続しないでください。
 
-g\. Vietato utilizzare la scheda su superfici metalliche per evitare cortocircuiti.
+g\. 金属製品の上での運用は禁止します。短絡を避けるためです。
 
-In sintesi, la scheda principale Micro:bit V2 è come un microcomputer che mette la programmazione a portata di mano e favorisce l'innovazione digitale. Per l'ambiente di programmazione la BBC fornisce il sito: [https://microbit.org/code/](https://microbit.org/code/), che offre un'interfaccia grafica MakeCode facile da usare.
+要するに、Micro:bit V2のメインボードは小型コンピュータのようなもので、プログラミングを手軽にし、デジタルイノベーションを促進します。プログラミング環境としてはBBCが提供するウェブサイト [https://microbit.org/code/](https://microbit.org/code/) に、使いやすいグラフィカルなMakeCodeが用意されています。
 
 ---

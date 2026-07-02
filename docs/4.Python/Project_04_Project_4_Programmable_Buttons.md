@@ -1,31 +1,31 @@
-### Progetto 4：Pulsanti programmabili
+### プロジェクト4：プログラム可能なボタン
 
 ![](./media/Python_06be84fb.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
 ![](./media/Python_b6d60ae2.png)
 
-I pulsanti possono essere usati per controllare i circuiti. In un circuito integrato con un pulsante, il circuito viene chiuso quando si preme il pulsante e si riapre dopo il rilascio.
+ボタンは回路の制御に使用できます。プッシュボタンを備えた回路では、ボタンを押している間は回路が接続され、放すと再び開放されます。
 
-Entrambe le estremità del pulsante sembrano due montagne. C'è un fiume in mezzo. 
-Il pezzo metallico interno collega i due lati per lasciare passare la corrente, proprio come costruire un ponte per collegare due montagne.
+ボタンの両端は2つの山のようです。間に川があります。  
+内部の金属片が両側をつなぎ、電流を通す、まるで山と山を結ぶ橋を作るようなものです。
 
-La struttura interna del pulsante è mostrata come segue: prima di premere il pulsante, 1, 2, 3 e 4 sono attivi. Tuttavia, 1 e 3 o 1 e 4 o 2 e 3 o 2 e 4 sono disconnessi; queste connessioni vengono abilitate solo quando il pulsante viene premuto. ![](./media/Python_d2a204e6.png)
+ボタンの内部構造は次のように示されます：ボタンを押す前は1、2、3、4がオンになっています。ただし、1と3、または1と4、または2と3、または2と4の組み合わせは切断されており、これらはボタンが押されたときにのみ接続されます。 ![](./media/Python_d2a204e6.png)
 
-La scheda principale micro:bit dispone di tre pulsanti: due sono pulsanti programmabili (contrassegnati con A e B) e quello sull'altro lato è un pulsante di reset. Premendo i due pulsanti programmabili si possono inviare tre segnali diversi. Possiamo premere il pulsante A o B da soli oppure premerli insieme e la matrice di LED mostrerà rispettivamente A, B e AB. Iniziamo.
+micro:bitメインボードには3つのプッシュボタンがあり、2つはプログラム可能なボタン（AとBで表示）、もう1つはリセットボタンです。プログラム可能な2つのボタンを使うことで3種類の信号を入力できます。AまたはBを単独で押すか、両方を同時に押すと、LEDドットマトリクスはそれぞれA、B、ABを表示します。始めましょう。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
+A. USBケーブルでmicro:bitメインボードをコンピュータに接続します。
 
-B. Aprire la versione offline di Mu.
+B. オフライン版のMuを開きます。
 
-3\.  **Test Code1**
+3\.  **テストコード1**
 
-Aprire il software Mu e aprire il file “Programmable Buttons-1\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Muソフトを起動し、ファイル “Programmable Buttons-1\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注：すべての単語と記号は英語で記述してください。**)
 
 ![](./media/Python_2637f524.png)
 
@@ -40,27 +40,27 @@ while True:
     elif button_b.is_pressed():
         display.show("B")
 ```
-Fare clic su “Check” per esaminare gli errori nel codice. Il programma risulta errato se vengono visualizzate sottolineature e cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
 
 ![](./media/Python_a0f284f3.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続して「Flash」をクリックし、コードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_5694d3ce.png)
 
-4\.  **Risultato del test 1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sulla scheda.
+コードをボードに正常にダウンロードした後、**micro USBケーブルまたは外部電源で電源を入れてください（DIPスイッチをONにする）**。その後ボードのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matrice di LED 5*5 visualizza “A” se viene premuto il pulsante A, poi “B” se viene premuto il pulsante B, e “AB” se vengono premuti contemporaneamente A e B.
+5×5のLEDドットマトリクスは、ボタンAが押されると「A」を表示し、ボタンBが押されると「B」を表示し、AとBが同時に押されると「AB」を表示します。
 
-5\.  **Test Code2**
+5\.  **テストコード2**
 
-Aprire il software Mu e aprire il file “Programmable Buttons-2\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Muソフトを起動し、ファイル “Programmable Buttons-2\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注：すべての単語と記号は英語で記述してください。**)
 
 ![](./media/Python_1a1126f6.png)
 
@@ -106,27 +106,27 @@ while True:
     if a == 5:
         display.show(val6)
 ```
-Fare clic su “Check” per esaminare gli errori nel codice. Il programma risulta errato se vengono visualizzate sottolineature e cursori.
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
 
 ![](./media/Python_21771d90.png)
 
 ![Img](./media/Python_8d257384.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続して「Flash」をクリックし、コードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_84ba8cde.png)
 
 ![Img](./media/Python_8d257384.png)
 
-6\.  **Risultato del test 2**
+6\.  **テスト結果2**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sulla scheda.
+コードをボードに正常にダウンロードした後、**micro USBケーブルまたは外部電源で電源を入れてください（DIPスイッチをONにする）**。その後ボードのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Se viene premuto il pulsante A, il numero di LED che diventano rossi aumenta; se viene premuto il pulsante B, il numero di LED rossi diminuisce.
+ボタンAを押すと赤く点灯するLEDが増え、ボタンBを押すと赤く点灯するLEDが減ります。
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_b33858dc.png)
 

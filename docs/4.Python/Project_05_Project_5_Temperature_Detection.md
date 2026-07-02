@@ -1,26 +1,26 @@
-### Progetto 5：Rilevamento della temperatura
+### プロジェクト 5：温度検出
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La scheda principale Micro:bit non è dotata di un sensore di temperatura, ma utilizza il sensore di temperatura integrato nel chip NFR52833 per la rilevazione della temperatura. Pertanto, la temperatura rilevata è più vicina alla temperatura del chip e potrebbe discostarsi dalla temperatura ambiente.
+Micro:bit メインボードには温度センサーが搭載されていませんが、温度検出のために NFR52833 チップに内蔵された温度センサーを使用します。したがって、検出される温度はチップの温度に近く、周囲温度とずれが生じる可能性があります。
 
-In questo progetto useremo il sensore per misurare la temperatura nell'ambiente corrente e visualizzare i risultati del test sul dispositivo di visualizzazione. Successivamente controlleremo la matrice LED per mostrare diversi schemi impostando l'intervallo di temperatura rilevato dal sensore.
+このプロジェクトでは、センサーを使用して現在の環境の温度を測定し、測定結果を表示装置に表示します。その後、センサーで検出した温度範囲を設定して LED ドットマトリクスに異なるパターンを表示させます。
 
-**Nota: il sensore di temperatura della scheda principale Micro:bit è mostrato di seguito:**
+**注: Micro:bit メインボードの温度センサーは以下の通りです:**
 
 ![](./media/Python_206c8ec1.png)
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegare la scheda principale micro:bit al computer tramite cavo USB
+A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
 
-B. Aprire la versione offline di Mu.
+B. Mu のオフラインバージョンを開きます。
 
-3\.  **Codice di test1**
+3\.  **テストコード1**
 
-Aprire il software Mu e importare il file “Temperature Measurement -1\.py “. È inoltre possibile inserire il codice nella finestra di modifica manualmente.
+Mu を起動し、ファイル “Temperature Measurement -1\.py “ を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注: すべての単語と記号は英語で記述する必要があります。**)
 
 ![](./media/Python_03cbb6e9.png)
 
@@ -36,31 +36,31 @@ while True:
     sleep(500)
 ```
 
-Fare clic su “Check” per verificare la presenza di errori nel codice. Il programma è errato se vengono visualizzate sottolineature e cursori. 
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムに誤りがあります。 
 
 ![](./media/Python_7b437c2d.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_193065ab.png)
 
-4\.  **Risultato del test1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l'interruttore DIP su ON)**. Fare clic su “REPL” e premere il pulsante di reset sul micro:bit.
+コードが正常にボードに書き込まれたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にしてください）**。“REPL” をクリックし、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-La finestra REPL mostrerà quindi il valore della temperatura ambiente, come indicato di seguito: (C indica l'unità di temperatura)
+すると REPL ウィンドウに周囲温度の値が表示されます。以下の例を参照してください:（C は温度の単位を表します）
 
 ![](./media/Python_d08386d8.png)
 
-5\.  **Codice di test2**
+5\.  **テストコード2**
 
-Aprire il software Mu e importare il file “Temperature Measurement -2\.py “. È inoltre possibile inserire il codice nella finestra di modifica manualmente.
+Mu を起動し、ファイル “Temperature Measurement -2\.py “ を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注: すべての単語と記号は英語で記述する必要があります。**)
 
-Il valore di temperatura può essere impostato in conformità con la temperatura reale.
+温度値は実際の温度に合わせて設定できます。
 
 ![](./media/Python_c6456d78.png)
 
@@ -76,23 +76,23 @@ while True:
         display.show(Image.HEART_SMALL)
 ```
 
-Fare clic su “Check” per verificare la presenza di errori nel codice. Il programma è errato se vengono visualizzate sottolineature e cursori. 
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムに誤りがあります。 
 
 ![](./media/Python_709d3031.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_06f7542e.png)
 
-6\.  **Risultato del test2**
+6\.  **テスト結果2**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードが正常にボードに書き込まれたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にしてください）**。その後、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
- Quando la temperatura ambiente è inferiore a 35℃, la matrice di LED 5×5 mostra ![](./media/Python_034dc0d5.png). Quando la temperatura è uguale o superiore a 35℃, appare il motivo ![](./media/Python_ebfaeac9.png).
+ 周囲温度が 35℃ 未満のとき、5×5 LED ドットマトリクスは ![](./media/Python_034dc0d5.png) を表示します。温度が 35℃ 以上の場合は、パターン ![](./media/Python_ebfaeac9.png) が表示されます。
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_d7cdc397.png)
 

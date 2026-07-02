@@ -1,27 +1,27 @@
-### Progetto 12: Controllo dello speaker
+### プロジェクト12：スピーカーの制御
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Nei progetti precedenti abbiamo studiato rispettivamente il logo sensibile al tocco e lo speaker. In questo progetto combineremo questi due componenti per riprodurre musica.
+これまでのプロジェクトでは、タッチ感知ロゴとスピーカーについてそれぞれ学びました。本プロジェクトでは、これら二つのコンポーネントを組み合わせて音楽を再生します。
 
-2\.  **Componenti necessari**
+2\.  **必要な部品**
 
 |![](./media/Python_021507bd.png)|![](./media/Python_84cdea05.jpg)|
 |-|-|
 |Micro:bit main board \*1|USB cable\*1|
 
 
-3\.  **Schema di collegamento**
+3\.  **配線図**
 
-Collegare il Micro:bit main board al computer tramite il cavo USB.
+Micro:bit main board を USB ケーブルでコンピュータに接続します。
 
 ![](./media/Python_611b2c4e.png)
 
-4\.  **Codice di prova**
+4\.  **テストコード**
 
-Avviare il software Mu e aprire il file “Touch the Logo to control the speaker\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Mu ソフトウェアを起動し、ファイル “Touch the Logo to control the speaker\.py” を開いてコードをインポートします。編集ウィンドウに直接コードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
+(**注意：すべての単語と記号は英語で記述してください**.)
 
 ![](./media/Python_600c8fa6.png)
 
@@ -38,34 +38,34 @@ while True:
         music.play(music.BIRTHDAY)
 ```
 
-Fare clic su “Check” per verificare eventuali errori nel codice. Il programma è sbagliato se vengono mostrati sottolineature e cursori.
+“Check” をクリックしてコード内のエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
 
 ![](./media/Python_dcc17127.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードに問題がなければ、micro:bit をコンピュータに接続し、“Flash” をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_be3d4ee9.png)
 
-5\.  **Risultato del test**
+5\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite il cavo micro USB o un alimentatore esterno (portare l’interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にしてください）**。その後、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Lo speaker riproduce la canzone “*Happy Birthday to You*” quando il logo viene toccato.
+ロゴに触れるとスピーカーから「*Happy Birthday to You*」が再生されます。
 
-6\.  **Spiegazione del codice**
+6\.  **コードの説明**
 
 ![Img](./media/Python_852be78f.png)
 
-**Comunicazione wireless Bluetooth**
+**Bluetooth 無線通信**
 
-Il micro:bit dispone di un modulo Bluetooth a basso consumo per la comunicazione, ma ha 16 KB di RAM. Tuttavia, lo heap/stack BLE occupa 12 KB di RAM, pertanto non c’è spazio sufficiente per eseguire microPython.
+micro:bit は低消費電力の Bluetooth モジュールを搭載して通信できますが、RAM は 16 KB です。しかし、BLE のヒープ/スタックが 12 KB を占有するため、microPython を実行するための十分な空きがありません。
 
-Al momento, microPython non supporta il servizio Bluetooth.
+現時点では、microPython は Bluetooth サービスをサポートしていません。
 
 [https://microbit-micropython.readthedocs.io/en/latest/ble.html](https://microbit-micropython.readthedocs.io/en/latest/ble.html)
 
-I progetti precedenti sono un’introduzione ai sensori e ai moduli. Le lezioni successive sono più impegnative per i principianti.
+これまでのプロジェクトはセンサーとモジュールの導入です。以降のレッスンは初心者にとってより難易度が上がります。
 
-(**Nota: Per evitare che la scheda micro:bit si bruci, scollegare il cavo micro USB e spegnere l’alimentazione della micro:bit motor driver base plate prima di installarla sulla scheda di espansione per auto e portare l’interruttore POWER su OFF. Analogamente, prima di rimuovere la scheda principale dalla scheda di espansione per auto, scollegare il cavo micro USB e spegnere l’alimentazione della micro:bit motor driver base plate.**)
+(**注意：micro:bit ボードが焼損しないように、車用拡張ボードに取り付ける前に micro USB ケーブルを抜き、micro:bit motor driver base plate の電源を切り、POWER スイッチを OFF にしてください。同様に、メインボードを車用拡張ボードから取り外す前にも micro USB ケーブルを抜き、micro:bit motor driver base plate の電源を切ってください。**)

@@ -1,1 +1,1 @@
-## Preparazioni
+## 準備

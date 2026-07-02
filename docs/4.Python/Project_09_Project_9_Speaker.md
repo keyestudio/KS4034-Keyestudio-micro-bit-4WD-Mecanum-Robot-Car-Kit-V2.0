@@ -1,22 +1,22 @@
-### Progetto 9: Altoparlante
+### プロジェクト 9：スピーカー
 
 ![](./media/Python_ac515b9a.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La scheda principale micro:bit dispone di un altoparlante integrato, il che rende più semplice aggiungere suoni ai programmi. Può anche essere programmata per produrre ogni tipo di tono, ad esempio suonare il brano *Ode to Joy*.
+micro:bit メインボードには内蔵スピーカーがあり、プログラムに音を追加するのが容易になります。*Ode to Joy* のような曲を再生するなど、さまざまな音色を出すようにプログラムすることもできます。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
+A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
 
-B. Aprire la versione offline di Mu.
+B. オフライン版の Mu を開きます。
 
-3\.  **Codice di test**
+3\.  **テストコード**
 
-Aprire il software Mu e aprire il file “Speaker\.py” per importare il codice. È inoltre possibile inserire il codice direttamente nella finestra di modifica.
+Mu ソフトを起動し、ファイル “Speaker\.py” を開いてコードを読み込みます。編集ウィンドウに直接コードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
+(**注意: すべての単語と記号は英語で記述する必要があります**.)
 
 ![](./media/Python_eec7f643.png)
 
@@ -38,23 +38,23 @@ while True:
     sleep(1000)
 ```
 
-Fare clic su “Check” per esaminare gli errori nel codice. Il programma è considerato errato se vengono mostrati sottolineature e cursori.
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合、プログラムは誤りがあります。
 
 ![](./media/Python_f8852abf.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して “Flash” をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_3fd94e43.png)
 
-4\.  **Risultato del test**
+4\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードがボードに正常にダウンロードされたら、**micro USB ケーブルまたは外部電源で電源を入れる（DIP スイッチを ON にする）**、その後 micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
- L'altoparlante emette un suono e la matrice a punti LED mostra il simbolo della musica.
+ スピーカーから音が鳴り、LED ドットマトリクスに音楽のロゴが表示されます。
 
-5\.  **Spiegazione del codice**
+5\.  **コードの説明**
 
 ![Img](./media/Python_18c047bd.png)
 

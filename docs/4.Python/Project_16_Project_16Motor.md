@@ -1,56 +1,56 @@
-### Progetto 16: Motore
+### プロジェクト16：モーター
 
 ![](./media/Python_32655f47.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Il Keyestudio 4WD Mecanum Robot Car è dotato di 4 motori DC a riduzione, detti anche motori con riduttore, sviluppati a partire dal normale motore DC. Presentano una scatola di riduzione corrispondente che fornisce una velocità più bassa ma una coppia maggiore. Inoltre, diversi rapporti di riduzione della scatola possono fornire velocità e coppie diverse.
+Keyestudio 4WD Mecanum Robot Car は 4 つの DC 減速モーター（ギア減速モーター）を搭載しています。これは通常の DC モーターをベースに開発されており、対応するギア減速ボックスにより低速で大きなトルクを提供します。さらに、減速比の異なるボックスにより速度とトルクを変えることができます。
 
-Il motore con riduttore è l'integrazione di riduttore e motore ed è ampiamente impiegato nell'industria siderurgica e meccanica.
+ギアモーターはギアとモーターの統合体であり、鉄鋼や機械工業で広く応用されています。
 
-Lo shield driver motore per micro:bit è dotato dei chip STC8G e HR8833. Per risparmiare le risorse delle porte I/O, controlliamo la direzione di rotazione e la velocità dei 4 motori DC con riduttore tramite il chip HR8833.
+Micro:bit 用モータードライバーシールドには STC8G と HR8833 チップが搭載されています。IO ポートのリソースを節約するために、HR8833 チップで 4 つの DC ギアモーターの回転方向と速度を制御します。
 
-**Dettagli sui chip:**
+**チップの詳細：**
 
 ![](./media/Python_d7132b53.jpg)
 
-Fronte
+前面
 
 ![](./media/Python_4919ce3b.png)
 
-Retro
+背面
 
 ![](./media/Python_fbfa17f7.png)
 
-Circuito del chip STC8G1K08
+STC8G1K08 チップ回路図
 
 ![](./media/Python_47cdde6b.png)
 
-Circuito driver motori HR8833
+HR8833 モータードライバー回路図
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot CarV2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel vano portapile
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチを ON にする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- micro:bit を USB ケーブルでコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Mu のオフライン版を起動する
 
-3\. **Codice di test1**
+3\. **テストコード1**
 
-Avviare il software Mu e aprire il file “microbit-Motor Driving-1.py” per importare il codice. È anche possibile inserire il codice manualmente nella finestra di modifica.
+Mu を起動し、ファイル “microbit-Motor Driving-1\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力してもかまいません。
 
-(**Nota: tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+（注：すべての英単語と記号は英語で記述する必要があります。）
 
-Fare clic su “Files” per importare il file di libreria “keyes_mecanum_Car.py” nel micro:bit. 
+Click“Files”to import“keyes_mecanum_Car.py”library file to micro:bit . 
 
-Fare clic su “Check” per controllare eventuali errori nel codice. Il programma contiene errori se compaiono sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per caricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_71476377.png)
 
@@ -91,25 +91,25 @@ while True:
     sleep(1000)
 ```
 
-4\. **Risultato del test1**
+4\. **テスト結果1**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare dall'esterno (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードした後、**外部電源（DIPスイッチをONにする）**、および micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Quindi il veicolo avanzerà per 1s, indietreggerà per 1s, sterzerà a sinistra per 1s, a destra per 1s, ruoterà in senso antiorario per 1s, in senso orario per 1s e si fermerà per 1s. La matrice LED mostra anche i relativi simboli.
+すると車は 1 秒前進、1 秒後退、1 秒左旋回、1 秒右旋回、反時計回りに 1 秒、時計回りに 1 秒、そして 1 秒停止します。マトリックス表示にもパターンが表示されます。
 
-5\. **Codice di test2**
+5\. **テストコード2**
 
-Avviare il software Mu e aprire il file “microbit-Motor Driving-2.py” per importare il codice. È anche possibile inserire il codice manualmente nella finestra di modifica.
+Mu を起動し、ファイル “microbit-Motor Driving-2\.py” を開いてコードを読み込みます。編集ウィンドウに自分でコードを入力してもかまいません。
 
-(**Nota: tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+（注：すべての英単語と記号は英語で記述する必要があります。）
 
-Fare clic su “Files” per importare il file di libreria “keyes_mecanum_Car.py” nel micro:bit. 
+Click“Files”to import“keyes_mecanum_Car.py“library file to micro:bit. 
 
-Fare clic su “Check” per controllare eventuali errori nel codice. Il programma contiene errori se compaiono sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per caricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_96230faf.png)
 
@@ -205,16 +205,18 @@ while True:
             run_O()
 ```
 
-6\. **Risultato del test2**
+6\. **テスト結果2**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare dall'esterno (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードした後、**外部電源（DIPスイッチをONにする）**、および micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Quando i pulsanti A e B vengono premuti la prima volta, il micro:bit mostrerà “L”, la traiettoria dell'auto sarà a forma di “L”. Quando vengono premuti di nuovo, sul micro:bit appare “口” e la traiettoria dell'auto sarà a forma di “口”. L'auto ripeterà questo schema.
+最初に A ボタンと B ボタンが押されると、micro:bit は「L」を表示し、車の走行パターンは「L」になります。もう一度押すと micro:bit は「口」を表示し、車の走行パターンは「口」になります。これを繰り返します。
 
-7\.  **Spiegazione del codice**
+7\.  **コード説明**
 
 ![Img](./media/Python_70b4e70f.png)
 
 ![Img](./media/Python_e3250a8a.png)
+
+---

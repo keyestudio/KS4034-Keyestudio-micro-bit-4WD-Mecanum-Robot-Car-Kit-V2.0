@@ -1,4 +1,4 @@
-## Risorse
+## リソース
 
 1\. BBC microbit MicroPython：[https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html](https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html)
 
@@ -6,20 +6,20 @@
 
 3\. math library：[https://docs.openmv.io/library/math.html](https://docs.openmv.io/library/math.html)
 
-## Problemi comuni
+## よくある問題
 
-1\.  **L'auto non risponde**
+1\.  **車が反応しない**
 
-Controllare che le batterie siano sufficienti
+電池が十分かどうかを確認してください
 
-Controllare che i cablaggi siano corretti
+配線が正しいかどうかを確認してください
 
-2\.  **Il computer non riconosce le porte USB**
+2\.  **コンピュータがUSBポートを認識しない**
 
-Assicurarsi che il driver microbit sia installato
+microbitのドライバがインストールされているか確認してください
 
-Controllare che il cavo USB sia in buone condizioni.
+USBケーブルが正常な状態か確認してください。
 
-3\.  **Il codice non si carica e la matrice di punti mostra simboli**
+3\.  **コードを書き込めず、ドットマトリクスに表示される**
 
-Verificare che il file della libreria keyes_mecanum_Car_V2.py sia importato
+ライブラリファイル keyes_mecanum_Car_V2.py がインポートされているか確認してください

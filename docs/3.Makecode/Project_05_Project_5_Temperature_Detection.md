@@ -1,47 +1,47 @@
-## Progetto 5: Rilevamento della temperatura
+## プロジェクト5：温度検出
 
 ![](./media/Makecode_22c6434f.jpg)
 
-[Clicca per scaricare il codice 1 per questa lezione](./Code/Temperature-Detection.hex)
+[このレッスンのコード1をダウンロードするにはクリック](./Code/Temperature-Detection.hex)
 
-[Clicca per scaricare il codice 2 per questa lezione](./Code/Temperature-Detection2.hex)
+[このレッスンのコード2をダウンロードするにはクリック](./Code/Temperature-Detection2.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明：
 
-La Micro:bit main board V2 non è dotata di un sensore di temperatura dedicato, ma utilizza il sensore di temperatura integrato nel chip NFR52833 per la rilevazione. Pertanto, la temperatura rilevata è più vicina alla temperatura del chip e potrebbe discostarsi dalla temperatura ambiente.
+Micro:bit main board V2 は温度センサーを搭載していませんが、NFR52833 チップに内蔵された温度センサーを使用して温度を検出します。したがって、検出される温度はチップの温度に近く、周囲温度とは差が生じる場合があります。
 
-### (2)Componenti necessari:
+### (2)必要なコンポーネント：
 
 Micro:bit main board V2
 
-Cavo Micro USB
+Micro USB ケーブル
 
-### (3)Codice di test 1 :
+### (3)テストコード1：
 
 ![](./media/Makecode_e6674fe9.gif)
 
-### (4)Risultati del test 1:
+### (4)テスト結果1：
 
-Dopo aver caricato il codice di test 1 sulla Micro:bit main board V2, alimentato la scheda tramite il cavo USB e fatto clic su "Show console Device", i dati della temperatura vengono visualizzati nella pagina del monitor seriale come mostrato di seguito.
+テストコード1を Micro:bit main board V2 にアップロードし、USBケーブルでボードに電源を供給し、"Show console Device" をクリックすると、下図のようにシリアルモニターページに温度データが表示されます。
 
 ![](./media/Makecode_898eded8.gif)
 
-Se si utilizza Windows 7 o 8 invece di Windows 10, Google Chrome non sarà in grado di rilevare i dispositivi. È necessario utilizzare il software CoolTerm come monitor seriale per leggere i dati. Avviare CoolTerm, cliccare su Options, selezionare SerialPort, impostare la porta COM e impostare la velocità in baud su 115200 (dai test, la velocità di comunicazione USB SerialPort sulla Micro:bit main board V2 è 115200), cliccare OK e poi Connect. Il monitor seriale CoolTerm mostra la variazione della temperatura nell'ambiente corrente, come nelle figure seguenti:
+Windows 10 ではなく Windows 7 または 8 を使用している場合、Google Chrome はデバイスをマッチングできません。データを読み取るには CoolTerm シリアルモニターソフトを使用する必要があります。CoolTerm を開き、Options をクリックし、SerialPort を選択して COM ポートを設定し、ボーレートを 115200 に設定します（テストによれば、Micro:bit main board V2 の USB SerialPort 通信のボーレートは 115200 です）。OK をクリックして Connect を押すと、CoolTerm シリアルモニターに現在の環境の温度変化が表示されます。以下の図を参照してください：
 
 ![](./media/Makecode_268159a1.gif)
 
-### (5)Codice di test 2 :
+### (5)テストコード2：
 
-Collegare il computer alla scheda micro:bit tramite cavo Micro USB e programmare nell'editor MakeCode,
+Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラムを作成します、
 
 ![](./media/Makecode_4057bdd7.gif)
 
-Programma completo :
+完全なプログラム：
 
 ![](./media/Makecode_ec457959.png)
 
-### (6)Risultati del test 2:
+### (6)テスト結果2：
 
-Dopo aver caricato il codice 2, quando la temperatura ambiente è inferiore a 35℃, la matrice di LED 5x5 mostra ![](./media/Makecode_350d26c6.png). Quando la temperatura è pari o superiore a 35℃ compare il motivo ![](./media/Makecode_ef8d7c88.png).
+コード2をアップロードした後、周囲温度が35℃未満の場合、5×5 LED ドットマトリクスは ![](./media/Makecode_350d26c6.png) を表示します。温度が35℃以上の場合は、パターン ![](./media/Makecode_ef8d7c88.png) が表示されます。
 
 ---

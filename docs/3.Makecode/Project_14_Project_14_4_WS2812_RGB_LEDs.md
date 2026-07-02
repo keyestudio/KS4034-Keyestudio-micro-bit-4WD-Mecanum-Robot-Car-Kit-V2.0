@@ -1,34 +1,34 @@
-## Progetto 14：4 WS2812 RGB LEDs
+## プロジェクト 14：4 WS2812 RGB LEDs
 
 ![](./media/Makecode_eecf79fe.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Il driver shield controlla 4 LED RGB WS2812, è compatibile con la scheda micro:bit e viene controllato tramite P7. In questa lezione faremo in modo che i LED RGB mostrino colori diversi tramite P7. In questa lezione sono forniti 3 set di codice di test per far visualizzare ai 4 LED WS2812 RGB diversi effetti.
+このドライバシールドは4個のWS2812 RGB LEDに対応しており、micro:bitボードと互換性があり、P7で制御されます。本レッスンでは、P7でRGB LEDが異なる色を表示するようにします。本レッスンでは、4つのWS2812 RGB LEDにさまざまなエフェクトを表示させるためのテストコードを3セット用意しています。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio   4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio   4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- バッテリーホルダーに電池を入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチをONにする
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをコンピュータに接続する
 
-- Aprire la versione Web di Makecode.
+- Web版のMakecodeを開く。
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_d3ad748c.png)
 
-Fare clic su "JavaScript" per passare al corrispondente codice JavaScript:
+「JavaScript」をクリックして、対応するJavaScriptコードに切り替えます：
 
 ![](./media/Makecode_ce3ad2e9.png)
 
-4\.  **Risultato Test 1**
+4\.  **テスト結果1**
 
-Scaricare il codice 1 nel micro:bit e impostare POWER su ON. Tutti e quattro i LED WS2812RGB si accendono ciclicamente e ognuno mostra un colore diverso a turno.
+コード1をmicro:bitにダウンロードし、POWERをONにします。4つのWS2812RGB LEDが順番に異なる色で周期的に点灯します。
 
 5\.  **Test Code2**
 
@@ -38,24 +38,24 @@ Scaricare il codice 1 nel micro:bit e impostare POWER su ON. Tutti e quattro i L
 
 ![](./media/Makecode_f06b9905.png)
 
-Fare clic su "JavaScript" per passare al corrispondente codice JavaScript:
+「JavaScript」をクリックして、対応するJavaScriptコードに切り替えます：
 
 ![](./media/Makecode_06ef2111.png)
 
 ![](./media/Makecode_cc2c2fb3.png)
 
-6\.  **Risultato Test 2**
+6\.  **テスト結果2**
 
-Scaricare il codice 2 nel micro:bit. I LED WS2812RGB mostrano un effetto di luce scorrevole.
+コード2をmicro:bitにダウンロードすると、WS2812RGB LEDが流れるようなライト表示をします。
 
 7\.  **Test Code3**
 
 ![](./media/Makecode_d3e5aa0a.png)
 
-Fare clic su "JavaScript" per passare al corrispondente codice JavaScript:
+「JavaScript」をクリックして、対応するJavaScriptコードに切り替えます：
 
 ![](./media/Makecode_212ce3c8.png)
 
-8\.  **Risultato Test 3**
+8\.  **テスト結果3**
 
-Scaricare il codice 3 nel micro:bit. Ogni LED WS2812RGB mostra una colore casuale, uno dopo l'altro.
+コード3をmicro:bitにダウンロードすると、各WS2812RGBライトが順番にランダムな色を表示します。

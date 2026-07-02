@@ -1,13 +1,13 @@
-## Introduzione al prodotto
+## 製品紹介
 
 ![](./media/Introduction_3c983f62.jpg)
 
-Ti sei mai chiesto di imparare a programmare o di avere il tuo robot programmabile? Oggigiorno la programmazione è rivolta anche a fasce d'età più giovani, e diventerà una tendenza per tutti grazie alla diffusione di piattaforme di programmazione grafica semplici, da micro:bit ad Arduino e Raspberry Pi. Forse non ne hai mai sentito parlare prima. Tuttavia, con l'aiuto di questo prodotto e del tutorial, puoi facilmente assemblare un'auto programmabile multifunzione e sperimentare il divertimento di essere un maker.
+プログラミングを学んだり、自分のプログラム可能なロボットを持ちたいと思ったことはありませんか？近年、プログラミングはより低年齢層にも広がっており、micro:bit や Arduino、Raspberry Pi といったシンプルなグラフィカルプログラミングプラットフォームの普及により、誰にとってもトレンドになりつつあります。これらについてこれまで聞いたことがないかもしれません。しかし、本製品とチュートリアルを利用すれば、多機能なプログラミングカーを簡単に組み立て、メイカーとしての楽しさを体験できます。
 
-Micro:bit è un microcontrollore altamente integrato, con funzioni potenti e dimensioni ridotte. È molto adatto all'applicazione nell'educazione STEAM per la sua capacità di realizzare robot, dispositivi indossabili e giochi elettronici interattivi tramite la combinazione di programmazione a codice e programmazione grafica.
+Micro:bit は高い集積度を持つマイクロコントローラで、機能が豊富で小型です。コードプログラミングとグラフィカルプログラミングの組み合わせによってロボット、ウェアラブルデバイス、電子インタラクティブゲームを作成できるため、STEAM 教育への応用に非常に適しています。
 
-Questo Keyestudio 4WD Mecanum Robot Car V2.0 è un'auto intelligente fai-da-te dedicata a micro:bit. L'auto intelligente è composta da un telaio con funzioni estese, una piastra base PCB con driver motore e sensori integrati, 4 motori DC con riduzione, ruote Mecanum, vari moduli e sensori oltre a pannelli in acrilico. Pertanto, puoi facilmente assemblare da solo una cool smart car 4WD con ruote Mecanum, quindi utilizzare la piattaforma di programmazione grafica online di Microsoft, Make Code, per programmare la scheda di controllo micro:bit e controllare l'auto. Nel processo, non solo potrai sperimentare il piacere della creazione, ma anche migliorare le abilità pratiche e apprendere competenze di programmazione.
+この Keyestudio 4WD Mecanum Robot Car V2.0 は micro:bit 専用のスマート DIY カーです。本スマートカーは、拡張機能を備えた車体、モータードライバとセンサーが統合された PCB ベースプレート、4 台の減速 DC モータ、Mecanum ホイール、各種モジュールとセンサー、およびアクリル板で構成されています。したがって、クールな Mecanum ホイール式 4WD スマートカーを自分で簡単に組み立てられ、その後 Microsoft のオンライングラフィカルプログラミングプラットフォーム Make Code を使用して micro:bit コントロールボードをプログラムし、車体を制御できます。制作過程で、創作の楽しさを味わえるだけでなく、実践力を高め、プログラミングスキルも学べます。
 
-MakeCode for micro:bit è l'ambiente di programmazione grafica più utilizzato sul sito ufficiale di micro:bit. Si basa sull'ambiente di programmazione grafica sviluppato dal progetto open source MakeCode di Microsoft. Questa programmazione grafica può anche essere convertita in linguaggi di codice, Python e JavaScript, rendendo l'apprendimento della programmazione più accessibile. Allo stesso tempo, la programmazione MakeCode può essere simulata o utilizzata per programmare componenti elettronici reali.
+MakeCode for micro:bit は、micro:bit 公式サイトで最も広く使用されているグラフィカルプログラミング環境です。これは Microsoft のオープンソースプロジェクト MakeCode により開発されたグラフィカルプログラミング環境に基づいています。このグラフィカルプログラミングは Python や JavaScript のコード言語に変換することもでき、プログラミング学習の敷居を下げます。同時に、MakeCode によるプログラミングはシミュレーション可能であり、実際の電子部品に対してプログラムを適用することもできます。
 
-Per vostra comodità, il codice sorgente è stato fornito in ogni progetto, così come i passaggi per la programmazione del codice e la spiegazione dettagliata del codice. Speriamo che questo vi aiuti a comprenderli meglio.
+便宜上、各プロジェクトにはソースコードが提供されており、コードのプログラミング手順およびコードの詳細な説明も含まれています。これにより、より深く理解できることを願っています。

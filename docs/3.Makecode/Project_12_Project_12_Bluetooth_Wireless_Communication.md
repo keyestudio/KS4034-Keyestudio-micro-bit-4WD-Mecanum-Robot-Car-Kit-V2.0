@@ -1,66 +1,66 @@
-## Progetto 12: Comunicazione wireless Bluetooth
+## プロジェクト12：Bluetooth無線通信
 
 ![](./media/Makecode_041ff91a.jpg)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明:
 
-Nota: Questa lezione si concentra su come caricare il codice tramite Bluetooth usando un'app, quindi non viene fornito codice. Si prega di seguire i passaggi nell'animazione gif.
+注意：このレッスンはアプリを使用してBluetooth経由でコードをアップロードする方法の説明に重点を置いているため、コードは提供していません。アニメーションGIFの手順に従ってください。
 
-La scheda principale Micro: Bit main board V2 è dotata di un processore nRF52833 (con un dispositivo BLE (Bluetooth Low Energy) integrato, Bluetooth 5.1) e di un'antenna 2,4 GHz per la comunicazione wireless Bluetooth e la comunicazione wireless a 2,4 GHz. Grazie a questi elementi, la scheda è in grado di comunicare con vari dispositivi Bluetooth, inclusi smartphone e tablet.
+Micro: Bit main board V2 には nRF52833 プロセッサ（組み込みの BLE (Bluetooth Low Energy) デバイス、Bluetooth 5.1）と Bluetooth 無線通信および 2.4GHz 無線通信用の 2.4GHz アンテナが搭載されています。これにより、ボードはスマートフォンやタブレットなど、さまざまな Bluetooth デバイスと通信することができます。
 
-In questo progetto ci concentriamo principalmente sulla funzione di comunicazione wireless Bluetooth di questa scheda principale. Collegata tramite Bluetooth, può trasmettere codice o segnali. A tal fine, dobbiamo collegare un dispositivo Apple (un iPhone o un iPad) alla scheda.
+このプロジェクトでは、主にこのメインボードの Bluetooth 無線通信機能に注目します。Bluetooth に接続することでコードや信号を送信できます。そのために、Apple デバイス（電話または iPad）をボードに接続する必要があります。
 
-Poiché la configurazione dei telefoni Android per ottenere la trasmissione wireless è simile a quella dei dispositivi Apple, non è necessario illustrarla di nuovo.
+Android 携帯での無線送信の設定は Apple デバイスの場合と類似しているため、再度説明する必要はありません。
 
-### (2) Preparazione
+### (2) 準備
 
-Collegare Micro:bit main board V2 al computer tramite il cavo Micro USB.
+Micro USB ケーブルを使って Micro:bit main board V2 をコンピュータに接続します。
 
-Un dispositivo Apple (un telefono o un iPad) o un dispositivo Android;
+Apple デバイス（電話または iPad）または Android デバイス；
 
-### (3) Installare Micro:bit:
+### (3) Micro:bit のインストール:
 
-Per Android
+For Android
 
 ![](./media/Makecode_0cf9abf0.gif)
 
-Per ios
+For ios
 
 ![](./media/Makecode_5937459b.gif)
 
-(4)Codice di prova:
+(4)テストコード：
 
-Successivamente useremo i nostri telefoni per scrivere codice e connetterci tramite Bluetooth (Nota: il processo è identico per dispositivi Android e iOS; questa dimostrazione utilizza un telefono Android).
+次に、携帯電話を使ってコードを書き、Bluetooth 経由で接続します（注：Android と iOS の手順は同じです；このデモでは Android 携帯を使用しています）。
 
-1、Aprire il software e connettersi al Bluetooth.
+1、ソフトウェアを開き、Bluetooth に接続します。
 
 ![](./media/Makecode_dcb2416a.gif)
 
-2、Premere in sequenza il pulsante A del Microbit, il pulsante B e il pulsante di reset sul retro. La scheda principale mostrerà quindi un'icona.
+2、Microbit のボタン A、ボタン B、背面のリセットボタンを順に押します。するとメインボードにアイコンが表示されます。
 
 ![](./media/Makecode_6985c2b1.gif)
 
-3、Inserire il modello mostrato al punto due nell'interfaccia del telefono.
+3、ステップ2で表示されたパターンを携帯の画面に入力します。
 
 ![](./media/Makecode_9095fb35.gif)
 
-Scrivere il codice e caricarlo
+コードの記述とアップロード
 
-1、Entrare nell'interfaccia di programmazione del codice e scrivere un codice.
+1、コードのプログラミング画面に入り、コードを書きます。
 
 ![](./media/Makecode_b7c8c1ca.gif)
 
-2、Premere in sequenza il pulsante A, il pulsante B e il pulsante di reset. (Nota: questa procedura deve essere ripetuta ogni volta che il codice viene caricato tramite l'app.)
+2、ボタン A、ボタン B、リセットボタンを順に押します。（注：アプリ経由でコードをアップロードするたびにこの手順を繰り返す必要があります。）
 
  ![](./media/Makecode_86ab2b39.gif)
 
-3、Dopo aver confermato che l'icona Microbit corrisponde a quella visualizzata sul telefono, fare semplicemente clic su “Next”.
+3、Microbit のアイコンが携帯に表示されているものと一致していることを確認したら、「Next」をクリックします。
 
 ![](./media/Makecode_f3c17f45.gif)
 
-Infine, è possibile vedere la scheda Microbit che mostra il modello del codice.
+最後に、Microbit ボードにコードのパターンが表示されるのが確認できます。
 
-Qui abbiamo completato il processo di caricamento del codice sul telefono. È importante notare:
+これで、コードを携帯にアップロードする手順は完了です。重要な点は次のとおりです：
 
-1. Per connettere il telefono alla scheda Microbit, premere in sequenza i pulsanti A, B e Reset. Il display a matrice a punti visualizzerà quindi un modello, che deve essere inserito nel telefono.
-2. La scheda Microbit può essere alimentata tramite un cavo USB o fornendo 3V all'ingresso di alimentazione della scheda tramite un battery pack. Nota: la tensione non deve superare i 3V, poiché superare questo limite danneggerà la scheda.
+1. 携帯を Microbit ボードに接続するには、A、B、Reset ボタンを順に押します。点マトリクスディスプレイにパターンが表示されるので、それを携帯に入力してください。
+2. Microbit ボードは USB ケーブルで給電するか、バッテリーパックを通じてボードの電源入力に 3V を供給して給電できます。注意：電圧は 3V を超えてはなりません。超えるとボードが破損します。

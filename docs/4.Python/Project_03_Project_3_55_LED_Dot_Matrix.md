@@ -1,25 +1,25 @@
-### Progetto 3：Matrice LED 5×5
+### プロジェクト3：5×5 LED ドットマトリクス
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La matrice a punti è molto comune nella vita quotidiana e trova ampia applicazione in schermi pubblicitari LED, display dei piani degli ascensori, annunci alle fermate degli autobus e così via.
-La matrice LED della scheda principale Micro: Bit contiene 25 diodi. In precedenza siamo riusciti a controllare un determinato LED tramite la sua posizione. Basandoci sulla stessa teoria, possiamo accendere più LED contemporaneamente per mostrare motivi, cifre e caratteri.
+ドットマトリクスは日常生活で非常に一般的で、LED 広告ディスプレイ、エレベーターのフロア表示、バス停の案内などで広く使われています。
+Micro: Bit メインボードの LED ドットマトリクスは 25 個のダイオードを含みます。以前に、位置に基づいて特定の LED を制御することに成功しました。同じ理論に基づき、複数の LED を同時に点灯させてパターン、数字、文字を表示できます。
 
-Inoltre, possiamo cliccare su “show icon” per scegliere il motivo che vogliamo visualizzare. Infine, possiamo anche progettare i nostri pattern.
+さらに、「show icon」をクリックして表示したいパターンを選ぶこともできます。最後に、自分でパターンを設計することも可能です。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
+A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
 
-B. Aprire la versione offline di Mu.
+B. オフライン版 Mu を開きます。
 
-3\.  **Codice di test1**
+3\.  **テストコード1**
 
-È possibile aprire il file “5×5 LED Dot Matrix-1\.py” per importare il codice. È inoltre possibile inserire il codice direttamente nella finestra di modifica.
+「5×5 LED Dot Matrix-1\.py」ファイルを開いてコードをインポートできます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注意：すべての単語と記号は英語で記述してください。**)
 
 ![](./media/Python_00f15f0a.png)
 
@@ -31,27 +31,27 @@ val = Image("00900:""00900:""90909:""09990:""00900")
 display.show(val)
 ```
 
-Fare clic su “Check” per controllare gli errori nel codice. Il programma risulta errato se vengono mostrati sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムは誤りと判断されます。 
 
 ![](./media/Python_a1197f5e.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_1fd78e31.png)
 
-4\.  **Risultato del test1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato con successo il codice sulla scheda, **alimentare tramite il cavo micro USB o un'alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sulla scheda.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電してください（DIP スイッチを ON にする）**。その後、ボード上のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Vedremo che la matrice 5×5 inizia a mostrare una freccia verso il basso ![](./media/Python_26c7d8c0.png).
+5×5 のドットマトリクスに下向きの矢印が表示されることが確認できます ![](./media/Python_26c7d8c0.png)。
 
-5\.  **Codice di test2**
+5\.  **テストコード2**
 
-È possibile aprire il file “5×5 LED Dot Matrix-2\.py” per importare il codice. È inoltre possibile inserire il codice direttamente nella finestra di modifica.
+「5×5 LED Dot Matrix-2\.py」ファイルを開いてコードをインポートできます。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注意：すべての単語と記号は英語で記述してください。**)
 
 ![](./media/Python_dc6eea45.png)
 
@@ -85,32 +85,32 @@ sleep(500)
 display.clear()
 ```
 
-Fare clic su “Check” per controllare eventuali errori nel codice. Il programma risulta errato se vengono mostrati sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムは誤りと判断されます。 
 
 ![](./media/Python_14bb490a.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し「Flash」をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_a05c33d2.png)
 
-6\.  **Risultato del test2**
+6\.  **テスト結果2**
 
-Dopo aver scaricato con successo il codice sulla scheda, **alimentare tramite il cavo micro USB o un'alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sulla scheda.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で給電してください（DIP スイッチを ON にする）**。その後、ボード上のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Vedremo che la matrice 5×5 inizia a mostrare i numeri 1, 2, 3, 4 e 5 e quindi mostra alternativamente una freccia verso il basso ![](./media/Python_26c7d8c0.png), “Hello”, un motivo a forma di cuore ![](./media/Python_9b18b2b8.png), una freccia verso nord-est ![](./media/Python_364f2e35.png), poi verso sud-est
-![](./media/Python_fb3ba009.png), poi verso sud-ovest ![](./media/Python_7ec21961.png) e infine verso nord-ovest ![](./media/Python_ced0bb41.png).
+5×5 のドットマトリクスが順に数字 1、2、3、4、5 を表示し、その後下向きの矢印 ![](./media/Python_26c7d8c0.png)、"Hello"、ハートのパターン ![](./media/Python_9b18b2b8.png)、北東を指す矢印 ![](./media/Python_364f2e35.png)、次に南東
+![](./media/Python_fb3ba009.png)、次に南西 ![](./media/Python_7ec21961.png)、最後に北西 ![](./media/Python_ced0bb41.png) を交互に表示することが確認できます。
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_ef42956d.png)
 
 
-6.  **Riferimento**
+6.  **参照**
 
 display.scroll() ：
 
-Il display scorre per mostrare i valori; se si tratta di un intero o di un float, useremo str() per convertirlo in stringhe di caratteri.
+表示がスクロールして値を表示します。もし値が整数（int）や浮動小数点数（float）の場合は、str() を使って文字列に変換します。
 
-Per maggiori dettagli, fare riferimento al link: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)
+詳しくは次のリンクを参照してください: [https://microbit-micropython.readthedocs.io/en/latest/utime.html](https://microbit-micropython.readthedocs.io/en/latest/utime.html)

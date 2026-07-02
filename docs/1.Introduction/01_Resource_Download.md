@@ -1,6 +1,6 @@
-## Download delle risorse
+## リソースのダウンロード
 
-<span style="background:#CC0000;">Per aiutarti a ottenere rapidamente i codici correlati, le librerie e altri file di supporto per questo prodotto, fai clic sui link sottostanti per scaricarli:</span>
+<span style="background:#CC0000;">この製品に関連するコード、ライブラリ、およびその他のサポートファイルを迅速に取得できるよう、以下のリンクをクリックしてダウンロードしてください：</span>
 
-- [Download del codice e delle librerie MakeCode](./Code.7z)
-- [Download del codice e delle librerie Python](./PythonCode.7z)
+- [MakeCode のコードとライブラリのダウンロード](./Code.7z)
+- [Python のコードとライブラリのダウンロード](./PythonCode.7z)

@@ -1,32 +1,32 @@
-### Progetto 14: 4 LED RGB WS2812
+### プロジェクト14: 4個のWS2812 RGB LED
 
 ![](./media/Python_eecf79fe.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-La shield driver gestisce 4 pezzi di LED RGB WS2812, è compatibile con la scheda micro:bit e viene controllata da P7. In questa lezione faremo visualizzare alle LED RGB colori diversi tramite P7. In questa lezione sono forniti 3 set di codice di prova per far visualizzare ai 4 LED WS2812 RGB effetti differenti.
+このドライバシールドは4個のWS2812 RGB LEDと連携し、micro:bitボードに対応しP7で制御されます。本レッスンでは、P7を使ってRGB LEDに異なる色を表示させます。本レッスンでは、4個のWS2812 RGB LEDにさまざまなエフェクトを表示させるためのテストコードを3セット提供します。
 
 ![Img](./media/Python_0be70eda.png)
 
-2\.  **Preparazione**
+2\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bitボードをkeyestudio 4WD Mecanum Robot Car V2.0のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Ruotare l'interruttore di alimentazione sulla posizione ON
+- 電源スイッチをON側に切り替える
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- micro:bitをUSBケーブルでコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- Muのオフライン版を開く。
 
-3\.  **Test Code1**
+3\.  **テストコード1**
 
-Avviare il software Mu e aprire il file“4 WS2812 RGB LEDs-1\.py”per importare il codice\ È inoltre possibile inserire il codice manualmente nella finestra di modifica.
+Muソフトを起動し、ファイル“4 WS2812 RGB LEDs-1\.py”を開いてコードをインポートします\ または編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese.**)
+(**注意: すべての英単語と記号は英語で記述してください。**)
 
-Cliccare su“Check”per verificare errori nel codice. Il programma è considerato errato se sono mostrati sottolineature e cursori. 
+“Check”をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムに誤りがあります。 
 
 ![](./media/Python_5b5266e2.png)
 
@@ -72,27 +72,27 @@ while True:
     sleep(1000)
 ```
 
-Se il codice è corretto, collegare il micro:bit al computer e cliccare su“Flash”per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続し“Flash”をクリックしてコードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_56a9ab63.png)
 
-4\.  **Risultato del Test1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato con successo il codice sulla scheda, **alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードした後、**外部電源を入れる（DIPスイッチをONにする）**、そしてmicro:bitのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Le 4 WS2812RGB LED si accendono a ciclo mostrando ciascuna un colore diverso.
+4個のWS2812RGB LEDが順番に周期的に異なる色で点灯します。
 
-5\.  **Test Code2**
+5\.  **テストコード2**
 
-Avviare il software Mu e aprire il file“4 WS2812 RGB LEDs-2\.py”per importare il codice. È inoltre possibile inserire il codice manualmente nella finestra di modifica.
+Muソフトを起動し、ファイル“4 WS2812 RGB LEDs-2\.py”を開いてコードをインポートします。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+(**注意: すべての英単語と記号は英語で記述してください**.)
 
-Cliccare su“Check”per verificare errori nel codice. Il programma è considerato errato se sono mostrati sottolineature e cursori. 
+“Check”をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムに誤りがあります。 
 
-Se il codice è corretto, collegare il micro:bit al computer e cliccare su“Flash”per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続し“Flash”をクリックしてコードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_8cb1dd7c.png)
 
@@ -148,23 +148,23 @@ while True:
         sleep(100)
 ```
 
-6\.  **Risultato del Test2**
+6\.  **テスト結果2**
 
-Dopo aver scaricato con successo il codice sulla scheda, **alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードした後、**外部電源を入れる（DIPスイッチをONにする）**、そしてmicro:bitのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Le WS2812RGB LED mostrano un effetto di luce scorrente.
+WS2812RGB LEDは流れる光のような表示をします。
 
-7\.  **Test Code3**
+7\.  **テストコード3**
 
-Avviare il software Mu e aprire il file“4 WS2812 RGB LEDs-3\.py”per importare il codice. È inoltre possibile inserire il codice manualmente nella finestra di modifica.
+Muソフトを起動し、ファイル“4 WS2812 RGB LEDs-3\.py”を開いてコードをインポートします。編集ウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese.**)
+(**注意: すべての英単語と記号は英語で記述してください。**)
 
-Cliccare su“Check”per verificare errori nel codice. Il programma è considerato errato se sono mostrati sottolineature e cursori. 
+“Check”をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合、プログラムに誤りがあります。 
 
-Se il codice è corretto, collegare il micro:bit al computer e cliccare su“Flash”per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bitをコンピュータに接続し“Flash”をクリックしてコードをmicro:bitボードに書き込みます。
 
 ![](./media/Python_b248f1c5.png)
 
@@ -187,15 +187,15 @@ while True:
         sleep(500)
 ```
 
-8\.  **Risultato del Test3**
+8\.  **テスト結果3**
 
-Dopo aver scaricato con successo il codice sulla scheda, **alimentazione esterna (portare l'interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードした後、**外部電源を入れる（DIPスイッチをONにする）**、そしてmicro:bitのリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Ogni LED WS2812RGB mostra una colore casuale, uno dopo l'altro.
+各WS2812RGBライトが順番にランダムな色を表示します。
 
-5\.  **Spiegazione del codice**
+5\.  **コードの説明**
 
 ![Img](./media/Python_d1e3977b.png)
 

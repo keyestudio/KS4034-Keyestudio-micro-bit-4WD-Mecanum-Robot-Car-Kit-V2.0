@@ -1,13 +1,13 @@
-## Problemi comuni
+## よくある問題
 
-1\.  **L'auto non reagisce**
+1\.  **車が反応しない**
 
-Controllare se le batterie sono sufficientemente cariche
+バッテリーの残量が十分か確認してください
 
-Controllare se il cablaggio è corretto
+配線が正しいか確認してください
 
-2\.  **I computer non riescono a riconoscere le porte USB**
+2\.  **コンピュータがUSBポートを認識しない**
 
-Verificare che il microbit driver sia installato
+microbit driverがインストールされているか確認してください
 
-Controllare se il cavo USB è in buone condizioni
+USBケーブルが良好な状態か確認してください

@@ -1,26 +1,26 @@
-### Progetto 15：Servo
+### プロジェクト 15：Servo
 
 ![](./media/Python_c4b5e57b.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Le auto smart fai-da-te di solito includono la funzione di evitamento automatico degli ostacoli. Nel processo di realizzazione, è necessario un servo per controllare il modulo ad ultrasuoni che ruota a sinistra e a destra, e poi misurare la distanza tra l'auto e l'ostacolo, in modo da controllare l'auto per evitare l'ostacolo.
+DIYスマートカーには通常、自動障害物回避機能が含まれています。作成プロセスでは、超音波モジュールを左右に回転させるためのサーボが必要で、その後、車と障害物との距離を検出して車を障害物から回避させます。
 
-Se si utilizzano altri microcontrollori per controllare la rotazione del servo, bisogna impostare una certa frequenza e larghezza dell'impulso per controllare l'angolo del servo. Ma se si utilizza la scheda principale micro:bit per controllare l'angolo del servo, è sufficiente impostare l'angolo di controllo nell'ambiente di sviluppo: l'impulso corrispondente verrà generato automaticamente per controllare la rotazione del servo. In questo progetto imparerai a controllare il servo per farlo oscillare fra 0° e 90°.
+他のマイコンでサーボの回転を制御する場合は、サーボ角を制御するために一定の周波数とパルス幅を設定する必要があります。しかし micro:bit メインボードを使用してサーボ角を制御する場合、開発環境で制御角を設定するだけで、対応するパルスが自動的に設定されてサーボの回転が制御されます。本プロジェクトでは、サーボを 0° から 90° の間で往復させる方法を学びます。
 
-Il servomotore è un attuatore rotativo a controllo di posizione, composto principalmente da chassis, circuito stampato, motore senza nucleo, ingranaggi e sensore di posizione. Il suo principio di funzionamento è che il servo riceve il segnale inviato dal MCU o dal ricevitore, produce un segnale di riferimento con periodo di 20 ms e larghezza di 1,5 ms, poi confronta la tensione continua acquisita con la tensione del potenziometro e ottiene la differenza di tensione in uscita.
+サーボモーターは位置制御の回転アクチュエータで、主にハウジング、回路基板、コアレスモーター、ギア、位置センサーで構成されます。動作原理は、サーボが MCU または受信機から送られる信号を受け取り、周期 20ms 幅 1.5ms の基準信号を生成し、取得した直流バイアス電圧をポテンショメータの電圧と比較して差分電圧を出力することです。
 
-Per il servo utilizzato in questo progetto, il filo marrone è la massa, il rosso è il positivo e l'arancione è il filo del segnale.
+本プロジェクトで使用するサーボでは、茶色がGND、赤がVCC、オレンジが信号線です。
 
 ![](./media/Python_69be9581.png)
 
-2\.  **Informazioni sul Servo**
+2\.  **サーボの情報**
 
-L'angolo di rotazione del servomotore è controllato regolando il duty cycle del segnale PWM (Pulse-Width Modulation). Il ciclo standard del segnale PWM è di 20 ms (50 Hz). Teoricamente la larghezza è compresa tra 1 ms e 2 ms, ma in realtà è tra 0,5 ms e 2,5 ms. La larghezza corrisponde all'angolo di rotazione da 0° a 180°. Nota che per motori di marche diverse lo stesso segnale può produrre angoli di rotazione differenti.
+サーボモーターの回転角は、PWM（パルス幅変調）信号のデューティ比を調整することで制御されます。PWM信号の標準周期は 20ms（50Hz）です。理論的には幅は 1ms〜2ms の範囲ですが、実際には 0.5ms〜2.5ms の範囲です。幅は 0° から 180° までの回転角に対応します。ただし、ブランドにより同じ信号でも回転角が異なる場合がある点に注意してください。
 
 ![](./media/Python_0982cb7b.png)
 
-Dopo misurazioni, l'intervallo di impulso del servo è 0,65 ms ~ 2,5 ms. Per un servo a 180 gradi, la relazione di controllo corrispondente è la seguente:
+測定の結果、本サーボのパルス範囲は 0.65ms〜2.5ms でした。180度サーボに対する対応関係は以下の通りです。
 
 
 |Time on High Level|Angle of the Servo|Reference Signal Cycle Time（20ms）|
@@ -30,53 +30,53 @@ Dopo misurazioni, l'intervallo di impulso del servo è 0,65 ms ~ 2,5 ms. Per un 
 |2.5ms|180degrees|2.5ms high level+17.5ms low level|
 
 
-3\.  **Parametri**
+3\.  **仕様**
 
-- Tensione di funzionamento: DC 4.8V ~ 6V
+- 動作電圧: DC 4.8V ~ 6V
 
-- Intervallo di angolo operativo: circa 180 ° (a 500 → 2500 μsec)
+- 動作角度範囲: 約 180 ° (500 → 2500 μsec 時)
 
-- Dimensioni: 22.9\*12.2\*30mm
+- 寸法: 22.9\*12.2\*30mm
 
-- Intervallo di larghezza dell'impulso: 500 → 2500 μsec
+- パルス幅範囲: 500 → 2500 μsec
 
-- Velocità a vuoto: 0.12 ± 0.01 sec / 60 (DC 4.8V), 0.1 ± 0.01 sec / 60 (DC 6V)
+- 無負荷速度: 0.12 ± 0.01 秒 / 60 (DC 4.8V), 0.1 ± 0.01 秒 / 60 (DC 6V)
 
-- Corrente a vuoto: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
+- 無負荷電流: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
 
-- Coppia di bloccaggio: 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
+- 停止トルク: 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
 
-- Corrente di stop: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- ストール電流: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- Corrente di standby: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
+- 待機電流: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
 
-- Peso: 9±1g (senza braccio del servo)
+- 重量: 9±1g (サーボホーン除く)
 
-- Temperatura di funzionamento: -30℃~60℃
+- 動作温度: -30℃~60℃
 
-**Si noti di non usare l'alimentazione del computer, poiché se la richiesta di corrente è superiore a 500 mA il servo potrebbe bruciarsi. Si consiglia di utilizzare una batteria esterna per l'alimentazione.**
+**注意: コンピュータの電源を使用しないでください。電流要求が 500mA を超えるとサーボが焼損する恐れがあります。外部バッテリーでの給電を推奨します。**
 
-4\.  **Preparazione**
+4\.  **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio 4WD Mecanum Robot Car V2.0
+- micro:bit ボードを keyestudio 4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel portabatterie
+- 電池を電池ホルダーに入れる
 
-- Portare l'interruttore di alimentazione su ON
+- 電源スイッチを ON にする
 
-- Collegare il micro:bit al computer tramite cavo USB
+- USB ケーブルで micro:bit をコンピュータに接続する
 
-- Aprire la versione offline di Mu.
+- オフライン版 Mu を起動する。
 
-5\.  **Codice di test**
+5\.  **テストコード**
 
-Avviare il software Mu e aprire il file “Servo\.py” per importare il codice. È anche possibile inserire il codice manualmente nella finestra di modifica.
+Mu ソフトウェアを開き、ファイル “Servo\.py” を開いてコードを読み込みます。エディタウィンドウに自分でコードを入力することもできます。
 
-(**Nota: Tutte le parole e i simboli in inglese devono essere scritti in inglese**.)
+(**注意: すべての英単語および記号は英語で記述してください**.)
 
-Fare clic su “Check” per esaminare gli errori nel codice. Il programma è errato se vengono mostrati sottolineature o cursori.
+“Check” をクリックしてコードのエラーを確認します。下線やカーソルが表示される場合はプログラムに誤りがあります。
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続し “Flash” をクリックしてコードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_eecf365e.png)
 
@@ -127,12 +127,12 @@ while True:
 
 ```
 
-4\.  **Risultato del test**
+4\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare esternamente (spostare l'interruttore DIP su ON)** e premere il pulsante reset sul micro:bit.
+コードをボードに正常に書き込んだ後、**外部電源を投入（DIPスイッチを ON に）**し、micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matrice LED mostra un motivo sorridente e il servo ruota seguendo lo schema 0°~45°~90°~135°~180°~0°.
+LEDドットマトリクスはスマイリーモチーフを表示し、サーボは 0°~45°~90°~135°~180°~0° のパターンで回転します。
 
 ---

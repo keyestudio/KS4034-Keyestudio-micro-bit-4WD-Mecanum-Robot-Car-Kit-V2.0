@@ -1,134 +1,134 @@
-## Progetto 19：Telecomando IR
+## プロジェクト 19：IR リモコン
 
-### Progetto 19.1：Decodificare il telecomando IR
+### プロジェクト 19.1：IR リモコンのデコード
 
 ![](./media/Makecode_3a3e9860.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-Non c'è dubbio che il telecomando a infrarossi sia onnipresente nella vita quotidiana. Viene utilizzato per controllare vari elettrodomestici, come TV, stereo, videoregistratori e ricevitori satellitari. Il telecomando IR è composto da un sistema di trasmissione a infrarossi e un sistema di ricezione a infrarossi, cioè un telecomando, un modulo ricevitore IR e un microcontrollore in grado di decodificare.
+赤外線リモコンは日常生活で広く使われていることは疑いありません。テレビ、ステレオ、ビデオレコーダー、衛星受信機など、さまざまな家電の制御に使用されます。赤外線リモコンは、赤外線送信システムと赤外線受信システムで構成されます。つまり、赤外線リモコン本体、赤外線受信モジュール、およびデコード可能なマイコン（単一チップマイコン）です。
 
 ![](./media/Makecode_9980b41f.png)
 
-Il segnale portante infrarosso a 38K emesso dal telecomando è codificato dal chip di codifica presente nel telecomando. È composto da una sezione di codice pilota, codice utente, codice utente inverso, codice dati e codice dati inverso. L'intervallo di tempo dell'impulso viene utilizzato per distinguere se si tratta di un segnale 0 o 1 e la codifica è costituita da questi segnali 0 e 1.
+リモコンから出る38Kの赤外線キャリア信号は、リモコン内のエンコードチップによって符号化されています。パイロットコード、ユーザーコード、ユーザー反転コード、データコード、データ反転コードのセクションで構成されています。パルスの時間間隔によって0か1の信号かを区別し、これらの0、1信号で符号化されます。
 
-Il codice utente della stessa telecomando rimane invariato. Il codice dati può distinguere il tasto premuto.
+同じリモコンのユーザーコードは変わりません。データコードでキーを識別できます。
 
-Quando viene premuto il pulsante del telecomando, il telecomando invia un segnale portante a infrarossi. Quando il ricevitore IR riceve il segnale, il programma decodifica il segnale portante e determina quale tasto è stato premuto. La MCU decodifica il segnale 01 ricevuto, stabilendo così quale tasto è stato premuto sul telecomando.
+リモコンのボタンが押されると、リモコンは赤外線キャリア信号を送信します。IR受信機が信号を受信すると、プログラムはキャリア信号をデコードしてどのキーが押されたかを判定します。MCUは受信した01信号をデコードし、どのリモコンのキーが押されたかを判断します。
 
-Il ricevitore infrarosso che utilizziamo è un modulo ricevitore a infrarossi. Composto principalmente dalla testa ricevente a infrarossi, è un dispositivo che integra ricezione, amplificazione e demodulazione. Il suo IC interno ha già eseguito la demodulazione e può svolgere l'intera operazione dalla ricezione infrarossa all'uscita, essendo compatibile con segnali TTL. Inoltre è adatto per telecomandi IR e trasmissione dati IR. Il modulo ricevitore IR prodotto dal ricevitore ha solo tre pin: linea di segnale, VCC e GND.
+使用する赤外線受信機は赤外線受信モジュールです。主に赤外線受信ヘッドで構成され、受信・増幅・復調を統合したデバイスです。内部ICが復調を完了しており、赤外線の受信から出力までを実現し、TTL信号と互換性があります。さらに、赤外線リモコンや赤外線データ伝送に適しています。受信機が製造した赤外線受信モジュールは信号線、VCC、GNDの3ピンのみです。
 
-Secondo l'immagine sopra, la porta integrata del ricevitore IR è collegata alla porta P9 5V G sulla scheda driver del motore ed è controllata dal P9 del micro:bit.
+上の画像に従い、赤外線受信機の統合ポートはモータードライバ基板のP9 5V Gポートに接続され、micro:bitのP9によって制御されます。
 
-2\. **Parametri:**
+2\. **パラメータ:**
 
-- Tensione di funzionamento: 3.3-5V（DC）
+- 動作電圧: 3.3-5V（DC）
 
-- Interfaccia: 3PIN
+- インターフェース: 3PIN
 
-- Segnale di uscita: segnale digitale
+- 出力信号: デジタル信号
 
-- Angolo di ricezione: 90 gradi
+- 受信角度: 90度
 
-- Frequenza: 38khz
+- 周波数: 38khz
 
-- Distanza di ricezione: circa 5m
+- 受信距離: 約5m
 
-3\. **Preparazione**
+3\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio   4WD Mecanum Robot Car V2.0
+- micro:bitボードを keyestudio   4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel vano batteria
+- 電池を電池ホルダーに入れる
 
-- Ruotare l'interruttore di alimentazione su ON
+- 電源スイッチをONに切り替える
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをパソコンに接続する
 
-- Aprire la versione Web di Makecode
+- MakecodeのWebバージョンを開く
 
 
-4\. **Codice di test**
+4\. **テストコード**
 
 ![](./media/Makecode_2e20f731.png)
 
-Fare clic su “JavaScript" per passare al corrispondente codice JavaScript:
+「JavaScript」をクリックして対応するJavaScriptコードに切り替えます：
 
 ![](./media/Makecode_87e18859.png)
 
-**Spiegazione del codice:** Se i pulsanti non vengono premuti, il monitor seriale mostra costantemente 0; quando vengono premuti, vengono visualizzati i valori dei tasti corrispondenti.
+**コードの説明：** ボタンが押されていないときはシリアルモニタに常に0が表示され、押すと対応するキー値が表示されます。
 
-**Note：**
+**注意：**
 
-Il telecomando in questo kit non include le batterie. Si consiglia di acquistarle online. (tipo di batteria: CR2025).
+このキットに含まれるリモコンには電池が付属していません。オンラインでの購入を推奨します。（電池の種類：CR2025）。
 
-Assicurarsi che il telecomando IR funzioni prima del test. Un suggerimento per verificarlo:
+テスト前にIRリモコンが正常か確認してください。確認のための方法を紹介します。
 
-Aprire la fotocamera del cellulare, puntare il telecomando IR verso la fotocamera e premere un pulsante. Se nella fotocamera si vede una luce viola lampeggiante, il telecomando è funzionante.
+携帯のカメラを起動し、IRリモコンをカメラに向けてボタンを押します。カメラに紫色の点滅が見えればリモコンは正常です。
 
-5\. **Risultato del test**
+5\. **テスト結果**
 
-Scaricare il codice sulla scheda micro:bit e non staccare il cavo USB. Fare clic![](./media/Makecode_e0580d78.png)
+コードをmicro:bitボードにダウンロードし、USBケーブルを抜かないでください。クリック！[](./media/Makecode_e0580d78.png)
 
 ![](./media/Makecode_0d3198e0.png)
 
-Puntare il telecomando IR verso il ricevitore IR e premere un pulsante; il monitor seriale mostrerà i valori dei tasti corrispondenti, come mostrato di seguito:
+IRリモコンをIR受信機に向けてボタンを押すと、シリアルモニタに対応するキー値が表示されます。以下のとおりです：
 
 ![](./media/Makecode_c7a33a4c.png)
 
-Aprire CoolTerm, fare clic su Options per selezionare SerialPort. Impostare la porta COM e la velocità di trasmissione a 115200 baud. Fare clic su “OK” e “Connect”.
+CoolTermを開き、OptionsをクリックしてSerialPortを選択します。COMポートとボーレート115200を設定します。「OK」と「Connect」をクリックします。
 
-Il monitor seriale di CoolTerm mostra il valore del tasto come segue:
+CoolTermのシリアルモニタは以下のようにキー値を表示します：
 
 ![Img](./media/Makecode_155c857a.png)
 
-Il valore del tasto viene visualizzato come riferimento:
+キー値は参照のために次のように表示されます：
 
 ![](./media/Makecode_1fc0d9bb.jpg)
 
-### Progetto 19.2：Telecomando IR
+### プロジェクト 19.2：IR リモコン
 
 ![Img](./media/Makecode_643cb701.png)
 
-1\. **Descrizione**
+1\. **説明**
 
-In questo progetto combiniamo il telecomando IR con il car shield per realizzare un'auto smart controllata via IR. Il principio è controllare il movimento dell'auto inviando segnali di tasto dal telecomando IR al modulo ricevente IR del car shield.
+このプロジェクトでは、IRリモコンとカーシールドを組み合わせてIRリモコン式スマートカーを作成します。原理は、IRリモコンからカーシールドのIR受信モジュールにキー信号を送信し、車の動作を制御することです。
 
-2\. **Preparazione**
+2\. **準備**
 
-- Inserire la scheda micro:bit nello slot del keyestudio   4WD Mecanum Robot Car V2.0
+- micro:bitボードを keyestudio   4WD Mecanum Robot Car V2.0 のスロットに差し込む
 
-- Inserire le batterie nel vano batteria
+- 電池を電池ホルダーに入れる
 
-- Ruotare l'interruttore di alimentazione su ON
+- 電源スイッチをONに切り替える
 
-- Collegare il micro:bit al computer tramite un cavo USB
+- USBケーブルでmicro:bitをパソコンに接続する
 
-- Aprire la versione Web di Makecode
+- MakecodeのWebバージョンを開く
 
-**Nota:** Il sensore a infrarossi e il telecomando infrarossi non devono essere utilizzati in ambienti con interferenze infrarosse come la luce solare, poiché contiene molte luci invisibili, come infrarossi e ultravioletti. In un ambiente con forte luce solare non possono funzionare normalmente.
+**注意：** 赤外線センサーと赤外線リモコンは、太陽光のような赤外線ノイズが多い環境では使用しないでください。太陽光には赤外線や紫外線など多くの不可視光が含まれており、強い日光下では正常に動作しないことがあります。
 
-3\. **Diagramma di flusso**
+3\. **フローチャート**
 
 ![Img](./media/Makecode_e5f416e3.png)
 
-4\. **Codice di test**
+4\. **テストコード**
 
 ![](./media/Makecode_22d06d74.png)
 
-Fare clic su “JavaScript" per passare al corrispondente codice JavaScript:
+「JavaScript」をクリックして対応するJavaScriptコードに切り替えます：
 
 ![](./media/Makecode_e68b6275.png)
 
 ![](./media/Makecode_94de6552.png)
 
-5\. **Risultato del test**
+5\. **テスト結果**
 
-Scaricare il codice sulla scheda micro:bit e posizionare l'interruttore POWER su ON.
+コードをmicro:bitボードにダウンロードし、POWERをONにします。
 
-Puntare il telecomando IR verso il micro:bit e premere il pulsante per far muovere l'auto intelligente.
+IRリモコンをmicro:bitに向けてボタンを押して、スマートカーを操作します。
 
-![](./media/Makecode_d55474f3.png) il pulsante fa muovere l'auto in avanti，![](./media/Makecode_5c8a6549.png) indica svolta a sinistra，![](./media/Makecode_41116032.png) implica svolta a destra，![](./media/Makecode_369433f6.png) indica marcia indietro，![](./media/Makecode_a8ef4b17.png) ferma l'auto.
+![](./media/Makecode_d55474f3.png)ボタンでスマートカーが前進、![](./media/Makecode_5c8a6549.png)は左折、![](./media/Makecode_41116032.png)は右折、![](./media/Makecode_369433f6.png)は後退、![](./media/Makecode_a8ef4b17.png)は停止を示します。
 
-**Nota:** La distanza tra il telecomando IR e il ricevitore IR dell'auto intelligente dovrebbe essere inferiore a 5 m durante il test.
+**注意：** テスト時、IRリモコンとスマートカーのIR受信ヘッドとの距離は5m未満にしてください。
 
 ---

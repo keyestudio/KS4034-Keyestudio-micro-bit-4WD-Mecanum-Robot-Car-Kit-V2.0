@@ -1,58 +1,58 @@
-## Progetto 6: Sensore geomagnetico
+## プロジェクト6: 地磁気センサー
 
-[Fai clic per scaricare il codice 1 per questa lezione](./Code/Geomagnetic-Sensor.hex)
+[Click to download the code 1 for this lesson](./Code/Geomagnetic-Sensor.hex)
 
-[Fai clic per scaricare il codice 2 per questa lezione](./Code/Geomagnetic-Sensor2.hex)
+[Click to download the code 2 for this lesson](./Code/Geomagnetic-Sensor2.hex)
 
-### (1)Descrizione del progetto:
+### (1)プロジェクトの説明:
 
-(1) Descrizione del progetto: Questo progetto ha lo scopo di spiegare l'uso del sensore geomagnetico del Micro:bit, che può non solo rilevare l'intensità del campo geomagnetico, ma anche essere usato come bussola per trovare i punti cardinali. È anche una parte importante del sistema di riferimento di assetto e direzione (AHRS). Il Micro:bit main board V2 utilizza il sensore geomagnetico LSM303AGR, e l'intervallo dinamico del campo magnetico è ± 50 gauss. Sulla scheda, il modulo magnetometro è utilizzato sia per il rilevamento magnetico sia come bussola. In questo esperimento verrà introdotta prima la bussola, e poi verranno controllati i dati grezzi del magnetometro. Il componente principale di una bussola comune è un ago magnetico, che può essere ruotato dal campo geomagnetico e puntare verso il Polo Nord geomagnetico (che è vicino al Polo Sud geografico) per determinare la direzione.
+(1) プロジェクトの説明: 本プロジェクトは Micro:bit の地磁気センサーの使い方を説明することを目的としています。地磁気の強さを検出できるだけでなく、方位を求めるためのコンパスとしても使用できます。また、姿勢方位基準系（AHRS: Attitude and Heading Reference System）の重要な一部でもあります。Micro:bit main board V2 は LSM303AGR 地磁気センサーを使用しており、磁場のダイナミックレンジは ±50 ガウスです。ボード上では、磁力計モジュールが磁気検出およびコンパスの両方に使用されています。本実験ではまずコンパスを紹介し、その後磁力計の生データを確認します。一般的なコンパスの主な構成要素は磁針であり、地磁気によって回転し、方角を決定するために地磁気北極（地理的な南極の近くにある）を指します。
 
-### (2)Componenti necessari:
+### (2)必要な部品:
 
 Micro:bit main board V2
 
- Cavo Micro USB
+ Micro USB ケーブル
 
-### (3)Codice di test 1 :
+### (3)テストコード 1 :
 
-Collegare il computer alla scheda micro:bit con un cavo Micro-USB e programmare nell'editor MakeCode.
+Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラミングします。
 
 ![](./media/Makecode_5805c7de.gif)
 
-Programma completo :
+完成プログラム :
 
 ![](./media/Makecode_5a958132.png)
 
-### (4)Risultati del test 1 :
+### (4)テスト結果 1 :
 
-Dopo aver caricato il codice di test sul Micro:bit main board V2 e aver alimentato la scheda tramite il cavo USB, premendo il pulsante A la scheda ci chiede di calibrare la bussola e la matrice di punti LED mostra "TILT TO FILL SCREEN". Quindi si entra nella pagina di calibrazione. Ruotare la scheda finché tutti e 25 i LED non sono accesi in rosso come mostrato qui sotto.
+テストコードを Micro:bit main board V2 に書き込み、USB ケーブルでボードに電源を供給し、ボタン A を押すと、ボードがコンパスの校正を促し、LED ドットマトリクスに "TILT TO FILL SCREEN" が表示されます。すると校正ページに入ります。下図のように 25 個の LED がすべて赤く点灯するまでボードを回転させます。
 
 ![](./media/Makecode_b0a4ebf1.jpg)
 
-calibrare la bussola:
+コンパスを校正:
 
 ![](./media/Makecode_05a88e21.gif)
 
-Dopo ciò, appare un motivo a sorriso ![](./media/Makecode_74a69436.png)che implica che la calibrazione è completata. Quando il processo di calibrazione è terminato, premendo il pulsante A verrà visualizzata direttamente sullo schermo la lettura del magnetometro. E le direzioni nord, est, sud e ovest corrispondono rispettivamente a 0°, 90°, 180° e 270°.
+その後、スマイルのパターン ![](./media/Makecode_74a69436.png)が表示され、校正が完了したことを示します。校正プロセスが完了すると、ボタン A を押すことで磁力計の読み取り値が画面に直接表示されます。北、東、南、西の方向はそれぞれ 0°、90°、180°、270° に対応します。
 
 ![](./media/Makecode_23b07bfb.gif)
 
-### (5) Codice di test 2:
+### (5) テストコード 2:
 
-Questo modulo può continuare a leggere i dati per determinare la direzione, pertanto indica il polo nord magnetico attuale con una freccia.
+このモジュールは方向を決定するために継続的にデータを読み取ることができ、矢印で現在の磁気北極を指します。
 
-Collegare il computer alla scheda micro:bit con un cavo Micro-USB e programmare nell'editor MakeCode,
+Micro USB ケーブルでコンピュータと micro:bit ボードを接続し、MakeCode エディタでプログラミングします、
 
 ![](./media/Makecode_db8b2d7e.gif)
 
-Programma completo :
+完成プログラム :
 
 ![](./media/Makecode_ef823069.png)
 
-### (6) Risultati del test 2
+### (6) テスト結果 2
 
-Caricare il codice 2. Dopo la calibrazione, inclinare la scheda micro:bit e la matrice di punti LED visualizzerà i simboli di direzione.
+コード2をアップロードします。校正後、micro:bit ボードを傾けると、LED ドットマトリクスに方位表示が表示されます。
 
 ![](./media/Makecode_d8944d5f.gif)
 

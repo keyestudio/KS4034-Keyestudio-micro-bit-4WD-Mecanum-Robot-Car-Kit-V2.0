@@ -1,28 +1,28 @@
-### Progetto 6：Geomagnetic Sensor
+### プロジェクト 6：Geomagnetic Sensor
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **Descrizione**
+1\.  **説明**
 
-Questo progetto introduce principalmente l’uso del sensore geomagnetico del micro:bit. Oltre a rilevare l’intensità del campo magnetico, può anche essere usato per determinare la direzione, che è una parte importante del sistema di riferimento di rotta e assetto (AHRS).
+このプロジェクトでは主に micro:bit の地磁気センサーの使い方を紹介します。磁場の強さを検出することに加えて、方位（方向）を判定するためにも使用でき、これはヘディングおよび姿勢基準系（AHRS）の重要な一部でもあります。
 
-Utilizza il magnetometro triassiale FreescaleMAG3110. La sua interfaccia I2C comunica con l’esterno, l’intervallo è ±1000µT e la velocità massima di aggiornamento dei dati è 80Hz. In combinazione con un accelerometro, può calcolare la posizione. Inoltre è applicato al rilevamento magnetico e ai blocchi bussola.
+FreescaleMAG3110 三軸磁力計を使用しています。I2C インターフェースで外部と通信し、レンジは ±1000µT、最大データ更新レートは 80Hz です。加速度計と組み合わせることで位置を算出できます。さらに、磁気検出やコンパスブロックにも適用されます。
 
-Possiamo poi leggere il valore rilevato per determinare l’orientamento. È necessario calibrare la scheda micro:bit quando il sensore magnetico è in funzione. Il metodo di calibrazione corretto è ruotare la scheda micro:bit.
+その後、センサーが検出した値を読み取って方位を判定できます。磁気センサーが動作する際は micro:bit 基板のキャリブレーションが必要です。正しいキャリブレーション方法は micro:bit 基板を回転させることです。
 
-Inoltre, gli oggetti nelle vicinanze possono influenzare la precisione delle letture e della calibrazione.
+また、近くにある物体が読み取り値やキャリブレーションの精度に影響を与える場合があります。
 
-2\.  **Preparazione**
+2\.  **準備**
 
-A. Collegare la scheda principale micro:bit al computer tramite il cavo USB
+A. USB ケーブルで micro:bit メインボードをコンピュータに接続します
 
-B. Aprire la versione offline di Mu.
+B. Mu のオフライン版を開きます。
 
-3\.  **Test Code1**
+3\.  **テストコード1**
 
-Avviare il software Mu e aprire il file “Magnetic sensor -1\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Mu ソフトを起動し、ファイル “Magnetic sensor -1\.py” を開いてコードを読み込みます。編集ウィンドウにコードを直接入力しても構いません。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese**.)
+(**注：すべての単語と記号は英語で記述してください**。)
 
 ![](./media/Python_1366c5ed.png)
 
@@ -36,37 +36,37 @@ while True:
     if button_a.is_pressed():
         display.scroll(compass.heading())
 ```
-Fare clic su “Check” per esaminare gli errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
+コードのエラーを確認するには「Check」をクリックします。下線やカーソルが表示されている場合はプログラムに誤りがあります。 
 
 ![](./media/Python_5bfe40c4.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しい場合、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_695d8f29.png)
 
-4\.  **Risultato del test1**
+4\.  **テスト結果1**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l’interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にする）**。そして micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
- La matrice di LED mostra “TILT TO FILL SCREEN”. Premendo il pulsante A, la scheda richiede di calibrare la bussola. Quindi si accede alla pagina di calibrazione. Ruotare la scheda finché tutti i 25 LED rossi sono accesi, come mostrato di seguito.
+ LED ドットマトリクスに “TILT TO FILL SCREEN” が表示されます。ボタン A を押すと、ボードがコンパスのキャリブレーションを要求します。キャリブレーション画面に入ります。下図のように 25 個の赤い LED がすべて点灯するまでボードを回転させます。
 
 ![](./media/Python_c8fd6670.jpg)
 
-Dopo ciò appare un motivo a sorriso ![](./media/Python_a3b91e3e.png), che implica che la calibrazione è completata. Quando il processo di calibrazione è terminato, premendo il pulsante A la lettura del magnetometro verrà mostrata direttamente sullo schermo. Le direzioni nord, est, sud e ovest corrispondono rispettivamente a 0°, 90°, 180° e 270°.
+その後、スマイルのパターン ![](./media/Python_a3b91e3e.png) が表示され、キャリブレーションが完了したことを示します。キャリブレーションが完了すると、ボタン A を押すことで磁力計の読み値が直接画面に表示されます。北、東、南、西の方向はそれぞれ 0°、90°、180°、270° に対応します。
 
-5\.  **Test Code2**
+5\.  **テストコード2**
 
-Per l’immagine sottostante, la freccia punterà in alto a destra quando il valore è compreso tra 292,5 e 337,5. Poiché 0,5 non può essere inserito nel codice, i valori che utilizziamo sono 293 e 338.
+下の画像では、値が 292.5 ～ 337.5 の範囲にある場合、矢印は右上を指します。コードには 0.5 を入力できないため、使用する値は 293 と 338 です。
 
-Aggiungere poi altre istruzioni per creare un codice completo.
+その後、他の文を追加して完全なコードにします。
 
 ![](./media/Python_d1a4e9f6.png)
 
-Avviare il software Mu e aprire il file “Magnetic sensor -2\.py” per importare il codice. È anche possibile inserire il codice direttamente nella finestra di modifica.
+Mu ソフトを起動し、ファイル “Magnetic sensor -2\.py” を開いてコードを読み込みます。編集ウィンドウにコードを直接入力しても構いません。
 
-(**Nota: Tutte le parole e i simboli devono essere scritti in inglese.**)
+(**注：すべての単語と記号は英語で記述してください。**)
 
 ![](./media/Python_5b0d8e26.png)
 
@@ -95,23 +95,23 @@ while True:
 
 ```
 
-Fare clic su “Check” per esaminare gli errori nel codice. Il programma è errato se vengono mostrati sottolineature e cursori. 
+「Check」をクリックしてコードのエラーを確認します。下線やカーソルが表示されている場合はプログラムに誤りがあります。 
 
 ![](./media/Python_42389bcf.png)
 
-Se il codice è corretto, collegare il micro:bit al computer e fare clic su “Flash” per scaricare il codice sulla scheda micro:bit.
+コードが正しければ、micro:bit をコンピュータに接続して「Flash」をクリックし、コードを micro:bit ボードに書き込みます。
 
 ![](./media/Python_bedc607a.png)
 
-6\.  **Risultato del test**
+6\.  **テスト結果**
 
-Dopo aver scaricato correttamente il codice sulla scheda, **alimentare tramite cavo micro USB o alimentazione esterna (portare l’interruttore DIP su ON)** e premere il pulsante di reset sul micro:bit.
+コードをボードに正常にダウンロードしたら、**micro USB ケーブルまたは外部電源で電源を入れてください（DIP スイッチを ON にする）**。そして micro:bit のリセットボタンを押します。
 
 ![Img](./media/Python_bb3e1312.png)
 
-Dopo la calibrazione, ruotare la scheda micro:bit, quindi la matrice di LED visualizza i simboli di direzione. 
+キャリブレーションの後、micro:bit ボードを回転させると、LED ドットマトリクスに方向を示す記号が表示されます。 
 
-7\.  **Spiegazione del codice**
+7\.  **コードの説明**
 
 ![Img](./media/Python_76f66bb0.png)
 
