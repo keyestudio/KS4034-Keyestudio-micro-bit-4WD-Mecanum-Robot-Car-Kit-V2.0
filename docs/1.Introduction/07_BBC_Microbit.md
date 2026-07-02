@@ -1,24 +1,24 @@
 ## BBC Micro:bit
 
-### **(1) ¿Qué es Micro:bit?**
+### **(1) Qu'est-ce que le Micro:bit ?**
 
-Micro:bit es una plataforma de hardware de código abierto basada en la arquitectura ARM, lanzada por la British Broadcasting Corporation (BBC) junto con ARM, Barclays, element14, Microsoft y otras instituciones. El dispositivo central es un microprocesador Arm Cortex‑M4 de 32 bits con FPU.
+Micro:bit est une plateforme matérielle open source basée sur l'architecture ARM, lancée par la British Broadcasting Corporation (BBC) en collaboration avec ARM, Barclays, element14, Microsoft et d'autres institutions. Le cœur est un microprocesseur 32 bits Arm Cortex‑M4 avec FPU.
 
-Tiene el tamaño de una tarjeta de crédito pero es muy potente. La placa principal Micro:bit está equipada con numerosos componentes como una matriz LED 5×5, 2 botones programables, un acelerómetro, una brújula, un termómetro, un logo táctil, un micrófono MEMS, un módulo Bluetooth de baja energía y un zumbador, lo que le permite reproducir diversos sonidos sin dispositivos externos.
+Il a la taille d'une carte de crédit mais il est très puissant. La carte principale Micro:bit est équipée de nombreux composants tels qu'une matrice de LED 5×5, 2 boutons programmables, un accéléromètre, une boussole, un thermomètre, un logo tactile, un microphone MEMS, un module Bluetooth basse consommation ainsi qu'un buzzer, ce qui lui permet de produire une variété de sons sans périphériques externes.
 
-Además, esta placa admite un modo de suspensión para reducir el consumo de la batería; se puede activar manteniendo pulsado el botón Reset & Power en la parte trasera.
+De plus, cette carte prend en charge un mode veille pour réduire la consommation de la batterie ; ce mode peut être activé en maintenant enfoncé le bouton Reset & Power à l'arrière.
 
-La placa de desarrollo Micro:bit es fácil de usar y ampliar: el diseño de los contactos dorados (gold fingers) en la parte inferior permite interactuar con diversos componentes electrónicos mediante pinzas de cocodrilo. Puede leer datos de sensores, controlar servos y luces RGB e incorporar una placa de expansión para conectar varios sensores.
+La carte de développement Micro:bit est facile à utiliser et à étendre : les contacts dorés (gold fingers) situés sur le bord inférieur (edge connector) peuvent interagir avec divers composants électroniques via des pinces crocodiles. Elle peut lire les données des capteurs, contrôler des servomoteurs et des LED RGB, et accueillir une carte d'extension pour connecter différents capteurs.
 
-Asimismo, admite diversos códigos y plataformas de programación gráfica, es compatible con casi todos los PC y dispositivos móviles y no requiere instalación complicada de drivers. Dispone de módulos electrónicos altamente integrados y de una función de monitorización del puerto serie para facilitar la depuración.
+En outre, elle prend en charge divers langages et environnements de programmation graphiques, est compatible avec quasiment tous les PC et appareils mobiles et ne nécessite pas de pilote complexe. Elle intègre des modules électroniques et une fonction de surveillance du port série pour faciliter le débogage.
 
-La placa se utiliza ampliamente en la programación de videojuegos, interacciones de luz y sonido, control de robots, experimentos científicos, dispositivos wearables y en inventos creativos como robots e instrumentos musicales.
+La carte est largement utilisée pour la programmation de jeux vidéo, les interactions lumière‑son, le contrôle de robots, les expériences scientifiques, les dispositifs portables ainsi que pour des créations originales comme des robots et des instruments de musique.
 
-### **(2) Disposición**
+### **(2) Disposition**
 
 ![Img](./media/Introduction_5746e59b.png)
 
-Para más información, consulte los siguientes enlaces:
+Pour plus d'informations, veuillez consulter les liens suivants :
 
 [https://tech.microbit.org/hardware/](https://tech.microbit.org/hardware/)
 
@@ -28,42 +28,42 @@ Para más información, consulte los siguientes enlaces:
 
 [https://microbit.org/get-started/user-guide/features-in-depth/](https://microbit.org/get-started/user-guide/features-in-depth/)
 
-### **(3) Pin out**
+### **(3) Brochage (Pin out)**
 
 ![](./media/Introduction_ce0de295.png)
 
-**Funciones:**
+**Fonctions :**
 
 |                            |                                                                                                    |
 |----------------------------|----------------------------------------------------------------------------------------------------|
 | GPIO                       | P0, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P19, P20                |
 | ADC/DAC                    | P0, P1, P2, P3, P4, P10                                                                            |
-| IIC                        | P19 (SCL), P20 (SDA)                                                                               |
+| IIC                        | P19 (SCL), P20 (SDA)                                                                              |
 | SPI                        | P13 (SCK), P14 (MISO), P15 (MOSI)                                                                 |
-| PWM (usado con frecuencia) | P0, P1, P2, P3, P4, P10                                                                            |
-| PWM (poco usado)           | P5, P6, P7, P8, P9, P11, P12, P13, P14, P15, P16, P19, P20                                         |
-| Ocupado                    | P3 (LED Col3), P4 (LED Col1), P5 (Button A), P6 (LED Col4), P7 (LED Col2), P10 (LED Col5), P11 (Button B) |
+| PWM (fréquemment utilisé)  | P0, P1, P2, P3, P4, P10                                                                            |
+| PWM (peu utilisé)          | P5, P6, P7, P8, P9, P11, P12, P13, P14, P15, P16, P19, P20                                         |
+| Occupé                     | P3 (LED Col3), P4 (LED Col1), P5 (Button A), P6 (LED Col4), P7 (LED Col2), P10 (LED Col5), P11 (Button B) |
 
-Consulte el sitio web oficial para más detalles: [https://tech.microbit.org/hardware/edgeconnector/](https://tech.microbit.org/hardware/edgeconnector/)
+Veuillez consulter le site officiel pour plus de détails : [https://tech.microbit.org/hardware/edgeconnector/](https://tech.microbit.org/hardware/edgeconnector/)
 
 [https://microbit.org/guide/hardware/pins/](https://microbit.org/guide/hardware/pins/)
 
-### **(4) Precauciones para el uso de la placa Micro:bit:**
+### **(4) Précautions d'utilisation de la carte mère Micro:bit :**
 
-a\. Se recomienda cubrirla con un protector de silicona para evitar cortocircuitos en sus delicados componentes electrónicos.
+a\. Il est recommandé de recouvrir la carte d'une protection en silicone pour éviter les courts‑circuits sur ses composants électroniques sensibles.
 
-b\. Su puerto IO tiene una capacidad de manejo de corriente limitada y solo puede gestionar corrientes inferiores a 300 mA. Por lo tanto, no conecte dispositivos de alta corriente, como servos MG995 o motores de corriente continua (DC), ya que podrían quemarse. Además, debe comprobar los requisitos de corriente de los dispositivos antes de usarlos; generalmente se recomienda utilizar la placa junto con una placa de expansión Micro:bit.
+b\. Les ports IO ont une capacité de pilotage faible et ne peuvent supporter que des courants inférieurs à 300 mA. Par conséquent, ne les connectez pas à des dispositifs consommant un courant important, tels que des servomoteurs MG995 ou des moteurs DC, sous peine de les endommager. Assurez‑vous de connaître les besoins en courant des dispositifs avant de les utiliser ; il est généralement recommandé d'utiliser la carte avec une carte d'extension Micro:bit.
 
-c\. Se recomienda alimentar la placa principal mediante la interfaz USB o con una batería de 3V. El puerto IO de esta placa es de 3V, por lo que no admite sensores de 5V. Si necesita conectar sensores de 5V, se requiere una placa de expansión Micro:bit.
+c\. Il est conseillé d'alimenter la carte principale via l'interface USB ou une batterie 3V. Les ports IO sont en 3V et ne prennent pas en charge les capteurs 5V. Si vous devez connecter des capteurs 5V, une carte d'extension Micro:bit est nécessaire.
 
-d\. Al usar pines compartidos con la matriz LED (P3, P4, P6, P7 y P10), si se bloquean respecto a la matriz o a los LED, estos pueden mostrarse de forma aleatoria y los datos de los sensores conectados pueden ser incorrectos.
+d\. Lors de l'utilisation des broches partagées avec la matrice LED (P3, P4, P6, P7 et P10), si ces broches sont occultées par la matrice ou les LED, celles‑ci peuvent s'afficher de façon aléatoire et les données des capteurs connectés peuvent être erronées.
 
-e\. Los pines 19 y 20 no pueden usarse como puertos IO aunque MakeCode muestre que sí. Solo pueden utilizarse para comunicación I2C.
+e\. Les broches 19 et 20 ne peuvent pas être utilisées comme ports IO bien que MakeCode puisse l'indiquer. Elles ne servent qu'à la communication I2C.
 
-f\. El puerto de batería de 3V no debe conectarse a una batería de más de 3,3V o la placa principal se dañará.
+f\. Le port batterie 3V ne doit pas être connecté à une batterie de plus de 3,3V, au risque d'endommager la carte principale.
 
-g\. Prohibido operar sobre superficies metálicas para evitar cortocircuitos.
+g\. Il est interdit de faire fonctionner la carte sur des surfaces métalliques afin d'éviter les courts‑circuits.
 
-En resumen, la placa principal Micro:bit V2 es como un microordenador que pone la programación al alcance de la mano y potencia la innovación digital. En cuanto al entorno de programación, la BBC ofrece el sitio: [https://microbit.org/code/](https://microbit.org/code/), que dispone de un entorno gráfico MakeCode fácil de usar.
+En résumé, la carte principale Micro:bit V2 est comme un micro‑ordinateur : elle rend la programmation accessible et favorise l'innovation numérique. Pour l'environnement de programmation, la BBC propose le site : [https://microbit.org/code/](https://microbit.org/code/), qui propose un environnement graphique MakeCode facile à utiliser.
 
 ---

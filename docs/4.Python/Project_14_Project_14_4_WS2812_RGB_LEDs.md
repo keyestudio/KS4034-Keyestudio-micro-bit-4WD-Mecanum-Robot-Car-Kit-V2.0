@@ -1,32 +1,32 @@
-### Proyecto 14: 4 LEDs RGB WS2812
+### Projet 14 : 4 LED RGB WS2812
 
 ![](./media/Python_eecf79fe.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-El shield controlador trabaja con 4 piezas de LED RGB WS2812, es compatible con la placa micro:bit y se controla por P7. En esta lección haremos que los LED RGB muestren diferentes colores mediante P7. En esta lección se proporcionan 3 conjuntos de código de prueba para que los 4 LED WS2812 RGB muestren diferentes efectos.
+Le shield pilote 4 LED RGB WS2812, est compatible avec la carte micro:bit et contrôlé par P7. Dans cette leçon, nous ferons afficher aux LED RGB différentes couleurs via P7. Trois jeux de codes de test sont fournis dans cette leçon pour produire différents effets sur les 4 LED WS2812 RGB.
 
 ![Img](./media/Python_0be70eda.png)
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio 4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans le logement du keyestudio 4WD Mecanum Robot Car V2.0
 
-- Coloque las baterías en el portapilas
+- Placez les piles dans le porte-piles
 
-- Gire el interruptor de alimentación a la posición ON
+- Positionnez l'interrupteur d'alimentation sur ON
 
-- Conecte el micro:bit a su ordenador mediante un cable USB
+- Connectez le micro:bit à votre ordinateur via un câble USB
 
-- Abra la versión offline de Mu.
+- Ouvrez la version hors ligne de Mu.
 
 3\.  **Test Code1**
 
-Abra el software Mu y abra el archivo“4 WS2812 RGB LEDs-1\.py”para importar el código\ También puede introducir el código usted mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier“4 WS2812 RGB LEDs-1\.py”pour importer le code\ Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais.**)
 
-Haga clic en“Check”para comprobar errores en el código. El programa es incorrecto si se muestran subrayados y cursores. 
+Cliquez sur“Check”pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs apparaissent. 
 
 ![](./media/Python_5b5266e2.png)
 
@@ -72,27 +72,27 @@ while True:
     sleep(1000)
 ```
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en“Flash”para descargar el código en la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur“Flash”pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_56a9ab63.png)
 
-4\.  **Resultado de la Prueba1**
+4\.  **Résultat du Test1**
 
-Después de descargar el código en la placa con éxito, **alimentación externa (gire el interruptor DIP a ON)**, y presione el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (mettre l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Los 4 LED WS2812RGB se encienden cíclicamente, cada vez con un color diferente.
+Les 4 LED WS2812RGB s'allument tour à tour en différentes couleurs de manière cyclique.
 
 5\.  **Test Code2**
 
-Abra el software Mu y abra el archivo“4 WS2812 RGB LEDs-2\.py”para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier“4 WS2812 RGB LEDs-2\.py”pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés**.)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais**.)
 
-Haga clic en“Check”para comprobar errores en el código. El programa es incorrecto si se muestran subrayados y cursores. 
+Cliquez sur“Check”pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs apparaissent. 
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en“Flash”para descargar el código en la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur“Flash”pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_8cb1dd7c.png)
 
@@ -148,23 +148,23 @@ while True:
         sleep(100)
 ```
 
-6\.  **Resultado de la Prueba2**
+6\.  **Résultat du Test2**
 
-Después de descargar el código en la placa con éxito, **alimentación externa (gire el interruptor DIP a ON)**, y presione el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (mettre l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Los LED WS2812RGB muestran un efecto de luz en movimiento (flow light).
+Les LED WS2812RGB affichent un effet de lumière défilante.
 
 7\.  **Test Code3**
 
-Abra el software Mu y abra el archivo“4 WS2812 RGB LEDs-3\.py”para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier“4 WS2812 RGB LEDs-3\.py”pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais.**)
 
-Haga clic en“Check”para comprobar errores en el código. El programa es incorrecto si se muestran subrayados y cursores. 
+Cliquez sur“Check”pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs apparaissent. 
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en“Flash”para descargar el código en la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur“Flash”pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_b248f1c5.png)
 
@@ -187,15 +187,15 @@ while True:
         sleep(500)
 ```
 
-8\.  **Resultado de la Prueba3**
+8\.  **Résultat du Test3**
 
-Después de descargar el código en la placa con éxito, **alimentación externa (gire el interruptor DIP a ON)**, y presione el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (mettre l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Cada LED WS2812RGB muestra un color aleatorio, uno por uno.
+Chaque LED WS2812RGB affiche une couleur aléatoire, une par une.
 
-5\.  **Explicación del Código**
+5\.  **Explication du code**
 
 ![Img](./media/Python_d1e3977b.png)
 

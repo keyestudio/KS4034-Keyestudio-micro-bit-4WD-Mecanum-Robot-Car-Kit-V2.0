@@ -1,13 +1,13 @@
-## Problemas comunes
+## Problèmes courants
 
-1\.  **El coche no reacciona**
+1\.  **La voiture ne réagit pas**
 
-Compruebe si las baterías tienen suficiente carga
+Veuillez vérifier si les batteries sont suffisamment chargées
 
-Compruebe si el cableado es correcto
+Veuillez vérifier si le câblage est correct
 
-2\.  **Los ordenadores no reconocen los puertos USB**
+2\.  **Les ordinateurs ne reconnaissent pas les ports USB**
 
-Asegúrese de que el microbit driver esté instalado
+Veuillez vérifier que le microbit driver est installé
 
-Compruebe si el cable USB está en buen estado
+Veuillez vérifier si le câble USB est en bon état

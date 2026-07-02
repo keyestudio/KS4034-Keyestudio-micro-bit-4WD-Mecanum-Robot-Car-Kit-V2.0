@@ -1,22 +1,22 @@
-### Proyecto 8：Detección de luz
+### Projet 8：Détection de la lumière
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-En este proyecto nos centraremos en la función de detección de luz de la placa principal Micro: Bit. Se logra mediante la LED dot matrix ya que la placa principal no está equipada con una fotorresistencia.
+Dans ce projet, nous nous concentrerons sur la fonction de détection de la lumière de la carte principale Micro: Bit. Cela est réalisé par la LED dot matrix car la carte principale n'est pas équipée d'une photorésistance.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-A. Conecte el micro:bit main board a su ordenador mediante el cable USB
+A. Branchez le micro:bit main board à votre ordinateur via le câble USB
 
-B. Abra la versión fuera de línea de Mu.
+B. Ouvrez la version hors ligne de Mu.
 
-3\.  **Código de prueba**
+3\.  **Code de test**
 
-Abra el software Mu y abra el archivo “Detect Light Intensity by Microbit\.py” para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier “Detect Light Intensity by Microbit\.py” pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais.**)
 
 ![](./media/Python_b4f06503.png)
 
@@ -31,27 +31,27 @@ while True:
 
     sleep(100)
 ```
-Haga clic en “Check” para examinar errores en el código. El programa se considera incorrecto si se muestran subrayados y cursores.
+Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est erroné si des soulignements et des curseurs sont affichés.
 
 ![](./media/Python_b41eeb0f.png)
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código en la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_7baa2190.png)
 
-4\.  **Resultado de la prueba**
+4\.  **Résultat du test**
 
-Después de descargar el código en la placa con éxito, **encienda la alimentación mediante el cable micro USB o una fuente de alimentación externa (turn the DIP switch to ON)**. Haga clic en “REPL” y pulse el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (turn the DIP switch to ON)**. Cliquez sur “REPL” et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-A continuación, la ventana REPL mostrará el valor de la intensidad luminosa, como se muestra a continuación.
+Ensuite, la fenêtre REPL affichera la valeur de l'intensité lumineuse, comme indiqué ci-dessous.
 
-Cuando la LED dot matrix está cubierta con la mano, la intensidad luminosa mostrada es aproximadamente 0; cuando la LED dot matrix está expuesta a la luz, la intensidad luminosa mostrada aumenta con la luz.
+Lorsque la LED dot matrix est couverte par la main, l'intensité lumineuse indiquée est d'environ 0 ; lorsque la LED dot matrix est exposée à la lumière, l'intensité lumineuse affichée augmente avec l'intensité lumineuse.
 
 ![](./media/Python_778d89d6.png)
 
-5\.  **Explicación del código**
+5\.  **Explication du code**
 
 ![Img](./media/Python_dcdc4536.png)
 

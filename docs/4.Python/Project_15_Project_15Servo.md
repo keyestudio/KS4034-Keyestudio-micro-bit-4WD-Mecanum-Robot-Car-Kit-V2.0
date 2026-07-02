@@ -1,26 +1,26 @@
-### Proyecto 15：Servo
+### Projet 15：Servo
 
 ![](./media/Python_c4b5e57b.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-Los coches inteligentes DIY suelen incluir la función de evitación automática de obstáculos. En el proceso de montaje, necesitamos un servo para controlar que el módulo ultrasónico gire a la izquierda y a la derecha, y luego detectar la distancia entre el coche y el obstáculo, para poder controlar el coche y evitar el obstáculo.
+Les voitures intelligentes DIY intègrent généralement une fonction d'évitement automatique des obstacles. Lors du montage, nous avons besoin d'un servomoteur pour faire pivoter le module ultrasonique à gauche et à droite, puis détecter la distance entre la voiture et l'obstacle afin de contrôler la voiture pour éviter l'obstacle.
 
-Si se utilizan otros microcontroladores para controlar la rotación del servo, es necesario establecer una cierta frecuencia y anchura de pulso para controlar el ángulo del servo. Pero si se utiliza la placa principal micro:bit para controlar el ángulo del servo, basta con fijar el ángulo de control en el entorno de desarrollo; el pulso correspondiente se generará automáticamente para controlar la rotación del servo. En este proyecto aprenderás a controlar el servo para que oscile entre 0° y 90°.
+Si d'autres microcontrôleurs sont utilisés pour contrôler la rotation du servo, il faut définir une certaine fréquence et largeur d'impulsion pour contrôler l'angle du servo. Mais si la carte principale micro:bit est utilisée pour contrôler l'angle du servo, il suffit de définir l'angle de commande dans l'environnement de développement : l'impulsion correspondante sera automatiquement générée pour piloter la rotation du servo. Dans ce projet, vous apprendrez à faire osciller le servo entre 0° et 90°.
 
-El servomotor es un actuador giratorio de control de posición, que consiste principalmente en la carcasa, la placa de circuito, el motor sin núcleo, los engranajes y el sensor de posición. Su principio de funcionamiento es que el servo recibe la señal enviada por el MCU o el receptor, genera una señal de referencia con un periodo de 20 ms y una anchura de 1,5 ms, luego compara la tensión continua adquirida con la tensión del potenciómetro y obtiene la diferencia de tensión de salida.
+Le servomoteur est un actionneur rotatif à contrôle de position, composé principalement du boîtier, de la carte électronique, du moteur sans noyau, des engrenages et d'un capteur de position. Son principe de fonctionnement est que le servo reçoit le signal envoyé par le MCU ou le récepteur, génère un signal de référence avec une période de 20 ms et une largeur de 1,5 ms, puis compare la tension continue obtenue à la tension du potentiomètre et en déduit la différence de tension en sortie.
 
-Para el servo usado en este proyecto, el cable marrón es tierra, el rojo es positivo y el naranja es el cable de señal.
+Pour le servo utilisé dans ce projet, le fil marron est la masse, le fil rouge est le + et le fil orange est le fil de signal.
 
 ![](./media/Python_69be9581.png)
 
-2\.  **Información del Servo**
+2\.  **Informations sur le Servo**
 
-El ángulo de rotación del servomotor se controla regulando el ciclo de trabajo de la señal PWM (modulación por ancho de pulso). El ciclo estándar de la señal PWM es 20 ms (50 Hz). Teóricamente, la anchura se distribuye entre 1 ms y 2 ms, pero en la práctica está entre 0.5 ms y 2.5 ms. La anchura corresponde al ángulo de rotación de 0° a 180°. Tenga en cuenta que para motores de distintas marcas, la misma señal puede dar lugar a ángulos de rotación diferentes.
+L'angle de rotation du servomoteur est contrôlé en régulant le rapport cyclique du signal PWM (modulation de largeur d'impulsion). Le cycle standard du signal PWM est de 20 ms (50 Hz). Théoriquement, la largeur se situe entre 1 ms et 2 ms, mais en pratique elle varie entre 0,5 ms et 2,5 ms. La largeur correspond à l'angle de rotation de 0° à 180°. Notez toutefois que pour des marques différentes, le même signal peut entraîner des angles de rotation différents.
 
 ![](./media/Python_0982cb7b.png)
 
-Tras mediciones, el rango de pulso del servo es de 0,65 ms a 2,5 ms. Para un servo de 180 grados, la relación de control correspondiente es la siguiente:
+Après mesure, la plage d'impulsion du servo est de 0,65 ms à 2,5 ms. Pour un servo de 180 degrés, la relation de commande correspondante est la suivante :
 
 
 |Time on High Level|Angle of the Servo|Reference Signal Cycle Time（20ms）|
@@ -30,53 +30,53 @@ Tras mediciones, el rango de pulso del servo es de 0,65 ms a 2,5 ms. Para un ser
 |2.5ms|180degrees|2.5ms high level+17.5ms low level|
 
 
-3\.  **Parámetros**
+3\.  **Paramètres**
 
-- Voltaje de trabajo: DC 4.8V ~ 6V
+- Tension de fonctionnement : DC 4.8V ~ 6V
 
-- Rango de ángulo operativo: aproximadamente 180 ° (a 500 → 2500 μsec)
+- Plage d'angle de fonctionnement : environ 180 ° (à 500 → 2500 μsec)
 
-- Dimensiones: 22.9\*12.2\*30mm
+- Dimensions : 22.9\*12.2\*30mm
 
-- Rango de ancho de pulso: 500 → 2500 μsec
+- Plage de largeur d'impulsion : 500 → 2500 μsec
 
-- Velocidad sin carga: 0.12 ± 0.01 s / 60 (DC 4.8V), 0.1 ± 0.01 s / 60 (DC 6V)
+- Vitesse à vide : 0.12 ± 0.01 s / 60 (DC 4.8V), 0.1 ± 0.01 s / 60 (DC 6V)
 
-- Corriente sin carga: 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
+- Courant à vide : 200 ± 20mA (DC 4.8V), 220 ± 20mA (DC 6V)
 
-- Par de retención: 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
+- Couple d'arrêt : 1.3 ± 0.01kg · cm (DC 4.8V), 1.5 ± 0.1kg · cm (DC 6V)
 
-- Corriente en parada: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
+- Courant au blocage : ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-- Corriente de reposo: 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
+- Courant de repos : 3 ± 1mA (DC 4.8V), 4 ± 1mA (DC 6V)
 
-- Peso: 9±1g (sin cuerno del servo)
+- Poids : 9±1g (sans bras de servo)
 
-- Temperatura de trabajo: -30℃~60℃
+- Température de fonctionnement : -30℃~60℃
 
-**Debe tenerse en cuenta que no utilice la alimentación de un ordenador, porque si la demanda de corriente es superior a 500 mA, el servo puede quemarse. Se recomienda usar una batería externa para la alimentación.**
+**Il convient de noter de ne pas utiliser l'alimentation d'un ordinateur, car si la demande en courant dépasse 500 mA, le servo peut être endommagé. Il est recommandé d'utiliser une batterie externe pour l'alimentation.**
 
-4\.  **Preparación**
+4\.  **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio 4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans la fente du keyestudio 4WD Mecanum Robot Car V2.0
 
-- Coloque las pilas en el portapilas
+- Placez les piles dans le porte-piles
 
-- Lleve el interruptor de alimentación a la posición ON
+- Passez l'interrupteur d'alimentation sur la position ON
 
-- Conecte el micro:bit al ordenador mediante un cable USB
+- Connectez le micro:bit à l'ordinateur via un câble USB
 
-- Abra la versión sin conexión de Mu.
+- Ouvrez la version hors ligne de Mu.
 
-5\.  **Código de prueba**
+5\.  **Code de test**
 
-Abra el software Mu y abra el archivo “Servo\.py” para importar el código. También puede introducir el código en la ventana del editor manualmente.
+Lancez le logiciel Mu et ouvrez le fichier “Servo\.py” pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés**.)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais**.)
 
-Haga clic en “Check” para comprobar errores en el código. El programa se considera erróneo si aparecen subrayados o cursores.
+Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est erroné si des soulignements ou des curseurs sont affichés.
 
-Si el código es correcto, conecte el micro:bit al ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour téléverser le code sur la carte micro:bit.
 
 ![](./media/Python_eecf365e.png)
 
@@ -127,12 +127,12 @@ while True:
 
 ```
 
-4\.  **Resultado de la prueba**
+4\.  **Résultat du test**
 
-Después de descargar el código a la placa con éxito, **alimente externamente (mueva el interruptor DIP a ON)** y presione el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez en externe (mettre le DIP switch sur ON)**, puis appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matriz de LED muestra un patrón sonriente y el servo gira en el patrón 0°~45°~90°~135°~180°~0°.
+La matrice de LED affiche un smiley et le servo tourne selon le motif 0°~45°~90°~135°~180°~0°.
 
 ---

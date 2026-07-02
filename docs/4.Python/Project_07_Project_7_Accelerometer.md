@@ -1,26 +1,26 @@
-### Proyecto 7：Accelerometer
+### Projet 7：Accelerometer
 
 ![](./media/Python_26d107ae.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-La placa principal micro: bit main board V2 tiene integrado un sensor de aceleración gravitacional LSM303AGR, también conocido como acelerómetro, con una resolución de 8/10/12 bits. En la sección de código se establece el rango en 1g, 2g, 4g y 8g.
+La carte principale micro: bit V2 intègre un capteur d'accélération gravitationnelle LSM303AGR, également appelé accéléromètre, avec une résolution de 8/10/12 bits. Dans la section du code, la plage peut être définie sur 1g, 2g, 4g et 8g.
 
-A menudo usamos un acelerómetro para detectar el estado de las máquinas.
+Nous utilisons souvent un accéléromètre pour détecter l'état des machines.
 
-En este proyecto, explicaremos cómo medir la posición de la placa con el acelerómetro. A continuación, examinaremos los datos originales de tres ejes que produce el acelerómetro.
+Dans ce projet, nous allons expliquer comment mesurer la position de la carte avec l'accéléromètre. Puis nous examinerons les données brutes tridimensionnelles fournies par l'accéléromètre.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-A. Conecte la placa micro:bit main board a su ordenador mediante el cable USB.
+A. Branchez le micro:bit main board à votre ordinateur via le câble USB.
 
-B. Abra la versión fuera de línea de Mu.
+B. Ouvrez la version hors ligne de Mu.
 
-3\.  **Código de prueba1**
+3\.  **Code de test1**
 
-Abra el software Mu y abra el archivo “Three-axis acceleration sensor -1\.py“ para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier “Three-axis acceleration sensor -1\.py“ pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
 
 ![](./media/Python_f20f5b58.png)
 
@@ -48,53 +48,53 @@ while True:
         display.show("8")
 ```
 
-Haga clic en “Check” para examinar errores en el código. El programa está mal si aparecen subrayados y cursores. 
+Cliquez sur “Check” pour examiner les erreurs dans le code. Le programme est erroné si des soulignements et des curseurs sont affichés. 
 
 ![](./media/Python_07e4b578.png)
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_eb56750b.png)
 
-4\.  **Resultado de la prueba1**
+4\.  **Résultat du test1**
 
-Después de descargar el código en la placa con éxito, **alimente mediante el cable micro USB o una fuente de alimentación externa (ponga el interruptor DIP en ON)** y pulse el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (mettez le commutateur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Cuando agitamos la micro: bit main board, sin importar la dirección, la matriz de LED muestra el dígito “1”.
+Lorsque nous secouons le micro: bit main board, quelle que soit la direction, la matrice de LED affiche le chiffre “1”.
 
-Cuando se mantiene en posición vertical (coloque su logotipo por encima de la matriz LED), aparece el número 2.
+Lorsqu'il est maintenu à la verticale (le logo au-dessus de la matrice LED), le chiffre 2 apparaît.
 
 ![](./media/Python_b91421df.jpg)
 
-Cuando se mantiene boca abajo (coloque su logotipo debajo de la matriz LED), se muestra como a continuación.
+Lorsqu'il est maintenu à l'envers (le logo sous la matrice LED), il s'affiche comme ci-dessous.
 
 ![](./media/Python_69e81587.jpg)
 
-Cuando se coloca quieta sobre el escritorio, mostrando su lado frontal, aparece el número 4.
+Lorsqu'il est posé immobile sur le bureau, face visible, le chiffre 4 apparaît.
 
 ![](./media/Python_9e08cb69.jpg)
 
-Cuando se coloca quieta sobre el escritorio, mostrando su lado posterior, aparece el número 5.
+Lorsqu'il est posé immobile sur le bureau, face arrière visible, le chiffre 5 apparaît.
 
-Cuando la placa se inclina hacia la izquierda, la matriz de LED muestra el número 6, como se muestra a continuación:
+Lorsque la carte est inclinée vers la gauche, la matrice de LED affiche le chiffre 6, comme illustré ci-dessous :
 
 ![](./media/Python_81fa2ce1.jpg)
 
-Cuando la placa se inclina hacia la derecha, la matriz de LED muestra el número 7, como se muestra a continuación：
+Lorsque la carte est inclinée vers la droite, la matrice de LED affiche le chiffre 7, comme illustré ci-dessous：
 
 ![](./media/Python_fc13912b.jpg)
 
-Cuando la placa es golpeada contra el suelo, este proceso puede considerarse una caída libre y la matriz de LED muestra el número 8. (Tenga en cuenta que no se recomienda realizar esta prueba ya que puede dañar la placa principal.)
+Lorsque la carte est projetée au sol, ce processus peut être considéré comme une chute libre et la matrice de LED affiche le chiffre 8. (Veuillez noter que ce test n'est pas recommandé car il peut endommager la carte principale.)
 
-**Atención: Si desea probar esta función, también puede establecer la aceleración en 3g, 6g u 8g.**
+**Attention : Si vous souhaitez essayer cette fonction, vous pouvez également définir l'accélération sur 3g, 6g ou 8g.**
 
-5\.  **Código de prueba2**
+5\.  **Code de test2**
 
-Abra el software Mu y abra el archivo “Three-axis acceleration sensor -2\.py“ para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier “Three-axis acceleration sensor -2\.py“ pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
 
 ![](./media/Python_0f7ccf57.png)
 
@@ -113,29 +113,29 @@ while True:
 
     sleep(100)
 ```
-Haga clic en “Check” para examinar errores en el código. El programa está mal si aparecen subrayados y cursores. 
+Cliquez sur “Check” pour examiner les erreurs dans le code. Le programme est erroné si des soulignements et des curseurs sont affichés. 
 
 ![](./media/Python_0ed2221e.png)
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_35c4c76b.png)
 
-6\.  **Resultado de la prueba2**
+6\.  **Résultat du test2**
 
-Después de descargar el código en la placa con éxito, **alimente mediante el cable micro USB o una fuente de alimentación externa (ponga el interruptor DIP en ON)**. Haga clic en “REPL” y pulse el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (mettez le commutateur DIP sur ON)**. Cliquez sur “REPL” et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Entonces la ventana REPL mostrará los valores de la aceleración en el eje X, eje Y y eje Z que se muestran a continuación:
+Ensuite, la fenêtre REPL affichera les valeurs de l'accélération sur l'axe X, l'axe Y et l'axe Z comme indiqué ci-dessous :
 
 ![](./media/Python_940cfcf7.png)
 
-Tras consultar el manual de datos del MMA8653FC y el diagrama esquemático de hardware del micro: bit main board, las coordenadas del acelerómetro del micro: bit se muestran en la figura siguiente:
+Après consultation du manuel de données du MMA8653FC et du schéma matériel du micro: bit main board, les coordonnées de l'accéléromètre du micro: bit sont représentées dans la figure ci-dessous :
 
 ![](./media/Python_ebd0d44d.png)
 
-7\.  **Explicación del código**
+7\.  **Explication du code**
 
 ![Img](./media/Python_d533d72c.png)
 

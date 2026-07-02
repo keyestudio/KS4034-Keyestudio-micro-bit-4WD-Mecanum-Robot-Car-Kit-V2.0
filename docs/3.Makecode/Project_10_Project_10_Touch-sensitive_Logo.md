@@ -1,33 +1,33 @@
-## Proyecto 10: Touch-sensitive Logo
+## Projet 10: Touch-sensitive Logo
 
 ![](./media/Makecode_445a7708.jpg)
 
-[Haga clic para descargar el código de esta lección](./Code/Touch-sensitive-Logo.hex)
+[Cliquez ici pour télécharger le code de cette leçon](./Code/Touch-sensitive-Logo.hex)
 
-### (1)Descripción del proyecto:
+### (1)Description du projet :
 
-La placa principal Micro:bit main board V2 está equipada con un logo dorado sensible al tacto, que puede actuar como un componente de entrada y funcionar como un botón adicional.
+La carte principale Micro:bit main board V2 est équipée d'un logo doré sensible au toucher, qui peut fonctionner comme un composant d'entrée et agir comme un bouton supplémentaire.
 
-Contiene un sensor táctil capacitivo que detecta pequeños cambios en el campo eléctrico cuando se presiona (o toca), al igual que la pantalla de su teléfono o tableta. Cuando lo presiona, puede activar el programa.
+Il contient un capteur tactile capacitif qui détecte de petits changements du champ électrique lorsqu'il est pressé (ou touché), tout comme l'écran de votre téléphone ou de votre tablette. Lorsque vous le pressez, vous pouvez activer le programme.
 
-### (2)Componentes necesarios:
+### (2)Composants nécessaires :
 
 Micro:bit main board V2
 
-Cable Micro USB
+Câble Micro USB
 
-### (3)Código de prueba:
+### (3)Code de test :
 
-Conecte el ordenador a la placa micro:bit mediante un cable Micro USB y programe en el editor MakeCode,
+Reliez l'ordinateur à la carte micro:bit avec un câble Micro USB et programmez dans l'éditeur MakeCode,
 
 ![](./media/Makecode_54cc5b8a.gif)
 
-Programa completo:
+Programme complet :
 
 ![](./media/Makecode_2ba9bf7d.png)
 
-### (4)Resultados de la prueba:
+### (4)Résultats du test :
 
-Después de cargar el código, al tocar el logo con la mano se mostrará una forma de corazón en la matriz de puntos. Al soltar el toque aparecerá un número; tiempos de contacto más largos mostrarán números mayores.
+Après le téléchargement du code, toucher le logo avec votre main affichera une forme de cœur sur la matrice de points. En relâchant la touche, un numéro apparaît ; un contact plus long affiche des nombres plus grands.
 
 ![](./media/Makecode_46b832c8.gif)

@@ -1,58 +1,58 @@
-## Proyecto 6: Sensor geomagnético
+## Projet 6 : Capteur géomagnétique
 
-[Haga clic para descargar el código 1 de esta lección](./Code/Geomagnetic-Sensor.hex)
+[Cliquez pour télécharger le code 1 de cette leçon](./Code/Geomagnetic-Sensor.hex)
 
-[Haga clic para descargar el código 2 de esta lección](./Code/Geomagnetic-Sensor2.hex)
+[Cliquez pour télécharger le code 2 de cette leçon](./Code/Geomagnetic-Sensor2.hex)
 
-### (1)Descripción del proyecto:
+### (1)Description du projet :
 
-(1) Descripción del proyecto: Este proyecto tiene como objetivo explicar el uso del sensor geomagnético del Micro:bit, que no solo puede detectar la intensidad del campo geomagnético, sino que también puede utilizarse como brújula para encontrar rumbos. También es una parte importante del Attitude and Heading Reference System (AHRS). El Micro:bit main board V2 utiliza el sensor geomagnético LSM303AGR, y el rango dinámico del campo magnético es ± 50 gauss. En la placa, el módulo magnetómetro se utiliza tanto en la detección magnética como en la brújula. En este experimento se introducirá primero la brújula y luego se comprobarán los datos originales del magnetómetro. El componente principal de una brújula común es una aguja magnética, que puede ser girada por el campo geomagnético y apuntar hacia el Polo Norte geomagnético (que está cerca del Polo Sur geográfico) para determinar la dirección.
+(1) Description du projet : Ce projet vise à expliquer l'utilisation du capteur géomagnétique du Micro:bit, qui peut non seulement détecter l'intensité du champ géomagnétique, mais aussi être utilisé comme boussole pour trouver les caps. Il constitue également une partie importante du système de référence d'assiette et de cap (AHRS). Le Micro:bit main board V2 utilise le capteur géomagnétique LSM303AGR, et la plage dynamique du champ magnétique est de ± 50 gauss. Sur la carte, le module magnétomètre est utilisé à la fois pour la détection magnétique et comme boussole. Dans cette expérience, la boussole sera d'abord présentée, puis les données brutes du magnétomètre seront vérifiées. Le composant principal d'une boussole courante est une aiguille magnétique, qui peut être tournée par le champ géomagnétique et pointer vers le pôle Nord géomagnétique (qui est proche du pôle Sud géographique) pour déterminer la direction.
 
-### (2)Componentes necesarios:
+### (2)Composants nécessaires :
 
 Micro:bit main board V2
 
- Cable Micro USB
+ Câble Micro USB
 
-### (3)Código de prueba 1 :
+### (3)Code de test 1 :
 
-Conecte el ordenador con la placa micro:bit mediante un cable Micro-USB y programe en el editor MakeCode.
+Reliez l'ordinateur à la carte micro:bit avec un câble Micro-USB et programmez dans l'éditeur MakeCode.
 
 ![](./media/Makecode_5805c7de.gif)
 
-Programa completo :
+Programme complet :
 
 ![](./media/Makecode_5a958132.png)
 
-### (4)Resultados de la prueba 1 :
+### (4)Résultats du test 1 :
 
-Después de cargar el código de prueba en el Micro:bit main board V2 y alimentar la placa a través del cable USB, y al presionar el botón A, la placa nos pide calibrar la brújula y la matriz de puntos LED muestra "TILT TO FILL SCREEN". Luego entra en la página de calibración. Gire la placa hasta que los 25 LED estén en rojo como se muestra a continuación.
+Après avoir téléversé le code de test sur le Micro:bit main board V2 et alimenté la carte via le câble USB, et après avoir appuyé sur le bouton A, la carte demande de calibrer la boussole et la matrice de points LED affiche "TILT TO FILL SCREEN". Ensuite, on entre dans la page de calibration. Faites tourner la carte jusqu'à ce que les 25 LED soient allumées en rouge comme illustré ci‑dessous.
 
 ![](./media/Makecode_b0a4ebf1.jpg)
 
-calibrar la brújula:
+calibrer la boussole :
 
 ![](./media/Makecode_05a88e21.gif)
 
-Después de eso, aparece un patrón sonriente ![](./media/Makecode_74a69436.png), lo que implica que la calibración está hecha. Cuando el proceso de calibración se completa, al presionar el botón A la lectura del magnetómetro se mostrará directamente en la pantalla. Y las direcciones norte, este, sur y oeste corresponden a 0°, 90°, 180° y 270° respectivamente.
+Après cela, un motif souriant ![](./media/Makecode_74a69436.png)apparaît, ce qui implique que la calibration est terminée. Une fois le processus de calibration terminé, appuyer sur le bouton A affichera la lecture du magnétomètre directement à l'écran. Et les directions nord, est, sud et ouest correspondent respectivement à 0°, 90°, 180° et 270°.
 
 ![](./media/Makecode_23b07bfb.gif)
 
-### (5) Código de prueba 2:
+### (5) Code de test 2 :
 
-Este módulo puede seguir leyendo datos para determinar la dirección, por lo que apunta al polo norte magnético actual con una flecha.
+Ce module peut continuer à lire des données pour déterminer la direction, il indique donc le pôle Nord magnétique actuel par une flèche.
 
-Conecte el ordenador con la placa micro:bit mediante un cable Micro-USB y programe en el editor MakeCode,
+Reliez l'ordinateur à la carte micro:bit avec un câble Micro-USB et programmez dans l'éditeur MakeCode,
 
 ![](./media/Makecode_db8b2d7e.gif)
 
-Programa completo :
+Programme complet :
 
 ![](./media/Makecode_ef823069.png)
 
-### (6) Resultados de la prueba 2
+### (6) Résultats du test 2
 
-Suba el código 2. Después de la calibración, incline la placa micro:bit y la matriz de puntos LED mostrará los signos de dirección.
+Téléversez le code 2. Après la calibration, inclinez la carte micro:bit, et la matrice de points LED affiche les symboles de direction.
 
 ![](./media/Makecode_d8944d5f.gif)
 

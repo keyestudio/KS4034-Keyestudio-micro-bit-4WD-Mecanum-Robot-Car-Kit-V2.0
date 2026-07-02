@@ -1,26 +1,26 @@
-## Montar el Robot Mecanum
+## Assembler le robot Mecanum
 
-Es un coche programable basado en BBC micro:bit. Integra un controlador de motor, un sensor de seguimiento de línea y un receptor IR en la placa base, que también contiene un sensor ultrasónico, un servo, 2 luces de siete colores y 4 luces WS2812 RGB. El cableado no es complicado y tiene conectores Lego para facilitar la conexión con otros dispositivos periféricos. Recursos de hardware abundantes le permitirán dominar más conocimientos y habilidades para crear más inventos tecnológicos.
+C'est une voiture programmable basée sur le BBC micro:bit. Elle intègre un pilote de moteur, un capteur de suivi de ligne et un récepteur IR dans la plaque de base, qui contient également un capteur à ultrasons, un servo, 2 lampes sept couleurs ainsi que 4 LED WS2812 RGB. Le câblage n'est pas compliqué et elle dispose de prises Lego pour faciliter la connexion avec d'autres périphériques. Des ressources matérielles abondantes vous permettront d'acquérir plus de connaissances et de compétences pour créer davantage d'inventions technologiques.
 
-## Sensores y pines de control del 4WD Mecanum Robot Car V2.0
+## Capteurs et broches de contrôle du 4WD Mecanum Robot Car V2.0
 
-Este coche puede ayudarle a aprender mejor cómo usar el Micro:bit y hacer accesibles los conocimientos electrónicos.
+Cette voiture peut vous aider à mieux apprendre à utiliser le Micro:bit et à rendre les connaissances en électronique accessibles.
 
-**Funciones**
+**Fonctions**
 
 |        |                   |                       |       |                   |                      |             |                  |              |
 | ------ | ----------------- | --------------------- | ----- | ----------------- | -------------------- | ----------- | ---------------- | ------------ |
-| Sensor | Luz de siete colores | Motor DC con desaceleración | Servo | Sensor ultrasónico | Sensor de seguimiento de línea | Receptor IR | Luz WS2812 RGB | Interruptor de encendido |
+| Sensor | Lampe sept couleurs | Moteur CC à décélération | Servo | Capteur à ultrasons | Capteur de suivi de ligne | Récepteur IR | Lumière WS2812 RGB | Interrupteur d'alimentation |
 | QTY    | 2                 | 4                     | 1     | 1                 | 3                    | 1           | 4                | 1            |
 
-**Nota: el sensor de seguimiento de línea, las luces WS2812 RGB, el receptor IR y el controlador del motor están integrados en la placa base.**
+**Remarque : le capteur de suivi de ligne, les LED WS2812 RGB, le récepteur IR et le pilote de moteur sont intégrés dans la plaque de base.**
 
-**Pines:**
+**Broches :**
 
 ![Img](./media/Assemble_Mecanum_Robot_97b760ef.png)
 
-**Alimentación y batería**
+**Alimentation et batterie**
 
-El keyestudio 4WD Mecanum Robot Car funciona con dos baterías 18650. El portabaterías del coche es compatible con cualquier tipo de batería de litio 18650 (recargable). Puede usar un cargador de baterías universal para cargar la batería 18650.
+Le keyestudio 4WD Mecanum Robot Car est alimenté par deux batteries 18650. Le porte‑pile du véhicule est compatible avec tout type de batterie lithium 18650 (rechargeable). Vous pouvez utiliser un chargeur de batterie universel pour recharger la batterie lithium 18650.
 
-**Nota:** Este producto no contiene baterías.
+**Remarque :** Ce produit ne contient pas de batteries.

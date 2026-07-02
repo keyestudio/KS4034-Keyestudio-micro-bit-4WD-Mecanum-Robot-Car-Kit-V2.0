@@ -1,24 +1,24 @@
-### Proyecto 10: Logo sensible al tacto
+### Projet 10 : Logo tactile
 
 ![](./media/Python_64469585.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-La placa principal micro:bit V2 está equipada con un logotipo dorado sensible al tacto, que puede actuar como un componente de entrada similar a un botón.
+La carte principale micro:bit V2 est équipée d'un logo tactile doré, qui peut agir comme un composant d'entrée similaire à un bouton.
 
-Contiene un sensor táctil capacitivo que detecta pequeños cambios en el campo eléctrico cuando se presiona (o toca), igual que la pantalla de tu teléfono o tablet. Cuando lo presionas, el programa puede activarse.
+Il contient un capteur tactile capacitif qui détecte de petits changements du champ électrique lorsqu'il est pressé (ou touché), tout comme l'écran de votre téléphone ou tablette. Lorsque vous l'appuyez, le programme peut être activé.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-A. Conecta la placa principal micro:bit a tu ordenador mediante el cable USB.
+A. Connectez la carte principale micro:bit à votre ordinateur via le câble USB.
 
-B. Abre la versión offline de Mu.
+B. Ouvrez la version hors ligne de Mu.
 
-3\.  **Código de prueba**
+3\.  **Code de test**
 
-Abre el software Mu y abre el archivo “Touch-sensitive Logo\.py” para importar el código. También puedes introducir el código tú mismo en la ventana de edición.
+Lancez le logiciel Mu et ouvrez le fichier “Touch-sensitive Logo\.py” pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés**.)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais**.)
 
 ![](./media/Python_0c54cbe5.png)
 
@@ -50,40 +50,40 @@ while True:
         display.show(Image.ASLEEP)
 ```
 
-**¿Cómo funciona el Micro:bit?**
+**Comment fonctionne le Micro:bit ?**
 
-A\. El tiempo de ejecución se registra en milisegundos (ms).
+A\. Le temps d'exécution est enregistré en millisecondes (ms).
 
-B\. Cuando presionas el botón A, una variable llamada start se establecerá en el tiempo de ejecución actual.
+B\. Lorsque vous appuyez sur le bouton A, une variable nommée start est définie sur le temps d'exécution actuel.
 
-C\. Cuando presionas el botón B, el tiempo de inicio se sustrae del nuevo tiempo de ejecución para calcular el tiempo transcurrido desde que comenzaste el cronómetro. Esta diferencia se añade al tiempo total, que se almacena en una variable llamada time.
+C\. Lorsque vous appuyez sur le bouton B, le temps de départ est soustrait du nouveau temps d'exécution pour calculer le temps écoulé depuis le démarrage du chronomètre. Cette différence est ajoutée au temps total, qui est stocké dans une variable nommée time.
 
-D\. Si presionas el logo dorado, el programa mostrará el tiempo total transcurrido en la pantalla LED. Convierte el tiempo de milisegundos (milésimas de segundo) a segundos dividiendo por 1000. Usa el operador de división entera para dar un resultado entero.
+D\. Si vous appuyez sur le logo doré, le programme affichera le temps total écoulé sur l'affichage LED. Il convertit le temps de millisecondes (millièmes de seconde) en secondes en divisant par 1000. Il utilise l'opérateur de division entière pour donner un résultat entier.
 
-E\. El programa también está controlado por una variable booleana llamada running. Una variable booleana solo tiene dos valores: true o false. Si "running" es "true", significa que el cronómetro se ha iniciado. Si "running" es false, significa que el cronómetro no se ha iniciado o se ha detenido.
+E\. Le programme est également contrôlé par une variable booléenne nommée running. Une variable booléenne n'a que deux valeurs : true ou false. Si "running" est "true", cela signifie que le chronomètre a démarré. Si "running" est false, cela signifie que le chronomètre n'a pas démarré ou s'est arrêté.
 
-F\. Si "running" es true, el patrón de corazón latiendo se mostrará en la pantalla de matriz de LED.
+F\. Si "running" est true, le motif de coeur battant sera affiché sur la matrice de LED.
 
-G\. (7) Si el cronómetro se ha detenido y "running" es false, cuando presiones el logo dorado, solo mostrará el tiempo.
+G\. (7) Si le chronomètre est arrêté et que "running" est false, lorsque vous appuyez sur le logo doré, il n'affichera que le temps.
 
-H\. Si el cronómetro se ha iniciado y "running" es true, solo es necesario asegurarse de que la variable time cambie cuando se presione el botón B, y el código también puede prevenir lecturas falsas.
+H\. Si le chronomètre a été démarré et que "running" est true, il suffit de s'assurer que la variable time changera lorsque le bouton B est pressé, et le code peut également empêcher les lectures incorrectes.
 
-Haz clic en “Check” para examinar errores en el código. El programa es incorrecto si se muestran subrayados y cursores.
+Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés.
 
 ![](./media/Python_1766a28c.png)
 
-Si el código es correcto, conecta el micro:bit a tu ordenador y haz clic en “Flash” para descargar el código en la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_a3d6e994.png)
 
-4\.  **Resultado de la prueba**
+4\.  **Résultat du test**
 
-Después de descargar el código en la placa correctamente, **alimentar mediante el cable micro USB o una fuente de alimentación externa (coloca el interruptor DIP en ON)** y presiona el botón de reinicio del micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (mettez l'interrupteur DIP sur ON)**, puis appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Pulsa el botón A para iniciar el cronómetro. Durante la medición, el patrón de corazón latiendo se mostrará en la matriz de LED. Pulsa el botón B para detenerlo; puedes iniciarlo y detenerlo en cualquier momento.
+Appuyez sur le bouton A pour démarrer le chronomètre. Pendant le chronométrage, le motif de coeur battant sera affiché sur la matrice de LED. Appuyez sur le bouton B pour l'arrêter ; vous pouvez démarrer et arrêter à tout moment.
 
-Seguirá registrando el tiempo, igual que un cronómetro real. Pulsa el logo dorado en la parte frontal del micro:bit para mostrar el tiempo medido en segundos. Y el tiempo puede restablecerse a cero pulsando el botón de reinicio en la parte posterior.
+Il continuera d'enregistrer le temps, comme un véritable chronomètre. Appuyez sur le logo doré à l'avant du micro:bit pour afficher le temps mesuré en secondes. Et le temps peut être réinitialisé à zéro en appuyant sur le bouton de réinitialisation à l'arrière.
 
 ---

@@ -1,47 +1,47 @@
-## Proyecto 5: Detección de temperatura
+## Projet 5 : Détection de la température
 
 ![](./media/Makecode_22c6434f.jpg)
 
-[Haga clic para descargar el código 1 de esta lección](./Code/Temperature-Detection.hex)
+[Cliquez pour télécharger le code 1 de cette leçon](./Code/Temperature-Detection.hex)
 
-[Haga clic para descargar el código 2 de esta lección](./Code/Temperature-Detection2.hex)
+[Cliquez pour télécharger le code 2 de cette leçon](./Code/Temperature-Detection2.hex)
 
-### (1)Descripción del proyecto:
+### (1)Description du projet :
 
-La Micro:bit main board V2 no está equipada con un sensor de temperatura dedicado, sino que utiliza el sensor de temperatura integrado en el chip NFR52833 para la detección. Por lo tanto, la temperatura detectada está más cercana a la del chip y puede diferir de la temperatura ambiente.
+La carte principale Micro:bit main board V2 n'est pas équipée d'un capteur de température, mais utilise le capteur de température intégré au circuit NFR52833 pour la détection. Par conséquent, la température détectée est plus proche de la température du circuit et peut différer de la température ambiante.
 
-### (2)Componentes necesarios:
+### (2)Composants nécessaires :
 
 Micro:bit main board V2
 
-Cable Micro USB
+Câble Micro USB
 
-### (3)Código de prueba 1 :
+### (3)Code de test 1 :
 
 ![](./media/Makecode_e6674fe9.gif)
 
-### (4)Resultados de la prueba 1:
+### (4)Résultats du test 1 :
 
-Tras subir el código de prueba 1 a la Micro:bit main board V2, alimentar la placa mediante el cable USB y hacer clic en "Show console Device", los datos de temperatura se muestran en la página del monitor serie como se indica a continuación.
+Après avoir téléversé le code de test 1 sur le Micro:bit main board V2, alimenté la carte via le câble USB et cliqué sur "Show console Device", les données de température s'affichent dans le moniteur série comme illustré ci-dessous.
 
 ![](./media/Makecode_898eded8.gif)
 
-Si está utilizando Windows 7 u 8 en lugar de Windows 10, Google Chrome no podrá emparejar los dispositivos. Deberá usar el software de monitor serie CoolTerm para leer los datos. Abra CoolTerm, haga clic en Options, seleccione SerialPort, ajuste el puerto COM y establezca la velocidad en baudios a 115200 (tras las pruebas, la velocidad en baudios de la comunicación USB SerialPort en la Micro:bit main board V2 es 115200), haga clic en OK y luego en Connect. El monitor serie CoolTerm muestra el cambio de temperatura en el entorno actual, como se muestra en las siguientes imágenes:
+Si vous utilisez Windows 7 ou 8 au lieu de Windows 10, Google Chrome ne pourra pas appairer les périphériques. Vous devrez utiliser le logiciel de moniteur série CoolTerm pour lire les données. Ouvrez CoolTerm, cliquez sur Options, sélectionnez SerialPort, choisissez le port COM et réglez le débit en bauds sur 115200 (après essais, le débit en bauds de la communication USB SerialPort sur le Micro:bit main board V2 est 115200), cliquez sur OK, puis Connect. Le moniteur série CoolTerm affiche la variation de la température dans l'environnement courant, comme montré dans les images ci-dessous :
 
 ![](./media/Makecode_268159a1.gif)
 
-### (5)Código de prueba 2 :
+### (5)Code de test 2 :
 
-Enlace el ordenador con la placa micro:bit mediante un cable Micro USB y programe en el editor MakeCode,
+Reliez l'ordinateur à la carte micro:bit par un câble Micro USB et programmez dans l'éditeur MakeCode,
 
 ![](./media/Makecode_4057bdd7.gif)
 
-Programa completo :
+Programme complet :
 
 ![](./media/Makecode_ec457959.png)
 
-### (6)Resultados de la prueba 2:
+### (6)Résultats du test 2 :
 
-Después de subir el código 2, cuando la temperatura ambiente es inferior a 35℃, la matriz de puntos LED 5x5 muestra ![](./media/Makecode_350d26c6.png). Cuando la temperatura es igual o superior a 35℃ aparece el patrón ![](./media/Makecode_ef8d7c88.png).
+Après le téléchargement du code 2, lorsque la température ambiante est inférieure à 35℃, la matrice LED 5x5 affiche ![](./media/Makecode_350d26c6.png). Lorsque la température est égale ou supérieure à 35℃, le motif ![](./media/Makecode_ef8d7c88.png) apparaît.
 
 ---

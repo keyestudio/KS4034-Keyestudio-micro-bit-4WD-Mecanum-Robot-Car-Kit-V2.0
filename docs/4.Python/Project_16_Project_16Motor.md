@@ -1,56 +1,56 @@
-### Proyecto 16: Motor
+### Projet 16：Moteur
 
 ![](./media/Python_32655f47.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-El coche robot Keyestudio 4WD Mecanum está equipado con 4 motores de CC con reducción, también llamados motores con caja de engranajes, que se desarrollaron a partir del motor de CC ordinario. Dispone de una caja reductora de engranajes a juego que proporciona una velocidad menor pero un par mayor. Además, distintas relaciones de reducción de la caja pueden ofrecer diferentes velocidades y pares.
+Le Keyestudio 4WD Mecanum Robot Car est équipé de 4 moteurs CC à réduction, également appelés moteurs à engrenages, qui sont dérivés du moteur CC ordinaire. Ils disposent d'une boîte de réduction d'engrenage assortie qui fournit une vitesse plus faible mais un couple plus élevé. De plus, différents rapports de réduction de la boîte peuvent fournir différentes vitesses et couples.
 
-El motor con engranajes es la integración de la caja de engranajes y el motor, y se aplica ampliamente en la industria siderúrgica y mecánica.
+Le moteur à engrenages est l'intégration d'un réducteur et d'un moteur, largement utilisé dans les industries sidérurgique et mécanique.
 
-El shield controlador de motor para micro:bit viene con los chips STC8G y HR8833. Para ahorrar recursos de puertos I/O, controlamos la dirección de giro y la velocidad de los 4 motores de CC con el chip HR8833.
+Le shield pilote de moteur pour micro:bit intègre une puce STC8G et une puce HR8833. Afin d'économiser les ressources des ports E/S, nous contrôlons la direction de rotation et la vitesse des 4 moteurs CC à engrenages avec la puce HR8833.
 
-**Detalles sobre los chips:**
+**Détails sur les puces :**
 
 ![](./media/Python_d7132b53.jpg)
 
-Frontal
+Avant
 
 ![](./media/Python_4919ce3b.png)
 
-Trasera
+Arrière
 
 ![](./media/Python_fbfa17f7.png)
 
-Circuito del chip STC8G1K08
+Circuit de la puce STC8G1K08
 
 ![](./media/Python_47cdde6b.png)
 
-Circuito del controlador de motor HR8833
+Circuit du pilote moteur HR8833
 
-2\. **Preparación**
+2\. **Préparation**
 
-- Inserte la placa micro:bit en la ranura del Keyestudio 4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans l'emplacement du Keyestudio 4WD Mecanum Robot CarV2.0
 
-- Inserte las baterías en el portapilas
+- Placez les piles dans le porte-piles
 
-- Ajuste el interruptor de alimentación en la posición ON
+- Mettez l'interrupteur d'alimentation sur la position ON
 
-- Conecte la micro:bit al ordenador mediante un cable USB
+- Connectez la micro:bit à l'ordinateur via un câble USB
 
-- Abra la versión offline de Mu.
+- Ouvrez la version hors ligne de Mu.
 
-3\. **Código de prueba 1**
+3\. **Test Code1**
 
-Abra el software Mu y abra el archivo “microbit-Motor Driving-1.py” para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Entrez dans le logiciel Mu et ouvrez le fichier “microbit-Motor Driving-1\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben permanecer en inglés**.)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais**.)
 
-Haga clic en “Files” para importar el archivo de librería “keyes_mecanum_Car.py” a la micro:bit. 
+Cliquez sur “Files” pour importer le fichier de bibliothèque “keyes_mecanum_Car.py” sur la micro:bit. 
 
-Haga clic en “Check” para comprobar errores en el código. El programa está incorrecto si aparecen subrayados y cursores. 
+Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est erroné si des soulignements et des curseurs sont affichés. 
 
-Si el código es correcto, conecte la micro:bit al ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez la micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_71476377.png)
 
@@ -91,25 +91,25 @@ while True:
     sleep(1000)
 ```
 
-4\. **Resultado de la prueba 1**
+4\. **Résultat du test 1**
 
-Después de descargar el código a la placa con éxito, **alimente con la fuente externa (gire el interruptor DIP a ON)** y pulse el botón de reset en la micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (placez l'interrupteur DIP sur ON)**, et appuyez sur le bouton reset de la micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-A continuación, el coche avanzará durante 1 s, retrocederá durante 1 s, girará a la izquierda durante 1 s, a la derecha durante 1 s, girará en sentido antihorario durante 1 s, en sentido horario durante 1 s y se detendrá 1 s. La matriz LED también muestra los patrones.
+Ensuite, la voiture avancera pendant 1 s, reculera pendant 1 s, tournera à gauche pendant 1 s, tournera à droite pendant 1 s, tournera dans le sens antihoraire pendant 1 s, dans le sens horaire pendant 1 s, puis s'arrêtera pendant 1 s. La matrice affiche également les motifs.
 
-5\. **Código de prueba 2**
+5\. **Test Code2**
 
-Abra el software Mu y abra el archivo “microbit-Motor Driving-2.py” para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Entrez dans le logiciel Mu et ouvrez le fichier “microbit-Motor Driving-2\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben permanecer en inglés**.)
+(**Remarque : Tous les mots et symboles en anglais doivent être écrits en anglais**.)
 
-Haga clic en “Files” para importar el archivo de librería “keyes_mecanum_Car.py” a la micro:bit. 
+Cliquez sur “Files” pour importer le fichier de bibliothèque “keyes_mecanum_Car.py” sur la micro:bit. 
 
-Haga clic en “Check” para comprobar errores en el código. El programa está incorrecto si aparecen subrayados y cursores. 
+Cliquez sur “Check” pour vérifier les erreurs dans le code. Le programme est erroné si des soulignements et des curseurs sont affichés. 
 
-Si el código es correcto, conecte la micro:bit al ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez la micro:bit à votre ordinateur et cliquez sur “Flash” pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_96230faf.png)
 
@@ -205,18 +205,16 @@ while True:
             run_O()
 ```
 
-6\. **Resultado de la prueba 2**
+6\. **Résultat du test 2**
 
-Después de descargar el código a la placa con éxito, **alimente con la fuente externa (gire el interruptor DIP a ON)** y pulse el botón de reset en la micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (placez l'interrupteur DIP sur ON)**, et appuyez sur le bouton reset de la micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Cuando se presionan por primera vez los botones A y B, la micro:bit mostrará “L”; la trayectoria del coche es en forma de “L”. Cuando se presionan de nuevo, la micro:bit muestra “口” y la trayectoria del coche es “口”. El coche repetirá este patrón.
+Lorsque les boutons A et B sont pressés pour la première fois, la micro:bit affichera “L”, la trajectoire de la voiture est en forme de “L”. Lorsqu'ils sont pressés à nouveau, “口” s'affiche sur la micro:bit, et la trajectoire de la voiture est en forme de “口”. La voiture répétera ce schéma.
 
-7\.  **Explicación del código**
+7\.  **Explication du code**
 
 ![Img](./media/Python_70b4e70f.png)
 
 ![Img](./media/Python_e3250a8a.png)
-
----

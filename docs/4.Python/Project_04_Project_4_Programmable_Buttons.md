@@ -1,31 +1,31 @@
-### Proyecto 4：Botones programables
+### Projet 4：Boutons programmables
 
 ![](./media/Python_06be84fb.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
 ![](./media/Python_b6d60ae2.png)
 
-Los botones pueden usarse para controlar circuitos. En un circuito con un pulsador, el circuito se cierra al presionar el botón y se abre de nuevo al soltarlo.
+Les boutons peuvent être utilisés pour contrôler des circuits. Dans un circuit intégré avec un bouton-poussoir, le circuit est fermé lorsque le bouton est enfoncé et s'ouvre de nouveau après son relâchement.
 
-Ambos extremos del botón parecen dos montañas. Hay un río en medio. 
-La pieza metálica interna conecta los dos lados para permitir el paso de la corriente, como construir un puente para unir dos montañas.
+Les deux extrémités du bouton ressemblent à deux montagnes. Il y a une rivière entre les deux. 
+La pièce métallique interne relie les deux côtés pour laisser passer le courant, comme construire un pont pour relier deux montagnes.
 
-La estructura interna del botón se muestra a continuación: antes de presionar el botón, 1, 2, 3 y 4 están conectados. Sin embargo, 1 y 3 o 1 y 4 o 2 y 3 o 2 y 4 están desconectados; estas conexiones solo se habilitan cuando se presiona el botón. ![](./media/Python_d2a204e6.png)
+La structure interne du bouton est montrée comme suit : avant d'enfoncer le bouton, 1, 2, 3 et 4 sont activés. Cependant, 1 et 3 ou 1 et 4 ou 2 et 3 ou 2 et 4 sont déconnectés ; ces connexions ne sont activées que lorsque le bouton est pressé. ![](./media/Python_d2a204e6.png)
 
-La placa principal micro:bit cuenta con tres pulsadores: dos son botones programables (marcados con A y B) y el situado en el otro lado es un botón de reinicio. Al presionar los dos botones programables se pueden introducir tres señales diferentes. Podemos presionar el botón A o B individualmente o presionarlos juntos y la matriz de puntos LED mostrará respectivamente A, B y AB. Empecemos.
+La carte principale micro:bit possède trois boutons-poussoirs, deux sont des boutons programmables (marqués A et B), et celui de l'autre côté est un bouton de réinitialisation. En appuyant sur les deux boutons programmables, on peut entrer trois signaux différents. On peut appuyer sur le bouton A ou B seul, ou les presser ensemble ; la matrice de LED affiche alors respectivement A, B et AB. Commençons.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-A. Conecte la placa principal micro:bit a su ordenador mediante el cable USB.
+A. Connectez la carte principale micro:bit à votre ordinateur via le câble USB.
 
-B. Abra la versión offline de Mu.
+B. Ouvrez la version hors ligne de Mu.
 
 3\.  **Test Code1**
 
-Abra el software Mu y abra el archivo “Programmable Buttons-1\.py” para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Ouvrez le logiciel Mu et ouvrez le fichier “Programmable Buttons-1\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
 
 ![](./media/Python_2637f524.png)
 
@@ -40,27 +40,27 @@ while True:
     elif button_b.is_pressed():
         display.show("B")
 ```
-Haga clic en “Check” para examinar errores en el código. El programa está mal si aparecen subrayados y cursores.
+Cliquez sur « Check » pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés.
 
 ![](./media/Python_a0f284f3.png)
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur « Flash » pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_5694d3ce.png)
 
-4\.  **Resultado de la prueba 1**
+4\.  **Résultat du test 1**
 
-Después de descargar correctamente el código a la placa, **alimente mediante el cable micro USB o una fuente de alimentación externa (coloque el interruptor DIP en ON)** y presione el botón de reinicio en la placa.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (poussez l'interrupteur DIP sur ON)**, puis appuyez sur le bouton de réinitialisation de la carte.
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matriz de puntos LED 5*5 muestra “A” si se presiona el botón A, luego “B” si se presiona el botón B, y “AB” si se presionan A y B juntos.
+La matrice de LED 5*5 affiche « A » si le bouton A est pressé, puis « B » si le bouton B est pressé, et « AB » si les boutons A et B sont pressés simultanément.
 
 5\.  **Test Code2**
 
-Abra el software Mu y abra el archivo “Programmable Buttons-2\.py” para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Ouvrez le logiciel Mu et ouvrez le fichier “Programmable Buttons-2\.py” pour importer le code. Vous pouvez aussi saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles doivent être écrits en anglais.**)
 
 ![](./media/Python_1a1126f6.png)
 
@@ -106,27 +106,27 @@ while True:
     if a == 5:
         display.show(val6)
 ```
-Haga clic en “Check” para examinar errores en el código. El programa está mal si aparecen subrayados y cursores.
+Cliquez sur « Check » pour vérifier les erreurs dans le code. Le programme est incorrect si des soulignements et des curseurs sont affichés.
 
 ![](./media/Python_21771d90.png)
 
 ![Img](./media/Python_8d257384.png)
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en “Flash” para descargar el código a la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur « Flash » pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_84ba8cde.png)
 
 ![Img](./media/Python_8d257384.png)
 
-6\.  **Resultado de la prueba 2**
+6\.  **Résultat du test 2**
 
-Después de descargar correctamente el código a la placa, **alimente mediante el cable micro USB o una fuente de alimentación externa (coloque el interruptor DIP en ON)** y presione el botón de reinicio en la placa.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (poussez l'interrupteur DIP sur ON)**, puis appuyez sur le bouton de réinitialisation de la carte.
 
 ![Img](./media/Python_bb3e1312.png)
 
-Si se presiona el botón A, aumentan los LED que se iluminan en rojo; si se presiona el botón B, disminuyen los LED que se iluminan en rojo.
+Si le bouton A est pressé, le nombre de LED rouge augmente ; si le bouton B est pressé, le nombre de LED rouge diminue.
 
-7\.  **Explicación del código**
+7\.  **Explication du code**
 
 ![Img](./media/Python_b33858dc.png)
 

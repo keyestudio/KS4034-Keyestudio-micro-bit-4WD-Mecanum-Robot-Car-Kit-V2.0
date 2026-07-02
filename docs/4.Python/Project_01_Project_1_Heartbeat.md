@@ -1,32 +1,32 @@
-### Project 1：Heart Beat
+### Projet 1：Heart Beat
 
 ![](./media/Python_b855274f.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-Este proyecto es fácil de realizar únicamente con una placa micro:bit y un cable micro USB. Este experimento sirve como introducción para que entres en el mágico mundo de la programación del micro:bit.
+Ce projet est facile à réaliser uniquement avec une carte micro:bit et un câble micro USB. Cet expérience sert d'introduction pour vous permettre d'entrer dans le monde magique de la programmation du micro:bit.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-A. Conecta la placa micro:bit a tu ordenador mediante el cable USB.
+A. Branchez la carte micro:bit à votre ordinateur via le câble USB.
 
-B. Abre la versión offline de Mu.
+B. Ouvrez la version hors ligne de Mu.
 
-3\.  **Código de prueba**
+3\.  **Code de test**
 
-Abre el software Mu, pulsa “Load”, selecciona el archivo ““microbit-Heartbeat\.py“” y haz clic en “open”:
+Ouvrez le logiciel Mu, appuyez sur «Load», sélectionnez le fichier «“microbit-Heartbeat\.py“» et cliquez sur «open» :
 
 ![](./media/Python_1ec17d44.png)
 
 ![](./media/Python_4bda2b61.png)
 
-Hay otra forma de importar código. Abre Mu y arrastra el archivo “microbit-Heartbeat\.py” dentro.
+Il existe une autre façon d'importer du code. Ouvrez Mu et glissez le fichier „microbit-Heartbeat\.py“ dedans.
 
 ![](./media/Python_c5b7322b.png)
 
-También puedes introducir el código directamente en la ventana de edición.
+Vous pouvez aussi saisir le code directement dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos en inglés deben escribirse en inglés.**)
+(**Remarque : Tous les mots et symboles anglais doivent être écrits en anglais.**)
 
 ![](./media/Python_80af4cb3.png)
 
@@ -39,7 +39,7 @@ while True:
     display.show(Image.HEART_SMALL)
     sleep(500)
 ```
-A continuación se muestra una lista de imágenes integradas:
+Voici la liste des images intégrées :
 
 • Image.HEART
 
@@ -131,7 +131,7 @@ Image.CLOCK4, Image.CLOCK3, Image.CLOCK2, Image.CLOCK1
 
 • Image.SNAKE，Image.ALL_CLOCKS，Image.ALL_ARROWS
 
-Conecta la placa micro:bit al ordenador mediante un cable USB y haz clic en “Flash” para descargar el código en la placa.
+Connectez la carte micro:bit à l'ordinateur via un câble USB, puis cliquez sur «Flash» pour télécharger le code sur la carte.
 
 ![](./media/Python_93e18731.png)
 
@@ -141,47 +141,47 @@ Conecta la placa micro:bit al ordenador mediante un cable USB y haz clic en “F
 
 ![](./media/Python_cc33f1a9.png)
 
-El código, aunque esté mal, puede descargarse correctamente en la placa micro:bit, pero no funcionará en el micro:bit.
+Le code, même s'il contient des erreurs, peut être téléchargé avec succès sur la carte micro:bit, mais il ne fonctionnera pas sur le micro:bit.
 
-Haz clic en “Flash” para descargar el código al micro:bit.
+Cliquez sur «Flash» pour télécharger le code sur le micro:bit.
 
 ![](./media/Python_8982d0b0.png)
 
-Haz clic en “REPL” y pulsa el botón de reinicio en el micro:bit; la información de error se mostrará en la ventana REPL, como se muestra a continuación:
+Cliquez sur «REPL» et appuyez sur le bouton reset du micro:bit ; les informations d'erreur s'afficheront dans la fenêtre REPL, comme illustré ci-dessous :
 
 ![](./media/Python_0c2abf18.png)
 
-Haz clic de nuevo en “REPL” para desactivar el modo REPL, entonces podrás actualizar el código nuevo.
+Cliquez de nouveau sur «REPL» pour désactiver le mode REPL, puis vous pourrez actualiser le nouveau code.
 
-Para asegurarte de que el código es correcto, solo necesitas tocar “Check”. Los errores se mostrarán en la ventana.
+Pour vérifier que le code est correct, il suffit d'appuyer sur «Check». Les erreurs seront affichées dans la fenêtre.
 
 ![](./media/Python_b994c0d3.png)
 
-Modifica el código de acuerdo con las indicaciones y haz clic en “Check”.
+Modifiez le code selon les indications puis cliquez sur «Check».
 
 ![](./media/Python_bc5cbed3.png)
 
- Por favor, visita el sitio web para más tutoriales: [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
+ Veuillez consulter le site pour plus de tutoriels : [https://codewith.mu/en/tutorials/](https://codewith.mu/en/tutorials/)
 
-4\.  **Resultado de la prueba**
+4\.  **Résultat du test**
 
-Haz clic en “<span style="color: rgb(255, 76, 65);">**Flash**</span>” para cargar el código en la placa micro:bit.
+Cliquez sur “<span style="color: rgb(255, 76, 65);">**Flash**</span>” pour charger le code sur la carte micro:bit.
 
 ![Img](./media/Python_ed83ac25.png)
 
-Después de descargar correctamente el código en la placa, **enciende la alimentación mediante el cable micro USB o una fuente de alimentación externa (mueve el interruptor DIP a ON)**, y pulsa el botón de reinicio en la placa.
+Après avoir téléchargé le code sur la carte avec succès, **alimentez via le câble micro USB ou une alimentation externe (mettre l'interrupteur DIP sur ON)**, et appuyez sur le bouton reset de la carte.
 
 ![Img](./media/Python_bb3e1312.png)
 
-La matriz de puntos LED muestra alternativamente el patrón “❤” y luego “![](./media/Python_04fdfc90.png)”.
+La matrice LED affiche alternativement le motif «❤» puis «![](./media/Python_04fdfc90.png)».
 
-5\.  **Explicación del código**
+5\.  **Explication du code**
 
-|from microbit import*|Importa el archivo de la librería del micro:bit|
+|from microbit import*|Importe le fichier de la bibliothèque du micro:bit|
 |-|-|
-|while True:|Este es un bucle permanente que hace que el micro:bit ejecute el código en este bucle para siempre.|
-|display.show(Image.HEART)|micro:bit muestra “❤”|
-|sleep(500)|Retardo de 500 ms|
-|display.show(Image.HEART_SMALL)|La matriz LED muestra “![](./media/Python_04fdfc90.png)”|
+|while True:|Ceci est une boucle permanente qui fait exécuter au micro:bit le code contenu dans cette boucle indéfiniment.|
+|display.show(Image.HEART)|micro:bit affiche «❤»|
+|sleep(500)|Attente de 500 ms|
+|display.show(Image.HEART_SMALL)|La matrice LED affiche «![](./media/Python_04fdfc90.png)»|
 
 ---

@@ -1,151 +1,151 @@
 ## Resource Download
 
-Para ayudarte a obtener rápidamente los códigos relacionados, bibliotecas y otros archivos de soporte para este producto, haz clic en los enlaces siguientes para descargar:
+Pour vous aider à obtenir rapidement les codes, bibliothèques et autres fichiers de support liés à ce produit, veuillez cliquer sur les liens ci-dessous pour les télécharger :
 
 - [Python Code and library downloads](./PythonCode.7z)
 
-## Comenzando con Python
+## Premiers pas avec Python
 
-Este tutorial está escrito para el lenguaje Python. Si deseas usar programación mediante gráficos, consulta el manual "Makecode Tutorial". En el directorio raíz del recurso que descargaste hay una carpeta llamada "Python tutorial", que almacena todo el código Python del Micro:bit 4WD Mecanum Robot Car V2.0. El archivo de código Python es un archivo que termina con ".py".
+Ce tutoriel est rédigé pour le langage Python. Si vous souhaitez utiliser une programmation graphique, veuillez vous référer au manuel "Makecode Tutorial". Dans le répertoire racine de la ressource que vous avez téléchargée, il y a un dossier nommé "Python tutorial", qui contient tout le code Python de la Micro:bit 4WD Mecanum Robot Car V2.0. Le fichier de code Python est un fichier se terminant par ".py".
 
-### ¿Qué es MicroPython?
+### Qu'est-ce que MicroPython ?
 
-Python es un lenguaje basado en texto, ampliamente utilizado en educación y también empleado por programadores profesionales en campos como ciencia de datos y aprendizaje automático.
+Python est un langage textuel, largement utilisé dans l'éducation et également employé par des programmeurs professionnels dans des domaines tels que la science des données et l'apprentissage automatique.
 
-Micro: bit puede programarse en Python; al tratarse de un microcontrolador, las diferencias de hardware impiden que el micro: bit soporte Python por completo. MicroPython está dedicado al micro：bit y es una implementación eficiente del lenguaje de programación Python3. Contiene una pequeña porción de la biblioteca estándar de Python y está optimizado para ejecutarse en microcontroladores micro:bit.
+Le Micro: bit peut être programmé en Python ; il s'agit d'un microcontrôleur et les différences matérielles empêchent le micro: bit de prendre en charge Python dans son intégralité. MicroPython est dédié au micro：bit, c'est une implémentation efficace du langage Python3. Il contient une petite partie de la bibliothèque standard Python et est optimisé pour fonctionner sur les microcontrôleurs micro:bit.
 
-La versión de Python utilizada por BBC micro: bit se llama MicroPython. MicroPython es perfecto para quienes desean aprender más sobre programación; te ayuda a programar con una serie de fragmentos de código y una variedad de gráficos y música predefinidos.
+La version de Python utilisée par le BBC micro: bit s'appelle MicroPython. MicroPython est parfait pour ceux qui souhaitent en apprendre davantage sur la programmation ; il vous aide à programmer avec une série d'extraits de code, ainsi qu'une variété de graphiques et de musiques préconçus.
 
-Enlace para BBC microbit MicroPyth: [BBC micro:bit MicroPython ](https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html) 
+Lien pour BBC microbit MicroPyth : [BBC micro:bit MicroPython ](https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html) 
 
-**Python tiene dos tipos de editores: versión web y versión sin conexión**
+**Python dispose de deux types d'éditeurs : version web et version hors ligne**
 
-1\.  Versión web: [https://python.microbit.org/v/1.1](https://python.microbit.org/v/1.1)
+1\.  Version web : [https://python.microbit.org/v/1.1](https://python.microbit.org/v/1.1)
 
 ![](./media/Python_693f76f5.png)
 
-2\.  El otro es también el compilador offline — Mu ![](./media/Python_153c77ed.png)
+2\.  L'autre est aussi le compilateur hors ligne — Mu ![](./media/Python_153c77ed.png)
 
-Sitio oficial de Mu: [https://codewith.mu/](https://codewith.mu/)
+Site officiel de Mu : [https://codewith.mu/](https://codewith.mu/)
 
 ### Mu
 
-Mu, un editor de código Python, es adecuado para principiantes. No es compatible con Windows de 32 bits.
+Mu, un éditeur de code Python, convient aux débutants. Il ne prend pas en charge Windows 32 bits.
 
-1\.  **Descargar Mu**
+1\.  **Télécharger Mu**
 
-Haz clic en “This PC” y haz clic derecho en Propiedades para comprobar la versión de tu equipo.
+Cliquez sur « This PC » puis faites un clic droit sur Propriétés pour vérifier la version de votre ordinateur.
 
 ![](./media/Python_3a58be54.png)
 
-Comprueba el tipo de sistema de tu equipo.
+Vérifiez le type de système de votre ordinateur.
 
 ![](./media/Python_e774ae15.png)
 
-Accede al enlace de MU: [https://codewith.mu/en/download](https://codewith.mu/en/download) para descargar la versión correspondiente de Mu.
+Accédez au lien de MU : [https://codewith.mu/en/download](https://codewith.mu/en/download) pour télécharger la version correspondante de Mu.
 
 ![](./media/Python_ceb4cfa6.png)
 
-2\.  **Ejecutar instalación**
+2\.  **Exécuter le programme d'installation**
 
-Abre el archivo a continuación
+Ouvrez le fichier ci-dessous
 
 ![](./media/Python_8bcfe24c.png)
 
-Mac OSX: [https://codewith.mu/en/howto/1.1/install_macos](https://codewith.mu/en/howto/1.1/install_macos).
+Mac OSX : [https://codewith.mu/en/howto/1.1/install_macos](https://codewith.mu/en/howto/1.1/install_macos).
 
-Linux: [https://codewith.mu/en/howto/1.2/install_linux](https://codewith.mu/en/howto/1.2/install_linux).
+Linux : [https://codewith.mu/en/howto/1.2/install_linux](https://codewith.mu/en/howto/1.2/install_linux).
 
 **Windows 10**
 
-Verás que aparece una ventana emergente; haz clic en “More info”.
+Une fenêtre contextuelle s'affichera, cliquez ensuite sur « More info ».
 
 ![](./media/Python_877beb7b.png)
 
-Luego haz clic en “Run anyway”.
+Puis cliquez sur « Run anyway ».
 
 ![](./media/Python_c87475e5.png)
 
-3\. Acuerdo de licencia
+3\. Contrat de licence
 
-Haz clic en “Install”.
+Cliquez sur « Install ».
 
 ![](./media/Python_33f42b66.png)
 
 ![](./media/Python_f5c6698f.png)
 
-Tras la instalación, haz clic en “finish”.
+Après l'installation, cliquez sur « finish ».
 
 ![](./media/Python_c6ec7436.png)
 
-4\. Iniciar Mu
+4\. Démarrer Mu
 
-A continuación, encuéntralo según la imagen siguiente
+Ensuite, localisez-le selon l'image suivante
 
 ![](./media/Python_c4adbdd1.png)
 
-Su interfaz principal se muestra a continuación:
+Son interface principale est affichée comme ci-dessous :
 
 ![](./media/Python_3697c0c7.png)
 
-### Uso de modos y barra de menús
+### Utilisation des modes & barre de menu
 
-Configure “<span style="color: rgb(255, 76, 65);">**Mode**</span>” en BBC micro:bit.
+Réglez “<span style="color: rgb(255, 76, 65);">**Mode**</span>” sur BBC micro:bit.
 
-En el menú, haga clic en “**Mode**” para configurarlo en “**BBC micro：bit**”. El modo micro:bit sabe cómo interactuar y conectarse a un micro:bit.
+Dans le menu, cliquez sur « **Mode** » pour le définir sur « **BBC micro：bit** ». Le mode micro:bit sait comment interagir avec et se connecter à un micro:bit.
 
 ![](./media/Python_18512c7e.png)
 
-Haga clic para [Start with Mu](https://codewith.mu/en/tutorials/1.1/start).
+Cliquez pour [Start with Mu](https://codewith.mu/en/tutorials/1.1/start).
 
-### Cómo Mu importa una biblioteca al Micro:bit
+### Comment Mu importe une bibliothèque dans le Micro:bit
 
-<span style="color: rgb(255, 76, 65);">**Antes de importar bibliotecas, necesitamos cargar un código .py (un código vacío también está bien) en la placa micro:bit. Aquí tomamos un código vacío como ejemplo.**</span>
+<span style="color: rgb(255, 76, 65);">**Avant d'importer des bibliothèques, nous devons téléverser un code .py (un code vide convient également) sur la carte micro:bit. Ici nous prenons un code vide en exemple.**</span>
 
-Conecte la placa al ordenador mediante un cable USB. Abra Mu y haga clic en “Flash” para cargar el código .py (incluso vacío) en la placa.
+Connectez la carte à l'ordinateur via un câble USB. Ouvrez Mu et cliquez sur « Flash » pour téléverser le code .py (même vide) sur la carte.
 
 ![Img](./media/Python_611b2c4e.png)
 
-En este tutorial se utiliza el archivo de biblioteca "keyes_mecanum_Car_V2.py". Por lo tanto, importe el archivo de biblioteca "keyes_mecanum_Car_V2.py" en el micro:bit. Este archivo contiene el método de control del Micro:bit 4WD Mecanum Robot Car V2.0.
+Dans ce tutoriel, le fichier de bibliothèque "keyes_mecanum_Car_V2.py" est utilisé. Par conséquent, importez le fichier de bibliothèque "keyes_mecanum_Car_V2.py" dans le micro:bit. Ce fichier contient la méthode de contrôle du Micro:bit 4WD Mecanum Robot Car V2.0.
 
-El directorio predeterminado donde Mu guarda los archivos es “mu_code” en el directorio raíz del usuario.
+Le répertoire par défaut dans lequel Mu enregistre les fichiers est « mu_code » à la racine du répertoire utilisateur.
 
-Enlace de referencia: [https://codewith.mu/en/tutorials/1.0/files](https://codewith.mu/en/tutorials/1.0/files)
+Lien de référence : [https://codewith.mu/en/tutorials/1.0/files](https://codewith.mu/en/tutorials/1.0/files)
 
-**Los métodos para encontrar la carpeta "mu_code":**
+**Méthodes pour trouver le dossier "mu_code" :**
 
-**Método uno:**
+**Méthode Une :**
 
-Por ejemplo, en el sistema Windows, supongamos que su sistema está instalado en la unidad C del ordenador y el nombre de usuario es "**Administrator**", entonces la ruta del directorio "**mu_code**" es "**C:\Users\Administrator\mu_ code**". En sistemas Linux, la ruta del directorio "**mu_code**" es "**~/home/mu_code**".
+Par exemple, sur le système Windows, supposons que votre système est installé sur le lecteur C de l'ordinateur, et que le nom d'utilisateur est "**Administrator**", alors le chemin du répertoire "**mu_code**" est "**C:\Users\Administrator\mu_ code**". Sur les systèmes Linux, le chemin du répertoire "**mu_code**" est "**~/home/mu_code**".
 
-Abra la carpeta “**mu_code**”.
+Ouvrez le dossier « **mu_code** ».
 
 ![](./media/Python_d271a924.png)
 
-**Método dos:**
+**Méthode Deux :**
 
-Busque la carpeta “mu_code” en el Disco (C:).
+Recherchez le dossier « mu_code » sur le disque (C:).
 
 ![Img](./media/Python_03ff037e.png)
 
 ![Img](./media/Python_54199d45.png)
 
-Abra “mu_code”.
+Ouvrez « mu_code ».
 
 ![Img](./media/Python_4841ca3f.png)
 
-La ruta de la carpeta de datos donde se encuentra el archivo de biblioteca “keyes_mecanum_Car.py” que proporcionamos es la siguiente:
+Le chemin du dossier de données où se trouve le fichier de bibliothèque “keyes_mecanum_Car.py” que nous fournissons est le suivant :
 
 ![Img](./media/Python_7adb2b68.png)
 
-Copie el archivo de biblioteca “keyes_mecanum_Car.py” en la carpeta “mu_code”。Cuando se complete la copia, como se muestra a continuación:
+Copiez le fichier de bibliothèque “keyes_mecanum_Car.py” dans le dossier “mu_code”。Lorsque la copie est terminée, cela ressemble à l'image ci-dessous :
 
 ![](./media/Python_d753d652.png)
 
-Primero abra el software Mu y conecte el micro:bit a su ordenador, luego haga clic en el botón "Files" y arrastre el archivo de biblioteca "keyes_mecanum_Car.py" al micro:bit.
+Ouvrez d'abord le logiciel Mu et connectez le micro:bit à votre ordinateur, puis cliquez sur le bouton "Files" et faites glisser le fichier de bibliothèque "keyes_mecanum_Car.py" vers le micro:bit.
 
 ![](./media/Python_aeaae2b7.png)
 
-Pasados unos segundos, la importación se completa y puede verlo en el cuadro de la izquierda.
+Après quelques secondes, l'importation est terminée et vous pouvez le voir dans la boîte à gauche.
 
 ![](./media/Python_2be967ca.png)

@@ -1,134 +1,134 @@
-## Proyecto 19：Control remoto IR
+## Projet 19：Télécommande IR
 
-### Proyecto 19.1：Decodificar el control remoto IR
+### Projet 19.1：Décoder la télécommande IR
 
 ![](./media/Makecode_3a3e9860.png)
 
-1\. **Descripción**
+1\. **Description**
 
-No cabe duda de que el control remoto infrarrojo es omnipresente en la vida diaria. Se utiliza para controlar varios electrodomésticos, como televisores, equipos de sonido, videograbadores y receptores de señal por satélite. El control remoto infrarrojo está compuesto por sistemas de transmisión y recepción infrarroja, es decir, un control remoto infrarrojo, un módulo receptor infrarrojo y un microcontrolador capaz de decodificar.
+Il ne fait aucun doute que la télécommande infrarouge est omniprésente dans la vie quotidienne. Elle est utilisée pour contrôler divers appareils ménagers, tels que les téléviseurs, stéréos, magnétoscopes et récepteurs satellite. La télécommande infrarouge se compose d'un système d'émission infrarouge et d'un système de réception infrarouge, c'est-à-dire d'une télécommande, d'un module récepteur infrarouge et d'un microcontrôleur capable de décoder.
 
 ![](./media/Makecode_9980b41f.png)
 
-La señal portadora infrarroja de 38K emitida por el mando se codifica mediante el chip de codificación del mando. Está compuesta por una sección de código de piloto, código de usuario, código inverso de usuario, código de datos y código inverso de datos. El intervalo de tiempo del pulso se utiliza para distinguir si es una señal 0 o 1 y la codificación se compone de estas señales 0 y 1.
+Le signal porteuse infrarouge 38K émis par la télécommande est encodé par la puce d'encodage de la télécommande. Il est composé d'une section de code pilote, d'un code utilisateur, du code inverse utilisateur, d'un code de données et du code inverse de données. L'intervalle de temps des impulsions permet de distinguer s'il s'agit d'un signal 0 ou 1 et l'encodage est constitué de ces signaux 0 et 1.
 
-El código de usuario del mismo mando permanece sin cambios. El código de datos distingue la tecla.
+Le code utilisateur d'une même télécommande reste inchangé. Le code de données permet de distinguer la touche.
 
-Cuando se pulsa un botón del mando, éste envía una señal portadora infrarroja. Cuando el receptor IR recibe la señal, el programa decodifica la portadora y determina qué tecla se ha pulsado. El MCU decodifica la señal 01 recibida, determinando así qué tecla del mando fue pulsada.
+Lorsque le bouton de la télécommande est enfoncé, la télécommande envoie un signal porteur infrarouge. Lorsque le récepteur IR reçoit le signal, le programme décode le signal porteur et détermine quelle touche a été enfoncée. Le MCU décode le signal 01 reçu, ce qui permet de déterminer quelle touche de la télécommande a été pressée.
 
-El receptor infrarrojo que utilizamos es un módulo receptor infrarrojo. Compuesto principalmente por una cabeza receptora infrarroja, es un dispositivo que integra recepción, amplificación y demodulación. Su IC interno ha completado la demodulación y puede llevar a cabo desde la recepción infrarroja hasta la salida, siendo compatible con señales TTL. Además, es adecuado para el control remoto por infrarrojos y la transmisión de datos por infrarrojos. El módulo receptor infrarrojo fabricado por el receptor tiene solo tres pines: línea de señal, VCC y GND.
+Le récepteur infrarouge que nous utilisons est un module récepteur infrarouge. Principalement composé d'une tête de réception infrarouge, c'est un dispositif qui intègre réception, amplification et démodulation. Son circuit intégré interne a déjà effectué la démodulation et peut assurer la réception infrarouge jusqu'à la sortie et est compatible avec les signaux TTL. De plus, il convient à la télécommande infrarouge et à la transmission de données infrarouges. Le module de réception infrarouge fabriqué par le récepteur n'a que trois broches : ligne de signal, VCC et GND.
 
-Según la imagen anterior, el puerto integrado del receptor infrarrojo está conectado al puerto P9 5V G en la placa controladora del motor y es controlado por el P9 del micro:bit.
+Selon l'image ci-dessus, le port intégré du récepteur infrarouge est connecté au port P9 5V G sur la carte pilote du moteur et contrôlé par le P9 du micro:bit.
 
-2\. **Parámetros:**
+2\. **Paramètres :**
 
-- Tensión de funcionamiento: 3.3-5V（DC）
+- Tension de fonctionnement : 3.3-5V（DC）
 
-- Interfaz: 3PIN
+- Interface : 3PIN
 
-- Señal de salida: señal digital
+- Signal de sortie : signal numérique
 
-- Ángulo de recepción: 90 grados
+- Angle de réception : 90 degrés
 
-- Frecuencia: 38khz
+- Fréquence : 38khz
 
-- Distancia de recepción: aproximadamente 5m
+- Distance de réception : environ 5m
 
-3\. **Preparación**
+3\. **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio   4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans le logement du keyestudio   4WD Mecanum Robot Car V2.0
 
-- Coloque las baterías en el portabaterías
+- Placez des piles dans le support de piles
 
-- Gire el interruptor de alimentación a la posición ON
+- Tournez l'interrupteur d'alimentation en position ON
 
-- Conecte el micro:bit a su ordenador mediante un cable USB
+- Connectez le micro:bit à votre ordinateur via un câble USB
 
-- Abra la versión web de Makecode
+- Ouvrez la version Web de Makecode
 
 
-4\. **Código de prueba**
+4\. **Code de test**
 
 ![](./media/Makecode_2e20f731.png)
 
-Haga clic en “JavaScript" para cambiar al código JavaScript correspondiente:
+Cliquez sur “JavaScript" pour passer au code JavaScript correspondant :
 
 ![](./media/Makecode_87e18859.png)
 
-**Explicación del código:** Si los botones no están pulsados, el monitor serie muestra constantemente 0; al pulsarlos, se muestran los valores de las teclas correspondientes.
+**Explication du code :** Si les boutons ne sont pas enfoncés, le moniteur série affiche constamment 0 ; lorsqu'ils sont enfoncés, les valeurs des touches correspondantes sont affichées.
 
-**Notas：**
+**Remarques：**
 
-El mando de este kit no incluye las pilas. Recomendamos adquirirlas en línea. (tipo de pila: CR2025).
+La télécommande fournie dans ce kit ne contient pas de piles. Nous vous recommandons de les acheter en ligne. (type de pile : CR2025).
 
-Asegúrese de que el mando IR funciona antes de la prueba. Aquí tiene un consejo para comprobarlo:
+Assurez-vous que la télécommande IR fonctionne avant le test. Voici un conseil pour la vérifier :
 
-Abra la cámara del móvil, apunte el mando IR hacia la cámara y pulse un botón. Si ve una luz púrpura intermitente en la cámara, el mando está bien.
+Ouvrez l'appareil photo du téléphone portable, pointez la télécommande IR vers l'appareil photo et appuyez sur un bouton. Si vous voyez une lumière violette clignotante à l'écran de l'appareil photo, la télécommande fonctionne.
 
-5\. **Resultado de la prueba**
+5\. **Résultat du test**
 
-Descargue el código en la placa micro:bit y no desconecte el cable USB. Haga clic![](./media/Makecode_e0580d78.png)
+Téléchargez le code sur la carte micro:bit et ne débranchez pas le câble USB. Cliquez ![](./media/Makecode_e0580d78.png)
 
 ![](./media/Makecode_0d3198e0.png)
 
-Apunte el mando IR al receptor IR y pulse el botón; el monitor serie mostrará los valores de las teclas correspondientes, como se muestra a continuación:
+Pointez la télécommande IR vers le récepteur IR et appuyez sur le bouton ; le moniteur série affichera les valeurs de touches correspondantes, comme indiqué ci-dessous :
 
 ![](./media/Makecode_c7a33a4c.png)
 
-Abra CoolTerm, haga clic en Options para seleccionar SerialPort. Configure el puerto COM y la velocidad en baudios a 115200. Haga clic en “OK” y “Connect”.
+Ouvrez CoolTerm, cliquez sur Options pour sélectionner SerialPort. Réglez le port COM et le débit en bauds à 115200. Cliquez sur “OK” et “Connect”.
 
-El monitor serie de CoolTerm muestra el valor de la tecla como sigue:
+Le moniteur série CoolTerm affiche la valeur de la touche comme suit :
 
 ![Img](./media/Makecode_155c857a.png)
 
-El valor de la tecla se muestra como referencia:
+La valeur de la touche est affichée à titre de référence :
 
 ![](./media/Makecode_1fc0d9bb.jpg)
 
-### Proyecto 19.2：Control remoto IR
+### Projet 19.2：Télécommande IR
 
 ![Img](./media/Makecode_643cb701.png)
 
-1\. **Descripción**
+1\. **Description**
 
-En este proyecto combinamos el control remoto IR con el car shield para crear un coche inteligente controlado por IR. Su principio es controlar el movimiento del coche enviando señales de tecla desde el mando IR al módulo receptor IR del car shield.
+Dans ce projet, nous combinons la télécommande IR avec le car shield pour réaliser une voiture intelligente contrôlée par IR. Le principe consiste à contrôler le mouvement de la voiture en envoyant des signaux de touches depuis la télécommande IR vers le module récepteur IR du car shield.
 
-2\. **Preparación**
+2\. **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio   4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans le logement du keyestudio   4WD Mecanum Robot Car V2.0
 
-- Coloque las baterías en el portabaterías
+- Placez des piles dans le support de piles
 
-- Gire el interruptor de alimentación a la posición ON
+- Tournez l'interrupteur d'alimentation en position ON
 
-- Conecte el micro:bit a su ordenador mediante un cable USB
+- Connectez le micro:bit à votre ordinateur via un câble USB
 
-- Abra la versión web de Makecode
+- Ouvrez la version Web de Makecode
 
-**Nota:** El sensor infrarrojo y el mando IR no deben utilizarse en entornos con interferencias infrarrojas como la luz solar, ya que esta contiene muchas luces invisibles, como infrarrojos y ultravioleta. En un entorno con luz solar intensa, no pueden funcionar normalmente.
+**Remarque :** Le capteur infrarouge et la télécommande infrarouge ne doivent pas être utilisés dans des environnements présentant des interférences infrarouges, comme la lumière du soleil, car celle-ci contient de nombreuses lumières invisibles, telles que l'infrarouge et l'ultraviolet. Dans un environnement fortement ensoleillé, ils ne peuvent pas fonctionner normalement.
 
-3\. **Diagrama de flujo**
+3\. **Organigramme**
 
 ![Img](./media/Makecode_e5f416e3.png)
 
-4\. **Código de prueba**
+4\. **Code de test**
 
 ![](./media/Makecode_22d06d74.png)
 
-Haga clic en “JavaScript" para cambiar al código JavaScript correspondiente:
+Cliquez sur “JavaScript" pour passer au code JavaScript correspondant :
 
 ![](./media/Makecode_e68b6275.png)
 
 ![](./media/Makecode_94de6552.png)
 
-5\. **Resultado de la prueba**
+5\. **Résultat du test**
 
-Descargue el código en la placa micro:bit y ponga el interruptor POWER en ON.
+Téléchargez le code sur la carte micro:bit et mettez l'interrupteur POWER sur ON.
 
-Apunte el mando IR al micro:bit y pulse el botón para controlar el movimiento del coche inteligente.
+Pointez la télécommande IR vers le micro:bit et appuyez sur un bouton pour contrôler le déplacement de la voiture intelligente.
 
-![](./media/Makecode_d55474f3.png) el botón hace que el coche inteligente avance，![](./media/Makecode_5c8a6549.png) representa girar a la izquierda，![](./media/Makecode_41116032.png) implica giro a la derecha，![](./media/Makecode_369433f6.png) indica marcha atrás，![](./media/Makecode_a8ef4b17.png) detiene el coche.
+![](./media/Makecode_d55474f3.png) Le bouton fait avancer la voiture intelligente，![](./media/Makecode_5c8a6549.png) signifie tourner à gauche，![](./media/Makecode_41116032.png) implique tourner à droite，![](./media/Makecode_369433f6.png) indique reculer，![](./media/Makecode_a8ef4b17.png) arrête la voiture.
 
-**Nota:** La distancia entre el mando IR y la cabeza receptora IR del coche inteligente debe ser inferior a 5 m durante la prueba.
+**Remarque :** La distance entre la télécommande IR et la tête réceptrice IR de la voiture intelligente doit être inférieure à 5 m pendant le test.
 
 ---

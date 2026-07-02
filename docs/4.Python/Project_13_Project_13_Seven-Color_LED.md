@@ -1,28 +1,28 @@
-### Proyecto 13: LED de siete colores
+### Projet 13: LED septicolore
 
 ![](./media/Python_804e502b.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-Este módulo consiste en un LED de uso común con 7 colores pero de apariencia blanca. Puede parpadear automáticamente diferentes colores para crear efectos de luz fantásticos cuando se aplica un nivel alto, como una LED normal.
+Ce module est composé d'une LED couramment utilisée à 7 couleurs mais d'apparence blanche. Elle peut clignoter automatiquement différentes couleurs pour créer des effets lumineux fantastiques lorsqu'un niveau haut est appliqué, comme pour une LED normale.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio 4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans la fente du keyestudio 4WD Mecanum Robot Car V2.0
 
-- Coloque las baterías en el portapilas
+- Placez les piles dans le porte-piles
 
-- Gire el interruptor de alimentación a la posición ON
+- Tournez l'interrupteur d'alimentation sur la position ON
 
-- Conecte el micro:bit a su ordenador mediante un cable USB
+- Connectez le micro:bit à votre ordinateur via un câble USB
 
-- Abra la versión sin conexión de Mu.
+- Ouvrez la version hors ligne de Mu.
 
-3\.  **Código de prueba**
+3\.  **Code de test**
 
-Abra el software Mu y abra el archivo“Colorful lights\.py”para importar el código. También puede introducir el código usted mismo en la ventana de edición.
+Ouvrez le logiciel Mu et ouvrez le fichier“Colorful lights\.py”pour importer le code. Vous pouvez également saisir le code vous-même dans la fenêtre d'édition.
 
-(**Nota: Todas las palabras y símbolos deben escribirse en inglés**.)
+(**Remarque : Tous les mots et symboles doivent être écrits en anglais**.)
 
 ![](./media/Python_010a8a12.png)
 
@@ -41,34 +41,34 @@ while True:
     sleep(3000)
 ```
 
-**Aviso importante:** Si el archivo de biblioteca 'keyes_mecanum_Car_V2.py' aún no se ha importado en la placa micro:bit, es imprescindible importar primero el archivo de la biblioteca a la placa micro:bit. El método para importar la biblioteca se encuentra haciendo clic en el enlace: [How to Import Library to Micro:bit](https://docs.keyestudio.com/projects/KS4034/en/latest/docs/Python/Python.html#how-mu-import-library-to-micro-bit) y siguiendo las instrucciones proporcionadas; de lo contrario, el código no se ejecutará.
+**Avis important :** Si le fichier de bibliothèque 'keyes_mecanum_Car_V2.py' n'a pas encore été importé sur la carte micro:bit, il est essentiel d'importer d'abord le fichier de bibliothèque sur la carte micro:bit. La méthode d'importation de la bibliothèque se trouve en cliquant sur le lien : [How to Import Library to Micro:bit](https://docs.keyestudio.com/projects/KS4034/en/latest/docs/Python/Python.html#how-mu-import-library-to-micro-bit) et en suivant les instructions fournies ; autrement, le code ne s'exécutera pas.
 
-Después de que el archivo de biblioteca se importe correctamente, también debe hacer clic en el botón "Check" para comprobar el código. Si un cursor o un subrayado aparece en una determinada línea, entonces hay errores en el programa.
+Après l'importation réussie du fichier de bibliothèque, vous devez également cliquer sur le bouton "Check" pour vérifier le code. Si un curseur ou un soulignement apparaît sur une certaine ligne, alors des erreurs sont présentes dans le programme.
 
 ![](./media/Python_ce67f468.png)
 
-Sin embargo, durante este proceso aparecerá el siguiente aviso incluso si no hay ningún error en el código. Estas advertencias son solo avisos y no mensajes de error del código.
+Cependant, durant ce processus, l'invite suivante apparaîtra même s'il n'y a pas d'erreur dans le code. Ces invites sont simplement des avertissements et non des messages d'erreur de code.
 
 ![](./media/Python_863bb61b.png)
 
 ![](./media/Python_ccfbfa56.png)
 
-Si el código es correcto, conecte el micro:bit a su ordenador y haga clic en“Flash”para descargar el código a la placa micro:bit.
+Si le code est correct, connectez le micro:bit à votre ordinateur et cliquez sur“Flash”pour télécharger le code sur la carte micro:bit.
 
 ![](./media/Python_39512a13.png)
 
-Si aparecen errores después de hacer clic en el botón "Flash", confirme si ha importado el archivo de biblioteca proporcionado "keyes_mecanum_Car_V2.py".
+Si des erreurs apparaissent après avoir cliqué sur le bouton "Flash", veuillez confirmer si vous avez importé le fichier de bibliothèque fourni "keyes_mecanum_Car_V2.py".
 
-**Nota:** Antes de programar con Micropython, debe importar el archivo de biblioteca "keyes_mecanum_Car_V2.py" al micro:bit. Si programa con un micro:bit diferente, el archivo de biblioteca "keyes_mecanum_Car_V2.py" debe importarse nuevamente al nuevo micro:bit.
+**Remarque :** Avant de programmer avec Micropython, vous devez importer le fichier de bibliothèque "keyes_mecanum_Car_V2.py" dans le micro:bit. Si vous programmez avec un autre micro:bit, le fichier de bibliothèque "keyes_mecanum_Car_V2.py" doit être importé à nouveau sur le nouveau micro:bit.
 
-4\. **Resultado de la prueba**
+4\. **Résultat du test**
 
-Después de descargar el código en la placa correctamente, **alimentación externa (ponga el interruptor DIP en ON)**, y presione el botón de reinicio en el micro:bit.
+Après avoir téléchargé le code sur la carte avec succès, **alimentation externe (mettre l'interrupteur DIP sur ON)**, et appuyez sur le bouton de réinitialisation du micro:bit.
 
 ![Img](./media/Python_bb3e1312.png)
 
-El LED de siete colores parpadeará durante 3s y luego se detendrá durante 3s y repetirá este patrón.
+La LED septicolore clignotera pendant 3s puis s'arrêtera pendant 3s et répétera ce motif.
 
-5\. **Explicación del código**
+5\. **Explication du code**
 
 ![Img](./media/Python_a4a670c0.png)

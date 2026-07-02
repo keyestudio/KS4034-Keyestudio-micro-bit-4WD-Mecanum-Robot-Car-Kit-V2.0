@@ -1,23 +1,23 @@
-## Preste especial atención
+## Faites particulièrement attention
 
-1\. Este producto contiene piezas pequeñas. No tragar.
+1\. Ce produit contient de petites pièces. Ne pas avaler.
 
-2\. No permita que niños menores de 3 años jueguen con este producto ni cerca del mismo.
+2\. Ne laissez pas d'enfants de moins de 3 ans jouer avec ce produit ou à proximité de celui-ci.
 
-3\. No permita que niños que carezcan de las capacidades de seguridad utilicen este producto sin la supervisión de los padres. 
+3\. Ne permettez pas à des enfants dépourvus des capacités de sécurité nécessaires d'utiliser ce produit sans la surveillance d'un parent. 
 
-4\. No utilice este producto ni sus componentes cerca de enchufes de corriente alterna (AC) u otros circuitos para evitar el riesgo de descarga eléctrica. 
+4\. N'utilisez pas ce produit ni ses composants à proximité de prises secteur (AC) ou d'autres circuits afin d'éviter le risque d'électrocution. 
 
-5\. No usar en las proximidades de líquidos ni de fuego.
+5\. Ne pas utiliser à proximité de liquides ou de flammes.
 
-6\. Mantenga materiales conductores alejados del producto.
+6\. Tenez les matériaux conducteurs à l'écart du produit.
 
-7\. No guarde ni utilice el producto en condiciones extremas, como temperaturas muy altas o muy bajas y alta humedad. 
+7\. Ne pas stocker ni utiliser le produit dans des conditions extrêmes telles que des températures très élevées ou très basses et une humidité élevée. 
 
-8\. Apague el circuito cuando deje el lugar o cuando no utilice el producto.
+8\. Veuillez couper l'alimentation du circuit lorsque vous vous absentez ou n'utilisez pas le produit.
 
-9\. No toque ninguna pieza móvil o giratoria del producto mientras lo esté operando. 
+9\. Ne touchez aucune partie mobile ou rotative du produit pendant son fonctionnement. 
 
-10\. Es normal que partes del producto puedan calentarse cuando se utilizan en ciertos diseños de circuitos. Un manejo inadecuado puede provocar sobrecalentamiento. 
+10\. Il est normal que certaines parties du produit deviennent chaudes lorsqu'il est utilisé dans certains montages. Une manipulation inappropriée peut entraîner une surchauffe. 
 
-11\. El incumplimiento de las especificaciones puede dañar el producto.
+11\. Le non-respect des spécifications peut endommager le produit.

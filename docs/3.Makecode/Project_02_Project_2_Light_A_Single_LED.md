@@ -1,33 +1,33 @@
-## Proyecto 2: Light A Single LED
+## Projet 2: Light A Single LED
 
 ![](./media/Makecode_2423afc6.jpg)
 
-[Haga clic para descargar el código de esta lección](./Code/Light-A-Single-LED.hex)
+[Cliquez pour télécharger le code de cette leçon](./Code/Light-A-Single-LED.hex)
 
-### (1)Descripción del proyecto:
+### (1)Description du projet :
 
-(1)Descripción del proyecto: La matriz de puntos LED consta de 25 LED dispuestos en un cuadrado de 5 × 5. Para localizar estos LED rápidamente, como se muestra en la figura siguiente, podemos considerar esta matriz como un sistema de coordenadas y crear dos ejes marcando las filas de 0 a 4 de arriba a abajo y las columnas de 0 a 4 de izquierda a derecha. Por lo tanto, el LED situado en la segunda posición de la primera fila es (1,0) y el LED ubicado en la quinta de la cuarta columna es (3,4), y así sucesivamente.
+(1)Description du projet : La matrice de points LED se compose de 25 LED disposées en carré 5 × 5. Pour localiser ces LED rapidement, comme l'illustre la figure ci-dessous, nous pouvons considérer cette matrice comme un système de coordonnées et créer deux axes en numérotant les lignes de 0 à 4 de haut en bas et les colonnes de 0 à 4 de gauche à droite. Ainsi, la LED située à la deuxième position de la première ligne est (1,0) et la LED située à la cinquième position de la quatrième colonne est (3,4), et de même pour les autres.
 
 ![](./media/Makecode_4ab9ecab.png)
 
-### (2)Componentes necesarios:
+### (2)Composants nécessaires :
 
 Micro:bit main board V2
 
-Cable Micro USB
+Câble Micro USB
 
-### (3)Código de prueba:
+### (3)Code de test :
 
-Conecte el Micro:bit main board V2 a su ordenador mediante el cable Micro USB y comience a editar.
+Connectez le Micro:bit main board V2 à votre ordinateur via le câble Micro USB et commencez l'édition.
 
 ![](./media/Makecode_1bbd8a3b.gif)
 
-Programa completo:
+Programme complet :
 
 ![](./media/Makecode_da248db5.png)
 
-### (4)Resultados de la prueba
+### (4)Résultats du test
 
-Después de cargar el código, observará que la placa Microbit muestra el siguiente efecto: (1,0) se enciende durante 0,5 segundos y luego se apaga, seguido de (3,4) que se enciende durante 0,5 segundos y luego se apaga, repitiéndose en bucle.
+Après le téléchargement du code, vous verrez la carte Microbit afficher l'effet suivant : (1,0) s'allume pendant 0,5 seconde puis s'éteint, suivi de (3,4) qui s'allume pendant 0,5 seconde puis s'éteint, le tout répétant en boucle.
 
 ![](./media/Makecode_301232e3.gif)

@@ -1,12 +1,12 @@
-## Proyecto 1: Latido del corazón
+## Projet 1 : Battement de cœur
 
 ![](./media/Makecode_56018947.jpg)
 
-[Haga clic para descargar el código de esta lección](./Code/Heartbeat.hex)
+[Cliquez pour télécharger le code de cette leçon](./Code/Heartbeat.hex)
 
-### (1)Proyecto Description
+### (1)Projet Description
 
-(1) Proyecto Description Este proyecto es fácil de realizar con una Micro:bit main board V2, un cable Micro USB y un ordenador. La matriz de puntos LED del Micro:bit mostrará primero un patrón en forma de corazón relativamente grande y luego uno más pequeño. Este cambio alterno del patrón se asemeja a un latido del corazón. Este experimento sirve como iniciación al mundo de la programación.
+(1) Projet Description Ce projet est facile à réaliser avec une Micro:bit main board V2, un câble Micro USB et un ordinateur. La matrice de LED du Micro:bit affichera d'abord un motif en forme de cœur relativement grand, puis un motif plus petit. Cette alternance de motifs ressemble à un battement de cœur. Cette expérience sert d'introduction à la programmation.
 
 ### (2)Components Needed:
 
@@ -16,7 +16,7 @@ Micro USB cable
 
 ### (3)Test Code:
 
-Conecte la Micro:bit main board V2 a su ordenador mediante el cable Micro USB y comience a editar.
+Branchez la Micro:bit main board V2 à votre ordinateur via le câble Micro USB et commencez l'édition.
 
 ![](./media/Makecode_46b15e27.gif)
 
@@ -24,10 +24,10 @@ Complete Program :
 
 ![](./media/Makecode_d862ba0e.png)
 
-Nota: "on start" significa que el código en este bloque solo se ejecuta una vez, mientras que "forever" implica que el código se ejecuta de forma cíclica.
+Remarque : "on start" signifie que le code dans ce bloc ne s'exécute qu'une seule fois, tandis que "forever" implique que le code s'exécute de manière cyclique.
 
 ### (4)Test Results:
 
-Después de subir el código, verá un efecto de latido aparecer en la placa Micro:bit.
+Après le téléchargement du code, vous verrez un effet de battement de cœur apparaître sur la carte Micro:bit.
 
 ![](./media/Makecode_e64df1f5.gif)

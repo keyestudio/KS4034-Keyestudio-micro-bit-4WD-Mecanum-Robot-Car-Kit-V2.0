@@ -1,34 +1,34 @@
-## Proyecto 14：4 WS2812 RGB LEDs
+## Projet 14：4 WS2812 RGB LEDs
 
 ![](./media/Makecode_eecf79fe.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-El shield controlador gestiona 4 LEDs RGB WS2812, es compatible con la placa micro:bit y se controla mediante P7. En esta lección haremos que los LEDs RGB muestren diferentes colores a través de P7. En esta lección se proporcionan 3 conjuntos de código de prueba para que los 4 LEDs WS2812 RGB muestren diferentes efectos.
+Le shield pilote 4 LED RGB WS2812, est compatible avec la carte micro:bit et est contrôlé par P7. Dans cette leçon, nous ferons en sorte que les LED RGB affichent différentes couleurs via P7. Trois jeux de codes de test sont fournis dans cette leçon pour permettre aux 4 LED WS2812 RGB d'afficher différents effets.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio   4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans le logement du keyestudio   4WD Mecanum Robot Car V2.0
 
-- Coloque las pilas en el portapilas
+- Placez les piles dans le porte-piles
 
-- Ponga el interruptor de alimentación en ON
+- Positionnez l'interrupteur d'alimentation sur ON
 
-- Conecte el micro:bit a su ordenador mediante un cable USB
+- Connectez le micro:bit à votre ordinateur avec un câble USB
 
-- Abra la versión web de Makecode.
+- Ouvrez la version Web de Makecode.
 
 3\.  **Test Code1**
 
 ![](./media/Makecode_d3ad748c.png)
 
-Haga clic en "JavaScript" para cambiar al código JavaScript correspondiente:
+Cliquez sur « JavaScript » pour passer au code JavaScript correspondant :
 
 ![](./media/Makecode_ce3ad2e9.png)
 
-4\.  **Resultado de la prueba 1**
+4\.  **Résultat du test 1**
 
-Descargue el código 1 al micro:bit y ponga POWER en ON. Los cuatro LEDs WS2812RGB se encienden cíclicamente, cada uno mostrando un color diferente por turno.
+Téléchargez le code 1 sur le micro:bit et positionnez POWER sur ON. Les quatre LED WS2812RGB s'allument cycliquement, chacune affichant une couleur différente à tour de rôle.
 
 5\.  **Test Code2**
 
@@ -38,24 +38,24 @@ Descargue el código 1 al micro:bit y ponga POWER en ON. Los cuatro LEDs WS2812R
 
 ![](./media/Makecode_f06b9905.png)
 
-Haga clic en "JavaScript" para cambiar al código JavaScript correspondiente:
+Cliquez sur « JavaScript » pour passer au code JavaScript correspondant :
 
 ![](./media/Makecode_06ef2111.png)
 
 ![](./media/Makecode_cc2c2fb3.png)
 
-6\.  **Resultado de la prueba 2**
+6\.  **Résultat du test 2**
 
-Descargue el código 2 al micro:bit. Los LEDs WS2812RGB muestran un efecto de luz fluida.
+Téléchargez le code 2 sur le micro:bit. Les LED WS2812RGB affichent un effet de lumière défilante.
 
 7\.  **Test Code3**
 
 ![](./media/Makecode_d3e5aa0a.png)
 
-Haga clic en "JavaScript" para cambiar al código JavaScript correspondiente:
+Cliquez sur « JavaScript » pour passer au code JavaScript correspondant :
 
 ![](./media/Makecode_212ce3c8.png)
 
-8\.  **Resultado de la prueba 3**
+8\.  **Résultat du test 3**
 
-Descargue el código 3 al micro:bit. Cada LED WS2812RGB muestra un color aleatorio uno por uno.
+Téléchargez le code 3 sur le micro:bit. Chaque LED WS2812RGB affiche une couleur aléatoire l'une après l'autre.

@@ -1,19 +1,19 @@
-## Parámetros del producto
+## Paramètres du produit
 
-- Entrada del puerto del conector: DC 7V--9V
+- Entrée du port du connecteur : DC 7V--9V
 
-- Tensión de funcionamiento del sistema de la placa controladora: 5V
+- Tension de fonctionnement du système de la carte pilote : 5V
 
-- Consumo de energía estándar en funcionamiento: alrededor de 2,2 W
+- Consommation électrique standard en fonctionnement : environ 2,2 W
 
-- Potencia máxima: 12 W
+- Puissance maximale : 12 W
 
-- Velocidad del motor: 200 RPM
+- Vitesse du moteur : 200 RPM
 
-- Rango de temperatura de trabajo: 0-50℃
+- Plage de température de fonctionnement : 0-50℃
 
-- Tamaño: 120\*120\*120mm
+- Dimensions : 120\*120\*120mm
 
-- Atributos de protección ambiental: ROHS
+- Attributs de protection environnementale : ROHS
 
-**Nota:** La tensión de funcionamiento del micro:bit es 3,3 V, y el driver shield integra un circuito de conversión de comunicación 3,3V/5V.
+**Remarque :** La tension de fonctionnement du micro:bit est de 3,3 V, et le driver shield intègre un circuit de conversion de communication 3,3V/5V.

@@ -1,45 +1,45 @@
-## Proyecto 13：Seven-Color LED
+## Projet 13：Seven-Color LED
 
 ![](./media/Makecode_804e502b.png)
 
-1\.  **Descripción**
+1\.  **Description**
 
-Este módulo consta de un LED de uso común con 7 colores pero con apariencia blanca. Puede parpadear automáticamente en diferentes colores para crear efectos de luz fantásticos cuando se aplica un nivel alto como con un LED normal.
+Ce module est composé d'une LED couramment utilisée à 7 couleurs mais d'apparence blanche. Lorsqu'un niveau haut est appliqué comme pour une LED normale, elle peut clignoter automatiquement dans différentes couleurs pour créer des effets lumineux fantastiques.
 
-2\.  **Preparación**
+2\.  **Préparation**
 
-- Inserte la placa micro:bit en la ranura del keyestudio   4WD Mecanum Robot Car V2.0
+- Insérez la carte micro:bit dans la fente du keyestudio   4WD Mecanum Robot Car V2.0
 
-- Coloque las pilas en el portapilas
+- Placez les piles dans le boîtier à piles
 
-- Gire el interruptor POWER a la posición ON
+- Positionnez l'interrupteur POWER sur ON
 
-- Conecte el micro:bit a su ordenador mediante un cable USB
+- Connectez le micro:bit à votre ordinateur via un câble USB
 
-- Abra la versión web de Makecode.
+- Ouvrez la version Web de Makecode.
 
 3\.  **Test Code1**
 
-Haga que la luz RGB parpadee alternativamente en las 7 luces.
+Faites clignoter alternativement les 7 couleurs de la LED RGB.
 
 ![](./media/Makecode_ce9a9550.png)
 
-Haga clic en “JavaScript” para ver el código JavaScript correspondiente: 
+Cliquez sur “JavaScript” pour afficher le code JavaScript correspondant : 
 
 ![](./media/Makecode_1b7f9af6.png)
 
-4\.  **Resultado del test 1**
+4\.  **Résultat du test 1**
 
-Descargue el código 1 en la placa micro:bit y ponga el interruptor POWER en ON; las 2 luces RGB del smart car emiten cíclicamente los colores rojo, verde, azul, índigo, rojo oscuro, amarillo y blanco.
+Téléchargez le code 1 sur la carte micro:bit et positionnez l'interrupteur POWER sur ON ; les 2 LED RGB du smart car émettent cycliquement les couleurs rouge, vert, bleu, indigo, rouge foncé, jaune et blanc.
 
 5\.  **Test Code2**
 
 ![](./media/Makecode_bdce981c.png)
 
-Haga clic en “JavaScript” para ver el código JavaScript correspondiente: 
+Cliquez sur “JavaScript” pour afficher le code JavaScript correspondant : 
 
 ![](./media/Makecode_66e64829.png)
 
-6\.  **Resultado del test 2**
+6\.  **Résultat du test 2**
 
-Descargue el código 2 en la placa micro:bit; las 2 luces RGB parpadearán durante 1 segundo y luego dejarán de parpadear durante 1 segundo, de forma cíclica.
+Téléchargez le code 2 sur la carte micro:bit ; les 2 LED RGB clignotent pendant 1 seconde puis cessent de clignoter pendant 1 seconde, de façon cyclique.

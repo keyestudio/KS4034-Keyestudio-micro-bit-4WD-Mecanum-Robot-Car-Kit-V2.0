@@ -1,18 +1,18 @@
-## Proyecto 3: Matriz de puntos LED
+## Projet 3: Matrice de LED (dot matrix)
 
 ![](./media/Makecode_5353bbf0.jpg)
 
-[Haga clic para descargar el código 1 de esta lección](./Code/LED-Dot-Matrix.hex)
+[Cliquez pour télécharger le code 1 de cette leçon](./Code/LED-Dot-Matrix.hex)
 
-[Haga clic para descargar el código 2 de esta lección](./Code/LED-Dot-Matrix2.hex)
+[Cliquez pour télécharger le code 2 de cette leçon](./Code/LED-Dot-Matrix2.hex)
 
-### (1)Proyecto Description:
+### (1)Projet Description:
 
-Las matrices de puntos son muy comunes en la vida diaria. Tienen amplias aplicaciones en pantallas publicitarias LED, indicadores de planta de ascensores, anuncios en paradas de autobús, etc.
+Les matrices de points sont très courantes dans la vie quotidienne. Elles sont largement utilisées dans les écrans publicitaires à LED, les afficheurs d'étage d'ascenseur, les panneaux d'annonce aux arrêts de bus, etc.
 
-La matriz de puntos LED del Micro:bit main board V2 contiene 25 LED en una cuadrícula. Anteriormente, hemos logrado controlar una LED en particular integrando su valor de posición en el código de prueba. Con la misma lógica, podemos encender muchas LED al mismo tiempo para mostrar patrones, dígitos y caracteres.
+La matrice de LED du Micro:bit main board V2 contient 25 LED disposées en grille. Auparavant, nous avons réussi à allumer une LED spécifique en intégrant sa position dans le code de test. Sur la même base, nous pouvons allumer plusieurs LED simultanément pour afficher des motifs, des chiffres et des caractères.
 
-Además, también podemos hacer clic en "show icon" para elegir el patrón que queremos mostrar. Por último, podemos diseñar nuestros propios patrones.
+De plus, nous pouvons cliquer sur "show icon" pour choisir le motif à afficher. Enfin, nous pouvons concevoir nos propres motifs.
 
 ### (2)Components Needed:
 
@@ -22,32 +22,32 @@ Micro USB cable
 
 ### (3)Test Code 1:
 
-Conecte el ordenador con la placa micro:bit mediante un cable micro USB y programe en el editor MakeCode.
+Reliez l'ordinateur à la carte micro:bit à l'aide d'un câble micro USB et programmez dans l'éditeur MakeCode.
 
 ![](./media/Makecode_3e840449.gif)
 
-Programa completo :
+Programme complet :
 
 ![](./media/Makecode_62ac18b6.png)
 
 ### (4) Test Results 1:
 
-Suba el código 1 y alimente la placa; veremos el icono.
+Téléversez le code 1 et alimentez la carte, vous verrez l'icône.
 
 ![7](./media/Makecode_fb015046.gif)
 
 ### (5) Test Code 2:
 
-Conecte el ordenador con la placa micro:bit mediante un cable micro USB y programe en el editor MakeCode.
+Reliez l'ordinateur à la carte micro:bit à l'aide d'un câble micro USB et programmez dans l'éditeur MakeCode.
 
 ![](./media/Makecode_38615007.gif)
 
-Programa completo :
+Programme complet :
 
 ![](./media/Makecode_957cb537.png)
 
 ### (6)Test Results 2 :
 
-Después de subir el código al Microbit, puede ver la pantalla de matriz 5x5 recorriendo los patrones y el texto especificados en el código.（Nota: "on start" significa que el código en este bloque solo se ejecuta una vez, mientras que "forever" implica que el código se ejecuta de forma cíclica.）
+Après avoir téléversé le code sur le Microbit, vous verrez la matrice 5x5 défiler les motifs et le texte spécifiés dans le code.（Remarque : "on start" signifie que le code dans ce bloc ne s'exécute qu'une seule fois, tandis que "forever" implique que le code s'exécute de manière cyclique.）
 
 ![](./media/Makecode_3e5aa1cd.gif)
