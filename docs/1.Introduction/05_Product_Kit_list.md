@@ -26,8 +26,8 @@ Please check the list to ensure that all parts are intact. If you find missing o
 |20|![Img](./media/Introduction_3e83f81e.png)|M3*30MM Round Head Screw|9|
 |21|![](./media/Introduction_3d017f21.png)|M2 Nickle-plated Nut|3|
 |22|![](./media/Introduction_de369f07.png)|M2*8MM Round Head Screw|3|
-|23|![Img](./media/Introduction_94e15c05.png)|M1.4 Nickle-plated Nut|6|
-|24|![Img](./media/Introduction_9e368115.png)|M1.4*10MM Round Head Screw|6|
+|23|![Img](./media/Introduction_94e15c05.png)|M1.4 Nickle-plated Nut|4|
+|24|![Img](./media/Introduction_9e368115.png)|M1.4*10MM Round Head Screw|4|
 |25|![](./media/Introduction_ff05ab91.png)|M2.5*14MM Round Head Screw|4|
 |26|![](./media/Introduction_25b8b893.png)|Remote Control |1|
 |27|![](./media/Introduction_1fa795e2.png)|Plastic String 3*100MM|5|
@@ -39,7 +39,7 @@ Please check the list to ensure that all parts are intact. If you find missing o
 |33|![](./media/Introduction_25aab86f.png)|XH2.54 3P DuPont Wire 50mm|2|
 |34|![](./media/Introduction_86bba76b.png)|3*40MM Screwdriver|1|
 |35|![](./media/Introduction_853ba36c.png)|TT Coupling|4|
-|36|![](./media/Introduction_a45a89e3.png)|M1.2*5MM Round Head Self-tapping Screw|6|
+|36|![](./media/Introduction_a45a89e3.png)|M1.2*5MM Round Head Self-tapping Screw|4|
 |37|![image-20260114094721671](./media/Introduction_805661a3.png)|M2.3*16MM Round-head screws|4|
 
 ⚠️ **Special Reminder:** Remote Control(KS4034F/KS4035F with batteries; KS4034/KS4035 without batteries, Battery type: CR2025(provided by yourself))
